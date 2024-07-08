@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: create-storage-vm.html 
+keywords: create storage VM, create svm 
+summary: 'FSx for ONTAP 스토리지 VM(SVM)을 생성하여 워크로드 팩토리에서의 워크로드에 스토리지 및 데이터 서비스를 제공할 수 있습니다.' 
+---
+= FSx for ONTAP 파일 시스템용 스토리지 VM을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAP 파일 시스템용 스토리지 VM(SVM)을 생성하여 워크로드 팩토리에서의 워크로드를 위한 스토리지 및 데이터 서비스에 가상으로 액세스합니다.
+
+.이 작업에 대해
+스토리지 VM은 작업 부하 공장 스토리지의 각 작업 부하에서 데이터에 액세스하는 데 사용할 수 있는 격리된 파일 서버입니다. 각 SVM에는 데이터 관리 및 액세스를 위한 자체 관리 자격 증명 및 엔드포인트가 있습니다.
+
+SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이언트와 워크스테이션이 SVM의 엔드포인트(IP 주소)를 사용하여 SVM에서 호스팅하는 볼륨, CIFS/SMB 공유 또는 iSCSI LUN을 마운트합니다.
+
+.시작하기 전에
+파일 시스템당 지원되는 스토리지 VM 수를 확인합니다. 파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP 스토리지 가상 머신 관리"^] .
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 스토리지 VM을 생성하고 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * 스토리지 VM 생성 * 을 선택합니다.
+. 스토리지 VM 페이지의 스토리지 VM 구성에서 다음을 제공합니다.
++
+.. * 이름 *: 스토리지 VM의 이름을 입력합니다.
+.. * 스토리지 VM 자격 증명 *: 이 스토리지 VM 사용자의 암호를 `vsadmin` 제공하거나 파일 시스템의 `fsxadmin` 사용자 자격 증명을 사용합니다.
+.. * 루트 볼륨 보안 스타일 *: 데이터에 액세스하는 클라이언트 유형(UNIX(Linux 클라이언트), NTFS(Windows 클라이언트) 또는 혼합)에 따라 루트 볼륨 보안 스타일을 선택합니다.
+.. * 태그 * : 선택적으로 최대 50개의 태그를 추가할 수 있습니다.
+
+
+. Create * 를 클릭합니다.
+

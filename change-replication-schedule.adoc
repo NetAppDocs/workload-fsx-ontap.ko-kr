@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: change-replication-schedule.html 
+keywords: change replication schedule, update replication schedule, edit replication schedule 
+summary: 복제 관계에서 소스 볼륨의 복제 일정을 변경합니다. 
+---
+= 소스 볼륨의 복제 일정을 변경합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+복제 관계에서 소스 볼륨의 복제 일정을 변경합니다.
+
+소스 볼륨의 스냅샷을 복제된 볼륨으로 전송하는 빈도를 원하는 시점 목표(RPO)와 일치시킬 수 있도록 선택합니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.
+. 복제 관계 탭에서 변경할 복제 관계 스케줄의 점 3개 메뉴를 클릭합니다.
+. Edit replication interval * 을 선택합니다.
+. Edit replication interval(복제 간격 편집) 대화 상자에서 소스 볼륨으로부터의 스냅숏 전송 빈도를 선택합니다. 다음 주파수 중에서 선택할 수 있습니다.
++
+** 5분마다
+** 매시간
+** 8시간마다
+** 매일
+** 매주
+
+
+. 적용 * 을 클릭합니다.
+

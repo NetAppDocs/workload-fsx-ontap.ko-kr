@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: performance-reference.html 
+keywords: performance, FSx for ONTAP performance 
+summary: FSx for ONTAP의 성능 
+---
+= FSx for ONTAP의 성능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+성능에 대한 개요는 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html["NetApp ONTAP 성능을 위한 Amazon FSx"^] 설명서를 참조하십시오.

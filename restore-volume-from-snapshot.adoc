@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: restore-volume-from-snapshot.html 
+keywords: restore volume, snapshot 
+summary: 볼륨에 삭제되거나 손상된 파일이 있을 때 스냅샷에서 FSx for ONTAP 볼륨을 복원합니다. 
+---
+= 스냅숏에서 볼륨을 복원합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+볼륨에 삭제되거나 손상된 파일이 있을 때 스냅샷에서 FSx for ONTAP 볼륨을 복원합니다.
+
+.이 작업에 대해
+이 작업은 스냅샷에서 새 볼륨으로 데이터를 복원합니다.
+
+.시작하기 전에
+볼륨의 기존 스냅샷 복사본이 있는 경우에만 스냅샷에서 볼륨을 복원할 수 있습니다.
+
+이 작업을 완료할 수 있는 충분한 용량이 있는지 확인하십시오.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage * 에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 * 탭에서 스냅샷에서 복원할 볼륨에 대한 점 3개 메뉴를 선택합니다.
+. 데이터 보호 조치 *, * 스냅샷 *, * 스냅샷에서 볼륨 복원 * 을 차례로 선택합니다.
+. Restore volume from a snapshot 대화 상자의 * Snapshot name * 필드에서 드롭다운 메뉴에서 복원할 스냅샷을 선택합니다.
+. 복원된 볼륨 이름 * 필드에 복원할 볼륨의 고유한 이름을 입력합니다.
+. 복원 * 을 클릭합니다.
+

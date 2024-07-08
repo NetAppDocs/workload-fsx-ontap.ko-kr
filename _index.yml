@@ -1,0 +1,30 @@
+---
+indexpage:
+  title: NetApp ONTAP용 Amazon FSx 문서
+  lead: NetApp ONTAP용 Amazon FSx는 일관된 하이브리드 클라우드 경험을 제공하는 네이티브 AWS 관리 서비스에 ONTAP의
+    모든 기능을 제공합니다. 이 문서에서는 BlueXP 워크로드 팩토리를 사용하여 FSx for ONTAP를 관리하는 방법을 설명합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리스 정보
+      url: "/whats-new.html"
+    - title: NetApp ONTAP용 Amazon FSx에 대해 알아보십시오
+      url: "/learn-fsx-ontap.html"
+    - title: 빠른 시작
+      url: "/quick-start.html"
+  - title: FSx for ONTAP 사용
+    links:
+    - title: 비용 절감 효과를
+      url: "/explore-savings.html"
+    - title: FSx for ONTAP 파일 시스템을 생성합니다
+      url: "/create-file-system.html"
+    - title: FSx for ONTAP 볼륨을 생성합니다
+      url: "/create-volume.html"
+    - title: 데이터 보호
+      url: "/data-protection-overview.html"
+  - title: 지식 및 지원
+    links:
+    - title: 지원을 위해 등록하십시오
+      url: "/support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/get-help.html"

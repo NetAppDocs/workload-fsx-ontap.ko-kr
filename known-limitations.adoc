@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: known-limitations.html 
+keywords: limitations, fsx, ontap 
+summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오. 
+---
+= 알려진 제한 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+알려진 제한 사항은 Workload Factory의 이번 제품 릴리스에서 지원되지 않거나 올바르게 상호 작동하지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
+
+
+
+== 작동 모드
+
+_Read_mode는 현재 사용할 수 없습니다.
+
+
+
+== 링크
+
+Workload Factory 사용자 인터페이스에서 복제와 같은 일부 작업을 완료하려면 링크가 필요합니다.
+
+
+
+== 스토리지 효율성
+
+볼륨 생성 후에는 스토리지 효율성을 사용하지 않도록 설정하거나 활성화할 수 없습니다.
+
+
+
+== 처리량 용량 영역 지원
+
+
+
+=== 스케일업 배포
+
+다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).
+
+
+
+== 스케일아웃 구축
+
+스케일 아웃 구축을 위해 최대 3 및 6GB/s의 처리 용량을 지원하는 지역은 미국 동부(버지니아), 미국 동부(오하이오), 미국 서부(오리건), 유럽(아일랜드), 아시아 태평양(시드니) 지역입니다.
+
+
+
+== 용량 관리
+
+* 볼륨 자동 확장 기능은 현재 iSCSI 프로토콜에 대해 지원되지 않습니다.
+* 자동 용량 관리 기능이 실행 중일 때는 수동으로 용량을 늘릴 수 없습니다.
+* 자동 용량 관리 기능을 비활성화하는 것은 사용 권한과 동일한 사용 권한으로만 가능합니다.
+
+
+
+
+== 스토리지 VM
+
+스토리지 VM 수는 SKU당 제한됩니다. 워크로드 팩토리에서는 제한을 초과하는 스토리지 VM을 생성할 수 없습니다
+
+파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP 스토리지 가상 머신 관리"^] .
+
+
+
+== iSCSI 프로토콜 지원
+
+* iSCSI 프로토콜은 스케일 업 배포에만 지원됩니다. ^1^
+* iSCSI 프로토콜은 FlexGroup 볼륨에만 사용할 수 있습니다. ^1^
+* 볼륨당 하나의 LUN만 구성할 수 있습니다.
+
+
+
+
+== 지역 지원
+
+* 캐나다 서부(캘거리) 지역은 현재 지원되지 않습니다.
+
+
+
+
+== 데이터 보호
+
+* 스냅샷을 삭제할 수 없습니다.
+* FSx for ONTAP 파일 시스템 간의 복제만 지원됩니다.
+* 파일 시스템을 복제할 때 파일 시스템의 모든 볼륨이 동일한 복제 정책을 사용합니다.
+* 마지막 스냅샷만 복구에 사용할 수 있습니다.
+
+
+
+
+== 스토리지 비용 절감 계산기
+
+Storage Savings Calculator는 다음 구성에 대한 비용 절감액을 계산하지 않습니다.
+
+* FSx for Windows 파일 서버: HDD 스토리지 유형
+* EBS(Elastic Block Store): st1, SC1 및 표준 볼륨 유형
+* EFS(Elastic File System): 처리량 증가 모드입니다
+
+
+참고:
+
+. Amazon FSx for NetApp ONTAP에 적용됩니다
+

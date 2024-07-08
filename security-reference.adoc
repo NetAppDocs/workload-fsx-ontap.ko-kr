@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: security-reference.html 
+keywords: security, data protection, IAM, file system access control, vpc 
+summary:  
+---
+= FSx for ONTAP의 보안
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 다음과 같은 보안 항목이 나와 있습니다.
+
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/data-protection.html["Amazon FSx for NetApp ONTAP의 데이터 보호"^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html["Amazon FSx for NetApp ONTAP의 ID 및 액세스 관리"^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limit-access-security-groups.html["Amazon VPC를 사용한 파일 시스템 액세스 제어"^] in Amazon FSx for NetApp ONTAP 설명서
+

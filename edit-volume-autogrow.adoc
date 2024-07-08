@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: edit-volume-autogrow.html 
+keywords: volume autogrow, increase volume capacity, enable autogrow 
+summary: 워크로드 팩토리로부터 볼륨 용량을 관리할 수 있도록 볼륨 자동 확장을 활성화합니다. 언제든지 비활성화할 수 있습니다. 
+---
+= 볼륨 자동 확장 활성화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+워크로드 팩토리로부터 볼륨 용량을 관리할 수 있도록 볼륨 자동 확장을 활성화합니다. 언제든지 비활성화할 수 있습니다.
+
+선택적으로 를 사용하여 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 link:increase-volume-capacity.html["볼륨 용량 기능을 높입니다"]있습니다.
+
+
+NOTE: iSCSI 볼륨에는 볼륨 자동 확장이 지원되지 않습니다.
+
+.시작하기 전에
+볼륨 자동 확장을 활성화하려면 이 link:manage-links.html["링크를 연결합니다"]필요합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 클릭합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP 탭에서 업데이트할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Volumes(볼륨) 탭에서 수정하려는 볼륨에 대한 Three Dots(점 3개) 메뉴를 선택합니다.
+. 기본 조치 * 를 선택한 다음 * 볼륨 자동 확장 편집 * 을 선택합니다.
+. 자동 확장 편집 대화 상자에서 볼륨 자동 확장을 설정합니다.
+. 적용 * 을 클릭합니다.
+

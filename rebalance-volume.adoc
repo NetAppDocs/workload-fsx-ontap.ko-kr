@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rebalance-volume.html 
+keywords: rebalance capacity, volume capacity, redistribute capacity 
+summary: 시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 재조정합니다. 
+---
+= 볼륨 용량을 재조정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 재조정합니다.
+
+.이 작업에 대해
+새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다.
+
+
+NOTE: 볼륨 재조정은 FlexGroup 볼륨에만 지원됩니다.
+
+.시작하기 전에
+볼륨을 재조정하려면 다음을 수행해야 link:manage-links.html["링크를 연결합니다"]합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 클릭합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage * 에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 재조정할 볼륨이 포함된 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 재조정할 볼륨의 점 3개 메뉴를 선택합니다.
+. 고급 조치 * 를 선택한 다음 * 볼륨 재조정 * 을 선택합니다.
+. 볼륨 재조정 대화 상자에서 * 재조정 * 을 선택합니다.
+

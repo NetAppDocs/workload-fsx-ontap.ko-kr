@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: troubleshooting.html 
+keywords: troubleshooting, troubleshoot, help, issues 
+summary: Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 문제 해결 주제가 포함되어 있습니다. 
+---
+= FSx for ONTAP 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 문제 해결 주제가 포함되어 있습니다.
+
+자세한 내용은 을 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/troubleshooting.html["Amazon FSx for NetApp ONTAP 문제 해결 을 참조하십시오"^] 참조하십시오.

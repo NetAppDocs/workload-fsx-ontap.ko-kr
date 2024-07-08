@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: create-link.html 
+keywords: links, add, add links, add link, create link 
+summary: 링크를 생성하고 관리하여 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계 및 연결을 제공할 수 있습니다. 
+---
+= 링크를 만듭니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+링크를 생성하고 관리하여 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계 및 연결을 제공할 수 있습니다. 따라서 AWS FSx for ONTAP API를 통해 사용할 수 없는 FSx for ONTAP 파일 시스템에서 직접 특정 기능을 모니터링하고 관리할 수 있습니다.
+
+link:links-overview.html["링크에 대해 자세히 알아보세요"]..
+
+.이 작업에 대해
+Link는 AWS Lambda를 활용하여 이벤트에 대한 응답으로 코드를 실행하고 해당 코드에 필요한 컴퓨팅 리소스를 자동으로 관리합니다. 생성하는 링크는 NetApp 계정의 일부이며 AWS 계정과 연결됩니다.
+
+FSx for ONTAP 파일 시스템을 정의할 때 계정에 링크를 생성할 수 있습니다. 이 링크는 해당 파일 시스템에 사용되며 다른 FSx for ONTAP 파일 시스템에서 사용할 수 있습니다.
+
+AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.
+
+.시작하기 전에
+* AWS 계정에 로그인하려면 자격 증명이 있어야 합니다.
+* CloudFormation 스택을 사용하여 링크를 추가할 때 AWS 계정에 다음 권한이 있어야 합니다.
++
+[%collapsible]
+====
+[source, json]
+----
+"cloudformation:GetTemplateSummary",
+"cloudformation:CreateStack",
+"cloudformation:DeleteStack",
+"cloudformation:DescribeStacks",
+"cloudformation:ListStacks",
+"cloudformation:DescribeStackEvents",
+"cloudformation:ListStackResources",
+"ec2:DescribeSubnets",
+"ec2:DescribeSecurityGroups",
+"ec2:DescribeVpcs",
+"iam:ListRoles",
+"iam:GetRolePolicy",
+"iam:GetRole",
+"iam:DeleteRolePolicy",
+"iam:CreateRole",
+"iam:DetachRolePolicy",
+"iam:PassRole",
+"iam:PutRolePolicy",
+"iam:DeleteRole",
+"iam:AttachRolePolicy",
+"lambda:AddPermission",
+"lambda:RemovePermission",
+"lambda:InvokeFunction",
+"lambda:GetFunction",
+"lambda:CreateFunction",
+"lambda:DeleteFunction",
+"lambda:TagResource",
+"codestar-connections:GetSyncConfiguration",
+"ecr:BatchGetImage",
+"ecr:GetDownloadUrlForLayer"
+----
+====
+
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Associate link * 를 선택합니다.
+. 연결 링크 대화 상자에서 * 새 링크 만들기 * 를 선택하고 * 계속 * 을 선택합니다.
+. 링크 만들기 페이지에서 다음을 제공합니다.
++
+.. * 링크 이름 *: 이 링크에 사용할 이름을 입력하십시오. 이름은 계정 내에서 고유해야 합니다.
+.. * 태그 *: 필요에 따라 이 링크에 연결할 태그를 추가하여 리소스를 보다 쉽게 분류할 수 있습니다. 예를 들어, FSx for ONTAP 파일 시스템에서 이 링크를 사용 중인 것으로 식별하는 태그를 추가할 수 있습니다.
++
+AWS 계정 및 계정, 위치 및 보안 그룹에 대한 추가 정보는 FSx for ONTAP 파일 시스템에 따라 자동으로 검색됩니다.
+
+
+
+. Redirect to CloudFormation * 을 선택합니다.
++
+AWS CloudFormation 서비스에서 링크를 생성하는 방법을 설명하는 대화 상자가 표시됩니다.
+
+. AWS 관리 콘솔을 열고 이 FSx for ONTAP 파일 시스템에 대한 AWS 계정에 로그인하려면 * 계속 * 을 선택하십시오.
+. 빠른 스택 만들기 페이지의 기능 에서 * AWS CloudFormation이 IAM 리소스를 생성할 수 있음을 확인합니다 * 를 선택합니다.
++
+CloudFormation 템플릿을 시작하면 Lambda에게 세 가지 권한이 부여됩니다. 워크로드 팩토리에서는 링크를 사용할 때 이러한 권한을 사용합니다.
+
++
+[source, json]
+----
+"lambda:InvokeFunction",
+"lambda:GetFunction",
+"lambda:UpdateFunctionCode"
+----
+. Create stack * 을 선택한 다음 * Continue * 를 선택합니다.
++
+이벤트 페이지에서 링크 생성 상태를 모니터링할 수 있습니다. 이 작업은 5분 이내에 완료됩니다.
+
+. 워크로드 팩토리 인터페이스로 돌아가면 링크가 FSx for ONTAP 파일 시스템과 연결된 것을 볼 수 있습니다.
+
+
+.결과
+생성한 링크는 FSx for ONTAP 파일 시스템과 연결됩니다.

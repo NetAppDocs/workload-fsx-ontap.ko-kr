@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: restore-from-backup.html 
+keywords: restore backup, new volume, volume restoration, backup 
+summary: 백업에서 AWS 계정의 FSx for ONTAP 파일 시스템으로 볼륨을 복원합니다. 
+---
+= 백업에서 볼륨을 복원합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+백업에서 AWS 계정의 FSx for ONTAP 파일 시스템으로 볼륨을 복원합니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Volumes * 탭에서 백업에서 복원할 볼륨의 점 3개 메뉴를 클릭합니다.
+. 데이터 보호 작업 *, * ONTAP용 FSx 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.
+. 백업에서 복원 대화 상자에서 다음을 제공합니다.
++
+.. * 대상 파일 시스템 * : 드롭다운 메뉴에서 대상 파일 시스템을 선택합니다.
+.. * 대상 스토리지 VM *: 드롭다운 메뉴에서 대상 스토리지 VM을 선택합니다.
+.. * 백업 이름 * : 드롭다운 메뉴에서 백업 이름을 선택합니다.
+.. * 복원된 볼륨 이름 *: 복원된 볼륨 이름을 입력합니다.
+
+
+. 복원 * 을 클릭합니다.
+

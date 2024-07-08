@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: configure-active-directory.html 
+keywords: configure AD, configure active directory, update ad, edit active directory 
+summary:  
+---
+= 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.
+
+.이 작업에 대해
+스토리지 VM에 대한 Active Directory 구성 및 업데이트에도 동일한 단계가 적용됩니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 스토리지 VM이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.
+. 스토리지 VM 탭에서 Active Directory를 구성할 스토리지 VM의 점 3개 메뉴를 선택합니다.
+. AD 구성 관리 * 를 선택합니다.
+. AD 구성 관리 페이지에서 다음을 제공합니다.
++
+.. * 가입할 Active Directory 도메인 *: Active Directory의 FQDN(정규화된 도메인 이름)을 입력합니다.
+.. * DNS IP 주소 *: 쉼표로 구분된 IP 주소를 최대 3개까지 입력합니다.
+.. * SMB 서버 NetBIOS 이름 *: 스토리지 VM에 대해 생성할 Active Directory 컴퓨터 개체의 SMB 서버 NetBIOS 이름을 입력합니다. Active Directory에 있는 이 SVM의 이름입니다.
+.. * 사용자 이름 *: 기존 Active Directory에 있는 서비스 계정의 사용자 이름을 입력합니다.
++
+도메인 접두사 또는 접미사를 포함하지 마십시오. 의 경우 `EXAMPLE\ADMIN`를 `ADMIN`사용합니다.
+
+.. * 비밀번호 *: 서비스 계정의 비밀번호를 입력합니다.
+.. * 조직 단위(OU) *: 조직 단위를 입력합니다.
++
+OU는 파일 시스템에 연결할 조직 단위의 고유 경로 이름입니다.
+
+.. * 위임된 관리자 그룹 *: 위임된 파일 시스템 관리자 그룹을 선택적으로 입력합니다.
++
+삭제된 관리자 그룹은 파일 시스템을 관리할 수 있는 Active Directory의 그룹 이름입니다.
+
++
+AWS 관리형 Microsoft AD를 사용하는 경우 AWS 위임 FSx 관리자, AWS 위임 관리자 또는 OU에 위임된 권한이 있는 사용자 지정 그룹과 같은 그룹을 지정해야 합니다.
+
++
+자체 관리되는 AD에 가입하는 경우 AD에서 그룹 이름을 사용합니다. 기본 그룹은 `Domain Admins`입니다.
+
+
+
+. 적용 * 을 클릭합니다.
+

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: update-backup-schedule.html 
+keywords: backup schedule, backup policy, update backups, update backup schedule, FSx for ONTAP backup 
+summary: 필요한 경우 FSx for ONTAP 백업 일정을 업데이트합니다. 
+---
+= FSx for ONTAP 백업 일정을 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+필요한 경우 FSx for ONTAP 백업 일정을 업데이트합니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to Storage inventory * 를 클릭합니다.
+. FSx for ONTAP * 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 백업 일정을 업데이트한 다음 * 관리 * 를 선택합니다.
+. 정보에서 * FSx for ONTAP 백업 * 옆에 있는 연필 아이콘을 클릭합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.
+. FSx for ONTAP 백업 * 대화 상자에서 다음을 제공합니다.
++
+.. * 매일 자동 백업 * : 기능을 활성화 또는 비활성화합니다. 이 기능을 사용하지 않도록 설정한 경우 * 적용 * 을 클릭합니다. 이 기능을 사용하도록 설정한 경우 다음 단계를 완료합니다.
+.. * 자동 백업 보존 기간 *: 자동 백업을 유지할 일 수를 입력합니다.
+.. * 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.
+.. * 주별 유지 보수 윈도우 *: * 기본 설정 없음 * (주별 유지 보수 윈도우 시작 시간이 선택됨) 또는 * 30분 주별 유지 보수 윈도우 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.
+
+
+. 적용 * 을 클릭합니다.
+

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: create-snapshot.html 
+keywords: create snapshot, snapshot 
+summary: FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다. 
+---
+= FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다.
+
+스냅샷은 볼륨의 리소스로, 수정된 데이터에 대해서만 공간을 소비하는 데이터를 즉시 캡처합니다. 데이터는 시간이 지남에 따라 변경되기 때문에 일반적으로 스냅샷은 오래될수록 더 많은 공간을 사용합니다.
+
+FSx for ONTAP 볼륨은 Just-in-time copy-on-write를 사용하므로 스냅샷에서 수정되지 않은 파일이 볼륨의 용량을 소비하지 않습니다.
+
+
+NOTE: 스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본을 만들려면 FSx for ONTAP 백업 또는 볼륨 복제 기능을 사용하는 것이 좋습니다.
+
+.시작하기 전에
+스냅샷을 생성해야 link:manage-links.html["링크를 연결합니다"] 합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 클릭합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage * 에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Volumes * 탭에서 보호할 볼륨의 점 3개 메뉴를 선택합니다.
+. 데이터 보호 조치 *, * 스냅샷 * 을 선택한 다음 * 스냅샷에서 볼륨 생성 * 을 선택합니다.
+. Create volume from a snapshot 대화상자의 * Snapshot name * 필드에 스냅샷 이름을 입력합니다.
+. Create * 를 클릭합니다.
+

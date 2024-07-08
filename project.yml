@@ -1,0 +1,167 @@
+---
+settings:
+  name: Amazon FSx for NetApp ONTAP
+  platform: cloud
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: NetApp ONTAP용 Amazon FSx 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    entries:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+    - title: 알려진 제한 사항
+      url: "/known-limitations.html"
+  - title: 시작하십시오
+    entries:
+    - title: NetApp ONTAP용 Amazon FSx에 대해 알아보십시오
+      url: "/learn-fsx-ontap.html"
+    - title: 빠른 시작
+      url: "/quick-start.html"
+    - title: FSx for ONTAP 파일 시스템을 생성합니다
+      url: "/create-file-system.html"
+  - title: NetApp ONTAP용 Amazon FSx를 사용합니다
+    entries:
+    - title: 비용 절감 효과를
+      url: "/explore-savings.html"
+    - title: 링크를 사용하십시오
+      entries:
+      - title: 링크 개요
+        url: "/links-overview.html"
+      - title: 링크를 만듭니다
+        url: "/create-link.html"
+      - title: 링크를 관리합니다
+        url: "/manage-links.html"
+    - title: 볼륨 관리
+      entries:
+      - title: 볼륨을 생성합니다
+        url: "/create-volume.html"
+      - title: 데이터에 액세스합니다
+        url: access-data.html
+    - title: 스토리지 VM을 생성합니다
+      url: "/create-storage-vm.html"
+    - title: 데이터 보호
+      entries:
+      - title: 데이터 보호 개요
+        url: "/data-protection-overview.html"
+      - title: 스냅샷을 관리합니다
+        entries:
+        - title: 스냅샷을 생성합니다
+          url: "/create-snapshot.html"
+        - title: 스냅샷 정책을 생성합니다
+          url: "/create-snapshot-policy.html"
+        - title: 스냅숏에서 볼륨을 복원합니다
+          url: "/restore-volume-from-snapshot.html"
+        - title: 스냅샷에서 새 볼륨을 생성합니다
+          url: "/create-volume-from-snapshot.html"
+      - title: 오브젝트 스토리지에 대한 백업을 관리합니다
+        entries:
+        - title: 수동 백업을 생성합니다
+          url: "/create-backup.html"
+        - title: 백업에서 볼륨을 복원합니다
+          url: "/restore-from-backup.html"
+      - title: 복제를 관리합니다
+        entries:
+        - title: 복제 관계를 생성합니다
+          url: "/create-replication.html"
+        - title: 복제 관계를 초기화합니다
+          url: "/initialize-replication.html"
+      - title: 볼륨의 클론을 생성합니다
+        url: clone-volume.html
+  - title: 관리 및 모니터링
+    entries:
+    - title: 볼륨 관리
+      entries:
+      - title: 볼륨 자동 확장을 편집합니다
+        url: "/edit-volume-autogrow.html"
+      - title: 볼륨 용량을 늘립니다
+        url: "/increase-volume-capacity.html"
+      - title: 볼륨 태그를 편집합니다
+        url: "/edit-volume-tags.html"
+      - title: 볼륨 용량을 재조정합니다
+        url: "/rebalance-volume.html"
+      - title: 계층화 정책을 변경합니다
+        url: "/change-tiering-policy.html"
+      - title: NFS 엑스포트 정책을 변경합니다
+        url: "/change-nfs-export-policy.html"
+      - title: CIFS 공유를 변경합니다
+        url: "/change-cifs-share.html"
+      - title: 복제된 볼륨을 분할합니다
+        url: split-cloned-volume.html
+      - title: 볼륨을 삭제합니다
+        url: "/delete-volume.html"
+    - title: 파일 시스템 관리
+      entries:
+      - title: 파일 시스템 용량을 늘립니다
+        url: "/increase-file-system-capacity.html"
+      - title: 자동 용량 관리 활성화
+        url: "/enable-auto-capacity-management.html"
+      - title: fsxadmin 암호를 재설정합니다
+        url: "/reset-fsxadmin-password.html"
+      - title: 파일 시스템을 삭제합니다
+        url: "/delete-file-system.html"
+    - title: 스토리지 VM 관리
+      entries:
+      - title: 스토리지 VM을 다른 파일 시스템으로 복제합니다
+        url: "/replicate-svm-to-file-system.html"
+      - title: 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다
+        url: "/configure-active-directory.html"
+      - title: 스토리지 VM 태그를 편집합니다
+        url: "/edit-svm-tags.html"
+      - title: 스토리지 VM 암호를 재설정합니다
+        url: reset-svm-password.html
+      - title: 스토리지 VM을 삭제합니다
+        url: "/delete-svm.html"
+    - title: 데이터 보호 관리
+      entries:
+      - title: 볼륨의 스냅샷 정책을 변경합니다
+        url: change-snapshot-policy.html
+      - title: FSx for ONTAP 백업 일정을 업데이트합니다
+        url: "/update-backup-schedule.html"
+      - title: 장기 보존을 위해 스냅샷을 설정 및 편집합니다
+        url: "/enable-snapshots-long-term.html"
+      - title: 복제 관계를 반대로 전환합니다
+        url: "/reverse-replication.html"
+      - title: 소스 볼륨의 복제 일정을 변경합니다
+        url: "/change-replication-schedule.html"
+      - title: 복제 관계의 최대 전송 속도를 제한합니다
+        url: "/limit-transfer-rate.html"
+      - title: 복제 관계에서 스냅샷 데이터를 수동으로 업데이트합니다
+        url: "/update-snapshot-replication.html"
+      - title: 복제 관계를 중지합니다
+        url: "/stop-replication.html"
+      - title: 복제 관계를 삭제합니다
+        url: "/delete-replication.html"
+    - title: 성능 관리
+      entries:
+      - title: 파일 시스템에 대한 IOPS를 프로비저닝합니다
+        url: "/provision-iops.html"
+      - title: 파일 시스템의 처리량 용량을 업데이트합니다
+        url: "/update-throughput-capacity.html"
+  - title: 참조하십시오
+    entries:
+    - title: FSx for ONTAP의 성능
+      url: "/performance-reference.html"
+    - title: FSx for ONTAP의 보안
+      url: "/security-reference.html"
+  - title: 지식 및 지원
+    entries:
+    - title: 지원을 위해 등록하십시오
+      url: "/support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/get-help.html"
+    - title: 문제 해결
+      url: "/troubleshooting.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

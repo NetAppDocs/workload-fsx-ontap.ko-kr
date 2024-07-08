@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: increase-volume-capacity.html 
+keywords: increase capacity, volume capacity 
+summary: 언제든지 수동으로 볼륨의 볼륨 용량을 늘립니다. 
+---
+= 볼륨 용량을 늘립니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+언제든지 수동으로 볼륨의 볼륨 용량을 늘립니다.
+
+필요에 따라 Workload Factory가 볼륨 용량을 관리하도록 할 수 link:edit-volume-autogrow.html["자동 확장 기능을 활성화합니다"] 있습니다.
+
+.이 작업에 대해
+iSCSI LUN의 경우 이 작업을 수행하면 호스트 LUN의 크기가 증가합니다. 용량이 증가되면 호스트 운영 체제에서 제공하는 절차에 따라 LUN의 새 크기를 검색하고 LUN의 파일 시스템을 확장합니다.
+
+.시작하기 전에
+볼륨 용량을 늘리려면 을 사용해야 link:manage-links.html["링크를 연결합니다"]합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 클릭합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+.단계
+. Workload Factory 콘솔에 로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 용량을 늘릴 볼륨의 점 3개 메뉴를 선택합니다.
+. 기본 조치 * 를 선택한 다음 * 볼륨 용량 증가 * 를 선택합니다.
+. Increase volume capacity(볼륨 용량 증가) 대화 상자에서 다음을 제공합니다.
++
+.. 더 큰 크기를 선택합니다.
+.. 필요한 경우 장치를 변경합니다.
+
+
+. 증가 * 를 클릭합니다.
+
