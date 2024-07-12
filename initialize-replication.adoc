@@ -20,7 +20,7 @@ summary: 소스 볼륨과 타겟 볼륨 간의 복제 관계를 초기화합니�
 이 작업을 완료하도록 선택할 때를 고려하십시오. 초기화에는 시간이 오래 걸릴 수 있습니다. 사용량이 적은 시간에 기준 전송을 실행할 수 있습니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.

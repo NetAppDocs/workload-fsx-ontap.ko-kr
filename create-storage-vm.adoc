@@ -22,7 +22,7 @@ SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이�
 파일 시스템당 지원되는 스토리지 VM 수를 확인합니다. 파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP 스토리지 가상 머신 관리"^] .
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 스토리지 VM을 생성하고 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 스토리지 VM 생성 * 을 선택합니다.

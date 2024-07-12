@@ -24,7 +24,7 @@ NOTE: 스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본�
 스냅샷을 생성해야 link:manage-links.html["링크를 연결합니다"] 합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 클릭합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage * 에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.

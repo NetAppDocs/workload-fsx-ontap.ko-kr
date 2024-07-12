@@ -14,7 +14,7 @@ summary: 필요한 경우 FSx for ONTAP 백업 일정을 업데이트합니다.
 필요한 경우 FSx for ONTAP 백업 일정을 업데이트합니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to Storage inventory * 를 클릭합니다.
 . FSx for ONTAP * 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 백업 일정을 업데이트한 다음 * 관리 * 를 선택합니다.
 . 정보에서 * FSx for ONTAP 백업 * 옆에 있는 연필 아이콘을 클릭합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.

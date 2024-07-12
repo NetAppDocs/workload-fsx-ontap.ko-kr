@@ -14,7 +14,7 @@ summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니�
 태그를 사용하면 리소스를 분류하는 데 도움이 됩니다. FSx for ONTAP 볼륨에 대해 언제든지 볼륨 태그를 추가, 편집, 제거할 수 있습니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.

@@ -38,7 +38,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-capacity
 일부 계층화 정책에는 볼륨의 사용자 데이터가 "콜드"로 간주되고 용량 풀 스토리지 계층으로 이동되려면 볼륨의 사용자 데이터가 비활성 상태로 유지되어야 하는 시간을 설정하는 관련 최소 냉각 기간 또는 _cooling days_ 이 있습니다. 냉각 기간은 데이터가 디스크에 기록될 때 시작됩니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.

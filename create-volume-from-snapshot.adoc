@@ -24,7 +24,7 @@ summary: FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷�
 
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.

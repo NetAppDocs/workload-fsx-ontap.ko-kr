@@ -37,7 +37,7 @@ FSx for ONTAP 볼륨은 데이터를 그룹화하고, 데이터를 저장하는 
 
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 볼륨을 생성할 파일 시스템의 점 3개 메뉴를 선택하고 * 관리 * 를 선택합니다.
 . 개요 * 탭에서 * 볼륨 생성 * 을 클릭합니다.

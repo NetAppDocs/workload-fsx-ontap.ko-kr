@@ -16,7 +16,7 @@ summary: 필요에 따라 복제 관계를 삭제합니다.
 복제 관계를 삭제하면 FSx for ONTAP가 소스 및 타겟 볼륨의 공통 복제 스냅샷도 삭제됩니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.

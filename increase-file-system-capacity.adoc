@@ -18,7 +18,7 @@ summary: 사용된 SSD 스토리지 용량이 지정된 임계값을 초과할 �
 .이 작업에 대해
 파일 시스템 용량이 증가하면 FSx for ONTAP 파일 시스템의 IOPS에 영향을 미칩니다.
 
-파일 시스템을 자동으로 사용할 경우 link:provision-iops.html["IOPS 프로비저닝"] SSD 용량이 1GiB씩 증가할 때마다 IOPS가 3배 증가합니다. 예를 들어, SSD 용량을 100TiB(102,400GiB)로 프로비저닝하는 경우 IOPS가 300TiB(307,200GiB)까지 증가합니다.
+파일 시스템을 자동으로 사용할 경우 link:provision-iops.html["IOPS 프로비저닝"] SSD 용량이 1GiB씩 증가할 때마다 IOPS가 3배 증가합니다.
 
 link:provision-iops.html["IOPS 프로비저닝"]수동으로 증가하는 파일 시스템 용량을 지원하기 위해 IOPS 할당을 늘려야 할 수 있습니다.
 

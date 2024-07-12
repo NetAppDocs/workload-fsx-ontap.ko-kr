@@ -20,7 +20,7 @@ summary: 언제든지 볼륨의 스냅샷 정책을 업데이트합니다.
 기존 스냅샷 정책을 표시하려면 링크가 필요합니다. 링크를 연결하려면 * 계정 이름 * 에서 * 연결 링크 * 를 클릭합니다. 그런 다음 이 작업으로 돌아갑니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . Volumes * 탭을 선택합니다.
 . 볼륨 * 탭에서 스냅샷 정책을 변경할 볼륨의 점 3개 메뉴를 선택합니다.

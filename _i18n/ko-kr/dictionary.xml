@@ -22,7 +22,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
   <block id="30780a2d5d1315bb3798040fb45df6f0" category="paragraph">액세스 권한을 부여할 사용자 또는 그룹 및 액세스 권한 유형을 결정합니다.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
-  <block id="80cda6d0b485a6d7ad08bec0e4e1e512" category="list-text">Workload Factory 콘솔에 로그인합니다.</block>
   <block id="7f855d340cfe6607ed51975896dd19da" category="list-text">Storage에서 * Go to storage inventory * 를 선택합니다.</block>
   <block id="80ad238f0c32ccf7b3f91d0b7b0ea76b" category="list-text">FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="f76864e1c2588ae3d6373b6ab95e2209" category="list-text">파일 시스템 개요에서 * Volumes * 탭을 선택합니다.</block>
@@ -640,7 +639,6 @@
   <block id="e916aa8237833ef72c75def81e289920" category="paragraph">또는 Workload Factory에서 파일 시스템 용량을 관리하도록 할 수 <block ref="2bbbc5acd5fd256837600f63916b0e57" category="inline-link-macro-rx"></block> 있습니다.</block>
   <block id="bdccdc17ac819f178e84be61503a0de2" category="paragraph">파일 시스템 용량이 증가하면 FSx for ONTAP 파일 시스템의 IOPS에 영향을 미칩니다.</block>
   <block id="11df76043d9d8bb3a76f1f7e71096a92" category="inline-link-macro">IOPS 프로비저닝</block>
-  <block id="b677ee098503d5853f180332f5658aa6" category="paragraph">파일 시스템을 자동으로 사용할 경우 <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> SSD 용량이 1GiB씩 증가할 때마다 IOPS가 3배 증가합니다. 예를 들어, SSD 용량을 100TiB(102,400GiB)로 프로비저닝하는 경우 IOPS가 300TiB(307,200GiB)까지 증가합니다.</block>
   <block id="e7317a971e575aecebe43b18f10a7503" category="paragraph"><block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block>수동으로 증가하는 파일 시스템 용량을 지원하기 위해 IOPS 할당을 늘려야 할 수 있습니다.</block>
   <block id="ffc888e5ff626bf410d67b62a9e8a9a8" category="paragraph">SSD 스토리지 용량 제한에 대해서는 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서를 참조하십시오.</block>
   <block id="3fa4dafc00a14f08641efa3389891289" category="inline-link-macro">자동 용량 관리를 비활성화합니다</block>
@@ -1090,4 +1088,6 @@
   <block id="ef045d17e80274aec5be009d1f13f5a2" category="sidebar">파일 시스템에 대한 IOPS를 프로비저닝합니다</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">참조하십시오</block>
   <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">문제 해결</block>
+  <block id="1feb39b44e4fcef3d4be063a2f0c0c2c" category="list-text">에 로그인합니다 <block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block></block>
+  <block id="b39f472a8f42e6a145c20b290f2c0f7b" category="paragraph">파일 시스템을 자동으로 사용할 경우 <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> SSD 용량이 1GiB씩 증가할 때마다 IOPS가 3배 증가합니다.</block>
 </blocks>

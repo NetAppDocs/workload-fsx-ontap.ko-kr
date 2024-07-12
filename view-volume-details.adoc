@@ -16,7 +16,7 @@ summary: 볼륨 세부 정보, 배포, 소비, 액세스 및 보호 보기
 볼륨 세부 정보는 파일 시스템에 볼륨이 생성된 후에만 표시됩니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . Volumes(볼륨) 탭에서 수정하려는 볼륨에 대한 세 개의 점 메뉴를 선택합니다.
 . 기본 조치 * 를 선택한 다음 * 볼륨 세부 정보 보기 * 를 선택합니다.

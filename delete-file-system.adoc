@@ -14,7 +14,7 @@ summary: 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결�
 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 삭제할 FSx for ONTAP 파일 시스템의 점 세 개 메뉴를 클릭합니다.
 . 관리 * 를 선택합니다.

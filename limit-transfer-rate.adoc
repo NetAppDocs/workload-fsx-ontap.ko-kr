@@ -22,7 +22,7 @@ summary: 복제 관계의 최대 전송 속도를 제한합니다. 무제한 전
 복제에 할당할 대역폭의 양을 고려합니다.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.
 . FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.

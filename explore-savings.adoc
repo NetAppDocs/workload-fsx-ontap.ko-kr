@@ -50,7 +50,7 @@ Workload Factory가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elasti
 .Amazon EBS(Elastic Block Store)
 --
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Explore Savings * 를 선택한 다음 * Amazon Elastic Block Store(EBS) * 를 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
@@ -71,7 +71,7 @@ Workload Factory가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elasti
 .Amazon FSx for Windows 파일 서버
 --
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Explore Savings * 를 선택한 다음 * Amazon FSx for Windows File Server * 를 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
@@ -93,7 +93,7 @@ Workload Factory가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elasti
 .Amazon Elastic File System(EFS)
 --
 .단계
-. Workload Factory 콘솔에 로그인합니다.
+. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . 스토리지에서 * 절약 효과 탐색 * 을 선택한 다음 * Amazon Elastic File System(EFS) * 을 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
