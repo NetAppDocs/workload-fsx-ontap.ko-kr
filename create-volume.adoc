@@ -133,7 +133,7 @@ NOTE: 스냅샷 시간은 기본적으로 UTC(협정 세계시)로 설정된 파
 
 .. * Tiering policy *: 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.
 +
-Auto는 Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] 참조하십시오.
+Auto는 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] 참조하십시오.
 
 
 
@@ -146,3 +146,6 @@ Auto는 Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여
 
 . Create * 를 클릭합니다.
 
+
+.결과
+볼륨 생성이 시작됩니다. 생성된 새 볼륨이 Volumes(볼륨) 탭에 나타납니다.

@@ -21,6 +21,15 @@ SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이�
 .시작하기 전에
 파일 시스템당 지원되는 스토리지 VM 수를 확인합니다. 파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP 스토리지 가상 머신 관리"^] .
 
+
+
+== 스토리지 VM을 생성합니다
+
+Workload Factory 콘솔에서 스토리지 VM을 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
+
+
+NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다. `fsxadmin` `vsadmin` 코드를 실행할 때 암호를 다시 입력해야 합니다.
+
 .단계
 . 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
 . Storage에서 * Go to storage inventory * 를 선택합니다.

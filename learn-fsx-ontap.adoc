@@ -49,6 +49,18 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
+== Workload Factory 사용 도구
+
+다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.
+
+* * Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다
+* * REST API *: 워크로드 팩토리 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 Workload Factory 콘솔에서 정의한 작업을 수행할 수 있습니다.
+* * Terraform BlueXP Workload Factory Provider *: Terraform을 통해 Workload Factory 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
+
+
+
+
 == 비용
 
 FSx for ONTAP 계정은 워크로드 팩토리가 아닌 AWS에서 관리합니다. 을 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAP 가격"^]참조하십시오.
