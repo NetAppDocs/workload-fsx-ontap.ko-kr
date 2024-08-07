@@ -500,17 +500,6 @@
   <block id="1deea867e21bd00dec42db5a9c106317" category="summary">AWS FSx for NetApp ONTAP과 비교하여 Amazon EBS(Elastic Block Store) 스토리지, EFS(Elastic File System) 및 FSx for Windows 파일 서버에서 스토리지 워크로드의 절약을 살펴보십시오.</block>
   <block id="4d6b033ea4734bc7dabf69813bbc3e9d" category="doc">FSx for ONTAP에서 절감할 수 있는 비용에 대해 알아보십시오</block>
   <block id="86b5b3b0e4f0ecb1a68a9f07a11bbd37" category="paragraph">Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버를 FSx for NetApp ONTAP과 비교하여 사용하는 스토리지 워크로드의 절감 효과에 대해 알아봅니다.</block>
-  <block id="0c3d4a507eb8ef2c2669e3a86fb24929" category="paragraph">워크로드 팩토리에서는 스토리지 계산기를 제공하므로 FSx for ONTAP 파일 시스템의 스토리지 비용을 EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 가장 비용 효율적이라는 것을 알 수 있습니다.</block>
-  <block id="fd98ab99f09158d6b96e6b9d0d5fc509" category="paragraph">스토리지 계산기를 사용하여 특정 스토리지 시스템 또는 특정 볼륨에 대한 절약 효과를 확인할 수 있습니다. 스토리지 계산기에는 FSx for ONTAP 파일 시스템을 사용할 경우 이러한 스토리지 시스템의 워크로드용 스토리지가 비용이 덜 드는지 여부가 표시됩니다.</block>
-  <block id="66b40e4accaea5db276a73382ac0b6f2" category="paragraph">워크로드 팩토리로부터 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 결정하면 워크로드 팩토리로부터 직접 계산기에서 파일 시스템을 구축할 수 있습니다. 경우에 따라 Workload Factory는 현재 사용 중인 스토리지의 양과 워크로드의 성능 특성에 따라 여러 파일 시스템을 구축하도록 권장할 수 있습니다.</block>
-  <block id="181e3284c48fd57addc02c9c3cecca81" category="section-title">시스템 요구 사항을 제공합니다</block>
-  <block id="2a94b287f3d99e0e52e81c4f752895f6" category="inline-link-macro">모드에 대해 자세히 알아봅니다</block>
-  <block id="c8add51a412bd14b1fa8548ea7d4cc9c" category="paragraph">Workload Factory 계정에 AWS 자격 증명을 추가하여 _AUTOMATE_MODE()를 활성화한 경우<block ref="3ac12273abf0be5e05b49ceaac600ad4" category="inline-link-macro-rx"></block>Workload Factory는 AWS 계정에서 사용할 수 있는 모든 스토리지 시스템을 식별하고 스토리지 인벤토리 페이지에 해당 시스템의 볼륨 특성을 표시할 수 있습니다. 검색되는 AWS 계정은 Workload Factory 계정에 정의한 자격 증명을 기반으로 합니다.</block>
-  <block id="0281a53baaa49bd24211566406a670bd" category="paragraph">이 그림에서는 AWS 계정에서 검색된 FSx for Windows File Server 시스템의 볼륨을 보여 줍니다.</block>
-  <block id="5d607e96f80f5e0c54fe4550ff3646df" category="inline-image-macro">Windows용 FSx 파일 서버의 현재 볼륨 인벤토리를 보여 주는 스토리지 인벤토리 페이지</block>
-  <block id="16203b7e08e16041d0c8fdff61a3a4f3" category="paragraph">Workload Factory 계정을 AWS 계정(_basic_mode )과 연결하기 위해 자격 증명을 추가하지 않은 경우 구축할 스토리지 시스템에 필요한 특성을 수동으로 입력하면 스토리지 계산기가 비용에 따라 최적의 파일 시스템을 결정합니다. automate_mode를 사용하는 동안 이 방법을 사용하여 새로운 FSx for ONTAP 파일 시스템의 범위를 지정할 수 있습니다.</block>
-  <block id="358b1837aae1be80f9df6667968fb7dd" category="paragraph">이 그림에서는 FSx for ONTAP와 EBS 스토리지를 비교한 스토리지 계산기 페이지를 보여 줍니다.</block>
-  <block id="770b3813731da1b92ad91e1b7d040019" category="inline-image-macro">FSx for ONTAP와 Elastic Block Store 스토리지를 비교한 스토리지 계산기 페이지</block>
   <block id="ed8b2920ddc5b14cb6c0ba24c4b6c3af" category="inline-link-macro">grant_automate_permissions 를 참조하십시오</block>
   <block id="87d163ac7ed334c52282a95bd5a124d9" category="paragraph">Workload Factory가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 <block ref="d9270f60c282b5496f17a4b48a6da305" category="inline-link-macro-rx"></block> AWS 계정에 있어야 합니다.</block>
   <block id="cf48d7891f28d92c4308fb5debb574b0" category="section-title">비용 절감 효과를</block>
@@ -518,32 +507,11 @@
   <block id="8e276a5c4eecb9cd5c1fbb0729744eb5" category="open-title">Amazon EBS(Elastic Block Store)</block>
   <block id="448ef3d7180e06df5be5ee9db88ab4ef" category="list-text">Storage에서 * Explore Savings * 를 선택한 다음 * Amazon Elastic Block Store(EBS) * 를 선택합니다.</block>
   <block id="71b9eeb28c92502542ccbef7f07eb279" category="list-text">Storage Savings Calculator에서 다음 세부 정보를 제공합니다.</block>
-  <block id="cfa56cfe3570ade46d552920d0b9be2c" category="list-text">* 활용 사례 *: 드롭다운 메뉴에서 활용 사례를 선택합니다. 선택한 사용 사례에 따라 비교할 FSx for ONTAP 파일 시스템의 특성이 결정됩니다.</block>
-  <block id="47570af8fa8bd1e5d20febd0e21031c2" category="list-text">* 지역 * : 드롭다운 메뉴에서 EBS 구성의 지역을 선택합니다.</block>
-  <block id="ded7b9f155296107ba64bbce29eaa26d" category="list-text">* EBS 볼륨 유형 선택 *: 구성에 사용되는 EBS 볼륨 유형을 선택합니다.</block>
-  <block id="dcce9dafaf8bd01012d65b5a166f0885" category="list-text">* Number of volumes *: EBS 구성의 볼륨 수를 입력합니다.</block>
-  <block id="6fffae13635400def4bd3e54944a917c" category="list-text">* 볼륨당 스토리지 용량(TiB) *: 볼륨당 스토리지 용량을 TiB 단위로 입력합니다.</block>
-  <block id="b34b91cfc81020dbc0a6e68e4018cf86" category="list-text">* 스냅샷 주파수 *: EBS 구성에 대한 스냅샷 주파수를 선택합니다.</block>
-  <block id="a34315931158870f5dd3369bd87f490f" category="list-text">* 스냅샷 당 변경된 양(GiB) *: 스냅샷 스토리지에만 해당. 스냅샷당 변경된 용량을 GiB 단위로 입력합니다.</block>
-  <block id="924d37d399df52ad31f79b4c760e6541" category="list-text">* 볼륨당 프로비저닝된 IOPS *: GP3, io1 및 io2 볼륨의 경우. 볼륨당 프로비저닝된 IOPS를 입력합니다.</block>
-  <block id="aa04d5704853ff44bfe78b9363d70fda" category="list-text">* 처리량(MiB/s) *: GP3 볼륨에만 해당. 볼륨당 MiB/s 단위로 처리량을 입력합니다.</block>
   <block id="fb37d117e595c8205adc8fecd60f7452" category="open-title">Amazon FSx for Windows 파일 서버</block>
   <block id="cb5e0284150576689077da6627584059" category="list-text">Storage에서 * Explore Savings * 를 선택한 다음 * Amazon FSx for Windows File Server * 를 선택합니다.</block>
-  <block id="b54153fb083ff640086a09705d6be5d6" category="list-text">* 지역 * : 드롭다운 메뉴에서 Windows용 FSx 파일 서버 구성의 지역을 선택합니다.</block>
-  <block id="29a1bd432dfb2f92d81cfac307557f6e" category="list-text">* 배포 유형 *: * Single Availability Zone * 또는 * Multiple Availability Zone * 을 선택합니다.</block>
   <block id="7f5904e943a7ad07dc886d7c88404629" category="list-text">* 스토리지 유형 *: SSD 스토리지 유형이 기본적으로 선택됩니다.</block>
-  <block id="b624449b32230563b8d0ce3fa3968b68" category="list-text">* 스토리지 용량(TiB) *: 구성에 사용할 스토리지 용량을 입력합니다.</block>
-  <block id="27da4d920c51a741ef1b992a9b92efcc" category="list-text">* 중복 제거 절감(%) *: 중복 제거에서 예상되는 용량 절약 비율을 입력합니다.</block>
-  <block id="d16042c29a30f34855fb9b5a48c29308" category="list-text">* 스냅샷 주파수 *: 구성에 대한 스냅샷 주파수를 선택합니다.</block>
-  <block id="f56b252619db005317efd8d7b707ff7a" category="list-text">* 프로비저닝된 SSD IOPS *: 프로비저닝된 SSD IOPS를 입력하십시오.</block>
-  <block id="47a5687a467532ea2a2636d3e4a6e156" category="list-text">* 처리량(MiB/s) *: MiB/s 단위로 처리량을 입력합니다</block>
   <block id="d2a6652ddeb631da029d1f2806e11fdc" category="open-title">Amazon Elastic File System(EFS)</block>
   <block id="7a81b7e66c9f8ac505d461aa77e680ed" category="list-text">스토리지에서 * 절약 효과 탐색 * 을 선택한 다음 * Amazon Elastic File System(EFS) * 을 선택합니다.</block>
-  <block id="6c6bf982f0c9cedc9490cceb9b9d8bf0" category="list-text">* 파일 시스템 유형 *: * 지역 * 또는 * 원 존 * 을 선택합니다.</block>
-  <block id="537ff6389381a38566c498c2b3031774" category="list-text">* 스토리지 용량(TiB) *: EFS 구성의 저장 용량을 입력합니다.</block>
-  <block id="4720b883f322ef8f7805946363f1b64f" category="list-text">* 자주 액세스하는 데이터(%) *: 자주 액세스하는 데이터의 비율을 입력합니다.</block>
-  <block id="cff784034f9666e7c41477fde3051bb7" category="list-text">* 처리량 모드 *: * 프로비저닝된 처리량 * 또는 * 탄성 처리량 * 을 선택합니다.</block>
-  <block id="65b71a60167989e096b315f89a271333" category="list-text">* 처리량(MiB/s) *: MiB/s 단위의 처리량을 입력합니다</block>
   <block id="6a882e9e3ebbb1d673beb5404c763122" category="paragraph">스토리지 시스템 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.</block>
   <block id="224be392ef5d5444786fa1dea246184d" category="paragraph">또한 페이지 하단으로 스크롤하여 * PDF 내보내기 * 또는 * 계산 보기 * 로 이동합니다.</block>
   <block id="aca77c97dcf29f670f572a7129863195" category="section-title">FSx for ONTAP 파일 시스템 배포</block>
@@ -1026,10 +994,6 @@
   <block id="541f0f17fbfba6b941c5b77a421fb336" category="list-text">* 보호 *: 로컬 스냅샷, 스냅샷 정책 이름, 원격 복제 및 FSx for ONTAP 백업이 포함됩니다.</block>
   <block id="69a94f722f40461d326d0d87f7643499" category="summary">Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
-  <block id="755eba92a1ce7cdbaf7f5be63339d16d" category="section-title">7월 7일</block>
-  <block id="c69801aa2e954d676d8d7d6b7809162d" category="paragraph">Amazon FSx for NetApp ONTAP은 현재 BlueXP 워크로드 팩토리에서도 제공됩니다.</block>
-  <block id="0035cc2a82f469e05cbd33e243c90ba4" category="inline-link-macro">Amazon FSx for NetApp ONTAP용 BlueXP Workload Factory에 관해 알아보십시오</block>
-  <block id="7675e9bb370835e22526b277726a1f2c" category="paragraph"><block ref="de23ea57673768fee7d94882832b5150" category="inline-link-macro-rx"></block>..</block>
   <block id="11794ccdce960744ed043096c7dd2bd7" category="sidebar">NetApp ONTAP용 Amazon FSx는 일관된 하이브리드 클라우드 경험을 제공하는 네이티브 AWS 관리 서비스에 ONTAP의 모든 기능을 제공합니다. 이 문서에서는 BlueXP 워크로드 팩토리를 사용하여 FSx for ONTAP를 관리하는 방법을 설명합니다.</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="sidebar">NetApp ONTAP용 Amazon FSx 문서</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
@@ -1086,8 +1050,6 @@
   <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">스크린샷은 스냅샷을 사용하는 FSx for ONTAP 스토리지의 데이터 보호, 여러 지역에 걸친 복제, 오브젝트 스토리지로 백업을 보여줍니다.</block>
   <block id="29bed1477f8a04f4f702564c7e6bb224" category="paragraph"><block ref="29bed1477f8a04f4f702564c7e6bb224" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9c70344ba40b88fdb8c4d8e5b34884e" category="list-text">Delete volume(볼륨 삭제) 대화 상자에서 "delete(삭제)"를 입력하여 볼륨을 삭제합니다.</block>
-  <block id="afc55fe26a4a4d38cb013803df05c70e" category="paragraph"><block ref="afc55fe26a4a4d38cb013803df05c70e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c45c1ca6034a192f20806fbb0fc110d9" category="paragraph"><block ref="c45c1ca6034a192f20806fbb0fc110d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0d9b99cb00c934d1cd88332ae901fc26" category="section-title">Workload Factory 사용 도구</block>
   <block id="76737aecf42a629e0422271332fcc5a3" category="paragraph">다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.</block>
   <block id="0fc51b33bbeafc6425a9bd19ec449966" category="list-text">* Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다</block>
@@ -1100,7 +1062,6 @@
   <block id="6b6bb5bfce611b62621235836da5c8a9" category="paragraph">_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 AI와 같은 작업 부하 기능을 선택하고 _AUTOMATE_MODE에서 작업할 수 있는 올바른 권한을 갖도록 IAM 정책을 만들어야 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 합니다.</block>
   <block id="e5a41f95a3cb9b200664e28fdab1a637" category="inline-image-macro">파일 시스템의 개요 탭에 있는 세 개의 점 메뉴 스크린샷</block>
   <block id="b32bfe90ed6acc2544026bb974e2ffc9" category="paragraph"><block ref="b32bfe90ed6acc2544026bb974e2ffc9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b9e7249a649dc92913cae3cb18a805ea" category="section-title">8월 4일</block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 지원</block>
   <block id="7f67d234b28766a76903424b29245652" category="paragraph">이제 코드박스에서 Terraform을 사용하여 파일 시스템 및 스토리지 VM을 배포하고 관리할 수 있습니다.</block>
   <block id="75086276ae6b7e370f36c7fc49383216" category="inline-link-macro">파일 시스템을 생성합니다</block>
@@ -1110,4 +1071,59 @@
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="a0d5836b9915a7e404d529a2ee0d2af5" category="section-title">스토리지 계산기에서 처리량 및 IOPS 권장 사항을 확인하십시오</block>
   <block id="b48a7422f4f1f71c3ef03d7a8291f43f" category="paragraph">스토리지 계산기는 AWS 모범 사례를 기반으로 처리량과 IOPS에 대한 FSx for ONTAP 파일 시스템 구성을 권장하므로 선택 항목에 대한 최적의 지침이 제공됩니다.</block>
+  <block id="effdadd80abed8c573c85b4a570ed377" category="paragraph">워크로드 팩토리에는 스토리지 절감 계산기가 내장되어 있으므로 Amazon 스토리지 환경을 FSx for ONTAP와 비교할 수 있습니다. AWS 자격 증명을 제공하거나 제공하지 않고 절감 효과를 알아보고 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다. AWS 자격 증명을 제공할 때 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택할 수 있으며, Workload Factory가 자동으로 비교하도록 할 수 있습니다. 계산기는 수동 또는 자동 중 어떤 스토리지 서비스가 스토리지 요구 사항에 가장 낮은 비용을 제공하는지 결정합니다.</block>
+  <block id="0069e97fd4735ad06c52ab088603f0b7" category="paragraph">스토리지 계산기에서 가장 비용 효율적인 스토리지가 FSx for ONTAP으로 결정되면 FSx for ONTAP 구성을 생성하거나 저장하고 코드박스를 사용하여 워크로드 팩토리에게 부여한 권한에 상관없이 코드형 인프라 템플릿을 생성할 수 있습니다.</block>
+  <block id="9c34331abb32017c0949af1d664fefb5" category="section-title">계산기 옵션</block>
+  <block id="7b51e648f3a069a510d6dcf808fa286b" category="paragraph">시스템과 FSx for ONTAP 간의 비용 비교를 위해 Amazon 스토리지 환경을 위한 커스터마이징 및 자동 감지 기능을 제공하는 두 가지 계산기 옵션을 사용할 수 있습니다.</block>
+  <block id="4964d70a58f9e266c631ca8639cc5940" category="paragraph">사용자 정의를 통한 절감 탐색: 활용 사례, 지역, 볼륨 또는 파일 시스템 수, 스토리지 양, 스냅샷 빈도, 스냅샷당 변경된 양, 프로비저닝된 IOPS, 처리량 등을 포함한 스토리지 환경에 대한 구성 설정을 제공합니다.</block>
+  <block id="9174d6c170a49a851cf523275f13d9b5" category="paragraph">감지된 스토리지 환경의 비용 절감 알아보기: Workload Factory는 기존 AWS 스토리지 환경에 연결하고 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 자동 모드를 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.</block>
+  <block id="f565eb47bc8c215541fe00205d9b37d3" category="section-title">맞춤화를 통한 절감 효과를 살펴보십시오</block>
+  <block id="ad314b06ac1a79501c701a40aceae82e" category="list-text">* 사용 사례 *: 필수. 드롭다운 메뉴에서 사용 사례를 선택합니다. 선택한 사용 사례에 따라 비교할 FSx for ONTAP 파일 시스템의 특성이 결정됩니다.</block>
+  <block id="c578171963a8b6b01a894020f1eac757" category="list-text">* 지역 *: 선택 요소입니다. 드롭다운 메뉴에서 EBS 구성 지역을 선택합니다.</block>
+  <block id="4e9f180cc543af4c771cec91ba0032c6" category="list-text">*EBS 볼륨 유형 선택 *: 선택 사항. 구성에 사용되는 EBS 볼륨 유형을 선택합니다.</block>
+  <block id="615e43ed8724fd09a64566abc26fb289" category="list-text">* 볼륨 수 *: 선택 사항. EBS 구성에 볼륨 수를 입력합니다.</block>
+  <block id="1421dae9593b70a7afd5140532484d1f" category="list-text">* 볼륨당 스토리지 용량(TiB) *: 선택 사항. 볼륨당 스토리지 용량을 TiB 단위로 입력합니다.</block>
+  <block id="763dd5b8e8165e2a9412ac60f84dcdf6" category="list-text">* 스냅샷 주파수 *: 선택 사항. EBS 구성에 대한 스냅샷 빈도를 선택합니다.</block>
+  <block id="7cad40bb1c281f7c6446df69f4ed9da6" category="list-text">* 스냅샷당 변경된 양(GiB) *: 선택 사항. 스냅샷 스토리지 전용입니다. 스냅샷당 변경된 용량을 GiB 단위로 입력합니다.</block>
+  <block id="e771ef39bb15de2146c7351c827191d9" category="list-text">* 볼륨당 프로비저닝된 IOPS *: 선택 사항. GP3, io1 및 io2 볼륨의 경우 볼륨당 프로비저닝된 IOPS를 입력합니다.</block>
+  <block id="5bef002820abd3ef400e3754efa472cc" category="list-text">* 처리량(MiB/s) *: 선택 요소입니다. GP3 볼륨에만 해당됩니다. 볼륨당 MiB/s 단위로 처리량을 입력합니다.</block>
+  <block id="8ff9e2e2fab0372fcd6a3b123a281939" category="list-text">* 지역 *: 선택 요소입니다. 드롭다운 메뉴에서 Windows용 FSx 파일 서버 구성 지역을 선택합니다.</block>
+  <block id="d0c9749f25ada7c98c43c08b723dd665" category="list-text">* 배포 유형 *: 선택 요소입니다. Single Availability Zone * 또는 * Multiple Availability Zone * 을 선택합니다.</block>
+  <block id="c0371a9ea5bd67e58fa5b0c8df5a8a29" category="list-text">* 스토리지 용량(TiB) *: 선택 사항. 구성에 대한 스토리지 용량을 입력합니다.</block>
+  <block id="60c951b00f5f43b3c0658f08b1a5fc17" category="list-text">* 중복 제거 절약(%) *: 선택 사항. 중복제거를 통해 예상되는 용량 절감 비율을 입력합니다.</block>
+  <block id="70ad6620002c5d64858ff5608b8ba771" category="list-text">* 스냅샷 주파수 *: 선택 사항. 구성에 대한 스냅샷 빈도를 선택합니다.</block>
+  <block id="265d4b478b6cec2bb4816a7e23d5c47b" category="list-text">* 프로비저닝된 SSD IOPS *: 선택 사항. 프로비저닝된 SSD IOPS를 입력합니다.</block>
+  <block id="2f6f251ec4341836e0294c4e2d84758f" category="list-text">* 처리량(MiB/s) *: 선택 요소입니다. MiB/s 단위로 처리량을 입력합니다</block>
+  <block id="55dfd953db30d92c33db46cc8b490d25" category="list-text">* 파일 시스템 유형 *: 선택 사항. Regional * 또는 * one zone * 을 선택합니다.</block>
+  <block id="f9c0f908288da6f5a9ed752eda354b26" category="list-text">* 스토리지 용량(TiB) *: 선택 사항. EFS 구성의 저장 용량을 입력합니다.</block>
+  <block id="22961ecd0e6b7fbfa087f4d48d7b93e8" category="list-text">* 자주 액세스하는 데이터(%) *: 선택 요소입니다. 자주 액세스하는 데이터의 비율을 입력합니다.</block>
+  <block id="926c8d33ae17cfb0c9de244b298580fa" category="list-text">* 처리량 모드 *: 선택 사항. provisioned throughput * 또는 * Elastic throughput * 을 선택합니다.</block>
+  <block id="e48527e4152c0871d86e420d6389eb16" category="list-text">* 처리량(MiB/s) *: 선택 요소입니다. MiB/s 단위로 처리량을 입력합니다</block>
+  <block id="c279c48e63fa7d3f3bb448fc48e33d03" category="inline-xref">FSx for ONTAP 파일 시스템 배포</block>
+  <block id="c0c6f43c72d4131a3142969ee1f93961" category="paragraph">FSx for ONTAP으로 전환하려면 의 지침을 <block ref="d4d3e2c1446af85f31cda9e1ddaf30d7" category="inline-xref-macro-rx"></block>따릅니다.</block>
+  <block id="b531032648e600a642b682616d2a0bdd" category="section-title">감지된 스토리지 환경의 비용 절감에 대해 알아보십시오</block>
+  <block id="cb10bf47866edd2ac9fb6586867bd1f6" category="admonition">이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀도 복사본에 대한 계산을 지원하지 않습니다. 사용자 지정을 통해 비용 절감을 도모할 때 EBS 및 FSx for Windows File Server 스냅샷 세부 정보를 제공할 수 있습니다.</block>
+  <block id="9f9100c91adcf9dad4883f822e09cda9" category="list-text">저장소 인벤토리에서 * EBS(Elastic Block Store) * 탭을 선택합니다.</block>
+  <block id="4e6bb917970bfdc851c5092e11272217" category="list-text">FSx for ONTAP와 비교할 인스턴스를 선택하고 * 절감 효과 탐색 * 을 클릭합니다.</block>
+  <block id="f59ef66ff04b00cacb36ef4c77c51958" category="list-text">Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스를 기반으로 미리 채워집니다.</block>
+  <block id="bca9e850c916e20118ab9da7a15e1ab7" category="list-text">* 사용 사례 *: 구성에 대한 사용 사례. 필요한 경우 사용 사례를 변경할 수 있습니다.</block>
+  <block id="fbb814a12d4b444e10fc3fb95977d4ff" category="list-text">* Selected volumes *: EBS 구성의 볼륨 수입니다</block>
+  <block id="6c52ebf14450d045b355a868931e1164" category="list-text">* 총 스토리지 용량(TiB) *: 볼륨당 스토리지 용량(TiB)입니다</block>
+  <block id="304b6d4108ca48d891db9c471488358b" category="list-text">* 총 프로비저닝 IOPS *: GP3, io1 및 io2 볼륨의 경우</block>
+  <block id="8f5e9660dd3425492cf59bc6e12606d8" category="list-text">* 총 처리량(MiB/s) *: GP3 볼륨에만 해당</block>
+  <block id="2da38d4eab31e419f29bebc00eb3d264" category="list-text">저장소 인벤토리에서 * Windows 파일 서버용 * FSx 탭을 선택합니다.</block>
+  <block id="15fc70bd68494b595c2e5441312916e5" category="list-text">Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스의 배포 유형에 따라 미리 채워집니다.</block>
+  <block id="a32ffe6360aa9a89cb9696c19f828d91" category="list-text">* 선택한 파일 시스템</block>
+  <block id="148f511d9c35e6ff4cb92ebc25a1c9cf" category="list-text">* 총 저장 용량(TiB) *</block>
+  <block id="9dbb3393e470b57796b7ec491b66bdea" category="list-text">* 프로비저닝된 SSD IOPS *</block>
+  <block id="22706a4c75c6b61679dc073e45ec6e08" category="list-text">* 처리량(MiB/s) *</block>
+  <block id="ff878267bfd97975ad2ec503878325c1" category="list-text">저장소 인벤토리에서 * EFS(Elastic File System) * 탭을 선택합니다.</block>
+  <block id="a765aa8369baa37d4241f37483d8954c" category="list-text">* 전체 파일 시스템 *</block>
+  <block id="9285022230e927d788a11d636f2a52c4" category="list-text">* 총 프로비저닝 처리량(MiB/s) *</block>
+  <block id="6aae74300e54ee6bdcfadde9a88345f6" category="list-text">* 총 탄성 처리량 - 읽기(GiB) *</block>
+  <block id="7b2421f95d1133c7da8946bd2bb58d94" category="list-text">* 총 탄력적 처리량 – 쓰기(GiB) *</block>
+  <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024년 8월 4일</block>
+  <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024년 7월 7일</block>
+  <block id="ed54fefae379fac8157c0d466e30a150" category="section-title">데이터베이스용 Workload Factory 초기 릴리즈</block>
+  <block id="7737adcb101b7285a3a8567ae4d22021" category="paragraph">초기 릴리즈에는 데이터베이스 워크로드를 위한 스토리지 환경으로 Amazon FSx for NetApp ONTAP을 사용하여 비용 절감을 탐색하고, Microsoft SQL Server를 감지, 관리 및 배포하고, 데이터베이스를 배포 및 복제하고, Workload Factory 내에서 이러한 작업을 모니터링하는 기능이 포함되어 있습니다.</block>
 </blocks>
