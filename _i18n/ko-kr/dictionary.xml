@@ -1126,4 +1126,8 @@
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024년 7월 7일</block>
   <block id="ed54fefae379fac8157c0d466e30a150" category="section-title">데이터베이스용 Workload Factory 초기 릴리즈</block>
   <block id="7737adcb101b7285a3a8567ae4d22021" category="paragraph">초기 릴리즈에는 데이터베이스 워크로드를 위한 스토리지 환경으로 Amazon FSx for NetApp ONTAP을 사용하여 비용 절감을 탐색하고, Microsoft SQL Server를 감지, 관리 및 배포하고, 데이터베이스를 배포 및 복제하고, Workload Factory 내에서 이러한 작업을 모니터링하는 기능이 포함되어 있습니다.</block>
+  <block id="76d820a16128270adf6a061b253cca06" category="inline-link-macro">데이터베이스에 대해 알아봅니다</block>
+  <block id="c8b559206fbe2064f93b1a567d84e637" category="paragraph"><block ref="eda6f6881c0c5cc5180d85b417e4f376" category="inline-link-macro-rx"></block>..</block>
+  <block id="b067c9e642b13c36b2c53da10c676c3e" category="paragraph">&lt;stdin&gt;-include::_whatsnew/2024-08-04.adoc [ ] 의 해결되지 않은 지시문</block>
+  <block id="63407573d31f484ae46757dbe98044c7" category="paragraph">&lt;stdin&gt;-include:_whatsnew/2024-07-07.adoc의 해결되지 않은 지시문 [ ]</block>
 </blocks>
