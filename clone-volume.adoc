@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: clone-volume.html 
-keywords: clone volume 
+keywords: clone volume, clone, clone data 
 summary: 볼륨을 클론하여 테스트할 원본 볼륨의 읽기-쓰기 볼륨을 만듭니다. 
 ---
 = 볼륨의 클론을 생성합니다
