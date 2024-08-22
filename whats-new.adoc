@@ -23,8 +23,8 @@ Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.
 
 이제 코드박스에서 Terraform을 사용하여 파일 시스템 및 스토리지 VM을 배포하고 관리할 수 있습니다.
 
-* link:create-file-system.html["파일 시스템을 생성합니다"]
-* link:create-storage-vm.html["스토리지 VM을 생성합니다"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["파일 시스템을 생성합니다"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-storage-vm.html["스토리지 VM을 생성합니다"]
 * link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["코드박스에서 Terraform을 사용합니다"^]
 
 
@@ -42,4 +42,4 @@ Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.
 
 === Amazon FSx for NetApp ONTAP용 워크로드 팩토리 최초 릴리즈
 
-Amazon FSx for NetApp ONTAP은 현재 워크로드 팩토리에서 일반적으로 제공됩니다.
+Amazon FSx for NetApp ONTAP은 일반적으로 워크로드 공장에서 사용할 수 있습니다.
