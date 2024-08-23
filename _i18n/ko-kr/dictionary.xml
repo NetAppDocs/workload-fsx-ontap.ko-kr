@@ -1063,7 +1063,6 @@
   <block id="e5a41f95a3cb9b200664e28fdab1a637" category="inline-image-macro">파일 시스템의 개요 탭에 있는 세 개의 점 메뉴 스크린샷</block>
   <block id="b32bfe90ed6acc2544026bb974e2ffc9" category="paragraph"><block ref="b32bfe90ed6acc2544026bb974e2ffc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 지원</block>
-  <block id="7f67d234b28766a76903424b29245652" category="paragraph">이제 코드박스에서 Terraform을 사용하여 파일 시스템 및 스토리지 VM을 배포하고 관리할 수 있습니다.</block>
   <block id="75086276ae6b7e370f36c7fc49383216" category="inline-link-macro">파일 시스템을 생성합니다</block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
@@ -1126,4 +1125,5 @@
   <block id="03b2cfc949418819e16b1dc5fa3660ae" category="list-text"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block></block>
   <block id="3b915cd68add8a6cdac4cd1adeb5f100" category="list-text"><block ref="3b915cd68add8a6cdac4cd1adeb5f100" category="inline-link-macro-rx"></block></block>
   <block id="bbccc2f370efe6824018b613b1dd5839" category="paragraph">Amazon FSx for NetApp ONTAP은 현재 워크로드 팩토리에서 일반적으로 제공됩니다.</block>
+  <block id="0fd886acd6700c343d655429665d7e6a" category="paragraph">이제 코드박스에서 Terraform을 사용하여 파일 시스템 및 스토리지 VM을 구축할 수 있습니다.</block>
 </blocks>
