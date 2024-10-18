@@ -438,8 +438,6 @@
   <block id="c4037415f2f0cfbaf2d8633bef548eca" category="paragraph">볼륨을 삭제하기 전에 다음 사항을 고려하십시오.</block>
   <block id="7ba3b681b508a24c70a973831af6f1ad" category="list-text">로컬 스냅샷: 이 FSx for ONTAP 파일 시스템과 연결된 모든 스냅샷이 영구적으로 삭제됩니다.</block>
   <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAP 백업: FSx for ONTAP 백업 복사본은 그대로 유지되며 그래도 사용할 수 있습니다.</block>
-  <block id="257f4990e0b233436c87d843d19bde86" category="inline-link-macro">기존 복제 관계를 삭제합니다</block>
-  <block id="dc3d3cc2dd8fe8ca34129b7367abba17" category="list-text">복제 관계: 볼륨을 삭제하기 전에 이 볼륨에 대해 손상된 관계가 남아 있지 않도록 하는 것이 좋습니다 <block ref="507a7d95f37121fd7920ef201528352a" category="inline-link-macro-rx"></block> .</block>
   <block id="524193967bbe3f8da7683435e0a28ea4" category="list-text">FSx for ONTAP * 탭에서 삭제할 볼륨이 있는 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="b0498e030069e9d348b276238c375c45" category="list-text">볼륨 탭에서 삭제할 볼륨의 점 3개 메뉴를 선택합니다.</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 삭제 * 를 선택합니다.</block>
@@ -1157,4 +1155,6 @@
   <block id="c7f0e7c4e7e9f76582f27e34058deaa6" category="paragraph">클론 복제된 FlexVol volume을 상위 볼륨에서 분할하여 클론을 일반적인 읽기-쓰기 FlexVol volume로 만듭니다.</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024년 9월 29일</block>
   <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSI 프로토콜은 FlexVol 볼륨에만 사용할 수 있습니다. ^1^</block>
+  <block id="e6816f159adf84ca7c085ce0702311af" category="inline-link-macro">기존 복제 관계를 모두 삭제합니다</block>
+  <block id="da13b22f351bd4b981038bd55ca5d3ab" category="list-text">복제 관계: 볼륨을 삭제하기 전에 이 볼륨에 대해 손상된 관계가 남아 있지 않도록 해야 <block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>합니다.</block>
 </blocks>
