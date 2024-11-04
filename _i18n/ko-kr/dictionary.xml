@@ -68,7 +68,6 @@
   <block id="6c25e6a6da95b3d583c6ec4c3f82ed4d" category="list-text">매주</block>
   <block id="d8977131f7da0505ccdd8e33f901bb75" category="summary">언제든지 볼륨의 스냅샷 정책을 업데이트합니다.</block>
   <block id="340f8dee912ac16b4fb008726d3ee88f" category="doc">볼륨의 스냅샷 정책을 변경합니다</block>
-  <block id="98a71d4244a8d2bc70cdcddc5cb64af6" category="paragraph">이 작업은 볼륨에 대해 생성된 스냅샷의 빈도를 업데이트하거나 자동 스냅샷을 비활성화합니다.</block>
   <block id="53e6e67988f9acb9f1aab8ccad2c0340" category="paragraph">기존 스냅샷 정책을 표시하려면 링크가 필요합니다. 링크를 연결하려면 * 계정 이름 * 에서 * 연결 링크 * 를 클릭합니다. 그런 다음 이 작업으로 돌아갑니다.</block>
   <block id="6e1473c0de5b054e5e9236bbe796cc32" category="list-text">Volumes * 탭을 선택합니다.</block>
   <block id="b7896e81066533818c46cd2b875eb7bf" category="list-text">볼륨 * 탭에서 스냅샷 정책을 변경할 볼륨의 점 3개 메뉴를 선택합니다.</block>
@@ -844,7 +843,6 @@
   <block id="edacd360980e63a5f2e01df2fa59b050" category="list-text">FSxadmin 암호 재설정 대화 상자에서 새 fsxadmin 암호를 입력하고 다시 입력하여 확인합니다.</block>
   <block id="279e520d9175d8e5591ed2ca3fc5acab" category="summary">필요한 경우 스토리지 VM 암호를 재설정합니다.</block>
   <block id="217c9f6fe263e655130a845fd58ccebe" category="doc">스토리지 VM의 암호를 재설정합니다</block>
-  <block id="eda74f1b1bef1d5fd22f162e31e3f4c5" category="list-text">스토리지 VM * 탭을 선택합니다.</block>
   <block id="a22a424f6f09fb9aab17350b24d152ce" category="list-text">스토리지 VM 탭에서 스토리지 VM의 점 3개 메뉴를 선택하여 암호를 재설정합니다.</block>
   <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">비밀번호 재설정 * 을 선택합니다.</block>
   <block id="0828ddc896996b7d41cc9ceb1e453764" category="list-text">암호 재설정 대화 상자에서 다음을 입력합니다.</block>
@@ -1091,7 +1089,6 @@
   <block id="c0c6f43c72d4131a3142969ee1f93961" category="paragraph">FSx for ONTAP으로 전환하려면 의 지침을 <block ref="d4d3e2c1446af85f31cda9e1ddaf30d7" category="inline-xref-macro-rx"></block>따릅니다.</block>
   <block id="b531032648e600a642b682616d2a0bdd" category="section-title">감지된 스토리지 환경의 비용 절감에 대해 알아보십시오</block>
   <block id="cb10bf47866edd2ac9fb6586867bd1f6" category="admonition">이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀도 복사본에 대한 계산을 지원하지 않습니다. 사용자 지정을 통해 비용 절감을 도모할 때 EBS 및 FSx for Windows File Server 스냅샷 세부 정보를 제공할 수 있습니다.</block>
-  <block id="9f9100c91adcf9dad4883f822e09cda9" category="list-text">저장소 인벤토리에서 * EBS(Elastic Block Store) * 탭을 선택합니다.</block>
   <block id="4e6bb917970bfdc851c5092e11272217" category="list-text">FSx for ONTAP와 비교할 인스턴스를 선택하고 * 절감 효과 탐색 * 을 클릭합니다.</block>
   <block id="f59ef66ff04b00cacb36ef4c77c51958" category="list-text">Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스를 기반으로 미리 채워집니다.</block>
   <block id="bca9e850c916e20118ab9da7a15e1ab7" category="list-text">* 사용 사례 *: 구성에 대한 사용 사례. 필요한 경우 사용 사례를 변경할 수 있습니다.</block>
@@ -1099,13 +1096,11 @@
   <block id="6c52ebf14450d045b355a868931e1164" category="list-text">* 총 스토리지 용량(TiB) *: 볼륨당 스토리지 용량(TiB)입니다</block>
   <block id="304b6d4108ca48d891db9c471488358b" category="list-text">* 총 프로비저닝 IOPS *: GP3, io1 및 io2 볼륨의 경우</block>
   <block id="8f5e9660dd3425492cf59bc6e12606d8" category="list-text">* 총 처리량(MiB/s) *: GP3 볼륨에만 해당</block>
-  <block id="2da38d4eab31e419f29bebc00eb3d264" category="list-text">저장소 인벤토리에서 * Windows 파일 서버용 * FSx 탭을 선택합니다.</block>
   <block id="15fc70bd68494b595c2e5441312916e5" category="list-text">Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스의 배포 유형에 따라 미리 채워집니다.</block>
   <block id="a32ffe6360aa9a89cb9696c19f828d91" category="list-text">* 선택한 파일 시스템</block>
   <block id="148f511d9c35e6ff4cb92ebc25a1c9cf" category="list-text">* 총 저장 용량(TiB) *</block>
   <block id="9dbb3393e470b57796b7ec491b66bdea" category="list-text">* 프로비저닝된 SSD IOPS *</block>
   <block id="22706a4c75c6b61679dc073e45ec6e08" category="list-text">* 처리량(MiB/s) *</block>
-  <block id="ff878267bfd97975ad2ec503878325c1" category="list-text">저장소 인벤토리에서 * EFS(Elastic File System) * 탭을 선택합니다.</block>
   <block id="a765aa8369baa37d4241f37483d8954c" category="list-text">* 전체 파일 시스템 *</block>
   <block id="9285022230e927d788a11d636f2a52c4" category="list-text">* 총 프로비저닝 처리량(MiB/s) *</block>
   <block id="6aae74300e54ee6bdcfadde9a88345f6" category="list-text">* 총 탄성 처리량 - 읽기(GiB) *</block>
@@ -1157,4 +1152,21 @@
   <block id="da13b22f351bd4b981038bd55ca5d3ab" category="list-text">복제 관계: 볼륨을 삭제하기 전에 이 볼륨에 대해 손상된 관계가 남아 있지 않도록 해야 <block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="f14fbd72eb1c8ba39f23e290779d3ac7" category="paragraph">BASIC_, _READ_ 및 _AUTOMATE_ 중에서 선택합니다 <block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
   <block id="9b0784be448bb1dc8f08485434f9a91a" category="paragraph">_READ_OR_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 AI와 같은 작업 부하 기능을 선택하고 _READ_OR_AUTOMATE_MODE에서 작업할 수 있는 올바른 권한을 갖도록 IAM 정책을 만들어야 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 합니다.</block>
+  <block id="31139fb3d548620b7d82f880e4660606" category="doc">스토리지 인벤토리의 탭 보기</block>
+  <block id="d4aa654cea4681dd5ca03650594006c6" category="paragraph">스토리지 인벤토리가 두 개의 탭 보기로 업데이트되었습니다.</block>
+  <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAP 탭: 현재 사용 중인 FSx for ONTAP 파일 시스템을 표시합니다.</block>
+  <block id="1113c9108b3e58789456954d1c2ea9c2" category="list-text">Explore Savings Tab: Elastic Block Store, FSx for Windows File Server 및 Elastic File Systems 스토리지 시스템을 표시합니다. 이 페이지에서 이러한 시스템을 FSx for ONTAP와 비교하여 절감 효과를 살펴볼 수 있습니다.</block>
+  <block id="62cf721f97d39a9aaf1ac7786071551c" category="paragraph">언제든지 볼륨에 대해 생성된 스냅샷의 빈도를 업데이트하거나 자동 스냅샷을 비활성화합니다.</block>
+  <block id="110f1585246a580402f0c6b34d42e65a" category="list-text">FSx for ONTAP * 탭에서 업데이트할 스냅샷 정책이 있는 볼륨이 포함된 FSx for ONTAP 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
+  <block id="fa8dc6e67f45bcde58853510e56ce6a1" category="list-text">파일 시스템의 개요 탭에서 * Volumes * 탭을 선택합니다.</block>
+  <block id="74e854d4ac135e193bafa7dfdf343efe" category="list-text">Storage에서 * Go to storage inventory * 를 선택합니다.</block>
+  <block id="9df0f8cc7fbb70153a71c3d1657c3d81" category="list-text">FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
+  <block id="80ad1fda17ca981880509b63f91591c9" category="list-text">스토리지 인벤토리에서 * Explore Savings * 탭을 선택합니다.</block>
+  <block id="a1e5470290e2e47a8295d8ae0b1e78af" category="list-text">EBS(Elastic Block Store) * 탭에서 FSx for ONTAP와 비교할 인스턴스를 선택하고 * Explore Savings * 를 클릭합니다.</block>
+  <block id="69664318bb60fdf05cfe25fa2b5a7242" category="list-text">Windows 파일 서버용 * FSx 탭을 선택합니다.</block>
+  <block id="5e172a101429002f6723f0f156cbd608" category="list-text">EFS(Elastic File System) * 탭을 선택합니다.</block>
+  <block id="78745d22af85f4409daf48ce5059c4c0" category="list-text">FSx for ONTAP * 탭에서 업데이트할 스토리지 VM이 있는 FSx for ONTAP 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
+  <block id="8c9880429b2df2018a366dbb14193026" category="list-text">파일 시스템의 개요 탭에서 * 스토리지 VM * 탭을 선택합니다.</block>
+  <block id="ca677da26b1ef83b53f1decf3bf448d0" category="list-text">FSx for ONTAP * 탭에서 분할할 클론 볼륨이 포함된 FSx for ONTAP 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
 </blocks>
