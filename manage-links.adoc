@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: manage-links.html 
 keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
-summary: 링크를 생성하고 관리하여 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계 및 연결을 제공할 수 있습니다. 따라서 AWS FSx for ONTAP API를 통해 사용할 수 없는 ONTAP 파일 시스템에서 직접 특정 기능을 모니터링하고 관리할 수 있습니다. 
+summary: BlueXP  워크로드 팩토리에서는 계정에 연결된 링크를 보고, 링크를 연결하고, 링크를 제거할 수 있습니다. 
 ---
-= 링크를 관리합니다
+= BlueXP  워크로드 팩토리 링크 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory 계정과 연결된 링크를 관리합니다.
+BlueXP  워크로드 공장 계정과 연결된 링크를 관리합니다.
 
 link:links-overview.html["링크에 대해 자세히 알아보세요"]link:create-link.html["링크를 만듭니다"] 또는.
 
@@ -22,11 +22,10 @@ link:links-overview.html["링크에 대해 자세히 알아보세요"]link:creat
 현재 계정과 연결된 링크를 볼 수 있습니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. 계정 메뉴에서 * 링크 * 를 선택합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 홈 페이지의 메뉴에서 * 링크 * 를 선택합니다.
 +
-image:screenshot-links-button.png["링크 페이지를 여는 방법을 보여 주는 스크린샷"]
+image:screenshot-menu-links.png["링크 페이지를 여는 방법을 보여 주는 스크린샷"]
 
 . 링크가 있는 경우 개요 페이지에서 정보를 제공합니다.
 . 링크와 연결된 FSx for ONTAP 파일 시스템을 보려면 관련 리소스 섹션에서 * 보기 * 버튼을 선택합니다.
@@ -43,9 +42,9 @@ image:screenshot-view-link-details.png["특정 링크를 사용하는 FSx for ON
 링크를 생성한 후 FSx for ONTAP 파일 시스템에 연결할 수 있습니다. 각 파일 시스템은 단일 NetApp 계정에서 하나의 링크에만 연결할 수 있지만 하나의 링크는 여러 파일 시스템과 연결될 수 있습니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 점 3개 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Associate link * 를 선택합니다.
 . 연결 링크 페이지에서 * 기존 링크 연결 * 을 선택하고 링크를 선택한 다음 * 적용 * 을 선택합니다.
 
@@ -57,7 +56,7 @@ image:screenshot-view-link-details.png["특정 링크를 사용하는 FSx for ON
 
 == 링크를 편집합니다
 
-Workload Factory 인터페이스에서 링크를 편집할 수 없습니다. 링크를 변경해야 하는 경우 새 링크를 만든 다음 해당 링크를 파일 시스템에 연결해야 합니다.
+워크로드 팩토리 인터페이스에서는 링크를 편집할 수 없습니다. 링크를 변경해야 하는 경우 새 링크를 만든 다음 해당 링크를 파일 시스템에 연결해야 합니다.
 
 
 NOTE: AWS 콘솔을 사용하여 Lambda 네트워크 구성(예: VPC, 서브넷 및 보안 그룹)을 편집할 수 있으며 변경 사항은 링크 관리 UI에 반영됩니다. 그러나 이러한 변경으로 인해 Lambda와 ONTAP 간 연결 문제가 발생할 수 있으며 권장되지 않습니다.
@@ -68,15 +67,17 @@ NOTE: AWS 콘솔을 사용하여 Lambda 네트워크 구성(예: VPC, 서브넷 
 
 사용자 환경에서 더 이상 사용하지 않는 링크를 제거할 수 있습니다. FSx for ONTAP 파일 시스템 또는 링크를 사용하는 기타 리소스는 링크가 제거된 후 특정 기능을 사용할 수 없습니다.
 
-링크는 Workload Factory에서만 삭제되며 AWS 환경에서는 삭제되지 않습니다. Workload Factory에서 링크를 제거한 후 AWS 계정에서 Lambda 함수를 삭제해야 합니다.
+링크는 Workload Factory에서만 삭제되며 AWS 환경에서는 삭제되지 않습니다. 워크로드 팩토리얼에서 링크를 제거한 후에는 AWS 계정에서 Lambda 함수를 삭제해야 합니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. 계정 메뉴에서 * 링크 * 를 선택합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 홈 페이지의 메뉴에서 * 링크 * 를 선택합니다.
++
+image:screenshot-menu-links.png["링크 페이지를 여는 방법을 보여 주는 스크린샷"]
+
 . 링크 페이지에서 메뉴 버튼을 선택하고 * 제거 * 를 선택합니다.
 +
-image:screenshot-remove-link.png["Workload Factory에서 링크를 제거하는 방법을 보여 주는 스크린샷"]
+image:screenshot-remove-link.png["워크로드 공장에서 링크를 제거하는 방법을 보여 주는 스크린샷"]
 
 . 확실하면 * 제거 * 를 다시 선택하십시오.
 

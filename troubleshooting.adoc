@@ -4,7 +4,7 @@ permalink: troubleshooting.html
 keywords: troubleshooting, troubleshoot, help, issues 
 summary: Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 문제 해결 주제가 포함되어 있습니다. 
 ---
-= FSx for ONTAP 문제 해결
+= BlueXP  워크로드 팩토리에서 FSx for ONTAP 문제 해결
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

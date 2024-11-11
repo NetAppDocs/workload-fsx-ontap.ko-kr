@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-volume-from-snapshot.html 
 keywords: create volume from snapshot, new volume 
-summary: FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다. 
+summary: BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다. 
 ---
 = 스냅샷에서 새 FSx for ONTAP 볼륨을 생성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷�
 
 
 [role="lead"]
-시점 복구가 가능하도록 스냅샷에서 새 FSx for ONTAP 볼륨을 생성합니다.
+BlueXP  워크로드 팩토리의 스냅샷에서 새 FSx for ONTAP 볼륨을 생성하여 시점 복구를 지원합니다.
 
 .이 작업에 대해
 스냅샷은 특정 시점에 생성된 FSx for ONTAP 볼륨의 읽기 전용 이미지입니다. 스냅샷에서 새 볼륨을 생성하면 볼륨 크기에 관계없이 몇 초 내에 전체 볼륨의 복사본이 생성됩니다. 새로 생성된 복제본은 새 볼륨을 나타냅니다.
@@ -24,12 +24,12 @@ summary: FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷�
 
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
-. 볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대한 점 3개 메뉴를 클릭합니다.
+. 볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대해 점 3개 메뉴를 선택합니다.
 . 데이터 보호 조치 *, * 스냅샷 * 을 선택한 다음 * 스냅샷에서 볼륨 생성 * 을 선택합니다.
 . Create volume from a snapshot 대화 상자에서 스냅샷 이름을 입력합니다.
-. Create * 를 클릭합니다.
+. Create * 를 선택합니다.
 

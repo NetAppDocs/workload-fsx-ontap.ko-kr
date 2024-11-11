@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: configure-active-directory.html 
 keywords: configure AD, configure active directory, update ad, edit active directory 
-summary:  
+summary: BlueXP  워크로드 팩토리의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성 및 업데이트합니다. 
 ---
 = 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다
 :allow-uri-read: 
@@ -11,17 +11,17 @@ summary:
 
 
 [role="lead"]
-FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.
+BlueXP  워크로드 팩토리의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성 및 업데이트합니다.
 
 .이 작업에 대해
 스토리지 VM에 대한 Active Directory 구성 및 업데이트에도 동일한 단계가 적용됩니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 업데이트할 스토리지 VM이 있는 파일 시스템의 세 점 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 스토리지 VM이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.
-. 스토리지 VM 탭에서 Active Directory를 구성할 스토리지 VM의 점 3개 메뉴를 선택합니다.
+. Storage VMs 탭에서 Active Directory를 구성할 스토리지 VM의 3개 점 메뉴를 선택합니다.
 . AD 구성 관리 * 를 선택합니다.
 . AD 구성 관리 페이지에서 다음을 제공합니다.
 +
@@ -49,5 +49,5 @@ AWS 관리형 Microsoft AD를 사용하는 경우 AWS 위임 FSx 관리자, AWS 
 
 
 
-. 적용 * 을 클릭합니다.
+. Apply * 를 선택합니다.
 

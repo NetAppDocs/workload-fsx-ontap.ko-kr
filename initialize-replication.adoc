@@ -4,14 +4,14 @@ permalink: initialize-replication.html
 keywords: initialize replication, begin replication, start replication 
 summary: 소스 볼륨과 타겟 볼륨 간의 복제 관계를 초기화합니다. 
 ---
-= 복제 관계를 초기화합니다
+= BlueXP  워크로드 팩토리에서 복제 관계를 초기화합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-소스 볼륨과 타겟 볼륨 간의 복제 관계를 초기화합니다.
+BlueXP  워크로드 팩토리에서 소스 및 타겟 볼륨 간의 복제 관계를 초기화합니다.
 
 .이 작업에 대해
 초기화는 소스 볼륨의 스냅샷을 만든 다음 해당 스냅샷과 해당 스냅샷이 참조하는 모든 데이터 블록을 타겟 볼륨으로 전송합니다.
@@ -20,11 +20,11 @@ summary: 소스 볼륨과 타겟 볼륨 간의 복제 관계를 초기화합니�
 이 작업을 완료하도록 선택할 때를 고려하십시오. 초기화에는 시간이 오래 걸릴 수 있습니다. 사용량이 적은 시간에 기준 전송을 실행할 수 있습니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.
-. Replication Relations 탭에서 초기화할 복제 관계의 점 3개 메뉴를 클릭합니다.
+. Replication Relations 탭에서 초기화할 복제 관계의 세 가지 점 메뉴를 선택합니다.
 . Initialize * 를 선택합니다.
-. 관계 초기화 대화 상자에서 * 초기화 * 를 클릭합니다.
+. 관계 초기화 대화 상자에서 * 초기화 * 를 선택합니다.
 

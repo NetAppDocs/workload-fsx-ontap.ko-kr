@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-storage-vm.html 
 keywords: create storage VM, create svm 
-summary: 'FSx for ONTAP 스토리지 VM(SVM)을 생성하여 워크로드 팩토리에서의 워크로드에 스토리지 및 데이터 서비스를 제공할 수 있습니다.' 
+summary: 'FSx for ONTAP 스토리지 VM(SVM)을 생성하여 BlueXP  워크로드 팩토리의 워크로드에 스토리지 및 데이터 서비스를 제공할 수 있습니다.' 
 ---
 = FSx for ONTAP 파일 시스템용 스토리지 VM을 생성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'FSx for ONTAP 스토리지 VM(SVM)을 생성하여 워크로드 팩토
 
 
 [role="lead"]
-FSx for ONTAP 파일 시스템용 스토리지 VM(SVM)을 생성하여 워크로드 팩토리에서의 워크로드를 위한 스토리지 및 데이터 서비스에 가상으로 액세스합니다.
+FSx for ONTAP 파일 시스템용 스토리지 VM(SVM)을 생성하여 BlueXP  워크로드 팩토리의 워크로드를 위한 스토리지 및 데이터 서비스에 가상으로 액세스합니다.
 
 .이 작업에 대해
 스토리지 VM은 작업 부하 공장 스토리지의 각 작업 부하에서 데이터에 액세스하는 데 사용할 수 있는 격리된 파일 서버입니다. 각 SVM에는 데이터 관리 및 액세스를 위한 자체 관리 자격 증명 및 엔드포인트가 있습니다.
@@ -25,15 +25,15 @@ SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이�
 
 == 스토리지 VM을 생성합니다
 
-Workload Factory 콘솔에서 스토리지 VM을 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
+워크로드 팩토리 콘솔에서 스토리지 VM을 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
 
 
 NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다. `fsxadmin` `vsadmin` 코드를 실행할 때 암호를 다시 입력해야 합니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 스토리지 VM을 생성하고 * 관리 * 를 선택합니다.
+. FSx for ONTAP 탭에서 스토리지 VM을 생성할 파일 시스템의 세 점 메뉴를 선택하고 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 스토리지 VM 생성 * 을 선택합니다.
 . 스토리지 VM 페이지의 스토리지 VM 구성에서 다음을 제공합니다.
 +
@@ -43,5 +43,5 @@ NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하�
 .. * 태그 * : 선택적으로 최대 50개의 태그를 추가할 수 있습니다.
 
 
-. Create * 를 클릭합니다.
+. Create * 를 선택합니다.
 

@@ -86,16 +86,16 @@ sidebar:
         url: "/edit-volume-autogrow.html"
       - title: 볼륨 용량을 늘립니다
         url: "/increase-volume-capacity.html"
-      - title: 볼륨 태그를 편집합니다
-        url: "/edit-volume-tags.html"
+      - title: 볼륨 태그 관리
+        url: "/manage-volume-tags.html"
       - title: 볼륨 용량을 재조정합니다
         url: "/rebalance-volume.html"
       - title: 계층화 정책을 변경합니다
         url: "/change-tiering-policy.html"
-      - title: NFS 엑스포트 정책을 변경합니다
-        url: "/change-nfs-export-policy.html"
-      - title: CIFS 공유를 변경합니다
-        url: "/change-cifs-share.html"
+      - title: NFS 엑스포트 정책을 관리합니다
+        url: "/manage-nfs-export-policy.html"
+      - title: CIFS 공유를 관리합니다
+        url: "/manage-cifs-share.html"
       - title: 복제된 볼륨을 분할합니다
         url: split-cloned-volume.html
       - title: 볼륨을 삭제합니다
@@ -116,8 +116,8 @@ sidebar:
         url: "/replicate-svm-to-file-system.html"
       - title: 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다
         url: "/configure-active-directory.html"
-      - title: 스토리지 VM 태그를 편집합니다
-        url: "/edit-svm-tags.html"
+      - title: 스토리지 VM 태그 관리
+        url: "/manage-svm-tags.html"
       - title: 스토리지 VM 암호를 재설정합니다
         url: reset-svm-password.html
       - title: 스토리지 VM을 삭제합니다
@@ -126,8 +126,8 @@ sidebar:
       entries:
       - title: 볼륨의 스냅샷 정책을 변경합니다
         url: change-snapshot-policy.html
-      - title: FSx for ONTAP 백업 일정을 업데이트합니다
-        url: "/update-backup-schedule.html"
+      - title: FSx for ONTAP 백업 일정을 관리합니다
+        url: "/manage-backup-schedule.html"
       - title: 장기 보존을 위해 스냅샷을 설정 및 편집합니다
         url: "/enable-snapshots-long-term.html"
       - title: 복제 관계를 반대로 전환합니다
@@ -165,5 +165,5 @@ sidebar:
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, amazon fsx for netapp ontap, fsx for ontap' 
 summary: Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오. 
 ---
-= 새로운 기능
+= NetApp ONTAP용 Amazon FSx의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -35,12 +35,12 @@ Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.
 
 === 링크 생성 업데이트
 
-* Codebox 뷰어: 이제 코드박스가 링크 생성 프로세스에 통합되었습니다. 작업 실행을 위해 AWS로 리디렉션하기 전에 Workload Factory의 Codebox에서 CloudFormation 템플릿을 보고 복사할 수 있습니다.
-* 필요한 권한: AWS CloudFormation에서 링크 생성을 실행하는 데 필요한 권한을 이제 Workload Factory의 Create Link 마법사에서 보고 복사할 수 있습니다.
+* Codebox 뷰어: 이제 코드박스가 링크 생성 프로세스에 통합되었습니다. 작업 실행을 위해 AWS로 리디렉션하기 전에 워크로드 팩토리얼의 Codebox에서 CloudFormation 템플릿을 보고 복사할 수 있습니다.
+* 필요한 권한: AWS CloudFormation에서 링크 생성을 실행하는 데 필요한 권한을 이제 워크로드 팩토리의 링크 생성 마법사에서 링크 생성 마법사를 보고 복사할 수 있습니다.
 * 수동 링크 생성 지원: 이 기능을 사용하면 링크 ARN을 수동으로 등록하여 AWS CloudFormation에서 독립 실행형 생성을 수행할 수 있습니다. 보안 또는 DevOps 팀이 링크 생성 프로세스를 지원할 때 유용합니다.
 
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 만듭니다"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 만듭니다"]
 
 
 
@@ -50,9 +50,9 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크�
 
 === 스토리지 관리를 위한 읽기 모드 지원
 
-읽기 모드는 Workload Factory에서 스토리지 관리에 사용할 수 있습니다. 읽기 모드는 코드형 인프라 템플릿이 특정 변수로 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 환경을 개선합니다. 코드형 인프라 템플릿은 Workload Factory에 대한 수정 권한을 제공하지 않고 AWS 계정에서 직접 실행할 수 있습니다.
+읽기 모드는 워크로드 공장에서 스토리지 관리에 사용할 수 있습니다. 읽기 모드는 코드형 인프라 템플릿이 특정 변수로 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 환경을 개선합니다. 코드형 인프라 템플릿은 워크로드 팩토리에 대한 수정 권한을 제공하지 않고 AWS 계정에서 직접 실행할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["읽기 모드에 대해 자세히 알아봅니다"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["읽기 모드에 대해 자세히 알아봅니다"]
 
 
 
@@ -60,7 +60,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["
 
 볼륨을 삭제하기 전에 백업할 수 있습니다. 백업은 삭제될 때까지 파일 시스템에 남아 있습니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["볼륨을 삭제합니다"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["볼륨을 삭제합니다"]
 
 
 
@@ -72,9 +72,9 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["볼륨
 
 이제 코드박스에서 Terraform을 사용하여 파일 시스템 및 스토리지 VM을 구축할 수 있습니다.
 
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["파일 시스템을 생성합니다"^]
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-storage-vm.html["스토리지 VM을 생성합니다"^]
-* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["코드박스에서 Terraform을 사용합니다"^]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["파일 시스템을 생성합니다"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-storage-vm.html["스토리지 VM을 생성합니다"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["코드박스에서 Terraform을 사용합니다"]
 
 
 
@@ -89,6 +89,6 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["볼륨
 
 
 
-=== Amazon FSx for NetApp ONTAP용 워크로드 팩토리 최초 릴리즈
+=== Amazon FSx for NetApp ONTAP의 워크로드 공장 최초 릴리즈
 
-Amazon FSx for NetApp ONTAP은 현재 워크로드 팩토리에서 일반적으로 제공됩니다.
+Amazon FSx for NetApp ONTAP은 현재 BlueXP  워크로드 공장에서 일반적으로 사용할 수 있습니다.

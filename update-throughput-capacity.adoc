@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: update-throughput-capacity.html 
 keywords: update throughput, change throughput, throughput capacity 
-summary: 필요에 따라 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다. 
+summary: 필요에 따라 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다. 
 ---
 = 파일 시스템의 처리량 용량을 업데이트합니다
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 필요에 따라 FSx for ONTAP 파일 시스템의 처리량 용량을 
 
 
 [role="lead"]
-필요에 따라 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다.
+필요에 따라 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다.
 
 처리량 용량 제한에 대해서는 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["할당량"^] AWS FSx for NetApp ONTAP 설명서를 참조하십시오.
 
 .단계
-. Workload Factory 콘솔에 로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 클릭합니다.
-. FSx for ONTAP * 탭에서 파일 시스템의 점 3개 메뉴를 클릭하여 처리량 용량을 업데이트한 다음 * 관리 * 를 선택합니다.
-. 정보 에서 * 처리량 용량 * 옆에 있는 연필 아이콘을 클릭합니다. 마우스를 * Throughput capacity * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 처리량 용량을 업데이트할 파일 시스템의 3점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 정보 아래에서 * 처리량 용량 * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * Throughput capacity * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.
 . 처리량 용량 대화 상자에서 필요한 처리량 용량을 선택합니다.
-. 적용 * 을 클릭합니다.
+. 적용 * 을 선택하여 변경 사항을 저장합니다.
 

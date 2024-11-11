@@ -2,25 +2,26 @@
 sidebar: sidebar 
 permalink: stop-replication.html 
 keywords: stop replication, break replication 
-summary: 소스 볼륨과 타겟 볼륨 간의 복제 관계를 중지합니다. 
+summary: 소스 및 타겟 볼륨 간의 복제 관계를 BlueXP  워크로드 팩터에서 중지합니다. 
 ---
-= 복제 관계를 중지합니다
+= BlueXP  워크로드 팩토리에서 복제 관계를 중지합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-복제를 중지하면 예약된 복제가 소스 볼륨에서 타겟 볼륨으로 업데이트됩니다. 타겟 볼륨이 읽기 전용에서 읽기-쓰기로 전환됩니다.
+BlueXP  워크로드 팩토리에서 복제 관계를 중지합니다. 복제 관계를 중지하면 예약된 복제가 소스 볼륨에서 타겟 볼륨으로 업데이트됩니다. 타겟 볼륨이 읽기 전용에서 읽기-쓰기로 전환됩니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 점 3개 메뉴를 클릭한 다음 * 관리 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
 . 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.
-. 복제 관계 탭에서 중지할 복제 관계의 점 3개 메뉴를 클릭합니다.
+. 복제 관계 탭에서 중지할 복제 관계의 세 점 메뉴를 선택합니다.
 . Break * 를 선택합니다.
 . 복제 중단 대화 상자에서 * 중단 * 을 선택합니다.
 
 
+.결과
 볼륨의 복제 상태가 * Broken * 으로 변경됩니다. 타겟 볼륨이 쓰기 가능 상태가 됩니다.

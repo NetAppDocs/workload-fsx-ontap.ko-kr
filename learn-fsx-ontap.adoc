@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: learn-fsx-ontap.html 
 keywords: Amazon FSx for NetApp ONTAP, FSx, storage, aws 
-summary: Amazon FSx for NetApp ONTAP은 고객이 Workload Factory 내에서 워크로드의 스토리지 백엔드로 파일 시스템을 시작하고 실행할 수 있는 완전 관리형 서비스입니다. 
+summary: Amazon FSx for NetApp ONTAP은 고객이 워크로드 공장 내에서 워크로드의 스토리지 백엔드로 파일 시스템을 시작하고 실행할 수 있는 완전 관리형 서비스입니다. 
 ---
-= Amazon FSx for NetApp ONTAP용 워크로드 팩토리에 대해 알아보십시오
+= BlueXP  워크로드 공장 에서 Amazon FSx for NetApp ONTAP에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAP는 완전 관리형 클라우드 기반 데이터 스토리지 서비스로서, 고급 데이터 관리 기능과 확장성이 뛰어난 성능을 제공합니다. FSx for ONTAP을 사용하면 BlueXP Workload Factory 내의 모든 워크로드에 대한 스토리지 백엔드로 파일 시스템을 생성하고 관리할 수 있습니다.
+Amazon FSx for NetApp ONTAP는 완전 관리형 클라우드 기반 데이터 스토리지 서비스로서, 고급 데이터 관리 기능과 확장성이 뛰어난 성능을 제공합니다. FSx for ONTAP을 사용하면 BlueXP  워크로드 공장 내의 모든 워크로드에 대한 스토리지 백엔드로 파일 시스템을 생성하고 관리할 수 있습니다.
 
 ONTAP용 FSX는 NetApp 고객이 현재 사내에서 사용하는 것과 동일한 기능, 성능 및 관리 기능을 기본 AWS 서비스의 단순성, 민첩성, 보안 및 확장성으로 제공합니다.
 
@@ -23,7 +23,7 @@ FSx for ONTAP은 워크로드 팩토리의 _ 스토리지 _ 구성 요소입니�
 
 FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
-* * 완전 관리형 서비스 *: Workload Factory 콘솔과 통합된 완전 관리형 서비스를 제공합니다.
+* * 완전 관리형 서비스 *: 워크로드 팩토리 콘솔과 통합된 완전 관리형 서비스를 제공합니다.
 * * 고가용성 *: 각 FSx for ONTAP 파일 시스템에 고가용성을 제공하여 단일 및 다중 가용성 영역 배포를 지원합니다.
 * * 자동 스냅샷 *: 파일 시스템 또는 볼륨의 거의 즉각적이고 공간 효율적인 시점 읽기 전용 복사본인 자동화된 효율적인 스냅샷으로 데이터를 보호합니다.
 * * 볼륨 복제 *: Amazon Web Services의 교차 지역 복제를 통해 재해 복구를 제공합니다.
@@ -40,7 +40,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
-== Workload Factory의 추가 기능
+== 워크로드 팩토리의 추가 기능
 
 * * 스토리지 비용 비교 계산기 *: Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지 비용을 FSx for ONTAP와 비교합니다. 계산기에서 FSx for ONTAP 스토리지 구성이 어떻게 잠재적 비용 절감을 제공하는지 살펴보고 FSx for ONTAP 스토리지로의 마이그레이션을 계획하실 수 있습니다.
 * * Workload Factory 사용자 인터페이스 *: Quick create_and_Advanced create_deployment 모드 옵션을 제공합니다. 빠른 생성에는 스토리지 구성에 대한 AWS, NetApp 및 업계 표준 모범 사례가 포함됩니다.
@@ -49,14 +49,15 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
-== Workload Factory 사용 도구
+== 워크로드 팩토리 사용을 위한 툴
 
-다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.
+다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
 
-* * Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다
-* * REST API *: 워크로드 팩토리 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
-* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 Workload Factory 콘솔에서 정의한 작업을 수행할 수 있습니다.
-* * Terraform BlueXP Workload Factory Provider *: Terraform을 통해 Workload Factory 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
+* * 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다
+* * BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다
+* * REST API *: 워크로드 공장 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다
+* * Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하면 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다
 
 
 
@@ -77,4 +78,4 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 NetApp ONTAP용 Amazon FSx는 AWS 퍼스트 파티 솔루션입니다. 이 서비스를 사용하는 FSx for ONTAP 파일 시스템, 인프라 또는 솔루션과 관련하여 궁금한 사항이나 기술 지원 문제가 있는 경우 AWS 관리 콘솔의 지원 센터를 사용하여 AWS에 지원 케이스를 여십시오. “FSx for ONTAP” 서비스와 적절한 범주를 선택합니다. AWS 지원 케이스를 생성하는 데 필요한 나머지 정보를 제공합니다.
 
-Workload Factory 또는 Workload Factory 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오 link:get-help.html["워크로드 팩토리용 FSx for ONTAP에 대한 도움을 받으십시오"].
+작업 부하 공장 또는 작업 부하 공장 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오link:get-help.html["워크로드 팩토리용 FSx for ONTAP에 대한 도움을 받으십시오"].

@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: create-file-system.html 
-keywords: create, FSx file system, ONTAP file system, Workload Factory, storage 
-summary: Workload Factory를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 볼륨 및 추가 데이터 서비스를 추가 및 관리할 수 있습니다. 
+keywords: create, FSx file system, ONTAP file system, workload factory, storage 
+summary: BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 볼륨 및 추가 데이터 서비스를 추가 및 관리할 수 있습니다. 
 ---
-= FSx for ONTAP 파일 시스템을 생성합니다
+= BlueXP  워크로드 팩토리에서 FSx for ONTAP 파일 시스템을 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 볼륨 및 추가 데이터 서비스를 추가 및 관리할 수 있습니다.
+BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 볼륨 및 추가 데이터 서비스를 추가 및 관리할 수 있습니다.
 
 .이 작업에 대해
 스토리지 VM은 파일 시스템을 생성할 때 생성됩니다.
@@ -19,7 +19,7 @@ Workload Factory를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 
 .시작하기 전에
 FSx for ONTAP 파일 시스템을 생성하기 전에 다음이 필요합니다.
 
-* Workload Factory에 FSx for ONTAP 파일 시스템을 생성하는 데 필요한 권한을 부여하는 IAM 역할의 ARN link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에 사용 권한을 부여하는 방법에 대해 알아봅니다"^]..
+* 워크로드 팩토리에게 FSx for ONTAP 파일 시스템을 생성하는 데 필요한 권한을 제공하는 IAM 역할의 ARN link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에 사용 권한을 부여하는 방법에 대해 알아봅니다"^]..
 * ONTAP용 FSx 인스턴스를 생성할 지역 및 VPC 정보
 
 
@@ -39,7 +39,7 @@ NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하�
 빠른 생성을 통해 권장되는 모범 사례 구성을 사용할 수 있습니다. FSx for ONTAP 파일 시스템을 생성한 후 대부분의 설정을 변경할 수 있습니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 스토리지에서 * FSx for ONTAP 생성 * 을 선택합니다.
 . FSx for ONTAP 생성 페이지에서 * 빠른 생성 * 을 선택합니다.
 +
@@ -47,7 +47,7 @@ NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하�
 
 . File system general configuration(파일 시스템 일반 구성) 에서 다음을 제공합니다.
 +
-.. * AWS 자격 증명 *: Workload Factory에 AWS 자격 증명을 추가하거나 자격 증명 없이 계속 진행합니다.
+.. * AWS credentials *: 워크로드 팩토리에 AWS 자격 증명을 추가하거나 자격 증명 없이 계속하려면 선택합니다.
 .. * 파일 시스템 이름 *: 파일 시스템의 이름을 입력합니다.
 .. * 배포 토폴로지 * : 배포 토폴로지를 선택합니다.
 +
@@ -109,7 +109,7 @@ AWS 관리형 Microsoft AD를 사용하는 경우 AWS 위임 FSx 관리자, AWS 
 Advanced create를 사용하면 가용성, 보안, 백업 및 유지 관리를 포함한 모든 구성 옵션을 설정할 수 있습니다.
 
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 스토리지에서 * FSx for ONTAP 생성 * 을 선택합니다.
 . ONTAP용 FSx 생성 페이지에서 * 고급 생성 * 을 선택합니다.
 +
@@ -117,7 +117,7 @@ Advanced create를 사용하면 가용성, 보안, 백업 및 유지 관리를 �
 
 . File system general configuration(파일 시스템 일반 구성) 에서 다음을 제공합니다.
 +
-.. * AWS 자격 증명 *: Workload Factory에 AWS 자격 증명을 추가하거나 자격 증명 없이 계속 진행합니다.
+.. * AWS credentials *: 워크로드 팩토리에 AWS 자격 증명을 추가하거나 자격 증명 없이 계속하려면 선택합니다.
 .. * 파일 시스템 이름 *: 파일 시스템의 이름을 입력합니다.
 .. * 배포 토폴로지 * : 배포 토폴로지를 선택합니다.
 +
