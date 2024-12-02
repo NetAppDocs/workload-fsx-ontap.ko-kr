@@ -23,8 +23,6 @@
   <block id="f76864e1c2588ae3d6373b6ab95e2209" category="list-text">파일 시스템 개요에서 * Volumes * 탭을 선택합니다.</block>
   <block id="2ca869b68be8f2b6e678f47d25c26fb7" category="list-text">고급 작업 * 을 선택한 다음 * CIFS 공유 편집 * 을 선택합니다.</block>
   <block id="736934ebc3ee8de296f3d5213e79430e" category="list-text">CIFS 공유 편집 페이지에서 다음을 제공합니다.</block>
-  <block id="59d0fdf4151cde9e812dd005074026a6" category="list-text">* 사용자 또는 그룹 *: 유효한 사용자 및 그룹을 입력하십시오. 각 항목은 세미콜론 ";"으로 구분합니다.</block>
-  <block id="e57960b090437945cad74087551739a4" category="list-text">* 권한 *: * 모든 권한 *, * 읽기/쓰기 *, * 읽기 * 또는 * 액세스 없음 * 을 선택합니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 대해</block>
   <block id="4c9aa322b281bc41d9f93e03b1223838" category="paragraph">엑스포트 정책 규칙에 대한 클라이언트 사양을 결정합니다. 클라이언트 사양에 대한 유효한 값은 다음과 같습니다.</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="list-text">IP 주소</block>
@@ -221,7 +219,6 @@
   <block id="c2ca79898f24b0041abe0a50f8a67aec" category="open-title">파일 시스템의 모든 볼륨을 복제합니다</block>
   <block id="932ea72af08ac8563c34e80a7a85d205" category="list-text">파일 시스템 개요에서 * 복제 생성 * 을 선택합니다.</block>
   <block id="8642bd9871818efa86fdfbc89b47d7fe" category="list-text">* 볼륨 이름 * : 대상 볼륨 이름은 다음 형식으로 자동으로<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block>생성됩니다.</block>
-  <block id="27178687718ce0fb69f45347b32592a7" category="paragraph">복제 관계가 * 복제 관계 * 탭에 나타납니다.</block>
   <block id="a008632064f344e2df83272a479135d3" category="doc">FSx for ONTAP 볼륨에 대한 스냅샷 정책을 생성합니다</block>
   <block id="8044f667bde3c7c59b4115402b5eaf0b" category="paragraph">FSx for ONTAP에 대한 내장된 세 가지 스냅샷 정책과 다른 사용자 지정 스냅샷 정책을 생성할 수 있습니다.</block>
   <block id="980ef1c1aa7d1456ee087df02119341e" category="list-text"><block ref="c21f969b5f03d33d43e04f8f136e7682" prefix="" category="inline-code"></block></block>
@@ -284,8 +281,6 @@
   <block id="60d0b377e23eff27c022e227c86f5dd8" category="paragraph">사용자 지정 내보내기 정책을 선택한 경우 드롭다운 메뉴에서 기존 정책 이름을 선택합니다.</block>
   <block id="2c55176e07be69c565e1c2c03d514cf2" category="paragraph">기존 엑스포트 정책을 선택한 경우 새 정책 이름을 입력합니다.</block>
   <block id="6925697406a52f10c0897464bf6b8ce9" category="list-text">* 수출 정책 규칙 추가 *: 필요에 따라 사용자 지정 수출 정책의 경우 수출 정책 규칙을 정책에 추가할 수 있습니다.</block>
-  <block id="88d72087f7214769d97c6467f6f5c337" category="list-text">* cifs share *: SMB 액세스를 제공하려면 CIFS 공유 이름을 입력하십시오.</block>
-  <block id="002f70daceb1af048541c69bc0b3c655" category="list-text">* 블록 액세스 *: 중요한 비즈니스 응용 프로그램을 실행하는 호스트가 iSCSI 프로토콜을 사용하여 볼륨에 액세스할 수 있습니다.</block>
   <block id="40519cf86659d77977d5ff7930ae23e0" category="paragraph">볼륨에 대한 블록 액세스를 설정하려면 다음 필드를 완료하십시오.</block>
   <block id="03ddda000e99a192f6ff8b3f46b455d2" category="list-text">* iSCSI 구성 *: 볼륨에 대한 블록 액세스를 위해 iSCSI를 구성하려면 다음 세부 정보를 제공하십시오.</block>
   <block id="15a68f4c283396b684880bba6f9b33b2" category="list-text">새 이니시에이터 그룹 생성 * 또는 * 기존 이니시에이터 그룹 매핑 * 을 선택합니다.</block>
@@ -398,7 +393,6 @@
   <block id="d2a6652ddeb631da029d1f2806e11fdc" category="open-title">Amazon Elastic File System(EFS)</block>
   <block id="7a81b7e66c9f8ac505d461aa77e680ed" category="list-text">스토리지에서 * 절약 효과 탐색 * 을 선택한 다음 * Amazon Elastic File System(EFS) * 을 선택합니다.</block>
   <block id="6a882e9e3ebbb1d673beb5404c763122" category="paragraph">스토리지 시스템 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.</block>
-  <block id="224be392ef5d5444786fa1dea246184d" category="paragraph">또한 페이지 하단으로 스크롤하여 * PDF 내보내기 * 또는 * 계산 보기 * 로 이동합니다.</block>
   <block id="aca77c97dcf29f670f572a7129863195" category="section-title">FSx for ONTAP 파일 시스템 배포</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">배포 방법</block>
   <block id="543b29a63a3d070c0ff920d687259dfc" category="paragraph">_basic_mode에서는 코드박스 창에서 콘텐츠를 복사하고 코드박스 방법 중 하나를 사용하여 FSx for ONTAP 파일 시스템을 배포할 수 있습니다.</block>
@@ -502,9 +496,6 @@
   <block id="18e73e557ecb75c57d1d16ca781cbfbe" category="list-text">Initialize * 를 선택합니다.</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
-  <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="section-title">링크</block>
-  <block id="fd18465573ec21a6218982055981f6b1" category="section-title">스토리지 효율성</block>
-  <block id="573994bf2d443bf682f6d3d34a979de0" category="paragraph">볼륨 생성 후에는 스토리지 효율성을 사용하지 않도록 설정하거나 활성화할 수 없습니다.</block>
   <block id="488044172f20eab904aecc2827c019b4" category="section-title">처리량 용량 영역 지원</block>
   <block id="0a27e957ebaf89bce02c66c147da7966" category="section-title">스케일업 배포</block>
   <block id="24aa3b91eee064e4bbffa941e071bd95" category="paragraph">다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
@@ -517,7 +508,6 @@
   <block id="2204b0f79985b7b0565114e8305937a5" category="section-title">스토리지 VM</block>
   <block id="b1c8cb58e124bead4ca2e09fa1c20c9b" category="paragraph">파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> .</block>
   <block id="3a448e496404b548627a97fc00da8e23" category="section-title">iSCSI 프로토콜 지원</block>
-  <block id="33060a985f3ea357dedca3b638c9dedc" category="list-text">iSCSI 프로토콜은 스케일 업 배포에만 지원됩니다. ^1^</block>
   <block id="53c858a11ae23c19aee107fb913f096a" category="list-text">볼륨당 하나의 LUN만 구성할 수 있습니다.</block>
   <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">지역 지원</block>
   <block id="1bf3a4f06c8408a2ff436e0b847ca3a3" category="list-text">캐나다 서부(캘거리) 지역은 현재 지원되지 않습니다.</block>
@@ -574,14 +564,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">워크로드 팩토리</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">데이터베이스용 워크로드 팩토리</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI를 위한 워크로드 팩토리</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware용 워크로드 팩토리</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="c2afadd6bca5968317f2f7f1a7e37514" category="doc">복제 관계의 최대 전송 속도를 제한합니다</block>
   <block id="091ab8de8bd05d3d281793c55240d887" category="paragraph">최대 전송 속도를 제한하는 것은 선택 사항이지만 권장됩니다. 제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다.</block>
   <block id="4cb1e25c015161bf2183f7f8af361d6a" category="paragraph">또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다.</block>
@@ -1209,4 +1191,111 @@
   <block id="baae6cbba4c997ef4c9035394e7dbd9e" category="sidebar">CIFS 공유를 관리합니다</block>
   <block id="11c0aa7596d4f4521c9a98f708c34cc4" category="sidebar">스토리지 VM 태그 관리</block>
   <block id="e4b304b6d81189c09bd7e999a18522e8" category="sidebar">FSx for ONTAP 백업 일정을 관리합니다</block>
+  <block id="c4f10a04f7aa75535a8a0475261393eb" category="doc">스케일아웃 FSx for ONTAP 파일 시스템용 블록 스토리지</block>
+  <block id="152983842f852ef5bae46ac675caec95" category="paragraph">이제 최대 6개의 HA 쌍으로 구성된 스케일아웃 파일 시스템 구축을 사용할 때 FSx for ONTAP을 통해 블록 스토리지를 프로비저닝할 수 있습니다.</block>
+  <block id="8cce6f6c21973d5dff1898076cddb209" category="paragraph"><block ref="8cce6f6c21973d5dff1898076cddb209" category="inline-link-macro-rx"></block></block>
+  <block id="609b2d9256f15ecb9d57d3f545d91174" category="section-title">마운트 명령을 사용할 수 있습니다</block>
+  <block id="67ba5d91692276a76737790f2df885ec" category="paragraph">이제 볼륨에 대한 NFS 및 CIFS 액세스에 마운트 명령을 사용할 수 있습니다. * 기본 작업 * 과 * 마운트 명령 보기 * 를 선택하여 FSx for ONTAP 파일 시스템 내에서 볼륨의 마운트 지점을 얻을 수 있습니다.</block>
+  <block id="f12470a0bbf95a722b70847640bd40c9" category="inline-image-macro">FSx for ONTAP 파일 시스템으로 이동하여 볼륨 메뉴를 선택하고 기본 작업을 선택한 다음, 보기 마운트 명령을 선택하여 마운트 명령을 보는 스크린샷 mount 명령 대화 상자가 나타나고 CIFS 또는 NFS 액세스에 대한 mount 명령이 표시됩니다.</block>
+  <block id="21817bf964617ea4f875252102707119" category="paragraph"><block ref="21817bf964617ea4f875252102707119" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0087bca38db021c2b14c65d5893a9339" category="inline-link-macro">볼륨에 대한 뷰 마운트 명령</block>
+  <block id="41cd808fdcb8411a8a73071649aca98e" category="paragraph"><block ref="41cd808fdcb8411a8a73071649aca98e" category="inline-link-macro-rx"></block></block>
+  <block id="70bf70871888ae321ee591627f1f149f" category="section-title">볼륨 생성 후 스토리지 효율성 업데이트</block>
+  <block id="4b1987aeb3ee9f5859457d872de9697a" category="paragraph">이제 볼륨 생성 후 FlexVol 볼륨의 스토리지 효율성을 사용하거나 사용하지 않도록 설정할 수 있습니다. 스토리지 효율성에는 중복제거, 데이터 압축, 데이터 컴팩션이 포함됩니다. 스토리지 효율성을 높이면 FlexVol volume에서 최적의 공간 절약 효과를 달성할 수 있습니다.</block>
+  <block id="b8ae90ddbb68f3303ee755cd1d9b5819" category="inline-link-macro">볼륨에 대한 스토리지 효율성 업데이트</block>
+  <block id="d26d51c8a86d1db1cfe8dd0317cc6274" category="paragraph"><block ref="d26d51c8a86d1db1cfe8dd0317cc6274" category="inline-link-macro-rx"></block></block>
+  <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">온프레미스 ONTAP 클러스터 검색 및 복제</block>
+  <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">온프레미스 ONTAP 클러스터 데이터를 FSx for ONTAP 파일 시스템으로 검색하고 복제하여 AI 지식 기반을 보강하는 데 사용할 수 있습니다. 모든 사내 검색 및 복제 워크플로는 스토리지 인벤토리의 새로운 * 온-프레미스 ONTAP * 탭에서 사용할 수 있습니다.</block>
+  <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">사내 ONTAP 클러스터를 검색합니다</block>
+  <block id="b169507cd10826b5a52f573e2f75ad2c" category="paragraph"><block ref="b169507cd10826b5a52f573e2f75ad2c" category="inline-link-macro-rx"></block></block>
+  <block id="67e962050c9494ada1eab84c21826e3c" category="section-title">AWS 자격 증명으로 비용 절감 계산기 분석 개선</block>
+  <block id="81e738c909aeee7a4a781716391eae27" category="paragraph">이제 절약 계산기에서 AWS 자격 증명을 추가할 수 있습니다. 자격 증명을 추가하면 FSx for ONTAP에 비해 Amazon Elastic Block Store, Elastic File Systems 및 FSx for Windows 파일 서버 스토리지 환경의 절감 계산기 분석의 정확성이 향상됩니다.</block>
+  <block id="f98d47c0920e02232d981da56f082627" category="paragraph"><block ref="f98d47c0920e02232d981da56f082627" category="inline-link-macro-rx"></block></block>
+  <block id="9d16201337a7183b0ef0f80fcb36b5c2" category="paragraph">BlueXP  워크로드 공장 에서 볼륨의 마운트 지점을 확보할 수도 있습니다.</block>
+  <block id="81433468b8608aba73a2350afe41ac5a" category="section-title">BlueXP  워크로드 공장 에서 볼륨에 대한 마운트 지점을 가져옵니다</block>
+  <block id="06e52dae2c3e09e69a906c2fba89ed66" category="paragraph">CIFS 공유 또는 NFS 클라이언트에서 공유를 마운트하기 위한 볼륨의 마운트 지점을 가져옵니다.</block>
+  <block id="4a6574ab96645d28cf548ed8372c655c" category="list-text">볼륨 탭에서 볼륨의 세 점 메뉴를 선택한 다음 * 기본 조치 * 를 선택하고 * 마운트 명령 보기 * 를 선택합니다.</block>
+  <block id="bd95ac5b25f35af153096a48803b03b4" category="list-text">Mount 명령 대화 상자에서 * Copy * 를 선택하여 명령을 복사합니다. 복사한 명령을 터미널에 입력합니다.</block>
+  <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">닫기 * 를 선택합니다.</block>
+  <block id="0206587910cd5147f80c048ba00193af" category="paragraph">파일 시스템에서 iSCSI 블록 볼륨을 프로비저닝하려면 6개 이하의 HA 쌍을 선택합니다.</block>
+  <block id="f3b270238d8c3f46a0b10d724c916e7d" category="list-text">* 최대 전송 속도 *: * 제한 * 을 선택하고 MiB/s 단위의 최대 전송 한도를 입력하십시오 또는 * 무제한 * 을 선택합니다.</block>
+  <block id="5ef8b0a1c66a4b2210971848d2ce9752" category="paragraph">복제 관계는 대상 FSx for ONTAP 파일 시스템의 * 복제 관계 * 탭에 표시됩니다.</block>
+  <block id="c866bd28f46aae4b063d835d59832e65" category="list-text">* cifs share *: 다음을 제공합니다.</block>
+  <block id="fbd8f4b666e0f634caa63d615cae9514" category="list-text">* Name *: SMB 액세스를 제공하려면 CIFS 공유 이름을 입력하십시오.</block>
+  <block id="a0eaddecd9cba85df3eb61984ad9d41b" category="list-text">* 권한 *: 모든 권한, 읽기/쓰기, 읽기 또는 권한 없음 을 선택한 다음 세미콜론(;)으로 구분된 사용자 또는 그룹을 입력합니다. 사용자 또는 그룹은 대소문자를 구분하며 사용자 도메인은 "domain\username" 형식을 사용하여 포함되어야 합니다.</block>
+  <block id="a1e344db18a7a956afd7ebcb57bcefa2" category="list-text">* 블록 액세스 *: 중요한 비즈니스 응용 프로그램을 실행하는 호스트가 iSCSI 프로토콜을 사용하여 볼륨에 액세스할 수 있습니다. 블록 액세스는 파일 시스템 스케일아웃 구축에 6개 이하의 HA 쌍이 있는 경우에만 사용할 수 있습니다.</block>
+  <block id="388660e21a97a90db2571da848fc61df" category="inline-link-macro">AWS 자격 증명을 추가합니다</block>
+  <block id="df33a8a514c43741a17399e9c12a0427" category="paragraph">또한 계산기 분석의 정확도를 개선할 수 <block ref="10c34fa86244e9acc4f29a59fb8b09f7" category="inline-link-macro-rx"></block>있습니다. 기존 리소스를 기준으로 절약 비율 계산 * 을 선택합니다. 자격 증명 추가 페이지로 리디렉션됩니다. 자격 증명을 추가한 후 FSx for ONTAP와 비교할 기존 리소스를 선택하고 * 절감 효과 탐색 * 을 선택합니다.</block>
+  <block id="914666cc05a2f50a3cbff56ab4c0d87c" category="paragraph">또한 페이지 하단으로 스크롤하여 다음 중 하나를 선택하여 보고서를 봅니다.</block>
+  <block id="037fbb0239239f2168489bba99e09b67" category="list-text">* PDF 내보내기 *</block>
+  <block id="10acfa1cd5e4b3b5f4da60bba2257672" category="list-text">* 이메일로 보내기 *</block>
+  <block id="3902a76bb589f831b404ce1ec9865654" category="list-text">* 계산 보기 *</block>
+  <block id="01887ff057face34cde00a98753d7347" category="section-title">고급 ONTAP 작업을 수행하려면 링크가 필요합니다</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="a32b59044667570495820281f09cfa10" category="list-text">* Name *: CIFS 공유의 이름을 입력합니다.</block>
+  <block id="a983c99827c51cfd1ffcfd3882536018" category="list-text">Apply(적용) 를 선택합니다.</block>
+  <block id="aa6a9af5d2170a7e2225e0d97aefef52" category="paragraph">변경 사항으로 인해 현재 사용자 또는 그룹이 CIFS 공유에 대한 액세스 권한을 잃게 될 수 있습니다.</block>
+  <block id="e58fa167b6770841b720711ad8a12b1a" category="list-text">변경 사항을 저장하려면 * 계속 * 을 선택하십시오.</block>
+  <block id="f6db14d0bad35a9b610208b53b06c1ca" category="paragraph">CIFS 공유에 대한 변경 사항이 적용됩니다.</block>
+  <block id="8772abd9ec2ca5593300708cb88b5426" category="summary">BlueXP  워크로드 팩토리에서 볼륨 생성 후 스토리지 효율성 설정을 업데이트할 수 있습니다.</block>
+  <block id="b31795226510baf520db5a5e2287b56e" category="doc">볼륨의 스토리지 효율성 설정을 업데이트합니다</block>
+  <block id="07834469705cb1cae603dc37fac50539" category="paragraph">스토리지 효율성 기능에는 FlexVol volume에서 최적의 공간 절약 효과를 제공하는 중복제거, 데이터 압축, 데이터 컴팩션이 포함됩니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다. 데이터 컴팩션은 더 적은 공간에 더 많은 데이터를 저장하여 스토리지 효율성을 높입니다.</block>
+  <block id="6949ed855da826654fa3e3a2e2a18279" category="paragraph">볼륨 생성 시 스토리지 효율성을 활성화하지 않도록 선택한 경우 언제든지 잠재적 공간 및 비용 절감에 대한 설정을 활성화할 수 있습니다.</block>
+  <block id="3561512c31eaec9705db4d98de971d93" category="paragraph">스토리지 효율성을 사용하거나 사용하지 않도록 설정하는 경우 볼륨은 씬 프로비저닝을 사용합니다.</block>
+  <block id="b3f2ba455947e37d7a336d7b339ee3cf" category="list-text">고급 작업 * 을 선택한 다음 * 스토리지 효율성 설정 * 을 선택합니다.</block>
+  <block id="fc86913f9636c03cbcbb4e3e03d4b332" category="list-text">볼륨 스토리지 효율성을 활성화 또는 비활성화하도록 선택합니다.</block>
+  <block id="b755b7c9e5db773b9578d24d7b40b61d" category="list-text">적용 * 을 선택하여 변경 사항을 저장합니다.</block>
+  <block id="4b5106453aabbf759975ebe8415f9dca" category="summary">BlueXP  워크로드 공장에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 보강하는 데 사용할 수 있습니다.</block>
+  <block id="bbe131cae781cb02f20f1bff02911991" category="doc">BlueXP  워크로드 공장에서 사내 ONTAP 클러스터 데이터 사용</block>
+  <block id="124cb3fd3d0a35a1abf1c0f90f37e8a9" category="paragraph">온프레미스 ONTAP 클러스터의 데이터를 사용하려면 먼저 온프레미스 ONTAP 클러스터를 검색해야 합니다. 온프레미스 ONTAP 클러스터를 검색한 후에는 다음 사용 사례에 해당 데이터를 사용할 수 있습니다.</block>
+  <block id="2a3b399798aa16ecfbc1425cc560bfad" category="list-text">사용 사례</block>
+  <block id="ef63a3d009f11deff50f4dc327b32173" category="list-text">GenAI 워크로드의 주요 사용 사례는 이 일련의 작업에 중점을 두고 있습니다.</block>
+  <block id="809c357d304bbfa1cd4446574b270af8" category="inline-link-macro">AI 지식 기반을 보강합니다</block>
+  <block id="9cce19ad5b8f6c533905f11c61df97c8" category="list-text">* GenAI 워크로드 *: 온프레미스-ONTAP 볼륨 데이터를 FSx for ONTAP 파일 시스템에 복제하여 데이터를 사용할 수 <block ref="f591db1a99ea9ae06218a2a67c7815b6" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="f15192f8afdcf438f7b1ccf0cda2b436" category="list-text">* 클라우드로 백업 및 마이그레이션 *: 온프레미스 ONTAP 볼륨 데이터를 FSx for ONTAP 파일 시스템으로 복제하는 경우 클라우드에서 백업으로 사용할 수 있습니다.</block>
+  <block id="5b5a84720ff8905504e8a45fbc52fb73" category="list-text">* 데이터 계층화 *: 복제 후 드물게 액세스되는 온프레미스 ONTAP 볼륨 데이터를 SSD 스토리지 계층에서 용량 풀 스토리지 계층으로 계층화할 수 있습니다.</block>
+  <block id="0fd8af6af12775b851e6156334372818" category="paragraph">BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터를 검색하여 Amazon FSx for NetApp ONTAP 파일 시스템에 데이터를 복제할 수 있습니다.</block>
+  <block id="4185f116d64b1130e6f9ba4250b147fa" category="paragraph">시작하기 전에 다음 사항이 있는지 확인하십시오.</block>
+  <block id="7e496dd07644d2f06f315e4fa164cc69" category="list-text">복제용 FSx for ONTAP 파일 시스템</block>
+  <block id="165a2e236f1aabd383e31c0b94f74338" category="inline-link-macro">새로 만듭니다</block>
+  <block id="96c11fa75af4ee186742d94b8c4312d1" category="list-text">검색된 온-프레미스 클러스터와 연결할 연결된 링크 링크가 없는 경우 이 작업을 수행해야 <block ref="fde76afbe668994cedb59a1786140b8f" category="inline-link-macro-rx"></block>합니다.</block>
+  <block id="d9475c746638e60d2b7ab26ca255f52c" category="list-text">필요한 권한이 있는 ONTAP 사용자 자격 증명입니다.</block>
+  <block id="08964fe3be5deba1b9687a253e630608" category="list-text">온프레미스 ONTAP 버전 9.8 이상</block>
+  <block id="23850e6cb293edf3ae576c2cd44e4966" category="list-text">다음 다이어그램에 표시된 연결.</block>
+  <block id="83e32e548e13c6454cf00928e1e27eec" category="inline-image-macro">온프레미스 ONTAP 클러스터를 Amazon Web Services 클라우드에 대한 관리 경로 및 데이터 경로를 위해 연결하는 방법을 보여 주는 스크린샷</block>
+  <block id="ee8491e0fa59a945f11048b87d7cde35" category="paragraph"><block ref="ee8491e0fa59a945f11048b87d7cde35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9528f87db447698374dc42a5acad7283" category="list-text">온-프레미스 ONTAP * 탭을 선택합니다.</block>
+  <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">Discover * 를 선택합니다.</block>
+  <block id="4df09781d0339837ee9af988af1317c6" category="list-text">필수 구성 요소를 검토하고 * Next * 를 선택합니다.</block>
+  <block id="a94ba7c755ae23b126e888fda5f83d7b" category="list-text">ONTAP 온프레미스 검색 페이지의 * 클러스터 구성 * 에 다음을 제공합니다.</block>
+  <block id="a256638e063d95d3879716a329eda540" category="list-text">* 링크 * : 링크를 선택하십시오. 이 링크는 사내 클러스터와 연결되어 클러스터 및 워크로드 공장 간 연결을 생성합니다.</block>
+  <block id="db442d2f15cc5ca62b25c302ecc39e4d" category="paragraph">링크를 만들지 않은 경우 지침에 따라 이 작업으로 돌아가서 링크를 선택합니다.</block>
+  <block id="d6c619de487035b86fe99726a4142c96" category="list-text">* 클러스터 IP 주소 *: 복제할 온-프레미스 ONTAP 클러스터의 IP 주소를 제공합니다.</block>
+  <block id="5284e36227d3576d0531d813669d810f" category="list-text">* ONTAP credentials *: 온-프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력합니다. 사용자에게 필요한 권한이 있는지 확인합니다.</block>
+  <block id="10f4ba1588812227f6775ff4cdd8731a" category="list-text">검색 프로세스를 시작하려면 * 검색 * 을 선택합니다.</block>
+  <block id="9107799f71b772409d2dda6a954c2b55" category="paragraph">온프레미스 ONTAP 클러스터가 검색되어 * 온프레미스 ONTAP * 탭에 표시됩니다.</block>
+  <block id="c0bb7503a06a72052adfacae53dc8968" category="inline-xref">데이터를 FSx for ONTAP 파일 시스템에 복제합니다</block>
+  <block id="d8656001c9a7903c7967c4f00f9dd267" category="paragraph">이제 온프레미스 ONTAP 클러스터와 의 데이터를 볼 수 있습니다.<block ref="21efd3440e5c8575cf2acdff77601bf0" category="inline-xref-macro-rx"></block></block>
+  <block id="f4a663f98fdbf7294b4d7065fe81028d" category="section-title">온프레미스 ONTAP 클러스터에서 볼륨 데이터를 복제합니다</block>
+  <block id="99f4cb77b09904f65d27606598e1d1d2" category="paragraph">온프레미스 ONTAP 클러스터의 볼륨 데이터를 FSx for ONTAP 파일 시스템으로 복제합니다. 복제된 데이터는 AI 지식 기반을 보강하는 데 사용될 수 있습니다.</block>
+  <block id="a979d07ec6790355c195ac942aac0f7a" category="list-text">볼륨 데이터를 복제하려면 온프레미스 ONTAP 클러스터를 검색해야 합니다.</block>
+  <block id="bbaf3e2bb6ee0562252678dc510975b4" category="list-text">복제 대상으로 사용할 수 있는 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
+  <block id="5fc398b3211d605127c144291f3eda23" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. 온프레미스 및 FSx for ONTAP 클러스터 중 하나 이상에 기존 링크가 없는 경우,<block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block> <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>파일 시스템의 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 링크가 온-프레미스 ONTAP 클러스터 및 FSx for ONTAP 파일 시스템에 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="aea1c4ebf571d37a1b92fbbf08a1d97c" category="list-text">스토리지 VM별로 볼륨을 찾으려면 드롭다운에서 * 스토리지 VM * 을 선택합니다.</block>
+  <block id="e03b6f62981f4a86c7a1c627e22e63e8" category="list-text">복제할 볼륨을 하나 이상 선택한 다음 * Replicate * 를 선택합니다.</block>
+  <block id="72106a023ea21862c78ae92b6102ff34" category="list-text">* 데이터 계층화 *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.</block>
+  <block id="5f80f89e32023b75a946369589efc7db" category="list-text">* 자동 *: 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 사용자 데이터와 스냅샷을 포함하는 모든 콜드 데이터를 특정 기간 동안 용량 풀 스토리지 계층으로 계층화합니다.</block>
+  <block id="606156d99b6306c9a4135ba1dbe3f5e8" category="paragraph">볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="4814d993ecb870a2261a2819e47b0371" category="list-text">기존 정책의 경우 * 기존 정책 선택 * 을 선택한 다음 드롭다운 메뉴에서 기존 정책을 선택합니다.</block>
+  <block id="a4f4dcbfc1fe91a36caaac04506e0179" category="list-text">새 정책의 경우 * 새 정책 생성 * 을 선택하고 다음을 제공합니다.</block>
+  <block id="6ec6b573aef4b43427215b26f7b1db91" category="section-title">BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터를 제거합니다</block>
+  <block id="f2b13eb0b412655e8697e5140bff3b74" category="paragraph">필요한 경우 BlueXP  워크로드 팩토리에서 온프레미스 ONTAP 클러스터를 제거합니다.</block>
+  <block id="3b1c3bad959c6c151d464eb6b626f56f" category="paragraph">온-프레미스 ONTAP 클러스터의 모든 볼륨을 선택한 후 클러스터를 제거해야 <block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>분리된 관계가 남아 있지 않습니다.</block>
+  <block id="78ce280a4b77e37298d71642a4457c0a" category="list-text">제거할 온프레미스 ONTAP 클러스터를 선택합니다.</block>
+  <block id="5b4dad1d897213eb27b108cb47f3a75d" category="list-text">세 개의 점 메뉴를 선택하고 * Workload Factory에서 제거 * 를 선택합니다.</block>
+  <block id="a8cf8ae4f9fef4837824fb9409537e5d" category="paragraph">온프레미스 ONTAP 클러스터가 BlueXP  워크로드 공장에서 제거됩니다.</block>
+  <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024년 12월 1일</block>
+  <block id="aab28bb522b1a572add493963001b88d" category="sidebar">온프레미스 ONTAP 데이터 사용</block>
+  <block id="5d831b6559b5decf8f758715856498b9" category="sidebar">스토리지 효율성 업데이트</block>
 </blocks>

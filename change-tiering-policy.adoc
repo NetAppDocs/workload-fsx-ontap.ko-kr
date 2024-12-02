@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: change-tiering-policy.html 
-keywords:  
+keywords: tiering policy, change tier, change tiers, tier policy update 
 summary: BlueXP  워크로드 팩토리의 계층화 정책을 변경하여 고성능 운영 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 재할당합니다. 
 ---
 = BlueXP  워크로드 공장 에서 볼륨의 계층화 정책을 변경합니다

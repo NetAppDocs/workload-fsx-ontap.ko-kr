@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: access-data.html 
-keywords: access data, mount clients, on-premises 
+keywords: access data, mount point, mount volumes, mount clients, on-premises 
 summary: 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 SAN 클라이언트용 iSCSI LUN을 마운트하여 FSx for ONTAP 파일 시스템에 액세스할 수 있습니다. 
 ---
 = FSx for ONTAP 파일 시스템 데이터에 액세스합니다
@@ -14,6 +14,24 @@ summary: 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 
 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 SAN 클라이언트용 iSCSI LUN을 마운트하여 FSx for ONTAP 파일 시스템에 액세스할 수 있습니다.
 
 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html["데이터 액세스"^] Amazon FSx for NetApp ONTAP 설명서에서 참조용 데이터에 액세스하는 방법에 대한 항목을 제공합니다.
+
+BlueXP  워크로드 공장 에서 볼륨의 마운트 지점을 확보할 수도 있습니다.
+
+
+
+== BlueXP  워크로드 공장 에서 볼륨에 대한 마운트 지점을 가져옵니다
+
+CIFS 공유 또는 NFS 클라이언트에서 공유를 마운트하기 위한 볼륨의 마운트 지점을 가져옵니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 볼륨의 세 점 메뉴를 선택한 다음 * 기본 조치 * 를 선택하고 * 마운트 명령 보기 * 를 선택합니다.
+. Mount 명령 대화 상자에서 * Copy * 를 선택하여 명령을 복사합니다. 복사한 명령을 터미널에 입력합니다.
+. 닫기 * 를 선택합니다.
+
 
 
 
