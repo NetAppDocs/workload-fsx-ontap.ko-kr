@@ -21,8 +21,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="7f855d340cfe6607ed51975896dd19da" category="list-text">Storage에서 * Go to storage inventory * 를 선택합니다.</block>
   <block id="f76864e1c2588ae3d6373b6ab95e2209" category="list-text">파일 시스템 개요에서 * Volumes * 탭을 선택합니다.</block>
-  <block id="2ca869b68be8f2b6e678f47d25c26fb7" category="list-text">고급 작업 * 을 선택한 다음 * CIFS 공유 편집 * 을 선택합니다.</block>
-  <block id="736934ebc3ee8de296f3d5213e79430e" category="list-text">CIFS 공유 편집 페이지에서 다음을 제공합니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 대해</block>
   <block id="4c9aa322b281bc41d9f93e03b1223838" category="paragraph">엑스포트 정책 규칙에 대한 클라이언트 사양을 결정합니다. 클라이언트 사양에 대한 유효한 값은 다음과 같습니다.</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="list-text">IP 주소</block>
@@ -396,28 +394,21 @@
   <block id="aca77c97dcf29f670f572a7129863195" category="section-title">FSx for ONTAP 파일 시스템 배포</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">배포 방법</block>
   <block id="543b29a63a3d070c0ff920d687259dfc" category="paragraph">_basic_mode에서는 코드박스 창에서 콘텐츠를 복사하고 코드박스 방법 중 하나를 사용하여 FSx for ONTAP 파일 시스템을 배포할 수 있습니다.</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp은 Workload Factory와 다양한 방법으로 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">FSx for ONTAP에 대한 지원을 받으십시오</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 팩토리 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">자체 지원 옵션을 사용합니다</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">현재 보고 있는 Workload Factory 문서</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Workload Factory 기술 문서를 검색하여 문제 해결에 도움이 되는 문서를 찾습니다.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새로운 토론을 만드십시오.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp Support로 케이스 생성</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">시작하기 전에</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 팩토리 로그인과 연결합니다. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Workload Factory 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">이 옵션을 선택하면 BlueXP 콘솔에 새 브라우저 탭이 열리고 지원 대시보드가 로드됩니다.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
@@ -498,7 +489,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
   <block id="488044172f20eab904aecc2827c019b4" category="section-title">처리량 용량 영역 지원</block>
   <block id="0a27e957ebaf89bce02c66c147da7966" category="section-title">스케일업 배포</block>
-  <block id="24aa3b91eee064e4bbffa941e071bd95" category="paragraph">다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
   <block id="2e8bf528a9bc28508b7cf3ffef710f1c" category="section-title">스케일아웃 구축</block>
   <block id="3e14c6b63ec31128bf81a140eecbaeb0" category="paragraph">스케일 아웃 구축을 위해 최대 3 및 6GB/s의 처리 용량을 지원하는 지역은 미국 동부(버지니아), 미국 동부(오하이오), 미국 서부(오리건), 유럽(아일랜드), 아시아 태평양(시드니) 지역입니다.</block>
   <block id="1d19e21de0f93b11f5ceb8b535a3afc2" category="section-title">용량 관리</block>
@@ -509,13 +499,9 @@
   <block id="b1c8cb58e124bead4ca2e09fa1c20c9b" category="paragraph">파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> .</block>
   <block id="3a448e496404b548627a97fc00da8e23" category="section-title">iSCSI 프로토콜 지원</block>
   <block id="53c858a11ae23c19aee107fb913f096a" category="list-text">볼륨당 하나의 LUN만 구성할 수 있습니다.</block>
-  <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">지역 지원</block>
-  <block id="1bf3a4f06c8408a2ff436e0b847ca3a3" category="list-text">캐나다 서부(캘거리) 지역은 현재 지원되지 않습니다.</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">데이터 보호</block>
   <block id="3625bed0ef82516150cc87137582e2b5" category="list-text">스냅샷을 삭제할 수 없습니다.</block>
-  <block id="720a8000a7c475fdd307a99cc1a79ac7" category="list-text">FSx for ONTAP 파일 시스템 간의 복제만 지원됩니다.</block>
   <block id="fa0b5078a184e3a9f13892acdade9375" category="list-text">파일 시스템을 복제할 때 파일 시스템의 모든 볼륨이 동일한 복제 정책을 사용합니다.</block>
-  <block id="2755e2232e7c57beeec07b1f327577b9" category="list-text">마지막 스냅샷만 복구에 사용할 수 있습니다.</block>
   <block id="6868a45b7f86e5379e5d85b2d762b844" category="section-title">스토리지 비용 절감 계산기</block>
   <block id="b243e9d890e3c0d1d9ba32de03c0eb00" category="paragraph">Storage Savings Calculator는 다음 구성에 대한 비용 절감액을 계산하지 않습니다.</block>
   <block id="9049888f2f272bf903633de4a685ba6a" category="list-text">FSx for Windows 파일 서버: HDD 스토리지 유형</block>
@@ -580,15 +566,6 @@
   <block id="70f0040e444997fbb4beeeae8bd03d34" category="paragraph"><block ref="70f0040e444997fbb4beeeae8bd03d34" category="inline-link-macro-rx"></block></block>
   <block id="8cd69d367e2dbdfca9ec0b55ba13baec" category="section-title">링크가 필요한 경우</block>
   <block id="c0653b3ad30a51a0fe3228ad2877ac9d" category="paragraph">링크가 필요한 기능은 다음과 같습니다.</block>
-  <block id="ab887a13e0e43ab14f26aa4139d3931e" category="list-text">FSx for ONTAP 파일 시스템에 설치된 ONTAP 버전을 표시합니다</block>
-  <block id="6a0bbe6ca6ca13a9f69ba22ff72d4db9" category="list-text">시스템에서 iSCSI 볼륨을 관리합니다</block>
-  <block id="f713a1eba4a310a7dee6e6148031ac90" category="list-text">볼륨에 대한 자동 확장 기능을 설정 및 해제합니다</block>
-  <block id="b688472ba5c5b20a13e35de55bbd243e" category="list-text">스냅샷 정책을 생성하고 관리합니다</block>
-  <block id="607207d543b313ae2d9720c777e7a286" category="list-text">파일 시스템 간 복제 관계 구성 및 볼륨 복제</block>
-  <block id="f39a1ae39e9d73b3a9aa6c431f9fb9d4" category="list-text">백업 관계를 구성하고 볼륨 데이터를 클라우드 스토리지에 백업합니다</block>
-  <block id="f15997f78fd09915dc098e9c00579d74" category="list-text">파일 시스템 내의 볼륨 클론 생성</block>
-  <block id="12f68de27d579f57f0f70762ccd96328" category="list-text">ONTAP에서 직접 추가 메트릭 표시(기본 메트릭은 Amazon CloudWatch에서 수집)</block>
-  <block id="1a59c94816246f9168f366b6938e1715" category="list-text">NFS 내보내기 정책 관리</block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="doc">링크를 관리합니다</block>
   <block id="a4fcf9229a590e13a5a514e19c4c398e" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block><block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 또는.</block>
   <block id="e32918056c538c64f6e229f2ca257e25" category="section-title">계정과 연결된 링크를 봅니다</block>
@@ -694,8 +671,6 @@
   <block id="6155892ff0823c5997e8d188a29e66e2" category="list-text">복제 중단 대화 상자에서 * 중단 * 을 선택합니다.</block>
   <block id="f42375f716d314b031447e015387fbff" category="paragraph">볼륨의 복제 상태가 * Broken * 으로 변경됩니다. 타겟 볼륨이 쓰기 가능 상태가 됩니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 지원 등록을 해야 합니다. Workload Factory와는 별도의 웹 기반 콘솔인 BlueXP 콘솔에서 지원을 받으려면 등록해야 합니다.</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 Workload Factory 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)은 단일 지원 구독 ID로 사용됩니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">등록하면 지원 티켓 열기 및 자동 사례 생성과 같은 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
@@ -781,7 +756,6 @@
   <block id="8cf9dbe17cb44a10f0622b63961c131d" category="sidebar">볼륨 관리</block>
   <block id="56994f1db86bfe709cbe47f96bde566f" category="sidebar">볼륨 자동 확장을 편집합니다</block>
   <block id="be6125857b11bdb69d1f89bf69787f48" category="sidebar">볼륨 용량을 재조정합니다</block>
-  <block id="9f4aa892debf403a854859b0ca9c9ff6" category="sidebar">계층화 정책을 변경합니다</block>
   <block id="28b0bfb965f113c41530116951bfce50" category="sidebar">파일 시스템 관리</block>
   <block id="ff117b5e42f4a60dd5b7859999c4f2bd" category="sidebar">자동 용량 관리 활성화</block>
   <block id="c7ad4dd9b2ecb508f1366110b020e001" category="sidebar">fsxadmin 암호를 재설정합니다</block>
@@ -1089,9 +1063,7 @@
   <block id="4a74309dc15865035b8b93cec28f2a96" category="list-text">정보 아래에서 * FSx for ONTAP backup * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.</block>
   <block id="9f16bb4c9cbb656a02f2d0ac20ae70a8" category="list-text">* 매일 자동 백업 * : 기능을 활성화 또는 비활성화합니다. 이 기능을 비활성화하면 * 적용 * 을 선택합니다. 이 기능을 사용하도록 설정한 경우 다음 단계를 완료합니다.</block>
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
-  <block id="9267ce1924a6f0548efc234c84461fa8" category="summary">SMB/CIFS 프로토콜 유형을 사용하는 BlueXP  워크로드 공장 에서 볼륨의 CIFS 공유를 변경합니다.</block>
   <block id="5bdcc5d3e4e631055e0153df468f21d6" category="doc">BlueXP  워크로드 공장에서 볼륨의 CIFS 공유를 관리합니다</block>
-  <block id="17c44173e4e9c50b2859e1925d7af336" category="paragraph">BlueXP  워크로드 공장에서 볼륨의 CIFS 공유를 관리하려면 액세스 권한을 부여할 사용자 및 그룹과 액세스 유형을 결정해야 합니다.</block>
   <block id="3d158aba7d5d233ad247917999b7f8f9" category="list-text">볼륨 탭에서 SMB 공유를 변경할 볼륨의 점 3개 메뉴를 선택합니다.</block>
   <block id="20ce09b74b6e0e3f084a81d605cc8f77" category="summary">BlueXP  워크로드 팩토리에서는 계정에 연결된 링크를 보고, 링크를 연결하고, 링크를 제거할 수 있습니다.</block>
   <block id="2083481ef56023982330c4d1cbedcd07" category="doc">BlueXP  워크로드 팩토리 링크 관리</block>
@@ -1187,8 +1159,6 @@
   <block id="a5707c7f948a436824cd06775026c409" category="sidebar">NetApp ONTAP용 Amazon FSx는 일관된 하이브리드 클라우드 경험을 제공하는 네이티브 AWS 관리 서비스에 ONTAP의 모든 기능을 제공합니다. 이 문서에서는 BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP를 관리하는 방법을 설명합니다.</block>
   <block id="788881725a778e76ae58ef03f1dd4d7e" category="sidebar">Amazon FSx for NetApp ONTAP for BlueXP  워크로드 공장 설명서</block>
   <block id="d151342d67a639e871ca8c57524ca7f8" category="sidebar">볼륨 태그 관리</block>
-  <block id="3a1a7312146508132d80f244521968ee" category="sidebar">NFS 엑스포트 정책을 관리합니다</block>
-  <block id="baae6cbba4c997ef4c9035394e7dbd9e" category="sidebar">CIFS 공유를 관리합니다</block>
   <block id="11c0aa7596d4f4521c9a98f708c34cc4" category="sidebar">스토리지 VM 태그 관리</block>
   <block id="e4b304b6d81189c09bd7e999a18522e8" category="sidebar">FSx for ONTAP 백업 일정을 관리합니다</block>
   <block id="c4f10a04f7aa75535a8a0475261393eb" category="doc">스케일아웃 FSx for ONTAP 파일 시스템용 블록 스토리지</block>
@@ -1215,7 +1185,6 @@
   <block id="81433468b8608aba73a2350afe41ac5a" category="section-title">BlueXP  워크로드 공장 에서 볼륨에 대한 마운트 지점을 가져옵니다</block>
   <block id="06e52dae2c3e09e69a906c2fba89ed66" category="paragraph">CIFS 공유 또는 NFS 클라이언트에서 공유를 마운트하기 위한 볼륨의 마운트 지점을 가져옵니다.</block>
   <block id="4a6574ab96645d28cf548ed8372c655c" category="list-text">볼륨 탭에서 볼륨의 세 점 메뉴를 선택한 다음 * 기본 조치 * 를 선택하고 * 마운트 명령 보기 * 를 선택합니다.</block>
-  <block id="bd95ac5b25f35af153096a48803b03b4" category="list-text">Mount 명령 대화 상자에서 * Copy * 를 선택하여 명령을 복사합니다. 복사한 명령을 터미널에 입력합니다.</block>
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">닫기 * 를 선택합니다.</block>
   <block id="0206587910cd5147f80c048ba00193af" category="paragraph">파일 시스템에서 iSCSI 블록 볼륨을 프로비저닝하려면 6개 이하의 HA 쌍을 선택합니다.</block>
   <block id="f3b270238d8c3f46a0b10d724c916e7d" category="list-text">* 최대 전송 속도 *: * 제한 * 을 선택하고 MiB/s 단위의 최대 전송 한도를 입력하십시오 또는 * 무제한 * 을 선택합니다.</block>
@@ -1234,10 +1203,7 @@
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="a32b59044667570495820281f09cfa10" category="list-text">* Name *: CIFS 공유의 이름을 입력합니다.</block>
-  <block id="a983c99827c51cfd1ffcfd3882536018" category="list-text">Apply(적용) 를 선택합니다.</block>
   <block id="aa6a9af5d2170a7e2225e0d97aefef52" category="paragraph">변경 사항으로 인해 현재 사용자 또는 그룹이 CIFS 공유에 대한 액세스 권한을 잃게 될 수 있습니다.</block>
-  <block id="e58fa167b6770841b720711ad8a12b1a" category="list-text">변경 사항을 저장하려면 * 계속 * 을 선택하십시오.</block>
-  <block id="f6db14d0bad35a9b610208b53b06c1ca" category="paragraph">CIFS 공유에 대한 변경 사항이 적용됩니다.</block>
   <block id="8772abd9ec2ca5593300708cb88b5426" category="summary">BlueXP  워크로드 팩토리에서 볼륨 생성 후 스토리지 효율성 설정을 업데이트할 수 있습니다.</block>
   <block id="b31795226510baf520db5a5e2287b56e" category="doc">볼륨의 스토리지 효율성 설정을 업데이트합니다</block>
   <block id="07834469705cb1cae603dc37fac50539" category="paragraph">스토리지 효율성 기능에는 FlexVol volume에서 최적의 공간 절약 효과를 제공하는 중복제거, 데이터 압축, 데이터 컴팩션이 포함됩니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다. 데이터 컴팩션은 더 적은 공간에 더 많은 데이터를 저장하여 스토리지 효율성을 높입니다.</block>
@@ -1295,7 +1261,63 @@
   <block id="78ce280a4b77e37298d71642a4457c0a" category="list-text">제거할 온프레미스 ONTAP 클러스터를 선택합니다.</block>
   <block id="5b4dad1d897213eb27b108cb47f3a75d" category="list-text">세 개의 점 메뉴를 선택하고 * Workload Factory에서 제거 * 를 선택합니다.</block>
   <block id="a8cf8ae4f9fef4837824fb9409537e5d" category="paragraph">온프레미스 ONTAP 클러스터가 BlueXP  워크로드 공장에서 제거됩니다.</block>
-  <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024년 12월 1일</block>
   <block id="aab28bb522b1a572add493963001b88d" category="sidebar">온프레미스 ONTAP 데이터 사용</block>
   <block id="5d831b6559b5decf8f758715856498b9" category="sidebar">스토리지 효율성 업데이트</block>
+  <block id="442b133d7d895a50d67d2f8514b6fc0a" category="doc">볼륨 CIFS 공유의 개선 사항</block>
+  <block id="c67048e1717263df3fc8ffc894f40785" category="paragraph">BlueXP  워크로드 공장 에 있는 Amazon FSx for ONTAP 파일 시스템에서 볼륨의 CIFS 공유를 관리할 때 다음과 같은 향상된 기능을 사용할 수 있습니다.</block>
+  <block id="28ee2134fc1275e4f2052b7bd91a9f8d" category="list-text">볼륨에서 여러 CIFS 공유를 지원합니다</block>
+  <block id="aa8a0747da321d7501a2f34bb5326b65" category="list-text">언제든지 사용자와 그룹을 업데이트하는 옵션입니다</block>
+  <block id="a85d37847efda31b7b7b0ee3ee3cd2ab" category="list-text">사용자 및 그룹의 사용 권한을 언제든지 업데이트하는 옵션입니다</block>
+  <block id="0c05c06c8c5abf5cf4956491502d212a" category="list-text">CIFS 공유 삭제</block>
+  <block id="1122186beaf8563a5f76bdc23dfd22a5" category="inline-link-macro">CIFS 공유를 관리합니다</block>
+  <block id="f59eead66ce9829f954d28d72a4e99b1" category="paragraph"><block ref="f59eead66ce9829f954d28d72a4e99b1" category="inline-link-macro-rx"></block></block>
+  <block id="2898ec90c27f1541e38a1849b4b9923a" category="list-text">Mount 명령 대화 상자에서 * Copy * 를 선택하여 NFS 마운트 지점 또는 CIFS 공유에 대한 명령을 복사합니다. 복사한 명령을 터미널에 입력합니다.</block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp은 BlueXP  워크로드 팩토리 및 클라우드 서비스를 다양한 방식으로 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">현재 보고 있는 작업 부하 공장 문서입니다.</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">워크로드 팩토리 기술 문서를 검색하여 문제 해결에 유용한 문서를 찾습니다.</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">워크로드 공장 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새 토론을 만드십시오.</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 공장 로그인에 연결하십시오. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">워크로드 팩토리 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
+  <block id="42236277fa3913ec4d1fd1e17b26874c" category="paragraph">스케일 업 구성은 모든 지역에서 최대 2GB/s까지 지원됩니다. 다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
+  <block id="f23f9e699754fa9634675e68ddb2477a" category="list-text">장기 보존 복제 관계의 경우 마지막 스냅샷만 복구에 사용할 수 있습니다.</block>
+  <block id="3566e30d1125b1cc489403b83380b16e" category="list-text">FSx for ONTAP 파일 시스템에 설치된 ONTAP 버전을 표시합니다</block>
+  <block id="70b71b7616d1607e66f58defc9384bf3" category="list-text">FSx for ONTAP 파일 시스템에서 iSCSI 볼륨 관리</block>
+  <block id="dd7d7ae00fef8de94b69aa7b5b540cb1" category="list-text">볼륨을 위한 자동 확장 기능</block>
+  <block id="3351e8dc51e33708d3280516a366bf4f" category="list-text">스냅샷 정책 생성 및 관리</block>
+  <block id="bc405b20c5dce6dc67910950f2591510" category="list-text">복제 관계 구성</block>
+  <block id="900f24520b234a239d52bc47e673bdd5" category="list-text">FSx for ONTAP 파일 시스템 간의 볼륨 복제</block>
+  <block id="2886577fc59b2d9df21dd1d41704de71" category="list-text">백업 관계 구성</block>
+  <block id="ab8c429c03a3887588677f966f3e8c48" category="list-text">클라우드 스토리지에 볼륨 데이터를 백업</block>
+  <block id="0fb8fbbbeb74e2e76be7a39d75ecdcda" category="list-text">FSx for ONTAP 파일 시스템 내의 볼륨 클론</block>
+  <block id="981bc65604544a529c511adc06cb441f" category="list-text">ONTAP에서 직접 추가 메트릭 표시(기본 메트릭은 Amazon CloudWatch에서 수집)</block>
+  <block id="310e8bd2aa0fbf766664a8fadbb86083" category="list-text">NFS 엑스포트 정책 관리</block>
+  <block id="9d19d65b5c0b11e65c72a68e686c8efc" category="list-text">CIFS 공유 관리</block>
+  <block id="5b4240cc70ef93fd3963a5a4a1489114" category="summary">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 생성, 사용자 및 그룹 액세스 결정 및 삭제가 포함됩니다.</block>
+  <block id="5917a5ef86ec0bb832a8231c1ca2e1df" category="paragraph">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹 결정 및 액세스 권한 유형 결정, CIFS 공유 삭제가 포함됩니다.</block>
+  <block id="ed2b1c265309f7d9a2006128f317479e" category="paragraph">시작하기 전에 다음을 수행합니다.</block>
+  <block id="1832295f4669cf4c232bd0b7e1d64a4b" category="list-text">CIFS 공유를 관리하려면 이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="0162ca60ba3c63c1058d5815f318b75b" category="section-title">볼륨에 대한 CIFS 공유를 생성합니다</block>
+  <block id="cbbe8730f4012f0727071442d89615d6" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유를 생성합니다.</block>
+  <block id="7b83ec4f9189886fea5cbe593c19e290" category="list-text">고급 작업 * 을 선택한 다음 * CIFS 공유 관리 * 를 선택합니다.</block>
+  <block id="212dea300359fc96977228999150178c" category="list-text">CIFS 공유 관리 페이지에서 * CIFS 공유 생성 * 을 선택합니다.</block>
+  <block id="5844bed8558487b50b554f8e08c11861" category="list-text">CIFS 공유 생성 대화 상자에서 다음을 제공합니다.</block>
+  <block id="e8a8f2eb5b946d837e542d5a63fad375" category="paragraph">볼륨에 대한 CIFS 공유가 생성됩니다.</block>
+  <block id="e72636c845db0954868fedab8b9039a9" category="section-title">볼륨의 CIFS 공유를 변경합니다</block>
+  <block id="1865d8e00fbb6200e9726e5afde71e2d" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유 설정을 변경합니다.</block>
+  <block id="ca8738e363c21866f7099ffaef924318" category="list-text">CIFS 공유 관리 페이지에서 CIFS 공유 위에 마우스를 놓고 연필 아이콘을 선택하여 변경합니다.</block>
+  <block id="5a299cf518ea7257993d2714505b5ff2" category="list-text">CIFS 액세스 권한 또는 권한을 부여할 사용자 또는 그룹을 변경합니다.</block>
+  <block id="84779d2a2e99170bfbb6261853aee8d0" category="paragraph">볼륨의 CIFS 공유가 업데이트됩니다.</block>
+  <block id="bb806e2102217ea2d3a0c758e03eb23c" category="section-title">볼륨에 대한 CIFS 공유를 삭제합니다</block>
+  <block id="7fe3781e49adf652332e06e0cf96f9ca" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유를 삭제합니다.</block>
+  <block id="2385aa1bb13246d1508cfe232ff59c2f" category="list-text">CIFS 공유 관리 페이지에서 CIFS 공유 위에 마우스를 놓고 휴지통 아이콘을 선택하여 삭제합니다.</block>
+  <block id="db881e47b9137977356b0d30938ec851" category="paragraph">CIFS 공유를 삭제하면 CIFS 공유를 사용할 수 없으며 마운트하려는 모든 사용자가 액세스할 수 없게 됩니다.</block>
+  <block id="6b7a52834d577f2e4ac4d587036728f4" category="list-text">삭제를 확인하려면 * 삭제 * 를 선택합니다.</block>
+  <block id="8c880a68f0285449b1f44d4fdeca7cae" category="paragraph">볼륨의 CIFS 공유가 삭제됩니다.</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  워크로드 팩토리 및 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원 등록을 해야 합니다. 워크로드 공장 과는 별도의 웹 기반 콘솔인 BlueXP  콘솔에서 지원을 등록해야 합니다.</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025년 1월 5일</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
+  <block id="d83aca6cf65672d392d39e7c76942a11" category="sidebar">계층화 정책을 변경합니다</block>
+  <block id="07b434b23f63ca6490df33b213599320" category="sidebar">NFS 엑스포트 정책을 관리합니다</block>
 </blocks>

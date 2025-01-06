@@ -27,7 +27,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 === 스케일업 배포
 
-다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).
+스케일 업 구성은 모든 지역에서 최대 2GB/s까지 지원됩니다. 다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).
 
 
 
@@ -62,19 +62,11 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 
 
-== 지역 지원
-
-* 캐나다 서부(캘거리) 지역은 현재 지원되지 않습니다.
-
-
-
-
 == 데이터 보호
 
 * 스냅샷을 삭제할 수 없습니다.
-* FSx for ONTAP 파일 시스템 간의 복제만 지원됩니다.
 * 파일 시스템을 복제할 때 파일 시스템의 모든 볼륨이 동일한 복제 정책을 사용합니다.
-* 마지막 스냅샷만 복구에 사용할 수 있습니다.
+* 장기 보존 복제 관계의 경우 마지막 스냅샷만 복구에 사용할 수 있습니다.
 
 
 
