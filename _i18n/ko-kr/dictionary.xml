@@ -17,7 +17,6 @@
   <block id="ca56f4eb8ce272724e91bdcba9289351" category="inline-link-macro">Windows 클라이언트에 iSCSI LUN을 마운트합니다</block>
   <block id="5e566a13383eb6798f798ddefecee8c1" category="list-text"><block ref="5e566a13383eb6798f798ddefecee8c1" category="inline-link-macro-rx"></block></block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
-  <block id="30780a2d5d1315bb3798040fb45df6f0" category="paragraph">액세스 권한을 부여할 사용자 또는 그룹 및 액세스 권한 유형을 결정합니다.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="7f855d340cfe6607ed51975896dd19da" category="list-text">Storage에서 * Go to storage inventory * 를 선택합니다.</block>
   <block id="f76864e1c2588ae3d6373b6ab95e2209" category="list-text">파일 시스템 개요에서 * Volumes * 탭을 선택합니다.</block>
@@ -1294,7 +1293,6 @@
   <block id="310e8bd2aa0fbf766664a8fadbb86083" category="list-text">NFS 엑스포트 정책 관리</block>
   <block id="9d19d65b5c0b11e65c72a68e686c8efc" category="list-text">CIFS 공유 관리</block>
   <block id="5b4240cc70ef93fd3963a5a4a1489114" category="summary">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 생성, 사용자 및 그룹 액세스 결정 및 삭제가 포함됩니다.</block>
-  <block id="5917a5ef86ec0bb832a8231c1ca2e1df" category="paragraph">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹 결정 및 액세스 권한 유형 결정, CIFS 공유 삭제가 포함됩니다.</block>
   <block id="ed2b1c265309f7d9a2006128f317479e" category="paragraph">시작하기 전에 다음을 수행합니다.</block>
   <block id="1832295f4669cf4c232bd0b7e1d64a4b" category="list-text">CIFS 공유를 관리하려면 이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="0162ca60ba3c63c1058d5815f318b75b" category="section-title">볼륨에 대한 CIFS 공유를 생성합니다</block>
@@ -1320,4 +1318,6 @@
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
   <block id="d83aca6cf65672d392d39e7c76942a11" category="sidebar">계층화 정책을 변경합니다</block>
   <block id="07b434b23f63ca6490df33b213599320" category="sidebar">NFS 엑스포트 정책을 관리합니다</block>
+  <block id="6026d035efbb2d0fc978d9ab5bb5b084" category="paragraph">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹 결정 및 권한 수준 결정, CIFS 공유 삭제가 포함됩니다.</block>
+  <block id="34e81b46b7f1e5e087ae28a3b95e81fb" category="list-text">액세스 권한을 부여할 사용자 또는 그룹 및 권한 수준을 결정합니다.</block>
 </blocks>
