@@ -937,10 +937,6 @@
   <block id="26aa14a56cb65f177e49de0f78d28f50" category="summary">BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 생성합니다. 스냅샷 정책은 시스템에서 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
   <block id="845e00b5325a1fed5014a20ed341a698" category="paragraph">BlueXP  워크로드 공장에서 FSx for ONTAP 볼륨에 대한 맞춤형 스냅샷 정책을 생성합니다. 스냅샷 정책은 시스템에서 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
   <block id="9b5cb8f49e83e342d48c95385ebf43e7" category="list-text">사용자 지정 스냅샷 정책을 생성하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="bde64956326818fe8b0667c56ca96cb2" category="paragraph">중 하나를 사용하여 <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>로그인합니다. . Storage * 에서 * Go to storage inventory * 를 선택합니다. . FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다. . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다. . Volumes * 탭에서 예약된 스냅샷으로 보호할 볼륨에 대한 3점 메뉴를 선택합니다. . 데이터 보호 조치 *, * 스냅샷 *, * 스냅샷 정책 관리 * 를 차례로 선택합니다. . 스냅샷 정책 관리 페이지에서 * 새 스냅샷 정책 생성 * 을 선택합니다. . 스냅샷 정책 이름 * 필드에 스냅샷 정책의 이름을 입력합니다. . 선택 사항: * Description * 필드에 스냅샷 정책에 대한 설명을 입력합니다. . Schedule * 아래에서 스냅샷을 생성할 시기를 선택합니다. 예를 들어, 매 분 또는 매시간.</block>
-  <block id="fc44d0b301d97eb155695e7e98d13195" category="paragraph">+ 둘 이상의 주파수를 선택할 수 있습니다. . 사본 수 * 에 보관할 매수를 입력합니다.</block>
-  <block id="e30313f4b4ec8d88a97bc809eb25a275" category="paragraph">+ 최대 인쇄 매수는 1,023매입니다. . 선택 사항: * 명명 규칙 * 에서 정책에 * 접두사 * 를 입력합니다. . * 보존 레이블 * 이 자동으로 채워집니다.</block>
-  <block id="404cc58e2d73e238e13299d652231d3e" category="paragraph">+ 이 레이블은 소스에서 타겟 파일 시스템으로의 복제에 지정된 스냅샷만 선택하는 데 사용되는 SnapMirror 또는 복제 레이블을 나타냅니다. . Apply * 를 선택합니다.</block>
   <block id="475db696847724a8e496eba7476bc2ce" category="summary">BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다.</block>
   <block id="512defc52682eb6b6d9585f8d5494603" category="paragraph">스냅샷을 생성해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> 합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="8e835d5a49d273fb898a556146f8b52c" category="list-text">Volumes * 탭에서 보호할 볼륨에 대한 3점 메뉴를 선택합니다.</block>
@@ -1320,4 +1316,15 @@
   <block id="07b434b23f63ca6490df33b213599320" category="sidebar">NFS 엑스포트 정책을 관리합니다</block>
   <block id="6026d035efbb2d0fc978d9ab5bb5b084" category="paragraph">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹 결정 및 권한 수준 결정, CIFS 공유 삭제가 포함됩니다.</block>
   <block id="34e81b46b7f1e5e087ae28a3b95e81fb" category="list-text">액세스 권한을 부여할 사용자 또는 그룹 및 권한 수준을 결정합니다.</block>
+  <block id="3b3e8444b249018f7cabe035d36fb53b" category="list-text">Volumes * 탭에서 예약된 스냅샷으로 보호할 볼륨에 대한 3점 메뉴를 선택합니다.</block>
+  <block id="d67e779675002ae52bb96db205e592f8" category="list-text">스냅샷 정책 관리 페이지에서 * 새 스냅샷 정책 생성 * 을 선택합니다.</block>
+  <block id="8197cd59767b0d487d39d4530835d10e" category="list-text">스냅샷 정책 이름 * 필드에 스냅샷 정책의 이름을 입력합니다.</block>
+  <block id="443886f68921b4853b3d9661df7a7c0f" category="list-text">선택 사항: * Description * 필드에 스냅샷 정책에 대한 설명을 입력합니다.</block>
+  <block id="7881dae15f35ca3fa5220cbe11bdefe2" category="list-text">Schedule * 아래에서 스냅샷을 생성할 시기를 선택합니다. 예를 들어, 매 분 또는 매시간.</block>
+  <block id="ed8034815557020cf5cb39ef2e1c8cea" category="paragraph">둘 이상의 주파수를 선택할 수 있습니다.</block>
+  <block id="f2361db09e678cda3613419cc1de72f2" category="list-text">사본 수 * 에 보관할 매수를 입력합니다.</block>
+  <block id="c610ec69c40639be95a74d6a4551c7eb" category="paragraph">최대 인쇄 매수는 1,023매입니다.</block>
+  <block id="b6576df8ae387ace84c72b1d00479bc0" category="list-text">선택 사항: * 명명 규칙 * 에서 정책에 * 접두사 * 를 입력합니다.</block>
+  <block id="78c10834148d83801a4f716235d19c09" category="list-text">* 보존 레이블 * 이 자동으로 채워집니다.</block>
+  <block id="8a2e9f9173bc33c79f9448e05bf8e7c0" category="paragraph">이 레이블은 소스에서 타겟 파일 시스템으로의 복제에 지정된 스냅샷만 선택하는 데 사용되는 SnapMirror 또는 복제 레이블을 나타냅니다.</block>
 </blocks>
