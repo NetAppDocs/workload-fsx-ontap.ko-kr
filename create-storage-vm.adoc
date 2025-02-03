@@ -33,8 +33,7 @@ NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하�
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP 탭에서 스토리지 VM을 생성할 파일 시스템의 세 점 메뉴를 선택하고 * 관리 * 를 선택합니다.
-. 파일 시스템 개요에서 * 스토리지 VM 생성 * 을 선택합니다.
+. FSx for ONTAP 탭에서 스토리지 VM을 생성할 파일 시스템의 3점 메뉴를 선택하고 * 스토리지 VM 생성 * 을 선택합니다.
 . 스토리지 VM 페이지의 스토리지 VM 구성에서 다음을 제공합니다.
 +
 .. * 이름 *: 스토리지 VM의 이름을 입력합니다.

@@ -196,7 +196,6 @@
   <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">링크를 연결합니다</block>
   <block id="06c8b7e08cdd0ff26018bb7b51851a9f" category="paragraph">단일 볼륨을 복제하거나 파일 시스템의 모든 볼륨을 복제하려면 다음 단계를 수행하십시오.</block>
   <block id="4f6c910e41c00f71304d3d06714c1c38" category="open-title">단일 볼륨을 복제합니다</block>
-  <block id="e0498c311fd63d398b51f62c2bf97e3b" category="list-text">데이터 보호 조치 * 를 선택한 다음 * 볼륨 데이터 복제 * 를 선택합니다.</block>
   <block id="b9a2f47b5bc4bd7fcc8d23d6721ec4c2" category="list-text">복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.</block>
   <block id="837278414ab16e2a74dfc1b2102bcd54" category="list-text">* FSx for ONTAP 파일 시스템 *: 대상 FSx for ONTAP 파일 시스템에 대한 자격 증명, 지역 및 FSx for ONTAP 파일 시스템 이름을 선택합니다.</block>
   <block id="c8ad1bd40ad1f2f7011877a43d0904aa" category="list-text">* 스토리지 VM 이름 *: 드롭다운 메뉴에서 스토리지 VM을 선택합니다.</block>
@@ -238,7 +237,6 @@
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이언트와 워크스테이션이 SVM의 엔드포인트(IP 주소)를 사용하여 SVM에서 호스팅하는 볼륨, CIFS/SMB 공유 또는 iSCSI LUN을 마운트합니다.</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP 스토리지 가상 머신 관리</block>
   <block id="cbddd6713cb3317df938ea4a6fd2cd84" category="paragraph">파일 시스템당 지원되는 스토리지 VM 수를 확인합니다. 파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> .</block>
-  <block id="e65cbc1f8e84ec0a33192b999f9e9cc4" category="list-text">파일 시스템 개요에서 * 스토리지 VM 생성 * 을 선택합니다.</block>
   <block id="cdbc38b99c6a38c90c6623e1ac73a0fd" category="list-text">스토리지 VM 페이지의 스토리지 VM 구성에서 다음을 제공합니다.</block>
   <block id="c9f265881e56f4c52918525bdcb9205d" category="list-text">* 이름 *: 스토리지 VM의 이름을 입력합니다.</block>
   <block id="42a49281a2c075c2004f1e73852b27e3" category="list-text">* 스토리지 VM 자격 증명 *: 이 스토리지 VM 사용자의 암호를<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 제공하거나 파일 시스템의<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 사용자 자격 증명을 사용합니다.</block>
@@ -930,8 +928,6 @@
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  워크로드 팩토리에서 복제 관계를 생성합니다</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">예측하지 못한 재해 발생 시 데이터 손실을 방지하기 위해 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성합니다.</block>
   <block id="cf2d4a66ab67f86354f74f9c2cd68326" category="list-text">복제 관계에 사용하는 두 파일 시스템에 연결된 링크가 있어야 합니다. 파일 시스템에 기존 링크가 없는 경우 <block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block> <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>파일 시스템의 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 링크가 두 파일 시스템에 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="d3c14843d08cf463d9ea9a6b94804262" category="list-text">FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
-  <block id="089bd3378d1656ee1710bccf951f8421" category="list-text">Volumes 탭에서 복제할 볼륨의 점 3개 메뉴를 선택합니다.</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_AUTO_는 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="1d1c040daca4e036fc6766de8bee1a0d" category="list-text">FSx for ONTAP 탭에서 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="26aa14a56cb65f177e49de0f78d28f50" category="summary">BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 생성합니다. 스냅샷 정책은 시스템에서 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
@@ -944,7 +940,6 @@
   <block id="4da97157b6693eaf9968b187d7b8259c" category="paragraph">FSx for ONTAP 파일 시스템용 스토리지 VM(SVM)을 생성하여 BlueXP  워크로드 팩토리의 워크로드를 위한 스토리지 및 데이터 서비스에 가상으로 액세스합니다.</block>
   <block id="54f16768a20bbfb09d736f2fa0a731aa" category="paragraph">스토리지 VM은 작업 부하 공장 스토리지의 각 작업 부하에서 데이터에 액세스하는 데 사용할 수 있는 격리된 파일 서버입니다. 각 SVM에는 데이터 관리 및 액세스를 위한 자체 관리 자격 증명 및 엔드포인트가 있습니다.</block>
   <block id="08e2fd9fd4dc9adfe3d5f817b3499842" category="paragraph">워크로드 팩토리 콘솔에서 스토리지 VM을 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
-  <block id="76e3f0d82963df25a63cb0c98b73397d" category="list-text">FSx for ONTAP 탭에서 스토리지 VM을 생성할 파일 시스템의 세 점 메뉴를 선택하고 * 관리 * 를 선택합니다.</block>
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  워크로드 팩토리의 스냅샷에서 새 FSx for ONTAP 볼륨을 생성하여 시점 복구를 지원합니다.</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대해 점 3개 메뉴를 선택합니다.</block>
@@ -953,8 +948,6 @@
   <block id="70e17a61e26a90f517dba1b053b0c09e" category="paragraph">FSx for ONTAP 파일 시스템을 설정한 후 BlueXP  워크로드 공장에서 FSx for ONTAP 볼륨을 생성할 수 있습니다.</block>
   <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">워크로드 팩토리에 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
   <block id="60911d8c5f41bf949378c3bec9fe03b7" category="list-text">볼륨에 대한 액세스를 구성하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="27403aa4066ffea03bd15fd0fd4e5e67" category="list-text">FSx for ONTAP * 탭에서 볼륨을 생성할 파일 시스템의 세 점 메뉴를 선택하고 * 관리 * 를 선택합니다.</block>
-  <block id="892eff425e1d1bcf86736ccfc7447322" category="list-text">개요 * 탭에서 * 볼륨 생성 * 을 선택합니다.</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAP은 BlueXP  워크로드 팩토리에서 스냅샷, 볼륨 백업 및 볼륨 복제를 지원합니다.</block>
   <block id="d041ab32e01d968ecc286a807158f8b3" category="doc">BlueXP  워크로드 공장에서 데이터 보호</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.</block>
@@ -1327,4 +1320,131 @@
   <block id="b6576df8ae387ace84c72b1d00479bc0" category="list-text">선택 사항: * 명명 규칙 * 에서 정책에 * 접두사 * 를 입력합니다.</block>
   <block id="78c10834148d83801a4f716235d19c09" category="list-text">* 보존 레이블 * 이 자동으로 채워집니다.</block>
   <block id="8a2e9f9173bc33c79f9448e05bf8e7c0" category="paragraph">이 레이블은 소스에서 타겟 파일 시스템으로의 복제에 지정된 스냅샷만 선택하는 데 사용되는 SnapMirror 또는 복제 레이블을 나타냅니다.</block>
+  <block id="ed2a329d6f9bf2181ff23014cff23ba5" category="doc">BlueXP  워크로드 팩토리 콘솔의 CloudShell</block>
+  <block id="5eaddd0f57f7eaddd8610d939876ec8d" category="paragraph">CloudShell은 BlueXP  워크로드 공장 내에서 스토리지용 내장 CLI 기능입니다. CloudShell을 사용하여 워크로드 팩토리 콘솔 내에서 셸 같은 환경의 여러 세션에서 ONTAP 또는 AWS CLI 명령을 생성, 공유, 실행할 수 있습니다.</block>
+  <block id="09a780ee2763ed81ce7dcd3480b57fe4" category="inline-link-macro">BlueXP  워크로드 공장 내 CloudShell에 대해 자세히 알아보십시오</block>
+  <block id="feff74472562237513e0ca0c55cd4e38" category="paragraph"><block ref="feff74472562237513e0ca0c55cd4e38" category="inline-link-macro-rx"></block></block>
+  <block id="9be163b55bb1cb61b0ccee4ea40ae6ee" category="section-title">재고 데이터 다운로드</block>
+  <block id="e61fb273c97526db97c128ce9bfc04a9" category="paragraph">이제 BlueXP  워크로드 팩토리의 스토리지에서 FSx for ONTAP 인벤토리 데이터를 Microsoft Excel 또는 CSV 파일로 다운로드할 수 있습니다.</block>
+  <block id="1d242bf1e7b71fd8602570478aa1bdc8" category="inline-image-macro">FSx for ONTAP 파일 시스템 인벤토리 데이터를 다운로드하기 위한 새로운 다운로드 버튼을 보여주는 BlueXP  워크로드 팩토리 스토리지의 스크린샷</block>
+  <block id="b8040f0b8b5eff64bb15c9fc0fbc96d6" category="paragraph"><block ref="b8040f0b8b5eff64bb15c9fc0fbc96d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eae91301e6256990d5311778eafea0e5" category="section-title">FSx for ONTAP 파일 시스템 추가 메뉴 옵션</block>
+  <block id="0ad83f6b2d6e8bf103be3683c0c87ef9" category="paragraph">스토리지의 FSx for ONTAP 탭에서 FSx for ONTAP 파일 시스템에 대해 다음과 같이 더 간단하게 수행할 수 있습니다.</block>
+  <block id="8221d5fcbb1b8ef8a3fa535553679b44" category="list-text">볼륨 데이터를 복제합니다</block>
+  <block id="bb8210b8fea9fd35bf14070e9b9f7cf9" category="inline-image-macro">스토리지 의 FSx for ONTAP 탭 스크린샷. 스토리지 VM 생성, 볼륨 생성, 볼륨 데이터 복제 등의 새로운 메뉴 옵션이 표시됩니다.</block>
+  <block id="2a10a5b76871c42edb3807a0dec574ae" category="paragraph"><block ref="2a10a5b76871c42edb3807a0dec574ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f72c2c06d295d3f5420254934ac77b1" category="section-title">볼륨 생성을 위한 Terraform 지원</block>
+  <block id="7f28d622584eb6b05ee5ce1609e2de38" category="paragraph">이제 Codebox에서 Terraform을 사용하여 볼륨을 생성할 수 있습니다.</block>
+  <block id="d3156376048c94102c97709d5ff05e75" category="paragraph"><block ref="d3156376048c94102c97709d5ff05e75" category="inline-link-macro-rx"></block></block>
+  <block id="eb139dd9cb815e502d04047858e7c930" category="section-title">변경 불가능한 파일 기능으로 파일 잠금</block>
+  <block id="849a110e76510a6394e4b27714d0bc20" category="paragraph">이제 FSx for ONTAP 파일 시스템에 대한 볼륨을 생성할 때 변경 불가능한 파일 기능을 사용하여 파일을 잠글 수 있습니다. 파일 잠금을 사용하면 지정된 기간 동안 실수로 또는 의도적으로 파일을 삭제하는 것을 방지할 수 있습니다.</block>
+  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">추적기를 사용하여 작업을 모니터링하고 추적할 수 있습니다</block>
+  <block id="c016252819aa3f6ede2b315b76b5c5b2" category="paragraph">Tracker, 스토리지에서 새로운 모니터링 기능을 사용할 수 있습니다. Tracker를 사용하여 자격 증명, 저장소 및 링크 작업의 진행 상태 및 상태를 모니터링하고 추적하며, 작업 및 하위 작업에 대한 세부 정보를 검토하고, 문제 또는 장애를 진단하고, 실패한 작업에 대한 매개 변수를 편집하고, 실패한 작업을 재시도할 수 있습니다.</block>
+  <block id="7512718e82771ab0f98e51652a2e97c6" category="inline-link-macro">Tracker를 사용하여 운영을 모니터링하고 추적하는 방법에 대해 알아봅니다</block>
+  <block id="30babb51ab17a107228fe65a4e65418b" category="paragraph"><block ref="30babb51ab17a107228fe65a4e65418b" category="inline-link-macro-rx"></block></block>
+  <block id="c1c23b72df9b53434f3c5ef6963cd2c1" category="section-title">2세대 Amazon FSx for NetApp ONTAP 파일 시스템 지원</block>
+  <block id="327da4942931ea47a06f556d15726878" category="paragraph">이제 BlueXP  워크로드 공장에서 Amazon FSx for NetApp ONTAP 2세대 파일 시스템을 사용할 수 있습니다. FSx for ONTAP 2세대 단일 AZ 파일 시스템은 최대 12개의 HA 쌍을 구동하여 최대 72GBps의 처리량 용량과 2,400,000 SSD IOPS를 제공합니다. FSx for ONTAP 2세대 멀티 AZ 파일 시스템은 하나의 HA 쌍을 기반으로 하며 6GBps의 처리량 용량과 200,000 SSD IOPS를 제공합니다.</block>
+  <block id="a22d0116b85624117006e75d98d659db" category="inline-link-macro">고가용성 쌍 추가</block>
+  <block id="8a34eb45ca4cf03ce0d5e71fbfafb73a" category="list-text"><block ref="8a34eb45ca4cf03ce0d5e71fbfafb73a" category="inline-link-macro-rx"></block></block>
+  <block id="eeb5242f698ac9fda34591a326f4c0a3" category="inline-link-macro">Amazon FSx for NetApp ONTAP의 할당량 및 한도</block>
+  <block id="94f917accd36ed25f8a73175e8d4cdfb" category="list-text"><block ref="94f917accd36ed25f8a73175e8d4cdfb" category="inline-link-macro-rx"></block></block>
+  <block id="872fb30847d0e2ca8bac3e52054013c7" category="summary">BlueXP  워크로드 팩토리 의 파일 시스템에 고가용성 페어를 추가하여 파일 시스템을 확장할 수 있습니다.</block>
+  <block id="310011ba5387c43c841355394cd8cb9a" category="doc">BlueXP  워크로드 팩토리의 파일 시스템에 HA 쌍을 추가합니다</block>
+  <block id="304724e8759230c609bf9c333dfd2870" category="paragraph">고가용성(HA) 쌍을 추가하여 BlueXP  워크로드 공장에서 FSx for ONTAP 2세대 단일-AZ 파일 시스템을 스케일아웃하여 성능과 용량을 강화할 수 있습니다. 이러한 확장은 1세대 파일 시스템에 비해 뛰어난 성능 확장성 및 유연성을 제공합니다.</block>
+  <block id="a9a9a7c9ee5a38cb1e35ca4b8cce7276" category="paragraph">새로운 HA 쌍은 HA 쌍당 동일한 SKU 및 동일한 용량을 사용하여 추가됩니다.</block>
+  <block id="c34a6e94bb77f8d46f8d1f9ca5d1c2b9" category="paragraph">다음에 대해서는 HA 쌍 추가가 지원되지 않습니다.</block>
+  <block id="78d560615a8adc2f32fa3ecd80e33fd1" category="list-text">멀티 AZ HA 배포 또는 1세대 FSx for ONTAP 파일 시스템</block>
+  <block id="d1360a44b7e5113c71c2bccc4ade5ce8" category="list-text">FSx for ONTAP 파일 시스템 - 5개 이상의 스토리지 VM이 포함되어 있습니다</block>
+  <block id="943393d8598620d656ed3221b72683cf" category="list-text">FSx for ONTAP 파일 시스템, iSCSI LUN 사용</block>
+  <block id="7d37b0d4d8c2c037db887ba2ef4befd8" category="list-text">최대 SSD 용량이 있거나 최대 SSD 용량에 근접하거나 IO 할당 제한에 도달한 구성입니다</block>
+  <block id="d87c9129ec2537bcf3c1a19ef369663c" category="paragraph">HA 쌍 추가에 대해서는 다음 사항을 고려하십시오.</block>
+  <block id="bee7f2516cfc11bd1d783c9a0abddcfc" category="list-text">HA 쌍 제거: 파일 시스템에 추가된 후에는 HA 쌍을 제거할 수 없습니다.</block>
+  <block id="3bb5813303893f4fbd1a3c16e489c6b2" category="list-text">작업 시간 및 제한: HA 쌍을 추가하는 데 약 30분이 걸릴 수 있습니다. 유지 관리 기간 동안 또는 활동이 적은 기간에 HA 쌍을 추가하는 것을 고려해 보십시오. 또한 HA 쌍을 추가하면 HA 쌍 추가, IOPS 프로비저닝, SSD 용량 증가, 처리량 용량 업데이트 등과 같은 다른 운영이 제한됩니다.</block>
+  <block id="ea59a490db5f0dbf4a08a12fc8ad506b" category="list-text">IO 할당: 자동 입출력 할당은 총 스토리지 용량에 따라 달라집니다. 사용자가 구성한 IO 할당에 추가된 HA 쌍 양을 곱합니다.</block>
+  <block id="7e1da5f0b87a5f6fa454d36b488af717" category="list-text">NVMe 캐시: HA 쌍을 추가할 때 NVMe 캐시가 기본적으로 활성화됩니다. 워크로드가 큰 경우 NVMe 캐시를 해제하는 것이 좋습니다.</block>
+  <block id="ad8dcf096cb2afb4a235df61b29f9698" category="list-text">HA 쌍 수: HA 쌍 간에 데이터를 균형 있게 분산하기 위해 파일 시스템을 짝수 HA 쌍으로 확장하는 것이 좋습니다.</block>
+  <block id="a918312e36a786ad734780ce0938389b" category="list-text">LUN 생성: 2세대 단일 AZ 파일 시스템에서 LUN 생성은 HA 쌍을 추가할 때 파일 시스템에 LUN이 아직 없는 경우에만 가능합니다. LUN 생성은 HA 쌍이 6개 이하인 파일 시스템에서만 지원됩니다.</block>
+  <block id="df909e03d10a14950b92a8e5633d9123" category="paragraph">파일 시스템에 HA 쌍을 추가하기 전에 다음을 수행합니다.</block>
+  <block id="4173fb9932d53246098b25db51af2252" category="list-text">모든 iSCSI LUN을 제거하여 파일 시스템을 스케일 아웃합니다.</block>
+  <block id="fefe421f31fcb913ee3602de627b2aad" category="list-text">파일 시스템에 스토리지 VM이 5개 이하여야 합니다.</block>
+  <block id="f4f11e4d478a467a240d18f498921150" category="list-text">FSx for ONTAP * 탭의 * 정보 * 에서 * HA 쌍 * 옆에 있는 연필 아이콘을 선택합니다.</block>
+  <block id="9d8f80ba2bc026694d1d454d46507e1a" category="list-text">Add HA Pairs * 대화 상자에서 파일 시스템에 추가할 HA 쌍 수를 선택합니다.</block>
+  <block id="03d260b6edf74eab2f53976254758a17" category="list-text">Add * 를 선택하여 HA 쌍 추가를 확인합니다.</block>
+  <block id="379ea21065ee4862014742fa5a258e93" category="paragraph">워크로드 팩토리얼이 파일 시스템에 HA 쌍을 추가하는 프로세스를 시작합니다. HA 페어가 추가될 때까지 볼륨 생성과 같은 다른 작업에는 파일 시스템을 사용할 수 없습니다. Tracker * 탭에서 작업 진행률을 모니터링할 수 있습니다.</block>
+  <block id="d290c400d30f537f28b8084fbc091982" category="list-text">FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 파일 시스템의 3점 메뉴를 선택한 다음 * Replicate volume data * 를 선택합니다.</block>
+  <block id="9c02b82df4be281c41318d376be29cf9" category="list-text">FSx for ONTAP 탭에서 스토리지 VM을 생성할 파일 시스템의 3점 메뉴를 선택하고 * 스토리지 VM 생성 * 을 선택합니다.</block>
+  <block id="70975b8c8f6b12169d193367442b573d" category="paragraph">코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용하여 볼륨을 생성할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
+  <block id="7bedae719019136090a7c4c373312767" category="list-text">FSx for ONTAP * 탭에서 볼륨을 생성할 파일 시스템의 세 점 메뉴를 선택하고 * 볼륨 생성 * 을 선택합니다.</block>
+  <block id="5cc952f284466929d6b64c6a769f954d" category="inline-link-macro">SnapLock 작동 방법</block>
+  <block id="4f607bc8b085931c8b1fac489fd24290" category="list-text">* 변경 불가능한 파일 * : SnapLock라고도 하는 이 기능은 기본적으로 비활성화되어 있습니다. 변경 불가능한 파일을 활성화하면 지정된 기간 동안 데이터가 삭제되거나 덮어써지지 않습니다. 이 기능은 볼륨 생성 중에만 사용할 수 있습니다. 이 기능이 활성화되면 이 기능을 비활성화할 수 없습니다. 이는 FSx for ONTAP의 프리미엄 기능으로 추가 비용이 부과됩니다. 자세한 내용은 Amazon FSx for NetApp ONTAP 설명서의 을 <block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="f348514dc345ce9c1d9ad82ae7129779" category="paragraph">변경 불가능한 파일 기능을 활성화하면 이 볼륨의 파일이 변경 불가능한 WORM(Write-Once-Read-Many) 상태로 영구적으로 커밋됩니다.</block>
+  <block id="d1004c5cd3614165a3675cc9bcefd0ff" category="list-text">보존 모드</block>
+  <block id="bf037d2be2988cb003e5473abb7458ad" category="list-text">두 가지 보존 모드(_Enterprise_또는_Compliance_)에서 선택할 수 있습니다.</block>
+  <block id="2c7186fdcb22214f6a80f0c4bf830b01" category="list-text">Enterprise_mode, 변경 불가능한 파일 또는 SnapLock에서 관리자는 보존 기간 동안 파일을 삭제할 수 있습니다.</block>
+  <block id="056049eeec9d03d44ee8b82656eddd56" category="list-text">Compliance_mode에서는 보존 기간이 만료되기 전에 WORM 파일을 삭제할 수 없습니다. 마찬가지로 볼륨 내의 모든 파일에 대한 보존 기간이 만료될 때까지 변경 불가능한 볼륨을 삭제할 수 없습니다.</block>
+  <block id="2dee9b3212ded01b0c388d81a6f5aec3" category="list-text">보존 기간</block>
+  <block id="103d1ff0c19e1c2f05d0e9237137a1dd" category="list-text">보존 기간에는 _ retention policy_and _ retention perioes _ 라는 두 가지 설정이 있습니다. retention policy_는 변경 불가능한 WORM 상태에서 파일을 보존할 기간을 정의합니다. 고유한 보존 정책을 지정하거나 기본 보존 정책(지정되지 않음)을 30년으로 사용할 수 있습니다. 최소 및 최대 보존 기간 _ 은(는) 파일 잠금에 허용되는 시간 범위를 정의합니다.</block>
+  <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">참고</block>
+  <block id="1e6fe3169d6df99dc6e4d89c3f0ca701" category="list-text">보존 기간이 만료된 후에도 WORM 파일을 수정할 수 없습니다. WORM 보호만 삭제하거나 새 보존 기간을 설정하여 WORM 보호를 다시 설정할 수 있습니다.</block>
+  <block id="00c161f0779702fcc736833a90e1c117" category="list-text">자동으로 커밋합니다</block>
+  <block id="0710e9c5903cc398ef1a22a38cbb4666" category="list-text">자동 커밋 기능을 사용하도록 설정할 수 있습니다. 자동 커밋 기능은 파일이 자동 커밋 기간 동안 변경되지 않은 경우 SnapLock 볼륨에서 WORM 상태로 파일을 커밋합니다. 자동 커밋 기능은 기본적으로 비활성화되어 있습니다. 자동 커밋하려는 파일이 SnapLock 볼륨에 있어야 합니다.</block>
+  <block id="f84002cfa8aafdd6963aef9819f03cbe" category="list-text">볼륨 추가 모드</block>
+  <block id="73085bf5d4b4c2626026794741768c09" category="inline-link-macro">볼륨 추가 모드에 대해 자세히 알아보십시오</block>
+  <block id="f70318a7f623a49e77262fc2b382b062" category="list-text">WORM 보호 파일에서 기존 데이터를 수정할 수 없습니다. 그러나 변경 불가능한 파일을 사용하면 WORM 추가 가능한 파일을 사용하여 기존 데이터를 계속 보호할 수 있습니다. 예를 들어 증분 데이터를 기록하는 동안 로그 파일을 생성하거나 오디오 또는 비디오 스트리밍 데이터를 유지할 수 있습니다. <block ref="d363aab3c17dd7b08ef55d9ecb5c0afa" category="inline-link-macro-rx"></block> in Amazon FSx for NetApp ONTAP 설명서.</block>
+  <block id="dfb689231a842f04569410625d60363d" category="list-title">변경 불가능한 파일에 대한 단계</block>
+  <block id="44ba7526f1340d677cb6220be4b1b823" category="list-text">SnapLock*에서 제공하는 * 변경 불가능한 파일을 활성화하려면 선택합니다.</block>
+  <block id="4f7680fa283bf52aaa8ee2edfd564db8" category="list-text">동의하고 계속하려면 상자를 클릭하십시오.</block>
+  <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">사용 * 을 클릭합니다.</block>
+  <block id="088bb2d18ad8fbec398c29306e127221" category="list-text">* 보존 모드 *: * Enterprise * 또는 * Compliance * 모드를 선택합니다.</block>
+  <block id="77b42ba4805daabc49114b9ab89a4177" category="list-text">* 보존 기간 *:</block>
+  <block id="f35564204209083a652f147df603888c" category="list-text">보존 정책 선택:</block>
+  <block id="504152708cd9de44bb9cb86c2f924f58" category="list-text">* Unspecified *: 보존 정책을 30년으로 설정합니다.</block>
+  <block id="d52522aeac6c98a12810dc096d055647" category="list-text">* 기간 지정 *: 자신의 보존 정책을 설정할 초, 분, 시간, 일, 월 또는 연도 수를 입력합니다.</block>
+  <block id="6c174e94dd8ddcd5d81962e78326f53a" category="list-text">최소 및 최대 보존 기간 선택:</block>
+  <block id="16358ae23c4e09a6d211bde0bb1d5944" category="list-text">* 최소 *: 최소 보존 기간을 설정할 초, 분, 시간, 일, 개월 또는 연도 수를 입력합니다.</block>
+  <block id="0e5cb121a1c7b4c59daf6285123d8e75" category="list-text">* 최대 *: 최대 보존 기간을 설정할 초, 분, 시간, 일, 개월 또는 연도 수를 입력합니다.</block>
+  <block id="9ddc08dbc82d9bea34f1dc4c5b59e6e7" category="list-text">*autocomit*: 자동 커밋을 비활성화하거나 활성화합니다. 자동 커밋을 설정한 경우 자동 커밋 기간을 설정합니다.</block>
+  <block id="f8688d8b01dc38763ec2b1f2b373aacc" category="list-text">* 볼륨 추가 모드 *: 비활성화 또는 활성화. WORM 파일에 새 콘텐츠를 추가할 수 있습니다.</block>
+  <block id="4d039a03e23e55926708d85c8977d521" category="list-text">변경 불가능한 파일: SnapLock에서 제공하는 변경 불가능한 파일이 포함된 볼륨은 보존 기간이 만료될 때까지 삭제할 수 없습니다.</block>
+  <block id="d39be15ae050d8e613043b0ac15e302b" category="section-title">HA 쌍 추가 제한</block>
+  <block id="5efa36685932e62e6fc20327cd980750" category="list-text">이 작업을 완료하는 데 약 30분 정도 걸릴 수 있습니다.</block>
+  <block id="a51a5c7e9ccc4724703a6ad204303926" category="list-text">HA 쌍을 추가하면 HA 쌍 추가, IOPS 프로비저닝, SSD 용량 증가, 처리량 용량 업데이트 등과 같은 작업이 제한됩니다.</block>
+  <block id="0499cc2d877c04e04bec267579a95697" category="summary">스토리지를 위한 BlueXP  워크로드 팩토리의 Tracker에서 FSx for ONTAP, 자격 증명 및 링크 작업을 추적하고 작업 진행 상황을 모니터링합니다.</block>
+  <block id="dc58214807820bc923ac22555f97fd7a" category="doc">BlueXP  워크로드 팩토리의 Tracker를 사용하여 스토리지 운영을 모니터링합니다</block>
+  <block id="a1351d61b85cd866d5c412c6e3220b98" category="paragraph">BlueXP  워크로드 팩토리의 Tracker를 통해 FSx for ONTAP 실행, 자격 증명 및 연결 작업을 모니터링 및 추적하고 작업 진행 상황을 모니터링합니다.</block>
+  <block id="d57581d19f1047da33c24e46abd88cd4" category="paragraph">워크로드 팩토리에는 FSx for ONTAP의 진행률과 상태, 자격 증명 및 링크 작업을 모니터링 및 추적하고, 작업 및 하위 작업에 대한 세부 정보를 검토하며, 문제 또는 장애를 진단하고, 실패한 작업에 대한 매개 변수를 편집하고, 실패한 작업을 재시도할 수 있는 모니터링 기능인 Tracker가 제공됩니다. 유형 및 상태별로 작업을 필터링하고, 검색 기능을 사용하여 작업을 찾고, 작업 테이블을 다운로드할 수 있습니다.</block>
+  <block id="5cc85b66adf3d2a6e3eb745a827cf4e0" category="paragraph">추적기는 작업에 따라 최대 3가지 수준의 모니터링을 지원합니다. 파일 시스템 배포와 같은 각 작업은 작업 설명, 상태, 시작 시간, 작업 기간, 사용자, 영역, 프록시 리소스, 작업 ID 및 모든 관련 하위 작업을 표시합니다.</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">예를 포함한 추적기 작업 수준</block>
+  <block id="6db8f73f40a9c238922a375a008fda96" category="list-text">레벨 1(상위 작업): 파일 시스템 구축을 추적합니다.</block>
+  <block id="4848a390cc9141e051b33cd55dc40d06" category="list-text">레벨 2(하위 작업): 파일 시스템 배포와 관련된 하위 작업을 추적합니다.</block>
+  <block id="df942ff3756f5cbd24f42b521acc64f8" category="list-text">수준 3(작업): 각 자원에 대해 수행된 작업의 순서를 나열합니다.</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">작업 상태</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">Tracker의 작업 상태는 다음과 같습니다_in progress_,_success_및_failed_입니다.</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">작동 주파수</block>
+  <block id="a9853b6069302c4152781f48222c3541" category="list-text">작업 빈도는 작업 유형 및 작업 일정을 기반으로 합니다.</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">이벤트 보존</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">이벤트는 사용자 인터페이스에서 30일 동안 유지됩니다.</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">작업을 추적하고 모니터링합니다</block>
+  <block id="c82c26735f08b789c8bf574ab4962fcc" category="paragraph">추적기를 사용하여 BlueXP 에서 작업을 추적하고 모니터링합니다.</block>
+  <block id="48acd3e9d69adfbf7f5941961e95f6de" category="list-text">저장소 인벤토리에서 계정 설정 메뉴를 선택한 다음 * Tracker * 를 선택합니다.</block>
+  <block id="1c575ed3e5dce0a1d77706830609b278" category="inline-image-macro">Tracker 옵션이 강조 표시된 계정 설정 메뉴 스크린샷</block>
+  <block id="7478b5abe2869b21138fe88cbd4d66da" category="paragraph"><block ref="7478b5abe2869b21138fe88cbd4d66da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e443a93c9da9763cd15656814a7e0c2e" category="list-text">Tracker(추적기) 탭에서 필터를 사용하거나 검색을 사용하여 작업 결과를 좁힙니다. 작업 보고서를 다운로드할 수도 있습니다.</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">API 요청을 봅니다</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">Tracker의 작업에 대한 코드상자에서 API 요청을 봅니다.</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">Tracker에서 작업을 선택합니다.</block>
+  <block id="2e6179b36329b65c38a5ca113ba0c81c" category="list-text">3점 메뉴를 선택한 다음 * API 요청 보기 * 를 선택합니다.</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">실패한 작업을 다시 시도하십시오</block>
+  <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">Tracker에서 실패한 작업을 재시도하십시오. 실패한 작업의 오류 메시지를 복사할 수도 있습니다.</block>
+  <block id="2d7556f00012ad460e93441b51cce6ea" category="admonition">실패한 작업에 대해 x개의 재시도 횟수만 허용됩니다.</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">Tracker에서 실패한 작업을 선택합니다.</block>
+  <block id="5d0eaa0ad00baabb57cbc22969070918" category="list-text">세 개의 점 메뉴를 선택한 다음 * 재시도 * 를 선택하십시오.</block>
+  <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">작업이 다시 시작됩니다.</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">실패한 작업을 편집한 후 다시 시도하십시오</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">실패한 작업의 매개 변수를 편집하고 Tracker 외부에서 작업을 재시도하십시오.</block>
+  <block id="524ab960a72817bd7f9f107dc357d1bd" category="list-text">세 점 메뉴를 선택한 다음 * 편집 을 선택하고 다시 시도하십시오 *.</block>
+  <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">매개 변수를 편집하고 작업을 다시 시도할 수 있는 작업 페이지로 리디렉션됩니다.</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">작업이 다시 시작됩니다. Tracker로 이동하여 작업 상태를 확인합니다.</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025년 2월 2일</block>
+  <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Tracker를 사용하여 작업을 모니터링합니다</block>
 </blocks>

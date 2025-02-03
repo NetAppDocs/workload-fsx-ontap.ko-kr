@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: add-ha-pairs.html 
+keywords: add high-availability pairs, add HA pairs, add HA pair, add high-availability pair, scale out, file system, fsx for ontap 
+summary: BlueXP  워크로드 팩토리 의 파일 시스템에 고가용성 페어를 추가하여 파일 시스템을 확장할 수 있습니다. 
+---
+= BlueXP  워크로드 팩토리의 파일 시스템에 HA 쌍을 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+고가용성(HA) 쌍을 추가하여 BlueXP  워크로드 공장에서 FSx for ONTAP 2세대 단일-AZ 파일 시스템을 스케일아웃하여 성능과 용량을 강화할 수 있습니다. 이러한 확장은 1세대 파일 시스템에 비해 뛰어난 성능 확장성 및 유연성을 제공합니다.
+
+.이 작업에 대해
+새로운 HA 쌍은 HA 쌍당 동일한 SKU 및 동일한 용량을 사용하여 추가됩니다.
+
+다음에 대해서는 HA 쌍 추가가 지원되지 않습니다.
+
+* 멀티 AZ HA 배포 또는 1세대 FSx for ONTAP 파일 시스템
+* FSx for ONTAP 파일 시스템 - 5개 이상의 스토리지 VM이 포함되어 있습니다
+* FSx for ONTAP 파일 시스템, iSCSI LUN 사용
+* 최대 SSD 용량이 있거나 최대 SSD 용량에 근접하거나 IO 할당 제한에 도달한 구성입니다
+
+
+HA 쌍 추가에 대해서는 다음 사항을 고려하십시오.
+
+* HA 쌍 제거: 파일 시스템에 추가된 후에는 HA 쌍을 제거할 수 없습니다.
+* 작업 시간 및 제한: HA 쌍을 추가하는 데 약 30분이 걸릴 수 있습니다. 유지 관리 기간 동안 또는 활동이 적은 기간에 HA 쌍을 추가하는 것을 고려해 보십시오. 또한 HA 쌍을 추가하면 HA 쌍 추가, IOPS 프로비저닝, SSD 용량 증가, 처리량 용량 업데이트 등과 같은 다른 운영이 제한됩니다.
+* IO 할당: 자동 입출력 할당은 총 스토리지 용량에 따라 달라집니다. 사용자가 구성한 IO 할당에 추가된 HA 쌍 양을 곱합니다.
+* NVMe 캐시: HA 쌍을 추가할 때 NVMe 캐시가 기본적으로 활성화됩니다. 워크로드가 큰 경우 NVMe 캐시를 해제하는 것이 좋습니다.
+* HA 쌍 수: HA 쌍 간에 데이터를 균형 있게 분산하기 위해 파일 시스템을 짝수 HA 쌍으로 확장하는 것이 좋습니다.
+* LUN 생성: 2세대 단일 AZ 파일 시스템에서 LUN 생성은 HA 쌍을 추가할 때 파일 시스템에 LUN이 아직 없는 경우에만 가능합니다. LUN 생성은 HA 쌍이 6개 이하인 파일 시스템에서만 지원됩니다.
+
+
+.시작하기 전에
+파일 시스템에 HA 쌍을 추가하기 전에 다음을 수행합니다.
+
+* 모든 iSCSI LUN을 제거하여 파일 시스템을 스케일 아웃합니다.
+* 파일 시스템에 스토리지 VM이 5개 이하여야 합니다.
+
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭의 * 정보 * 에서 * HA 쌍 * 옆에 있는 연필 아이콘을 선택합니다.
+. Add HA Pairs * 대화 상자에서 파일 시스템에 추가할 HA 쌍 수를 선택합니다.
+. Add * 를 선택하여 HA 쌍 추가를 확인합니다.
+
+
+.결과
+워크로드 팩토리얼이 파일 시스템에 HA 쌍을 추가하는 프로세스를 시작합니다. HA 페어가 추가될 때까지 볼륨 생성과 같은 다른 작업에는 파일 시스템을 사용할 수 없습니다. Tracker * 탭에서 작업 진행률을 모니터링할 수 있습니다.

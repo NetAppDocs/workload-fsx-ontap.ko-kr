@@ -82,6 +82,8 @@ sidebar:
         url: "/use-onprem-data.html"
   - title: 관리 및 모니터링
     entries:
+    - title: Tracker를 사용하여 작업을 모니터링합니다
+      url: "/monitor-operations.html"
     - title: 볼륨 관리
       entries:
       - title: 볼륨 자동 확장을 편집합니다

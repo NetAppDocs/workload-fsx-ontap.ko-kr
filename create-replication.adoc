@@ -36,9 +36,7 @@ summary: FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하여 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
-. Volumes 탭에서 복제할 볼륨의 점 3개 메뉴를 선택합니다.
-. 데이터 보호 조치 * 를 선택한 다음 * 볼륨 데이터 복제 * 를 선택합니다.
+. FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 파일 시스템의 3점 메뉴를 선택한 다음 * Replicate volume data * 를 선택합니다.
 . 복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.
 +
 .. * FSx for ONTAP 파일 시스템 *: 대상 FSx for ONTAP 파일 시스템에 대한 자격 증명, 지역 및 FSx for ONTAP 파일 시스템 이름을 선택합니다.
