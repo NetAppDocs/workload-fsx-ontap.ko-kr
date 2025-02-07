@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-volume.html 
 keywords: create volume, FSx for ONTAP volume 
-summary: BlueXP  워크로드 팩토리에서 FSx for ONTAP 파일 시스템을 설정한 후 FSx for ONTAP 볼륨을 생성할 수 있습니다. 
+summary: FSx for ONTAP 파일 시스템을 설정한 후 BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다. 
 ---
 = BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: BlueXP  워크로드 팩토리에서 FSx for ONTAP 파일 시스템을
 
 
 [role="lead"]
-FSx for ONTAP 파일 시스템을 설정한 후 BlueXP  워크로드 공장에서 FSx for ONTAP 볼륨을 생성할 수 있습니다.
+FSx for ONTAP 파일 시스템을 설정한 후 BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다.
 
 .이 작업에 대해
 FSx for ONTAP 볼륨은 데이터를 그룹화하고, 데이터를 저장하는 방법을 결정하고, 데이터에 대한 액세스 유형을 결정하는 데 사용되는 가상 리소스입니다. 볼륨은 파일 시스템 스토리지 용량을 소비하지 않습니다. 볼륨에 저장된 데이터는 주로 SSD 스토리지를 사용합니다. 볼륨의 계층화 정책에 따라 데이터가 용량 풀 스토리지를 사용할 수도 있습니다. 볼륨을 만들 때 볼륨 크기를 설정하고 나중에 크기를 변경할 수 있습니다.

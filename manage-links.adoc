@@ -11,7 +11,7 @@ summary: BlueXP  워크로드 팩토리에서는 계정에 연결된 링크를 
 
 
 [role="lead"]
-BlueXP  워크로드 공장 계정과 연결된 링크를 관리합니다.
+BlueXP  워크로드 공장 계정과 연결된 링크를 관리합니다. FSx for ONTAP 파일 시스템에 연결된 링크를 보고, 링크를 FSx for ONTAP 파일 시스템에 연결하고, 링크를 편집하고, 링크를 제거할 수 있습니다.
 
 link:links-overview.html["링크에 대해 자세히 알아보세요"]link:create-link.html["링크를 만듭니다"] 또는.
 
