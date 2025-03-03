@@ -2,22 +2,58 @@
 sidebar: sidebar 
 permalink: rebalance-volume.html 
 keywords: rebalance capacity, volume capacity, redistribute capacity 
-summary: 시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 재조정합니다. 
+summary: 시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 확인하고 재조정합니다. 
 ---
-= BlueXP  워크로드 공장에서 볼륨 용량을 재조정합니다
+= 볼륨 용량을 확인하고 재조정합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서 볼륨 용량을 재조정하여 시간이 지남에 따라 발생하는 불균형을 방지합니다.
+FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 모든 노드가 단일 Flex 그룹 볼륨의 워크로드에 참여하도록 모든 구성 요소에 파일을 균등하게 분산시킵니다.
 
 .이 작업에 대해
+FlexGroup 볼륨 용량은 2개 이상의 고가용성(HA) 쌍이 포함된 스케일아웃 FSx for ONTAP 파일 시스템의 많은 구성원에게 분산됩니다. 각 구성 요소는 최대 단일 파일 크기를 지정하는 컨테이너입니다. FSx for ONTAP은 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 균일한 방식으로 모든 구성원에게 파일을 분산합니다.
+
+구성요소가 모든 노드에 균등하게 분산되지 않으면 FlexGroup 볼륨 성능이 저하됩니다.
+
+FlexGroup 볼륨 용량의 균형을 확인하려면 구성요소의 현재 레이아웃을 평가해야 합니다. 볼륨 용량을 재조정할 때 BlueXP  워크로드 공장에서는 짝수의 구성요소가 포함된 새로운 구성 레이아웃을 설계하여 모든 HA 쌍에 데이터를 균등하게 분산합니다. 이 서비스는 재조정 계획을 실행하여 읽기 및 쓰기 작업을 개선합니다.
+
 새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다.
 
 
-NOTE: 볼륨 재조정은 FlexGroup 볼륨에만 지원됩니다.
+NOTE: 볼륨 재조정은 FlexGroup 볼륨에 대해서만 지원됩니다.
+
+
+
+== FlexGroup 볼륨의 균형을 확인합니다
+
+활성 FlexGroup 볼륨의 균형을 확인합니다.
+
+.시작하기 전에
+* FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.
+* 볼륨 스타일은 FlexGroup 볼륨이어야 합니다.
+* FlexGroup 볼륨의 밸런스를 확인하려면 다음을 수행해야 link:manage-links.html["링크를 연결합니다"]합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage * 에서 * Go to storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 재조정할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Volumes(볼륨) 탭에서 표 상단에 있는 * Check FlexGroup balance * 를 선택합니다.
+. FlexGroup 균형 창에서 FSx for ONTAP 파일 시스템에 있는 모든 FlexGroup 볼륨의 균형 상태를 검토합니다.
++
+FlexGroup 볼륨이 불균형한 경우 를 고려합니다<<FlexGroup 볼륨의 균형을 조정합니다,재조정>>.
+
+
+
+
+
+== FlexGroup 볼륨의 균형을 조정합니다
+
+<<FlexGroup 볼륨의 균형을 확인합니다,FlexGroup 볼륨의 균형을 확인합니다>> 볼륨을 재조정하기 전에,
 
 .시작하기 전에
 볼륨을 재조정하려면 다음을 수행해야 link:manage-links.html["링크를 연결합니다"]합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
@@ -31,3 +67,6 @@ NOTE: 볼륨 재조정은 FlexGroup 볼륨에만 지원됩니다.
 . 고급 조치 * 를 선택한 다음 * 볼륨 재조정 * 을 선택합니다.
 . 볼륨 재조정 대화 상자에서 * 재조정 * 을 선택합니다.
 
+
+.결과
+FlexGroup 볼륨의 용량이 재조정됩니다.

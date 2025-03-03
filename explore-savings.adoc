@@ -11,7 +11,7 @@ summary: 'AWS FSx for NetApp ONTAP과 비교하여 Amazon EBS(Elastic Block Stor
 
 
 [role="lead"]
-Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버를 FSx for NetApp ONTAP과 비교하여 사용하는 스토리지 워크로드의 절감 효과에 대해 알아봅니다.
+Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버를 FSx for NetApp ONTAP과 비교하여 사용하는 스토리지 워크로드의 절감 효과에 대해 알아보십시오.
 
 BlueXP  워크로드 팩토리에는 Amazon 스토리지 환경을 FSx for ONTAP와 비교하는 스토리지 절감 계산기가 포함되어 있습니다. AWS 자격 증명을 제공하거나 제공하지 않고 절감 효과를 알아보고 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다. AWS 자격 증명을 제공할 때 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택할 수 있으며, 워크로드 팩토리가 자동으로 비교하도록 할 수 있습니다. 계산기는 수동 또는 자동 중 어떤 스토리지 서비스가 스토리지 요구 사항에 가장 낮은 비용을 제공하는지 결정합니다.
 
