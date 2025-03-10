@@ -152,8 +152,6 @@ sidebar:
           url: "/limit-transfer-rate.html"
         - title: 복제 관계에서 스냅샷 데이터를 수동으로 업데이트합니다
           url: "/update-snapshot-replication.html"
-        - title: 데이터 보호 볼륨을 복제합니다
-          url: "/cascade-replication.html"
         - title: 복제 관계를 일시 중지했다가 다시 시작합니다
           url: "/pause-resume-replication.html"
         - title: 복제 관계를 중지합니다
