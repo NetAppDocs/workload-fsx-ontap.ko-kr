@@ -1502,7 +1502,6 @@
   <block id="ac01830d09cb9d4a6364700c03ac9a48" category="paragraph">이제 볼륨 스냅샷이 잠깁니다.</block>
   <block id="07d4b0619f50f6f95ed7b83a046239a5" category="section-title">스냅샷 정책을 삭제합니다</block>
   <block id="696434880f5851290eaa4b1ba9f80d85" category="paragraph">스냅샷 정책이 더 이상 필요하지 않을 경우 삭제합니다.</block>
-  <block id="122929b907900af2bcf3e5bace6a2385" category="paragraph">둘 이상의 볼륨에 할당된 스냅샷 정책은 삭제할 수 없습니다.</block>
   <block id="df5ac48f314a037eb80499fa07b659ad" category="list-text">스토리지 VM * 탭에서 삭제할 스냅샷 정책이 있는 스토리지 VM의 3점 메뉴를 선택한 다음 * 고급 작업 * 을 선택하고 * 스냅샷 정책 관리 * 를 선택합니다.</block>
   <block id="a406d236bad23526e469ee1e5b111d14" category="list-text">스냅샷 정책 관리 페이지에서 삭제할 스냅샷 정책에 대한 3점 메뉴를 선택한 다음 * Delete * 를 선택합니다.</block>
   <block id="6a89139e7be9bba144081cf61352e3c2" category="list-text">삭제 대화 상자에서 * 삭제 * 를 선택하여 정책을 삭제합니다.</block>
@@ -1567,4 +1566,23 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="bf453f792f281dc877c5d1e809edc5dc" category="list-text">스냅샷 정책을 생성한 후에는 스토리지 VM과의 연결을 수정할 수 없지만 언제든지 볼륨에서 정책을 추가하거나 제거할 수 있습니다.</block>
+  <block id="5ba1bedcea9a8eb833a1e739064fb440" category="list-text">다음 기능은 변경 불가능한 스냅샷에서 지원되지 않습니다.</block>
+  <block id="6165c4352e1504dbaeef34d0cc50c187" category="list-text">정합성 보장 그룹</block>
+  <block id="55449fd175613962d882ab450cfc5f3c" category="list-text">FabricPool</block>
+  <block id="098a9352bab68d0361bda3b31e3eaf76" category="list-text">FlexCache 볼륨</block>
+  <block id="699d8f5d3b7e2d1c55958f4a396e8a2e" category="list-text">SMTape</block>
+  <block id="c0b79db5f258f0c991a383cbdbf001dd" category="list-text">SnapMirror 활성 동기화</block>
+  <block id="1e769eb49609f668beaad20993434cae" category="list-text">schedule 매개 변수를 사용하는 SnapMirror 정책 규칙입니다</block>
+  <block id="403490259ca485564378615496f0d12e" category="list-text">SnapMirror 동기식</block>
+  <block id="2846fa2cc87d39181cb096c418a258e9" category="list-text">SVM 데이터 이동성(소스 클러스터에서 타겟 클러스터로 SVM을 마이그레이션 또는 재배치하는 데 사용)</block>
+  <block id="19b8f390095f155d76eaa34c5d8f5d20" category="section-title">볼륨에서 스냅샷 정책을 제거합니다</block>
+  <block id="29708169ed62ce48a3c9b4614e316be4" category="inline-xref">스냅샷 정책을 삭제합니다</block>
+  <block id="fce714b45eae0b2db843a127811c7dfa" category="paragraph">볼륨의 스냅샷을 더 이상 원하지 않거나 여러 볼륨에 할당된 스냅샷 정책을 삭제하려는 경우 볼륨에서 스냅샷 정책을 제거합니다. <block ref="fe803bef0fbadbb3c4f9d940b9fdfdb7" category="inline-xref-macro-rx"></block>두 개 이상의 볼륨에 할당되어 있는 경우 모든 볼륨에서 수동으로 제거해야 합니다.</block>
+  <block id="41a5b9bb16fef0a6d96c008d7a310dc7" category="paragraph">스냅샷 정책을 제거해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="5b37f5e2e1d22ef188736327699e7d83" category="list-text">스냅샷 정책 할당 대화 상자에서 * 없음 * 을 선택하여 스냅샷 정책을 제거합니다.</block>
+  <block id="a7f4573e8d9f9cb2323d7ca62fa2b33e" category="paragraph">스냅샷 정책이 볼륨에서 제거됩니다.</block>
+  <block id="c767b489e8017a2255cc2520d048debc" category="inline-xref">용지를 꺼내십시오</block>
+  <block id="8a56213a87eaeeacb994e03d5159956f" category="inline-xref">다른 스냅샷 정책을 할당합니다</block>
+  <block id="3b3794d46a127b883871123c6319af47" category="paragraph">스냅샷 정책이 둘 이상의 볼륨에 할당된 경우 모든 볼륨에서 스냅샷 정책을 수동으로 삭제해야 <block ref="65129050bfb27f4fbe34192e54c5d427" category="inline-xref-macro-rx"></block>합니다. 또는 볼륨을 이동할 수 있습니다<block ref="bcabdc7ed5212cdefb2de947daf28c6a" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
