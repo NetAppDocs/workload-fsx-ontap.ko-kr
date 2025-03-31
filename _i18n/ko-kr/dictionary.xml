@@ -56,18 +56,12 @@
   <block id="39a3f8d31ec380cdb5ca4ececc3fb091" category="list-text">* 용량 풀 스토리지 계층 *: 이 보조 스토리지 계층은 아카이빙된 데이터 또는 자주 액세스하지 않는 데이터(_COLD_DATA라고도 함)를 위한 것입니다.</block>
   <block id="12fa6703fd5b2a66b1251d09d2e43ae0" category="inline-link-macro">스토리지 용량 관리</block>
   <block id="7a205a79cbbaeb0f7ced8b7674174b67" category="paragraph"><block ref="2816fe46f04db216f4e3ba5898a5519a" category="inline-link-macro-rx"></block>스토리지 계층에 대한 자세한 내용은 AWS for FSx for NetApp ONTAP 설명서를 참조하십시오.</block>
-  <block id="71227ec189a04b8c0e4b23f526c11e74" category="paragraph">계층화 정책을 변경하기 전에 사용 가능한 계층화 정책 4개를 검토하십시오.</block>
-  <block id="8483425bb0bb26bc11233622564a2bca" category="list-text">* 자동 *: 사용자 데이터와 스냅샷이 포함된 모든 콜드 데이터를 특정 기간 동안 용량 풀 스토리지 계층으로 계층화합니다.</block>
   <block id="00cb9991d0309c15645d8450d4025960" category="list-text">* 스냅샷 전용 *: 스냅샷 데이터만 용량 풀 스토리지 계층에 계층화합니다.</block>
   <block id="c8708259fa3c27b146a11f1d525bbed3" category="list-text">* 없음 *: 모든 볼륨의 데이터를 기본 스토리지 계층에 보관합니다.</block>
   <block id="e9490b5c27d3d776758f193608ccfc70" category="list-text">* ALL *: 모든 사용자 데이터와 스냅샷 데이터를 콜드 데이터로 표시하고 용량 풀 스토리지 계층에 저장합니다.</block>
   <block id="bc9fd7aea881fd55baf43b86ae624fd7" category="paragraph">일부 계층화 정책에는 볼륨의 사용자 데이터가 "콜드"로 간주되고 용량 풀 스토리지 계층으로 이동되려면 볼륨의 사용자 데이터가 비활성 상태로 유지되어야 하는 시간을 설정하는 관련 최소 냉각 기간 또는 _cooling days_ 이 있습니다. 냉각 기간은 데이터가 디스크에 기록될 때 시작됩니다.</block>
   <block id="b0377ad22f3d2823c281bddf9364eb30" category="list-text">고급 조치 * 를 선택한 다음 * 계층화 정책 변경 * 을 선택합니다.</block>
-  <block id="c9b998e45c31726fa66ca1b0bb585e72" category="list-text">계층화 정책 변경 페이지에서 다음 계층화 정책 중 하나를 선택합니다.</block>
-  <block id="30de36019d5f8e7b87a49a1451adef8e" category="list-text">* 자동 *: 냉각 일수를 입력합니다.</block>
-  <block id="2798d429ff91df1e7767a08dfd48bc50" category="list-text">* 스냅샷 전용 *: 냉각 일수를 입력합니다.</block>
   <block id="d015a34de96d3f92372df94da0f629a7" category="list-text">* 없음 *</block>
-  <block id="b7f7419550863cb97e0251545c2b5304" category="list-text">* 모두 *</block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="doc">볼륨의 클론을 생성합니다</block>
   <block id="63bd0fb2b2b460703fbd97af05a3976c" category="paragraph">클론은 데이터의 현재 시점 상태를 반영합니다. 또한 클론을 사용하면 운영 데이터에 대한 액세스 권한을 부여하지 않고 추가 사용자에게 데이터에 대한 액세스 권한을 부여할 수 있습니다.</block>
   <block id="9efa6a3d6da89d5d8581ec031f3a674f" category="paragraph">볼륨 클로닝은 FlexClone 볼륨에만 지원됩니다.</block>
@@ -348,8 +342,6 @@
   <block id="8c197cb16511819fd1686972b919b4bd" category="list-text">자동 용량 관리 * 대화 상자에서 다음을 제공합니다.</block>
   <block id="811c0aa0f47faeb6a24c4abfb98d7a22" category="list-text">* 자격 증명 *: 드롭다운 메뉴에서 _AUTOMATE_PERTIONS를 사용하여 자격 증명을 선택합니다.</block>
   <block id="3e0bdb480d66a7375d532c6c4aff035d" category="paragraph">또는 이 기능을 비활성화합니다. 파일 시스템 용량을 늘려야 하는 경우 먼저 자동 용량 관리를 해제해야 합니다.</block>
-  <block id="b2ce8c8b67c1ce9e75a1a834e6a756d7" category="list-text">* 용량 임계값 *: FSx for ONTAP 파일 시스템의 최대 크기를 입력합니다.</block>
-  <block id="c5384d1f343e28d37a573909233d561e" category="list-text">* 용량 증가 증분 *: 용량을 점진적으로 증가시키는 비율을 입력합니다.</block>
   <block id="c2a6ed685a94077454f8bad592ecfa44" category="doc">장기 보존을 위해 스냅샷을 설정 및 편집합니다</block>
   <block id="84926cfe10c3390bcbf0d7f22bc20ed1" category="paragraph">장기 보존을 위해 스냅샷을 설정 및 편집하는 경우에도 동일한 단계가 적용됩니다.</block>
   <block id="9c3e61915a26d815f332c75fcafffe40" category="list-text">Edit long-term retention * 을 선택합니다.</block>
@@ -743,7 +735,6 @@
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
   <block id="672d0efbe9223ef23c5fd7d2c7cd4a95" category="paragraph">ONTAP용 FSx 파일 시스템은 _ 빠른 생성 _ 또는 _ 고급 생성 _ 을(를) 사용하여 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
   <block id="11e2fb5025fdb2cb91fd04c343163328" category="admonition">Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다.<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 코드를 실행할 때 암호를 다시 입력해야 합니다.</block>
-  <block id="b3028e0c6912bbb0c93b59dff7fa9ba5" category="paragraph">Auto는 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="9376aafc358c7dd83094603f26235eb3" category="paragraph">볼륨 생성이 시작됩니다. 생성된 새 볼륨이 Volumes(볼륨) 탭에 나타납니다.</block>
   <block id="21e6ab9737790ab1abc18e49091d3c18" category="paragraph">다음 다이어그램은 스냅샷, 영역 간 복제, 오브젝트 스토리지에 백업을 사용하는 FSx for ONTAP 스토리지의 데이터 보호를 시각적으로 보여줍니다.</block>
   <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">스크린샷은 스냅샷을 사용하는 FSx for ONTAP 스토리지의 데이터 보호, 여러 지역에 걸친 복제, 오브젝트 스토리지로 백업을 보여줍니다.</block>
@@ -1399,7 +1390,6 @@
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">타겟 파일 시스템의 복제된 볼륨은 데이터 보호(DP) 볼륨이며 다음과 같은 명명 형식을<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block> 따릅니다.</block>
   <block id="02d60b2752d9739923230b4d901add35" category="paragraph">소스(읽기/쓰기) 볼륨 1개 또는 데이터 보호(DP) 볼륨을 복제할 수 있습니다. DP 볼륨의 두 번째 복제본을 생성할 수 없습니다.</block>
   <block id="df4c98f43132ebd68d92a0c9822984df" category="list-text">데이터 복제 페이지의 복제 타겟에서 다음을 제공합니다.</block>
-  <block id="ff1d02000e266ba203887393d4fcef27" category="paragraph">_AUTO_는 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="0cbe076a4ce5208b10cdb81c9e175006" category="list-text">* 기존 정책 선택 *: 드롭다운 메뉴에서 기존 정책을 선택합니다.</block>
   <block id="b9a658e63ae9e8d9a604efb8acd930e6" category="list-text">* 새 정책 만들기 *: 다음을 제공합니다.</block>
   <block id="78c187892204fa9a888a00a5635447c9" category="list-text">선택 사항: 변경 불가능한 스냅샷을 활성화합니다.</block>
@@ -1585,4 +1575,44 @@
   <block id="c767b489e8017a2255cc2520d048debc" category="inline-xref">용지를 꺼내십시오</block>
   <block id="8a56213a87eaeeacb994e03d5159956f" category="inline-xref">다른 스냅샷 정책을 할당합니다</block>
   <block id="3b3794d46a127b883871123c6319af47" category="paragraph">스냅샷 정책이 둘 이상의 볼륨에 할당된 경우 모든 볼륨에서 스냅샷 정책을 수동으로 삭제해야 <block ref="65129050bfb27f4fbe34192e54c5d427" category="inline-xref-macro-rx"></block>합니다. 또는 볼륨을 이동할 수 있습니다<block ref="bcabdc7ed5212cdefb2de947daf28c6a" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e2becee7c382badfb02490cd30d53c6a" category="doc">스케일아웃 시스템을 위한 자동 용량 관리</block>
+  <block id="5f7d427820d14cb172d0390463b259c4" category="paragraph">이제 워크로드 공장에서 볼륨에서 사용 가능한 inode를 검색하고 구성된 자동 용량 관리 임계값에 따라 해당 수를 늘립니다. 이 기능은 스케일아웃 시스템에 대한 자동 용량 관리를 지원합니다. 자동 용량 관리의 일부로 inode 관리를 활성화할 수 있습니다.</block>
+  <block id="85729d1984aee9281a3cc017500ff795" category="paragraph"><block ref="85729d1984aee9281a3cc017500ff795" category="inline-link-macro-rx"></block></block>
+  <block id="d0405304bf4b7c3f042b05203316ddd5" category="section-title">FlexGroup 재조정 API</block>
+  <block id="90f7c93b8d9614f0fd7cc2ee87f199c1" category="paragraph">BlueXP  워크로드 공장에서 FlexGroup 재조정 API를 릴리즈하여 FlexGroup의 데이터 재조정 계획을 실행할 수 있습니다. 재조정은 데이터를 구성원 볼륨에 균등하게 재분배합니다.</block>
+  <block id="1a256f86b88647f213e637c9cab0ed8b" category="inline-link-macro">BlueXP  워크로드 팩토리 API 설명서</block>
+  <block id="9f2e2c38a7baafe56307fced13716496" category="paragraph"><block ref="9f2e2c38a7baafe56307fced13716496" category="inline-link-macro-rx"></block></block>
+  <block id="40f45c6ac2dbe2255c8ef062d007653f" category="section-title">데이터 복제 양식에는 사용 사례가 포함됩니다</block>
+  <block id="d3a1df9d08a100116ee8f443f56f895d" category="paragraph">이제 데이터 복제 양식에 양식을 보다 쉽게 작성할 수 있는 사용 사례가 포함되어 있습니다. 데이터 복제에 대해 마이그레이션, 핫 재해 복구, 콜드 재해 복구, 아카이브 등의 사용 사례 중 하나를 선택합니다. 사용 사례를 선택한 후 워크로드 팩토리에서는 모범 사례에 따라 값을 권장합니다. 미리 선택한 값을 수락하거나 양식의 값을 사용자 지정할 수 있습니다.</block>
+  <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link-macro">데이터 복제</block>
+  <block id="0c09136cc5ea602bb57eff7c2432239d" category="paragraph"><block ref="0c09136cc5ea602bb57eff7c2432239d" category="inline-link-macro-rx"></block></block>
+  <block id="9425459482ebc84a43dc550767dd3e0f" category="section-title">데이터 계층화 정책 용어 변경</block>
+  <block id="ac41e4be5fb8d94814ca592ccb928b7c" category="paragraph">이제 볼륨 생성, 데이터 복제 또는 기존 계층화 정책의 업데이트 중에 계층화 정책을 선택하면 계층화 정책을 설명하는 새로운 용어를 찾을 수 있습니다.</block>
+  <block id="1680d9abb7a22a23c44b7a4b6381f160" category="list-text">_Balanced(자동) _</block>
+  <block id="ba8ad03a370d66806f12b2e607ea29c7" category="list-text">_비용 최적화(모두) _</block>
+  <block id="c9c6a4f8a60589f93e4860841bc03333" category="list-text">_성능 최적화(스냅샷만 해당) _</block>
+  <block id="a6fcdc1d4500a732bf90fecba61d743f" category="paragraph">계층화 정책을 변경하기 전에 사용 가능한 계층화 정책을 검토하십시오.</block>
+  <block id="e84817a9fe20b81cf24dd658855e9fc7" category="list-text">* Balanced (Auto) *: 사용자 인터페이스를 사용하여 볼륨을 생성할 때 기본 계층화 정책. 자주 액세스하는 데이터를 SSD 스토리지 계층에 유지하고, 자주 액세스하지 않는 데이터와 스냅샷을 냉각 기간이 끝난 후 용량 풀 스토리지 계층에 계층화합니다. 일반적인 운영 워크로드에 권장됩니다.</block>
+  <block id="da76ce854b187b083336e89b84bad3c1" category="list-text">* 비용 최적화(모두) *: 모든 스냅샷과 데이터를 용량 풀 스토리지 계층으로 계층화합니다. 2차 타겟에 권장됩니다.</block>
+  <block id="ab70a861a0bf8910a4c86c6b152856f9" category="list-text">* 성능 최적화(스냅샷만 해당) *: 스냅샷 데이터만 용량 풀 스토리지 계층에 계층화합니다. 미션 크리티컬 데이터베이스와 같이 지연 시간이 짧은 워크로드에 권장됩니다.</block>
+  <block id="520d469a2d88715ae341e1304b5dc54c" category="list-text">* 없음 *: 볼륨 데이터를 SSD 스토리지 계층에 보관하므로 용량 풀 스토리지 계층으로 이동할 수 없습니다.</block>
+  <block id="c0cd3022b47264d5aa8c40e5868253f4" category="list-text">계층화 정책 변경 페이지에서 소스 볼륨의 계층화 정책을 복제하도록 선택하거나 다음 계층화 정책 중 하나를 선택합니다.</block>
+  <block id="747aa537268cce89af37f6ccfe778eba" category="list-text">* 균형(자동) *: 냉각 일수를 입력합니다.</block>
+  <block id="9b36aeed42df15feeee43371d884c2d0" category="list-text">* 비용 최적화(모두) *</block>
+  <block id="abd229fc1eceaa762a4af4c2554c3253" category="list-text">* 성능 최적화(스냅샷만 해당) *: 냉각 일수를 입력합니다.</block>
+  <block id="22965065ba7ae1409232e37abbbb066f" category="list-text">* 활용 사례 *: 다음 복제 사용 사례 중 하나를 선택하십시오. 선택한 사용 사례에 따라 워크로드 공장 출하 시 Best Practice에 따라 권장 값으로 양식이 채워집니다. 양식을 작성하는 동안 권장 값을 적용하거나 변경할 수 있습니다.</block>
+  <block id="257ce4bae137964f3625a1e1d6f1369b" category="list-text">마이그레이션: 데이터를 대상 FSx for ONTAP 파일 시스템으로 전송합니다</block>
+  <block id="30940cba2bad8606f971a78b21b2ec59" category="list-text">핫 재해 복구: 중요한 워크로드에 대한 고가용성 및 신속한 재해 복구를 보장합니다</block>
+  <block id="4479dbc11cc7245a39dd940a6a86b3a5" category="list-text">콜드 또는 아카이브 재해 복구:</block>
+  <block id="a7683152ac8a3322afd2ab0f568eb7ab" category="list-text">콜드 재해 복구: 더 긴 RTO(복구 시간 목표) 및 RPO(복구 시점 개체)를 사용하여 비용을 절감합니다</block>
+  <block id="24249670ae7cb490931a0cfb669e35fb" category="list-text">아카이브: 장기 스토리지 및 규정 준수를 위해 데이터 복제</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">기타</block>
+  <block id="181b737a36ca59661f38fe5373437f6a" category="list-text">* Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다. 계층화 정책은 기본적으로 선택한 활용 사례에 대해 권장되는 계층화 정책으로 설정됩니다.</block>
+  <block id="a477f639de1e54cd01d24b4d8302b5ff" category="paragraph">_Balanced (Auto) _ 는 워크로드 팩토리 콘솔을 사용하여 볼륨을 생성할 때 적용되는 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> 참조하십시오. 워크로드 팩토리는 계층화 정책을 위해 워크로드 공장 콘솔에서 사용 사례 기반 이름을 사용하며 FSx for ONTAP 계층화 정책 이름을 괄호 안에 포함합니다.</block>
+  <block id="960f25577dd51f8946d9ce933ec7dd9d" category="paragraph">마이그레이션 사용 사례를 선택한 경우 워크로드 공장 출하 시 에서 소스 볼륨의 계층화 정책을 타겟 볼륨에 복사하도록 자동으로 선택합니다. 계층화 정책을 복사하도록 선택을 취소하고 복제하도록 선택한 볼륨에 적용되는 계층화 정책을 선택할 수 있습니다.</block>
+  <block id="f5d7c3fe6307c9200b4306b913e03daa" category="paragraph">마이그레이션 사용 사례를 선택한 경우 워크로드 공장에서 소스 볼륨의 계층화 정책을 파일 시스템의 타겟 볼륨에 복사하도록 자동으로 선택합니다. 계층화 정책을 복사하도록 선택 취소하고 타겟 파일 시스템의 볼륨에 적용되는 계층화 정책을 선택하여 복제할 수 있습니다.</block>
+  <block id="70790f6319078f7b58ce5d5adf8b27ed" category="list-text">* 임계값 증가 *: FSx for ONTAP 파일 시스템의 최대 크기를 입력합니다.</block>
+  <block id="83b9d06ffc256e2f2bbc40862d118517" category="list-text">* 증가분 증가 *: 용량을 증가시키는 비율을 입력합니다.</block>
+  <block id="67cfcc957e64e9b21fe6f9036930ba34" category="list-text">선택 사항: 자동 inode 관리를 활성화하여 inode(파일) 수를 허용 한도까지 늘려 볼륨당 파일 용량을 확장할 수 있습니다.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025년 3월 30일</block>
 </blocks>
