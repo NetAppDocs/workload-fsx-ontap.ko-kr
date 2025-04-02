@@ -14,7 +14,7 @@ summary: BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP 파일 �
 BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 생성하여 볼륨 및 추가 데이터 서비스를 추가 및 관리할 수 있습니다.
 
 .이 작업에 대해
-스토리지 VM은 파일 시스템을 생성할 때 생성됩니다.
+스토리지 VM 및 보안 그룹은 파일 시스템을 생성할 때 생성됩니다.
 
 .시작하기 전에
 FSx for ONTAP 파일 시스템을 생성하기 전에 다음이 필요합니다.
@@ -150,6 +150,9 @@ Advanced create를 사용하면 가용성, 보안, 백업 및 유지 관리를 �
 +
 .. * 지역 및 VPC *: 파일 시스템의 지역 및 VPC를 선택합니다.
 .. * 보안 그룹 *: 기존 보안 그룹을 만들거나 사용합니다.
++
+새 보안 그룹의 경우 보안 그룹 프로토콜, 포트 및 역할에 대한 설명은 을 <<보안 그룹 세부 정보입니다,보안 그룹 세부 정보입니다>>참조하십시오.
+
 .. * 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.
 +
 *** 클러스터 구성 노드 1의 경우: 가용 영역 및 서브넷을 선택합니다.
@@ -207,6 +210,119 @@ AWS 관리형 Microsoft AD를 사용하는 경우 AWS 위임 FSx 관리자, AWS 
 파일 시스템을 생성한 경우 * Inventory * 페이지에서 FSx for ONTAP 파일 시스템을 볼 수 있습니다.
 
 --
+====
+
+
+== 보안 그룹 세부 정보입니다
+
+다음 표에는 프로토콜, 포트 및 역할을 비롯한 보안 그룹의 세부 정보가 나와 있습니다.
+
+[]
+====
+[cols="2,2,4a"]
+|===
+| 프로토콜 | 포트 | 역할 
+
+
+| SSH를 클릭합니다 | 22  a| 
+클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다
+
+
+
+| TCP | 80  a| 
+클러스터 관리 LIF의 IP 주소에 대한 웹 페이지 액세스
+
+
+
+| TCP/UDP입니다 | 111  a| 
+NFS에 대한 원격 프로시저 호출
+
+
+
+| TCP/UDP입니다 | 135  a| 
+CIFS에 대한 원격 프로시저 호출
+
+
+
+| UDP입니다 | 137  a| 
+CIFS에 대한 NetBIOS 이름 확인
+
+
+
+| TCP/UDP입니다 | 139  a| 
+CIFS에 대한 NetBIOS 서비스 세션입니다
+
+
+
+| TCP | 443  a| 
+클러스터 관리 LIF 또는 SVM 관리 LIF의 IP 주소에 대한 ONTAP REST API 액세스
+
+
+
+| TCP | 445  a| 
+Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임
+
+
+
+| TCP/UDP입니다 | 635  a| 
+NFS 마운트
+
+
+
+| TCP | 749  a| 
+Kerberos
+
+
+
+| TCP/UDP입니다 | 2049  a| 
+NFS 서버 데몬
+
+
+
+| TCP | 3260  a| 
+iSCSI 데이터 LIF를 통한 iSCSI 액세스
+
+
+
+| TCP/UDP입니다 | 4045  a| 
+NFS 잠금 데몬
+
+
+
+| TCP/UDP입니다 | 4046  a| 
+NFS에 대한 네트워크 상태 모니터
+
+
+
+| UDP입니다 | 4049  a| 
+NFS 할당량 프로토콜
+
+
+
+| TCP | 10000  a| 
+NDMP(네트워크 데이터 관리 프로토콜) 및 NetApp SnapMirror 인터클러스터 통신
+
+
+
+| TCP | 11104  a| 
+NetApp SnapMirror 인터클러스터 통신 관리
+
+
+
+| TCP | 11105  a| 
+인터클러스터 LIF를 사용하여 SnapMirror 데이터 전송
+
+
+
+| TCP/UDP입니다 | 161-162 을 참조하십시오  a| 
+SNMP(Simple Network Management Protocol)
+
+
+
+| 모든 ICMP | 모두  a| 
+인스턴스에 Ping을 수행 중입니다
+
+|===
 ====
 .다음 단계
 스토리지 인벤토리에 파일 시스템을 사용하면 FSx for ONTAP 파일 시스템을 관리하고 리소스를 설정할 수 있습니다 link:create-volume.html["볼륨 생성"] link:data-protection-overview.html["데이터 보호"] .
