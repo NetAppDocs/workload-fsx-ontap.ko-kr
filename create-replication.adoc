@@ -55,6 +55,17 @@ summary: FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하여 
 
 
 *** 기타
++
+또한 사용 사례를 선택하여 복제 정책 또는 ONTAP(SnapMirror policy)를 결정합니다. 복제 정책을 설명하는 데 사용되는 용어는 에서 가져온 link:https://docs.netapp.com/us-en/ontap/data-protection/default-protection-policies-concept.html["ONTAP 9 설명서"^]것입니다.
+
++
+**** 마이그레이션 및 기타 의 경우 복제 정책을 _MirrorAllSnapshots_라고 합니다. _MirrorAllSnapshots_은(는) 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 비동기 정책입니다.
+**** 핫, 콜드 또는 아카이브 재해 복구의 경우 복제 정책을 _MirrorAndVault_라고 합니다. _MirrorAndVault_는 최신 활성 파일 시스템과 일별 및 주별 스냅샷을 미러링하기 위한 비동기 및 볼트 정책입니다.
++
+모든 활용 사례에서 장기 보존을 위해 스냅샷을 활성화하면 기본 복제 정책은 _MirrorAndVault_입니다.
+
+
+
 
 
 .. * Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다. 계층화 정책은 기본적으로 선택한 활용 사례에 대해 권장되는 계층화 정책으로 설정됩니다.
@@ -127,6 +138,17 @@ NOTE: 데이터 보호 볼륨 복제는 한 번에 지원됩니다.
 
 
 *** 기타
++
+또한 사용 사례를 선택하여 복제 정책 또는 ONTAP(SnapMirror policy)를 결정합니다. 복제 정책을 설명하는 데 사용되는 용어는 에서 가져온 link:https://docs.netapp.com/us-en/ontap/data-protection/default-protection-policies-concept.html["ONTAP 9 설명서"^]것입니다.
+
++
+**** 마이그레이션 및 기타 의 경우 복제 정책을 _MirrorAllSnapshots_라고 합니다. _MirrorAllSnapshots_은(는) 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 비동기 정책입니다.
+**** 핫, 콜드 또는 아카이브 재해 복구의 경우 복제 정책을 _MirrorAndVault_라고 합니다. _MirrorAndVault_는 최신 활성 파일 시스템과 일별 및 주별 스냅샷을 미러링하기 위한 비동기 및 볼트 정책입니다.
++
+모든 활용 사례에서 장기 보존을 위해 스냅샷을 활성화하면 기본 복제 정책은 _MirrorAndVault_입니다.
+
+
+
 
 
 .. * Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다. 계층화 정책은 기본적으로 선택한 활용 사례에 대해 권장되는 계층화 정책으로 설정됩니다.

@@ -1669,4 +1669,9 @@
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="paragraph">인스턴스에 Ping을 수행 중입니다</block>
   <block id="70b2c09de9e176a879c840cb014b8c20" category="inline-link-macro">grant_read_permissions 를 선택합니다</block>
   <block id="e395c91c5c84949d52ffb229805b2f5f" category="paragraph">워크로드 팩토리가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 <block ref="aa999e6a1b84a9d79249d89f4acbbea1" category="inline-link-macro-rx"></block>AWS 계정에 있어야 합니다.</block>
+  <block id="c09b5be4c2da04f4040eef1878f258aa" category="inline-link-macro">ONTAP 9 설명서</block>
+  <block id="3611f3afb9bd4ea20ff757fe165aa678" category="paragraph">또한 사용 사례를 선택하여 복제 정책 또는 ONTAP(SnapMirror policy)를 결정합니다. 복제 정책을 설명하는 데 사용되는 용어는 에서 가져온 <block ref="20dfa0e16eac8597602ade67a04436fd" category="inline-link-macro-rx"></block>것입니다.</block>
+  <block id="b5b213ff8da55d939d5b26b2acad4e23" category="list-text">마이그레이션 및 기타 의 경우 복제 정책을 _MirrorAllSnapshots_라고 합니다. _MirrorAllSnapshots_은(는) 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 비동기 정책입니다.</block>
+  <block id="5fc1e1e4cb63004511e44d8fbb5b04a2" category="list-text">핫, 콜드 또는 아카이브 재해 복구의 경우 복제 정책을 _MirrorAndVault_라고 합니다. _MirrorAndVault_는 최신 활성 파일 시스템과 일별 및 주별 스냅샷을 미러링하기 위한 비동기 및 볼트 정책입니다.</block>
+  <block id="a1eefe5e0a806535abe58cb68a54c9d1" category="paragraph">모든 활용 사례에서 장기 보존을 위해 스냅샷을 활성화하면 기본 복제 정책은 _MirrorAndVault_입니다.</block>
 </blocks>
