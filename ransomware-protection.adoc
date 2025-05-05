@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: ransomware-protection.html 
+keywords: ransomware, arp, autonomous protection, protect, security, detect, detection, restore, recover, threat, attack, suspect, anti-ransomware, entropy, abnormal volume activity, anti-ransomware, extension conformity, ransomware protection strategy 
+summary: 자율적 랜섬웨어 방어는 NAS 환경의 워크로드 분석을 사용하여 랜섬웨어 공격으로 이어질 수 있는 비정상적인 활동을 감지하여 경고합니다. 
+---
+= 자율적 랜섬웨어 방어 기능으로 데이터를 보호하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NAS(NFS/SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격으로 이어질 수 있는 비정상적인 활동을 감지하여 경고하는 기능인 ARP(자율적 랜섬웨어 방어)로 데이터를 보호합니다. 공격이 의심되면 ARP는 데이터를 복원할 수 있는 변경 불가능한 새로운 스냅샷을 만듭니다.
+
+.이 작업에 대해
+ARP를 사용하여 공격자가 몸값을 지불하기 전까지 데이터를 보류하는 서비스 거부 공격으로부터 보호합니다. ARP는 다음을 기반으로 실시간 랜섬웨어 탐지를 제공합니다.
+
+* 들어오는 데이터를 암호화된 데이터 또는 일반 텍스트로 식별합니다.
+* 다음을 감지하는 분석:
++
+** ** Entropy**: 파일에 있는 데이터의 임의 정도를 평가합니다
+** ** 파일 확장명 형식**: 일반 확장명 형식에 맞지 않는 확장자입니다
+** ** 파일 IOPS**: 데이터 암호화를 통한 비정상적인 볼륨 활동의 급증
+
+
+
+
+ARP는 적은 수의 파일만 암호화한 후 대부분의 랜섬웨어 공격의 확산을 감지하고 자동으로 조치를 취하여 데이터를 보호하고 의심스러운 공격이 발생하고 있음을 사용자에게 알릴 수 있습니다.
+
+ARP 기능은 Amazon FSx for NetApp ONTAP가 실행되는 ONTAP 버전에 따라 자동으로 업데이트되므로 수동으로 업데이트할 필요가 없습니다.
+
+학습 및 활성 모드:: ARP는 _ 학습 모드 _ 에서 먼저 작동한 다음 자동으로 _ACTIVE 모드 _ 로 전환됩니다.
++
+--
+* * 학습 모드 * : ARP를 활성화하면 _learning mode_에서 실행됩니다. 학습 모드에서 FSx for ONTAP 파일 시스템은 엔트로피, 파일 확장명 유형 및 파일 IOPS의 분석 영역을 기반으로 경고 프로필을 개발합니다. 파일 시스템이 작업 부하 특성을 평가할 수 있는 충분한 시간 동안 ARP를 학습 모드로 실행한 후, 작업 부하 공장 출하 시 ARP가 _ACTIVE MODE_로 자동 전환되고 데이터 보호를 시작합니다.
+* * 활성 모드 *: ARP가 _ACTIVE MODE_로 전환된 후 FSx for ONTAP는 ARP/AI 스냅샷을 생성하여 위협이 감지될 경우 데이터를 보호합니다.
++
+활성 모드에서 파일 확장자가 비정상으로 플래그되는 경우 경고를 평가해야 합니다. 경고를 통해 데이터를 보호하거나 경고를 거짓 긍정 으로 표시할 수 있습니다. 경고를 false positive로 표시하면 경고 프로필이 업데이트됩니다. 예를 들어, 새 파일 확장자에 의해 경고가 트리거되고 이 경고를 false positive로 표시하면 다음에 파일 확장명이 관찰될 때 알림이 수신되지 않습니다.
+
+
+
+--
+지원되지 않는 구성입니다:: 다음 구성은 ARP 사용을 지원하지 않는다.
++
+--
+* SAN/블록 볼륨
+* iSCSI 볼륨
+* NVMe 볼륨
+
+
+--
+
+
+
+
+== 파일 시스템에 대해 Autonomous 랜섬웨어 Protection 을 활성화합니다
+
+파일 시스템에 대한 ARP를 활성화하면 모든 기존 NAS 및 새로 생성된 NAS 볼륨에 대한 보호 기능이 자동으로 추가됩니다.
+
+ARP를 활성화한 후 공격이 발생하고 공격이 실제로 발생한 것으로 확인되면 BlueXP  워크로드 공장 출하 시 4시간마다 최대 6개의 스냅샷을 사용하는 스냅샷 정책이 자동으로 설정됩니다. 각 스냅샷은 2-5일 동안 잠깁니다.
+
+.시작하기 전에
+파일 시스템에 대한 ARP를 활성화하려면link:manage-links.html["링크를 연결합니다"], 반드시 해야 합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. FSx for ONTAP * 탭에서 파일 시스템의 3점 메뉴를 선택하여 ARP를 활성화한 다음 * 관리 * 를 선택합니다.
+. 정보 아래에서 * Autonomous 랜섬웨어 Protection * 옆의 연필 아이콘을 선택합니다. 마우스를 * Autonomous Ransomware Protection * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 표시됩니다.
+. Autonomous Ransomware Protection 대화 상자에서 이 기능을 활성화 또는 비활성화합니다.
+. 계속하려면 설명을 수락하십시오.
+. 적용 * 을 선택하여 변경 사항을 저장합니다.
+
+
+
+
+== 랜섬웨어 공격을 검증합니다
+
+공격이 거짓 경보 또는 진정한 랜섬웨어 사고인지 확인합니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Autonomous Ransomware Protection 타일에서 * Analyze Attacks * 를 선택합니다.
+. 공격 이벤트 보고서를 다운로드하여 손상된 파일이나 폴더가 있는지 검토한 다음 공격이 발생했는지 여부를 결정합니다.
+. 공격이 발생하지 않은 경우 표의 볼륨에 대해 * False alarm * 을 선택한 다음 * Close * 를 선택합니다
+. 공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다. 손상된 볼륨 데이터 복원 대화 상자가 열립니다. 즉시 로 진행하거나 * Close * 를 선택하고 나중에 복구 프로세스를 완료할 수 <<랜섬웨어 공격 후 데이터 복구,데이터를 복구합니다>>있습니다.
+
+
+
+
+== 랜섬웨어 공격 후 데이터 복구
+
+공격이 의심되는 경우 시스템은 해당 시점에 볼륨 스냅샷을 생성하고 해당 복사본을 잠급니다. 나중에 공격이 확인되면 ARP 스냅샷을 사용하여 영향을 받는 파일 또는 전체 볼륨을 복원할 수 있습니다.
+
+잠긴 스냅샷은 보존 기간이 끝날 때까지 삭제할 수 없습니다. 그러나 나중에 이 공격을 가양성 공격으로 표시하기로 결정하면 잠긴 복사본이 삭제됩니다.
+
+영향을 받는 파일과 공격 시간을 알면 전체 볼륨을 스냅샷 중 하나로 되돌리는 대신 다양한 스냅샷에서 영향을 받는 파일을 선택적으로 복구할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. Autonomous Ransomware Protection 타일에서 * Analyze Attacks * 를 선택합니다.
+. 공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다.
+. 손상된 볼륨 데이터 복원 대화 상자에서 지침에 따라 파일 수준 또는 볼륨 수준에서 복원합니다. 대부분의 경우 전체 볼륨이 아닌 파일을 복원합니다.
+. 복원을 완료한 후 * 닫기 * 를 선택합니다.
+
+
+.결과
+손상된 데이터가 복원되었습니다.

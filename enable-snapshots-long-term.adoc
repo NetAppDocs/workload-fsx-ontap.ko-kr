@@ -17,6 +17,8 @@ BlueXP  워크로드 팩토리에서는 장기 보존을 위해 스냅샷을 �
 
 장기 보존을 위해 스냅샷을 설정 및 편집하는 경우에도 동일한 단계가 적용됩니다.
 
+온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 장기 보존을 위한 스냅샷 변경이 지원되지 않습니다.
+
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.

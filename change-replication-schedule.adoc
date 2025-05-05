@@ -15,6 +15,8 @@ BlueXP  워크로드 팩토리에서의 복제 관계에서 소스 볼륨의 �
 
 소스 볼륨의 스냅샷을 복제된 볼륨으로 전송하는 빈도를 원하는 시점 목표(RPO)와 일치시킬 수 있도록 선택합니다.
 
+온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 복제 일정 변경이 지원되지 않습니다.
+
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Storage에서 * Go to storage inventory * 를 선택합니다.

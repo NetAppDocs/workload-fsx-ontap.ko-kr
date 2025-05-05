@@ -95,6 +95,7 @@ FlexGroup 볼륨 크기는 구성 요소의 수에 따라 다릅니다. 구성�
 ..... * 권한 *: 모든 권한, 읽기/쓰기, 읽기 또는 권한 없음 을 선택한 다음 세미콜론(;)으로 구분된 사용자 또는 그룹을 입력합니다. 사용자 또는 그룹은 대소문자를 구분하며 사용자 도메인은 "domain\username" 형식을 사용하여 포함되어야 합니다.
 
 
+.... * 보안 스타일 *: 이중 프로토콜 볼륨의 경우 UNIX 또는 NTFS 보안 스타일을 선택합니다. UNIX는 이중 프로토콜 볼륨의 기본 보안 스타일입니다. 이 컨텍스트에서 사용자 매핑에 대한 자세한 지침은 AWS 블로그 문서를 link:https://aws.amazon.com/blogs/storage/enabling-multiprotocol-workloads-with-amazon-fsx-for-netapp-ontap["Amazon FSx for NetApp ONTAP으로 멀티프로토콜 워크로드를 지원합니다"^]참조하십시오.
 
 
 *** * 블록 액세스 *: 중요한 비즈니스 응용 프로그램을 실행하는 호스트가 iSCSI 프로토콜을 사용하여 볼륨에 액세스할 수 있습니다. 파일 시스템 스케일아웃 구축에 HA 쌍 6개 이하가 있는 경우에만 블록 액세스를 사용할 수 있습니다.
