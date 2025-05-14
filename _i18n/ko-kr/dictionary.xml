@@ -557,9 +557,6 @@
   <block id="9bd1b5c2c50da3c36cba4f17c259ae08" category="inline-link-macro">스토리지 비용 절감 계산기로 비용 절감을 알아 보십시오.</block>
   <block id="74125d7a69a31a4c2d6c6637ca43f137" category="paragraph">또한 스토리지 절감 계산기로 Amazon Elastic Block Store, Elastic File System, FSx for Windows 파일 서버 스토리지 환경의 비용을 FSx for ONTAP의 비용과 비교해 볼 수 있습니다. <block ref="487bc82bdb3f9feb4b100f5bfcc33ebf" category="inline-link-macro-rx"></block></block>
   <block id="89568baf7659b31a2110d1de7f69778d" category="paragraph">스토리지 인벤토리에 파일 시스템을 사용하면 FSx for ONTAP 파일 시스템을 관리하고 리소스의 데이터 보호를 설정할 수 있습니다 <block ref="41a32458a6146c3b772c57ac70acc68e" category="inline-link-macro-rx"></block>.</block>
-  <block id="15aca40f14c29fe9e5a56d6734a1f791" category="paragraph">새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다.</block>
-  <block id="c58a14e0270c321d51e150d167496aa7" category="list-text">고급 조치 * 를 선택한 다음 * 볼륨 재조정 * 을 선택합니다.</block>
-  <block id="f648cc9da4798cb98b75d0072b51f243" category="list-text">볼륨 재조정 대화 상자에서 * 재조정 * 을 선택합니다.</block>
   <block id="a509c58d8659a3366f3053048526e6ec" category="summary">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터가 손실될 경우의 데이터 액세스 보호 계층이 제공됩니다.</block>
   <block id="ec42d150d63ba9d69905da61ff84b59b" category="doc">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제합니다</block>
   <block id="068ecbcf009e32427973dc04a3628cb7" category="list-text">Replicate storage VM * 을 선택합니다.</block>
@@ -1007,7 +1004,6 @@
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">워크로드 팩토리 콘솔</block>
   <block id="4e3446d47d185e690e48c92eec422d48" category="paragraph">워크로드 공장에서 스토리지 및 FSx for ONTAP 리소스 관리를 시작하기 위한 FSx 파일 시스템을 생성합니다. 의 <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>스토리지에서 * Create file system * 을 선택합니다. <block ref="1f3b8beb11bf530a33922b2af302faf4" category="inline-link-macro-rx"></block>..</block>
   <block id="4d63cdce7e101414c4de73486d63848d" category="list-text">FSx for ONTAP * 탭에서 재조정할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
-  <block id="91d9e9f75e88d6dd3c5e8243febefc5c" category="list-text">Volumes 탭에서 재조정할 볼륨의 점 3개 메뉴를 선택합니다.</block>
   <block id="dce2b73a361987bf4b1c310d93bedcb4" category="paragraph">스토리지 VM을 BlueXP  워크로드 팩토리 내 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터 손실 시 데이터 액세스의 보호 계층이 제공됩니다. 이 작업은 한 스토리지 VM에 있는 모든 볼륨을 다른 FSx for ONTAP 파일 시스템에 복제합니다.</block>
   <block id="32c800656566b827842f290b45bbf1ca" category="list-text">FSx for ONTAP * 탭에서 복제할 스토리지 VM이 있는 파일 시스템의 3점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="3ed4d57a718312d39dfbeecf23d4628d" category="list-text">Storage VM 탭에서 SVM을 복제할 스토리지 VM의 3개 점 메뉴를 선택합니다.</block>
@@ -1485,9 +1481,7 @@
   <block id="8083bd6761abe4735ad26f9c18899032" category="doc">볼륨 용량을 확인하고 재조정합니다</block>
   <block id="270753bb6aea2d40b94194b021e500ae" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 모든 노드가 단일 Flex 그룹 볼륨의 워크로드에 참여하도록 모든 구성 요소에 파일을 균등하게 분산시킵니다.</block>
   <block id="8d52048ef57a4217559a7ca3e0deeefa" category="paragraph">FlexGroup 볼륨 용량은 2개 이상의 고가용성(HA) 쌍이 포함된 스케일아웃 FSx for ONTAP 파일 시스템의 많은 구성원에게 분산됩니다. 각 구성 요소는 최대 단일 파일 크기를 지정하는 컨테이너입니다. FSx for ONTAP은 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 균일한 방식으로 모든 구성원에게 파일을 분산합니다.</block>
-  <block id="3e614bee780ca4f239b415605468630f" category="paragraph">구성요소가 모든 노드에 균등하게 분산되지 않으면 FlexGroup 볼륨 성능이 저하됩니다.</block>
   <block id="04533b4edf31c61772ef483585fb29cf" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하려면 구성요소의 현재 레이아웃을 평가해야 합니다. 볼륨 용량을 재조정할 때 BlueXP  워크로드 공장에서는 짝수의 구성요소가 포함된 새로운 구성 레이아웃을 설계하여 모든 HA 쌍에 데이터를 균등하게 분산합니다. 이 서비스는 재조정 계획을 실행하여 읽기 및 쓰기 작업을 개선합니다.</block>
-  <block id="f6dc3e9c7132f490eeec938c03027a06" category="admonition">볼륨 재조정은 FlexGroup 볼륨에 대해서만 지원됩니다.</block>
   <block id="d394f348c0b6fbd4e88b415bafdbea68" category="section-title">FlexGroup 볼륨의 균형을 확인합니다</block>
   <block id="1cc1dda63f89374c05c8b8f5c8126341" category="paragraph">활성 FlexGroup 볼륨의 균형을 확인합니다.</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.</block>
@@ -1500,7 +1494,6 @@
   <block id="1fd02848e48f953c62155cbb42dd331b" category="section-title">FlexGroup 볼륨의 균형을 조정합니다</block>
   <block id="64de3f9223f666126336ac4c9a3aa94d" category="paragraph"><block ref="1f11182db84cfb1742cc746fa76f8fe6" category="inline-xref-macro-rx"></block> 볼륨을 재조정하기 전에,</block>
   <block id="af7202b99122b0c2ef1b703335afeef9" category="paragraph">볼륨을 재조정하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="a7f82ab64c2423d5bfd6e7a3852441cc" category="paragraph">FlexGroup 볼륨의 용량이 재조정됩니다.</block>
   <block id="9c633958a5d66a1547197d5b123c8c3c" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 다음이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="ceb833d216db0e056b9ab7d22ba4f023" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다.</block>
   <block id="c4ee13228c56b3c8a94bcef6d8d6d357" category="summary">클론 FlexVol volume를 상위 볼륨에서 분할하여 클론을 일반 읽기/쓰기 FlexVol volume로 만듭니다.</block>
@@ -1892,4 +1885,23 @@
   <block id="636ce0dc4b81c78698b769c07d69f35c" category="sidebar">자율적 랜섬웨어 방어 기능으로 데이터를 보호합니다</block>
   <block id="ce812f613f07996b313f45414329b88e" category="sidebar">파일 시스템 Best Practice 구축</block>
   <block id="e6dcf40c0e3ce889fc9c5c061867f960" category="sidebar">FSx for ONTAP의 구성 분석</block>
+  <block id="77aaaafa70c293a92472a80015bece8b" category="paragraph">구성 요소가 모든 노드에 균등하게 분산되지 않으면 FlexGroup 볼륨 성능이 저하됩니다.</block>
+  <block id="ae622e3b9df5d2fe3f644c0dba928e66" category="paragraph">새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.</block>
+  <block id="8a348b83eb54b8869c9afef29caffc5e" category="admonition">재조정은 FlexGroup 볼륨에만 지원되며 iSCSI 또는 NVMe FlexGroup 볼륨에는 지원되지 않습니다.</block>
+  <block id="dea985c157083fcf289f38e7ab4aede0" category="paragraph">하나 이상의 불균형 볼륨을 재조정합니다. 데이터는 구성원 볼륨 전체에 재분배되어 FlexGroup 볼륨의 균형을 재조정합니다. 원하는 데이터 배포 레이아웃에 따라 재조정 작업으로 FlexGroup 구성원 볼륨이 추가되고 프로비저닝된 볼륨의 크기가 증가할 수 있습니다.</block>
+  <block id="6a0d7c16b4c559c5dc9c875e37641a9c" category="admonition">워크로드 공장 관리자는 작업 중에 재조정을 중지할 수 있습니다.</block>
+  <block id="5fdec390c6be629fa932553e2fe5cb25" category="list-text">재조정한 볼륨의 기존 스냅샷은 부분적으로 변경되며 볼륨 데이터를 복원하는 데 사용할 수 없지만 재조정 후 생성된 새 스냅샷은 볼륨 데이터를 복원하는 데 사용할 수 있습니다.</block>
+  <block id="930dade8556383009e0018f93aeb74bc" category="list-text">FlexGroup balance 창에서 * Rebalance * 를 선택하여 하나 이상의 불균형 볼륨을 재조정합니다.</block>
+  <block id="48d59fcf4b8606ffc1ea7c49fae9c2b9" category="list-text">재조정 마법사에서 원하는 데이터 배포 레이아웃을 선택합니다.</block>
+  <block id="d2759013b04b9118f16fe5b617dd7975" category="list-text">* 성능 최적화 * (권장): FlexGroup 구성원 볼륨의 수와 볼륨의 프로비저닝된 크기를 늘립니다. NetApp 모범 사례를 따릅니다.</block>
+  <block id="782a0e1598a5b037c74d5a726a398869" category="list-text">* Restricted *: 복제 관계에서 볼륨을 지원합니다. FlexGroup 구성원 볼륨 수와 프로비저닝된 볼륨 크기는 동일하게 유지됩니다. 선택한 모든 볼륨이 복제 관계에 참여하는 경우 기본적으로 선택됩니다.</block>
+  <block id="bbf2c701b4183e96081700fbc871fa76" category="list-text">* 수동 *: HA 쌍당 원하는 FlexGroup 구성원 볼륨 수를 선택합니다. 선택 항목에 따라 FlexGroup 구성원 볼륨의 수와 볼륨의 프로비저닝된 크기가 증가할 수 있습니다.</block>
+  <block id="d8b3ea3fc3957a87e42e4b5e3257d192" category="list-text">* Throtling *: 선택 요소입니다. 기본적으로 비활성화되어 있습니다. 파일 시스템에서 볼륨 이동 대역폭을 제한하고 나가는 볼륨 복제 트래픽의 속도를 늦추려면 스로틀을 활성화하십시오.</block>
+  <block id="401ed2c14f82092756a797059818f59d" category="paragraph">스로틀 값을 MB/s 단위로 입력합니다</block>
+  <block id="3117f7777a863eeec7887ce7461f4d67" category="list-text">레이아웃 비교 보기를 선택한 후 * 다음 * 을 선택합니다.</block>
+  <block id="81d9477d2a350f3be114cdcb17416f29" category="list-text">볼륨 레이아웃 비교</block>
+  <block id="5ad2de3bf91266caa9759e836ce832b5" category="list-text">FSx for ONTAP 레이아웃 비교</block>
+  <block id="897bea1a5ca479178427004f773ee72e" category="list-text">필요에 따라 재조정 전에 볼륨 이동 목록을 다운로드합니다.</block>
+  <block id="703547df715082455f8920d78fe90a30" category="list-text">Rebalance * 를 선택합니다.</block>
+  <block id="dc3d2b1db09a8cee9576c2df34eba7b1" category="paragraph">FlexGroup에 추가된 FlexGroup 구성원 볼륨의 수에 따라 한 번에 하나의 FlexGroup 볼륨 구성원 이동 작업이 수행됩니다. 작업이 완료되면 파일 시스템이 원래 값으로 다시 스로틀됩니다.</block>
 </blocks>
