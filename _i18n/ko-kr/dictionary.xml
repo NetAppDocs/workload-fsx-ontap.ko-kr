@@ -944,11 +944,6 @@
   <block id="f6858e5eadd0ed940450d85121838545" category="list-text">* Workload Factory 사용자 인터페이스 *: Quick create_and_Advanced create_deployment 모드 옵션을 제공합니다. 빠른 생성에는 스토리지 구성에 대한 AWS, NetApp 및 업계 표준 모범 사례가 포함됩니다.</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">워크로드 팩토리 사용을 위한 툴</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.</block>
-  <block id="d5688c5bf16d0126d5b27759385bd41e" category="list-text">* 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다</block>
-  <block id="38f4e563ea70a0c42a140783a152e82f" category="list-text">* BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다</block>
-  <block id="a3ee2d6d4606b21bc131c4389e63413b" category="list-text">* REST API *: 워크로드 공장 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다</block>
-  <block id="35507c73673fd91f2b540f5ac22435e2" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다</block>
-  <block id="2b796a233d6b48fb3e49b8c71a2addb1" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하면 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다</block>
   <block id="652598e6fd9da9bdc98db0ef4a093ddd" category="paragraph">작업 부하 공장 또는 작업 부하 공장 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오<block ref="b4c96257ecccde997612582bfecaef76" category="inline-link-macro-rx"></block>.</block>
   <block id="1dde4a08beb94964c3432a2fc7fdc3fc" category="doc">BlueXP  워크로드 팩토리용 법적 고지 사항</block>
   <block id="ac09047fc1cd6bf09a117141110f48d7" category="summary">BlueXP  워크로드 공장에서 복제 관계의 최대 전송 속도를 제한합니다.</block>
@@ -1904,4 +1899,11 @@
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">필요에 따라 재조정 전에 볼륨 이동 목록을 다운로드합니다.</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">Rebalance * 를 선택합니다.</block>
   <block id="dc3d2b1db09a8cee9576c2df34eba7b1" category="paragraph">FlexGroup에 추가된 FlexGroup 구성원 볼륨의 수에 따라 한 번에 하나의 FlexGroup 볼륨 구성원 이동 작업이 수행됩니다. 작업이 완료되면 파일 시스템이 원래 값으로 다시 스로틀됩니다.</block>
+  <block id="4b50901597179fa075617d96ccf51901" category="list-text">* 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션과 프로젝트에 대한 시각적이고 포괄적인 뷰를 제공합니다.</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.</block>
+  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">* 질문하기 *: 질문하기 AI 도우미를 사용하여 워크로드 팩토리 웹 UI를 벗어나지 않고도 워크로드 공장에 대해 자세히 알아보십시오. 워크로드 기본 도움말 메뉴에서 질문하기 에 액세스합니다.</block>
+  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *: 워크로드 팩토리에는 단일 브라우저 기반 CLI를 통해 모든 계정에서 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. 워크로드 팩토리 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.</block>
+  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *: 워크로드 팩토리 REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.</block>
+  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에 정의한 작업을 수행합니다.</block>
+  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
 </blocks>
