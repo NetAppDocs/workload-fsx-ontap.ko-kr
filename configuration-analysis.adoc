@@ -51,4 +51,4 @@ BlueXP  워크로드 공장에서 Amazon FSx for NetApp ONTAP 파일 시스템 
 link:create-link.html["링크를 만드는 방법에 대해 알아봅니다."]
 
 .다음 단계
-link:improve-configurations.html["FSx for ONTAP 배포 구성을 개선합니다"]
+link:improve-configurations.html["잘 설계된 파일 시스템 구성 구현"]
