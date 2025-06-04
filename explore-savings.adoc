@@ -116,7 +116,7 @@ FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP 파일 시스�
 == 감지된 스토리지 환경의 비용 절감에 대해 알아보십시오
 
 .시작하기 전에
-워크로드 팩토리가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["grant_read_permissions 를 선택합니다"^]AWS 계정에 있어야 합니다.
+워크로드 팩토리가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_읽기 전용_ 권한 부여"^]AWS 계정에 있어야 합니다.
 
 
 NOTE: 이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀도 복사본에 대한 계산을 지원하지 않습니다. 사용자 지정을 통해 비용 절감을 도모할 때 EBS 및 FSx for Windows File Server 스냅샷 세부 정보를 제공할 수 있습니다.

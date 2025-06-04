@@ -789,7 +789,6 @@
   <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSI 프로토콜은 FlexVol 볼륨에만 사용할 수 있습니다. ^1^</block>
   <block id="e6816f159adf84ca7c085ce0702311af" category="inline-link-macro">기존 복제 관계를 모두 삭제합니다</block>
   <block id="da13b22f351bd4b981038bd55ca5d3ab" category="list-text">복제 관계: 볼륨을 삭제하기 전에 이 볼륨에 대해 손상된 관계가 남아 있지 않도록 해야 <block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>합니다.</block>
-  <block id="f14fbd72eb1c8ba39f23e290779d3ac7" category="paragraph">BASIC_, _READ_ 및 _AUTOMATE_ 중에서 선택합니다 <block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
   <block id="31139fb3d548620b7d82f880e4660606" category="doc">스토리지 인벤토리의 탭 보기</block>
   <block id="d4aa654cea4681dd5ca03650594006c6" category="paragraph">스토리지 인벤토리가 두 개의 탭 보기로 업데이트되었습니다.</block>
   <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAP 탭: 현재 사용 중인 FSx for ONTAP 파일 시스템을 표시합니다.</block>
@@ -824,7 +823,6 @@
   <block id="c4fd230e0a883356d07ecc8aa57a1408" category="paragraph">BlueXP  워크로드 팩토리에서 데이터를 고성능 운영 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 자동으로 재할당하도록 계층화 정책을 변경할 수 있습니다.</block>
   <block id="fe5187438e2ab675d9a19928dd40ea31" category="list-text">FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="cf85f41b48d74de17d9ad6aec327fcc7" category="list-text">Volumes 탭에서 계층화 정책을 변경할 볼륨의 3개 점이 있는 메뉴를 선택합니다.</block>
-  <block id="303558e4a397de6362e02f36b29e52e2" category="summary">BlueXP  워크로드 팩토리에서 볼륨을 클론 복제하여 테스트를 위해 원래 볼륨의 읽기-쓰기 볼륨을 만듭니다.</block>
   <block id="528d7c15fdf4463dd61cddf39e8e7abf" category="doc">BlueXP  워크로드 팩토리에서 볼륨 클론 복제</block>
   <block id="200d51c026656f479a6f4c6ec3536b64" category="list-text">FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="8646e0bbc26f59aa853dc93d48061b77" category="list-text">Volumes 탭에서 클론 복제할 볼륨의 점 3개 메뉴를 선택합니다.</block>
@@ -1325,7 +1323,6 @@
   <block id="a864feef5272f034d55e1119c5495be8" category="inline-link-macro">변경 불가능한 파일을 관리합니다</block>
   <block id="2915f18b56c3e4e3c1ef137551d9a65d" category="section-title">데이터 복제 기능 개선</block>
   <block id="114e60d7d0f811f597761cf833328a96" category="list-text">교차 계정 복제: 두 AWS 계정 간의 복제는 BlueXP  워크로드 팩토리 콘솔과 복제 관리에서 지원됩니다.</block>
-  <block id="0348e63af5ee6958b15125648a1ecae7" category="list-text">복제 일시 중지 및 다시 시작: 소스 볼륨에서 대상 볼륨으로 예약된 복제 업데이트를 일시 중지(중지)한 다음 준비가 되면 복제 일정을 재개할 수 있습니다. 일시 중지 중에는 소스 볼륨과 타겟 볼륨이 독립적이며 타겟 볼륨이 읽기 전용에서 읽기-쓰기로 전환됩니다.</block>
   <block id="38485996f06c5e13eed5605901b52530" category="inline-link-macro">복제 관계를 일시 중지했다가 다시 시작합니다</block>
   <block id="fc81b1e4233a48b719520033e56b4194" category="paragraph"><block ref="fc81b1e4233a48b719520033e56b4194" category="inline-link-macro-rx"></block></block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Tracker의 CloudShell 이벤트</block>
@@ -1440,9 +1437,7 @@
   <block id="3e2144322d0c83071684bb1ffb11338d" category="paragraph">스냅샷 정책이 삭제됩니다.</block>
   <block id="7aea6efc0dbafc8802c9399b1e3f6754" category="summary">타겟 볼륨이 소스 볼륨이 되도록 복제 관계를 일시 중지했다가 다시 시작합니다.</block>
   <block id="5dd762d4ab72b7f0d07d15a60666a191" category="doc">BlueXP  워크로드 팩토리에서의 복제 관계를 일시 중지했다가 다시 시작합니다</block>
-  <block id="9fe4e8e61dcc40a52fe579f0f61b5261" category="paragraph">복제 관계를 일시 중지하여 소스 볼륨에서 타겟 볼륨으로의 예약된 복제 업데이트를 중지합니다. 타겟 볼륨이 읽기 전용에서 읽기-쓰기로 전환됩니다. 두 볼륨 모두 최신 복제 스냅샷을 나중에 다시 동기화하기 위한 새로운 기준으로 계속 공유합니다.</block>
   <block id="76540d9eea5e27790a75dc0204324995" category="paragraph">일시 중지되면 소스 볼륨과 타겟 볼륨 간의 복제 관계가 계속 유지됩니다. 데이터 전송이 일시 중지되고 볼륨이 독립적입니다. 소스 볼륨에서 대상 볼륨으로의 변경 내용 전송을 다시 활성화하려면 복제를 다시 시작하십시오.</block>
-  <block id="fc8a23c186b506791d82b21a875d3180" category="paragraph">복제를 다시 시작하면 타겟 볼륨에 대한 모든 변경 사항이 취소되고 BlueXP  워크로드 공장 출하 시 복제가 다시 활성화됩니다. 타겟 볼륨이 읽기 쓰기에서 읽기 전용으로 전환되고 예약된 복제 간격에 따라 소스 볼륨으로부터 업데이트를 다시 받습니다. 복제 관계를 재개하면 타겟 볼륨이 최신 초기 복제 스냅샷으로 되돌아가 볼륨 복제 프로세스가 다시 시작됩니다.</block>
   <block id="9eef2cd11da6de70c97fb30475ecd676" category="paragraph">전송이 진행 중일 때 일시 중지하면 전송이 영향을 받지 않고 전송이 완료될 때까지 관계가 "중지 중"으로 바뀝니다. 현재 전송이 중단되면 이후 전송이므로 다시 시작되지 않습니다.</block>
   <block id="a252d0c2ed77d353301a08614eb0500e" category="section-title">복제 관계를 일시 중지합니다</block>
   <block id="5d4b7fc2e52dde05ac8cda99a07dc088" category="list-text">복제 관계 탭에서 일시 중지할 복제 관계의 세 가지 점 메뉴를 선택합니다.</block>
@@ -1457,7 +1452,6 @@
   <block id="a79cee1f678331ce4a5e786550999b02" category="paragraph">관계가 재개되고 상태가 "복제됨"으로 표시됩니다.</block>
   <block id="26da52f61184b82e14aa7b1fa701a979" category="paragraph">자동으로 프로비저닝된 IOPS는 GiB당 3개의 IOPS로 계산됩니다.</block>
   <block id="924b3daa7ecef370ff9a603b3208772b" category="paragraph">IOPS를 수동으로 프로비저닝하는 경우, 이전에 IOPS를 늘려야 할 수도 <block ref="94a3285243f3705d6ad038b61125cb2f" category="inline-link-macro-rx"></block>있습니다.</block>
-  <block id="47442843c99a1990c6f90a2c7e4055a9" category="paragraph">_READ_OR_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 AI와 같은 작업 부하 기능을 선택하고 _READ_OR_AUTOMATE_MODE에서 작업할 수 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>있는 올바른 권한을 가지도록 IAM 정책을 만들어야 합니다.</block>
   <block id="3a3c8188eae554af0e7f07bfef2e124b" category="summary">시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 확인하고 재조정합니다.</block>
   <block id="8083bd6761abe4735ad26f9c18899032" category="doc">볼륨 용량을 확인하고 재조정합니다</block>
   <block id="270753bb6aea2d40b94194b021e500ae" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 모든 노드가 단일 Flex 그룹 볼륨의 워크로드에 참여하도록 모든 구성 요소에 파일을 균등하게 분산시킵니다.</block>
@@ -1607,8 +1601,6 @@
   <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">모든 ICMP</block>
   <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">모두</block>
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="paragraph">인스턴스에 Ping을 수행 중입니다</block>
-  <block id="70b2c09de9e176a879c840cb014b8c20" category="inline-link-macro">grant_read_permissions 를 선택합니다</block>
-  <block id="e395c91c5c84949d52ffb229805b2f5f" category="paragraph">워크로드 팩토리가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 <block ref="aa999e6a1b84a9d79249d89f4acbbea1" category="inline-link-macro-rx"></block>AWS 계정에 있어야 합니다.</block>
   <block id="c09b5be4c2da04f4040eef1878f258aa" category="inline-link-macro">ONTAP 9 설명서</block>
   <block id="3611f3afb9bd4ea20ff757fe165aa678" category="paragraph">또한 사용 사례를 선택하여 복제 정책 또는 ONTAP(SnapMirror policy)를 결정합니다. 복제 정책을 설명하는 데 사용되는 용어는 에서 가져온 <block ref="20dfa0e16eac8597602ade67a04436fd" category="inline-link-macro-rx"></block>것입니다.</block>
   <block id="b5b213ff8da55d939d5b26b2acad4e23" category="list-text">마이그레이션 및 기타 의 경우 복제 정책을 _MirrorAllSnapshots_라고 합니다. _MirrorAllSnapshots_은(는) 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 비동기 정책입니다.</block>
@@ -1662,7 +1654,6 @@
   <block id="2bbce7d3d059871083eb12013b7bc70d" category="section-title">대체 ONTAP 사용자 자격 증명 지원</block>
   <block id="21fe54f48c52f1924f6b2b74751f1611" category="paragraph">이제 워크로드 팩토리에서 파일 시스템을 생성하여 보안 위험을 최소화할 수 있도록 대체 ONTAP 자격 증명 세트를 지원합니다. fsxadmin 사용자만 사용하는 대신 다른 ONTAP 자격 증명 세트를 선택하거나 fsxadmin 및 vsaadmin 사용자의 암호를 제공하지 않도록 선택할 수 있습니다.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">워크로드 팩토리 사용자 인터페이스 및 설명서에서는 이제 "읽기 전용"을 사용하여 읽기 권한을 참조하고 "읽기-쓰기"를 사용하여 사용 권한을 자동화합니다.</block>
   <block id="17f03194826a802587b82edd13d7ac95" category="summary">데이터 보호 볼륨을 복제하거나 볼륨 데이터의 복제를 단계적으로 수행하여 데이터 보호를 3차 시스템으로 확장하거나 데이터를 마이그레이션합니다.</block>
   <block id="70b72bd626a098817ae0ea2c2270cbcf" category="doc">BlueXP  워크로드 공장에서 데이터 보호 볼륨 복제</block>
   <block id="7022ef39a3ec93cac3dc3468cb63623d" category="paragraph">BlueXP  워크로드 팩토리에서는 _CASCADE DEXPORATION_ 이라고도 하는 데이터 보호 볼륨 복제를 지원합니다. a_cascade deployment_는 소스 볼륨이 보조 볼륨(첫 번째 홉)에 미러링되고 보조 볼륨이 3차 볼륨(두 번째 홉)에 미러링되는 관계 체인으로 구성됩니다. 2차 볼륨을 사용할 수 없게 되면 새로운 기준 전송을 수행하지 않고도 1차 볼륨과 3차 볼륨 간의 관계를 동기화할 수 있습니다.</block>
@@ -1716,7 +1707,6 @@
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
   <block id="ec19cf5bb597b8c81392ce26e30276fe" category="paragraph">자동 또는 수동으로 링크를 만들 수 있는 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
   <block id="695199449ad50832d8cff3be92e812b3" category="inline-link-macro">워크로드 팩토리에 자격 증명을 추가합니다</block>
-  <block id="f1eaaab14536c4d820d0472133fd3c45" category="list-text">워크로드 팩토리에 FSx for ONTAP 파일 시스템이 하나 이상 있어야 합니다. FSx for ONTAP 파일 시스템을 검색하거나 생성하려면 FSx for ONTAP 인스턴스에 대한 권한과 스토리지 관리에 대한 읽기 전용 또는 읽기 쓰기 권한을 가진 AWS 계정이 있어야 <block ref="bc6de13f807f280fdd09c86a039f3f7c" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="2f1cd483ab7b6144b733f5155b2026c6" category="list-text">FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 세 점 메뉴를 선택한 다음 * 링크 * 를 선택합니다.</block>
   <block id="29abae1dabc3d83e30cbe456ae214256" category="list-text">* AWS Secrets Manager *: 선택 사항. 워크로드 팩토리가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있습니다.</block>
   <block id="13ecd4f9bb62f6c0730c8f136a58fb36" category="paragraph">링크 배포 스택은 Lambda 권한 정책에 다음과 같은 기본 비밀 관리자 ARN regex를 추가합니다<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block>.</block>
@@ -1775,7 +1765,6 @@
   <block id="aff279b636a9024db3b44375d88e80eb" category="list-text">예약된 로컬 스냅샷</block>
   <block id="887673b402c7bbc141e56321e277605f" category="list-text">원격 데이터 복제</block>
   <block id="2f5c8a4d7476b305dbc46e2886046e37" category="inline-link-macro">AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다</block>
-  <block id="3d4d7dfea7b3c8e6611f1b6c46261c79" category="list-text">읽기 전용 또는 읽기/쓰기 권한이 있는 자격 증명이 있어야 합니다. <block ref="2022cabf257ab03f558a69fe97667e91" category="inline-link-macro-rx"></block>..</block>
   <block id="ec18319549282942e8c5b076a25d2f8e" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">해결 프로세스로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성 문제를 해결하기 전에 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="d74f751ba3d9c20ce8b684f638c03719" category="list-text">데이터베이스 타일에서 * 저장소 인벤토리로 이동 * 을 선택합니다.</block>
@@ -1929,4 +1918,15 @@
   <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025년 6월 3일</block>
   <block id="3f704fe76e8b9e4bf51184f82c064656" category="paragraph"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block> == 2025년 3월 2일</block>
+  <block id="0592779b8245b0df30d4f675dd276086" category="list-text">복제 일시 중지 및 다시 시작: 소스 볼륨에서 대상 볼륨으로 예약된 복제 업데이트를 일시 중지(중지)한 다음 준비가 되면 복제 일정을 재개할 수 있습니다. 일시 중지 중에 소스 볼륨과 대상 볼륨은 독립되고 대상 볼륨은 읽기 전용에서 읽기/쓰기로 전환됩니다.</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.</block>
+  <block id="bf1eae05016a3b136059039ae18136f1" category="summary">테스트를 위해 원본 볼륨의 읽기/쓰기 볼륨을 만들려면 BlueXP 워크로드 팩토리에서 볼륨을 복제합니다.</block>
+  <block id="ee3553e6baa58a561bf979cf7ae15053" category="list-text">워크로드 팩토리에 FSx for ONTAP 파일 시스템이 하나 이상 있어야 합니다. ONTAP 파일 시스템용 FSx를 검색하거나 생성하려면 ONTAP 인스턴스용 FSx에 대한 권한이 있는 AWS 계정이 있어야 합니다. <block ref="bc6de13f807f280fdd09c86a039f3f7c" category="inline-link-macro-rx"></block> 저장소 관리를 위해 _읽기 전용_ 또는 _읽기/쓰기_ 권한이 부여됩니다.</block>
+  <block id="20f8a84eb910bbd8af91b95f380d163c" category="inline-link-macro">_읽기 전용_ 권한 부여</block>
+  <block id="3dc74e0841fa831cf5cd20ac04ed6651" category="paragraph">워크로드 팩토리가 AWS 계정에서 Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows File Server 스토리지 환경을 감지하려면 <block ref="13ae78c09f3df6bcab328a886064dd51" category="inline-link-macro-rx"></block>AWS 계정에 있어야 합니다.</block>
+  <block id="4548f94159b489b0c24b45e3a301c68c" category="list-text">_읽기 전용_ 또는 _읽기/쓰기_ 권한이 있는 자격 증명이 있어야 합니다. <block ref="2022cabf257ab03f558a69fe97667e91" category="inline-link-macro-rx"></block>..</block>
+  <block id="896d6bec42b8c83090c4e03345712729" category="paragraph">복제 관계를 일시 중지하여 소스 볼륨에서 타겟 볼륨으로의 예약된 복제 업데이트를 중지합니다. 타겟 볼륨이 읽기 전용에서 읽기/쓰기로 전환됩니다. 두 볼륨 모두 최신 복제 스냅샷을 나중에 다시 동기화하기 위한 새로운 기준으로 계속 공유합니다.</block>
+  <block id="30e57761ad37a97249e7a0876abdd7cc" category="paragraph">복제를 다시 시작하면 타겟 볼륨에 대한 모든 변경 사항이 취소되고 BlueXP  워크로드 공장 출하 시 복제가 다시 활성화됩니다. 대상 볼륨은 읽기/쓰기에서 읽기 전용으로 전환되고, 예약된 복제 간격에 따라 소스 볼륨에서 업데이트를 다시 받습니다. 복제 관계를 재개하면 타겟 볼륨이 최신 초기 복제 스냅샷으로 되돌아가 볼륨 복제 프로세스가 다시 시작됩니다.</block>
+  <block id="b91aff97cc4dadbca9539fae72dedecc" category="paragraph">_기본_, _읽기 전용_, _읽기/쓰기_ 중에서 선택하세요 <block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
+  <block id="b31987b3ffb35fe02be38fe9d8e701f1" category="paragraph">_읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작동하는 경우 다음이 필요합니다. <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, _읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작업하는 데 필요한 올바른 권한이 있는지 확인하기 위한 IAM 정책을 만드는 작업이 포함됩니다.</block>
 </blocks>

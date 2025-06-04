@@ -33,7 +33,7 @@ BlueXP 는 Amazon FSx for NetApp ONTAP 파일 시스템 구축 구성을 매일
 
 
 .시작하기 전에
-* 읽기 전용 또는 읽기/쓰기 권한이 있는 자격 증명이 있어야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다"^]..
+* _읽기 전용_ 또는 _읽기/쓰기_ 권한이 있는 자격 증명이 있어야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다"^]..
 * 설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오.
 
 
