@@ -219,7 +219,6 @@
   <block id="749bb7d7b85b238efdd51a2af6612da7" category="list-text">데이터 보호 조치 *, * 스냅샷 * 을 선택한 다음 * 스냅샷에서 볼륨 생성 * 을 선택합니다.</block>
   <block id="7703989c08fa05b728e233f271b4650e" category="list-text">Create volume from a snapshot 대화 상자에서 스냅샷 이름을 입력합니다.</block>
   <block id="25b72c08a4a289e6b89fc38db06792a9" category="doc">FSx for ONTAP 볼륨을 생성합니다</block>
-  <block id="afd1f136e7e58574d1730a6b37234e12" category="paragraph">FSx for ONTAP 볼륨은 데이터를 그룹화하고, 데이터를 저장하는 방법을 결정하고, 데이터에 대한 액세스 유형을 결정하는 데 사용되는 가상 리소스입니다. 볼륨은 파일 시스템 스토리지 용량을 소비하지 않습니다. 볼륨에 저장된 데이터는 주로 SSD 스토리지를 사용합니다. 볼륨의 계층화 정책에 따라 데이터가 용량 풀 스토리지를 사용할 수도 있습니다. 볼륨을 만들 때 볼륨 크기를 설정하고 나중에 크기를 변경할 수 있습니다.</block>
   <block id="80f199570ae102e9c62f81fcbfd159eb" category="list-text">CIFS: Windows 운영 체제용 파일 스토리지 프로토콜입니다</block>
   <block id="8a1e5168feb60a6391f96310159dca9a" category="list-text">NFS: Unix 운영 체제용 파일 스토리지 프로토콜입니다</block>
   <block id="ec38854bd667a882fa1d0b62579b5079" category="list-text">iSCSI: 블록 스토리지 프로토콜</block>
@@ -252,7 +251,6 @@
   <block id="d7452a3655b7342c92f5b56d0b8526ed" category="list-text">새 이니시에이터 그룹에 대해 * 이니시에이터 그룹 이름 * 을 입력합니다.</block>
   <block id="9b990db2de543eb2fd38454ae899ab11" category="list-text">호스트 이니시에이터 에서 IQN(iSCSI 정규화된 이름) 호스트 이니시에이터를 하나 이상 추가합니다.</block>
   <block id="8cc48e7c3f902d1b7dd7d0ecb40ade52" category="list-text">효율성 및 보호 아래에 다음 세부 정보를 제공합니다.</block>
-  <block id="693c76b9e50b1968a91a20939d11fb98" category="list-text">* 스토리지 효율성 *: 스토리지 효율성을 비활성화하거나 활성화합니다.</block>
   <block id="4f16f68a6d9522c0d097a900978f6f0d" category="paragraph">ONTAP의 중복제거 및 압축 기능을 활용하여 스토리지 효율성을 달성할 수 있습니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.</block>
   <block id="f03207e238654d36cb2c88950bf22d84" category="list-text">* 스냅샷 정책 *: 스냅샷 정책을 선택하여 스냅샷의 빈도와 보존을 지정합니다.</block>
   <block id="84e947d0a820262a46013852b1928efd" category="paragraph">다음은 AWS의 기본 정책입니다. 사용자 지정 스냅샷 정책의 경우 링크를 연결해야 합니다.</block>
@@ -318,8 +316,6 @@
   <block id="edd5da19d30912fca4670982f9aef531" category="inline-link-macro">볼륨 용량 기능을 높입니다</block>
   <block id="f9e4840a1cf1ddb5632e031e0334acb9" category="paragraph">선택적으로 를 사용하여 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 <block ref="11462b2e1fd0bd94e3dc25fc7f04c4ba" category="inline-link-macro-rx"></block>있습니다.</block>
   <block id="2332ee8494d2f8246a961c95630281a2" category="admonition">iSCSI 볼륨에는 볼륨 자동 확장이 지원되지 않습니다.</block>
-  <block id="91bdace9adb8211a77783be051ae3e78" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 자동 확장 편집 * 을 선택합니다.</block>
-  <block id="e334870bb4631c235cfca40400daae69" category="list-text">자동 확장 편집 대화 상자에서 볼륨 자동 확장을 설정합니다.</block>
   <block id="3d7b2807e22b58e985dfcb21a31b176e" category="summary">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다. FSx for ONTAP 볼륨에 대해 언제든지 볼륨 태그를 추가, 편집, 제거할 수 있습니다.</block>
   <block id="c966edae1d484c4f3e557d47709e08a1" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 태그 편집 * 을 선택합니다.</block>
   <block id="9724e2d67a8b8dacb5f774fbf0309b44" category="list-text">볼륨 태그 편집 페이지에서 태그를 추가, 편집 또는 제거합니다.</block>
@@ -449,7 +445,6 @@
   <block id="488044172f20eab904aecc2827c019b4" category="section-title">처리량 용량 영역 지원</block>
   <block id="0a27e957ebaf89bce02c66c147da7966" category="section-title">스케일업 배포</block>
   <block id="2e8bf528a9bc28508b7cf3ffef710f1c" category="section-title">스케일아웃 구축</block>
-  <block id="3e14c6b63ec31128bf81a140eecbaeb0" category="paragraph">스케일 아웃 구축을 위해 최대 3 및 6GB/s의 처리 용량을 지원하는 지역은 미국 동부(버지니아), 미국 동부(오하이오), 미국 서부(오리건), 유럽(아일랜드), 아시아 태평양(시드니) 지역입니다.</block>
   <block id="1d19e21de0f93b11f5ceb8b535a3afc2" category="section-title">용량 관리</block>
   <block id="80f7abc9fbb9a7fcbc94b93ffe8883fa" category="list-text">볼륨 자동 확장 기능은 현재 iSCSI 프로토콜에 대해 지원되지 않습니다.</block>
   <block id="a4f157471406b244df3c4e7727b860ce" category="list-text">자동 용량 관리 기능이 실행 중일 때는 수동으로 용량을 늘릴 수 없습니다.</block>
@@ -870,7 +865,6 @@
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  워크로드 팩토리의 스냅샷에서 새 FSx for ONTAP 볼륨을 생성하여 시점 복구를 지원합니다.</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대해 점 3개 메뉴를 선택합니다.</block>
-  <block id="3f069fcb238357ca598d1a4d611a62de" category="doc">BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다</block>
   <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">워크로드 팩토리에 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAP은 BlueXP  워크로드 팩토리에서 스냅샷, 볼륨 백업 및 볼륨 복제를 지원합니다.</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.</block>
@@ -889,14 +883,10 @@
   <block id="21ffc1d60d910e1796100ec0f0e054bf" category="list-text">Volumes(볼륨) 탭에서 삭제할 볼륨의 세 점 메뉴를 선택합니다.</block>
   <block id="ad1d6a18c0d830b44dfe2e6a96d2807d" category="list-text">선택적으로 * 볼륨 백업 * 을 선택하여 삭제하기 전에 볼륨을 백업합니다.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Continue * 를 선택합니다.</block>
-  <block id="f7f2169256b833e4b912b12eeb380c4e" category="summary">볼륨 자동 확장을 활성화하여 BlueXP  워크로드 공장에서 볼륨 용량을 관리할 수 있습니다. 언제든지 비활성화할 수 있습니다.</block>
-  <block id="5d6c153f1e4ed3eaf701b67f0de4cee6" category="doc">BlueXP  워크로드 팩토리에서 볼륨 자동 확장을 활성화합니다</block>
   <block id="442b64cea00e2efaa2cb2cb89dba4ab3" category="list-text">FSx for ONTAP 탭에서 업데이트할 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="a0b96ee62d98191f36ed547bccb7babd" category="list-text">볼륨 탭에서 수정할 볼륨에 대해 점 3개 메뉴를 선택합니다.</block>
   <block id="a4fc5c253ce09fe4825f0474ddb3368c" category="summary">이 기능을 활성화하면 워크로드 팩토리에서 시간이 지남에 따라 용량 요구사항이 변경되면 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다.</block>
   <block id="bd0cd4a796621f54f57afed7ce044b14" category="doc">FSx for ONTAP 파일 시스템에 대한 자동 용량 관리 활성화</block>
-  <block id="86699015e319e1f0d9764f4cc8296e22" category="paragraph">이 기능을 활성화하면 BlueXP  워크로드 팩토리에서 시간이 지남에 따라 용량 요구사항이 변경될 경우 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다.</block>
-  <block id="dfee49f6e7d939f9d77bcc58a66381b0" category="paragraph">이 작업을 완료하려면 작업 부하 공장에서 _automate_permissions 에 대한 자격 증명이 있어야 합니다.</block>
   <block id="d473b237e9c91fd6e196904b26b4c56c" category="list-text">FSx for ONTAP * 탭에서 파일 시스템의 세 점 메뉴를 선택하여 의 자동 용량 관리를 활성화합니다.</block>
   <block id="37315e43d6c90fe6798b7397bf15ebae" category="list-text">정보 아래에서 * 자동 용량 관리 * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * 자동 용량 관리 * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 표시됩니다.</block>
   <block id="c5c6c97593c886ac31454d1f10313b78" category="list-text">활성화 버튼을 선택하여 * 자동 용량 관리 활성화 * 를 선택합니다.</block>
@@ -930,7 +920,6 @@
   <block id="0e42938784ca54b8dc455284578841f0" category="list-text">관계 초기화 대화 상자에서 * 초기화 * 를 선택합니다.</block>
   <block id="478b776fc28a60e8545a858eb7ca9a3e" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다.</block>
   <block id="bd2e4cb8c94783198db1a525a87ae34a" category="doc">Amazon FSx for NetApp ONTAP의 알려진 제한 사항</block>
-  <block id="ebb8834ddc064318ec8eb05605b0880f" category="paragraph">워크로드 팩토리 사용자 인터페이스에서 복제와 같은 일부 작업을 완료하려면 링크가 필요합니다.</block>
   <block id="aa75e9d89ef77ba0164dfacff4eadc7c" category="paragraph">스토리지 VM 수는 SKU당 제한됩니다. 제한 범위를 벗어나는 스토리지 VM 생성은 워크로드 공장에서 지원되지 않습니다</block>
   <block id="26ed02718973e705cd69ee6e109400e0" category="section-title">시스템 관리자</block>
   <block id="9ee31cf2622a4d1606ccae84e2ba0742" category="paragraph">System Manager는 FSx for ONTAP 연결을 위한 링크를 지원하지 않습니다.</block>
@@ -1084,7 +1073,6 @@
   <block id="037fbb0239239f2168489bba99e09b67" category="list-text">* PDF 내보내기 *</block>
   <block id="10acfa1cd5e4b3b5f4da60bba2257672" category="list-text">* 이메일로 보내기 *</block>
   <block id="3902a76bb589f831b404ce1ec9865654" category="list-text">* 계산 보기 *</block>
-  <block id="01887ff057face34cde00a98753d7347" category="section-title">고급 ONTAP 작업을 수행하려면 링크가 필요합니다</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="a32b59044667570495820281f09cfa10" category="list-text">* Name *: CIFS 공유의 이름을 입력합니다.</block>
@@ -1319,7 +1307,6 @@
   <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">작업이 다시 시작됩니다. Tracker로 이동하여 작업 상태를 확인합니다.</block>
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025년 2월 2일</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Tracker를 사용하여 작업을 모니터링합니다</block>
-  <block id="b1fe1919850819316de56e436737f1d9" category="summary">FSx for ONTAP 파일 시스템을 설정한 후 BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다.</block>
   <block id="62e770531a6a6f3e80ca57b3b83bb3db" category="doc">BlueXP  Workload Factory의 데이터 보호 유형</block>
   <block id="9da70164a8dd044e50707cfb202de218" category="paragraph">FSx for ONTAP은 데이터 보호를 위한 스냅샷, 백업 및 복제를 지원합니다. 불가피한 상황에 대비하고 데이터를 보호하기 위해 데이터 보호 유형을 함께 사용하는 것이 좋습니다.</block>
   <block id="fa7cdd584b5bc6a975df18dc4ebe5895" category="paragraph">BlueXP  워크로드 팩토리에는 Amazon 스토리지 환경을 FSx for ONTAP와 비교하는 스토리지 절감 계산기가 포함되어 있습니다. AWS 자격 증명을 제공하거나 제공하지 않고 절감 효과를 알아보고 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다. AWS 자격 증명을 제공할 때 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택할 수 있으며, 워크로드 팩토리가 자동으로 비교하도록 할 수 있습니다. 계산기는 수동 또는 자동 중 어떤 스토리지 서비스가 스토리지 요구 사항에 가장 낮은 비용을 제공하는지 결정합니다.</block>
@@ -1499,7 +1486,6 @@
   <block id="dde14eef9b53344c34a3e3e63830d29e" category="paragraph">온프레미스 ONTAP 클러스터의 볼륨 데이터를 FSx for ONTAP 파일 시스템으로 복제합니다. 복제 후에는 데이터를 사용하여 AI 지식 기반을 강화할 수 있습니다.</block>
   <block id="b04f4fce1228aa8dc3f0ae05daa48cd7" category="list-text">* 자동 *: 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 사용자 데이터와 스냅샷이 포함된 모든 콜드 데이터를 특정 기간 동안 용량 풀 스토리지 계층으로 계층화합니다.</block>
   <block id="8b02e3f5a15bae20358e2221cac45d83" category="list-text">* 일반 정보 *: 볼륨 이름, 볼륨 UUID, 볼륨 ID, 생성 시간, 상태, 볼륨 유형(읽기/쓰기/데이터 보호(RW/DP) 또는 읽기 전용), 스냅샷 정책 이름, 호스트 스토리지 VM(SVM) 및 태그가 포함됩니다.</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025년 3월 2일</block>
   <block id="95712b1074d83e6727c42aa16be5af5a" category="paragraph"><block ref="95712b1074d83e6727c42aa16be5af5a" category="inline-link-macro-rx"></block></block>
   <block id="815e02f013485997d1d56438f0bf1505" category="paragraph"><block ref="815e02f013485997d1d56438f0bf1505" category="inline-link-macro-rx"></block></block>
   <block id="21a1f3fb63f8e2b67d072b29080f89f9" category="list-text">레벨 1(작업): 파일 시스템 구축을 추적합니다.</block>
@@ -1787,7 +1773,6 @@
   <block id="9d0e9f5c0aa1e38cfaa8e64e155bc5a8" category="list-text">SSD 용량 임계값입니다</block>
   <block id="396928510e06818ef017921022cce2af" category="list-text">데이터 계층화</block>
   <block id="aff279b636a9024db3b44375d88e80eb" category="list-text">예약된 로컬 스냅샷</block>
-  <block id="70846b7105b6028169209033aae31a0c" category="list-text">FSx for ONTAP 백업 및</block>
   <block id="887673b402c7bbc141e56321e277605f" category="list-text">원격 데이터 복제</block>
   <block id="2f5c8a4d7476b305dbc46e2886046e37" category="inline-link-macro">AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다</block>
   <block id="3d4d7dfea7b3c8e6611f1b6c46261c79" category="list-text">읽기 전용 또는 읽기/쓰기 권한이 있는 자격 증명이 있어야 합니다. <block ref="2022cabf257ab03f558a69fe97667e91" category="inline-link-macro-rx"></block>..</block>
@@ -1802,7 +1787,6 @@
   <block id="fe5f70c74405942514095d724e090b64" category="paragraph">View and fix * 가 옵션으로 제공되는 경우 수정할 영향을 받는 볼륨을 선택합니다.</block>
   <block id="579feafb828551ab15b2e4f1aad57afc" category="list-text">대화 상자에 나타나는 요약 및 작업 항목을 검토하여 문제 해결을 선택한 경우 어떤 일이 발생할지 알아봅니다. 일부 작업으로 인해 인스턴스 다운 시간 또는 서비스 중단이 발생할 수 있습니다.</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">구성 문제를 해결하려면 * 계속 * 을 선택하십시오.</block>
-  <block id="b24e2a5a00274660f4537c173554dd06" category="paragraph">문제 해결 프로세스가 시작됩니다. 작업 상태를 보려면 * 작업 모니터링 * 탭을 선택하십시오.</block>
   <block id="20086b220eeb33caf74bd6e628cfcd8c" category="section-title">AWS Secrets Manager 지원</block>
   <block id="ffe2f2a5c6f5c2a7a4d95da829cd5cb4" category="paragraph">BlueXP  워크로드 팩토리 링크는 워크로드 공장 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계와 연결을 생성합니다. 따라서 Amazon FSx for ONTAP API를 통해 사용할 수 없는 ONTAP REST API 호출에서 직접 특정 파일 시스템 기능을 모니터링하고 관리할 수 있습니다.</block>
   <block id="8f30a77efbeaeec8415337994a976197" category="paragraph">워크로드 팩토리 자격 증명 서비스에 저장된 자격 증명 또는 AWS Secrets Manager에 저장된 자격 증명을 사용하여 인증을 받을 수 있습니다. 작업 부하 공장 은 인증 모드 변경을 지원하지 않습니다.</block>
@@ -1902,7 +1886,47 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *: 워크로드 팩토리에는 단일 브라우저 기반 CLI를 통해 모든 계정에서 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. 워크로드 팩토리 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *: 워크로드 팩토리 REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에 정의한 작업을 수행합니다.</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
   <block id="eaaaf380859de755a58a543fbffc3d8a" category="paragraph"><block ref="eaaaf380859de755a58a543fbffc3d8a" category="inline-link-macro-rx"></block></block>
   <block id="1418bddde60a7d4a1fbd71041ef29d36" category="list-text">* GenAI 워크로드 *: 온프레미스-ONTAP 볼륨 데이터를 FSx for ONTAP 파일 시스템에 복제하여 데이터를 사용할 수 <block ref="8b94b70e10f0f6c7944c9419ec9922bc" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="7583f12b4559f6687c67d8588da1e2f7" category="doc">볼륨 자동 증가 향상</block>
+  <block id="b57fe4f5ee65a0e01f61993297811ebf" category="paragraph">이제 볼륨의 자동 증가 크기를 설정하여 볼륨 크기가 비즈니스 요구 사항과 애플리케이션 요구 사항에 맞게 프로비저닝된 크기를 넘어 증가할 수 있습니다.</block>
+  <block id="9f1effd9ace68ca00fe9e9e3c024b362" category="inline-link-macro">볼륨 자동 확장 활성화</block>
+  <block id="0177289fb77b50bdfc34ab44aa432a21" category="paragraph"><block ref="0177289fb77b50bdfc34ab44aa432a21" category="inline-link-macro-rx"></block></block>
+  <block id="159687e1c95e32f1dcb6c9c1624ba327" category="section-title">잘 설계된 분석 업데이트</block>
+  <block id="8500b95246538dfef049532751c1e9f5" category="paragraph">이제 Workload Factory가 FSx for ONTAP 파일 시스템을 분석하여 데이터 압축, 중복 제거를 포함한 스토리지 효율성이 활용되고 있는지 확인합니다. 스토리지 효율성은 파일 시스템이 사용 가능한 공간을 얼마나 효율적으로 사용하는지 측정합니다.</block>
+  <block id="26e5625f54c5c47a57293d23260101c7" category="inline-link-macro">잘 설계된 저장 효율성 상태를 확인하세요</block>
+  <block id="80378f8a6a0c86610258fa79cd78497b" category="paragraph"><block ref="80378f8a6a0c86610258fa79cd78497b" category="inline-link-macro-rx"></block></block>
+  <block id="e4b0d36f0e7c4f3745520d8f27ed510b" category="section-title">스토리지 대시보드 개선</block>
+  <block id="47586d678be72b51ea7ac193f83c19b2" category="paragraph">오늘부터 워크로드 팩토리 콘솔에서 스토리지 워크로드를 열면 *대시보드*가 표시됩니다. 새롭게 디자인된 대시보드는 파일 시스템 수, 총 SSD 용량, 잘 설계된 상태 개요, 데이터 보호 개요, 복제 관계 상태 등 FSx for ONTAP 시스템에 대한 전체적인 정보를 제공합니다.</block>
+  <block id="74d3ed8321cbdac2928290eee4795cef" category="section-title">볼륨 탭 개선</block>
+  <block id="0d25e8e0a888c31329b48ed4a33f98f6" category="paragraph">스토리지 워크로드는 워크로드 팩토리 콘솔의 FSx for ONTAP 파일 시스템 내 볼륨 탭을 개선했습니다. 개선된 기능은 다음과 같습니다.</block>
+  <block id="90a8a55f34e9e967f8619ecc5b0ba92a" category="list-text">*새로운 카드*: SSD 용량, 용량 풀 및 자율 랜섬웨어 보호(ARP)</block>
+  <block id="f80c9595c105a10d312aac80217ebb84" category="list-text">*새로운 열*: 용량 분배, 사용된 SSD 용량, 사용된 용량 풀 및 SSD 효율성</block>
+  <block id="92eacda944854c6bfa8676c60aaa4c96" category="section-title">볼륨 생성을 위한 스토리지 효율성 업데이트</block>
+  <block id="af1e7fa29b343a7d9bd55952a334e8c9" category="paragraph">새 볼륨을 생성할 때 데이터 압축, 압축, 중복 제거를 포함한 스토리지 효율성이 기본적으로 활성화됩니다.</block>
+  <block id="55321b0c9d5d13d71a60766806796f90" category="inline-link-macro">워크로드 팩토리에서 새 볼륨을 만듭니다.</block>
+  <block id="9257e0b60b0f1cd3867c62713d3370aa" category="paragraph"><block ref="9257e0b60b0f1cd3867c62713d3370aa" category="inline-link-macro-rx"></block></block>
+  <block id="70fc7bb591b365ee183f47900503df43" category="paragraph">장기 보존이 없는 복제는 _MirrorAllSnapshots_ 정책을 사용합니다. 장기 보존을 활성화하면 복제에 _MirrorAndVault_ 정책이 할당됩니다.</block>
+  <block id="2057c4b03e98bbdb86c44c6ec3eec31d" category="summary">FSx for ONTAP 파일 시스템을 설정한 후 워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성합니다.</block>
+  <block id="bb8606f4a66c1f0354653ba69a9e1256" category="doc">워크로드 팩토리에서 ONTAP 볼륨에 대한 FSx를 생성합니다.</block>
+  <block id="60f5b412bf1c0bf652e02bf44be5dc6f" category="paragraph">FSx for ONTAP 파일 시스템을 설정한 후, 워크로드 팩토리에서 FSx for ONTAP 볼륨을 생성하여 데이터를 그룹화하기 위한 가상 리소스로 사용합니다.</block>
+  <block id="0456e4c2545668177705b8072e1b93ba" category="paragraph">FSx for ONTAP 볼륨은 데이터를 가상으로 그룹화하고, 데이터가 저장되는 방식을 결정하고, 데이터에 대한 액세스 유형을 결정합니다. 볼륨은 파일 시스템 스토리지 용량을 소비하지 않습니다. 볼륨에 저장된 데이터는 주로 SSD 스토리지를 사용합니다. 볼륨의 계층화 정책에 따라 데이터가 용량 풀 스토리지를 사용할 수도 있습니다. 볼륨을 만들 때 볼륨 크기를 설정하고 나중에 크기를 변경할 수 있습니다.</block>
+  <block id="51d89d2baec646eb989c0ff4fd38d651" category="list-text">*볼륨 자동 증가*: 선택적으로 볼륨 자동 증가 기능을 활성화하여 볼륨 용량이 최대 크기에 도달할 때까지 자동으로 확장되도록 할 수 있습니다. 이 기능은 데이터 사용량 증가에 대응하여 중단 없는 운영을 보장합니다.</block>
+  <block id="746dd2fcf8e89b32c19195b26ac96dbf" category="paragraph">최대 볼륨 증가 크기와 단위를 지정하세요. 최대 증가 크기는 현재 볼륨 크기보다 작을 수 없습니다.</block>
+  <block id="67e50725d2f9318432dc7449280446c3" category="list-text">*저장소 효율성*: 기본적으로 활성화되어 있습니다. 기능을 비활성화하려면 선택하세요.</block>
+  <block id="b796f9c9a5e3021f08d8f0e74890007d" category="summary">볼륨 자동 증가를 활성화하면 작업 부하 공장에서 볼륨 용량을 자동으로 관리합니다. 언제든지 비활성화할 수 있습니다.</block>
+  <block id="2753f972110374eb67c560eb5ff6266c" category="doc">워크로드 팩토리에서 볼륨 자동 증가 활성화</block>
+  <block id="870bfc0407fd21936b0eda7ce98ea951" category="list-text">*기본 동작*을 선택한 다음 *볼륨 자동 증가 설정*을 선택합니다.</block>
+  <block id="6f11493010276b8e782926f7cd8ee493" category="list-text">자동 증가 설정 대화 상자에서 볼륨 자동 증가를 활성화하면 볼륨 용량이 최대 크기에 도달할 때까지 자동으로 확장됩니다. 이 기능은 데이터 사용량 증가에도 대응하여 중단 없는 운영을 보장합니다.</block>
+  <block id="6fd69dde99b8a0114b3c69839bb5f201" category="paragraph">자동 용량 관리를 활성화하면 BlueXP 워크로드 팩토리가 시간 경과에 따라 용량 요구 사항이 변경됨에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다. 또한, 이 기능을 활성화하면 용량을 수동으로 모니터링할 필요가 없어지고 애플리케이션에 큰 영향을 미치는 데이터 읽기 및 쓰기 작업의 위험도 완화됩니다.</block>
+  <block id="a0ddf9e17030c7c21387932426a4defa" category="list-text">이 작업을 완료하려면 워크로드 팩토리에서 _읽기/쓰기_ 권한이 있는 자격 증명이 있어야 합니다.</block>
+  <block id="2063734e5b01a934d73b02ba309a34e6" category="list-text">AWS는 SSD 용량 증가 시 최소 6시간의 쿨다운 기간을 적용하므로 데이터 마이그레이션 중에는 이 기능을 활성화하지 마십시오. 이 제한으로 인해 조정이 지연될 수 있으므로, 이에 따라 계획을 세우십시오.</block>
+  <block id="667bda9d5b08fe1666f3fe061ce424aa" category="list-text">ONTAP 백업을 위한 FSx</block>
+  <block id="af20abc7154e9ee224c54b48b6ec7d63" category="list-text">스토리지 효율성</block>
+  <block id="8d5352cda3351c4fe9fe9f49933c852b" category="paragraph">문제 해결 프로세스가 시작됩니다. 계정 설정 메뉴를 선택한 다음 *추적기*를 선택하여 작업 상태를 확인하세요.</block>
+  <block id="4957b29fcffeec300ed417debafed722" category="paragraph">다음 지역은 확장형 배포에 대해 최대 6GB/s의 처리량 용량을 지원합니다. 미국 동부(버지니아 북부 및 오하이오), 미국 서부(캘리포니아 북부 및 오리건), 유럽(프랑크푸르트, 아일랜드 및 스톡홀름), 아시아 태평양(싱가포르 및 시드니).</block>
+  <block id="58107709be0f763204df69a361ef7fe0" category="list-text">자동 용량 관리가 활성화된 경우 볼륨 inode가 스토리지 용량과 함께 늘어나도록 하는 링크가 필요합니다.</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
+  <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025년 6월 3일</block>
+  <block id="3f704fe76e8b9e4bf51184f82c064656" category="paragraph"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block> == 2025년 3월 2일</block>
 </blocks>
