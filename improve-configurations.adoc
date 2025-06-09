@@ -27,6 +27,7 @@ BlueXP 는 Amazon FSx for NetApp ONTAP 파일 시스템 구축 구성을 매일
 * ONTAP 백업을 위한 FSx
 * 원격 데이터 복제
 * 스토리지 효율성
+* 자동 용량 관리
 
 
 --
