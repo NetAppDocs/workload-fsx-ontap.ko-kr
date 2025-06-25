@@ -169,7 +169,6 @@
   <block id="e9cb9ef1f5a746f51fcf4a92869ed58c" category="paragraph">이 작업을 수행하면 FSx for ONTAP 파일 시스템에서 하나 또는 모든 소스 볼륨에 대한 복제 관계가 생성됩니다.</block>
   <block id="584e3ee876c862f377d3d9b7080d32d9" category="paragraph">시작하기 전에 다음 사전 요구 사항을 충족해야 합니다.</block>
   <block id="3188210715ec1f36a4acbadb45350bad" category="list-text">복제 관계를 생성하려면 스토리지 인벤토리에 두 개의 사용 가능한 파일 시스템이 있어야 합니다.</block>
-  <block id="33429c6ab13a995d68ffda0c4dc39c19" category="inline-link-macro">먼저 링크를 만듭니다</block>
   <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">링크를 연결합니다</block>
   <block id="b9a2f47b5bc4bd7fcc8d23d6721ec4c2" category="list-text">복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.</block>
   <block id="837278414ab16e2a74dfc1b2102bcd54" category="list-text">* FSx for ONTAP 파일 시스템 *: 대상 FSx for ONTAP 파일 시스템에 대한 자격 증명, 지역 및 FSx for ONTAP 파일 시스템 이름을 선택합니다.</block>
@@ -197,7 +196,6 @@
   <block id="dbdb6569199d0b92d1e8203557e17927" category="list-text">스냅샷을 사용하기 전에 스냅샷 용량에 대해 다음 사항을 고려하십시오.</block>
   <block id="93500ef3c4b6b914f591d40fa8709533" category="list-text">대부분의 데이터 세트의 경우 20%의 추가 용량으로 스냅샷을 최대 4주 동안 보관할 수 있습니다. 데이터가 오래되면 복원에 사용할 가능성이 줄어듭니다.</block>
   <block id="e6b293eb079603bb103c925cf228700c" category="list-text">스냅샷의 모든 데이터를 덮어쓰면 볼륨 용량이 상당히 많이 소모되며, 이는 볼륨 용량 할당에 영향을 미칩니다.</block>
-  <block id="0691d778f09d713a755463d05ab1033d" category="inline-link-macro">링크를 만듭니다</block>
   <block id="b8613e46a68d4b177aeb2fe1cdab9b07" category="list-text">Storage * 에서 * Go to storage inventory * 를 선택합니다.</block>
   <block id="736ef7205c037a078bc461f368c6a21f" category="doc">FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다</block>
   <block id="5b10cd7d19a8a16358cb05922f38a69e" category="paragraph">스냅샷은 볼륨의 리소스로, 수정된 데이터에 대해서만 공간을 소비하는 데이터를 즉시 캡처합니다. 데이터는 시간이 지남에 따라 변경되기 때문에 일반적으로 스냅샷은 오래될수록 더 많은 공간을 사용합니다.</block>
@@ -253,7 +251,6 @@
   <block id="8cc48e7c3f902d1b7dd7d0ecb40ade52" category="list-text">효율성 및 보호 아래에 다음 세부 정보를 제공합니다.</block>
   <block id="4f16f68a6d9522c0d097a900978f6f0d" category="paragraph">ONTAP의 중복제거 및 압축 기능을 활용하여 스토리지 효율성을 달성할 수 있습니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.</block>
   <block id="f03207e238654d36cb2c88950bf22d84" category="list-text">* 스냅샷 정책 *: 스냅샷 정책을 선택하여 스냅샷의 빈도와 보존을 지정합니다.</block>
-  <block id="84e947d0a820262a46013852b1928efd" category="paragraph">다음은 AWS의 기본 정책입니다. 사용자 지정 스냅샷 정책의 경우 링크를 연결해야 합니다.</block>
   <block id="20d2ce456e91b2afd45084ee06baab95" category="list-text">이 정책은 다음 스케줄에 따라 스냅샷을 자동으로 생성하고 가장 오래된 스냅샷 복사본은 새 복제본을 위한 공간을 확보하기 위해 삭제합니다.</block>
   <block id="4cd6a004e8e70008213c7c1917f36c49" category="list-text">시간당 최대 6개의 스냅샷이 해당 시간 이후 5분 동안 촬영되었습니다.</block>
   <block id="17ed200290d04c66b0c31c18233bd5c1" category="list-text">월요일부터 토요일까지 자정 이후 10분에 최대 2개의 일일 스냅샷을 촬영합니다.</block>
@@ -517,7 +514,6 @@
   <block id="8cd69d367e2dbdfca9ec0b55ba13baec" category="section-title">링크가 필요한 경우</block>
   <block id="c0653b3ad30a51a0fe3228ad2877ac9d" category="paragraph">링크가 필요한 기능은 다음과 같습니다.</block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="doc">링크를 관리합니다</block>
-  <block id="a4fcf9229a590e13a5a514e19c4c398e" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block><block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 또는.</block>
   <block id="e32918056c538c64f6e229f2ca257e25" category="section-title">계정과 연결된 링크를 봅니다</block>
   <block id="a8fa4cf9dc4a62f0a1665e1500bbff0a" category="paragraph">현재 계정과 연결된 링크를 볼 수 있습니다.</block>
   <block id="d1c0fce8fad9bbea3f4af6e7b074017a" category="inline-image-macro">링크 페이지를 여는 방법을 보여 주는 스크린샷</block>
@@ -602,7 +598,6 @@
   <block id="5ad71ca0af84be16f0eb4a7ae3fe9ac0" category="list-text">분할 후에는 상위 FlexVol 볼륨과 복제본 모두에 볼륨 보장에 따라 결정된 전체 공간 할당이 필요합니다.</block>
   <block id="8dd061e99d373c92767f86fe7281ad2b" category="list-text">FlexClone 볼륨이 상위 볼륨에서 분할된 후에는 두 볼륨을 다시 연결할 수 없습니다.</block>
   <block id="107cbfcddbd40cae35b91dda5e5e061c" category="paragraph">복제된 볼륨을 분할하기 전에 다음 사항을 고려하십시오.</block>
-  <block id="b77db7f524ccde6f40472118970bf6e7" category="list-text">클러스터 관리자여야 합니다.</block>
   <block id="7591989c8ce2c1b3bcc16916ee9457ef" category="list-text">분할 작업을 시작할 때 FlexClone 볼륨은 온라인 상태여야 합니다.</block>
   <block id="102403f0f3d778ceafbe074fd8219d2f" category="list-text">분할이 성공하려면 상위 볼륨이 온라인 상태여야 합니다.</block>
   <block id="ee58955cf84a9682824159e8019bdbef" category="list-text">데이터 보호 조치 * 를 선택한 다음 * 클론 볼륨 분할 * 을 선택합니다.</block>
@@ -816,7 +811,6 @@
   <block id="c2a714b67167aae1661b248d570b356d" category="list-text">FSx for ONTAP * 탭에서 업데이트할 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="6d257e829bd979b1905ac4edd5b4a469" category="list-text">복제 관계 탭에서 변경할 복제 관계 스케줄의 세 점 메뉴를 선택합니다.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Apply * 를 선택합니다.</block>
-  <block id="f2a6898f5e2a659b0a4e936d2179af7b" category="paragraph">기존 스냅샷 정책을 표시하려면 링크를 연결해야 합니다. 링크를 연결하려면 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 그런 다음 이 작업으로 돌아갑니다.</block>
   <block id="af215976e40a730a67c8637d4caae8f6" category="list-text">적용 * 을 선택하여 변경 사항을 저장합니다.</block>
   <block id="8cb5ce6df0f7a83b17c0640431645fbe" category="summary">BlueXP  워크로드 팩토리의 계층화 정책을 변경하여 고성능 운영 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 재할당합니다.</block>
   <block id="6e342a0f88f597871307e39e9b4d00f4" category="doc">BlueXP  워크로드 공장 에서 볼륨의 계층화 정책을 변경합니다</block>
@@ -850,11 +844,8 @@
   <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">이 옵션을 사용하면 AWS CloudFormation에서 링크에 대한 ARN을 추출하여 여기에 보고합니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다.</block>
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  워크로드 팩토리에서 복제 관계를 생성합니다</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">예측하지 못한 재해 발생 시 데이터 손실을 방지하기 위해 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성합니다.</block>
-  <block id="cf2d4a66ab67f86354f74f9c2cd68326" category="list-text">복제 관계에 사용하는 두 파일 시스템에 연결된 링크가 있어야 합니다. 파일 시스템에 기존 링크가 없는 경우 <block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block> <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>파일 시스템의 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 링크가 두 파일 시스템에 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_AUTO_는 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="9b5cb8f49e83e342d48c95385ebf43e7" category="list-text">사용자 지정 스냅샷 정책을 생성하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="475db696847724a8e496eba7476bc2ce" category="summary">BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다.</block>
-  <block id="512defc52682eb6b6d9585f8d5494603" category="paragraph">스냅샷을 생성해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> 합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="8e835d5a49d273fb898a556146f8b52c" category="list-text">Volumes * 탭에서 보호할 볼륨에 대한 3점 메뉴를 선택합니다.</block>
   <block id="d0b0eb066206fa50f3ebee39a541bb7c" category="summary">FSx for ONTAP 스토리지 VM(SVM)을 생성하여 BlueXP  워크로드 팩토리의 워크로드에 스토리지 및 데이터 서비스를 제공할 수 있습니다.</block>
   <block id="4da97157b6693eaf9968b187d7b8259c" category="paragraph">FSx for ONTAP 파일 시스템용 스토리지 VM(SVM)을 생성하여 BlueXP  워크로드 팩토리의 워크로드를 위한 스토리지 및 데이터 서비스에 가상으로 액세스합니다.</block>
@@ -950,8 +941,6 @@
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
   <block id="5bdcc5d3e4e631055e0153df468f21d6" category="doc">BlueXP  워크로드 공장에서 볼륨의 CIFS 공유를 관리합니다</block>
   <block id="3d158aba7d5d233ad247917999b7f8f9" category="list-text">볼륨 탭에서 SMB 공유를 변경할 볼륨의 점 3개 메뉴를 선택합니다.</block>
-  <block id="20ce09b74b6e0e3f084a81d605cc8f77" category="summary">BlueXP  워크로드 팩토리에서는 계정에 연결된 링크를 보고, 링크를 연결하고, 링크를 제거할 수 있습니다.</block>
-  <block id="2083481ef56023982330c4d1cbedcd07" category="doc">BlueXP  워크로드 팩토리 링크 관리</block>
   <block id="3e0b9b190a3e069bed44756ddb118289" category="list-text">홈 페이지의 메뉴에서 * 링크 * 를 선택합니다.</block>
   <block id="cc26ff728c1b9844af11d5c6831287a6" category="paragraph"><block ref="cc26ff728c1b9844af11d5c6831287a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a91b1be003fc8ddd1b9b9c2667168d69" category="paragraph">워크로드 팩토리 인터페이스에서는 링크를 편집할 수 없습니다. 링크를 변경해야 하는 경우 새 링크를 만든 다음 해당 링크를 파일 시스템에 연결해야 합니다.</block>
@@ -1113,7 +1102,6 @@
   <block id="f4a663f98fdbf7294b4d7065fe81028d" category="section-title">온프레미스 ONTAP 클러스터에서 볼륨 데이터를 복제합니다</block>
   <block id="a979d07ec6790355c195ac942aac0f7a" category="list-text">볼륨 데이터를 복제하려면 온프레미스 ONTAP 클러스터를 검색해야 합니다.</block>
   <block id="bbaf3e2bb6ee0562252678dc510975b4" category="list-text">복제 대상으로 사용할 수 있는 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
-  <block id="5fc398b3211d605127c144291f3eda23" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. 온프레미스 및 FSx for ONTAP 클러스터 중 하나 이상에 기존 링크가 없는 경우,<block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block> <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>파일 시스템의 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 링크가 온-프레미스 ONTAP 클러스터 및 FSx for ONTAP 파일 시스템에 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="aea1c4ebf571d37a1b92fbbf08a1d97c" category="list-text">스토리지 VM별로 볼륨을 찾으려면 드롭다운에서 * 스토리지 VM * 을 선택합니다.</block>
   <block id="e03b6f62981f4a86c7a1c627e22e63e8" category="list-text">복제할 볼륨을 하나 이상 선택한 다음 * Replicate * 를 선택합니다.</block>
   <block id="72106a023ea21862c78ae92b6102ff34" category="list-text">* 데이터 계층화 *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.</block>
@@ -1312,7 +1300,6 @@
   <block id="669fb0eb9744dc9a4caa9500aa2efdd0" category="list-text">* 인메모리 캐시 및 NVMe 캐시 *: 고유한 인메모리 캐시와 NVMe 캐시를 포함하고 있어 자주 액세스되는 데이터의 성능을 향상시킵니다.</block>
   <block id="8e011e1c010d6b411d584ecf79e79304" category="list-text">* 데이터 중복제거 및 압축 *: 중복 데이터를 제거하고 데이터를 압축하여 FSx for ONTAP 파일 시스템에 필요한 물리적 스토리지의 양을 줄임으로써 비용을 절감합니다.</block>
   <block id="acf29f0fa117accd6f0be38d23e9b566" category="paragraph">AWS는 워크로드 팩토리가 아닌 FSx for ONTAP 계정을 유지 관리합니다. 을 <block ref="d466c04e3dc9277f23f307f5afe7df62" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="4baeabf837f67f70aeb93e0dfea60d36" category="paragraph">BlueXP  워크로드 공장 계정과 연결된 링크를 관리합니다. FSx for ONTAP 파일 시스템에 연결된 링크를 보고, 링크를 FSx for ONTAP 파일 시스템에 연결하고, 링크를 편집하고, 링크를 제거할 수 있습니다.</block>
   <block id="4a922c367b35639ecb9d911b81fdb458" category="doc">자동 용량 관리 개선</block>
   <block id="5868fd5ebf39f0f3dce9bd4ba23dcb6f" category="paragraph">자동 용량 관리가 설정되면 BlueXP  워크로드 팩토리에서는 이제 파일 시스템이 용량 임계값에 도달했는지 2시간마다 아닌 30분마다 확인합니다.</block>
   <block id="410d677b6db33c7f47c30b3d219c4846" category="paragraph">용량 임계값에 도달하면 프로비저닝된 IOPS 설정이 더 이상 영향을 받지 않습니다.</block>
@@ -1361,7 +1348,6 @@
   <block id="6612ee3812a7ecc1b61dc6f585b1c26f" category="list-text">변경 불가능한 스냅샷에 대한 설명을 수락합니다.</block>
   <block id="a07e25b28678b53fe808a082369fda80" category="paragraph">볼륨에 스냅샷 복사본이 있습니다.</block>
   <block id="86ee35c0029c920dce9ef56d88935e8e" category="paragraph">다음 프로토콜을 볼륨에 사용할 수 있습니다.</block>
-  <block id="f9c23d0688e853bcefd0a1c9f4247f62" category="list-text">볼륨에 대한 액세스를 구성하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="8feb9be2f7d30e723f1c8aa899250dae" category="list-text">* 블록 액세스 *: 중요한 비즈니스 응용 프로그램을 실행하는 호스트가 iSCSI 프로토콜을 사용하여 볼륨에 액세스할 수 있습니다. 파일 시스템 스케일아웃 구축에 HA 쌍 6개 이하가 있는 경우에만 블록 액세스를 사용할 수 있습니다.</block>
   <block id="ad5ae1649d193a804147218da52fd8ad" category="list-text">* 변경 불가능한 파일 * : SnapLock라고도 하는 이 기능은 기본적으로 비활성화되어 있습니다. 변경 불가능한 파일을 활성화하면 지정된 기간 동안 데이터가 삭제되거나 덮어써지지 않습니다. 이 기능은 볼륨 생성 중에만 사용할 수 있습니다. 기능이 활성화된 후에는 비활성화할 수 없습니다. 이는 FSx for ONTAP의 프리미엄 기능으로 추가 비용이 부과됩니다. 자세한 내용은 Amazon FSx for NetApp ONTAP 설명서의 을 <block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="f122287653386d74229199bd670f4990" category="list-text">보존 기간에는 _ retention policy_and _ retention perioes _ 라는 두 가지 설정이 있습니다. retention policy_는 변경 불가능한 WORM 상태에서 파일을 보존할 기간을 정의합니다. 사용자 지정 보존 정책을 지정하거나 기본 보존 정책(지정되지 않음)인 30년을 사용할 수 있습니다. 최소 및 최대 보존 기간 _ 은(는) 파일 잠금에 허용되는 시간 범위를 정의합니다.</block>
@@ -1369,18 +1355,14 @@
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">활성화 * 를 선택합니다.</block>
   <block id="427c298c7e18f9930012cc8fc9c01fcd" category="summary">FSx for ONTAP 파일 시스템에서 더 이상 필요하지 않은 볼륨을 삭제하여 공간을 확보하십시오. 이 작업은 되돌릴 수 없습니다.</block>
   <block id="c6e676032b22d8e639d8347f2bfe87d5" category="list-text">변경 불가능한 파일 및 스냅숏: 변경 불가능한 파일과 스냅숏을 포함하는 볼륨은 보존 기간이 끝날 때까지 삭제할 수 없습니다.</block>
-  <block id="857724ecf757b1bcd8495bdca7e9031a" category="paragraph">볼륨 자동 확장을 활성화하려면 이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="c8b905c92d0173f2a57027886d96ccda" category="paragraph">FSx for ONTAP 파일 시스템은 30분마다 검사를 수행하여 증분 스토리지를 추가해야 하는지 여부와 사용 가능한 볼륨 inode 또는 볼륨의 최대 파일 및 폴더 수를 확인하여 구성된 자동 용량 관리 임계값에 따라 파일 수가 증가합니다.</block>
-  <block id="063db47ee02fdc9a25f24c45a2f07d88" category="paragraph">볼륨 inode가 스토리지 용량과 함께 증가하도록 하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="c19ec77905390b48637066dbfe338f41" category="paragraph">파일 시스템에 추가 용량이 필요한지 확인하기 위해 30분마다 파일 시스템 검사가 수행됩니다.</block>
   <block id="db95f08d46f6135faf16036ec8d0bee1" category="paragraph">Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버를 FSx for NetApp ONTAP과 비교하여 사용하는 스토리지 워크로드의 절감 효과에 대해 알아보십시오.</block>
   <block id="40042d0ee93698f3f63a7f8a3f2c9c1f" category="paragraph"><block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block>수동으로 증가하는 파일 시스템 용량을 지원하기 위해 IOPS 할당을 늘려야 할 수 있습니다.</block>
-  <block id="58d1dabb2d9059ce86ad3732b8fdce6d" category="paragraph">볼륨 용량을 늘리려면 을 사용해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="4a2b234996b70a9f17edaef6ad63c683" category="paragraph">소스 볼륨과 타겟 볼륨 간의 복제 관계를 초기화하여 BlueXP  워크로드 팩토리의 모든 데이터 블록과 스냅샷을 전송합니다.</block>
   <block id="d2a2f0e04d26b7123eb9c705ec13e758" category="list-text">이 작업을 완료하는 데 약 30분 정도 걸릴 수 있습니다.</block>
   <block id="1e0df4591e77aee403bcdd8f97b71ee5" category="paragraph">최대 전송 속도를 제한하는 것은 선택 사항이지만 권장됩니다. 제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다.</block>
   <block id="def5ef91837644047b00e3f35f6d9fde" category="paragraph">Lambda가 수행하는 각 트랜잭션마다 요금이 발생합니다. Lambda는 두 시스템 사이에서 프록시 역할을 하기 때문에 Lambda가 파일 시스템의 ONTAP REST API에 요청을 전송하고 해당 응답을 워크로드 팩토리로 다시 전송할 때 비용이 청구됩니다.</block>
-  <block id="40d8be3de1697aeb13e210a5a2adc870" category="list-text">CIFS 공유를 관리하려면 이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="427e6edb85323a6bc01bcb3b7cc04394" category="paragraph">변경 사항으로 인해 현재 사용자 또는 그룹이 CIFS 공유에 액세스할 수 없게 될 수 있습니다.</block>
   <block id="8deecf84343cc455d4c3c3eea19e99e4" category="summary">이 기능이 활성화되면 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.</block>
   <block id="b7461c37ab24fcaeffe8427333f04775" category="doc">BlueXP  워크로드 팩토리에서 볼륨의 변경 불가능한 파일을 관리합니다</block>
@@ -1400,10 +1382,8 @@
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">적용 * 을 클릭합니다.</block>
   <block id="0040dd329c12b8e069f111ec942d89fd" category="paragraph">이제 업데이트가 볼륨에 적용됩니다.</block>
   <block id="750bccba0d1370cdcf80e381531ccf20" category="paragraph">볼륨의 엑스포트 정책을 관리하려면 클라이언트 사양, 액세스 제어, 고급 사용자 액세스 및 NFS 버전을 설명하는 엑스포트 정책 규칙을 추가해야 합니다. 둘 이상의 엑스포트 정책을 추가하고 우선 순위를 지정할 수 있습니다.</block>
-  <block id="ce9febcc7ffbadd58aed913f41d83102" category="summary">BlueXP  워크로드 공장에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 관리합니다. 스냅샷 정책은 시스템에서 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
   <block id="4867c217eac62c97b182966f57c83e8f" category="doc">스냅샷 정책을 관리합니다</block>
   <block id="491d37c735073b9ba15b69c580439021" category="paragraph">FSx for ONTAP 파일 시스템에서 볼륨에 대한 스냅샷 정책을 할당, 변경 및 삭제하는 것과 같은 스냅샷 관리 작업은 스토리지 VM 수준에서 관리됩니다. 스냅샷 정책을 단일 스토리지 VM 또는 모든 스토리지 VM과 공유할 수 있습니다.</block>
-  <block id="dfcdbd589e3208b5fc1db45a90025691" category="paragraph">일부 관리 작업의 경우 FSx for ONTAP 파일 시스템으로 전환해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block></block>
   <block id="67366ad19b5e2e9e027ed804f4af5cd5" category="section-title">스냅샷 정책을 변경합니다</block>
   <block id="497d50d3f3c01373e9ac618dc8d7762e" category="paragraph">유지할 스냅샷 정책 이름, 일정 및 복제본 수를 변경하고 변경 불가능한 스냅샷을 설정하거나 해제할 수 있습니다. 스토리지 VM 간에 정책 공유를 설정하거나 해제할 수 없습니다. 이 옵션은 스냅샷 정책을 생성하는 동안에만 사용할 수 있습니다.</block>
   <block id="9ea7c3b914bc2e35b22018cf6a394157" category="list-text">FSx for ONTAP * 탭에서 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
@@ -1413,7 +1393,6 @@
   <block id="14f87882e6a43eb538fc1c6aa4ea44de" category="paragraph">스냅샷 정책이 업데이트됩니다.</block>
   <block id="6e1d84f2f9e9a9941b445952f6b20cf9" category="section-title">볼륨에 스냅샷 정책을 할당합니다</block>
   <block id="d88e3ecb2bebd33ebfaa42eb01224df4" category="paragraph">단일 볼륨에 스냅샷 정책을 할당하여 볼륨에 대해 예약된 스냅샷을 생성할 수 있습니다.</block>
-  <block id="ca3948c35bce5a01ff818d8165bc9432" category="paragraph"><block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>스냅샷 정책을 할당해야 합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="4eec9d8605d9286e4625ff2e2cf81a8e" category="list-text">FSx for ONTAP * 탭에서 스냅샷 정책을 할당할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="2e0f47563683dde9235309ef305c18bd" category="list-text">스냅샷 정책 관리 페이지에서 스냅샷 정책의 3점 메뉴를 선택한 다음 * 볼륨에 정책 할당 * 을 선택합니다.</block>
   <block id="f6a4c9bb30fd5cd61b4fb4f8ab626585" category="list-text">Assign snapshot policy(스냅숏 정책 할당) 대화 상자에서 볼륨에 할당할 스냅샷 정책을 선택하고 정책 일정을 검토합니다.</block>
@@ -1422,7 +1401,6 @@
   <block id="3a7afc12c5189a91a9f3ff461538baee" category="paragraph">스냅샷 정책이 볼륨에 할당됩니다.</block>
   <block id="cd7d7ecbb8f81d67254037fc1073255b" category="section-title">변경 불가능한 스냅샷을 활성화합니다</block>
   <block id="e299611a9963740ce6eae50818e11e01" category="paragraph">보존 기간 동안 삭제되지 않도록 스냅샷을 잠급니다.</block>
-  <block id="48b71084b80ec0f51cf2f98eb22f3529" category="paragraph">변경 불가능한 스냅샷을 활성화해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="c86b5e8cb1615df74bbfa38f4ad243e7" category="list-text">FSx for ONTAP * 탭에서 스냅샷을 잠글 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="8950e37ceffb542d0cd61122c2d8200b" category="list-text">데이터 보호 작업 *, * 스냅샷 * 을 선택한 다음 * 스냅샷을 변경 불가 * 합니다.</block>
   <block id="600034d3e50968f487a1ad55349b4df4" category="list-text">스냅샷 변경 불가능 만들기 대화 상자에서 다음을 수행합니다.</block>
@@ -1461,19 +1439,15 @@
   <block id="1cc1dda63f89374c05c8b8f5c8126341" category="paragraph">활성 FlexGroup 볼륨의 균형을 확인합니다.</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.</block>
   <block id="480a98de796f5eb054e749dedf2dbce3" category="list-text">볼륨 스타일은 FlexGroup 볼륨이어야 합니다.</block>
-  <block id="4c61a2a51509658d891bb7416dad5238" category="list-text">FlexGroup 볼륨의 밸런스를 확인하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">Volumes(볼륨) 탭에서 표 상단에 있는 * Check FlexGroup balance * 를 선택합니다.</block>
   <block id="8b7b54e191e5f6ab54dc9475259af500" category="list-text">FlexGroup 균형 창에서 FSx for ONTAP 파일 시스템에 있는 모든 FlexGroup 볼륨의 균형 상태를 검토합니다.</block>
   <block id="1997a93792e2a8be597c246f39ee9fd5" category="inline-xref">재조정</block>
   <block id="6b59c2a4df281550186d4d3fc75ba6d5" category="paragraph">FlexGroup 볼륨이 불균형한 경우 를 고려합니다<block ref="59031c1bf074b0ee450445a716c796e8" category="inline-xref-macro-rx"></block>.</block>
   <block id="1fd02848e48f953c62155cbb42dd331b" category="section-title">FlexGroup 볼륨의 균형을 조정합니다</block>
   <block id="64de3f9223f666126336ac4c9a3aa94d" category="paragraph"><block ref="1f11182db84cfb1742cc746fa76f8fe6" category="inline-xref-macro-rx"></block> 볼륨을 재조정하기 전에,</block>
-  <block id="af7202b99122b0c2ef1b703335afeef9" category="paragraph">볼륨을 재조정하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="9c633958a5d66a1547197d5b123c8c3c" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 다음이 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>필요합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="ceb833d216db0e056b9ab7d22ba4f023" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다.</block>
   <block id="c4ee13228c56b3c8a94bcef6d8d6d357" category="summary">클론 FlexVol volume를 상위 볼륨에서 분할하여 클론을 일반 읽기/쓰기 FlexVol volume로 만듭니다.</block>
   <block id="c04185e8791b4a9dde9952d191aff02c" category="paragraph">클론 복제된 FlexVol volume를 상위 볼륨에서 분할하여 BlueXP  워크로드 공장 에서 클론을 일반적인 읽기/쓰기 FlexVol volume으로 만듭니다.</block>
-  <block id="7a40cb07bf6252b24e9c2d81b57fca8d" category="list-text">복제된 볼륨을 분할하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="652949a64c85ee3404c2f8c9537d8046" category="paragraph">BlueXP  워크로드 팩토리에서 복제 관계를 중지합니다. 복제 관계를 중지하면 예약된 복제가 소스 볼륨에서 타겟 볼륨으로 업데이트됩니다. 타겟 볼륨이 읽기 전용에서 읽기/쓰기로 전환됩니다.</block>
   <block id="c24db838f46fefcbb09e7501c8ce667f" category="doc">BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터 데이터를 사용할 수 있습니다</block>
   <block id="db4ad8d47d4bcafdb0edef9931836b31" category="paragraph">BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터를 검색하여 Amazon FSx for NetApp ONTAP 파일 시스템에 데이터를 복제할 수 있습니다.</block>
@@ -1501,7 +1475,6 @@
   <block id="19b8f390095f155d76eaa34c5d8f5d20" category="section-title">볼륨에서 스냅샷 정책을 제거합니다</block>
   <block id="29708169ed62ce48a3c9b4614e316be4" category="inline-xref">스냅샷 정책을 삭제합니다</block>
   <block id="fce714b45eae0b2db843a127811c7dfa" category="paragraph">볼륨의 스냅샷을 더 이상 원하지 않거나 여러 볼륨에 할당된 스냅샷 정책을 삭제하려는 경우 볼륨에서 스냅샷 정책을 제거합니다. <block ref="fe803bef0fbadbb3c4f9d940b9fdfdb7" category="inline-xref-macro-rx"></block>두 개 이상의 볼륨에 할당되어 있는 경우 모든 볼륨에서 수동으로 제거해야 합니다.</block>
-  <block id="41a5b9bb16fef0a6d96c008d7a310dc7" category="paragraph">스냅샷 정책을 제거해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="5b37f5e2e1d22ef188736327699e7d83" category="list-text">스냅샷 정책 할당 대화 상자에서 * 없음 * 을 선택하여 스냅샷 정책을 제거합니다.</block>
   <block id="a7f4573e8d9f9cb2323d7ca62fa2b33e" category="paragraph">스냅샷 정책이 볼륨에서 제거됩니다.</block>
   <block id="c767b489e8017a2255cc2520d048debc" category="inline-xref">용지를 꺼내십시오</block>
@@ -1693,8 +1666,6 @@
   <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_성능 효율성_: 리소스를 효율적으로 사용하여 시스템 요구 사항을 충족하고 요구 사항이 변경될 때 최적의 성능을 유지하는 데 초점을 맞춥니다.</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="8f1eb02f728d9f5ee9934382b0494f93" category="paragraph">전체 파일 시스템 분석을 수행하려면 링크를 연결해야 합니다. 링크 연결을 통해 워크로드 공장에서 데이터 보호 및 성능과 같은 모든 파일 시스템 구성을 분석할 수 있습니다.</block>
-  <block id="fcc3e7348faefdb90df77848c11a3cd2" category="inline-link-macro">링크를 만드는 방법에 대해 알아봅니다.</block>
-  <block id="d1d2547b7ef1924a459a05adb0445929" category="paragraph"><block ref="d1d2547b7ef1924a459a05adb0445929" category="inline-link-macro-rx"></block></block>
   <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* ONTAP 자격 증명 *: 선택 사항. ONTAP 사용자 이름과 암호를 입력합니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">제공한 사용자가 fsxadmin 사용자가 아니고 나중에 fsxadmin 암호를 재설정해야 하는 경우 AWS 콘솔에서 이 작업을 수행할 수 있습니다.</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* 스토리지 VM 자격 증명 *: 선택 사항. 사용자 이름을 입력합니다. 암호는 이 파일 시스템에 특정하거나 ONTAP 자격 증명에 대해 입력한 것과 동일한 암호를 사용할 수 있습니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
@@ -1815,7 +1786,6 @@
   <block id="2db718f1067d6b6b7d7127f5fc9e8961" category="section-title">파일 시스템에 대해 Autonomous 랜섬웨어 Protection 을 활성화합니다</block>
   <block id="49c0eb2938f477a73ea61ab289f6cb49" category="paragraph">파일 시스템에 대한 ARP를 활성화하면 모든 기존 NAS 및 새로 생성된 NAS 볼륨에 대한 보호 기능이 자동으로 추가됩니다.</block>
   <block id="8464fc56103a4fee1df5080fdac69d95" category="paragraph">ARP를 활성화한 후 공격이 발생하고 공격이 실제로 발생한 것으로 확인되면 BlueXP  워크로드 공장 출하 시 4시간마다 최대 6개의 스냅샷을 사용하는 스냅샷 정책이 자동으로 설정됩니다. 각 스냅샷은 2-5일 동안 잠깁니다.</block>
-  <block id="838e01c36b2564848649c61e5353e23a" category="paragraph">파일 시스템에 대한 ARP를 활성화하려면<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>, 반드시 해야 합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="39980722ce96f89bf4e3f86789582133" category="list-text">FSx for ONTAP * 탭에서 파일 시스템의 3점 메뉴를 선택하여 ARP를 활성화한 다음 * 관리 * 를 선택합니다.</block>
   <block id="79ebb9debc31f904c653eeee675e0311" category="list-text">정보 아래에서 * Autonomous 랜섬웨어 Protection * 옆의 연필 아이콘을 선택합니다. 마우스를 * Autonomous Ransomware Protection * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 표시됩니다.</block>
   <block id="45b371382285a51683a79f111c8ba635" category="list-text">Autonomous Ransomware Protection 대화 상자에서 이 기능을 활성화 또는 비활성화합니다.</block>
@@ -1936,4 +1906,36 @@
   <block id="347dbce3139b58110904a187913fc7e1" category="paragraph"><block ref="347dbce3139b58110904a187913fc7e1" category="inline-link-macro-rx"></block></block>
   <block id="5a7cf4155ebaa9aec1f33318c7c4cf82" category="section-title">2025년 6월 8일</block>
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025년 3월 2일</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요.</block>
+  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>..</block>
+  <block id="d7a33a9350fbc2bb6f775eabf85866de" category="list-text">FSx for ONTAP 파일 시스템에 연결된 보안 그룹에서 링크 연결을 위해 다음 포트가 열려 있어야 합니다.</block>
+  <block id="7c27ef4b070814b5ad00a89f2114b712" category="list-text">워크로드 팩토리 콘솔의 경우: 포트 443(HTTPS)</block>
+  <block id="90ead46e5d824c4081637d976f92fc96" category="list-text">CloudShell의 경우: 포트 22(SSH)</block>
+  <block id="b1882f9c170c4d334f1f12e72456f0c6" category="list-text">복제 관계에 사용하는 두 파일 시스템에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">사용자 정의 스냅샷 정책을 만들려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">볼륨의 수동 스냅샷을 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="6234e99ad9e8c051d4afaa47c5d4ff82" category="list-text">볼륨에 대한 액세스를 구성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="0152fea6b73cbe86540a93515bf61029" category="paragraph">다음은 AWS의 기본 정책입니다. 사용자 정의 스냅샷 정책의 경우 다음을 수행해야 합니다. <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block> .</block>
+  <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">볼륨 자동 증가를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="f8e03e36604030c79d6107b800f61804" category="list-text">볼륨 inode가 저장 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="837d97ffb35ee510b7ad737132bf4645" category="paragraph">볼륨 용량을 늘리려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="516d1f2096bea0b3e53975d694dd15b4" category="list-text">CIFS 공유를 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="67147bded21b5d35cd1c472eb37c2b10" category="summary">BlueXP 워크로드 팩토리에서 계정과 연결된 링크를 보고, 링크 인증을 위한 비밀번호를 업데이트하고, 링크를 제거할 수 있습니다.</block>
+  <block id="173477cd8f978bba4e49c820cc9340cf" category="doc">작업 부하 팩토리 링크 관리</block>
+  <block id="bb886f585ca35b437be939f27b5ed296" category="paragraph">워크로드 팩토리 계정과 연결된 링크를 관리하세요. FSx for ONTAP 파일 시스템과 연결된 링크를 확인하고, 링크 인증에 사용되는 비밀번호를 제공하고, 워크로드 팩토리 콘솔에서 링크를 제거할 수 있습니다.</block>
+  <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">링크를 만들고 연결하세요</block>
+  <block id="d2daf1f2c560c48cb1e86e38214b4f9f" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block><block ref="cd9ae14bef62d063a73930ad8837c0cf" category="inline-link-macro-rx"></block> 또는.</block>
+  <block id="79fd533382080d6fa0f2c0bb9a4a7c87" category="summary">워크로드 팩토리에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 관리합니다. 스냅샷 정책은 시스템에서 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
+  <block id="d7d6498d8a28cd2a003b0cb80a404f25" category="inline-link-macro">워크로드 팩토리 링크에 대해 알아보세요</block>
+  <block id="40dae9a6d648fd84a17ba1763d5aadc5" category="paragraph">일부 관리 작업에서는 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. <block ref="680b8873085fb75628dcdd179c5039ae" category="inline-link-macro-rx"></block>..</block>
+  <block id="facdbacecd0a382dee80b9b865bb8503" category="paragraph">기존 스냅샷 정책을 표시하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="934b00a26e238802a369f0478947166f" category="paragraph">변경 불가능한 스냅샷을 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">스냅샷 정책을 할당하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">스냅샷 정책을 제거하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="aef6ece6593a117983fcd0b9e27b2a94" category="paragraph">파일 시스템에 ARP를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="1f217123f7d99348330184951007bc1c" category="list-text">FlexGroup 볼륨의 잔액을 확인하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="44b1a8a590c7561bdb240a720d2d9aaa" category="list-text">볼륨을 재조정하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
 </blocks>

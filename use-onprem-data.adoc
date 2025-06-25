@@ -79,7 +79,7 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 .시작하기 전에
 * 볼륨 데이터를 복제하려면 온프레미스 ONTAP 클러스터를 검색해야 합니다.
 * 복제 대상으로 사용할 수 있는 FSx for ONTAP 파일 시스템이 있어야 합니다.
-* 온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. 온프레미스 및 FSx for ONTAP 클러스터 중 하나 이상에 기존 링크가 없는 경우,link:create-link.html["먼저 링크를 만듭니다"] link:manage-links.html["링크를 연결합니다"]파일 시스템의 * 계정 이름 * 아래에서 * 연결 링크 * 를 선택합니다. 링크가 온-프레미스 ONTAP 클러스터 및 FSx for ONTAP 파일 시스템에 연결되면 이 작업으로 돌아갑니다.
+* 온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."].. 링크가 연결되면 이 작업으로 돌아갑니다.
 
 
 .단계

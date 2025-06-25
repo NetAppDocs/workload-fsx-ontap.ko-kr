@@ -14,7 +14,7 @@ summary: 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제�
 스토리지 VM을 BlueXP  워크로드 팩토리 내 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터 손실 시 데이터 액세스의 보호 계층이 제공됩니다. 이 작업은 한 스토리지 VM에 있는 모든 볼륨을 다른 FSx for ONTAP 파일 시스템에 복제합니다.
 
 .시작하기 전에
-스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 다음이 link:manage-links.html["링크를 연결합니다"]필요합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."].. 링크가 연결되면 이 작업으로 돌아갑니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
