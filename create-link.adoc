@@ -212,7 +212,7 @@ CloudFormation 템플릿을 시작하면 Lambda에게 세 가지 권한이 부�
 
 +
 *** filesystemID = FSx_filesystem_id입니다
-*** 사용자 = FSx_user
+*** 사용자 이름 = FSx_user
 *** password=user_password입니다
 
 
@@ -248,7 +248,7 @@ CloudFormation 템플릿을 시작하면 Lambda에게 세 가지 권한이 부�
 비밀에는 다음 키 유효 쌍이 포함되어야 합니다.
 
 * filesystemID = FSx_filesystem_id입니다
-* 사용자 = FSx_user
+* 사용자 이름 = FSx_user
 * password=user_password입니다
 
 
