@@ -104,16 +104,8 @@
   <block id="f33ee1d7e309154be1fc329fad0ad653" category="paragraph">저장된 구성을 로드할 수도 있습니다.</block>
   <block id="7c6859274ee77ca082be3dcb424a440e" category="list-text">File system general configuration(파일 시스템 일반 구성) 에서 다음을 제공합니다.</block>
   <block id="73834661f85b42765d73b7cd61d1475c" category="list-text">* 파일 시스템 이름 *: 파일 시스템의 이름을 입력합니다.</block>
-  <block id="27db8fcb1cb750024f80a00d143ee777" category="list-text">* 배포 토폴로지 * : 배포 토폴로지를 선택합니다.</block>
-  <block id="e1db87892ddda8bfd0cc92dbf2aa8f28" category="list-text">스케일 업 토폴로지는 데이터 배포에 하나의 파일 시스템을 사용하며 데이터 증가를 수용하기 위해 크기를 늘릴 수 있는 토폴로지입니다.</block>
-  <block id="8dc86ca9377774615a191074143b0f0f" category="list-text">스케일아웃 토폴로지는 데이터 배포에 둘 이상의 파일 시스템이 사용되는 지점입니다.</block>
-  <block id="a27de2368abb354633f8d50b9ea7e0a2" category="list-text">* HA 쌍 *: HA 쌍 수를 입력합니다.</block>
-  <block id="6aad0d457607a641d63a0daca3a0529a" category="list-text">스케일업 구축의 경우 HA Pair만 있을 수 있습니다.</block>
-  <block id="56dcdb97483e2b91ea46d0e3aed1e819" category="list-text">스케일아웃 구축의 경우 2개~12개의 HA 쌍을 제공합니다.</block>
   <block id="f22c148b111a19f2c93bf5b1c1cbb2a6" category="list-text">* 배포 유형 *: 배포 유형을 선택합니다.</block>
-  <block id="8860331ce66022dce5b0f67e6c8398ab" category="list-text">다중 가용 영역(Multi-AZ) 배포: 가용 영역을 사용할 수 없는 경우에도 데이터에 지속적인 가용성을 제공합니다. 다중 AZ 파일 시스템은 단일 AZ 파일 시스템의 모든 가용성 및 내구성 기능을 지원합니다. 다중 AZ 파일 시스템은 공유 ONTAP 파일 데이터에 대한 고가용성이 필요하고 가용 영역 전체에서 기본 복제 기능이 있는 스토리지가 필요한 비즈니스 크리티컬 운영 워크로드를 위해 설계되었습니다.</block>
   <block id="a578dfdba57cca5b9cde80a5e42544c6" category="list-text">* 태그 * : 선택적으로 최대 50개의 태그를 추가할 수 있습니다.</block>
-  <block id="2d65a0ce899e5ca708d5a1002a8d0a1d" category="list-text">Network &amp; security * 아래의 * Region &amp; VPC * 필드에서 파일 시스템의 지역 및 VPC를 선택합니다.</block>
   <block id="fced9e440363d93f4173eeec105848ba" category="list-text">File system details * 에 다음을 입력합니다.</block>
   <block id="6157c9c13988e3cea6397632d4ceff7e" category="list-text">* SSD 저장 용량 * : 저장 용량을 입력하고 저장 용량 단위를 선택합니다.</block>
   <block id="7966c6503cb79e36fabb3ff4e34bd3b0" category="list-text">* SMB/CIFS 설정 *: 선택 사항. SMB/CIFS 프로토콜을 사용하여 볼륨에 액세스하려는 경우 파일 시스템을 생성하는 동안 스토리지 VM에 대한 Active Directory를 구성해야 합니다. 이 파일 시스템에 대해 생성된 스토리지 VM에 대해 다음 세부 정보를 제공합니다.</block>
@@ -138,8 +130,6 @@
   <block id="b98009df13b6a9c0bd5b540c1d2df378" category="list-text">* 끝점 IP 주소 범위 *: * VPC 외부에 있는 부동 IP 주소 범위를 선택 * 또는 * IP 주소 범위 * 를 입력하고 IP 주소 범위를 입력합니다.</block>
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">* 암호화 * : 드롭다운에서 암호화 키 이름을 선택합니다.</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">File system details(파일 시스템 세부 정보) 에서 다음을 제공합니다.</block>
-  <block id="7af916ceff85ab2f29ca490366228701" category="list-text">* 프로비저닝된 IOPS *: * 자동 * 또는 * 사용자 프로비저닝 * 을 선택합니다.</block>
-  <block id="67d537df4a9c97aa749f6724139522f5" category="list-text">* HA 쌍당 처리량 용량 *: HA 쌍당 처리량 용량을 선택합니다.</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">백업 및 유지 관리에서 다음을 제공합니다.</block>
   <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">* ONTAP용 FSx 백업 *: 매일 자동 백업이 기본적으로 활성화됩니다. 필요한 경우 비활성화하십시오.</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">* 자동 백업 보존 기간 *: 자동 백업을 유지할 일 수를 입력합니다.</block>
@@ -229,7 +219,6 @@
   <block id="b2e658eb3f11776899234dd87caf3823" category="list-text">* 스토리지 VM 이름 *: 필요에 따라 스토리지 VM 이름을 입력합니다.</block>
   <block id="71a8fe56183b62227c11ca4ce811f166" category="list-text">* 볼륨 스타일 *: * FlexVol * 또는 * FlexGroup * 볼륨을 선택합니다.</block>
   <block id="cb69a576eebf4d27436ae39122a9562c" category="paragraph">FlexVol 볼륨 스타일이 기본적으로 선택되어 있습니다.</block>
-  <block id="266af8c58e652263ed6f4ef9fc36cbbd" category="paragraph">FlexGroup 볼륨 크기는 구성 요소의 수에 따라 다릅니다. 구성요소당 100GiB가 필요합니다.</block>
   <block id="ffe3253d848af0e44a26ba39fba69329" category="list-text">* 볼륨 크기 *: 볼륨 크기 및 단위를 입력합니다.</block>
   <block id="b46ad6f5a61764c118c979f2583ab630" category="paragraph">선택적으로 볼륨 자동 확장을 활성화합니다. 이 옵션은 볼륨 액세스 유형으로 * 파일 액세스 * 를 선택한 경우 사용할 수 있습니다.</block>
   <block id="53ebc36ae845935202fde349f39b2e17" category="list-text">Access(연결된 링크가 있는 파일 시스템에만 해당)에서 다음 세부 정보를 제공합니다.</block>
@@ -249,7 +238,6 @@
   <block id="d7452a3655b7342c92f5b56d0b8526ed" category="list-text">새 이니시에이터 그룹에 대해 * 이니시에이터 그룹 이름 * 을 입력합니다.</block>
   <block id="9b990db2de543eb2fd38454ae899ab11" category="list-text">호스트 이니시에이터 에서 IQN(iSCSI 정규화된 이름) 호스트 이니시에이터를 하나 이상 추가합니다.</block>
   <block id="8cc48e7c3f902d1b7dd7d0ecb40ade52" category="list-text">효율성 및 보호 아래에 다음 세부 정보를 제공합니다.</block>
-  <block id="4f16f68a6d9522c0d097a900978f6f0d" category="paragraph">ONTAP의 중복제거 및 압축 기능을 활용하여 스토리지 효율성을 달성할 수 있습니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.</block>
   <block id="f03207e238654d36cb2c88950bf22d84" category="list-text">* 스냅샷 정책 *: 스냅샷 정책을 선택하여 스냅샷의 빈도와 보존을 지정합니다.</block>
   <block id="20d2ce456e91b2afd45084ee06baab95" category="list-text">이 정책은 다음 스케줄에 따라 스냅샷을 자동으로 생성하고 가장 오래된 스냅샷 복사본은 새 복제본을 위한 공간을 확보하기 위해 삭제합니다.</block>
   <block id="4cd6a004e8e70008213c7c1917f36c49" category="list-text">시간당 최대 6개의 스냅샷이 해당 시간 이후 5분 동안 촬영되었습니다.</block>
@@ -706,7 +694,6 @@
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
   <block id="672d0efbe9223ef23c5fd7d2c7cd4a95" category="paragraph">ONTAP용 FSx 파일 시스템은 _ 빠른 생성 _ 또는 _ 고급 생성 _ 을(를) 사용하여 생성할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
   <block id="11e2fb5025fdb2cb91fd04c343163328" category="admonition">Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다.<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 코드를 실행할 때 암호를 다시 입력해야 합니다.</block>
-  <block id="9376aafc358c7dd83094603f26235eb3" category="paragraph">볼륨 생성이 시작됩니다. 생성된 새 볼륨이 Volumes(볼륨) 탭에 나타납니다.</block>
   <block id="21e6ab9737790ab1abc18e49091d3c18" category="paragraph">다음 다이어그램은 스냅샷, 영역 간 복제, 오브젝트 스토리지에 백업을 사용하는 FSx for ONTAP 스토리지의 데이터 보호를 시각적으로 보여줍니다.</block>
   <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">스크린샷은 스냅샷을 사용하는 FSx for ONTAP 스토리지의 데이터 보호, 여러 지역에 걸친 복제, 오브젝트 스토리지로 백업을 보여줍니다.</block>
   <block id="29bed1477f8a04f4f702564c7e6bb224" category="paragraph"><block ref="29bed1477f8a04f4f702564c7e6bb224" category="inline-image-macro-rx" type="image"></block></block>
@@ -841,7 +828,6 @@
   <block id="8c5d091eb8bf13bd59184903f020f95c" category="paragraph">CloudFormation 템플릿을 시작하면 Lambda에게 세 가지 권한이 부여됩니다. 워크로드 팩토리에서는 링크를 사용할 때 이러한 권한을 사용합니다.</block>
   <block id="4d4e41a17abafe417449016add2ee0bd" category="list-text">Create stack * 을 선택한 다음 * Continue * 를 선택합니다.</block>
   <block id="e5942758c1bbae9768e2935841e7ca7a" category="list-text">워크로드 공장 인터페이스로 돌아가면 링크가 FSx for ONTAP 파일 시스템과 연결된 것을 볼 수 있습니다.</block>
-  <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">이 옵션을 사용하면 AWS CloudFormation에서 링크에 대한 ARN을 추출하여 여기에 보고합니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다.</block>
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  워크로드 팩토리에서 복제 관계를 생성합니다</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">예측하지 못한 재해 발생 시 데이터 손실을 방지하기 위해 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성합니다.</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_AUTO_는 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -854,7 +840,6 @@
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  워크로드 팩토리의 스냅샷에서 새 FSx for ONTAP 볼륨을 생성하여 시점 복구를 지원합니다.</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대해 점 3개 메뉴를 선택합니다.</block>
-  <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">워크로드 팩토리에 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAP은 BlueXP  워크로드 팩토리에서 스냅샷, 볼륨 백업 및 볼륨 복제를 지원합니다.</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.</block>
   <block id="378213b58b31bfb9d173e8b2ad3c0968" category="doc">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제합니다</block>
@@ -1048,7 +1033,6 @@
   <block id="06e52dae2c3e09e69a906c2fba89ed66" category="paragraph">CIFS 공유 또는 NFS 클라이언트에서 공유를 마운트하기 위한 볼륨의 마운트 지점을 가져옵니다.</block>
   <block id="4a6574ab96645d28cf548ed8372c655c" category="list-text">볼륨 탭에서 볼륨의 세 점 메뉴를 선택한 다음 * 기본 조치 * 를 선택하고 * 마운트 명령 보기 * 를 선택합니다.</block>
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">닫기 * 를 선택합니다.</block>
-  <block id="0206587910cd5147f80c048ba00193af" category="paragraph">파일 시스템에서 iSCSI 블록 볼륨을 프로비저닝하려면 6개 이하의 HA 쌍을 선택합니다.</block>
   <block id="f3b270238d8c3f46a0b10d724c916e7d" category="list-text">* 최대 전송 속도 *: * 제한 * 을 선택하고 MiB/s 단위의 최대 전송 한도를 입력하십시오 또는 * 무제한 * 을 선택합니다.</block>
   <block id="5ef8b0a1c66a4b2210971848d2ce9752" category="paragraph">복제 관계는 대상 FSx for ONTAP 파일 시스템의 * 복제 관계 * 탭에 표시됩니다.</block>
   <block id="c866bd28f46aae4b063d835d59832e65" category="list-text">* cifs share *: 다음을 제공합니다.</block>
@@ -1242,7 +1226,6 @@
   <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">참고</block>
   <block id="1e6fe3169d6df99dc6e4d89c3f0ca701" category="list-text">보존 기간이 만료된 후에도 WORM 파일을 수정할 수 없습니다. WORM 보호만 삭제하거나 새 보존 기간을 설정하여 WORM 보호를 다시 설정할 수 있습니다.</block>
   <block id="00c161f0779702fcc736833a90e1c117" category="list-text">자동으로 커밋합니다</block>
-  <block id="0710e9c5903cc398ef1a22a38cbb4666" category="list-text">자동 커밋 기능을 사용하도록 설정할 수 있습니다. 자동 커밋 기능은 파일이 자동 커밋 기간 동안 변경되지 않은 경우 SnapLock 볼륨에서 WORM 상태로 파일을 커밋합니다. 자동 커밋 기능은 기본적으로 비활성화되어 있습니다. 자동 커밋하려는 파일이 SnapLock 볼륨에 있어야 합니다.</block>
   <block id="f84002cfa8aafdd6963aef9819f03cbe" category="list-text">볼륨 추가 모드</block>
   <block id="73085bf5d4b4c2626026794741768c09" category="inline-link-macro">볼륨 추가 모드에 대해 자세히 알아보십시오</block>
   <block id="f70318a7f623a49e77262fc2b382b062" category="list-text">WORM 보호 파일에서 기존 데이터를 수정할 수 없습니다. 그러나 변경 불가능한 파일을 사용하면 WORM 추가 가능한 파일을 사용하여 기존 데이터를 계속 보호할 수 있습니다. 예를 들어 증분 데이터를 기록하는 동안 로그 파일을 생성하거나 오디오 또는 비디오 스트리밍 데이터를 유지할 수 있습니다. <block ref="d363aab3c17dd7b08ef55d9ecb5c0afa" category="inline-link-macro-rx"></block> in Amazon FSx for NetApp ONTAP 설명서.</block>
@@ -1314,10 +1297,8 @@
   <block id="fc81b1e4233a48b719520033e56b4194" category="paragraph"><block ref="fc81b1e4233a48b719520033e56b4194" category="inline-link-macro-rx"></block></block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Tracker의 CloudShell 이벤트</block>
   <block id="e7a6197673267c30b5dc86e0d5f6c536" category="paragraph">이제 Tracker에서 CloudShell 이벤트를 추적할 수 있습니다.</block>
-  <block id="8b6bca394ded2ad4bd57d5b7e1b13873" category="paragraph">파일 시스템에서 iSCSI 블록 볼륨을 프로비저닝하려면 6개 이하의 HA 쌍을 선택합니다.</block>
   <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">단일 가용 영역(단일 AZ) 배포: 하드웨어 장애를 모니터링하고 장애 발생 시 인프라 구성요소를 자동으로 교체하여 가용성을 제공합니다. 가용성 영역 내에서 데이터를 자동으로 복제하여 구성요소 장애로부터 데이터를 보호함으로써 높은 내구성을 제공합니다.</block>
   <block id="65122529e27ab1e34a08fc55d0f38a93" category="list-text">Automatically(자동): 워크로드 팩토리를 통해 자동 등록과 함께 링크를 생성합니다. 생성된 링크에는 워크로드 팩토리 자동화를 위한 토큰이 자동으로 필요하며, CloudFormation 코드의 수명이 짧습니다. 최대 6시간 동안만 사용할 수 있습니다.</block>
-  <block id="b1a94bb6f0b93b26134ff88823a75e78" category="list-text">수동: 수동 등록을 사용하여 링크를 생성합니다. CloudFormation 코드는 작업을 완료하는 데 더 많은 시간을 줍니다. 이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 다른 팀과 작업할 때 유용합니다.</block>
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">타겟 파일 시스템의 복제된 볼륨은 데이터 보호(DP) 볼륨이며 다음과 같은 명명 형식을<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block> 따릅니다.</block>
   <block id="df4c98f43132ebd68d92a0c9822984df" category="list-text">데이터 복제 페이지의 복제 타겟에서 다음을 제공합니다.</block>
   <block id="0cbe076a4ce5208b10cdb81c9e175006" category="list-text">* 기존 정책 선택 *: 드롭다운 메뉴에서 기존 정책을 선택합니다.</block>
@@ -1349,7 +1330,6 @@
   <block id="a07e25b28678b53fe808a082369fda80" category="paragraph">볼륨에 스냅샷 복사본이 있습니다.</block>
   <block id="86ee35c0029c920dce9ef56d88935e8e" category="paragraph">다음 프로토콜을 볼륨에 사용할 수 있습니다.</block>
   <block id="8feb9be2f7d30e723f1c8aa899250dae" category="list-text">* 블록 액세스 *: 중요한 비즈니스 응용 프로그램을 실행하는 호스트가 iSCSI 프로토콜을 사용하여 볼륨에 액세스할 수 있습니다. 파일 시스템 스케일아웃 구축에 HA 쌍 6개 이하가 있는 경우에만 블록 액세스를 사용할 수 있습니다.</block>
-  <block id="ad5ae1649d193a804147218da52fd8ad" category="list-text">* 변경 불가능한 파일 * : SnapLock라고도 하는 이 기능은 기본적으로 비활성화되어 있습니다. 변경 불가능한 파일을 활성화하면 지정된 기간 동안 데이터가 삭제되거나 덮어써지지 않습니다. 이 기능은 볼륨 생성 중에만 사용할 수 있습니다. 기능이 활성화된 후에는 비활성화할 수 없습니다. 이는 FSx for ONTAP의 프리미엄 기능으로 추가 비용이 부과됩니다. 자세한 내용은 Amazon FSx for NetApp ONTAP 설명서의 을 <block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="f122287653386d74229199bd670f4990" category="list-text">보존 기간에는 _ retention policy_and _ retention perioes _ 라는 두 가지 설정이 있습니다. retention policy_는 변경 불가능한 WORM 상태에서 파일을 보존할 기간을 정의합니다. 사용자 지정 보존 정책을 지정하거나 기본 보존 정책(지정되지 않음)인 30년을 사용할 수 있습니다. 최소 및 최대 보존 기간 _ 은(는) 파일 잠금에 허용되는 시간 범위를 정의합니다.</block>
   <block id="35728d1f4ec13c002da573ba8e7069f7" category="list-text">동의하고 계속하려면 상자를 선택합니다.</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">활성화 * 를 선택합니다.</block>
@@ -1432,19 +1412,10 @@
   <block id="924b3daa7ecef370ff9a603b3208772b" category="paragraph">IOPS를 수동으로 프로비저닝하는 경우, 이전에 IOPS를 늘려야 할 수도 <block ref="94a3285243f3705d6ad038b61125cb2f" category="inline-link-macro-rx"></block>있습니다.</block>
   <block id="3a3c8188eae554af0e7f07bfef2e124b" category="summary">시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 확인하고 재조정합니다.</block>
   <block id="8083bd6761abe4735ad26f9c18899032" category="doc">볼륨 용량을 확인하고 재조정합니다</block>
-  <block id="270753bb6aea2d40b94194b021e500ae" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 모든 노드가 단일 Flex 그룹 볼륨의 워크로드에 참여하도록 모든 구성 요소에 파일을 균등하게 분산시킵니다.</block>
-  <block id="8d52048ef57a4217559a7ca3e0deeefa" category="paragraph">FlexGroup 볼륨 용량은 2개 이상의 고가용성(HA) 쌍이 포함된 스케일아웃 FSx for ONTAP 파일 시스템의 많은 구성원에게 분산됩니다. 각 구성 요소는 최대 단일 파일 크기를 지정하는 컨테이너입니다. FSx for ONTAP은 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 균일한 방식으로 모든 구성원에게 파일을 분산합니다.</block>
   <block id="04533b4edf31c61772ef483585fb29cf" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하려면 구성요소의 현재 레이아웃을 평가해야 합니다. 볼륨 용량을 재조정할 때 BlueXP  워크로드 공장에서는 짝수의 구성요소가 포함된 새로운 구성 레이아웃을 설계하여 모든 HA 쌍에 데이터를 균등하게 분산합니다. 이 서비스는 재조정 계획을 실행하여 읽기 및 쓰기 작업을 개선합니다.</block>
-  <block id="d394f348c0b6fbd4e88b415bafdbea68" category="section-title">FlexGroup 볼륨의 균형을 확인합니다</block>
-  <block id="1cc1dda63f89374c05c8b8f5c8126341" category="paragraph">활성 FlexGroup 볼륨의 균형을 확인합니다.</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.</block>
-  <block id="480a98de796f5eb054e749dedf2dbce3" category="list-text">볼륨 스타일은 FlexGroup 볼륨이어야 합니다.</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">Volumes(볼륨) 탭에서 표 상단에 있는 * Check FlexGroup balance * 를 선택합니다.</block>
-  <block id="8b7b54e191e5f6ab54dc9475259af500" category="list-text">FlexGroup 균형 창에서 FSx for ONTAP 파일 시스템에 있는 모든 FlexGroup 볼륨의 균형 상태를 검토합니다.</block>
   <block id="1997a93792e2a8be597c246f39ee9fd5" category="inline-xref">재조정</block>
-  <block id="6b59c2a4df281550186d4d3fc75ba6d5" category="paragraph">FlexGroup 볼륨이 불균형한 경우 를 고려합니다<block ref="59031c1bf074b0ee450445a716c796e8" category="inline-xref-macro-rx"></block>.</block>
-  <block id="1fd02848e48f953c62155cbb42dd331b" category="section-title">FlexGroup 볼륨의 균형을 조정합니다</block>
-  <block id="64de3f9223f666126336ac4c9a3aa94d" category="paragraph"><block ref="1f11182db84cfb1742cc746fa76f8fe6" category="inline-xref-macro-rx"></block> 볼륨을 재조정하기 전에,</block>
   <block id="ceb833d216db0e056b9ab7d22ba4f023" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다.</block>
   <block id="c4ee13228c56b3c8a94bcef6d8d6d357" category="summary">클론 FlexVol volume를 상위 볼륨에서 분할하여 클론을 일반 읽기/쓰기 FlexVol volume로 만듭니다.</block>
   <block id="c04185e8791b4a9dde9952d191aff02c" category="paragraph">클론 복제된 FlexVol volume를 상위 볼륨에서 분할하여 BlueXP  워크로드 공장 에서 클론을 일반적인 읽기/쓰기 FlexVol volume으로 만듭니다.</block>
@@ -1676,14 +1647,12 @@
   <block id="3909315ab3cc8353eec0cd02ce0845da" category="admonition">커넥터를 사용하는 경우 AWS Secrets Manager가 지원되지 않습니다.</block>
   <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">새 링크를 연결합니다</block>
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
-  <block id="ec19cf5bb597b8c81392ce26e30276fe" category="paragraph">자동 또는 수동으로 링크를 만들 수 있는 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
   <block id="695199449ad50832d8cff3be92e812b3" category="inline-link-macro">워크로드 팩토리에 자격 증명을 추가합니다</block>
   <block id="2f1cd483ab7b6144b733f5155b2026c6" category="list-text">FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 세 점 메뉴를 선택한 다음 * 링크 * 를 선택합니다.</block>
   <block id="29abae1dabc3d83e30cbe456ae214256" category="list-text">* AWS Secrets Manager *: 선택 사항. 워크로드 팩토리가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있습니다.</block>
   <block id="13ecd4f9bb62f6c0730c8f136a58fb36" category="paragraph">링크 배포 스택은 Lambda 권한 정책에 다음과 같은 기본 비밀 관리자 ARN regex를 추가합니다<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block>.</block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">기본 사용 권한에 맞춰 암호를 만들거나 링크 정책에 대한 사용자 지정 사용 권한을 할당할 수 있습니다.</block>
   <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* AWS Secrets Manager로 VPC 전용 엔드포인트 구성 * 은 기본적으로 비활성화됩니다. 이 옵션을 선택하면 VPC 개인 엔드포인트를 로컬로 저장하는 대신 VPC 전용 엔드포인트를 사용하여 암호를 저장합니다.</block>
-  <block id="c1123c7a8501a00beea0820a4f4b2f90" category="list-text">* 링크 등록 *: 드롭다운 화살표를 선택하여 AWS CloudFormation 서비스에서 링크를 등록하는 방법에 대한 지침을 확장합니다. 지침을 따릅니다.</block>
   <block id="c3b24be1571207cf6200f2d8b54ee7c0" category="paragraph">스택을 성공적으로 만든 후 텍스트 상자에 Lambda ARN을 붙여 넣습니다.</block>
   <block id="91744aea42b1e1eb3b5b0f486498fe3c" category="paragraph">생성한 링크는 FSx for ONTAP 파일 시스템과 연결됩니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
   <block id="48457d7f94975228307244f863f96fee" category="section-title">기존 링크를 FSx for ONTAP 파일 시스템에 연결합니다</block>
@@ -1820,10 +1789,6 @@
   <block id="ce812f613f07996b313f45414329b88e" category="sidebar">파일 시스템 Best Practice 구축</block>
   <block id="e6dcf40c0e3ce889fc9c5c061867f960" category="sidebar">FSx for ONTAP의 구성 분석</block>
   <block id="77aaaafa70c293a92472a80015bece8b" category="paragraph">구성 요소가 모든 노드에 균등하게 분산되지 않으면 FlexGroup 볼륨 성능이 저하됩니다.</block>
-  <block id="ae622e3b9df5d2fe3f644c0dba928e66" category="paragraph">새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.</block>
-  <block id="8a348b83eb54b8869c9afef29caffc5e" category="admonition">재조정은 FlexGroup 볼륨에만 지원되며 iSCSI 또는 NVMe FlexGroup 볼륨에는 지원되지 않습니다.</block>
-  <block id="dea985c157083fcf289f38e7ab4aede0" category="paragraph">하나 이상의 불균형 볼륨을 재조정합니다. 데이터는 구성원 볼륨 전체에 재분배되어 FlexGroup 볼륨의 균형을 재조정합니다. 원하는 데이터 배포 레이아웃에 따라 재조정 작업으로 FlexGroup 구성원 볼륨이 추가되고 프로비저닝된 볼륨의 크기가 증가할 수 있습니다.</block>
-  <block id="6a0d7c16b4c559c5dc9c875e37641a9c" category="admonition">워크로드 공장 관리자는 작업 중에 재조정을 중지할 수 있습니다.</block>
   <block id="5fdec390c6be629fa932553e2fe5cb25" category="list-text">재조정한 볼륨의 기존 스냅샷은 부분적으로 변경되며 볼륨 데이터를 복원하는 데 사용할 수 없지만 재조정 후 생성된 새 스냅샷은 볼륨 데이터를 복원하는 데 사용할 수 있습니다.</block>
   <block id="930dade8556383009e0018f93aeb74bc" category="list-text">FlexGroup balance 창에서 * Rebalance * 를 선택하여 하나 이상의 불균형 볼륨을 재조정합니다.</block>
   <block id="48d59fcf4b8606ffc1ea7c49fae9c2b9" category="list-text">재조정 마법사에서 원하는 데이터 배포 레이아웃을 선택합니다.</block>
@@ -1837,7 +1802,6 @@
   <block id="5ad2de3bf91266caa9759e836ce832b5" category="list-text">FSx for ONTAP 레이아웃 비교</block>
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">필요에 따라 재조정 전에 볼륨 이동 목록을 다운로드합니다.</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">Rebalance * 를 선택합니다.</block>
-  <block id="dc3d2b1db09a8cee9576c2df34eba7b1" category="paragraph">FlexGroup에 추가된 FlexGroup 구성원 볼륨의 수에 따라 한 번에 하나의 FlexGroup 볼륨 구성원 이동 작업이 수행됩니다. 작업이 완료되면 파일 시스템이 원래 값으로 다시 스로틀됩니다.</block>
   <block id="4b50901597179fa075617d96ccf51901" category="list-text">* 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션과 프로젝트에 대한 시각적이고 포괄적인 뷰를 제공합니다.</block>
   <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.</block>
   <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">* 질문하기 *: 질문하기 AI 도우미를 사용하여 워크로드 팩토리 웹 UI를 벗어나지 않고도 워크로드 공장에 대해 자세히 알아보십시오. 워크로드 기본 도움말 메뉴에서 질문하기 에 액세스합니다.</block>
@@ -1932,10 +1896,130 @@
   <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">스냅샷 정책을 할당하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">스냅샷 정책을 제거하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="aef6ece6593a117983fcd0b9e27b2a94" category="paragraph">파일 시스템에 ARP를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="1f217123f7d99348330184951007bc1c" category="list-text">FlexGroup 볼륨의 잔액을 확인하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="44b1a8a590c7561bdb240a720d2d9aaa" category="list-text">볼륨을 재조정하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="316509fcb5a8d1b5e1280f3f64c594f2" category="list-text">사용자 이름 = FSx_user</block>
+  <block id="562c87a680d962135f8e44bc0d159259" category="list-text">* 스토리지 VM 이름 *: 드롭다운 메뉴에서 스토리지 VM을 선택합니다. 선택한 스토리지 VM은 이 복제 관계에서 선택한 모든 볼륨의 대상입니다.</block>
+  <block id="11f24c2a8c13499208f4d69098436bd2" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다. . Replication settings(복제 설정) 에서 다음을 제공합니다.</block>
+  <block id="fca40712560cec2d2b7a47110cfecda1" category="list-text">*새 정책 만들기*: *정책 이름*을 입력하세요.</block>
+  <block id="0546ab198c101c424e412d1355272bcd" category="list-text">*변경 불가능한 스냅샷*: 선택 사항. 보존 기간 동안 이 정책에서 생성한 스냅샷이 삭제되지 않도록 하려면 * 변경 불가능한 스냅샷 활성화 * 를 선택합니다.</block>
+  <block id="64c17706e0528a5c44c7beee628cc101" category="doc">BlueXP 워크로드 팩토리 알림 서비스 지원</block>
+  <block id="c0ae6f0ec7cb1322a1c6b72f77e783f2" category="paragraph">BlueXP 워크로드 팩토리 알림 서비스를 사용하면 워크로드 팩토리가 BlueXP 알림 서비스 또는 Amazon SNS 주제로 알림을 전송할 수 있습니다. BlueXP 알림으로 전송된 알림은 BlueXP 알림 패널에 표시됩니다. 워크로드 팩토리가 Amazon SNS 주제에 알림을 게시하면 해당 주제 구독자(예: 사용자 또는 다른 애플리케이션)는 해당 주제에 대해 구성된 엔드포인트(예: 이메일 또는 SMS 메시지)에서 알림을 수신합니다.</block>
+  <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link-macro">BlueXP 워크로드 팩토리 알림 구성</block>
+  <block id="a10c281531128badfefa7086b353ead0" category="paragraph"><block ref="a10c281531128badfefa7086b353ead0" category="inline-link-macro-rx"></block></block>
+  <block id="16608889ffd4210e3527b28d2cabeee1" category="paragraph">워크로드 팩토리 콘솔의 스토리지 대시보드에 새로운 절감 기회 카드가 추가되었습니다. 대시보드 상단의 카드는 Amazon Elastic Block Store(EBS), Amazon FSx for Windows File Server, Amazon Elastic File Systems(EFS)에서 실행되는 스토리지 환경에 대한 절감 기회 수를 대시보드 하단에는 Amazon 스토리지 서비스별 절감 기회(EBS, FSx for Windows File Server, EFS)를 표시하는 세 개의 새로운 카드가 추가되었습니다 모든 카드에서 절감 기회를 더 자세히 살펴볼 수 있습니다.</block>
+  <block id="e2fc557edefb4b2854999f60dbd0d379" category="paragraph">FSx for ONTAP 보호 범위 카드와 복제 관계 상태 카드를 통해 FSx for ONTAP 파일 시스템에 부분적으로 보호된 볼륨이 있는지 확인하고 복제 관계 관련 문제를 조사할 수 있습니다. 두 경우 모두 문제 해결을 위한 조치를 취할 수 있습니다.</block>
+  <block id="34ccfe489231e34890602e4f0419b843" category="section-title">볼륨 탭 향상</block>
+  <block id="f659fbcb502240d4138a6337d4da17d5" category="paragraph">워크로드 팩토리 콘솔의 볼륨 탭이 개선되어 FSx for ONTAP 파일 시스템을 더욱 포괄적으로 볼 수 있습니다. SSD 용량, 용량 풀, NetApp Autonomous Ransomware Protection with AI(ARP/AI)를 위한 새로운 카드가 추가되었습니다. 이 카드는 파일 시스템의 모든 볼륨에 대한 용량 사용률과 ARP/AI 보호 기능을 요약합니다.</block>
+  <block id="7efd44dd06c377a68f3fc78abf7d91fb" category="paragraph">Workload Factory는 이제 2세대 Amazon FSx for NetApp ONTAP 파일 시스템을 지원합니다. Workload Factory 콘솔에서 2세대 파일 시스템을 생성, 관리 및 모니터링할 수 있습니다. 모든 신규 상용 리전이 지원됩니다.</block>
+  <block id="cd0ce691a9b616ae8983f22db2fb8a6d" category="inline-link-macro">Workload Factory에서 2세대 파일 시스템 생성</block>
+  <block id="f784f74601a71805db546f7b6842f0e5" category="paragraph"><block ref="f784f74601a71805db546f7b6842f0e5" category="inline-link-macro-rx"></block></block>
+  <block id="094caa4bbbbdba779d6ef8c57b995856" category="section-title">볼륨 용량 재조정을 위한 FlexVol 볼륨 지원</block>
+  <block id="ab0d60978b39ce0cb886ec1fbf91bad8" category="paragraph">FlexVol 볼륨은 워크로드 팩토리 콘솔에서 확인할 수 있습니다. FlexVol 볼륨의 잔액을 확인하고, 새 파일 추가 및 파일 증가로 인해 시간이 지남에 따라 용량 불균형이 발생할 경우 FlexVol 볼륨을 재조정하여 용량을 재분배할 수 있습니다.</block>
+  <block id="226bb141f0b474b8b8d4e55bfe659a94" category="inline-link-macro">FlexVol 볼륨의 용량 재조정</block>
+  <block id="7f11a5de29d58c93cc212be8cf51b761" category="paragraph"><block ref="7f11a5de29d58c93cc212be8cf51b761" category="inline-link-macro-rx"></block></block>
+  <block id="d7581ee541e7cfa51fd2f75f93b7e64e" category="section-title">용어 업데이트</block>
+  <block id="6e0c2d8cb551de024f6700ca0407257e" category="paragraph">워크로드 팩토리 콘솔에서 "자율 랜섬웨어 보호"(ARP)라는 용어가 "AI를 통한 NetApp 자율 랜섬웨어 보호"(ARP/AI)로 업데이트되었습니다.</block>
+  <block id="d474538a7c98b462c08197d24f7c1c60" category="section-title">새 볼륨에 대해 기본적으로 ARP/AI가 활성화됨</block>
+  <block id="6a3bf8c141dbbeed37af8236f412b19a" category="paragraph">워크로드 팩토리 콘솔에서 새 볼륨을 생성하면 파일 시스템에 ARP/AI 정책이 있는 경우 NetApp Autonomous Ransomware Protection with AI(ARP/AI)가 기본적으로 활성화됩니다. 즉, AI 기반 탐지 및 대응 기능을 사용하여 볼륨이 랜섬웨어 공격으로부터 자동으로 보호됩니다.</block>
+  <block id="7e0b28b27ce3985a4a8d693330a04cb7" category="inline-link-macro">워크로드 팩토리에서 볼륨을 생성합니다.</block>
+  <block id="3bf76f3556904b928c43201c04108364" category="paragraph"><block ref="3bf76f3556904b928c43201c04108364" category="inline-link-macro-rx"></block></block>
+  <block id="442d07125b5c2363eae9c33039172225" category="section-title">변경 불가능한 파일에 대한 복제 지원</block>
+  <block id="6250cd311debe5758acc69f81921ab78" category="paragraph">Workload Factory는 중요한 데이터를 실수로 삭제하거나 랜섬웨어와 같은 악의적인 공격으로부터 보호하기 위해 한 FSx for ONTAP 시스템에서 다른 FSx for ONTAP 파일 시스템으로 변경 불가능한 볼륨을 복제하는 기능을 지원합니다. 대상 볼륨과 호스트 파일 시스템은 변경 불가능하거나 잠기게 되며, 대상 파일 시스템의 모든 데이터는 보존 기간이 끝날 때까지 수정하거나 삭제할 수 없습니다.</block>
+  <block id="b6fc33d7434bb860ad528753113881b1" category="inline-link-macro">복제 관계를 만드는 방법을 알아보세요</block>
+  <block id="d3dbddfb353eaaa957947efb04ca7013" category="paragraph"><block ref="d3dbddfb353eaaa957947efb04ca7013" category="inline-link-macro-rx"></block></block>
+  <block id="d836bf4f72557e9399ce062e72ef15f6" category="section-title">링크 생성 향상</block>
+  <block id="1f8ca754f0193efb8fdc1c63a4d96672" category="paragraph">워크로드 팩토리 콘솔의 링크 생성 프로세스가 다음과 같이 향상되었습니다.</block>
+  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
+  <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">링크 생성 중 IAM 실행 역할 및 권한 관리</block>
+  <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">이제 워크로드 팩토리 콘솔에서 링크를 생성하여 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다. 링크는 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다. IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정, 두 가지 옵션이 있습니다. 워크로드 팩토리에서 실행 역할과 연결된 권한 정책을 관리하면 더 이상 타사 코드를 사용할 필요가 없습니다.</block>
+  <block id="f83708b425052a7f19c02dfd5c3d0688" category="section-title">링크 생성을 위한 Terraform 지원</block>
+  <block id="d993aa63b5e96ec8db4090bd87d5c850" category="paragraph">이제 Codebox에서 Terraform을 사용하여 FSx for ONTAP 파일 시스템과 연결할 링크를 생성할 수 있습니다. 이 기능은 링크를 수동으로 생성하는 사용자를 위한 기능입니다.</block>
+  <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">2세대 FSx for ONTAP 파일 시스템이 기본 배포 유형입니다. 해당 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
+  <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
+  <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">다중 가용 영역(Multi-AZ) 배포: 가용 영역을 사용할 수 없는 경우에도 데이터에 지속적인 가용성을 제공합니다. 다중 AZ 파일 시스템은 공유 ONTAP 파일 데이터에 대한 고가용성이 필요하고 가용 영역 전체에서 기본 복제 기능이 있는 스토리지가 필요한 비즈니스 크리티컬 운영 워크로드를 위해 설계되었습니다.</block>
+  <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">이 단일 HA 쌍 구성은 최대 6GB/s의 처리량 또는 200,000 IOPS가 필요한 작업 부하에 권장됩니다.</block>
+  <block id="87839b96284704d104c8e445d0cfb887" category="list-text">1세대 배포의 경우 파일 시스템을 만든 후에는 용량을 줄일 수 없습니다.</block>
+  <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">2세대 배포의 경우 파일 시스템을 만든 후에 용량을 늘릴 수 있습니다.</block>
+  <block id="a2841b4c7bc0c058832e81b45f756892" category="list-text">*배포 유형*: 배포 유형과 파일 시스템 생성을 선택하세요.</block>
+  <block id="d790be978976d563ba38a969cce78e04" category="paragraph">*파일 시스템 세대*: 다음 중 하나를 선택하세요. ** *2세대*: 이 구성은 고성능 워크로드 또는 워크로드가 소규모로 시작하여 처리량 72GB/s 및 IOPS 240만까지 점진적으로 확장하는 경우에 권장됩니다. ** *1세대*: 이 구성은 최대 4GB/s 또는 160,000 IOPS가 필요한 워크로드에 적합합니다. 1세대 파일 시스템은 용량만 늘릴 수 있습니다.</block>
+  <block id="0db3110a95d1dfd82b55d5dde656871c" category="paragraph">+ 2세대 파일 시스템의 사용 가능 여부는 선택한 리전에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
+  <block id="5ee057335585da70af1caca368e4e422" category="list-text">*2세대*: 이 단일 HA 쌍 구성은 최대 6GB/s의 처리량 또는 200,000 IOPS가 필요한 워크로드에 권장됩니다. 다중 AZ 및 2세대 파일 시스템에서는 워크로드 요구에 따라 용량을 늘리거나 줄일 수 있습니다.</block>
+  <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*1세대*: 이 구성은 최대 4GB/s 또는 160,000 IOPS가 필요한 워크로드에 적합합니다. 1세대 파일 시스템은 용량만 늘릴 수 있습니다.</block>
+  <block id="912e83b52cf2a4421217bf96185e618a" category="paragraph">2세대 파일 시스템의 사용 가능 여부는 선택한 리전에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
+  <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">2세대 배포의 경우 용량을 조정할 수 있습니다.</block>
+  <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*HA 쌍당 처리량*: HA 쌍 수에 따라 처리량을 선택하세요. 1세대 파일 시스템은 HA 쌍을 하나만 지원합니다.</block>
+  <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*프로비저닝된 IOPS*: 다음 옵션 중 하나를 선택하세요.</block>
+  <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*자동*: 자동의 경우, 생성된 GiB 1개에 대해 3 IOPS가 추가됩니다.</block>
+  <block id="080138c9fde9abc63b7003839106198b" category="list-text">*사용자 프로비저닝*: 사용자 프로비저닝의 경우 IOPS 값을 입력합니다.</block>
+  <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">이 워크플로에서 링크를 만드는 데는 자동 또는 수동의 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
+  <block id="228b634c3bcbb5ddb0e529d6144522f7" category="list-text">수동: Codebox에서 CloudFormation 또는 Terraform을 사용하여 수동 등록 링크를 생성합니다. 코드가 계속 유지되므로 작업을 완료하는 데 더 많은 시간이 소요됩니다. 이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 다른 팀과 작업할 때 유용합니다.</block>
+  <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
+  <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*자동*: AWS CloudFormation 또는 Terraform 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
+  <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*사용자 제공*: 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당하려면 이 옵션을 선택합니다. 권한 정책에는 다음 권한이 필요합니다. <block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager를 활성화한 경우에만 권한이 필요합니다.</block>
+  <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
+  <block id="cc5c21be990be307574e5fa4cb773c44" category="paragraph">이 옵션을 사용하면 링크의 ARN을 추출하여 여기에 보고할 수 있습니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다. Codebox의 두 가지 Infrastructure-as-Code(IaC) 도구인 CloudFormation 또는 Terraform을 사용하여 링크를 생성할 수 있습니다.</block>
+  <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*링크 등록*: 드롭다운 화살표를 선택하면 AWS CloudFormation 서비스 또는 Terraform을 사용하여 링크를 등록하는 방법에 대한 지침이 확장됩니다. 지침을 따릅니다.</block>
+  <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">볼륨을 생성하다</block>
+  <block id="32c902b48618ff09c74311dc0eadacf8" category="paragraph">변경 불가능한 파일이 있는 소스 볼륨을 복제할 경우, 소스 볼륨에 있는 변경 불가능한 파일의 보존 기간이 끝날 때까지 대상 볼륨과 파일 시스템이 잠깁니다. 변경 불가능한 파일 기능은 다음과 같은 경우 사용할 수 있습니다. <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block> ONTAP 파일 시스템용 FSx용.</block>
+  <block id="5001625507c3b9f08fdabbe789030cf8" category="list-text">워크로드 팩토리 콘솔에 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
+  <block id="1626bc194a1c6fb76d8a47eba39add09" category="paragraph">FlexGroup 볼륨 크기는 구성 요소의 수에 따라 달라지며 구성 요소당 100GiB가 필요합니다.</block>
+  <block id="f80d67f0a6951b3f6c1185e7c7f39c30" category="paragraph">최대 볼륨 증가 크기와 단위를 지정하세요. 현재 볼륨 크기보다 작은 최대 증가 크기를 설정할 수 없습니다.</block>
+  <block id="d932719afe063ca8fcfe0eb63f1b6ec9" category="paragraph">ONTAP은 중복 제거 및 압축 기능을 사용하여 스토리지 효율성을 달성합니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.</block>
+  <block id="6952a6e9eef7bbc8ef4fe836a4a3851a" category="list-text">* 변경 불가능한 파일 * : SnapLock라고도 하는 이 기능은 기본적으로 비활성화되어 있습니다. 변경 불가능한 파일을 활성화하면 일정 기간 동안 데이터 삭제나 덮어쓰기가 방지됩니다. 이 기능은 볼륨 생성 중에만 사용할 수 있습니다. 기능이 활성화된 후에는 비활성화할 수 없습니다. 이는 FSx for ONTAP의 프리미엄 기능으로 추가 비용이 부과됩니다. 자세한 내용은 Amazon FSx for NetApp ONTAP 설명서의 을 <block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="7d10dca5001535e91f75cecae3291907" category="list-text">자동 커밋 기능을 사용하도록 설정할 수 있습니다. 자동 커밋 기능은 파일이 자동 커밋 기간 동안 변경되지 않은 경우 SnapLock 볼륨에서 WORM 상태로 파일을 커밋합니다. 자동 커밋 기능은 기본적으로 비활성화되어 있습니다. 자동 커밋하려는 파일이 SnapLock 볼륨에 있는지 확인해야 합니다.</block>
+  <block id="9d083d8cac2f7524236aec0400de23bf" category="inline-link-macro">ARP/AI에 대해 자세히 알아보세요</block>
+  <block id="cb0b32de8b019bb1df747d59de75707b" category="list-text">*ARP/AI*: AI를 탑재한 NetApp 자율형 랜섬웨어 보호(ARP/AI)는 링크가 파일 시스템에 연결된 경우 기본적으로 활성화됩니다. <block ref="c4c4beca7d4846b88f49bf491b5261f6" category="inline-link-macro-rx"></block>.. 계속하려면 설명을 수락하십시오.</block>
+  <block id="f6f1c3f8f0f62507f18da1fcf460ade4" category="paragraph">해당 기능을 사용할 수 없는 경우, 다음 중 하나의 이유가 있습니다.</block>
+  <block id="9e46846308a6940deed12bb97a4f8290" category="list-text">링크는 파일 시스템과 연관되지 않습니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="7c3e31cda0e937f8fa1edeeb89e9fe70" category="list-text">변경 불가능한 파일이 있는 볼륨과 iSCSI 및 NVMe 프로토콜이 있는 볼륨은 ARP/AI에서 지원되지 않습니다.</block>
+  <block id="df1195db43983cb33962d0fe23f28da4" category="list-text">파일 시스템에는 이미 ARP/AI 정책이 있습니다.</block>
+  <block id="0bce1227be581635db9bb209f22cf4e6" category="paragraph">워크로드 팩토리가 볼륨 생성을 시작합니다. 볼륨이 생성되면 시스템의 [볼륨] 탭에 새 볼륨이 표시됩니다.</block>
+  <block id="817a91472106a30911a7a081b0284ff7" category="paragraph">FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 노드 내의 모든 FlexVol 볼륨이나 모든 구성 요소에 파일을 균등하게 분산하여 모든 노드가 단일 FlexGroup 볼륨의 작업 부하에 참여하도록 합니다.</block>
+  <block id="46119f30376fd007e4806359f116810d" category="paragraph">FlexVol 볼륨과 FlexGroup 볼륨에 대해 볼륨 용량 재조정이 지원됩니다. 새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.</block>
+  <block id="bbf6fdac51a56da72339e09ef6a7537c" category="paragraph">각 볼륨 유형과 재조정 작업은 다음과 같이 다릅니다.</block>
+  <block id="7d98517078b732298ebd050c16b0fdc2" category="list-text">FlexVol 볼륨</block>
+  <block id="31af9ccdfe896bb37c979ba564b11fea" category="list-text">FlexVol 볼륨은 데이터 관리에 유연성을 제공하는 논리적 컨테이너로, 확장, 축소, 이동 및 효율적인 복사를 지원합니다. NAS 및 SAN 환경에서 사용할 수 있습니다.</block>
+  <block id="0a29aedc128f13168b556b842596de7a" category="paragraph">FSx for ONTAP 파일 시스템의 한 노드 내에서 FlexVol 볼륨은 다른 FlexVol 볼륨과 비교하여 균형을 이룰 수 있습니다. 파일 시스템에 FlexVol 볼륨이 하나만 있는 경우 재조정이 불가능합니다. 파일 시스템에 노드당 두 개 이상의 FlexVol 볼륨이 있고 단일 FlexVol 볼륨을 선택한 경우, FlexVol 볼륨은 모든 FlexVol과 관련하여 균형을 이루지만, 선택한 볼륨만 이동할 수 있습니다.</block>
+  <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="list-text">FlexGroup 볼륨</block>
+  <block id="86b9c6b8527a6bfd7d511bcbb627ca68" category="list-text">반면 FlexGroup 볼륨은 고성능 및 자동 로드 분산을 위해 설계된 확장 가능한 NAS 컨테이너입니다. 트래픽을 투명하게 공유하는 여러 멤버 볼륨(구성 요소)으로 구성됩니다. FlexGroup 볼륨은 최대 60PB의 용량과 4,000억 개의 파일을 지원하여 FlexVol 한도를 초과하는 대용량을 제공합니다. 단일 네임스페이스 컨테이너를 제공하여 관리를 간소화합니다.</block>
+  <block id="a1d763e9c6395bb77325bcad5657ce9e" category="paragraph">두 개 이상의 고가용성(HA) 쌍을 갖춘 확장형 FSx for ONTAP 파일 시스템의 여러 구성 요소에 용량이 분산됩니다. 각 구성 요소는 최대 단일 파일 크기를 지정하는 컨테이너입니다. FSx for ONTAP은 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 균일한 방식으로 모든 구성원에게 파일을 분산합니다.</block>
+  <block id="d3ba2e7d0644f59c9834f36ad9a37bd9" category="admonition">iSCSI 및 NVMe와 같은 SAN 볼륨에서는 재조정이 지원되지 않습니다.</block>
+  <block id="287fd51e17b8ed83911f0acd39496c50" category="section-title">볼륨의 균형을 확인하세요</block>
+  <block id="7e42e168316583c933d50f5311ce6477" category="paragraph">FSx for ONTAP 파일 시스템에서 FlexVol 또는 FlexGroup 볼륨의 균형을 확인합니다.</block>
+  <block id="0691d778f09d713a755463d05ab1033d" category="inline-link-macro">링크를 만듭니다</block>
+  <block id="53e6259fd019f47a663995e674152f8b" category="list-text">볼륨의 균형을 확인하려면 다음을 수행해야 합니다. <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> . 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="45e5ba6ed73eebcebdfec708c137cf22" category="list-text">*FSx for ONTAP* 탭에서 재조정할 볼륨이 포함된 파일 시스템의 3개 점 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="267c95738d47a09a9b509ffdd48c24b0" category="list-text">볼륨 탭에서 표 상단에 있는 *볼륨 잔액 확인*을 선택하세요.</block>
+  <block id="c9784b38284a9b2506bc92daf5caada4" category="list-text">볼륨 잔액 창에서 다음의 잔액 상태를 검토하세요.</block>
+  <block id="9a3d2d6c726db403f30b520ca6d8d906" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="25db360314c219183817d2ed1029436b" category="inline-xref-macro-rx"></block> .</block>
+  <block id="ba51913935bc9e57b04a0e373c7e87f1" category="section-title">볼륨 용량 재조정</block>
+  <block id="81ac132d7a72ac8930eac72f996dc39f" category="paragraph">하나 이상의 불균형 볼륨을 재조정합니다.</block>
+  <block id="3df496910d7ade34c46b7c3c46f516a9" category="inline-xref">리밸런싱을 중지하다</block>
+  <block id="f47b90b03a7f25fd35e2825621faa855" category="admonition">작업 부하 팩토리 관리자는 다음을 수행할 수 있습니다. <block ref="6089e6bc679073f1388a01bc136ad00e" category="inline-xref-macro-rx"></block> 수술 중.</block>
+  <block id="6884c9c0713962c7d0a4fabd1cf49a6d" category="inline-xref">볼륨의 균형을 확인하세요</block>
+  <block id="63acfaf1d07db652bff37bddaa4ba8bc" category="list-text"><block ref="65ac8887e886c8e0446817b3710e8cbe" category="inline-xref-macro-rx"></block> 볼륨을 재조정하기 전에,</block>
+  <block id="af7202b99122b0c2ef1b703335afeef9" category="list-text">볼륨을 재조정하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="dfaf4c319f7d24ec55b76a7ae4393e62" category="list-text">FlexVol 볼륨은 모든 볼륨 리소스의 균형을 균등하게 맞추기 위해 전체적으로 재조정하는 것이 가장 좋습니다. 선택 해제된 볼륨은 균형 조정 절차에 적극적으로 참여하지 않습니다.</block>
+  <block id="934baa9ec98e8fc4a616d393737537e5" category="open-title">FlexVol 볼륨</block>
+  <block id="8b101e32193fcbdd503f49081b4a7e4b" category="paragraph">FSx for ONTAP 파일 시스템의 한 노드 내에서 FlexVol 볼륨은 다른 FlexVol 볼륨과 비교하여 균형을 이룰 수 있습니다. 파일 시스템에 노드당 두 개 이상의 FlexVol 볼륨이 있고 단일 FlexVol 볼륨이 선택된 경우, FlexVol 볼륨은 모든 FlexVol과 관련하여 균형을 이루지만, 선택된 볼륨만 이동할 수 있습니다.</block>
+  <block id="6f661bbcda098033b451092f4a6ad605" category="list-text">볼륨 잔액 창에서 선택적으로 FlexVol 잔액 요약에서 *데이터 분포*를 선택하여 집계별 사용된 용량을 확인합니다.</block>
+  <block id="9388053fc7637e1b4eeafe0e5f530ed9" category="list-text">*재균형*을 선택하면 하나 이상의 불균형 볼륨을 재균형하게 조정할 수 있습니다.</block>
+  <block id="55a113edd3b1fddca38ad33867469ee2" category="list-text">재조정 마법사에서 다음 단계를 따르세요.</block>
+  <block id="1b6fa01b1905bacdf0b0c88ed8c711a5" category="list-text">*최대 전송 속도*: 선택 사항. 기본적으로 비활성화되어 있습니다. 파일 시스템에서 볼륨 이동 대역폭을 제한하고 나가는 볼륨 복제 트래픽의 속도를 늦추려면 스로틀을 활성화하십시오.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="paragraph">다음 * 을 선택합니다.</block>
+  <block id="914a13175eb38a00a409b234495d1ead" category="list-text">모든 FlexVol 볼륨의 현재 레이아웃과 제안된 레이아웃을 검토한 후 *다음*을 선택합니다.</block>
+  <block id="33b8c7e1b045d53ac3c40b2eb179b423" category="list-text">재조정 작업을 시작하기 전에 무슨 일이 일어날지와 참고 사항을 주의 깊게 검토하세요.</block>
+  <block id="42562a733c7eca9d2d470234bf796a63" category="paragraph">FlexVol 볼륨이 재조정되었습니다. 작업이 완료되면 파일 시스템이 원래 값으로 다시 스로틀됩니다.</block>
+  <block id="e9db3004828d9514fafc57881dfbdbd2" category="open-title">FlexGroup 볼륨</block>
+  <block id="5b1fc9c914ecf6dbfaba061abccfa814" category="paragraph">데이터는 구성원 볼륨 전체에 재분배되어 FlexGroup 볼륨의 균형을 재조정합니다. 선택한 레이아웃에 따라 재조정 작업에서 FlexGroup 멤버 볼륨이 추가되고 프로비저닝된 볼륨의 크기가 늘어날 수 있습니다.</block>
+  <block id="e0bdf1ac64eadae8c51a5f7d28c4ec5e" category="paragraph">FlexGroup 멤버 볼륨은 재조정 중에 한 번에 하나씩 이동됩니다. 작업이 완료되면 파일 시스템이 원래 값으로 다시 스로틀됩니다.</block>
+  <block id="394c3cbc7af42de2232348150c226506" category="section-title">볼륨 재조정 작업 중지</block>
+  <block id="c371881847612e2caaaab71efa80ae17" category="paragraph">리밸런싱 작업은 언제든지 중지할 수 있습니다. 중단되지 않습니다. 작업을 중지하면 활성 볼륨 이동이 중단됩니다.</block>
+  <block id="8ad4014ece1ab12d9aff2e57b1c1f323" category="paragraph">나중에 다른 재조정 작업을 시작할 수 있습니다.</block>
+  <block id="9e37c13416b5ae00943c0a3e0a5515e1" category="list-text">리밸런싱 작업을 시작한 후 볼륨 잔액 페이지에서 *리밸런싱 중지*를 선택하세요.</block>
+  <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">재조정 중지 대화 상자에서 *중지*를 선택합니다.</block>
+  <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">볼륨 재조정 작업이 중지되고 활성 볼륨 이동이 중단됩니다.</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025년 6월 29일</block>
 </blocks>
