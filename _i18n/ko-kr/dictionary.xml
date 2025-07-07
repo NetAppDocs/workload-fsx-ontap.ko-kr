@@ -677,7 +677,6 @@
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
   <block id="8cf9dbe17cb44a10f0622b63961c131d" category="sidebar">볼륨 관리</block>
   <block id="56994f1db86bfe709cbe47f96bde566f" category="sidebar">볼륨 자동 확장을 편집합니다</block>
-  <block id="be6125857b11bdb69d1f89bf69787f48" category="sidebar">볼륨 용량을 재조정합니다</block>
   <block id="28b0bfb965f113c41530116951bfce50" category="sidebar">파일 시스템 관리</block>
   <block id="ff117b5e42f4a60dd5b7859999c4f2bd" category="sidebar">자동 용량 관리 활성화</block>
   <block id="c7ad4dd9b2ecb508f1366110b020e001" category="sidebar">fsxadmin 암호를 재설정합니다</block>
@@ -1410,8 +1409,6 @@
   <block id="a79cee1f678331ce4a5e786550999b02" category="paragraph">관계가 재개되고 상태가 "복제됨"으로 표시됩니다.</block>
   <block id="26da52f61184b82e14aa7b1fa701a979" category="paragraph">자동으로 프로비저닝된 IOPS는 GiB당 3개의 IOPS로 계산됩니다.</block>
   <block id="924b3daa7ecef370ff9a603b3208772b" category="paragraph">IOPS를 수동으로 프로비저닝하는 경우, 이전에 IOPS를 늘려야 할 수도 <block ref="94a3285243f3705d6ad038b61125cb2f" category="inline-link-macro-rx"></block>있습니다.</block>
-  <block id="3a3c8188eae554af0e7f07bfef2e124b" category="summary">시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 확인하고 재조정합니다.</block>
-  <block id="8083bd6761abe4735ad26f9c18899032" category="doc">볼륨 용량을 확인하고 재조정합니다</block>
   <block id="04533b4edf31c61772ef483585fb29cf" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하려면 구성요소의 현재 레이아웃을 평가해야 합니다. 볼륨 용량을 재조정할 때 BlueXP  워크로드 공장에서는 짝수의 구성요소가 포함된 새로운 구성 레이아웃을 설계하여 모든 HA 쌍에 데이터를 균등하게 분산합니다. 이 서비스는 재조정 계획을 실행하여 읽기 및 쓰기 작업을 개선합니다.</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">Volumes(볼륨) 탭에서 표 상단에 있는 * Check FlexGroup balance * 를 선택합니다.</block>
@@ -1932,18 +1929,13 @@
   <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">링크 생성 중 IAM 실행 역할 및 권한 관리</block>
   <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">이제 워크로드 팩토리 콘솔에서 링크를 생성하여 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다. 링크는 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다. IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정, 두 가지 옵션이 있습니다. 워크로드 팩토리에서 실행 역할과 연결된 권한 정책을 관리하면 더 이상 타사 코드를 사용할 필요가 없습니다.</block>
-  <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">2세대 FSx for ONTAP 파일 시스템이 기본 배포 유형입니다. 해당 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
   <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
   <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">다중 가용 영역(Multi-AZ) 배포: 가용 영역을 사용할 수 없는 경우에도 데이터에 지속적인 가용성을 제공합니다. 다중 AZ 파일 시스템은 공유 ONTAP 파일 데이터에 대한 고가용성이 필요하고 가용 영역 전체에서 기본 복제 기능이 있는 스토리지가 필요한 비즈니스 크리티컬 운영 워크로드를 위해 설계되었습니다.</block>
   <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">이 단일 HA 쌍 구성은 최대 6GB/s의 처리량 또는 200,000 IOPS가 필요한 작업 부하에 권장됩니다.</block>
   <block id="87839b96284704d104c8e445d0cfb887" category="list-text">1세대 배포의 경우 파일 시스템을 만든 후에는 용량을 줄일 수 없습니다.</block>
   <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">2세대 배포의 경우 파일 시스템을 만든 후에 용량을 늘릴 수 있습니다.</block>
-  <block id="a2841b4c7bc0c058832e81b45f756892" category="list-text">*배포 유형*: 배포 유형과 파일 시스템 생성을 선택하세요.</block>
-  <block id="d790be978976d563ba38a969cce78e04" category="paragraph">*파일 시스템 세대*: 다음 중 하나를 선택하세요. ** *2세대*: 이 구성은 고성능 워크로드 또는 워크로드가 소규모로 시작하여 처리량 72GB/s 및 IOPS 240만까지 점진적으로 확장하는 경우에 권장됩니다. ** *1세대*: 이 구성은 최대 4GB/s 또는 160,000 IOPS가 필요한 워크로드에 적합합니다. 1세대 파일 시스템은 용량만 늘릴 수 있습니다.</block>
-  <block id="0db3110a95d1dfd82b55d5dde656871c" category="paragraph">+ 2세대 파일 시스템의 사용 가능 여부는 선택한 리전에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
   <block id="5ee057335585da70af1caca368e4e422" category="list-text">*2세대*: 이 단일 HA 쌍 구성은 최대 6GB/s의 처리량 또는 200,000 IOPS가 필요한 워크로드에 권장됩니다. 다중 AZ 및 2세대 파일 시스템에서는 워크로드 요구에 따라 용량을 늘리거나 줄일 수 있습니다.</block>
   <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*1세대*: 이 구성은 최대 4GB/s 또는 160,000 IOPS가 필요한 워크로드에 적합합니다. 1세대 파일 시스템은 용량만 늘릴 수 있습니다.</block>
-  <block id="912e83b52cf2a4421217bf96185e618a" category="paragraph">2세대 파일 시스템의 사용 가능 여부는 선택한 리전에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
   <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">2세대 배포의 경우 용량을 조정할 수 있습니다.</block>
   <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*HA 쌍당 처리량*: HA 쌍 수에 따라 처리량을 선택하세요. 1세대 파일 시스템은 HA 쌍을 하나만 지원합니다.</block>
   <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*프로비저닝된 IOPS*: 다음 옵션 중 하나를 선택하세요.</block>
@@ -1951,7 +1943,6 @@
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*사용자 프로비저닝*: 사용자 프로비저닝의 경우 IOPS 값을 입력합니다.</block>
   <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">이 워크플로에서 링크를 만드는 데는 자동 또는 수동의 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
-  <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*자동*: AWS CloudFormation 또는 Terraform 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*사용자 제공*: 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당하려면 이 옵션을 선택합니다. 권한 정책에는 다음 권한이 필요합니다. <block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager를 활성화한 경우에만 권한이 필요합니다.</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
   <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*링크 등록*: 드롭다운 화살표를 선택하면 AWS CloudFormation 서비스 또는 Terraform을 사용하여 링크를 등록하는 방법에 대한 지침이 확장됩니다. 지침을 따릅니다.</block>
@@ -2019,4 +2010,11 @@
   <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">이 옵션을 사용하면 AWS CloudFormation에서 링크에 대한 ARN을 추출하여 여기에 보고합니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다.</block>
   <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*자동*: AWS CloudFormation 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
   <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> .</block>
+  <block id="1abe6434c0a72292080ce57490bb16d1" category="paragraph">BlueXP 워크로드 팩토리를 사용하면 1세대 및 2세대 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
+  <block id="89733971c4e3e5f45999d2907d6d1c43" category="paragraph">빠른 생성을 위한 기본 배포 유형은 ONTAP 파일 시스템용 2세대 FSx입니다. 단, 선택한 지역에서 ONTAP 파일 시스템용 2세대 FSx를 지원하지 않는 경우는 예외입니다.</block>
+  <block id="9f9382d36e2904b74545777af65bb3d2" category="list-text">*배포 유형*: 배포 유형과 파일 시스템 생성을 선택하세요. 2세대 파일 시스템의 사용 가능 여부는 선택한 지역에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
+  <block id="ad25ffa35c681232ceeec02144315aa5" category="paragraph">*파일 시스템 생성*: 다음 중 하나를 선택하세요.</block>
+  <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*2세대*: 이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
+  <block id="2af62906cede15164d81a343aa2da6a4" category="summary">시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다.</block>
+  <block id="f778d4dac2542cbef9605e3e41c11ba2" category="doc">볼륨 용량 확인 및 재조정</block>
 </blocks>

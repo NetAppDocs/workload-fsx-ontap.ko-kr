@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rebalance-volume.html 
 keywords: rebalance capacity, volume capacity, redistribute capacity 
-summary: 시간에 따라 발생하는 불균형을 방지하기 위해 볼륨의 용량을 확인하고 재조정합니다. 
+summary: 시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다. 
 ---
-= 볼륨 용량을 확인하고 재조정합니다
+= 볼륨 용량 확인 및 재조정
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

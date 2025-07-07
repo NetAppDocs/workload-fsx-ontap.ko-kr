@@ -102,7 +102,7 @@ sidebar:
         url: "/manage-immutable-files.html"
       - title: 볼륨 태그 관리
         url: "/manage-volume-tags.html"
-      - title: 볼륨 용량을 재조정합니다
+      - title: 볼륨 용량 재조정
         url: "/rebalance-volume.html"
       - title: 계층화 정책을 변경합니다
         url: "/change-tiering-policy.html"
