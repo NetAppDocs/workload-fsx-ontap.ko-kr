@@ -61,7 +61,7 @@ FSx for ONTAP 파일 시스템에서 FlexVol 또는 FlexGroup 볼륨의 균형�
 ** FlexGroup 볼륨
 ** FlexVol 볼륨
 +
-볼륨이 불균형한 경우 다음을 고려하세요. <<Rebalance a volume,재조정>> .
+볼륨이 불균형한 경우 다음을 고려하세요. <<볼륨 용량 재조정,재조정>> .
 
 
 

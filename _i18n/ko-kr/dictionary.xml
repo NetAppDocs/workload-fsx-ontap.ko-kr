@@ -1929,13 +1929,9 @@
   <block id="6250cd311debe5758acc69f81921ab78" category="paragraph">Workload Factory는 중요한 데이터를 실수로 삭제하거나 랜섬웨어와 같은 악의적인 공격으로부터 보호하기 위해 한 FSx for ONTAP 시스템에서 다른 FSx for ONTAP 파일 시스템으로 변경 불가능한 볼륨을 복제하는 기능을 지원합니다. 대상 볼륨과 호스트 파일 시스템은 변경 불가능하거나 잠기게 되며, 대상 파일 시스템의 모든 데이터는 보존 기간이 끝날 때까지 수정하거나 삭제할 수 없습니다.</block>
   <block id="b6fc33d7434bb860ad528753113881b1" category="inline-link-macro">복제 관계를 만드는 방법을 알아보세요</block>
   <block id="d3dbddfb353eaaa957947efb04ca7013" category="paragraph"><block ref="d3dbddfb353eaaa957947efb04ca7013" category="inline-link-macro-rx"></block></block>
-  <block id="d836bf4f72557e9399ce062e72ef15f6" category="section-title">링크 생성 향상</block>
-  <block id="1f8ca754f0193efb8fdc1c63a4d96672" category="paragraph">워크로드 팩토리 콘솔의 링크 생성 프로세스가 다음과 같이 향상되었습니다.</block>
   <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">링크 생성 중 IAM 실행 역할 및 권한 관리</block>
   <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">이제 워크로드 팩토리 콘솔에서 링크를 생성하여 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다. 링크는 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다. IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정, 두 가지 옵션이 있습니다. 워크로드 팩토리에서 실행 역할과 연결된 권한 정책을 관리하면 더 이상 타사 코드를 사용할 필요가 없습니다.</block>
-  <block id="f83708b425052a7f19c02dfd5c3d0688" category="section-title">링크 생성을 위한 Terraform 지원</block>
-  <block id="d993aa63b5e96ec8db4090bd87d5c850" category="paragraph">이제 Codebox에서 Terraform을 사용하여 FSx for ONTAP 파일 시스템과 연결할 링크를 생성할 수 있습니다. 이 기능은 링크를 수동으로 생성하는 사용자를 위한 기능입니다.</block>
   <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">2세대 FSx for ONTAP 파일 시스템이 기본 배포 유형입니다. 해당 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
   <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
   <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">다중 가용 영역(Multi-AZ) 배포: 가용 영역을 사용할 수 없는 경우에도 데이터에 지속적인 가용성을 제공합니다. 다중 AZ 파일 시스템은 공유 ONTAP 파일 데이터에 대한 고가용성이 필요하고 가용 영역 전체에서 기본 복제 기능이 있는 스토리지가 필요한 비즈니스 크리티컬 운영 워크로드를 위해 설계되었습니다.</block>
@@ -1954,12 +1950,10 @@
   <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*자동*: 자동의 경우, 생성된 GiB 1개에 대해 3 IOPS가 추가됩니다.</block>
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*사용자 프로비저닝*: 사용자 프로비저닝의 경우 IOPS 값을 입력합니다.</block>
   <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">이 워크플로에서 링크를 만드는 데는 자동 또는 수동의 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
-  <block id="228b634c3bcbb5ddb0e529d6144522f7" category="list-text">수동: Codebox에서 CloudFormation 또는 Terraform을 사용하여 수동 등록 링크를 생성합니다. 코드가 계속 유지되므로 작업을 완료하는 데 더 많은 시간이 소요됩니다. 이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 다른 팀과 작업할 때 유용합니다.</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
   <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*자동*: AWS CloudFormation 또는 Terraform 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*사용자 제공*: 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당하려면 이 옵션을 선택합니다. 권한 정책에는 다음 권한이 필요합니다. <block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager를 활성화한 경우에만 권한이 필요합니다.</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
-  <block id="cc5c21be990be307574e5fa4cb773c44" category="paragraph">이 옵션을 사용하면 링크의 ARN을 추출하여 여기에 보고할 수 있습니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다. Codebox의 두 가지 Infrastructure-as-Code(IaC) 도구인 CloudFormation 또는 Terraform을 사용하여 링크를 생성할 수 있습니다.</block>
   <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*링크 등록*: 드롭다운 화살표를 선택하면 AWS CloudFormation 서비스 또는 Terraform을 사용하여 링크를 등록하는 방법에 대한 지침이 확장됩니다. 지침을 따릅니다.</block>
   <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">볼륨을 생성하다</block>
   <block id="32c902b48618ff09c74311dc0eadacf8" category="paragraph">변경 불가능한 파일이 있는 소스 볼륨을 복제할 경우, 소스 볼륨에 있는 변경 불가능한 파일의 보존 기간이 끝날 때까지 대상 볼륨과 파일 시스템이 잠깁니다. 변경 불가능한 파일 기능은 다음과 같은 경우 사용할 수 있습니다. <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block> ONTAP 파일 시스템용 FSx용.</block>
@@ -1993,7 +1987,6 @@
   <block id="45e5ba6ed73eebcebdfec708c137cf22" category="list-text">*FSx for ONTAP* 탭에서 재조정할 볼륨이 포함된 파일 시스템의 3개 점 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="267c95738d47a09a9b509ffdd48c24b0" category="list-text">볼륨 탭에서 표 상단에 있는 *볼륨 잔액 확인*을 선택하세요.</block>
   <block id="c9784b38284a9b2506bc92daf5caada4" category="list-text">볼륨 잔액 창에서 다음의 잔액 상태를 검토하세요.</block>
-  <block id="9a3d2d6c726db403f30b520ca6d8d906" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="25db360314c219183817d2ed1029436b" category="inline-xref-macro-rx"></block> .</block>
   <block id="ba51913935bc9e57b04a0e373c7e87f1" category="section-title">볼륨 용량 재조정</block>
   <block id="81ac132d7a72ac8930eac72f996dc39f" category="paragraph">하나 이상의 불균형 볼륨을 재조정합니다.</block>
   <block id="3df496910d7ade34c46b7c3c46f516a9" category="inline-xref">리밸런싱을 중지하다</block>
@@ -2022,4 +2015,8 @@
   <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">재조정 중지 대화 상자에서 *중지*를 선택합니다.</block>
   <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">볼륨 재조정 작업이 중지되고 활성 볼륨 이동이 중단됩니다.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025년 6월 29일</block>
+  <block id="b1a94bb6f0b93b26134ff88823a75e78" category="list-text">수동: 수동 등록을 사용하여 링크를 생성합니다. CloudFormation 코드는 작업을 완료하는 데 더 많은 시간을 줍니다. 이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 다른 팀과 작업할 때 유용합니다.</block>
+  <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">이 옵션을 사용하면 AWS CloudFormation에서 링크에 대한 ARN을 추출하여 여기에 보고합니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다.</block>
+  <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*자동*: AWS CloudFormation 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
+  <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> .</block>
 </blocks>
