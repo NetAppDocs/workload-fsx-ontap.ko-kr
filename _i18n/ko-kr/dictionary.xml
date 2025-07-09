@@ -1691,9 +1691,6 @@
   <block id="49441c63fc169d06940470ec9c0e4b1f" category="paragraph">온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 장기 보존을 위한 스냅샷 변경이 지원되지 않습니다.</block>
   <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">BlueXP  Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="cf6372133f01401bdd9aefc7bead4b10" category="doc">잘 설계된 파일 시스템 구성 구현</block>
-  <block id="3a23bb090bb2219c1febb97610b3122a" category="paragraph">구성 분석 통찰력 및 권장사항을 사용하여 BlueXP  워크로드 팩토리를 활용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현합니다. 신뢰성, 보안, 효율성, 성능 및 비용에 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 쉽게 찾을 수 있습니다.</block>
-  <block id="7933cf24268e185cf9acf9afb0edcb26" category="paragraph">BlueXP 는 Amazon FSx for NetApp ONTAP 파일 시스템 구축 구성을 매일 분석합니다. 일일 분석은 구성 문제를 자동으로 해결하는 옵션과 함께 통찰력과 권장 사항을 제공하므로 파일 시스템이 모범 사례를 충족할 수 있습니다.</block>
-  <block id="0ccac1a46342dcb95d1b631638c4f99e" category="paragraph">파일 시스템의 구성 문제에 대한 권장 사항을 검토하고 워크로드 팩토리 콘솔 내의 스토리지 인벤토리에서 이러한 문제를 해결할 수 있는 옵션이 있습니다.</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">분석 대상</block>
   <block id="ee519805bc36a437f398c40154b9f4f0" category="list-text">워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 다음 구성의 체계적으로 설계된 상태를 분석합니다.</block>
   <block id="9d0e9f5c0aa1e38cfaa8e64e155bc5a8" category="list-text">SSD 용량 임계값입니다</block>
@@ -2017,4 +2014,10 @@
   <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*2세대*: 이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
   <block id="2af62906cede15164d81a343aa2da6a4" category="summary">시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다.</block>
   <block id="f778d4dac2542cbef9605e3e41c11ba2" category="doc">볼륨 용량 확인 및 재조정</block>
+  <block id="c271fb4528ce236e85fc9cf102efa8cf" category="paragraph">구성 분석 통찰력과 권장 사항을 활용하여 워크로드 팩토리를 활용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하세요. 잘 설계된 상태를 쉽게 검토하고, 구성 관련 문제를 파악하고, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 취할 수 있습니다.</block>
+  <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">워크로드 팩토리의 구성 분석과 잘 설계된 상태에 대해 알아보세요.</block>
+  <block id="827070c9ee124a138455bb1007f526f3" category="paragraph"><block ref="827070c9ee124a138455bb1007f526f3" category="inline-link-macro-rx"></block></block>
+  <block id="61e6079323dfdf994259df13eb1f5bea" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항과 함께 파일 시스템이 모범 사례를 충족하도록 구성 문제를 자동으로 해결하는 옵션을 제공합니다.</block>
+  <block id="9fa762c3e56dd52eab735970b481c743" category="paragraph">워크로드 팩토리 콘솔 내의 스토리지 인벤토리에서 파일 시스템의 구성 문제에 대한 권장 사항을 검토하고 문제를 해결할 수 있는 옵션이 있습니다.</block>
+  <block id="bfebf248126ee0c8c192d7442b03e1a1" category="sidebar">ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요.</block>
 </blocks>

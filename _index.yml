@@ -18,6 +18,8 @@ indexpage:
       url: "/explore-savings.html"
     - title: FSx for ONTAP 파일 시스템을 생성합니다
       url: "/create-file-system.html"
+    - title: ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요.
+      url: "/improve-configurations.html"
     - title: FSx for ONTAP 볼륨을 생성합니다
       url: "/create-volume.html"
     - title: 데이터 보호
