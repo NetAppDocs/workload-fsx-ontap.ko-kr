@@ -494,8 +494,6 @@
   <block id="0c2c6a9c149348bd95ea113c9e333baa" category="paragraph">또는 * 무제한 * 을 선택합니다.</block>
   <block id="87684df341e5a7d9f280a7bdf2048a6e" category="section-title">링크 작동 방법</block>
   <block id="5abd3a6ae198e27e4c8402463411560f" category="paragraph">링크 활용 AWS Lambda. Lambda는 이벤트에 대한 응답으로 코드를 실행하고 해당 코드에 필요한 컴퓨팅 리소스를 자동으로 관리합니다. 생성하는 링크는 NetApp 계정의 일부이며 AWS 계정과 연결됩니다.</block>
-  <block id="ff5c41103f48a7b4755ac57734036d05" category="paragraph">링크를 생성한 후 하나 이상의 FSx for ONTAP 파일 시스템에 연결할 수 있습니다. 각 파일 시스템은 동일한 NetApp 계정에 있는 하나의 링크에만 연결할 수 있습니다. NetApp 계정이 여러 개인 경우 단일 파일 시스템을 다른 NetApp 계정 아래의 추가 링크에 연결할 수 있습니다.</block>
-  <block id="7d6d7edbcee228f35d85531a33a68076" category="inline-link-macro">링크를 만드는 방법에 대해 알아봅니다</block>
   <block id="66096c22a6220952b7aef731ef78c167" category="section-title">비용</block>
   <block id="0ab8cd7f04804af6d53be93ef7bd5345" category="inline-link-macro">AWS Lambda 사용과 관련된 비용에 대해 자세히 알아보십시오</block>
   <block id="70f0040e444997fbb4beeeae8bd03d34" category="paragraph"><block ref="70f0040e444997fbb4beeeae8bd03d34" category="inline-link-macro-rx"></block></block>
@@ -663,7 +661,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">NetApp ONTAP용 Amazon FSx를 사용합니다</block>
   <block id="2553f0a003cdfb6c46e0fb29cca1c670" category="sidebar">링크를 사용하십시오</block>
-  <block id="95818c359b553f6f2db093ae431dd5be" category="sidebar">링크 개요</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">볼륨 관리</block>
   <block id="dc88dce8ec264777b2f90ec0af744f43" category="sidebar">볼륨을 생성합니다</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="sidebar">스토리지 VM을 생성합니다</block>
@@ -914,8 +911,6 @@
   <block id="de401cd5994804b12e8c1734d1ee027c" category="summary">워크로드 팩토리 링크는 워크로드 공장 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계 및 연결을 생성합니다.</block>
   <block id="12565ed510f1f762365915b3fa807454" category="doc">BlueXP  워크로드 공장 링크에 대해 알아보십시오</block>
   <block id="691199ddecf65c4783496c94612dd07f" category="paragraph">워크로드 팩토리부터 시작하는 데 필요한 링크는 없지만, 경우에 따라 모든 워크로드 팩토리 기능 및 워크로드 기능의 잠금을 해제하기 위한 링크를 만들어야 할 수도 있습니다.</block>
-  <block id="c1dad4a74a18053a2db1d6f5da393921" category="paragraph">워크로드 팩토리의 FSx for ONTAP 파일 시스템 페이지에서 링크를 생성할 수 있습니다. <block ref="e9a88ae15a9584972e43294d65e9c8ac" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="895a7d895aa3866c9188fcd255af1541" category="paragraph">워크로드 팩토리에는 일부 정보를 표시하고 일부 작업을 수행하기 위한 링크가 필요합니다. 연결이 필요한 작업을 수행하려고 하는데 FSx for ONTAP 파일 시스템에 링크가 연결되지 않은 경우 작업에 링크가 필요하다는 메시지가 표시됩니다. 이때 새 링크를 추가하거나 FSx for ONTAP 파일 시스템을 기존 링크와 연결하여 작업을 수행할 수 있습니다.</block>
   <block id="20cbf23ff8204cff465470ae4144d936" category="summary">필요한 경우 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
   <block id="53fe87832fd05bf7a8e9f1e1bad4aa86" category="doc">FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다</block>
   <block id="e8333245618d8dbca5436b9e71370d58" category="paragraph">BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
@@ -1117,18 +1112,7 @@
   <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">워크로드 팩토리 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
   <block id="42236277fa3913ec4d1fd1e17b26874c" category="paragraph">스케일 업 구성은 모든 지역에서 최대 2GB/s까지 지원됩니다. 다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
   <block id="f23f9e699754fa9634675e68ddb2477a" category="list-text">장기 보존 복제 관계의 경우 마지막 스냅샷만 복구에 사용할 수 있습니다.</block>
-  <block id="3566e30d1125b1cc489403b83380b16e" category="list-text">FSx for ONTAP 파일 시스템에 설치된 ONTAP 버전을 표시합니다</block>
   <block id="70b71b7616d1607e66f58defc9384bf3" category="list-text">FSx for ONTAP 파일 시스템에서 iSCSI 볼륨 관리</block>
-  <block id="dd7d7ae00fef8de94b69aa7b5b540cb1" category="list-text">볼륨을 위한 자동 확장 기능</block>
-  <block id="3351e8dc51e33708d3280516a366bf4f" category="list-text">스냅샷 정책 생성 및 관리</block>
-  <block id="bc405b20c5dce6dc67910950f2591510" category="list-text">복제 관계 구성</block>
-  <block id="900f24520b234a239d52bc47e673bdd5" category="list-text">FSx for ONTAP 파일 시스템 간의 볼륨 복제</block>
-  <block id="2886577fc59b2d9df21dd1d41704de71" category="list-text">백업 관계 구성</block>
-  <block id="ab8c429c03a3887588677f966f3e8c48" category="list-text">클라우드 스토리지에 볼륨 데이터를 백업</block>
-  <block id="0fb8fbbbeb74e2e76be7a39d75ecdcda" category="list-text">FSx for ONTAP 파일 시스템 내의 볼륨 클론</block>
-  <block id="981bc65604544a529c511adc06cb441f" category="list-text">ONTAP에서 직접 추가 메트릭 표시(기본 메트릭은 Amazon CloudWatch에서 수집)</block>
-  <block id="310e8bd2aa0fbf766664a8fadbb86083" category="list-text">NFS 엑스포트 정책 관리</block>
-  <block id="9d19d65b5c0b11e65c72a68e686c8efc" category="list-text">CIFS 공유 관리</block>
   <block id="5b4240cc70ef93fd3963a5a4a1489114" category="summary">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 생성, 사용자 및 그룹 액세스 결정 및 삭제가 포함됩니다.</block>
   <block id="ed2b1c265309f7d9a2006128f317479e" category="paragraph">시작하기 전에 다음을 수행합니다.</block>
   <block id="0162ca60ba3c63c1058d5815f318b75b" category="section-title">볼륨에 대한 CIFS 공유를 생성합니다</block>
@@ -1711,7 +1695,6 @@
   <block id="45b5dce37159255d07342e3102124571" category="list-text">구성 문제를 해결하려면 * 계속 * 을 선택하십시오.</block>
   <block id="20086b220eeb33caf74bd6e628cfcd8c" category="section-title">AWS Secrets Manager 지원</block>
   <block id="ffe2f2a5c6f5c2a7a4d95da829cd5cb4" category="paragraph">BlueXP  워크로드 팩토리 링크는 워크로드 공장 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계와 연결을 생성합니다. 따라서 Amazon FSx for ONTAP API를 통해 사용할 수 없는 ONTAP REST API 호출에서 직접 특정 파일 시스템 기능을 모니터링하고 관리할 수 있습니다.</block>
-  <block id="8f30a77efbeaeec8415337994a976197" category="paragraph">워크로드 팩토리 자격 증명 서비스에 저장된 자격 증명 또는 AWS Secrets Manager에 저장된 자격 증명을 사용하여 인증을 받을 수 있습니다. 작업 부하 공장 은 인증 모드 변경을 지원하지 않습니다.</block>
   <block id="eee5751928fa32e80cacc3177eabff02" category="section-title">링크를 인증합니다</block>
   <block id="e9efd53f2fa290402dc3f6be4a32cc68" category="paragraph">워크로드 공장 자격 증명에 대한 관리 사용자 암호 또는 AWS Secrets Manager 비밀 ARN을 제공하여 FSx for ONTAP 파일 시스템에 링크를 연결합니다.</block>
   <block id="696ea928d9d3c6e9a7783d23ab82a78a" category="admonition">링크당 하나의 인증 방법만 지원됩니다. 예를 들어, AWS Secrets Manager로 링크 인증을 선택한 경우 나중에 인증 방법을 변경할 수 없습니다.</block>
@@ -2020,4 +2003,26 @@
   <block id="61e6079323dfdf994259df13eb1f5bea" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항과 함께 파일 시스템이 모범 사례를 충족하도록 구성 문제를 자동으로 해결하는 옵션을 제공합니다.</block>
   <block id="9fa762c3e56dd52eab735970b481c743" category="paragraph">워크로드 팩토리 콘솔 내의 스토리지 인벤토리에서 파일 시스템의 구성 문제에 대한 권장 사항을 검토하고 문제를 해결할 수 있는 옵션이 있습니다.</block>
   <block id="bfebf248126ee0c8c192d7442b03e1a1" category="sidebar">ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요.</block>
+  <block id="65050310e57f3790fef3c72eb48d33fe" category="section-title">링크가 유익한 이유</block>
+  <block id="4e5ad1c2c7f1e4eb79418c584549c8db" category="paragraph">링크는 워크로드 팩토리가 Amazon FSx for ONTAP API를 통해 기본적으로 제공되지 않는 작업을 수행할 수 있도록 해주기 때문에 유용합니다. 링크를 통해 고급 ONTAP 기능과 자동화를 활용할 수 있으며, 이는 FSx for ONTAP 파일 시스템 관리를 향상시킵니다.</block>
+  <block id="abca8c391b472ef4e80c6577b5d5eb2a" category="paragraph">링크를 사용하면 다음과 같은 이점이 있습니다.</block>
+  <block id="964a29c1cbea0c1c51aa60608d960a3e" category="list-text">이 링크를 통해 BlueXP ONTAP 명령을 FSx for ONTAP 파일 시스템으로 직접 전송할 수 있으며, 이를 통해 AWS에서 기본적으로 제공하는 것보다 더 고급 ONTAP 기능을 사용할 수 있습니다.</block>
+  <block id="92d3d2d26bd62a6b2959d23585ef12a2" category="list-text">링크는 AWS Lambda를 활용하여 이벤트에 응답하여 코드를 실행합니다. 이러한 서버리스 접근 방식은 VPC에서 실행 중인 인스턴스의 종속성을 제거합니다.</block>
+  <block id="e721a1904dd1a2a54d259deb8d176230" category="paragraph">링크를 만든 후에는 하나 이상의 FSx for ONTAP 파일 시스템과 연결할 수 있습니다. 각 파일 시스템은 동일한 NetApp 계정에 있는 하나의 링크에만 연결할 수 있습니다. NetApp 계정이 여러 개인 경우 단일 파일 시스템을 다른 NetApp 계정 아래의 추가 링크에 연결할 수 있습니다.</block>
+  <block id="f022b18c277e4963edee6e68adbb6444" category="paragraph">워크로드 팩토리에서 스토리지 워크로드의 링크를 만들고 연결합니다.</block>
+  <block id="54e67484027376a69b47aa1c0db7f038" category="paragraph">워크로드 팩토리 자격 증명 서비스에 저장된 자격 증명이나 AWS Secrets Manager에 저장된 자격 증명을 사용하여 링크를 인증할 수 있습니다. 작업 부하 공장 은 인증 모드 변경을 지원하지 않습니다.</block>
+  <block id="92ed487a00f33b78311d56c6c063ea86" category="paragraph">워크로드 팩토리에는 일부 정보를 표시하고 일부 작업을 수행하기 위한 링크가 필요합니다. 링크가 필요한 작업을 수행하려고 하지만 FSx for ONTAP 파일 시스템과 링크를 연결하지 않은 경우, 워크로드 팩토리는 해당 작업에 링크가 필요하다는 알림을 보냅니다.</block>
+  <block id="d078fe237d087bff0fe3c19efd14fa54" category="list-text">사전 예방적 유지 관리, 안정성 및 비용 성능 최적화를 위한 FSx for ONTAP 파일 시스템 구성의 잘 설계된 상태</block>
+  <block id="c6501747b7c38b1e25460b13a727ec7c" category="list-text">NetApp 자율형 랜섬웨어 보호(ARP/AI)</block>
+  <block id="489e0dc0c162e1aff5f0f664bf2ea756" category="list-text">FSx for ONTAP 파일 시스템 전반의 향상된 전체적인 용량 관찰 기능</block>
+  <block id="b97b322b8cb0f9b187eb7b966c9ff886" category="list-text">볼륨 및 스토리지 VM 데이터 복제, 관리 및 모니터링</block>
+  <block id="147d85abf5db68a53249c95e1a68cedb" category="list-text">SMB/CIFS 공유 및 NFS 내보내기 정책 프로비저닝 및 관리</block>
+  <block id="0ff428418a3d64cc69a6ee68906a8959" category="list-text">사용자 정의 보호 SLA에 대한 스냅샷 정책 생성 및 관리</block>
+  <block id="c92f4938531f7fd55dc831a93892d29a" category="list-text">자동 용량 관리를 위한 Inode 관리 향상</block>
+  <block id="3b5c7e283e0b752d51311178d3fa06f1" category="list-text">탄력적 확장을 위한 볼륨 자동 증가</block>
+  <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">즉각적이고 즉각적인 데이터 복제를 위한 복제본 생성 및 관리</block>
+  <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">ONTAP 버전과 같은 ONTAP 에서 직접 추가 메트릭 표시</block>
+  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">FSx for ONTAP 파일 시스템에 링크 연결</block>
+  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph">의 방법을 <block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block>알아보십시오.</block>
+  <block id="78f8c00f462b0fbe742eab283e3fdf7a" category="sidebar">링크에 대해 알아보기</block>
 </blocks>
