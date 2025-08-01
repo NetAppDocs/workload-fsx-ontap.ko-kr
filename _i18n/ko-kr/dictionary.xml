@@ -148,10 +148,8 @@
   <block id="b2f3a9c80071ec30919944cb6cd21a42" category="list-text">링크 만들기 페이지에서 다음을 제공합니다.</block>
   <block id="89a62ddcc9759060d903ef8b7aee42c3" category="list-text">* 링크 이름 *: 이 링크에 사용할 이름을 입력하십시오. 이름은 계정 내에서 고유해야 합니다.</block>
   <block id="68d5729d2a63e62a04de68bac212b9ab" category="list-text">* 태그 *: 필요에 따라 이 링크에 연결할 태그를 추가하여 리소스를 보다 쉽게 분류할 수 있습니다. 예를 들어, FSx for ONTAP 파일 시스템에서 이 링크를 사용 중인 것으로 식별하는 태그를 추가할 수 있습니다.</block>
-  <block id="c54e90f3916f294bec1f9be7d938fba1" category="paragraph">AWS 계정 및 계정, 위치 및 보안 그룹에 대한 추가 정보는 FSx for ONTAP 파일 시스템에 따라 자동으로 검색됩니다.</block>
   <block id="c602cdf8533ce956e9f326890f6d8723" category="list-text">AWS 관리 콘솔을 열고 이 FSx for ONTAP 파일 시스템에 대한 AWS 계정에 로그인하려면 * 계속 * 을 선택하십시오.</block>
   <block id="ab44f988398acb833af7b9b2bc6c26b9" category="list-text">빠른 스택 만들기 페이지의 기능 에서 * AWS CloudFormation이 IAM 리소스를 생성할 수 있음을 확인합니다 * 를 선택합니다.</block>
-  <block id="da0a73063a34bf5fda005c52ba51f931" category="paragraph">이벤트 페이지에서 링크 생성 상태를 모니터링할 수 있습니다. 이 작업은 5분 이내에 완료됩니다.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
   <block id="19b12f8ea4cd395e2a8c4f8e4dbac642" category="summary">FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하여 예기치 않은 재해가 발생할 경우 데이터 손실을 방지합니다.</block>
   <block id="ca0c3dd7dca9f636af3209d526098e1e" category="doc">복제 관계를 생성합니다</block>
@@ -761,7 +759,6 @@
   <block id="1ffab80b063e5f05f25ab6681156237d" category="paragraph">자체 관리되는 AD에 연결하는 경우 AD에서 그룹 이름을 사용합니다. 기본 그룹은<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>입니다.</block>
   <block id="758ce486f132a2978be7ecfbcd518afa" category="list-text">사용할 링크 만들기 옵션을 고려해야 합니다.</block>
   <block id="6903e2b3a86228f4d258e423fb6b913a" category="open-title">자동으로 만듭니다</block>
-  <block id="6a97c44fefe95ac9ca6fe05e50d1729f" category="paragraph">CloudFormation으로 이동 대화 상자가 나타나고 AWS CloudFormation 서비스에서 링크를 만드는 방법을 설명합니다.</block>
   <block id="a85b3f8e5456d47e8056e0372aeccb2a" category="open-title">수동으로 만듭니다</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024년 9월 29일</block>
   <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSI 프로토콜은 FlexVol 볼륨에만 사용할 수 있습니다. ^1^</block>
@@ -1281,7 +1278,6 @@
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Tracker의 CloudShell 이벤트</block>
   <block id="e7a6197673267c30b5dc86e0d5f6c536" category="paragraph">이제 Tracker에서 CloudShell 이벤트를 추적할 수 있습니다.</block>
   <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">단일 가용 영역(단일 AZ) 배포: 하드웨어 장애를 모니터링하고 장애 발생 시 인프라 구성요소를 자동으로 교체하여 가용성을 제공합니다. 가용성 영역 내에서 데이터를 자동으로 복제하여 구성요소 장애로부터 데이터를 보호함으로써 높은 내구성을 제공합니다.</block>
-  <block id="65122529e27ab1e34a08fc55d0f38a93" category="list-text">Automatically(자동): 워크로드 팩토리를 통해 자동 등록과 함께 링크를 생성합니다. 생성된 링크에는 워크로드 팩토리 자동화를 위한 토큰이 자동으로 필요하며, CloudFormation 코드의 수명이 짧습니다. 최대 6시간 동안만 사용할 수 있습니다.</block>
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">타겟 파일 시스템의 복제된 볼륨은 데이터 보호(DP) 볼륨이며 다음과 같은 명명 형식을<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block> 따릅니다.</block>
   <block id="df4c98f43132ebd68d92a0c9822984df" category="list-text">데이터 복제 페이지의 복제 타겟에서 다음을 제공합니다.</block>
   <block id="0cbe076a4ce5208b10cdb81c9e175006" category="list-text">* 기존 정책 선택 *: 드롭다운 메뉴에서 기존 정책을 선택합니다.</block>
@@ -1622,27 +1618,21 @@
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">제공한 사용자가 fsxadmin 사용자가 아니고 나중에 fsxadmin 암호를 재설정해야 하는 경우 AWS 콘솔에서 이 작업을 수행할 수 있습니다.</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* 스토리지 VM 자격 증명 *: 선택 사항. 사용자 이름을 입력합니다. 암호는 이 파일 시스템에 특정하거나 ONTAP 자격 증명에 대해 입력한 것과 동일한 암호를 사용할 수 있습니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
   <block id="37b002845528ac0296b86d28bb71e5a5" category="doc">Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다</block>
-  <block id="2a1f44a051d664b0361d859768b12826" category="paragraph">고급 ONTAP 관리 작업을 수행하려면 워크로드 공장 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 연결을 설정해야 합니다. 연결 설정에는 신규 및 기존 Lambda 링크 연결, 링크 인증 등이 포함됩니다. 링크 연결을 사용하면 AWS FSx for ONTAP API를 통해 사용할 수 없는 FSx for ONTAP 파일 시스템에서 직접 특정 기능을 모니터링하고 관리할 수 있습니다.</block>
-  <block id="c51de18a298cdd25fa9e70493aefa7f4" category="paragraph">FSx for ONTAP 파일 시스템을 정의할 때 계정에 링크를 생성할 수 있습니다. 이 링크는 해당 파일 시스템에 사용되며 다른 FSx for ONTAP 파일 시스템에서 사용할 수 있습니다. 나중에 파일 시스템에 대한 링크를 연결할 수도 있습니다.</block>
-  <block id="e313a3c9bf44cc5cfaada2f84c946a94" category="paragraph">링크에는 인증이 필요합니다. 워크로드 팩토리 자격 증명 서비스에 저장된 자격 증명 또는 AWS Secrets Manager에 저장된 자격 증명을 사용하여 인증을 받을 수 있습니다. 링크당 하나의 인증 방법만 지원됩니다. 예를 들어, AWS Secrets Manager로 링크 인증을 선택한 경우 나중에 인증 방법을 변경할 수 없습니다.</block>
   <block id="3909315ab3cc8353eec0cd02ce0845da" category="admonition">커넥터를 사용하는 경우 AWS Secrets Manager가 지원되지 않습니다.</block>
   <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">새 링크를 연결합니다</block>
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
   <block id="695199449ad50832d8cff3be92e812b3" category="inline-link-macro">워크로드 팩토리에 자격 증명을 추가합니다</block>
   <block id="2f1cd483ab7b6144b733f5155b2026c6" category="list-text">FSx for ONTAP * 탭에서 링크를 연결할 파일 시스템의 세 점 메뉴를 선택한 다음 * 링크 * 를 선택합니다.</block>
   <block id="29abae1dabc3d83e30cbe456ae214256" category="list-text">* AWS Secrets Manager *: 선택 사항. 워크로드 팩토리가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있습니다.</block>
-  <block id="13ecd4f9bb62f6c0730c8f136a58fb36" category="paragraph">링크 배포 스택은 Lambda 권한 정책에 다음과 같은 기본 비밀 관리자 ARN regex를 추가합니다<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block>.</block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">기본 사용 권한에 맞춰 암호를 만들거나 링크 정책에 대한 사용자 지정 사용 권한을 할당할 수 있습니다.</block>
   <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* AWS Secrets Manager로 VPC 전용 엔드포인트 구성 * 은 기본적으로 비활성화됩니다. 이 옵션을 선택하면 VPC 개인 엔드포인트를 로컬로 저장하는 대신 VPC 전용 엔드포인트를 사용하여 암호를 저장합니다.</block>
   <block id="c3b24be1571207cf6200f2d8b54ee7c0" category="paragraph">스택을 성공적으로 만든 후 텍스트 상자에 Lambda ARN을 붙여 넣습니다.</block>
-  <block id="91744aea42b1e1eb3b5b0f486498fe3c" category="paragraph">생성한 링크는 FSx for ONTAP 파일 시스템과 연결됩니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
   <block id="48457d7f94975228307244f863f96fee" category="section-title">기존 링크를 FSx for ONTAP 파일 시스템에 연결합니다</block>
   <block id="531d680092609d3ec7794cd6dd8c39fe" category="paragraph">링크를 생성한 후 하나 이상의 FSx for ONTAP 파일 시스템에 연결합니다.</block>
   <block id="447f36846a239be6be0faf7dc1fa0364" category="list-text">연결 링크 페이지에서 * 기존 링크 연결 * 을 선택하고 링크를 선택한 다음 * 계속 * 을 선택합니다.</block>
   <block id="5b5b11575f2a0c06c832b5cbd1c6dcfe" category="list-text">인증 모드를 선택합니다.</block>
   <block id="219e99148dae7112d47eedc1f49517ae" category="list-text">워크로드 팩토리: 암호를 두 번 입력합니다.</block>
   <block id="b9000423f3d632810a4d8c3550eb4119" category="list-text">AWS Secrets Manager: 비밀 ARN을 입력합니다.</block>
-  <block id="0481a079b29497027474b2f22074dd5a" category="paragraph">비밀 ARN에는 다음 키 유효 쌍이 포함되어야 합니다.</block>
   <block id="91a73bc4f293d9fc4712c2770316ae08" category="list-text">filesystemID = FSx_filesystem_id입니다</block>
   <block id="db1e2f706f83d7a3a9a03793db05422a" category="list-text">password=user_password입니다</block>
   <block id="3179fc8078925ef0503270fd907af44c" category="paragraph">이 링크는 FSx for ONTAP 파일 시스템에 연결됩니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
@@ -2035,4 +2025,17 @@
   <block id="5b4d700431157f8e7dcc17b14d365c7f" category="list-text">\\섬기는 사람</block>
   <block id="6b8258a2b9dce9918a5b42eb1c2de4c6" category="list-text">\\서버\프로젝트</block>
   <block id="710ecb74356fd86fc995d76f7fcb7c5c" category="list-text">\\서버\프로젝트\공유 리소스</block>
+  <block id="3195be56175905f73d7a96220c8058ac" category="paragraph">고급 ONTAP 관리 작업을 수행하려면 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 연결을 설정합니다.  여기에는 새 람다 링크와 기존 람다 링크를 연결하고, 링크를 인증하는 작업이 포함됩니다.  링크 연결을 사용하면 Amazon FSx for ONTAP API를 통해서는 사용할 수 없는 특정 기능을 FSx for ONTAP 파일 시스템에서 직접 모니터링하고 관리할 수 있습니다.</block>
+  <block id="272d4b49948c30687aaaffecca19cb82" category="paragraph">FSx for ONTAP 파일 시스템을 정의할 때 계정에 링크를 만들 수 있습니다.  해당 링크는 해당 파일 시스템에 사용되며, 다른 FSx for ONTAP 파일 시스템에도 사용될 수 있습니다.  나중에 파일 시스템에 대한 링크를 연결할 수도 있습니다.</block>
+  <block id="e76c38630b92f6e32b58c439a30d6e3a" category="paragraph">링크에는 인증이 필요합니다.  워크로드 팩토리 자격 증명 서비스에 저장된 자격 증명이나 AWS Secrets Manager에 저장된 자격 증명을 사용하여 링크를 인증할 수 있습니다.  링크당 하나의 인증 방법만 지원됩니다.  예를 들어 AWS Secrets Manager를 사용하여 링크 인증을 선택한 경우 나중에 인증 방법을 변경할 수 없습니다.</block>
+  <block id="20f231352191b3538a4951e663663903" category="list-text">자동: 워크로드 팩토리를 통해 자동 등록 링크를 생성합니다.  여기에는 워크로드 공장 자동화를 위한 토큰이 필요하며 CloudFormation 코드는 수명이 짧고 최대 6시간 동안 사용할 수 있습니다.</block>
+  <block id="049f730a98eb69627912748561a543b8" category="paragraph">링크 배포 스택은 Lambda 권한 정책에 다음 기본 비밀 관리자 ARN 정규식을 자동으로 추가합니다.<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block> .</block>
+  <block id="2f50ceaec248a408742379493bc7731b" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 검색합니다.</block>
+  <block id="bab25954c067653929b889d687bcb718" category="paragraph">CloudFormation으로 리디렉션 대화 상자가 나타나고 AWS CloudFormation 서비스에서 링크를 만드는 방법이 설명되어 있습니다.</block>
+  <block id="a37cbff3921a52bcde5c7689c912e1f4" category="paragraph">이벤트 페이지에서 링크 생성 상태를 모니터링할 수 있습니다.  이 작업에는 5분 이상 걸리지 않습니다.</block>
+  <block id="305994fbfd694e4b407718361492a83c" category="paragraph">워크로드 팩토리는 링크를 FSx for ONTAP 파일 시스템과 연결합니다.  고급 ONTAP 작업을 수행할 수 있습니다.</block>
+  <block id="9a5abe8b855a4f42f1c70c4b367d9bce" category="paragraph">_filesystemID_는 선택 사항이지만, 비밀 ARN에 다음과 같은 키 유효 쌍이 포함되어 있는지 확인하세요.</block>
+  <block id="1023373ba9dff02b999882804d6dc2ef" category="list-text">filesystemID = FSx_filesystem_id (선택 사항)</block>
+  <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">사용자 = FSx_user</block>
+  <block id="0dcf8b4e3476c0545950d4d61acb625c" category="admonition">AWS Secrets Manager를 인증하려면 사용자가 필요합니다. 이 사용자는 귀하가 제공한 _FSx_user_이거나 FSx for ONTAP 파일 시스템에서 생성된 다른 사용자입니다.  기본 사용자는<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 사용자를 제공하지 않는 경우.</block>
 </blocks>
