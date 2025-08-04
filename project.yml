@@ -109,7 +109,7 @@ sidebar:
         url: "/update-storage-efficiency.html"
       - title: NFS 엑스포트 정책을 관리합니다
         url: "/manage-nfs-export-policy.html"
-      - title: CIFS 공유를 관리합니다
+      - title: SMB/CIFS 공유 관리
         url: "/manage-cifs-share.html"
       - title: 복제된 볼륨을 분할합니다
         url: "/split-cloned-volume.html"

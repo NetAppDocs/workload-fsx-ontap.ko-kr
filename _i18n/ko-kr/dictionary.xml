@@ -205,13 +205,11 @@
   <block id="749bb7d7b85b238efdd51a2af6612da7" category="list-text">데이터 보호 조치 *, * 스냅샷 * 을 선택한 다음 * 스냅샷에서 볼륨 생성 * 을 선택합니다.</block>
   <block id="7703989c08fa05b728e233f271b4650e" category="list-text">Create volume from a snapshot 대화 상자에서 스냅샷 이름을 입력합니다.</block>
   <block id="25b72c08a4a289e6b89fc38db06792a9" category="doc">FSx for ONTAP 볼륨을 생성합니다</block>
-  <block id="80f199570ae102e9c62f81fcbfd159eb" category="list-text">CIFS: Windows 운영 체제용 파일 스토리지 프로토콜입니다</block>
   <block id="8a1e5168feb60a6391f96310159dca9a" category="list-text">NFS: Unix 운영 체제용 파일 스토리지 프로토콜입니다</block>
   <block id="ec38854bd667a882fa1d0b62579b5079" category="list-text">iSCSI: 블록 스토리지 프로토콜</block>
   <block id="6508673a49d08aadcbcf9f2f8ff00354" category="paragraph">볼륨을 생성하기 전에 다음 사전 요구 사항을 검토하십시오.</block>
   <block id="e9e39ba1ad2eaa5aa2abb4485bacab41" category="list-text">스토리지 VM이 있어야 합니다.</block>
   <block id="00f92f962792a32fd0f6d5cdc140d0e0" category="list-text">프로토콜 액세스의 경우 다음을 수행합니다.</block>
-  <block id="fe9dcd57b530281968b3b6d4aabbb89a" category="list-text">CIFS, NFS 또는 iSCSI 중 선택한 프로토콜에 대한 액세스를 구성해야 합니다.</block>
   <block id="f7076d08930c21fd4e8f7fb23c377f92" category="list-text">볼륨 생성 페이지의 일반 세부 정보 아래에서 다음 세부 정보를 제공합니다.</block>
   <block id="62e91320f9cdbfe080b1002592de785b" category="list-text">* 볼륨 이름 *: 볼륨의 이름을 입력합니다.</block>
   <block id="b2e658eb3f11776899234dd87caf3823" category="list-text">* 스토리지 VM 이름 *: 필요에 따라 스토리지 VM 이름을 입력합니다.</block>
@@ -833,7 +831,6 @@
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  워크로드 팩토리의 스냅샷에서 새 FSx for ONTAP 볼륨을 생성하여 시점 복구를 지원합니다.</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP * 탭에서 볼륨 스냅샷이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">볼륨 탭에서 볼륨을 생성할 스냅샷이 있는 볼륨에 대해 점 3개 메뉴를 선택합니다.</block>
-  <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAP은 BlueXP  워크로드 팩토리에서 스냅샷, 볼륨 백업 및 볼륨 복제를 지원합니다.</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.</block>
   <block id="378213b58b31bfb9d173e8b2ad3c0968" category="doc">BlueXP  워크로드 팩토리에서 파일 시스템을 삭제합니다</block>
   <block id="a3101c3638d17143df93e5cfcc3c3a0a" category="list-text">FSx for ONTAP * 탭에서 삭제할 FSx for ONTAP 파일 시스템의 세 점 메뉴를 선택합니다.</block>
@@ -915,7 +912,6 @@
   <block id="4a74309dc15865035b8b93cec28f2a96" category="list-text">정보 아래에서 * FSx for ONTAP backup * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.</block>
   <block id="9f16bb4c9cbb656a02f2d0ac20ae70a8" category="list-text">* 매일 자동 백업 * : 기능을 활성화 또는 비활성화합니다. 이 기능을 비활성화하면 * 적용 * 을 선택합니다. 이 기능을 사용하도록 설정한 경우 다음 단계를 완료합니다.</block>
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
-  <block id="5bdcc5d3e4e631055e0153df468f21d6" category="doc">BlueXP  워크로드 공장에서 볼륨의 CIFS 공유를 관리합니다</block>
   <block id="3d158aba7d5d233ad247917999b7f8f9" category="list-text">볼륨 탭에서 SMB 공유를 변경할 볼륨의 점 3개 메뉴를 선택합니다.</block>
   <block id="3e0b9b190a3e069bed44756ddb118289" category="list-text">홈 페이지의 메뉴에서 * 링크 * 를 선택합니다.</block>
   <block id="cc26ff728c1b9844af11d5c6831287a6" category="paragraph"><block ref="cc26ff728c1b9844af11d5c6831287a6" category="inline-image-macro-rx" type="image"></block></block>
@@ -1026,8 +1022,6 @@
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">닫기 * 를 선택합니다.</block>
   <block id="f3b270238d8c3f46a0b10d724c916e7d" category="list-text">* 최대 전송 속도 *: * 제한 * 을 선택하고 MiB/s 단위의 최대 전송 한도를 입력하십시오 또는 * 무제한 * 을 선택합니다.</block>
   <block id="5ef8b0a1c66a4b2210971848d2ce9752" category="paragraph">복제 관계는 대상 FSx for ONTAP 파일 시스템의 * 복제 관계 * 탭에 표시됩니다.</block>
-  <block id="c866bd28f46aae4b063d835d59832e65" category="list-text">* cifs share *: 다음을 제공합니다.</block>
-  <block id="fbd8f4b666e0f634caa63d615cae9514" category="list-text">* Name *: SMB 액세스를 제공하려면 CIFS 공유 이름을 입력하십시오.</block>
   <block id="a0eaddecd9cba85df3eb61984ad9d41b" category="list-text">* 권한 *: 모든 권한, 읽기/쓰기, 읽기 또는 권한 없음 을 선택한 다음 세미콜론(;)으로 구분된 사용자 또는 그룹을 입력합니다. 사용자 또는 그룹은 대소문자를 구분하며 사용자 도메인은 "domain\username" 형식을 사용하여 포함되어야 합니다.</block>
   <block id="388660e21a97a90db2571da848fc61df" category="inline-link-macro">AWS 자격 증명을 추가합니다</block>
   <block id="df33a8a514c43741a17399e9c12a0427" category="paragraph">또한 계산기 분석의 정확도를 개선할 수 <block ref="10c34fa86244e9acc4f29a59fb8b09f7" category="inline-link-macro-rx"></block>있습니다. 기존 리소스를 기준으로 절약 비율 계산 * 을 선택합니다. 자격 증명 추가 페이지로 리디렉션됩니다. 자격 증명을 추가한 후 FSx for ONTAP와 비교할 기존 리소스를 선택하고 * 절감 효과 탐색 * 을 선택합니다.</block>
@@ -1037,7 +1031,6 @@
   <block id="3902a76bb589f831b404ce1ec9865654" category="list-text">* 계산 보기 *</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="a32b59044667570495820281f09cfa10" category="list-text">* Name *: CIFS 공유의 이름을 입력합니다.</block>
   <block id="8772abd9ec2ca5593300708cb88b5426" category="summary">BlueXP  워크로드 팩토리에서 볼륨 생성 후 스토리지 효율성 설정을 업데이트할 수 있습니다.</block>
   <block id="b31795226510baf520db5a5e2287b56e" category="doc">볼륨의 스토리지 효율성 설정을 업데이트합니다</block>
   <block id="07834469705cb1cae603dc37fac50539" category="paragraph">스토리지 효율성 기능에는 FlexVol volume에서 최적의 공간 절약 효과를 제공하는 중복제거, 데이터 압축, 데이터 컴팩션이 포함됩니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다. 데이터 컴팩션은 더 적은 공간에 더 많은 데이터를 저장하여 스토리지 효율성을 높입니다.</block>
@@ -1110,32 +1103,14 @@
   <block id="42236277fa3913ec4d1fd1e17b26874c" category="paragraph">스케일 업 구성은 모든 지역에서 최대 2GB/s까지 지원됩니다. 다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
   <block id="f23f9e699754fa9634675e68ddb2477a" category="list-text">장기 보존 복제 관계의 경우 마지막 스냅샷만 복구에 사용할 수 있습니다.</block>
   <block id="70b71b7616d1607e66f58defc9384bf3" category="list-text">FSx for ONTAP 파일 시스템에서 iSCSI 볼륨 관리</block>
-  <block id="5b4240cc70ef93fd3963a5a4a1489114" category="summary">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 생성, 사용자 및 그룹 액세스 결정 및 삭제가 포함됩니다.</block>
   <block id="ed2b1c265309f7d9a2006128f317479e" category="paragraph">시작하기 전에 다음을 수행합니다.</block>
   <block id="0162ca60ba3c63c1058d5815f318b75b" category="section-title">볼륨에 대한 CIFS 공유를 생성합니다</block>
-  <block id="cbbe8730f4012f0727071442d89615d6" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유를 생성합니다.</block>
-  <block id="7b83ec4f9189886fea5cbe593c19e290" category="list-text">고급 작업 * 을 선택한 다음 * CIFS 공유 관리 * 를 선택합니다.</block>
-  <block id="212dea300359fc96977228999150178c" category="list-text">CIFS 공유 관리 페이지에서 * CIFS 공유 생성 * 을 선택합니다.</block>
-  <block id="5844bed8558487b50b554f8e08c11861" category="list-text">CIFS 공유 생성 대화 상자에서 다음을 제공합니다.</block>
-  <block id="e8a8f2eb5b946d837e542d5a63fad375" category="paragraph">볼륨에 대한 CIFS 공유가 생성됩니다.</block>
-  <block id="e72636c845db0954868fedab8b9039a9" category="section-title">볼륨의 CIFS 공유를 변경합니다</block>
-  <block id="1865d8e00fbb6200e9726e5afde71e2d" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유 설정을 변경합니다.</block>
-  <block id="ca8738e363c21866f7099ffaef924318" category="list-text">CIFS 공유 관리 페이지에서 CIFS 공유 위에 마우스를 놓고 연필 아이콘을 선택하여 변경합니다.</block>
-  <block id="5a299cf518ea7257993d2714505b5ff2" category="list-text">CIFS 액세스 권한 또는 권한을 부여할 사용자 또는 그룹을 변경합니다.</block>
-  <block id="84779d2a2e99170bfbb6261853aee8d0" category="paragraph">볼륨의 CIFS 공유가 업데이트됩니다.</block>
-  <block id="bb806e2102217ea2d3a0c758e03eb23c" category="section-title">볼륨에 대한 CIFS 공유를 삭제합니다</block>
-  <block id="7fe3781e49adf652332e06e0cf96f9ca" category="paragraph">단계에 따라 볼륨에 대한 CIFS 공유를 삭제합니다.</block>
-  <block id="2385aa1bb13246d1508cfe232ff59c2f" category="list-text">CIFS 공유 관리 페이지에서 CIFS 공유 위에 마우스를 놓고 휴지통 아이콘을 선택하여 삭제합니다.</block>
-  <block id="db881e47b9137977356b0d30938ec851" category="paragraph">CIFS 공유를 삭제하면 CIFS 공유를 사용할 수 없으며 마운트하려는 모든 사용자가 액세스할 수 없게 됩니다.</block>
-  <block id="6b7a52834d577f2e4ac4d587036728f4" category="list-text">삭제를 확인하려면 * 삭제 * 를 선택합니다.</block>
-  <block id="8c880a68f0285449b1f44d4fdeca7cae" category="paragraph">볼륨의 CIFS 공유가 삭제됩니다.</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  워크로드 팩토리 및 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원 등록을 해야 합니다. 워크로드 공장 과는 별도의 웹 기반 콘솔인 BlueXP  콘솔에서 지원을 등록해야 합니다.</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025년 1월 5일</block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
   <block id="d83aca6cf65672d392d39e7c76942a11" category="sidebar">계층화 정책을 변경합니다</block>
   <block id="07b434b23f63ca6490df33b213599320" category="sidebar">NFS 엑스포트 정책을 관리합니다</block>
-  <block id="6026d035efbb2d0fc978d9ab5bb5b084" category="paragraph">BlueXP  워크로드 팩토리에서의 볼륨의 CIFS 공유 관리에는 CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹 결정 및 권한 수준 결정, CIFS 공유 삭제가 포함됩니다.</block>
   <block id="34e81b46b7f1e5e087ae28a3b95e81fb" category="list-text">액세스 권한을 부여할 사용자 또는 그룹 및 권한 수준을 결정합니다.</block>
   <block id="8197cd59767b0d487d39d4530835d10e" category="list-text">스냅샷 정책 이름 * 필드에 스냅샷 정책의 이름을 입력합니다.</block>
   <block id="ed8034815557020cf5cb39ef2e1c8cea" category="paragraph">둘 이상의 주파수를 선택할 수 있습니다.</block>
@@ -1257,7 +1232,6 @@
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025년 2월 2일</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Tracker를 사용하여 작업을 모니터링합니다</block>
   <block id="62e770531a6a6f3e80ca57b3b83bb3db" category="doc">BlueXP  Workload Factory의 데이터 보호 유형</block>
-  <block id="9da70164a8dd044e50707cfb202de218" category="paragraph">FSx for ONTAP은 데이터 보호를 위한 스냅샷, 백업 및 복제를 지원합니다. 불가피한 상황에 대비하고 데이터를 보호하기 위해 데이터 보호 유형을 함께 사용하는 것이 좋습니다.</block>
   <block id="fa7cdd584b5bc6a975df18dc4ebe5895" category="paragraph">BlueXP  워크로드 팩토리에는 Amazon 스토리지 환경을 FSx for ONTAP와 비교하는 스토리지 절감 계산기가 포함되어 있습니다. AWS 자격 증명을 제공하거나 제공하지 않고 절감 효과를 알아보고 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다. AWS 자격 증명을 제공할 때 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택할 수 있으며, 워크로드 팩토리가 자동으로 비교하도록 할 수 있습니다. 계산기는 수동 또는 자동 중 어떤 스토리지 서비스가 스토리지 요구 사항에 가장 낮은 비용을 제공하는지 결정합니다.</block>
   <block id="de62d09e228b6d55e899456a13b153dd" category="list-text">* 효율적인 백업 *: 비상 시 다른 지역에 있는 데이터의 복사본을 사용하여 보호 계층을 추가합니다.</block>
   <block id="669fb0eb9744dc9a4caa9500aa2efdd0" category="list-text">* 인메모리 캐시 및 NVMe 캐시 *: 고유한 인메모리 캐시와 NVMe 캐시를 포함하고 있어 자주 액세스되는 데이터의 성능을 향상시킵니다.</block>
@@ -1322,7 +1296,6 @@
   <block id="d2a2f0e04d26b7123eb9c705ec13e758" category="list-text">이 작업을 완료하는 데 약 30분 정도 걸릴 수 있습니다.</block>
   <block id="1e0df4591e77aee403bcdd8f97b71ee5" category="paragraph">최대 전송 속도를 제한하는 것은 선택 사항이지만 권장됩니다. 제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다.</block>
   <block id="def5ef91837644047b00e3f35f6d9fde" category="paragraph">Lambda가 수행하는 각 트랜잭션마다 요금이 발생합니다. Lambda는 두 시스템 사이에서 프록시 역할을 하기 때문에 Lambda가 파일 시스템의 ONTAP REST API에 요청을 전송하고 해당 응답을 워크로드 팩토리로 다시 전송할 때 비용이 청구됩니다.</block>
-  <block id="427e6edb85323a6bc01bcb3b7cc04394" category="paragraph">변경 사항으로 인해 현재 사용자 또는 그룹이 CIFS 공유에 액세스할 수 없게 될 수 있습니다.</block>
   <block id="8deecf84343cc455d4c3c3eea19e99e4" category="summary">이 기능이 활성화되면 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.</block>
   <block id="b7461c37ab24fcaeffe8427333f04775" category="doc">BlueXP  워크로드 팩토리에서 볼륨의 변경 불가능한 파일을 관리합니다</block>
   <block id="64a89a3651290ba9a03fd440b6a0ebf1" category="paragraph">보존 정책 및 기간, 자동 커밋 기간, 볼륨 추가 모드 등 기능이 설정된 경우 볼륨에 대해 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.</block>
@@ -1656,12 +1629,6 @@
   <block id="f5fd9d1b9ce5cc08e36a81038307b820" category="paragraph">Volumes 테이블에서 하나 이상의 볼륨을 선택한 다음 * Replicate data * 를 선택합니다.</block>
   <block id="69ed1cf6539793c15a93584373cddf2a" category="inline-link-macro">Amazon FSx for NetApp ONTAP으로 멀티프로토콜 워크로드를 지원합니다</block>
   <block id="5b9f6dc6990c28e364a2622ffeadc327" category="list-text">* 보안 스타일 *: 이중 프로토콜 볼륨의 경우 UNIX 또는 NTFS 보안 스타일을 선택합니다. UNIX는 이중 프로토콜 볼륨의 기본 보안 스타일입니다. 이 컨텍스트에서 사용자 매핑에 대한 자세한 지침은 AWS 블로그 문서를 <block ref="2c1778bd252c045607257b2888dcb7e7" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="533c17bbfdfb297420db9af0908070d6" category="paragraph-title">자율 랜섬웨어 보호</block>
-  <block id="574ec9c5ddd82a8b5f61ddf0fa271af2" category="paragraph">ARP(자율적 랜섬웨어 방어)는 NAS(NFS/SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다. 공격이 의심되면 ARP는 예약된 스냅샷에서 제공되는 기존 보호 기능 외에 변경 불가능한 새로운 스냅샷을 생성합니다.</block>
-  <block id="21f577f0ea5f3dd70ea52aea8ea061aa" category="section-title">자율적 랜섬웨어 방어 기능으로 워크로드 데이터를 보호합니다</block>
-  <block id="f351068b144177eacec9ad96b41d01fe" category="paragraph">ARP는 안티바이러스 소프트웨어가 침입에 대한 탐지에 실패한 경우 중요한 추가 방어 계층으로 작용합니다. ARP 정책을 설정하면 모든 스토리지 VM과 기존 볼륨 및 새로 생성된 볼륨에 대해 ARP 정책을 사용할 수 있습니다. ARP가 활성화되면 모든 볼륨과 스토리지 VM을 감지하고 보호합니다. 파일 확장명이 비정상으로 플래그된 경우 경고를 평가해야 합니다.</block>
-  <block id="1508e0c34d51400d3e08d23f67e55cf4" category="list-text">잠재적 랜섬웨어 공격을 인지할 수 있도록 볼륨을 모니터링하십시오.</block>
-  <block id="dc19b739ffb479be1ecc59b561a4a46d" category="list-text">스토리지 VM 및 볼륨에 대한 ARP 정책을 활성화하여 추가 보호 계층을 추가하여 랜섬웨어 공격으로부터 데이터를 보호합니다.</block>
   <block id="49441c63fc169d06940470ec9c0e4b1f" category="paragraph">온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 장기 보존을 위한 스냅샷 변경이 지원되지 않습니다.</block>
   <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">BlueXP  Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="cf6372133f01401bdd9aefc7bead4b10" category="doc">잘 설계된 파일 시스템 구성 구현</block>
@@ -1674,7 +1641,6 @@
   <block id="2f5c8a4d7476b305dbc46e2886046e37" category="inline-link-macro">AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다</block>
   <block id="ec18319549282942e8c5b076a25d2f8e" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">해결 프로세스로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성 문제를 해결하기 전에 권장 사항을 주의 깊게 검토하십시오.</block>
-  <block id="d74f751ba3d9c20ce8b684f638c03719" category="list-text">데이터베이스 타일에서 * 저장소 인벤토리로 이동 * 을 선택합니다.</block>
   <block id="88646e4972ec29fe3299fb6a999ac518" category="list-text">FSx for ONTAP * 탭에서 * 제대로 구성된 상태 * 열로 이동하여 파일 시스템에서 수정할 문제를 선택합니다.</block>
   <block id="fa754c63ed531c1ecb86521f9232d8ff" category="list-text">잘 설계된 파일 시스템의 대시보드에서 구성 문제를 범주, 하위 범주, 상태, 심각도 및 태그로 필터링합니다.</block>
   <block id="5f4f392649432d3064fdf2a04015472b" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항을 주의 깊게 검토하십시오.</block>
@@ -1699,31 +1665,17 @@
   <block id="6e689b7f8d6cc9a26e122d7c07a8dce4" category="paragraph">워크로드 팩토리에서 제공되는 모니터링 기능인 Tracker를 사용하면 FSx for ONTAP, 자격 증명 및 링크 작업의 진행 상황과 상태를 모니터링 및 추적하고, 운영 작업 및 하위 작업에 대한 세부 정보를 검토하며, 문제나 장애를 진단할 수 있습니다.</block>
   <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">Tracker에서 몇 가지 작업을 사용할 수 있습니다. 시간 프레임(최근 24시간, 7일, 14일 또는 30일), 작업 부하, 상태 및 사용자별로 작업을 필터링하고 검색 기능을 사용하여 작업을 찾고 작업 테이블을 CSV 파일로 다운로드할 수 있습니다. 언제든지 Tracker를 새로 고칠 수 있습니다. 그리고 실패한 작업을 빠르게 다시 시도하거나 실패한 작업에 대한 매개 변수를 편집하고 작업을 다시 시도할 수 있습니다.</block>
   <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">추적기는 작업에 따라 두 가지 수준의 모니터링을 지원합니다. 파일 시스템 배포와 같은 각 작업은 작업 설명, 상태, 시작 시간, 작업 기간, 사용자, 영역, 프록시 리소스, 작업 ID 및 모든 관련 하위 작업을 표시합니다. API 응답을 보고 작업 중에 발생한 상황을 파악할 수 있습니다.</block>
-  <block id="04f14b4eaa84636f34182e31484b1726" category="summary">자율적 랜섬웨어 방어는 NAS 환경의 워크로드 분석을 사용하여 랜섬웨어 공격으로 이어질 수 있는 비정상적인 활동을 감지하여 경고합니다.</block>
-  <block id="c66c571c87ea603e3c17b0c92247959a" category="paragraph">ARP를 사용하여 공격자가 몸값을 지불하기 전까지 데이터를 보류하는 서비스 거부 공격으로부터 보호합니다. ARP는 다음을 기반으로 실시간 랜섬웨어 탐지를 제공합니다.</block>
   <block id="0438bb5671845786f65a3d1eaf90ee88" category="list-text">들어오는 데이터를 암호화된 데이터 또는 일반 텍스트로 식별합니다.</block>
   <block id="1060a5e83c2826fc8c8b1026883073b2" category="list-text">다음을 감지하는 분석:</block>
   <block id="29d41a562d1e0cf6008ddada1ff89b18" category="list-text">** Entropy**: 파일에 있는 데이터의 임의 정도를 평가합니다</block>
   <block id="49f145e21418b726261c685bc578f801" category="list-text">** 파일 확장명 형식**: 일반 확장명 형식에 맞지 않는 확장자입니다</block>
   <block id="0fdd857b9b47a1b1938f4a6ad7e2e5cc" category="list-text">** 파일 IOPS**: 데이터 암호화를 통한 비정상적인 볼륨 활동의 급증</block>
-  <block id="27b489b71df4f85131d17484728682c1" category="paragraph">ARP는 적은 수의 파일만 암호화한 후 대부분의 랜섬웨어 공격의 확산을 감지하고 자동으로 조치를 취하여 데이터를 보호하고 의심스러운 공격이 발생하고 있음을 사용자에게 알릴 수 있습니다.</block>
-  <block id="17b537b120fb45da8f3a8deb73a41f9a" category="paragraph">ARP 기능은 Amazon FSx for NetApp ONTAP가 실행되는 ONTAP 버전에 따라 자동으로 업데이트되므로 수동으로 업데이트할 필요가 없습니다.</block>
   <block id="17dd4178e04d0564dec77c6d175b0538" category="list-text">학습 및 활성 모드</block>
-  <block id="b8866443780ac7a18bd449f9619f281d" category="list-text">ARP는 _ 학습 모드 _ 에서 먼저 작동한 다음 자동으로 _ACTIVE 모드 _ 로 전환됩니다.</block>
-  <block id="d6d1503491b6594a0ed3db505864a00d" category="list-text">* 학습 모드 * : ARP를 활성화하면 _learning mode_에서 실행됩니다. 학습 모드에서 FSx for ONTAP 파일 시스템은 엔트로피, 파일 확장명 유형 및 파일 IOPS의 분석 영역을 기반으로 경고 프로필을 개발합니다. 파일 시스템이 작업 부하 특성을 평가할 수 있는 충분한 시간 동안 ARP를 학습 모드로 실행한 후, 작업 부하 공장 출하 시 ARP가 _ACTIVE MODE_로 자동 전환되고 데이터 보호를 시작합니다.</block>
-  <block id="3e9b7cb1d3cc4593f8ed963692136cc7" category="list-text">* 활성 모드 *: ARP가 _ACTIVE MODE_로 전환된 후 FSx for ONTAP는 ARP/AI 스냅샷을 생성하여 위협이 감지될 경우 데이터를 보호합니다.</block>
   <block id="239ddc4cf271c0d534eac546b693606d" category="paragraph">활성 모드에서 파일 확장자가 비정상으로 플래그되는 경우 경고를 평가해야 합니다. 경고를 통해 데이터를 보호하거나 경고를 거짓 긍정 으로 표시할 수 있습니다. 경고를 false positive로 표시하면 경고 프로필이 업데이트됩니다. 예를 들어, 새 파일 확장자에 의해 경고가 트리거되고 이 경고를 false positive로 표시하면 다음에 파일 확장명이 관찰될 때 알림이 수신되지 않습니다.</block>
   <block id="b26873df0260bdc332a7511f6823cf63" category="list-text">지원되지 않는 구성입니다</block>
-  <block id="33bd6420987957559371e36779ee75a6" category="list-text">다음 구성은 ARP 사용을 지원하지 않는다.</block>
   <block id="f6d0d6d273d5a41064a726ad7344030a" category="list-text">SAN/블록 볼륨</block>
   <block id="29ba980a9e9adedc9414ea868c74ebd5" category="list-text">iSCSI 볼륨</block>
   <block id="9b5d8e1ecbbcbb4b027fb2a806b1aab8" category="list-text">NVMe 볼륨</block>
-  <block id="2db718f1067d6b6b7d7127f5fc9e8961" category="section-title">파일 시스템에 대해 Autonomous 랜섬웨어 Protection 을 활성화합니다</block>
-  <block id="49c0eb2938f477a73ea61ab289f6cb49" category="paragraph">파일 시스템에 대한 ARP를 활성화하면 모든 기존 NAS 및 새로 생성된 NAS 볼륨에 대한 보호 기능이 자동으로 추가됩니다.</block>
-  <block id="8464fc56103a4fee1df5080fdac69d95" category="paragraph">ARP를 활성화한 후 공격이 발생하고 공격이 실제로 발생한 것으로 확인되면 BlueXP  워크로드 공장 출하 시 4시간마다 최대 6개의 스냅샷을 사용하는 스냅샷 정책이 자동으로 설정됩니다. 각 스냅샷은 2-5일 동안 잠깁니다.</block>
-  <block id="39980722ce96f89bf4e3f86789582133" category="list-text">FSx for ONTAP * 탭에서 파일 시스템의 3점 메뉴를 선택하여 ARP를 활성화한 다음 * 관리 * 를 선택합니다.</block>
-  <block id="79ebb9debc31f904c653eeee675e0311" category="list-text">정보 아래에서 * Autonomous 랜섬웨어 Protection * 옆의 연필 아이콘을 선택합니다. 마우스를 * Autonomous Ransomware Protection * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 표시됩니다.</block>
-  <block id="45b371382285a51683a79f111c8ba635" category="list-text">Autonomous Ransomware Protection 대화 상자에서 이 기능을 활성화 또는 비활성화합니다.</block>
   <block id="d0850dba70fab390de4d068a106228e1" category="list-text">계속하려면 설명을 수락하십시오.</block>
   <block id="2e262b068e3e98fc54dcb639fe733fae" category="section-title">랜섬웨어 공격을 검증합니다</block>
   <block id="91db9139e923c0acab50e39e6235b26c" category="paragraph">공격이 거짓 경보 또는 진정한 랜섬웨어 사고인지 확인합니다.</block>
@@ -1733,7 +1685,6 @@
   <block id="0b77587206c432dfb02de07eb7de5f6e" category="inline-xref">데이터를 복구합니다</block>
   <block id="7f01d3b02832945eb57f8ecdbd43dd34" category="list-text">공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다. 손상된 볼륨 데이터 복원 대화 상자가 열립니다. 즉시 로 진행하거나 * Close * 를 선택하고 나중에 복구 프로세스를 완료할 수 <block ref="eb7272e44da4aaab68add0924fb123c6" category="inline-xref-macro-rx"></block>있습니다.</block>
   <block id="8abdf8cb49c79ea34cb65b74cbbca9a6" category="section-title">랜섬웨어 공격 후 데이터 복구</block>
-  <block id="d9c1e9f4e1fd9cd2c18799d50187b8f9" category="paragraph">공격이 의심되는 경우 시스템은 해당 시점에 볼륨 스냅샷을 생성하고 해당 복사본을 잠급니다. 나중에 공격이 확인되면 ARP 스냅샷을 사용하여 영향을 받는 파일 또는 전체 볼륨을 복원할 수 있습니다.</block>
   <block id="10509e649157fc75584428f246ab342f" category="paragraph">잠긴 스냅샷은 보존 기간이 끝날 때까지 삭제할 수 없습니다. 그러나 나중에 이 공격을 가양성 공격으로 표시하기로 결정하면 잠긴 복사본이 삭제됩니다.</block>
   <block id="ddee0127b2615f1fdd1f96c77f517a5e" category="paragraph">영향을 받는 파일과 공격 시간을 알면 전체 볼륨을 스냅샷 중 하나로 되돌리는 대신 다양한 스냅샷에서 영향을 받는 파일을 선택적으로 복구할 수 있습니다.</block>
   <block id="7b1eb9297a43d596c916ffd8e47d666c" category="list-text">공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다.</block>
@@ -1849,7 +1800,6 @@
   <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">볼륨 자동 증가를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="f8e03e36604030c79d6107b800f61804" category="list-text">볼륨 inode가 저장 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="837d97ffb35ee510b7ad737132bf4645" category="paragraph">볼륨 용량을 늘리려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="516d1f2096bea0b3e53975d694dd15b4" category="list-text">CIFS 공유를 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="67147bded21b5d35cd1c472eb37c2b10" category="summary">BlueXP 워크로드 팩토리에서 계정과 연결된 링크를 보고, 링크 인증을 위한 비밀번호를 업데이트하고, 링크를 제거할 수 있습니다.</block>
   <block id="173477cd8f978bba4e49c820cc9340cf" category="doc">작업 부하 팩토리 링크 관리</block>
   <block id="bb886f585ca35b437be939f27b5ed296" category="paragraph">워크로드 팩토리 계정과 연결된 링크를 관리하세요. FSx for ONTAP 파일 시스템과 연결된 링크를 확인하고, 링크 인증에 사용되는 비밀번호를 제공하고, 워크로드 팩토리 콘솔에서 링크를 제거할 수 있습니다.</block>
@@ -1862,7 +1812,6 @@
   <block id="934b00a26e238802a369f0478947166f" category="paragraph">변경 불가능한 스냅샷을 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">스냅샷 정책을 할당하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">스냅샷 정책을 제거하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="aef6ece6593a117983fcd0b9e27b2a94" category="paragraph">파일 시스템에 ARP를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
@@ -1915,7 +1864,6 @@
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*사용자 제공*: 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당하려면 이 옵션을 선택합니다. 권한 정책에는 다음 권한이 필요합니다. <block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager를 활성화한 경우에만 권한이 필요합니다.</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
-  <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*링크 등록*: 드롭다운 화살표를 선택하면 AWS CloudFormation 서비스 또는 Terraform을 사용하여 링크를 등록하는 방법에 대한 지침이 확장됩니다. 지침을 따릅니다.</block>
   <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">볼륨을 생성하다</block>
   <block id="32c902b48618ff09c74311dc0eadacf8" category="paragraph">변경 불가능한 파일이 있는 소스 볼륨을 복제할 경우, 소스 볼륨에 있는 변경 불가능한 파일의 보존 기간이 끝날 때까지 대상 볼륨과 파일 시스템이 잠깁니다. 변경 불가능한 파일 기능은 다음과 같은 경우 사용할 수 있습니다. <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block> ONTAP 파일 시스템용 FSx용.</block>
   <block id="5001625507c3b9f08fdabbe789030cf8" category="list-text">워크로드 팩토리 콘솔에 FSx for ONTAP 파일 시스템이 있어야 합니다.</block>
@@ -1976,8 +1924,6 @@
   <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">재조정 중지 대화 상자에서 *중지*를 선택합니다.</block>
   <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">볼륨 재조정 작업이 중지되고 활성 볼륨 이동이 중단됩니다.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025년 6월 29일</block>
-  <block id="b1a94bb6f0b93b26134ff88823a75e78" category="list-text">수동: 수동 등록을 사용하여 링크를 생성합니다. CloudFormation 코드는 작업을 완료하는 데 더 많은 시간을 줍니다. 이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 다른 팀과 작업할 때 유용합니다.</block>
-  <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">이 옵션을 사용하면 AWS CloudFormation에서 링크에 대한 ARN을 추출하여 여기에 보고합니다. 워크로드 팩토리에서는 링크를 수동으로 등록합니다.</block>
   <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*자동*: AWS CloudFormation 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
   <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> .</block>
   <block id="1abe6434c0a72292080ce57490bb16d1" category="paragraph">BlueXP 워크로드 팩토리를 사용하면 1세대 및 2세대 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
@@ -1987,7 +1933,6 @@
   <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*2세대*: 이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
   <block id="2af62906cede15164d81a343aa2da6a4" category="summary">시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다.</block>
   <block id="f778d4dac2542cbef9605e3e41c11ba2" category="doc">볼륨 용량 확인 및 재조정</block>
-  <block id="c271fb4528ce236e85fc9cf102efa8cf" category="paragraph">구성 분석 통찰력과 권장 사항을 활용하여 워크로드 팩토리를 활용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하세요. 잘 설계된 상태를 쉽게 검토하고, 구성 관련 문제를 파악하고, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 취할 수 있습니다.</block>
   <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">워크로드 팩토리의 구성 분석과 잘 설계된 상태에 대해 알아보세요.</block>
   <block id="827070c9ee124a138455bb1007f526f3" category="paragraph"><block ref="827070c9ee124a138455bb1007f526f3" category="inline-link-macro-rx"></block></block>
   <block id="61e6079323dfdf994259df13eb1f5bea" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항과 함께 파일 시스템이 모범 사례를 충족하도록 구성 문제를 자동으로 해결하는 옵션을 제공합니다.</block>
@@ -2038,4 +1983,136 @@
   <block id="1023373ba9dff02b999882804d6dc2ef" category="list-text">filesystemID = FSx_filesystem_id (선택 사항)</block>
   <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">사용자 = FSx_user</block>
   <block id="0dcf8b4e3476c0545950d4d61acb625c" category="admonition">AWS Secrets Manager를 인증하려면 사용자가 필요합니다. 이 사용자는 귀하가 제공한 _FSx_user_이거나 FSx for ONTAP 파일 시스템에서 생성된 다른 사용자입니다.  기본 사용자는<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 사용자를 제공하지 않는 경우.</block>
+  <block id="6a6ae8005c209a1567f9003ea9e5cebe" category="doc">복제 관계 탭 개선</block>
+  <block id="c6a6fda1561189188099a8444886e4b7" category="paragraph">*복제 관계* 탭에서 복제 관계에 대한 자세한 정보를 제공하기 위해 복제 관계 표에 여러 개의 새 열을 추가했습니다.  이제 표에는 다음 열이 포함됩니다.</block>
+  <block id="932acf34d9bec3ecdd131ec5df85300a" category="list-text">SnapMirror 정책</block>
+  <block id="7d93b9eb1786d863bc7d27df5febb919" category="list-text">소스 파일 시스템</block>
+  <block id="144b2facd92022aa813f8fba914dfa05" category="list-text">대상 파일 시스템</block>
+  <block id="e56f83171e12921713ed939e1572ddaf" category="list-text">관계의 상태</block>
+  <block id="f1b110a50dd5467d821019e318f363a2" category="list-text">마지막 환승 시간</block>
+  <block id="8fc34772d0100e115cdb03c17176f5bc" category="section-title">AI(ARP/AI)를 통한 NetApp 자율 랜섬웨어 보호 기능 향상</block>
+  <block id="5cd47e76c4117ef90e78977edb2349c2" category="paragraph">이번 릴리스에서는 랜섬웨어 보호 기능에 인공 지능을 통합한 것을 더 잘 반영하기 위해 "NetApp 자율형 랜섬웨어 보호(ARP/AI)"라는 업데이트된 용어를 소개합니다.</block>
+  <block id="d0ab441d90a6563b6caf3b18a96b121c" category="paragraph">또한 ARP/AI에 다음과 같은 개선 사항이 적용되었습니다.</block>
+  <block id="19f6fcd2887386ba088303687102d4fd" category="list-text">볼륨 수준 ARP/AI: 이제 볼륨 수준에서 ARP/AI를 활성화하여 FSx for ONTAP 파일 시스템 내의 특정 볼륨을 보호할 수 있습니다.</block>
+  <block id="ef292cf56fa95b6bcb87c8b89a0273e1" category="list-text">자동 스냅샷 생성: ARP/AI 정책을 설정하여 자동 스냅샷을 생성하고 ARP/AI가 활성화된 볼륨에 대해 스냅샷을 생성하는 빈도를 정의하여 데이터 보호 전략을 강화할 수 있습니다.</block>
+  <block id="7ebe1fb355350f028323680fa93854c0" category="list-text">변경 불가능한 스냅샷: ARP/AI는 이제 삭제나 수정이 불가능한 변경 불가능한 스냅샷을 지원하여 랜섬웨어 공격에 대한 보안을 한층 강화했습니다.</block>
+  <block id="dc86b2499972aa0a3c70449e20618ca2" category="list-text">탐지: 볼륨 수준에서 높은 엔트로피 데이터 전송률, 파일 생성률, 파일 이름 변경률, 파일 삭제률, 동작 분석과 이전에 본 적이 없는 파일 확장자 등 다양한 탐지 방법을 포함하여 이상 징후와 잠재적인 랜섬웨어 공격을 탐지하는 데 도움이 됩니다.</block>
+  <block id="0b3b06fcd7ae5de19a9937c92e9669fe" category="inline-link-macro">AI(ARP/AI)를 탑재한 NetApp Autonomous Ransomware Protection으로 데이터를 보호하세요</block>
+  <block id="b4b81f7655965069dc9b6d72c40d3191" category="paragraph"><block ref="b4b81f7655965069dc9b6d72c40d3191" category="inline-link-macro-rx"></block></block>
+  <block id="4a854a1349dc1900974f3bf6a9552245" category="section-title">잘 설계된 분석 업데이트</block>
+  <block id="3c7a76fc8745c5306663d7f95b167472" category="paragraph">Workload Factory는 이제 다음 구성에 대해 FSx for ONTAP 파일 시스템을 분석합니다.</block>
+  <block id="e30059be004aa836033b5a45f85d0fe0" category="list-text">장기 보존 데이터 안정성: 소스 볼륨의 스냅샷 정책에 할당된 레이블이 장기 보존 정책에 할당된 레이블과 동일한지 확인합니다.  레이블이 동일하면 소스 볼륨과 대상 볼륨 간의 데이터 복제가 안정적으로 이루어집니다.</block>
+  <block id="d991a7b8584b3d26f44a90d9e27f7f7d" category="list-text">AI(ARP/AI)를 탑재한 NetApp 자율형 랜섬웨어 보호: 파일 시스템에서 ARP/AI가 활성화되어 있는지 확인합니다.  이 기능은 랜섬웨어 공격을 탐지하고 복구하는 데 도움이 됩니다.</block>
+  <block id="2a708c78876e2ad54c0b8577c3b2bbd5" category="paragraph"><block ref="2a708c78876e2ad54c0b8577c3b2bbd5" category="inline-link-macro-rx"></block></block>
+  <block id="e3d4a0c1fd9bad5ddfe8b2fc326f6d42" category="section-title">잘 설계된 분석에서 구성을 해제합니다.</block>
+  <block id="0b27c1a80fbacb5253a337c3d45236f9" category="paragraph">이제 잘 설계된 분석에서 하나 이상의 구성을 해제할 수 있습니다.  이를 통해 현재 처리하고 싶지 않은 특정 구성을 무시할 수 있습니다.</block>
+  <block id="c4a9d2577a7099266e1214d55f11cf0b" category="paragraph"><block ref="c4a9d2577a7099266e1214d55f11cf0b" category="inline-link-macro-rx"></block></block>
+  <block id="f83708b425052a7f19c02dfd5c3d0688" category="section-title">링크 생성을 위한 Terraform 지원</block>
+  <block id="19c03fb90a9425b9fecd16c7b0e03e4e" category="paragraph">이제 Codebox에서 Terraform을 사용하여 FSx for ONTAP 파일 시스템과의 연결을 위한 링크를 생성할 수 있습니다.  이 기능은 수동으로 링크를 만드는 사용자를 위한 것입니다.</block>
+  <block id="b1dfc57db13615cb83125300396102cb" category="section-title">저장소 절약 탐색을 위한 새로운 지역 지원</block>
+  <block id="dc2d48a6756b8920e1a0b103864fa0c3" category="paragraph">이제 다음과 같은 새로운 지역에서 Amazon Elastic Block Store(EBS), FSx for Windows File Server 및 Elastic File Systems(EFS)에 대한 절감을 탐색할 수 있습니다.</block>
+  <block id="8dbb07a18d46f63d8b3c8994d5ccc351" category="list-text">멕시코</block>
+  <block id="103357e3e40a9c0e4e9d36110f7bbc7a" category="list-text">태국</block>
+  <block id="743828d5c9c11b38d3dbbf76d787f497" category="section-title">SMB/CIFS 주식 생성 및 관리 기능 향상</block>
+  <block id="421075462886e558113f14b52fe22487" category="paragraph">이제 볼륨 내의 디렉토리를 가리키는 SMB/CIFS 공유를 만들 수 있습니다.  볼륨 내에서 어떤 공유가 있는지, 공유가 가리키는 곳은 어디인지, 특정 사용자와 그룹에 부여된 권한은 무엇인지 확인할 수 있습니다.</block>
+  <block id="4662a232249c09ca958781da08211b0c" category="paragraph">데이터 보호 볼륨의 경우, SMB/CIFS 공유를 생성하는 흐름에 이제 마운트 목적으로 볼륨에 대한 연결 경로를 생성하는 작업이 포함됩니다.</block>
+  <block id="5f08db4267e771ad7b348d338d92e0e6" category="paragraph"><block ref="5f08db4267e771ad7b348d338d92e0e6" category="inline-link-macro-rx"></block></block>
+  <block id="952da3361b1e3ca5daa8c23a39780e18" category="list-text">수동: Codebox에서 CloudFormation이나 Terraform을 사용하여 수동 등록 링크를 만듭니다.  코드가 지속되면 작업을 완료할 수 있는 시간이 더 늘어납니다.  이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 여러 팀과 작업할 때 유용합니다.</block>
+  <block id="d244d1524bd960c99e9fef848ac5ce4a" category="paragraph">Codebox의 두 가지 Infrastructure-as-Code(IaC) 도구인 CloudFormation 또는 Terraform을 사용하여 링크를 만들 수 있습니다.  이 옵션을 사용하면 AWS CloudFormation에서 링크의 ARN을 추출하여 여기에 보고할 수 있습니다.  Workload Factory가 수동으로 링크를 등록해 줍니다.</block>
+  <block id="272404907923a583d38661d1f77a2a8c" category="list-text">링크 생성 페이지에서 코드박스에서 CloudFormation 또는 Terraform을 선택한 후 다음을 제공합니다.</block>
+  <block id="1ca9512c09f6b26312a475fda293b54a" category="list-text">*링크 등록*: 링크 등록 방법에 대한 지침을 보려면 CloudFormation 또는 Terraform을 선택하고 지침을 따르세요.</block>
+  <block id="aeb7b1f8e40a81f588a0d8770c9826d3" category="list-text">SMB/CIFS: Windows 운영 체제용 파일 저장 프로토콜</block>
+  <block id="77e7ba17717c79352c95d49bede81697" category="list-text">SMB/CIFS, NFS 또는 iSCSI 중 선택한 프로토콜에 대한 액세스를 구성해야 합니다.</block>
+  <block id="aa10f9c969547bf6e65a90292b199a04" category="list-text">*SMB/CIFS 공유*: 다음을 제공하세요.</block>
+  <block id="0501b0ca4910884e166c84cdd295258b" category="list-text">*이름*: 액세스를 제공하려면 SMB/CIFS 공유 이름을 입력하세요.</block>
+  <block id="49ebf0fed62bc026bfcf506efb619f8b" category="summary">FSx for ONTAP BlueXP workload factory 에서 스냅샷, AI를 탑재한 NetApp Autonomous Ransomware, 볼륨 복제 및 백업을 지원합니다.</block>
+  <block id="8fce13e23e45f4c379764b482e8192ee" category="paragraph">FSx for ONTAP 데이터 보호를 위해 스냅샷, AI를 활용한 NetApp Autonomous Ransomware Protection, 복제 및 백업을 지원합니다.  불가피한 상황에 대비하고 데이터를 보호하려면 다양한 데이터 보호 유형을 조합하여 사용하는 것이 좋습니다.</block>
+  <block id="7bae44bdb653835d27454b86b3e82971" category="paragraph-title">AI를 활용한 NetApp 자율형 랜섬웨어 보호</block>
+  <block id="4c308d3b417df36af8758cd7e5c49852" category="paragraph">AI(ARP/AI)를 탑재한 NetApp Autonomous Ransomware Protection은 NAS(NFS/SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다.  공격이 의심되는 경우 ARP/AI는 예약된 스냅샷에서 제공하는 기존 보호 기능 외에도 변경 불가능한 새로운 스냅샷을 생성합니다.</block>
+  <block id="b5dc11131d07e6b80a82ac57f0094e82" category="section-title">AI를 활용한 NetApp Autonomous Ransomware Protection으로 워크로드 데이터를 보호하세요</block>
+  <block id="cf543fd6dd3f50a958aecb8ddcc73e35" category="paragraph">AI(ARP/AI)를 탑재한 NetApp 자율형 랜섬웨어 보호 기능은 바이러스 백신 소프트웨어가 침입을 감지하지 못한 경우 중요한 추가 방어 계층 역할을 합니다.  ARP/AI 정책을 설정하면 모든 스토리지 VM과 모든 기존 볼륨, 새로 생성된 볼륨에 대해 해당 정책이 활성화됩니다.  ARP/AI를 활성화하면 모든 볼륨과 스토리지 VM을 감지하고 보호합니다.  파일 확장자가 비정상으로 표시되는 경우 알림을 평가해야 합니다.</block>
+  <block id="10cddc5c7e6cd81d7056d1293652526e" category="list-text">랜섬웨어 공격으로부터 데이터를 보호하기 위해 파일 시스템이나 개별 볼륨에 ARP/AI 정책을 활성화하여 보호 계층을 추가하세요.</block>
+  <block id="9e80eb5f60c3e6303ec2b83e40c88171" category="paragraph">구성 분석 통찰력과 권장 사항을 활용하여 워크로드 팩토리를 활용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현합니다.  잘 설계된 상태를 쉽게 검토하고, 구성에 있는 문제점을 파악하고, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 취할 수 있습니다.</block>
+  <block id="b2a386f5924b478e19e471dfee7196f1" category="paragraph">불필요한 알림과 부정확한 최적화 결과를 방지하기 위해 스토리지 환경에 적용되지 않는 특정 스토리지 구성에 대한 분석을 취소할 수도 있습니다.</block>
+  <block id="2fe18b688cc61d042ef62fb924155b95" category="paragraph">스토리지 구성에 대한 요구 사항은 다양하므로 스토리지 환경에 적용되지 않는 특정 구성에 대한 분석은 무시할 수 있습니다.  이를 통해 불필요한 알림과 부정확한 최적화 결과를 방지할 수 있습니다.  특정 구성 분석이 무시되면 해당 구성은 전체 최적화 점수에 포함되지 않습니다.</block>
+  <block id="3043237188bfe3f198084dbfe55d05c0" category="list-text">AI(ARP/AI)를 활용한 NetApp 자율형 랜섬웨어 보호</block>
+  <block id="463247c07f2fa8a2ac3d1b0c667943ab" category="list-text">장기 보존을 위한 데이터 안정성</block>
+  <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">구성 문제 해결</block>
+  <block id="4d39d4688820662a72b89ef0ab12f050" category="paragraph">FSx for ONTAP 파일 시스템이나 파일 시스템의 선택된 볼륨에 대한 구성 문제를 해결할 수 있습니다.  수정할 구성을 하나 이상 선택할 수 있습니다.</block>
+  <block id="de4d6356afc9d2a527b5ba60bf318912" category="list-text">저장소 타일에서 *저장소 인벤토리로 이동*을 선택하세요.</block>
+  <block id="a46fab6bb1626887eac54858dc05cb71" category="section-title">구성 분석 취소</block>
+  <block id="1dd413b1d5dbc704e4019462bbd02454" category="paragraph">FSx for ONTAP 파일 시스템 또는 파일 시스템의 선택된 볼륨에 대한 구성 분석을 무기한 중지합니다.  필요할 때 분석을 다시 시작할 수 있습니다.</block>
+  <block id="790f15f2dc58a8507d72b3246a8877ab" category="open-title">파일 시스템에 대한 구성 분석 취소</block>
+  <block id="70fa6c43d25e055f9a8a524f00c80978" category="paragraph">FSx for ONTAP 파일 시스템에 대한 구성 분석을 무기한 중지합니다.  필요할 때 분석을 다시 시작할 수 있습니다.</block>
+  <block id="74bbf928e378fb9f3f5d1df18afce560" category="list-text">*FSx for ONTAP* 탭에서 세 개의 점 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="803158473fffdccd802e7a7e4c6d8f56" category="list-text">FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.</block>
+  <block id="f32796540d7a56263a0a741100718a24" category="list-text">*구성*에서 해제하려는 구성을 확인하고 *해제*를 선택합니다.</block>
+  <block id="7efbc096eb8818df22ad0ea26cc99905" category="list-text">구성에 대한 분석을 중지하려면 *취소*를 선택하세요.</block>
+  <block id="894ee870661e494e23b4326cec5b3c29" category="open-title">볼륨에 대한 구성 분석 해제</block>
+  <block id="c4389cda417bf7ff5e8369b4f3c44508" category="list-text">*구성*에서 선택한 볼륨에 대해 해제할 구성을 식별하고 *보기 및 수정*을 선택합니다.</block>
+  <block id="dc02d230063197c289b523cd8ff92c94" category="list-text">구성 분석에서 제외할 볼륨을 식별합니다.</block>
+  <block id="d0920d8784fb9a3e496b7e252dfe0e8d" category="list-text">한 권의 경우: 세 개의 점 메뉴를 선택한 다음 *볼륨 해제*를 선택하세요.</block>
+  <block id="3f889fd8964613c4779327d83f4c785f" category="list-text">여러 볼륨의 경우: 볼륨을 선택한 다음 대량 작업 옆에 있는 *취소*를 선택합니다.</block>
+  <block id="2773330e4a665ad4a0b2217458b38f4d" category="list-text">볼륨 해제 대화 상자에서 *해제*를 선택하여 확인합니다.</block>
+  <block id="4efb66376fe86e922a4b798dd8aa07fa" category="paragraph">파일 시스템 또는 선택한 볼륨에 대한 구성 분석이 중지됩니다.</block>
+  <block id="d6b510061438391f590afb73a62f098c" category="paragraph">언제든지 분석을 다시 활성화할 수 있습니다.  해당 구성은 더 이상 전체 최적화 점수에 포함되지 않습니다.</block>
+  <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">기각된 구성 분석 다시 활성화</block>
+  <block id="99206ff00921c00b5d887375a108d167" category="paragraph">언제든지 중단된 구성 분석을 다시 활성화할 수 있습니다.  하나 이상의 구성을 선택하여 다시 활성화할 수 있습니다.</block>
+  <block id="15adceeecdf87115b046ea511022c89f" category="open-title">파일 시스템에 대한 구성 분석 다시 활성화</block>
+  <block id="4526abd79091fbcd814fd21ee997ec5f" category="list-text">*구성* 옆에서 *닫힌 구성*을 선택합니다.</block>
+  <block id="6cc17f569421e25f5da482d49cdd0b5e" category="list-text">다시 활성화하려는 구성을 확인하고 *다시 활성화*를 선택합니다.</block>
+  <block id="bdd22c2e5887702579495ffc45a2a208" category="open-title">볼륨에 대한 구성 분석 다시 활성화</block>
+  <block id="cdc86aab74892dbba57c0a518dfdbc49" category="list-text">*구성*에서 선택한 볼륨에 대해 다시 활성화할 구성을 식별하고 *보기 및 수정*을 선택합니다.</block>
+  <block id="a6d91f466d4bad114b9a0f88a90da3cd" category="list-text">구성 분석을 통해 다시 활성화할 볼륨을 식별합니다.</block>
+  <block id="2b3024bdac068e8df994ec72c8c218db" category="list-text">볼륨 1개: 3개 점 메뉴를 선택한 다음 *볼륨 다시 활성화*를 선택합니다.</block>
+  <block id="98962b66e5cd6d68ed29081a50cd1c88" category="list-text">여러 볼륨의 경우: 볼륨을 선택한 다음 대량 작업 옆에 있는 *다시 활성화*를 선택합니다.</block>
+  <block id="a5e6ad8abf9cc43f6580d1982bac3543" category="paragraph">구성 분석이 다시 활성화됩니다.  매일 새로운 분석이 진행됩니다.</block>
+  <block id="156bc37d49d8aed229c5707c28011d4d" category="summary">워크로드 팩토리에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 생성, 사용자 및 그룹 액세스 결정, 삭제가 포함됩니다.</block>
+  <block id="88bf3e9ef8d6b989b1921c5e10972e07" category="doc">워크로드 팩토리의 볼륨에 대한 SMB/CIFS 공유 관리</block>
+  <block id="584a2d65cf651d972864b3f5ad2d2199" category="paragraph">Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SMB/CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹과 이들에게 부여할 권한 수준 결정, SMB/CIFS 공유 삭제가 포함됩니다.</block>
+  <block id="94ece9ea1a77966f2acd9441eeb32f2f" category="list-text">SMB/CIFS 공유를 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block> .  링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="8862b4eacf59c99ed5fc21bc27f472cc" category="section-title">볼륨에 대한 SMB/CIFS 공유 만들기</block>
+  <block id="39a213f7d31d9201e8ff881a73e3819c" category="paragraph">볼륨에 대한 SMB/CIFS 공유를 생성하는 단계를 따르세요.</block>
+  <block id="3eb0695d4750920a7dd8ea4164e63096" category="list-text">*고급 작업*을 선택한 다음 *SMB/CIFS 공유 관리*를 선택합니다.</block>
+  <block id="9352d1a5727d5d9aa5a6f2a68ae9e5e6" category="list-text">SMB/CIFS 공유 관리 페이지에서 *SMB/CIFS 공유 만들기*를 선택합니다.</block>
+  <block id="1a48e06da0e3b149e96f37b49e942458" category="list-text">SMB/CIFS 공유 만들기 대화 상자에서 다음을 제공합니다.</block>
+  <block id="166f79e88e102804054f757399fa341a" category="list-text">*이름*: SMB/CIFS 공유의 이름을 입력하세요.</block>
+  <block id="f9aedafad72af5e844599785dc696d0d" category="section-title">볼륨에 대한 SMB/CIFS 공유 변경</block>
+  <block id="64afb3648a582f99aceae0196e4fc7c5" category="paragraph">볼륨의 SMB/CIFS 공유 설정을 변경하려면 다음 단계를 따르세요.</block>
+  <block id="bd962b4ad3e778f4780756fe75a4ce0e" category="list-text">SMB/CIFS 공유 관리 페이지에서 *보기 및 편집*을 선택합니다.</block>
+  <block id="44b94eaad24bc4f24976e887d578d8b9" category="list-text">SMB/CIFS 액세스 권한 또는 권한을 부여할 사용자나 그룹을 변경합니다.</block>
+  <block id="b5a5d40db159b6173a6d6154ef08de0e" category="paragraph">변경으로 인해 현재 사용자나 그룹이 SMB/CIFS 공유에 대한 액세스 권한을 잃을 수 있습니다.</block>
+  <block id="14186cf4cea8fee6a6157d47391aae21" category="section-title">볼륨에 대한 SMB/CIFS 공유 삭제</block>
+  <block id="b01b37af09f4438a0edf536fee6ee774" category="paragraph">볼륨의 SMB/CIFS 공유를 삭제하려면 다음 단계를 따르세요.</block>
+  <block id="7b8c09b5beac2d517eddfcd2bad77f9b" category="list-text">SMB/CIFS 공유 관리 페이지에서 SMB/CIFS 공유의 세 점 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
+  <block id="dc782d3e46ef3bd4b9ae294af16366b0" category="paragraph">SMB/CIFS 공유를 삭제하면 해당 공유를 마운트하려는 모든 사용자가 해당 공유를 사용할 수 없고 액세스할 수 없게 됩니다.</block>
+  <block id="73d6e57b628ed920f4ce69e52d8df9d7" category="list-text">SMB/CIFS 공유 삭제 대화 상자에서 *삭제*를 선택하여 삭제를 확인합니다.</block>
+  <block id="767e43079c8ad05b4d262cf68c217644" category="summary">AI(ARP/AI)를 탑재한 NetApp Autonomous Ransomware Protection은 NAS 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다.</block>
+  <block id="998611c020287338b0e962b507511c46" category="doc">AI를 활용한 NetApp 자율형 랜섬웨어 보호로 데이터를 보호하세요</block>
+  <block id="add00ed16085ed2381a03aa4c8f20a00" category="paragraph">AI(ARP/AI)를 탑재한 NetApp Autonomous Ransomware Protection으로 데이터를 보호하세요. 이 기능은 NAS(NFS/SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다.  공격이 의심되는 경우 ARP/AI는 데이터를 복원할 수 있는 변경 불가능한 새로운 스냅샷을 생성합니다.</block>
+  <block id="1dee40f78f31696a01245dd5be3f3382" category="paragraph">ARP/AI를 사용하여 공격자가 몸값을 지불할 때까지 데이터를 숨기는 서비스 거부 공격으로부터 보호합니다.  ARP/AI는 다음을 기반으로 실시간 랜섬웨어 감지 기능을 제공합니다.</block>
+  <block id="87a09ae23e8a5437f45a7f7430ba7565" category="paragraph">ARP/AI는 소수의 파일만 암호화된 후 대부분의 랜섬웨어 공격이 확산되는 것을 감지하고, 자동으로 조치를 취해 데이터를 보호하며, 의심되는 공격이 발생했을 때 경고를 보냅니다.</block>
+  <block id="3d892826b81878b82d3bd5353e94ce1a" category="paragraph">ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에 따라 자동으로 업데이트되므로 수동으로 업데이트할 필요가 없습니다.</block>
+  <block id="2469529a30f5bbb492484458ae939451" category="list-text">ARP/AI는 먼저 _학습 모드_에서 작동한 후 자동으로 _활성 모드_로 전환됩니다.</block>
+  <block id="4f92e4e0a89b7b5e6f68d17476d4e5bc" category="list-text">*학습 모드*: ARP/AI를 활성화하면 _학습 모드_로 실행됩니다.  학습 모드에서 FSx for ONTAP 파일 시스템은 엔트로피, 파일 확장자 유형, 파일 IOPS 등의 분석 영역을 기반으로 알림 프로필을 개발합니다.  파일 시스템이 워크로드 특성을 평가하기에 충분한 시간 동안 ARP/AI를 학습 모드로 실행한 후, 워크로드 팩토리는 자동으로 ARP/AI를 _활성 모드_로 전환하고 데이터 보호를 시작합니다.</block>
+  <block id="d3aac0b85a4a98813bf9ced9d70c7370" category="list-text">*활성 모드*: ARP/AI가 _활성 모드_로 전환된 후, FSx for ONTAP 은 위협이 감지되면 데이터를 보호하기 위해 ARP/AI 스냅샷을 생성합니다.</block>
+  <block id="fa4c28f427b28e224da4284dcc124897" category="list-text">다음 구성은 ARP/AI 사용을 지원하지 않습니다.</block>
+  <block id="18c9bfe30b0887116855a65d0152a33b" category="section-title">파일 시스템 또는 볼륨에 대해 ARP/AI 활성화</block>
+  <block id="1a80c74f05c78f26f4d552f980bf8647" category="paragraph">파일 시스템에 ARP/AI를 활성화하면 모든 기존 NAS와 새로 생성된 NAS(NFS/SMB) 볼륨에 대한 보호가 자동으로 추가됩니다.  개별 볼륨에 대해 ARP/AI를 활성화할 수도 있습니다.</block>
+  <block id="4208190408e1286cae4f0c5a756b2700" category="paragraph">ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인되면 워크로드 팩토리는 4시간마다 최대 6개의 스냅샷을 생성하는 스냅샷 정책을 자동으로 설정합니다.  각 스냅샷은 2~5일 동안 잠금됩니다.</block>
+  <block id="f03bda164bfeeaa7c09f85689862bd05" category="paragraph">파일 시스템이나 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block> .  링크가 연결되면 이 작업으로 돌아갑니다.</block>
+  <block id="9af6115dc697f592721e21923c19d17f" category="open-title">파일 시스템에 ARP/AI 활성화</block>
+  <block id="8a3ef2a1b8cb9646b020d64b25082559" category="list-text">*FSx for ONTAP* 탭에서 ARP/AI를 활성화할 파일 시스템의 3개 점 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="f371cba680893ef0527a9cf573867c3b" category="list-text">정보에서 *자율 랜섬웨어 보호* 옆에 있는 연필 아이콘을 선택하세요.  마우스를 *자율 랜섬웨어 보호* 행 위에 올려놓으면 화살표 옆에 연필 아이콘이 나타납니다.</block>
+  <block id="6d9dcefd190935b4cd500a98bedd247f" category="list-text">AI(ARP/AI)를 통한 NetApp 자율형 랜섬웨어 보호 페이지에서 다음을 수행합니다.</block>
+  <block id="a1b62b0e574327e4f486e1c44fc0a0ae" category="list-text">기능을 활성화하거나 비활성화합니다.</block>
+  <block id="2d136665168eebd267f13b3abdece442" category="list-text">*자동 스냅샷 생성*: 보관할 스냅샷의 최대 개수와 스냅샷을 찍는 간격을 선택합니다.  기본값은 4시간마다 6개의 스냅샷을 찍는 것입니다.</block>
+  <block id="e3aa614b0b7d2a54d5faf82aad0dbb02" category="list-text">*변경 불가능한 스냅샷*: 기본 보존 기간(시간)과 변경 불가능한 스냅샷을 보존할 최대 일수를 선택합니다.  이 옵션을 활성화하면 지정된 보존 기간이 끝날 때까지 스냅샷을 삭제하거나 수정할 수 없습니다.</block>
+  <block id="d70cc7512b30819cfdf359cc99f4c563" category="list-text">*탐지*: 선택적으로 다음 매개변수 중 하나를 선택하여 자동으로 이상을 스캔하고 감지합니다.</block>
+  <block id="7c046c7fd2fa492a993883c5669d09ce" category="open-title">볼륨에 대해 ARP/AI 활성화</block>
+  <block id="c3db078a6f8808ba8129abfba9fffe8d" category="list-text">볼륨 탭에서 볼륨의 3개 점 메뉴를 선택하여 ARP/AI를 활성화한 다음, *데이터 보호 작업*을 선택하고 *ARP/AI 관리*를 선택합니다.</block>
+  <block id="c67c272ec9fba56bef92b7a9e3d42f6f" category="list-text">ARP/AI 관리 대화 상자에서 다음을 수행합니다.</block>
+  <block id="eaba2a7eb36250fc59ebf37ea423ebd5" category="paragraph">공격이 의심되면 시스템은 해당 시점의 볼륨 스냅샷을 찍고 해당 복사본을 잠급니다.  나중에 공격이 확인되면 ARP/AI 스냅샷을 사용하여 영향을 받은 파일이나 전체 볼륨을 복원할 수 있습니다.</block>
+  <block id="613abd0d9da6f7ee37d283174e11fcaf" category="section-title">2025년 8월 3일</block>
+  <block id="1595965c84afe577a4228c0f8a132a00" category="sidebar">SMB/CIFS 공유 관리</block>
 </blocks>
