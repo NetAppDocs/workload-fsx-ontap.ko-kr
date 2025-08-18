@@ -1630,7 +1630,6 @@
   <block id="69ed1cf6539793c15a93584373cddf2a" category="inline-link-macro">Amazon FSx for NetApp ONTAP으로 멀티프로토콜 워크로드를 지원합니다</block>
   <block id="5b9f6dc6990c28e364a2622ffeadc327" category="list-text">* 보안 스타일 *: 이중 프로토콜 볼륨의 경우 UNIX 또는 NTFS 보안 스타일을 선택합니다. UNIX는 이중 프로토콜 볼륨의 기본 보안 스타일입니다. 이 컨텍스트에서 사용자 매핑에 대한 자세한 지침은 AWS 블로그 문서를 <block ref="2c1778bd252c045607257b2888dcb7e7" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="49441c63fc169d06940470ec9c0e4b1f" category="paragraph">온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 장기 보존을 위한 스냅샷 변경이 지원되지 않습니다.</block>
-  <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">BlueXP  Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="cf6372133f01401bdd9aefc7bead4b10" category="doc">잘 설계된 파일 시스템 구성 구현</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">분석 대상</block>
   <block id="ee519805bc36a437f398c40154b9f4f0" category="list-text">워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 다음 구성의 체계적으로 설계된 상태를 분석합니다.</block>
@@ -2115,4 +2114,5 @@
   <block id="eaba2a7eb36250fc59ebf37ea423ebd5" category="paragraph">공격이 의심되면 시스템은 해당 시점의 볼륨 스냅샷을 찍고 해당 복사본을 잠급니다.  나중에 공격이 확인되면 ARP/AI 스냅샷을 사용하여 영향을 받은 파일이나 전체 볼륨을 복원할 수 있습니다.</block>
   <block id="613abd0d9da6f7ee37d283174e11fcaf" category="section-title">2025년 8월 3일</block>
   <block id="1595965c84afe577a4228c0f8a132a00" category="sidebar">SMB/CIFS 공유 관리</block>
+  <block id="b8bfbf72dc92e989a0b91cd409144076" category="summary">Workload Factory는 Amazon FSx for NetApp ONTAP 구성을 스캔하여 운영적 우수성을 달성하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
 </blocks>
