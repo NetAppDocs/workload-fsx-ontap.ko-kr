@@ -53,7 +53,7 @@ sidebar:
       entries:
       - title: 데이터 보호 개요
         url: "/data-protection-overview.html"
-      - title: 스냅샷을 관리합니다
+      - title: 스냅샷을 사용하세요
         entries:
         - title: 스냅샷을 생성합니다
           url: "/create-snapshot.html"
@@ -61,15 +61,13 @@ sidebar:
           url: "/create-snapshot-policy.html"
         - title: 스냅숏에서 볼륨을 복원합니다
           url: "/restore-volume-from-snapshot.html"
-        - title: 스냅샷에서 새 볼륨을 생성합니다
-          url: "/create-volume-from-snapshot.html"
-      - title: 오브젝트 스토리지에 대한 백업을 관리합니다
+      - title: 백업을 개체 스토리지에 사용
         entries:
         - title: 수동 백업을 생성합니다
           url: "/create-backup.html"
         - title: 백업에서 볼륨을 복원합니다
           url: "/restore-from-backup.html"
-      - title: 복제를 관리합니다
+      - title: 복제를 사용하세요
         entries:
         - title: 복제 관계를 생성합니다
           url: "/create-replication.html"
@@ -145,6 +143,8 @@ sidebar:
           url: "/manage-snapshot-policy.html"
         - title: 장기 보존을 위해 스냅샷을 설정 및 편집합니다
           url: "/enable-snapshots-long-term.html"
+        - title: 스냅샷을 관리합니다
+          url: "/manage-snapshots.html"
       - title: 백업
         entries:
         - title: FSx for ONTAP 백업 일정을 관리합니다
