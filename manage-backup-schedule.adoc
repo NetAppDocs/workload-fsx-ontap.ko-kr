@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-backup-schedule.html 
 keywords: backup schedule, backup policy, update backups, update backup schedule, FSx for ONTAP backup 
-summary: 필요한 경우 BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다. 
+summary: 필요한 경우 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다. 
 ---
 = FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다
 :allow-uri-read: 
@@ -11,12 +11,13 @@ summary: 필요한 경우 BlueXP  워크로드 공장에서 FSx for ONTAP 파�
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.
+NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 백업 일정을 업데이트할 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 백업 일정을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 정보 아래에서 * FSx for ONTAP backup * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.
 . FSx for ONTAP 백업 * 대화 상자에서 다음을 제공합니다.
 +

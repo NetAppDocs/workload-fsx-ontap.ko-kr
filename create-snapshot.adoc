@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-snapshot.html 
 keywords: create snapshot, snapshot 
-summary: BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다. 
+summary: NetApp Workload Factory에서 FSx for ONTAP 볼륨의 수동 스냅샷을 만듭니다.  스냅샷은 볼륨 콘텐츠의 특정 시점 버전입니다. 
 ---
 = FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 �
 
 
 [role="lead"]
-BlueXP  워크로드 팩토리에서 FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다. 스냅샷은 볼륨 컨텐츠의 특정 시점 버전입니다.
+NetApp Workload Factory에서 FSx for ONTAP 볼륨의 수동 스냅샷을 만듭니다.  스냅샷은 볼륨 콘텐츠의 특정 시점 버전입니다.
 
 스냅샷은 볼륨의 리소스로, 수정된 데이터에 대해서만 공간을 소비하는 데이터를 즉시 캡처합니다. 데이터는 시간이 지남에 따라 변경되기 때문에 일반적으로 스냅샷은 오래될수록 더 많은 공간을 사용합니다.
 
@@ -25,10 +25,11 @@ NOTE: 스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage * 에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 스냅샷을 생성할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 스냅샷을 생성할 볼륨이 포함된 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
-. Volumes * 탭에서 스냅샷으로 보호할 볼륨에 대한 3점 메뉴를 선택합니다.
+. *볼륨* 탭에서 스냅샷으로 보호할 볼륨에 대한 작업 메뉴를 선택합니다.
 . *데이터 보호 작업*을 선택한 다음 *스냅샷 관리*를 선택합니다.
 . 스냅샷 관리 페이지에서 *스냅샷 만들기*를 선택합니다.
 . 스냅샷 만들기 대화 상자에서 다음을 수행합니다.

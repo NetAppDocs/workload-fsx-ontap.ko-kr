@@ -4,7 +4,7 @@ permalink: manage-immutable-files.html
 keywords: enable immutable files, disable immutable files, lock files, unlock files 
 summary: 이 기능이 활성화되면 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다. 
 ---
-= BlueXP  워크로드 팩토리에서 볼륨의 변경 불가능한 파일을 관리합니다
+= NetApp Workload Factory에서 볼륨의 변경 불가능한 파일 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -17,9 +17,10 @@ summary: 이 기능이 활성화되면 변경 불가능한 특정 파일 설정�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. Volumes * 탭을 선택합니다.
-. 볼륨 탭에서 복제할 볼륨의 점 3개 메뉴를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 볼륨 탭에서 복제할 볼륨의 작업 메뉴를 선택합니다.
 . 데이터 보호 조치 * 를 선택한 다음 * 변경 불가능한 파일 관리 * 를 선택합니다.
 . 변경 불가능한 파일 관리 페이지에서 다음을 업데이트할 수 있습니다.
 +
@@ -35,6 +36,7 @@ summary: 이 기능이 활성화되면 변경 불가능한 특정 파일 설정�
 
 
 ** * autocommit *: 자동 커밋 기간 동안 수정되지 않은 파일을 WORM에 자동으로 커밋하는 기능을 활성화 또는 비활성화합니다.
+** *특권 삭제*: 기능을 활성화하거나 비활성화합니다.  이 기능을 활성화하면 SnapLock 관리자가 만료되지 않은 WORM 볼륨을 삭제할 수 있습니다.  이 기능은 Enterprise 보존 모드에서만 지원됩니다.
 ** * 볼륨 추가 모드 *: 기능을 활성화 또는 비활성화합니다. 볼륨 추가 모드를 활성화하면 WORM 파일에 새 콘텐츠를 추가할 수 있습니다.
 
 

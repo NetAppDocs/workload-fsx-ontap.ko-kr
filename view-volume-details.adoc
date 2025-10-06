@@ -4,7 +4,7 @@ permalink: view-volume-details.html
 keywords: volume details, volume information 
 summary: 볼륨 세부 정보, 배포, 소비, 액세스 및 보호 보기 
 ---
-= BlueXP  워크로드 팩토리에서 볼륨 세부 정보를 봅니다
+= NetApp Workload Factory에서 볼륨 세부 정보 보기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -17,8 +17,8 @@ summary: 볼륨 세부 정보, 배포, 소비, 액세스 및 보호 보기
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. Volumes(볼륨) 탭에서 수정하려는 볼륨에 대한 세 개의 점 메뉴를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 볼륨 탭에서 수정하려는 볼륨에 대한 작업 메뉴를 선택합니다.
 . 기본 조치 * 를 선택한 다음 * 볼륨 세부 정보 보기 * 를 선택합니다.
 . Volume details * 에서 탭을 선택하여 다음 볼륨 세부 정보를 봅니다.
 +

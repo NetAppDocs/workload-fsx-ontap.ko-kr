@@ -41,6 +41,8 @@ sidebar:
         url: "/create-link.html"
       - title: 링크를 관리합니다
         url: "/manage-links.html"
+    - title: 캐시 볼륨 검색 및 보기
+      url: "/discover-cache-volumes.html"
     - title: 볼륨 관리
       entries:
       - title: 볼륨을 생성합니다
@@ -115,7 +117,7 @@ sidebar:
         url: "/delete-volume.html"
     - title: 파일 시스템 관리
       entries:
-      - title: 파일 시스템 용량을 늘립니다
+      - title: 파일 시스템 용량 조정
         url: "/increase-file-system-capacity.html"
       - title: 자동 용량 관리 활성화
         url: "/enable-auto-capacity-management.html"
@@ -190,5 +192,5 @@ sidebar:
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

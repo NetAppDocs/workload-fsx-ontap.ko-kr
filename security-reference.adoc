@@ -4,7 +4,7 @@ permalink: security-reference.html
 keywords: security, data protection, IAM, file system access control, vpc 
 summary: Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 다음과 같은 보안 항목이 나와 있습니다. 
 ---
-= BlueXP  워크로드 공장에서 FSx for ONTAP에 대한 보안
+= NetApp Workload Factory의 FSx for ONTAP 보안
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

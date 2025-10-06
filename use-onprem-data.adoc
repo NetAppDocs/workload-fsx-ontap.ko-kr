@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: use-onprem-data.html 
 keywords: use, detect, replicate, remove, on-premises, ONTAP cluster, on-premises cluster, ONTAP 
-summary: BlueXP  워크로드 공장에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 보강하는 데 사용할 수 있습니다. 
+summary: NetApp Workload Factory에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 강화하는 데 사용할 수 있습니다. 
 ---
-= BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터 데이터를 사용할 수 있습니다
+= NetApp Workload Factory에서 온프레미스 ONTAP 클러스터 데이터 사용
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 보강하는 데 사용할 수 있습니다.
+NetApp Workload Factory에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 강화하는 데 사용할 수 있습니다.
 
 .이 작업에 대해
 온프레미스 ONTAP 클러스터의 데이터를 사용하려면 먼저 온프레미스 ONTAP 클러스터를 검색해야 합니다. 온프레미스 ONTAP 클러스터를 검색한 후에는 다음 사용 사례에 해당 데이터를 사용할 수 있습니다.
@@ -31,7 +31,7 @@ BlueXP  워크로드 공장에서 온프레미스 ONTAP 데이터를 검색하�
 
 == 사내 ONTAP 클러스터를 검색합니다
 
-BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터를 검색하여 Amazon FSx for NetApp ONTAP 파일 시스템에 데이터를 복제할 수 있습니다.
+NetApp Workload Factory에서 온프레미스 ONTAP 클러스터를 검색하여 Amazon FSx for NetApp ONTAP 파일 시스템에 데이터를 복제할 수 있습니다.
 
 .시작하기 전에
 시작하기 전에 다음 사항이 있는지 확인하십시오.
@@ -48,13 +48,13 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
 . 온-프레미스 ONTAP * 탭을 선택합니다.
 . Discover * 를 선택합니다.
 . 필수 구성 요소를 검토하고 * Next * 를 선택합니다.
 . ONTAP 온프레미스 검색 페이지의 * 클러스터 구성 * 에 다음을 제공합니다.
 +
-.. * 링크 * : 링크를 선택하십시오. 이 링크는 사내 클러스터와 연결되어 클러스터 및 워크로드 공장 간 연결을 생성합니다.
+.. *링크*: 링크를 선택하세요.  이 링크는 온프레미스 클러스터와 연결되어 클러스터와 Workload Factory 간의 연결을 생성합니다.
 +
 링크를 만들지 않은 경우 지침에 따라 이 작업으로 돌아가서 링크를 선택합니다.
 
@@ -84,8 +84,8 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. 온-프레미스 ONTAP * 탭을 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *온프레미스 ONTAP*을 선택합니다.
 . 스토리지 VM별로 볼륨을 찾으려면 드롭다운에서 * 스토리지 VM * 을 선택합니다.
 . 복제할 볼륨을 하나 이상 선택한 다음 * Replicate * 를 선택합니다.
 . 복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.
@@ -95,7 +95,7 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 .. * 볼륨 이름 * : 대상 볼륨 이름은 다음 형식으로 자동으로 `{OriginalVolumeName}_copy`생성됩니다. 자동 생성된 볼륨 이름을 사용하거나 다른 볼륨 이름을 입력할 수 있습니다.
 .. * 데이터 계층화 *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.
 +
-*** * 자동 *: 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 사용자 데이터와 스냅샷이 포함된 모든 콜드 데이터를 특정 기간 동안 용량 풀 스토리지 계층으로 계층화합니다.
+*** *자동*: Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다.  사용자 데이터와 스냅샷을 포함한 모든 콜드 데이터를 특정 기간 동안의 용량 풀 스토리지 계층으로 계층화합니다.
 *** * 스냅샷 전용 *: 스냅샷 데이터만 용량 풀 스토리지 계층에 계층화합니다.
 *** * 없음 *: 모든 볼륨의 데이터를 기본 스토리지 계층에 보관합니다.
 *** * ALL *: 모든 사용자 데이터와 스냅샷 데이터를 콜드 데이터로 표시하고 용량 풀 스토리지 계층에 저장합니다.
@@ -140,20 +140,20 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 
 
 
-== BlueXP  워크로드 공장에서 온프레미스 ONTAP 클러스터를 제거합니다
+== NetApp Workload Factory에서 온프레미스 ONTAP 클러스터 제거
 
-필요한 경우 BlueXP  워크로드 팩토리에서 온프레미스 ONTAP 클러스터를 제거합니다.
+필요한 경우 NetApp Workload Factory에서 온프레미스 ONTAP 클러스터를 제거합니다.
 
 .시작하기 전에
 온-프레미스 ONTAP 클러스터의 모든 볼륨을 선택한 후 클러스터를 제거해야 link:delete-replication.html["기존 복제 관계를 모두 삭제합니다"]분리된 관계가 남아 있지 않습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. 온-프레미스 ONTAP * 탭을 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *온프레미스 ONTAP*을 선택합니다.
 . 제거할 온프레미스 ONTAP 클러스터를 선택합니다.
-. 세 개의 점 메뉴를 선택하고 * Workload Factory에서 제거 * 를 선택합니다.
+. 작업 메뉴를 선택하고 *Workload Factory에서 제거*를 선택합니다.
 
 
 .결과
-온프레미스 ONTAP 클러스터가 BlueXP  워크로드 공장에서 제거됩니다.
+온프레미스 ONTAP 클러스터가 NetApp Workload Factory에서 제거되었습니다.

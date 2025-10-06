@@ -4,7 +4,7 @@ permalink: increase-file-system-capacity.html
 keywords: adjust capacity, elastic file system capacity, increase file system capacity, increase FSx capacity, decrease file system capacity, decrease FSx capacity 
 summary: 다양한 활성 작업 세트가 포함된 프로젝트 기반 워크로드의 요구 사항을 충족하기 위해 FSx for ONTAP 파일 시스템의 SSD 스토리지 용량을 수동으로 조정합니다. 
 ---
-= 워크로드 팩토리에서 파일 시스템 용량 조정
+= Workload Factory에서 파일 시스템 용량 조정
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,7 +15,7 @@ summary: 다양한 활성 작업 세트가 포함된 프로젝트 기반 워크�
 
 사용된 SSD 저장 용량이 지정한 임계값을 초과하면 FSx for ONTAP 파일 시스템의 SSD 저장 용량을 늘리고, 작업 세트가 비활성 상태일 때는 SSD 저장 용량을 줄여 비용 효율성을 개선합니다.
 
-또는 워크로드 팩토리에서 파일 시스템 용량을 관리하도록 할 수 link:enable-auto-capacity-management.html["자동 용량 관리 기능을 활성화합니다"]있습니다.
+또는 다음을 수행할 수 있습니다.link:enable-auto-capacity-management.html["자동 용량 관리 기능을 활성화합니다"] Workload Factory가 파일 시스템 용량을 관리해 드립니다.
 
 
 NOTE: SSD 저장 용량 감소는 2세대 파일 시스템에서만 지원됩니다.
@@ -36,7 +36,7 @@ SSD 스토리지 용량 제한에 대해서는 link:https://docs.aws.amazon.com/
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
 . 대시보드에서 *SSD 용량 조정*을 선택합니다.
 . 용량을 조정할 파일 시스템을 선택한 다음 *계속*을 선택합니다.
 +

@@ -33,7 +33,7 @@ ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에
 학습 및 활성 모드:: ARP/AI는 먼저 _학습 모드_에서 작동한 후 자동으로 _활성 모드_로 전환됩니다.
 +
 --
-* *학습 모드*: ARP/AI를 활성화하면 _학습 모드_로 실행됩니다.  학습 모드에서 FSx for ONTAP 파일 시스템은 엔트로피, 파일 확장자 유형, 파일 IOPS 등의 분석 영역을 기반으로 알림 프로필을 개발합니다.  파일 시스템이 워크로드 특성을 평가하기에 충분한 시간 동안 ARP/AI를 학습 모드로 실행한 후, 워크로드 팩토리는 자동으로 ARP/AI를 _활성 모드_로 전환하고 데이터 보호를 시작합니다.
+* *학습 모드*: ARP/AI를 활성화하면 _학습 모드_로 실행됩니다. 학습 모드에서 FSx for ONTAP 파일 시스템은 엔트로피, 파일 확장자 유형, 파일 IOPS 등의 분석 영역을 기반으로 알림 프로필을 개발합니다. 파일 시스템이 워크로드 특성을 평가하기에 충분한 시간 동안 ARP/AI를 학습 모드로 실행한 후, Workload Factory는 자동으로 ARP/AI를 _활성 모드_로 전환하고 데이터 보호를 시작합니다.
 * *활성 모드*: ARP/AI가 _활성 모드_로 전환된 후, FSx for ONTAP 은 위협이 감지되면 데이터를 보호하기 위해 ARP/AI 스냅샷을 생성합니다.
 +
 활성 모드에서 파일 확장자가 비정상으로 플래그되는 경우 경고를 평가해야 합니다. 경고를 통해 데이터를 보호하거나 경고를 거짓 긍정 으로 표시할 수 있습니다. 경고를 false positive로 표시하면 경고 프로필이 업데이트됩니다. 예를 들어, 새 파일 확장자에 의해 경고가 트리거되고 이 경고를 false positive로 표시하면 다음에 파일 확장명이 관찰될 때 알림이 수신되지 않습니다.
@@ -58,7 +58,7 @@ ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에
 
 파일 시스템에 ARP/AI를 활성화하면 모든 기존 NAS와 새로 생성된 NAS(NFS/SMB) 볼륨에 대한 보호가 자동으로 추가됩니다.  개별 볼륨에 대해 ARP/AI를 활성화할 수도 있습니다.
 
-ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인되면 워크로드 팩토리는 4시간마다 최대 6개의 스냅샷을 생성하는 스냅샷 정책을 자동으로 설정합니다.  각 스냅샷은 2~5일 동안 잠금됩니다.
+ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인되면 Workload Factory는 4시간마다 최대 6개의 스냅샷을 생성하는 스냅샷 정책을 자동으로 설정합니다. 각 스냅샷은 2~5일 동안 잠금됩니다.
 
 .시작하기 전에
 파일 시스템이나 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."] .  링크가 연결되면 이 작업으로 돌아갑니다.
@@ -69,8 +69,9 @@ ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인�
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
-. *FSx for ONTAP* 탭에서 ARP/AI를 활성화할 파일 시스템의 3개 점 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택하여 ARP/AI를 활성화한 다음 *관리*를 선택합니다.
 . 정보에서 *자율 랜섬웨어 보호* 옆에 있는 연필 아이콘을 선택하세요.  마우스를 *자율 랜섬웨어 보호* 행 위에 올려놓으면 화살표 옆에 연필 아이콘이 나타납니다.
 . AI(ARP/AI)를 통한 NetApp 자율형 랜섬웨어 보호 페이지에서 다음을 수행합니다.
 +
@@ -89,9 +90,10 @@ ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인�
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
-. *FSx for ONTAP* 탭에서 ARP/AI를 활성화할 파일 시스템의 3개 점 메뉴를 선택한 다음 *관리*를 선택합니다.
-. 볼륨 탭에서 볼륨의 3개 점 메뉴를 선택하여 ARP/AI를 활성화한 다음, *데이터 보호 작업*을 선택하고 *ARP/AI 관리*를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택하여 ARP/AI를 활성화한 다음 *관리*를 선택합니다.
+. 볼륨 탭에서 볼륨의 작업 메뉴를 선택하여 ARP/AI를 활성화한 다음, *데이터 보호 작업*을 선택하고, *ARP/AI 관리*를 선택합니다.
 . ARP/AI 관리 대화 상자에서 다음을 수행합니다.
 +
 .. 기능을 활성화하거나 비활성화합니다.
@@ -112,7 +114,9 @@ ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 랜섬웨어 공격을 검증할 파일 시스템을 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
 . Autonomous Ransomware Protection 타일에서 * Analyze Attacks * 를 선택합니다.
 . 공격 이벤트 보고서를 다운로드하여 손상된 파일이나 폴더가 있는지 검토한 다음 공격이 발생했는지 여부를 결정합니다.
@@ -132,7 +136,9 @@ ARP/AI를 활성화한 후 공격이 발생하고 공격이 실제라고 확인�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to Storage inventory * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 데이터를 복구할 파일 시스템을 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
 . Autonomous Ransomware Protection 타일에서 * Analyze Attacks * 를 선택합니다.
 . 공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다.

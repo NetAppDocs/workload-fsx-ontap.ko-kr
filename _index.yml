@@ -1,8 +1,9 @@
 ---
 indexpage:
-  title: Amazon FSx for NetApp ONTAP for BlueXP  워크로드 공장 설명서
-  lead: NetApp ONTAP용 Amazon FSx는 일관된 하이브리드 클라우드 경험을 제공하는 네이티브 AWS 관리 서비스에 ONTAP의
-    모든 기능을 제공합니다. 이 문서에서는 BlueXP  워크로드 팩토리를 사용하여 FSx for ONTAP를 관리하는 방법을 설명합니다.
+  title: NetApp Workload Factory 설명서를 위한 Amazon FSx for NetApp ONTAP
+  lead: Amazon FSx for NetApp ONTAP ONTAP 의 모든 기능을 기본 AWS 관리형 서비스로 제공하여 일관된 하이브리드
+    클라우드 환경을 제공합니다.  이 문서에서는 NetApp Workload Factory를 사용하여 FSx for ONTAP 을 관리하는 방법을
+    설명합니다.
   tiles:
   - title: 시작하십시오
     links:
@@ -32,9 +33,9 @@ indexpage:
       url: "/get-help.html"
   - title: 블로그 및 커뮤니티
     links:
+    - title: NetApp 콘솔
+      url: https://www.netapp.com/console
+    - title: NetApp 데이터 서비스
+      url: https://www.netapp.com/data-services/
     - title: NetApp 커뮤니티
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP 블로그
-      url: https://bluexp.netapp.com/blog
-    - title: 클라우드 웨비나
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/

@@ -11,17 +11,18 @@ summary: 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제�
 
 
 [role="lead"]
-스토리지 VM을 BlueXP  워크로드 팩토리 내 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터 손실 시 데이터 액세스의 보호 계층이 제공됩니다. 이 작업은 한 스토리지 VM에 있는 모든 볼륨을 다른 FSx for ONTAP 파일 시스템에 복제합니다.
+NetApp Workload Factory에서 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터 손실이 발생할 경우 데이터 액세스를 위한 보호 계층이 제공됩니다.  이 작업은 한 스토리지 VM의 모든 볼륨을 다른 FSx for ONTAP 파일 시스템으로 복제합니다.
 
 .시작하기 전에
 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."].. 링크가 연결되면 이 작업으로 돌아갑니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 복제할 스토리지 VM이 있는 파일 시스템의 3점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 복제할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.
-. Storage VM 탭에서 SVM을 복제할 스토리지 VM의 3개 점 메뉴를 선택합니다.
+. 저장소 VM 탭에서 SVM을 복제할 저장소 VM의 작업 메뉴를 선택합니다.
 . Replicate storage VM * 을 선택합니다.
 . 복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.
 +
@@ -30,7 +31,7 @@ summary: 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제�
 .. * 볼륨 이름 * : 대상 볼륨 이름은 다음 형식으로 자동으로 `{OriginalVolumeName}_copy`생성됩니다.
 .. * Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.
 +
-_AUTO_는 워크로드 팩토리 FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때의 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^]참조하십시오.
+Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _자동_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 문서.
 
 .. * 최대 전송 속도 *: * 제한 * 을 선택하고 최대 전송 제한(MB/s)을 입력합니다 또는 * 무제한 * 을 선택합니다.
 +

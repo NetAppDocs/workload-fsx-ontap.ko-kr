@@ -4,23 +4,24 @@ permalink: restore-from-backup.html
 keywords: restore backup, new volume, volume restoration, backup 
 summary: 백업에서 AWS 계정의 FSx for ONTAP 파일 시스템으로 볼륨을 복원합니다. 
 ---
-= BlueXP  워크로드 공장 출하 시 백업에서 볼륨을 복원합니다
+= NetApp Workload Factory에서 백업으로부터 볼륨 복원
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서는 AWS 계정의 모든 FSx for ONTAP 파일 시스템으로 백업에서 볼륨을 복원할 수 있습니다.
+NetApp Workload Factory에서는 AWS 계정의 FSx for ONTAP 파일 시스템으로 백업의 볼륨을 복원할 수 있습니다.
 
 워크로드 팩토리얼은 복원에 필요한 충분한 용량이 있는지 확인하고 그렇지 않은 경우 SSD 스토리지 계층 용량을 자동으로 추가할 수 있습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
-. Volumes * 탭에서 백업에서 복원할 볼륨에 대한 3점 메뉴를 선택합니다.
+. *볼륨* 탭에서 백업에서 복원할 볼륨에 대한 작업 메뉴를 선택합니다.
 . 데이터 보호 작업 *, * ONTAP용 FSx 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.
 . 백업에서 복원 대화 상자에서 다음을 제공합니다.
 +
@@ -35,8 +36,8 @@ BlueXP  워크로드 공장에서는 AWS 계정의 모든 FSx for ONTAP 파일 
 파일 시스템 용량이 제한된 경우 다음과 같은 문제가 발생할 수 있습니다.
 
 +
-** 복구에서 사용된 용량을 지정한 임계값 이상으로 푸시할 수 있습니다. 복구 작업을 완료할 수 있습니다. 워크로드 팩토리에서 SSD 스토리지 계층 용량을 자동으로 추가하려면 을 고려하거나 link:increase-file-system-capacity.html["SSD 스토리지 계층 용량을 수동으로 추가"] 선택합니다.
-** 복원을 수행하려면 추가 SSD 용량이 필요합니다. 계속 진행하려면 워크로드 팩토리용으로 SSD 스토리지 계층 용량을 자동으로 추가해야 합니다.
+** 복원을 통해 사용된 용량이 지정한 임계값을 초과할 수 있습니다.  복구 작업을 완료할 수 있습니다.  고려하다link:increase-file-system-capacity.html["SSD 스토리지 계층 용량을 수동으로 추가"] 또는 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택합니다.
+** 복원에는 추가 SSD 용량이 필요합니다.  계속하려면 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택해야 합니다.
 
 
 . Restore * 를 선택합니다.

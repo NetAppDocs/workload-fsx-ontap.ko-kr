@@ -4,7 +4,7 @@ permalink: cascade-replication.html
 keywords: replicate, cascade, cascade replication, cascade deployment, data protection, volume replication, replicate data protection volume 
 summary: 데이터 보호 볼륨을 복제하거나 볼륨 데이터의 복제를 단계적으로 수행하여 데이터 보호를 3차 시스템으로 확장하거나 데이터를 마이그레이션합니다. 
 ---
-= BlueXP  워크로드 공장에서 데이터 보호 볼륨 복제
+= NetApp Workload Factory에서 데이터 보호 볼륨 복제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -14,7 +14,7 @@ summary: 데이터 보호 볼륨을 복제하거나 볼륨 데이터의 복제�
 데이터 보호 볼륨을 복제하거나 볼륨 데이터의 복제를 단계적으로 수행하여 데이터 보호를 3차 시스템으로 확장하거나 데이터를 마이그레이션합니다.
 
 .이 작업에 대해
-BlueXP  워크로드 팩토리에서는 _CASCADE DEXPORATION_ 이라고도 하는 데이터 보호 볼륨 복제를 지원합니다. a_cascade deployment_는 소스 볼륨이 보조 볼륨(첫 번째 홉)에 미러링되고 보조 볼륨이 3차 볼륨(두 번째 홉)에 미러링되는 관계 체인으로 구성됩니다. 2차 볼륨을 사용할 수 없게 되면 새로운 기준 전송을 수행하지 않고도 1차 볼륨과 3차 볼륨 간의 관계를 동기화할 수 있습니다.
+NetApp Workload Factory는 데이터 보호 볼륨 복제를 지원하며, 이를 _캐스케이드 배포_라고도 합니다.  _캐스케이드 배포_는 소스 볼륨이 보조 볼륨(첫 번째 홉)에 미러링되고 보조 볼륨이 3차 볼륨(두 번째 홉)에 미러링되는 관계 체인으로 구성됩니다.  보조 볼륨을 사용할 수 없게 되면 새로운 기준 전송을 수행하지 않고도 기본 볼륨과 3차 볼륨 간의 관계를 동기화할 수 있습니다.
 
 이 기능은 ONTAP 버전 9.6 이상이 설치된 FSx for ONTAP 파일 시스템에서 지원됩니다. 을 link:https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html#snapmirror-disaster-recovery-relationships["호환되는 ONTAP 버전에 대한 ONTAP 설명서"^]참조하십시오.
 
@@ -30,8 +30,9 @@ BlueXP  워크로드 팩토리에서는 _CASCADE DEXPORATION_ 이라고도 하�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 복제할 볼륨이 포함된 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
 . Volumes 테이블에서 하나 이상의 데이터 보호 볼륨(DP/복제된 볼륨)을 선택한 다음 * Replicate data * 를 선택합니다.
 . 데이터 복제 페이지의 복제 타겟에서 다음을 제공합니다.
@@ -39,7 +40,7 @@ BlueXP  워크로드 팩토리에서는 _CASCADE DEXPORATION_ 이라고도 하�
 .. * FSx for ONTAP 파일 시스템 *: 대상 FSx for ONTAP 파일 시스템에 대한 자격 증명, 지역 및 FSx for ONTAP 파일 시스템 이름을 선택합니다.
 .. * 스토리지 VM 이름 *: 드롭다운 메뉴에서 스토리지 VM을 선택합니다.
 .. * 볼륨 이름 * : 대상 볼륨 이름은 다음 형식으로 자동으로 `{OriginalVolumeName}_copy`생성됩니다. 자동 생성된 볼륨 이름을 사용하거나 다른 볼륨 이름을 입력할 수 있습니다.
-.. * 활용 사례 *: 다음 복제 사용 사례 중 하나를 선택하십시오. 선택한 사용 사례에 따라 워크로드 공장 출하 시 Best Practice에 따라 권장 값으로 양식이 채워집니다. 양식을 작성하는 동안 권장 값을 적용하거나 변경할 수 있습니다.
+.. *사용 사례*: 복제에 대한 다음 사용 사례 중 하나를 선택하세요.  선택한 사용 사례에 따라 Workload Factory는 모범 사례에 따라 권장 값으로 양식을 채웁니다.  권장되는 값을 수락하거나 양식을 작성하면서 변경할 수 있습니다.
 +
 *** 마이그레이션: 데이터를 대상 FSx for ONTAP 파일 시스템으로 전송합니다
 *** 핫 재해 복구: 중요한 워크로드에 대한 고가용성 및 신속한 재해 복구를 보장합니다
@@ -54,10 +55,10 @@ BlueXP  워크로드 팩토리에서는 _CASCADE DEXPORATION_ 이라고도 하�
 
 .. * Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다. 계층화 정책은 기본적으로 선택한 활용 사례에 대해 권장되는 계층화 정책으로 설정됩니다.
 +
-_Balanced (Auto) _ 는 워크로드 팩토리 콘솔을 사용하여 볼륨을 생성할 때 적용되는 기본 계층화 정책입니다. 볼륨 계층화 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서 를 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] 참조하십시오. 워크로드 팩토리는 계층화 정책을 위해 워크로드 공장 콘솔에서 사용 사례 기반 이름을 사용하며 FSx for ONTAP 계층화 정책 이름을 괄호 안에 포함합니다.
+Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _균형(자동)_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 문서.  Workload Factory는 계층화 정책에 대해 Workload Factory 콘솔에서 사용 사례 기반 이름을 사용하고 FSx for ONTAP 계층화 정책 이름을 괄호 안에 포함합니다.
 
 +
-마이그레이션 사용 사례를 선택한 경우 워크로드 공장 출하 시 에서 소스 볼륨의 계층화 정책을 타겟 볼륨에 복사하도록 자동으로 선택합니다. 계층화 정책을 복사하도록 선택을 취소하고 복제하도록 선택한 볼륨에 적용되는 계층화 정책을 선택할 수 있습니다.
+마이그레이션 사용 사례를 선택한 경우 Workload Factory는 소스 볼륨의 계층화 정책을 대상 볼륨으로 자동으로 복사합니다.  계층화 정책을 복사하려면 선택을 취소하고 복제를 위해 선택한 볼륨에 적용되는 계층화 정책을 선택합니다.
 
 .. * 최대 전송 속도 *: * 제한 * 을 선택하고 최대 전송 제한(MB/s)을 입력합니다 또는 * 무제한 * 을 선택합니다.
 +

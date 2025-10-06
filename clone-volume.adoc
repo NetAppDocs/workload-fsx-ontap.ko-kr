@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: clone-volume.html 
 keywords: clone volume, clone, clone data 
-summary: 테스트를 위해 원본 볼륨의 읽기/쓰기 볼륨을 만들려면 BlueXP 워크로드 팩토리에서 볼륨을 복제합니다. 
+summary: 테스트를 위해 NetApp Workload Factory에서 볼륨을 복제하여 원래 볼륨의 읽기/쓰기 볼륨을 만듭니다. 
 ---
-= BlueXP  워크로드 팩토리에서 볼륨 클론 복제
+= NetApp Workload Factory에서 볼륨 복제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-테스트를 위해 원본 볼륨의 읽기/쓰기 볼륨을 만들려면 BlueXP 워크로드 팩토리에서 볼륨을 복제합니다.
+테스트를 위해 NetApp Workload Factory에서 볼륨을 복제하여 원래 볼륨의 읽기/쓰기 볼륨을 만듭니다.
 
 클론은 데이터의 현재 시점 상태를 반영합니다. 또한 클론을 사용하면 운영 데이터에 대한 액세스 권한을 부여하지 않고 추가 사용자에게 데이터에 대한 액세스 권한을 부여할 수 있습니다.
 
@@ -24,10 +24,11 @@ summary: 테스트를 위해 원본 볼륨의 읽기/쓰기 볼륨을 만들려�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템의 개요 탭에서 * Volumes * 탭을 선택합니다.
-. Volumes 탭에서 클론 복제할 볼륨의 점 3개 메뉴를 선택합니다.
+. 볼륨 탭에서 복제할 볼륨의 작업 메뉴를 선택합니다.
 . Data protection actions * 를 선택한 다음 * Clone volume * 을 선택합니다.
 . 클론 볼륨 대화 상자에서 볼륨 클론의 이름을 입력합니다.
 . 클론 * 을 선택합니다.

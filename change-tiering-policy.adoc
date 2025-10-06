@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: change-tiering-policy.html 
 keywords: tiering policy, change tier, change tiers, tier policy update 
-summary: BlueXP  워크로드 팩토리의 계층화 정책을 변경하여 고성능 운영 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 재할당합니다. 
+summary: NetApp Workload Factory에서 계층화 정책을 변경하여 고성능 기본 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 다시 할당합니다. 
 ---
-= BlueXP  워크로드 공장 에서 볼륨의 계층화 정책을 변경합니다
+= NetApp Workload Factory에서 볼륨의 계층화 정책 변경
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 팩토리에서 데이터를 고성능 운영 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 자동으로 재할당하도록 계층화 정책을 변경할 수 있습니다.
+NetApp Workload Factory에서는 계층화 정책을 변경하여 고성능 기본 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 자동으로 재할당할 수 있습니다.
 
 .이 작업에 대해
 언제든지 볼륨의 계층화 정책을 변경할 수 있다. 계층화 정책은 볼륨별로 정의됩니다.
@@ -39,10 +39,11 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-capacity
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 업데이트할 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
-. Volumes 탭에서 계층화 정책을 변경할 볼륨의 3개 점이 있는 메뉴를 선택합니다.
+. 볼륨 탭에서 계층화 정책을 변경할 볼륨의 작업 메뉴를 선택합니다.
 . 고급 조치 * 를 선택한 다음 * 계층화 정책 변경 * 을 선택합니다.
 . 계층화 정책 변경 페이지에서 소스 볼륨의 계층화 정책을 복제하도록 선택하거나 다음 계층화 정책 중 하나를 선택합니다.
 +

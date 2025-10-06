@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: add-ha-pairs.html 
 keywords: add high-availability pairs, add HA pairs, add HA pair, add high-availability pair, scale out, file system, fsx for ontap 
-summary: BlueXP  워크로드 팩토리 의 파일 시스템에 고가용성 페어를 추가하여 파일 시스템을 확장할 수 있습니다. 
+summary: NetApp Workload Factory에서 파일 시스템에 고가용성 쌍을 추가하여 파일 시스템을 확장합니다. 
 ---
-= BlueXP  워크로드 팩토리의 파일 시스템에 HA 쌍을 추가합니다
+= NetApp Workload Factory에서 파일 시스템에 HA 쌍 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-고가용성(HA) 쌍을 추가하여 BlueXP  워크로드 공장에서 FSx for ONTAP 2세대 단일-AZ 파일 시스템을 스케일아웃하여 성능과 용량을 강화할 수 있습니다. 이러한 확장은 1세대 파일 시스템에 비해 뛰어난 성능 확장성 및 유연성을 제공합니다.
+NetApp Workload Factory에서 FSx for ONTAP 2세대 Single-AZ 파일 시스템을 확장하여 성능과 용량을 늘리기 위해 고가용성(HA) 쌍을 추가합니다.  이 확장을 통해 1세대 파일 시스템에 비해 더 높은 성능 확장성과 유연성을 얻을 수 있습니다.
 
 .이 작업에 대해
 새로운 HA 쌍은 HA 쌍당 동일한 SKU 및 동일한 용량을 사용하여 추가됩니다.
@@ -43,8 +43,9 @@ HA 쌍 추가에 대해서는 다음 사항을 고려하십시오.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭의 * 정보 * 에서 * HA 쌍 * 옆에 있는 연필 아이콘을 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*의 *정보*에서 *HA 쌍* 옆에 있는 연필 아이콘을 선택합니다.
 . Add HA Pairs * 대화 상자에서 파일 시스템에 추가할 HA 쌍 수를 선택합니다.
 . Add * 를 선택하여 HA 쌍 추가를 확인합니다.
 

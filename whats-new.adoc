@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, amazon fsx for netapp ontap, fsx for ontap' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, Workload Factory, amazon fsx for netapp ontap, fsx for ontap' 
 summary: Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오. 
 ---
 = NetApp ONTAP용 Amazon FSx의 새로운 기능
@@ -12,6 +12,72 @@ summary: Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십�
 
 [role="lead"]
 Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.
+
+
+
+== 2025년 10월 6일
+
+
+
+=== BlueXP workload factory NetApp 워크로드 팩토리로 변경되었습니다.
+
+BlueXP 데이터 인프라 관리에 있어서의 역할을 더 잘 반영하도록 이름이 바뀌고 재설계되었습니다. 결과적으로 BlueXP workload factory NetApp 워크로드 팩토리로 이름이 변경되었습니다.
+
+
+
+== 2025년 10월 5일
+
+
+
+=== Amazon Elastic Block Store(EBS)의 스토리지 계산기에서 비용 절감을 최적화하세요.
+
+Workload Factory는 EBS 성능 사용량을 분석한 후 가장 적합하고 비용 효율적인 FSx for ONTAP 구성을 제안해 FSx for ONTAP 으로 전환하면 더 많은 비용을 절감할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html#explore-savings-for-detected-storage-environments["Workload Factory 콘솔에서 감지된 스토리지 환경에 대한 절감 효과를 살펴보세요."]
+
+
+
+=== 파일 시스템 인벤토리에서 리소스 화면에 빠르게 액세스
+
+FSx for ONTAP 인벤토리에서 파일 시스템 이름(이제 하이퍼링크)을 선택하면 FSx for ONTAP 파일 시스템 리소스 화면으로 빠르게 이동할 수 있습니다.
+
+
+
+=== Workload Factory 콘솔에서 캐시 관계 검색
+
+FSx for ONTAP 파일 시스템과 다른 유형의 ONTAP 스토리지(온프레미스 시스템, Cloud Volumes ONTAP, FSx for ONTAP) 사이에 _캐시_ 관계가 있는 경우 Workload Factory 콘솔에서 이를 검색하고 볼 수 있습니다.  이를 통해 데이터 흐름을 더 잘 이해하고, 캐시 활용도를 최적화하고, 분산 환경 전반에서 효율성을 개선할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/discover-cache-volumes.html["Workload Factory 콘솔에서 캐시 관계를 검색하고 확인하세요."]
+
+
+
+=== 잘 설계된 분석 업데이트
+
+Workload Factory는 이제 다음 구성에 대해 FSx for ONTAP 파일 시스템을 분석합니다.
+
+볼륨 파일 용량 사용률 임계값: 파일 용량 임계값이 80% 이하로 설정되어 있는지 확인합니다.  이렇게 하면 파일 시스템의 공간 부족을 방지할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요."]
+
+
+
+==== 구성 문제에 대한 작업 개선
+
+FSx for ONTAP 파일 시스템의 대시보드에 있는 *잘 설계된 분석* 탭에서 파일 시스템의 전체 구성을 해제하는 대신, 파일 시스템 내에서 하나 이상의 볼륨을 선택하여 수정, 해제 또는 다시 활성화할 수도 있습니다.
+
+
+
+=== 저장에 대한 추가 알림
+
+NetApp Workload Factory 알림 서비스에는 잘 설계된 구성 문제에 대한 알림이 매주 포함됩니다.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html#notification-types-and-messages["Workload Factory 설정 및 관리 설명서의 알림 유형 및 메시지"]
+
+
+
+=== 변경 불가능한 파일은 권한 있는 삭제를 지원합니다.
+
+이 기능을 사용하면 FSx for ONTAP 파일 시스템에서 변경 불가능한 파일에 대한 권한 있는 삭제 액세스를 구성할 수 있습니다.  이를 통해 중요한 데이터가 실수로 또는 악의적으로 삭제되는 것을 방지하는 동시에, 권한이 있는 사용자가 잠금을 해제하고 필요에 따라 해당 파일을 삭제할 수 있습니다.  볼륨 생성 중이나 기존 볼륨에 대해 권한 있는 삭제를 활성화할 수 있습니다.
 
 
 
@@ -156,7 +222,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 === 스토리지 대시보드 개선
 
-워크로드 팩토리 콘솔의 스토리지 대시보드에 새로운 절감 기회 카드가 추가되었습니다. 대시보드 상단의 카드는 Amazon Elastic Block Store(EBS), Amazon FSx for Windows File Server, Amazon Elastic File Systems(EFS)에서 실행되는 스토리지 환경에 대한 절감 기회 수를 대시보드 하단에는 Amazon 스토리지 서비스별 절감 기회(EBS, FSx for Windows File Server, EFS)를 표시하는 세 개의 새로운 카드가 추가되었습니다 모든 카드에서 절감 기회를 더 자세히 살펴볼 수 있습니다.
+Workload Factory 콘솔의 스토리지 대시보드에는 비용 절감 기회를 위한 새로운 카드가 포함되어 있습니다.  대시보드 상단의 카드에는 Amazon Elastic Block Store(EBS), Amazon FSx for Windows File Server, Amazon Elastic File Systems(EFS)에서 실행되는 스토리지 환경에 대한 절감 기회 수가 표시됩니다.  대시보드 하단에는 Amazon 스토리지 서비스(EBS, FSx for Windows File Server, EFS)별로 절감 기회가 표시된 세 개의 새로운 카드가 있습니다.  모든 카드에서 더욱 자세히 저축 기회를 알아볼 수 있습니다.
 
 FSx for ONTAP 보호 범위 카드와 복제 관계 상태 카드를 통해 FSx for ONTAP 파일 시스템에 부분적으로 보호된 볼륨이 있는지 확인하고 복제 관계 관련 문제를 조사할 수 있습니다. 두 경우 모두 문제 해결을 위한 조치를 취할 수 있습니다.
 
@@ -164,13 +230,13 @@ FSx for ONTAP 보호 범위 카드와 복제 관계 상태 카드를 통해 FSx 
 
 === 볼륨 탭 향상
 
-워크로드 팩토리 콘솔의 볼륨 탭이 개선되어 FSx for ONTAP 파일 시스템을 더욱 포괄적으로 볼 수 있습니다. SSD 용량, 용량 풀, NetApp Autonomous Ransomware Protection with AI(ARP/AI)를 위한 새로운 카드가 추가되었습니다. 이 카드는 파일 시스템의 모든 볼륨에 대한 용량 사용률과 ARP/AI 보호 기능을 요약합니다.
+Workload Factory 콘솔의 볼륨 탭이 향상되어 FSx for ONTAP 파일 시스템을 보다 포괄적으로 볼 수 있게 되었습니다.  향상된 기능에는 SSD 용량, 용량 풀, AI(ARP/AI)를 탑재한 NetApp 자율 랜섬웨어 보호 기능을 위한 새로운 카드가 포함됩니다.  이 카드는 파일 시스템의 모든 볼륨에 대한 용량 활용도와 ARP/AI 보호 기능을 요약합니다.
 
 
 
 === 2세대 Amazon FSx for NetApp ONTAP 파일 시스템 지원
 
-Workload Factory는 이제 2세대 Amazon FSx for NetApp ONTAP 파일 시스템을 지원합니다. Workload Factory 콘솔에서 2세대 파일 시스템을 생성, 관리 및 모니터링할 수 있습니다. 모든 신규 상용 리전이 지원됩니다.
+Workload Factory는 이제 2세대 Amazon FSx for NetApp ONTAP 파일 시스템을 지원합니다.  Workload Factory 콘솔에서 2세대 파일 시스템을 생성, 관리 및 모니터링할 수 있습니다.  모든 새로운 상업 지역이 지원됩니다.
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Workload Factory에서 2세대 파일 시스템 생성"]
 
@@ -178,7 +244,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["W
 
 === 볼륨 용량 재조정을 위한 FlexVol 볼륨 지원
 
-FlexVol 볼륨은 워크로드 팩토리 콘솔에서 확인할 수 있습니다. FlexVol 볼륨의 잔액을 확인하고, 새 파일 추가 및 파일 증가로 인해 시간이 지남에 따라 용량 불균형이 발생할 경우 FlexVol 볼륨을 재조정하여 용량을 재분배할 수 있습니다.
+FlexVol 볼륨은 Workload Factory 콘솔에서 검색할 수 있습니다.  새로운 파일 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생하면 FlexVol 볼륨의 균형을 확인하고 FlexVol 볼륨을 재조정하여 용량을 재분배할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/rebalance-volume.html["FlexVol 볼륨의 용량 재조정"]
 
@@ -186,15 +252,15 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/rebalance-volume.html["Fle
 
 === 용어 업데이트
 
-워크로드 팩토리 콘솔에서 "자율 랜섬웨어 보호"(ARP)라는 용어가 "AI를 통한 NetApp 자율 랜섬웨어 보호"(ARP/AI)로 업데이트되었습니다.
+Workload Factory 콘솔에서 "자율 랜섬웨어 보호"(ARP)라는 용어가 "AI를 통한 NetApp 자율 랜섬웨어 보호"(ARP/AI)로 업데이트되었습니다.
 
 
 
 === 새 볼륨에 대해 기본적으로 ARP/AI가 활성화됨
 
-워크로드 팩토리 콘솔에서 새 볼륨을 생성하면 파일 시스템에 ARP/AI 정책이 있는 경우 NetApp Autonomous Ransomware Protection with AI(ARP/AI)가 기본적으로 활성화됩니다. 즉, AI 기반 탐지 및 대응 기능을 사용하여 볼륨이 랜섬웨어 공격으로부터 자동으로 보호됩니다.
+Workload Factory 콘솔에서 새 볼륨을 생성하면 파일 시스템에 ARP/AI 정책이 있는 경우 NetApp Autonomous Ransomware Protection with AI(ARP/AI)가 기본적으로 활성화됩니다.  즉, AI 기반 탐지 및 대응 기능을 사용하여 볼륨이 랜섬웨어 공격으로부터 자동으로 보호된다는 의미입니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["워크로드 팩토리에서 볼륨을 생성합니다."]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["Workload Factory에서 볼륨을 생성합니다."]
 
 
 
@@ -208,7 +274,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 === 링크 생성 중 IAM 실행 역할 및 권한 관리
 
-이제 워크로드 팩토리 콘솔에서 링크를 생성하여 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다. 링크는 워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다. IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정, 두 가지 옵션이 있습니다. 워크로드 팩토리에서 실행 역할과 연결된 권한 정책을 관리하면 더 이상 타사 코드를 사용할 필요가 없습니다.
+이제 Workload Factory 콘솔에서 링크를 만들 때 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다.  링크는 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다.  IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정의 두 가지 옵션이 있습니다.  Workload Factory에서 실행 역할과 이에 연결된 권한 정책을 관리한다는 것은 더 이상 타사 코드를 사용할 필요가 없다는 것을 의미합니다.
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다"]
 
@@ -222,7 +288,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Lambda �
 
 FSx for ONTAP 파일 시스템에 대한 자동 용량 관리가 이제 잘 설계된 상태 대시보드의 구성 분석으로 포함되었습니다.
 
-또한, 워크로드 팩토리는 이제 다음과 같은 구성 문제를 해결하는 기능을 지원합니다.
+또한 Workload Factory는 이제 다음과 같은 구성 문제를 해결하는 기능을 지원합니다.
 
 * SSD 용량 임계값입니다
 * 데이터 계층화
@@ -259,13 +325,13 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 === 스토리지 대시보드 개선
 
-오늘부터 워크로드 팩토리 콘솔에서 스토리지 워크로드를 열면 *대시보드*가 표시됩니다. 새롭게 디자인된 대시보드는 파일 시스템 수, 총 SSD 용량, 잘 설계된 상태 개요, 데이터 보호 개요, 복제 관계 상태 등 FSx for ONTAP 시스템에 대한 전체적인 정보를 제공합니다.
+오늘부터 Workload Factory 콘솔에서 Storage 워크로드를 열면 *대시보드*가 표시됩니다.  새롭게 디자인된 대시보드는 파일 시스템 수, 총 SSD 용량, 잘 설계된 상태 개요, 데이터 보호 개요, 복제 관계 상태를 포함하여 FSx for ONTAP 시스템에 대한 전체적인 보기를 제공합니다.
 
 
 
 === 볼륨 탭 개선
 
-스토리지 워크로드는 워크로드 팩토리 콘솔의 FSx for ONTAP 파일 시스템 내 볼륨 탭을 개선했습니다. 개선된 기능은 다음과 같습니다.
+스토리지 워크로드는 Workload Factory 콘솔의 FSx for ONTAP 파일 시스템 내 볼륨 탭을 개선했습니다.  향상된 기능은 다음과 같습니다.
 
 * *새로운 카드*: SSD 용량, 용량 풀 및 자율 랜섬웨어 보호(ARP)
 * *새로운 열*: 용량 분배, 사용된 SSD 용량, 사용된 용량 풀 및 SSD 효율성
@@ -277,7 +343,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 새 볼륨을 생성할 때 데이터 압축, 압축, 중복 제거를 포함한 스토리지 효율성이 기본적으로 활성화됩니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["워크로드 팩토리에서 새 볼륨을 만듭니다."]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["Workload Factory에서 새 볼륨을 만듭니다."]
 
 
 
@@ -325,7 +391,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["볼륨
 
 ==== FSx for ONTAP에서 온프레미스로 역복제가 지원됩니다
 
-이제 워크로드 공장 콘솔 내에서 FSx for ONTAP 파일 시스템에서 온프레미스 ONTAP 클러스터로 역방향 복제를 사용할 수 있습니다.
+이제 Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템에서 온프레미스 ONTAP 클러스터로 역방향 복제를 사용할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/reverse-replication.html["역방향 복제"]
 
@@ -405,7 +471,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/restore-from-backup.html["
 
 === 사용 권한 용어가 업데이트되었습니다
 
-워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.
+Workload Factory 사용자 인터페이스와 설명서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"이라는 용어를 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"라는 용어를 사용합니다.
 
 
 
@@ -507,7 +573,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/monitor-operations.html["T
 
 === BlueXP  워크로드 팩토리 콘솔의 CloudShell
 
-CloudShell은 BlueXP  워크로드 공장 내에서 스토리지용 내장 CLI 기능입니다. CloudShell을 사용하여 워크로드 팩토리 콘솔 내에서 셸 같은 환경의 여러 세션에서 ONTAP 또는 AWS CLI 명령을 생성, 공유, 실행할 수 있습니다.
+CloudShell은 BlueXP workload factory for Storage 내에서 사용할 수 있는 내장형 CLI 기능입니다.  CloudShell을 사용하면 Workload Factory 콘솔 내에서 셸과 유사한 환경의 여러 세션에서 ONTAP 또는 AWS CLI 명령을 만들고, 공유하고, 실행할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["BlueXP  워크로드 공장 내 CloudShell에 대해 자세히 알아보십시오"]
 
@@ -517,7 +583,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Blu
 
 이제 BlueXP  워크로드 팩토리의 스토리지에서 FSx for ONTAP 인벤토리 데이터를 Microsoft Excel 또는 CSV 파일로 다운로드할 수 있습니다.
 
-image:screenshot-fsx-inventory-download.png["FSx for ONTAP 파일 시스템 인벤토리 데이터를 다운로드하기 위한 새로운 다운로드 버튼을 보여주는 BlueXP  워크로드 팩토리 스토리지의 스크린샷"]
+image:screenshot-fsx-inventory-download.png["FSx for ONTAP 파일 시스템 인벤토리 데이터를 다운로드하는 새로운 다운로드 버튼을 보여주는 BlueXP workload factory 의 스토리지 스크린샷입니다."]
 
 
 
@@ -560,7 +626,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/monitor-operations.html["T
 
 === 2세대 Amazon FSx for NetApp ONTAP 파일 시스템 지원
 
-이제 BlueXP  워크로드 공장에서 Amazon FSx for NetApp ONTAP 2세대 파일 시스템을 사용할 수 있습니다. FSx for ONTAP 2세대 단일 AZ 파일 시스템은 최대 12개의 HA 쌍을 구동하여 최대 72GBps의 처리량 용량과 2,400,000 SSD IOPS를 제공합니다. FSx for ONTAP 2세대 멀티 AZ 파일 시스템은 하나의 HA 쌍을 기반으로 하며 6GBps의 처리량 용량과 200,000 SSD IOPS를 제공합니다.
+이제 NetApp Workload Factory에서 Amazon FSx for NetApp ONTAP 사용할 수 있습니다.  FSx for ONTAP 2세대 단일 AZ 파일 시스템은 최대 12개의 HA 쌍으로 구동되며, 최대 72GBps의 처리량 용량과 2,400,000 SSD IOPS를 제공할 수 있습니다.  FSx for ONTAP 2세대 Multi-AZ 파일 시스템은 하나의 HA 쌍으로 구동되며 6GBps의 처리량 용량과 200,000 SSD IOPS를 제공합니다.
 
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/add-ha-pairs.html["고가용성 쌍 추가"]
 * link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["Amazon FSx for NetApp ONTAP의 할당량 및 한도"^]
@@ -652,8 +718,8 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["Blue
 
 === 링크 생성 업데이트
 
-* Codebox 뷰어: 이제 코드박스가 링크 생성 프로세스에 통합되었습니다. 작업 실행을 위해 AWS로 리디렉션하기 전에 워크로드 팩토리얼의 Codebox에서 CloudFormation 템플릿을 보고 복사할 수 있습니다.
-* 필요한 권한: AWS CloudFormation에서 링크 생성을 실행하는 데 필요한 권한을 이제 워크로드 팩토리의 링크 생성 마법사에서 링크 생성 마법사를 보고 복사할 수 있습니다.
+* Codebox 뷰어: 이제 Codebox가 링크 생성 프로세스에 통합되었습니다.  AWS로 리디렉션하여 작업을 실행하기 전에 Workload Factory의 Codebox에서 CloudFormation 템플릿을 보고 복사할 수 있습니다.
+* 필요한 권한: AWS CloudFormation에서 링크 생성을 실행하는 데 필요한 권한은 이제 Workload Factory의 링크 생성 마법사에서 볼 수 있고 복사할 수 있습니다.
 * 수동 링크 생성 지원: 이 기능을 사용하면 링크 ARN을 수동으로 등록하여 AWS CloudFormation에서 독립 실행형 생성을 수행할 수 있습니다. 보안 또는 DevOps 팀이 링크 생성 프로세스를 지원할 때 유용합니다.
 
 
@@ -667,7 +733,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크�
 
 === 스토리지 관리를 위한 읽기 모드 지원
 
-읽기 모드는 워크로드 공장에서 스토리지 관리에 사용할 수 있습니다. 읽기 모드는 코드형 인프라 템플릿이 특정 변수로 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 환경을 개선합니다. 코드형 인프라 템플릿은 워크로드 팩토리에 대한 수정 권한을 제공하지 않고 AWS 계정에서 직접 실행할 수 있습니다.
+Workload Factory에서는 스토리지 관리를 위해 읽기 모드를 사용할 수 있습니다.  읽기 모드는 Infrastructure-as-Code 템플릿에 특정 변수가 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 경험을 향상시킵니다.  Infrastructure-as-Code 템플릿은 Workload Factory에 수정 권한을 제공하지 않고도 AWS 계정에서 직접 실행할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["읽기 모드에 대해 자세히 알아봅니다"]
 
@@ -706,6 +772,6 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["볼륨
 
 
 
-=== Amazon FSx for NetApp ONTAP의 워크로드 공장 최초 릴리즈
+=== Amazon FSx for NetApp ONTAP Workload Factory의 초기 릴리스
 
 Amazon FSx for NetApp ONTAP은 현재 BlueXP  워크로드 공장에서 일반적으로 사용할 수 있습니다.

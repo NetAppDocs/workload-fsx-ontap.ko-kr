@@ -6,7 +6,7 @@
 
 === 스토리지 관리를 위한 읽기 모드 지원
 
-읽기 모드는 워크로드 공장에서 스토리지 관리에 사용할 수 있습니다. 읽기 모드는 코드형 인프라 템플릿이 특정 변수로 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 환경을 개선합니다. 코드형 인프라 템플릿은 워크로드 팩토리에 대한 수정 권한을 제공하지 않고 AWS 계정에서 직접 실행할 수 있습니다.
+Workload Factory에서는 스토리지 관리를 위해 읽기 모드를 사용할 수 있습니다.  읽기 모드는 Infrastructure-as-Code 템플릿에 특정 변수가 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 경험을 향상시킵니다.  Infrastructure-as-Code 템플릿은 Workload Factory에 수정 권한을 제공하지 않고도 AWS 계정에서 직접 실행할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["읽기 모드에 대해 자세히 알아봅니다"]
 

@@ -44,7 +44,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["볼륨
 
 ==== FSx for ONTAP에서 온프레미스로 역복제가 지원됩니다
 
-이제 워크로드 공장 콘솔 내에서 FSx for ONTAP 파일 시스템에서 온프레미스 ONTAP 클러스터로 역방향 복제를 사용할 수 있습니다.
+이제 Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템에서 온프레미스 ONTAP 클러스터로 역방향 복제를 사용할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/reverse-replication.html["역방향 복제"]
 
@@ -124,4 +124,4 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/restore-from-backup.html["
 
 === 사용 권한 용어가 업데이트되었습니다
 
-워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.
+Workload Factory 사용자 인터페이스와 설명서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"이라는 용어를 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"라는 용어를 사용합니다.

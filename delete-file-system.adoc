@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: delete-file-system.html 
 keywords: file system, delete file system, file system deletion 
-summary: BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다. 
+summary: NetApp Workload Factory에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다. 
 ---
-= BlueXP  워크로드 팩토리에서 파일 시스템을 삭제합니다
+= NetApp Workload Factory에서 파일 시스템 삭제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 팩토리에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.
+NetApp Workload Factory에서 파일 시스템을 삭제하려면 먼저 파일 시스템과 연결된 볼륨, 스토리지 VM 또는 복제 관계를 삭제해야 합니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 삭제할 FSx for ONTAP 파일 시스템의 세 점 메뉴를 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 삭제하려는 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택합니다.
 . 관리 * 를 선택합니다.
-. 개요 * 탭에서 3점 메뉴를 선택합니다.
+. *개요* 탭에서 작업 메뉴를 선택합니다.
 . 삭제 * 를 선택합니다.
 . FSx for ONTAP 파일 시스템 삭제 대화 상자에서 삭제할 FSx for ONTAP 파일 시스템의 이름을 입력합니다.
-. 삭제 * 를 선택합니다.
+. 삭제를 선택하여 확인하세요.
 

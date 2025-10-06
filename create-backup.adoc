@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-backup.html 
 keywords: create backup, volume backup, back up a volume 
-summary: 정기적으로 예약된 백업 이외의 BlueXP  워크로드 공장에서 볼륨에 대한 수동 백업을 생성합니다. 
+summary: 정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다. 
 ---
-= BlueXP  워크로드 팩토리에서 볼륨의 수동 백업을 생성합니다
+= NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서 정기적으로 예약된 백업 이외의 볼륨에 대한 수동 백업을 생성합니다.
+NetApp Workload Factory에서 정기적으로 예약된 백업 외에 볼륨의 수동 백업을 만듭니다.
 
 .이 작업에 대해
 FSx for ONTAP 백업은 볼륨별로 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.
@@ -23,10 +23,11 @@ FSx for ONTAP 백업은 증분 백업이므로 최신 백업 후에 변경된 �
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Storage에서 * Go to storage inventory * 를 선택합니다.
-. FSx for ONTAP * 탭에서 볼륨이 있는 파일 시스템의 세 점 메뉴를 선택한 다음 * 관리 * 를 선택합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
-. Volumes * 탭에서 백업할 볼륨의 세 점 메뉴를 선택합니다.
+. *볼륨* 탭에서 백업할 볼륨에 대한 작업 메뉴를 선택합니다.
 . 데이터 보호 작업 *, * ONTAP용 FSx 백업 * 을 선택한 다음 * 수동 백업 * 을 선택합니다.
 . 수동 백업 대화 상자에서 백업 이름을 입력합니다.
 . 백업 * 을 선택합니다.
