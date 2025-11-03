@@ -29,4 +29,4 @@ Workload Factory는 사이버 볼트 아키텍처를 만드는 데 도움을 제
 시작하려면 ng-FSx-CyberVault@netapp.com으로 이메일을 보내세요.
 
 .관련 정보
-사이버 볼트에 대한 자세한 내용과 이 아키텍처를 설정하는 방법은 다음을 참조하세요.link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAP 사이버 볼트 문서"^] .
+사이버 볼트와 이 아키텍처를 설정하는 방법에 대한 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAP 사이버 볼트 문서"^].
