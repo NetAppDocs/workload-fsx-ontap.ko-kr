@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: create-cyber-vault.html 
+keywords: create cyber vault, volume cyber vault, protect data cyber vault, cyber vault setup 
+summary: NetApp 사이버 볼트에 대해 알아보고, 랜섬웨어와 사이버 위협으로부터 데이터를 보호하기 위해 사이버 볼트 아키텍처를 구현하는 방법을 알아보세요. 
+---
+= 사이버 볼트로 데이터를 보호하세요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+사이버 볼트 볼륨은 데이터의 백업 사본을 저장하는 데 사용되는 격리된 안전한 저장 위치로, 랜섬웨어 공격 및 기타 사이버 위협으로부터 데이터를 보호합니다.  볼트 생성의 일부로 사이버 볼트 볼륨을 생성하고, 모든 클라이언트 프로토콜을 비활성화하고, 소스 볼륨과 사이버 볼트 볼륨 간의 복제 관계를 설정하고, 사이버 볼트 볼륨에 변경 불가능한 스냅샷을 생성합니다.
+
+.사이버 볼트란 무엇인가요?
+사이버 볼트는 주요 IT 인프라와 분리된 격리된 환경에 중요한 데이터를 저장하는 특정 데이터 보호 기술입니다.
+
+사이버 볼트는 악성 소프트웨어, 랜섬웨어 또는 내부 위협 등 주요 네트워크에 영향을 미치는 위협으로부터 면역이 있는 "공기 차단" 방식의 변경 불가능하고 삭제 불가능한 데이터 저장소입니다.  변경 불가능하고 지울 수 없는 스냅샷을 통해 사이버 볼트를 구현할 수 있습니다.
+
+기존 방식을 사용하는 에어 갭 백업에는 공간을 만들고 1차 및 2차 미디어를 물리적으로 분리하는 작업이 포함됩니다. 미디어를 다른 곳으로 옮기거나 연결을 끊으면 악의적인 행위자가 데이터에 액세스할 수 없습니다. 이렇게 하면 데이터는 보호되지만 복구 시간이 더 느려질 수 있습니다.
+
+.ONTAP 사이버 볼트용 FSx
+Amazon FSx for NetApp ONTAP 사이버 볼트 소스 및 대상으로 지원됩니다.
+
+.구현
+Workload Factory는 사이버 볼트 아키텍처를 만드는 데 도움을 제공합니다.  NetApp 에 ​​연락하여 사이버 볼트 구현에 대한 관심을 표명하면 NetApp 전문가가 연락하여 요구 사항에 대해 논의합니다.
+
+시작하려면 ng-FSx-CyberVault@netapp.com으로 이메일을 보내세요.
+
+.관련 정보
+사이버 볼트에 대한 자세한 내용과 이 아키텍처를 설정하는 방법은 다음을 참조하세요.link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAP 사이버 볼트 문서"^] .

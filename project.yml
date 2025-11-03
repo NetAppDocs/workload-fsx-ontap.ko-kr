@@ -81,6 +81,8 @@ sidebar:
         url: "/clone-volume.html"
       - title: 온프레미스 ONTAP 데이터 사용
         url: "/use-onprem-data.html"
+      - title: 데이터를 보호하기 위한 사이버 볼트 생성
+        url: "/create-cyber-vault.html"
   - title: 관리 및 모니터링
     entries:
     - title: Tracker를 사용하여 작업을 모니터링합니다
@@ -95,14 +97,16 @@ sidebar:
       entries:
       - title: 볼륨 자동 확장을 편집합니다
         url: "/edit-volume-autogrow.html"
-      - title: 볼륨 용량을 늘립니다
-        url: "/increase-volume-capacity.html"
+      - title: 볼륨 용량 조절
+        url: "/adjust-volume-capacity.html"
+      - title: 볼륨 용량 재조정
+        url: "/rebalance-volume.html"
       - title: 변경 불가능한 파일을 관리합니다
         url: "/manage-immutable-files.html"
       - title: 볼륨 태그 관리
         url: "/manage-volume-tags.html"
-      - title: 볼륨 용량 재조정
-        url: "/rebalance-volume.html"
+      - title: 캐시 볼륨 관리
+        url: "/manage-cache-volumes.html"
       - title: 계층화 정책을 변경합니다
         url: "/change-tiering-policy.html"
       - title: 스토리지 효율성 업데이트
@@ -119,7 +123,7 @@ sidebar:
       entries:
       - title: 파일 시스템 용량 조정
         url: "/increase-file-system-capacity.html"
-      - title: 자동 용량 관리 활성화
+      - title: 자동 용량 및 inode 관리 활성화
         url: "/enable-auto-capacity-management.html"
       - title: fsxadmin 암호를 재설정합니다
         url: "/reset-fsxadmin-password.html"

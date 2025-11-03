@@ -13,7 +13,7 @@ summary: 볼륨 자동 증가를 활성화하면 Workload Factory에서 볼륨 �
 [role="lead"]
 볼륨 자동 증가를 활성화하면 Workload Factory에서 볼륨 용량을 관리하게 됩니다.  언제든지 비활성화할 수 있습니다.
 
-선택적으로 를 사용하여 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 link:increase-volume-capacity.html["볼륨 용량 기능을 높입니다"]있습니다.
+선택적으로 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 있습니다.link:adjust-volume-capacity.html["볼륨 용량 조절 기능"] .
 
 
 NOTE: iSCSI 볼륨에는 볼륨 자동 확장이 지원되지 않습니다.

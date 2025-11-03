@@ -19,7 +19,7 @@ NetApp Workload Factory를 사용하면 1세대 및 2세대 FSx for ONTAP 파일
 .시작하기 전에
 FSx for ONTAP 파일 시스템을 생성하기 전에 다음이 필요합니다.
 
-* Workload Factory에 FSx for ONTAP 파일 시스템을 만드는 데 필요한 권한을 부여하는 IAM 역할의 ARN입니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에 사용 권한을 부여하는 방법에 대해 알아봅니다"^] .
+* FSx for ONTAP 파일 시스템을 생성하기 위한 _파일 시스템 생성 및 삭제_ 권한이 있는 자격 증명입니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에 사용 권한을 부여하는 방법에 대해 알아봅니다"^].
 * ONTAP용 FSx 인스턴스를 생성할 지역 및 VPC 정보
 
 

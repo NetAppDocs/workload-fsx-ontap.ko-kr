@@ -30,8 +30,8 @@ Workload Factory 콘솔 내의 저장소에서 파일 시스템의 구성 문제
 워크로드 공장에서 FSx for ONTAP 파일 시스템에 대한 다음 구성의 체계적으로 설계된 상태를 분석합니다.
 
 * 안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, FSx for ONTAP 백업, 원격 데이터 복제 및 장기 보존을 위한 데이터 안정성
-* 보안: AI(ARP/AI)를 활용한 NetApp 자율형 랜섬웨어 보호
-* 운영 우수성: 스토리지 효율성, 자동 용량 관리 및 볼륨 파일 용량 활용 임계값
+* 보안: AI(ARP/AI) 및 볼륨에 대한 무단 액세스를 통한 NetApp 자율 랜섬웨어 보호
+* 운영 우수성: 자동 용량 관리, 볼륨 파일 용량 활용도 임계값 및 볼륨 활용도가 거의 가득 찼습니다.
 * 비용 최적화: 스토리지 효율성 및 데이터 계층화
 
 
@@ -42,7 +42,7 @@ Workload Factory 콘솔 내의 저장소에서 파일 시스템의 구성 문제
 FSx for ONTAP 파일 시스템이나 파일 시스템의 선택된 볼륨에 대한 구성 문제를 해결할 수 있습니다.  수정할 구성을 하나 이상 선택할 수 있습니다.
 
 .시작하기 전에
-* _읽기 전용_ 또는 _읽기/쓰기_ 권한이 있는 자격 증명이 있어야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정에서 사용 권한을 부여하는 방법에 대해 알아봅니다"^]..
+* 당신은해야합니다link:link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^] 귀하의 AWS 계정에서.
 * 수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다. 구성 문제를 해결하기로 결정하기 전에 각 권장 사항을 주의 깊게 검토하세요.
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"]파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
 
