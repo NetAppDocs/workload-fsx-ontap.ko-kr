@@ -4,20 +4,20 @@ permalink: manage-cache-volumes.html
 keywords: cache volumes, manage cache, FSx for ONTAP cache 
 summary: 필요한 경우 NetApp Workload Factory 에서 FSx for ONTAP 파일 시스템의 캐시 볼륨을 관리합니다. 
 ---
-= FSx for ONTAP 파일 시스템의 캐시 볼륨 관리
+= NetApp Workload Factory 사용하여 FSx for ONTAP 캐시 볼륨 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 캐시 볼륨을 관리할 수 있습니다.  관리 작업에는 캐시 이름 편집, 캐시 용량 늘리기, 내보내기 정책 편집, 캐싱 방법 변경, 캐시 사전 채우기, 더 이상 필요하지 않을 때 캐시 볼륨 삭제 등이 포함됩니다.
+NetApp Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템의 캐시 볼륨을 관리합니다.  캐싱은 데이터를 일시적으로 저장하는 방법으로, 검색 시간을 줄여 데이터 접근 성능을 향상시킵니다.  캐시 이름을 편집하고, 용량을 조정하고, 내보내기 정책을 변경하고, 캐싱 방법을 선택하고, 캐시를 미리 채우거나 캐시 볼륨을 삭제할 수 있습니다.
 
 .이 작업에 대해
-NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관된 캐시 볼륨을 관리할 수 있습니다.
+NetApp Workload Factory 콘솔에서 캐시 관계와 연관된 캐시 볼륨을 관리할 수 있습니다.
 
 .시작하기 전에
-* 캐시 볼륨과 관계를 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크가 연결되면 이 작업으로 돌아갑니다.
+* 캐시 볼륨과 관계를 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크를 연결한 후 이 작업으로 돌아오세요.
 * 편집하려면 기존 캐시 볼륨이 있어야 합니다.
 
 
@@ -39,9 +39,9 @@ NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관
 
 
 
-== 캐시 볼륨의 용량을 늘리세요
+== 캐시 볼륨의 용량을 조정합니다.
 
-기존 캐시 볼륨의 용량을 늘려야 하는 경우 언제든지 늘릴 수 있습니다.
+언제든지 기존 캐시 볼륨의 용량을 조정할 수 있습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
@@ -49,8 +49,8 @@ NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관
 . 저장소 메뉴에서 FSx for ONTAP 선택합니다.
 . FSx for ONTAP 에서 캐시 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
 . 파일 시스템 개요에서 *캐시 관계* 탭을 선택합니다.
-. 수정하려는 캐시 볼륨에 대한 작업 메뉴를 선택한 다음 *캐시 용량 늘리기*를 선택합니다.
-. *캐시 용량 늘리기* 대화 상자에서 캐시 볼륨의 새 용량을 백분율이나 단위로 입력한 다음 *적용*을 선택합니다.
+. 수정하려는 캐시 볼륨에 대한 작업 메뉴를 선택한 다음 *캐시 용량 조정*을 선택합니다.
+. *캐시 용량 조정* 대화 상자에서 캐시 볼륨의 새 용량을 백분율이나 단위로 입력한 다음 *적용*을 선택합니다.
 
 
 
@@ -74,7 +74,7 @@ NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관
 
 == 캐시 볼륨에 대한 캐싱 방법 변경
 
-기존 캐시 볼륨의 캐싱 방법 또는 모드를 write-around 또는 write-back으로 변경합니다.
+기존 캐시 볼륨의 캐시 작동 방식을 write-around 또는 write-back으로 변경할 수 있습니다.
 
 자세히 알아보세요link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-flexcache.html["쓰기 모드"^] .
 
@@ -92,7 +92,7 @@ NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관
 
 == 캐시 볼륨 미리 채우기
 
-캐시된 데이터에 대한 액세스 속도를 높이려면 요청하기 전에 원본 볼륨의 데이터로 캐시 볼륨을 미리 채웁니다.
+캐시된 데이터를 더 빨리 사용할 수 있도록 하려면 캐시 볼륨을 사용하기 전에 원본 볼륨의 데이터로 채우세요.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
@@ -108,7 +108,7 @@ NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관
 
 == 캐시 볼륨 삭제
 
-캐시 볼륨을 삭제하면 원본 볼륨과 캐시 볼륨 간의 캐시 관계가 삭제됩니다.  삭제 후에는 캐시된 데이터를 더 이상 사용할 수 없습니다.
+캐시 볼륨을 삭제하면 캐시 관계도 제거됩니다.  캐시된 데이터를 더 이상 사용할 수 없습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
