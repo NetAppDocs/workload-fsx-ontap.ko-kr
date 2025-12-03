@@ -194,7 +194,6 @@
   <block id="34cc44a6e06f592c6033a57f8671a67a" category="list-text">* 루트 볼륨 보안 스타일 *: 데이터에 액세스하는 클라이언트 유형(UNIX(Linux 클라이언트), NTFS(Windows 클라이언트) 또는 혼합)에 따라 루트 볼륨 보안 스타일을 선택합니다.</block>
   <block id="dd92a94c350d15b3e750c8345c72be14" category="paragraph">스냅샷에서 볼륨을 생성하기 전에 다음과 같은 제한 사항을 고려하십시오.</block>
   <block id="aa598f48818753dcf8598b6294e34d5b" category="list-text">권한 모델 변경: 이 작업을 사용하여 NAS(Network-Attached Storage) 프로토콜 유형을 전환하는 경우 보안 스타일이 제공하는 권한 모델도 전환할 수 있습니다. 파일 액세스 권한 문제가 발생할 수 있습니다. 이 문제는 권한 설정에 NAS 클라이언트 도구를 사용하여 관리자 액세스 권한으로만 수동으로 해결할 수 있습니다.</block>
-  <block id="25b72c08a4a289e6b89fc38db06792a9" category="doc">FSx for ONTAP 볼륨을 생성합니다</block>
   <block id="8a1e5168feb60a6391f96310159dca9a" category="list-text">NFS: Unix 운영 체제용 파일 스토리지 프로토콜입니다</block>
   <block id="ec38854bd667a882fa1d0b62579b5079" category="list-text">iSCSI: 블록 스토리지 프로토콜</block>
   <block id="6508673a49d08aadcbcf9f2f8ff00354" category="paragraph">볼륨을 생성하기 전에 다음 사전 요구 사항을 검토하십시오.</block>
@@ -2363,7 +2362,6 @@
   <block id="12f4e0399e2df3c2e6f5c6d078ccfcb7" category="doc">NetApp Workload Factory 에서 FSx for ONTAP EMS 이벤트 분석</block>
   <block id="ab6bb38002e21094a77f3fc386f75b81" category="paragraph">스마트 이벤트 분석기를 사용하면 NetApp Workload Factory 의 FSx for ONTAP 파일 시스템에 대한 이벤트 관리 시스템(EMS) 이벤트를 자동으로 추출하고 분석하여 문제를 신속하게 식별하고 해결할 수 있습니다. Agentic AI 기반 분석에는 Amazon Bedrock 통합이 필요합니다.</block>
   <block id="69b4c5d1a10df7b24661fa3357de7164" category="paragraph">스토리지 관리자는 종종 고객 불만이 접수되거나 사용자 정의 스크립트와 알람을 만든 후에야 FSx for ONTAP EMS 이벤트에 대응합니다.  이런 반응적 접근 방식은 문제 해결 속도를 늦추고, 가동 중지 시간을 늘리고, 운영 효율성을 떨어뜨립니다.</block>
-  <block id="2579e7ab91941f10b5b5ff1d62950587" category="paragraph">이벤트 분석기는 FSx for ONTAP EMS 이벤트를 추출하고 이를 분석하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지하는 데 도움을 줍니다.</block>
   <block id="950a30dbe6160d51c93dd8570573b0b1" category="paragraph">주요 이점은 다음과 같습니다.</block>
   <block id="ff395ce69e116ba9c811e7b5e4d30150" category="list-text">고급 문제 해결: AI를 활용하여 이벤트를 사전에 감지하고 분석하여 주의가 필요한 ONTAP EMS 이벤트에 대한 명확한 해결 단계를 제공합니다.</block>
   <block id="e81b4c6e0ef57eb1b12f2dee109f70a5" category="list-text">모범 사례 수정: 사용자 환경을 기반으로 FSx for ONTAP 의 문제를 해결하는 명확한 단계를 제공하므로 누구나 문제를 해결할 수 있습니다.</block>
@@ -2379,12 +2377,9 @@
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 데이터 보호 문서</block>
   <block id="5ccaf9841b400d75e00f4c8e0a92737d" category="paragraph">고객 데이터는 모델을 훈련하거나 개선하는 데 사용되지 않습니다.  Amazon Bedrock은 실시간으로 이벤트를 처리하지만 데이터를 학습하지는 않습니다.  결과는 참조용으로만 사용자 환경에 저장됩니다.  자세한 내용은 다음을 참조하세요.<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block> .</block>
   <block id="300fe33bee6926cbc2c265a3ccde1b0f" category="paragraph">이벤트 분석기를 사용하려면 다음 필수 조건을 충족해야 합니다.</block>
-  <block id="5f12cac6e522ac73a1f518e795d5d742" category="list-text">당신은해야합니다<block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> FSx for ONTAP 파일 시스템에 대한 이벤트를 보려면 AWS 계정에서 확인하세요.</block>
   <block id="709be97721c78cba90770231b1263a14" category="inline-link-macro">링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다.</block>
   <block id="35f42184479bd0858fd2a493aa10006d" category="list-text">당신은해야합니다<block ref="13912c59a5ea303190d1db0c6a5f11f5" category="inline-link-macro-rx"></block> EMS 이벤트 분석기를 사용합니다.</block>
   <block id="ffbf1245cc8098f00c47babcce153016" category="list-text">또한 다음 요구 사항을 충족해야 합니다.  로그 오류를 분석할 때 시스템에서 이러한 단계를 완료하라는 메시지가 표시됩니다.</block>
-  <block id="b731c0685ba6b81efc2a3730248eb9d5" category="list-text">*아마존 베드록 활성화*</block>
-  <block id="2a1c67a7dc28732cbee29b267a4a9af7" category="paragraph">이벤트 분석기는 Amazon Bedrock API를 사용하여 FSx for ONTAP 이벤트에 대한 AI 기반 통찰력을 제공합니다.</block>
   <block id="3e7827ba3fa976aec6ad1122b7da30fe" category="paragraph">추천 모델: Amazon Bedrock Model (anthropic.claude-sonnet-4-20250514-v1:0).  선택한 지역에서 이 모델에 대한 추론 프로필 ARN을 제공해야 합니다.</block>
   <block id="b523b0335680ab84edd50860caeed123" category="list-text">*Workload Factory 링크*</block>
   <block id="bd3978e078bba2f9f1743c27d1db8462" category="paragraph">AI 기반 이벤트 분석을 활성화하려면 FSx for ONTAP 파일 시스템과 링크를 만들고 연결해야 합니다.  이 링크는 Workload Factory와 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계를 생성하고 AWS Lambda를 활용합니다.</block>
@@ -2393,15 +2388,10 @@
   <block id="fb6d7ca6557e4fecfffa8ab3a6a96421" category="paragraph">Workload Factory IAM 역할 관련 정책에 다음 권한을 추가해야 합니다.</block>
   <block id="47160e55fc85c2702f6f616e65ff73cd" category="list-text">권한:<block ref="93804e96d3f417a0088c564647dd28e9" prefix=" " category="inline-code"></block> 그리고<block ref="00fe52afa6e3b9a0d389f529a2b88242" prefix=" " category="inline-code"></block></block>
   <block id="69e9daf6e587a39e4b6dea7dda714604" category="paragraph">이러한 권한을 통해 Workload Factory는 Bedrock 모델을 호출하여 사전 예방적 오류 조사 및 수정 지침을 제공할 수 있습니다. 이 프로필은 맞춤형 통찰력에 대한 안전한 AI 액세스를 보장합니다.</block>
-  <block id="84f81cf573c6d781702f75eaf12f08f0" category="list-text">Workload Factory와 연결된 AWS 자격 증명:<block ref="c812f1cb829c6d16da192b12e04d78ff" prefix=" " category="inline-code"></block> 그리고<block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix=" " category="inline-code"></block> 권한</block>
   <block id="3fc6364e2f4555bc71d109a7ba02fef1" category="paragraph">이러한 권한은 모델의 가용성을 확인합니다.</block>
   <block id="3c9bac4bc86cac9a309d9792f5bb65df" category="section-title">FSx for ONTAP 에 대한 EMS 이벤트를 보고 분석합니다.</block>
   <block id="6baf937b798e7ea8fa07c50ef6c201f9" category="paragraph">Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템에 대한 EMS 이벤트를 보고 분석합니다.</block>
-  <block id="7f4aea97afc4fe9bca082673b0935315" category="list-text">저장소 메뉴에서 *분석*을 선택합니다.</block>
-  <block id="50d875c26d87da128f69cb933227d1a5" category="list-text">분석 화면에서 분석하려는 FSx for ONTAP 파일 시스템이 포함된 AWS 계정, 자격 증명 및 지역을 선택합니다.</block>
-  <block id="3508b6e4bf84f2b46e5223cd82593789" category="paragraph">이벤트가 있는 FSx for ONTAP 파일 시스템만 화면에 표시됩니다.</block>
   <block id="18aee431fdcb283a94abf2d0c207e76d" category="list-text">필요한 경우, 화면의 지시에 따라 *AI 분석 설정 요구 사항*을 완료하여 누락된 전제 조건을 충족합니다.</block>
-  <block id="0b8feb0f50822d2155836ac6630dcff8" category="list-text">분석하려는 FSx for ONTAP 파일 시스템을 찾은 다음 *이벤트 보기*를 선택합니다.</block>
   <block id="dacb27092cd2afb431a6b906c5beb313" category="list-text">자세한 이벤트 정보를 확인하세요.</block>
   <block id="f96fb00c03e55e8700536f390d41e78b" category="list-text">비용 최적화: 스토리지 효율성, 데이터 계층화 및 불필요한 스냅샷 삭제</block>
   <block id="a5f8aee6e945eb0dbb1da60eaac3110f" category="list-text">성능 최적화: FlexGroup 볼륨 재조정</block>
@@ -2458,8 +2448,17 @@
   <block id="db2c0720daa95b2841a73d2a13c0e539" category="list-text">FSx for ONTAP 리소스에 대한 *비용 세부정보*를 확인하세요.</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025년 11월 27일</block>
   <block id="7ba9e316fdb6ba8e077283db064835f0" category="sidebar">ONTAP 비용에 대한 FSx 추적 및 분석</block>
-  <block id="74475e9b626ebe70ba32217725555fb2" category="sidebar">ONTAP 이벤트에 대한 FSx 분석</block>
   <block id="7afacf82c5a68418fd34140a4a69b555" category="sidebar">블록 장치 관리</block>
   <block id="b312d49b502ea93d7b1d38b92313f502" category="sidebar">블록 장치 관리</block>
   <block id="9f83e27b7a1a59c38fc7d458de16054a" category="sidebar">파일 시스템 태그 관리</block>
+  <block id="de524979693d09207c5eeb62cad773dc" category="paragraph">이벤트 분석기는 FSx for ONTAP EMS 이벤트를 추출하고 이를 분석하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지하는 데 도움을 줍니다. Workload Factory는 지난 72시간 동안 발생한 이벤트만 표시합니다.</block>
+  <block id="d55be6cbc9080d8651f85cfb40118d1c" category="list-text">당신은해야합니다<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block> FSx for ONTAP 파일 시스템에 대한 이벤트를 보려면 AWS 계정에서 확인하세요.</block>
+  <block id="79aceabdc6c99b8ffa443536ee6c3fac" category="list-text">*아마존 베드록 모델*</block>
+  <block id="df3d4ef155c8b4e033aeae2ee4342695" category="paragraph">이벤트 분석기는 Amazon Bedrock API를 사용하여 FSx for ONTAP 이벤트에 대한 AI 기반 통찰력을 제공합니다.</block>
+  <block id="ca29c80b4531f01e2f485c85067fd269" category="list-text">Workload Factory와 연결된 AWS 자격 증명:<block ref="fdd997ab8b4252f76acdda855bb7b890" prefix=" " category="inline-code"></block> 그리고<block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix=" " category="inline-code"></block> 권한</block>
+  <block id="23d6d74604ef4454bcce97196495439d" category="list-text">분석할 FSx for ONTAP 파일 시스템을 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="4a9800a79df53d92124cfa905926f3a8" category="list-text">*분석* 탭을 선택하세요.</block>
+  <block id="1618ab37d780874b04a6f2084be19d80" category="list-text">*분석*을 선택하세요.</block>
+  <block id="ec43608dd1a0c06ed66226644c486b9a" category="sidebar">FSx for ONTAP 리소스에 대한 비용 및 사용량 추적</block>
+  <block id="063d22315ef43d4247b4ee3e2986ca61" category="sidebar">ONTAP EMS 이벤트에 대한 FSx 분석</block>
 </blocks>
