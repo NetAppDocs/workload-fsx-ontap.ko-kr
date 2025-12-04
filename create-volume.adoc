@@ -241,5 +241,8 @@ Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 계층화
 . Create * 를 선택합니다.
 
 
-.결과
-워크로드 팩토리가 볼륨 생성을 시작합니다. 볼륨이 생성되면 시스템의 [볼륨] 탭에 새 볼륨이 표시됩니다.
+.관련 정보
+* link:adjust-volume-capacity.html["Workload Factory에서 볼륨 용량 조정"]
+* link:change-tiering-policy.html["Workload Factory에서 볼륨 계층화 정책 변경"]
+* link:manage-s3-access-points.html["Workload Factory에서 S3 액세스 포인트 관리"]
+

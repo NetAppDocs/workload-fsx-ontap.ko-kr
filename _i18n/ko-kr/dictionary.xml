@@ -1472,7 +1472,6 @@
   <block id="9e46846308a6940deed12bb97a4f8290" category="list-text">링크는 파일 시스템과 연관되지 않습니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="7c3e31cda0e937f8fa1edeeb89e9fe70" category="list-text">변경 불가능한 파일이 있는 볼륨과 iSCSI 및 NVMe 프로토콜이 있는 볼륨은 ARP/AI에서 지원되지 않습니다.</block>
   <block id="df1195db43983cb33962d0fe23f28da4" category="list-text">파일 시스템에는 이미 ARP/AI 정책이 있습니다.</block>
-  <block id="0bce1227be581635db9bb209f22cf4e6" category="paragraph">워크로드 팩토리가 볼륨 생성을 시작합니다. 볼륨이 생성되면 시스템의 [볼륨] 탭에 새 볼륨이 표시됩니다.</block>
   <block id="817a91472106a30911a7a081b0284ff7" category="paragraph">FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 노드 내의 모든 FlexVol 볼륨이나 모든 구성 요소에 파일을 균등하게 분산하여 모든 노드가 단일 FlexGroup 볼륨의 작업 부하에 참여하도록 합니다.</block>
   <block id="46119f30376fd007e4806359f116810d" category="paragraph">FlexVol 볼륨과 FlexGroup 볼륨에 대해 볼륨 용량 재조정이 지원됩니다. 새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.</block>
   <block id="bbf6fdac51a56da72339e09ef6a7537c" category="paragraph">각 볼륨 유형과 재조정 작업은 다음과 같이 다릅니다.</block>
@@ -2467,4 +2466,29 @@
   <block id="f553bab80aec86e43829abd15b816ce5" category="section-title">Amazon S3 액세스 포인트 제한</block>
   <block id="19dc991ee5919c74b5a565fe2ea70176" category="paragraph">스토리지 VM당 S3 액세스 포인트 수 제한은 4,000개입니다.</block>
   <block id="ef6c8d59ba70b1efd5437dd31e63efcb" category="section-title">2025년 12월 4일</block>
+  <block id="bf9dc967c38bf5f6366aea1d464016b5" category="inline-link-macro">S3 액세스 포인트를 사용하여 볼륨 생성</block>
+  <block id="9650d80f3b4a8975eb2cc3145efe97fd" category="list-text"><block ref="9650d80f3b4a8975eb2cc3145efe97fd" category="inline-link-macro-rx"></block></block>
+  <block id="3e2c74c8c2d6921bd86b94a0e3ce7846" category="inline-link-macro">볼륨에 대한 S3 액세스 포인트 관리</block>
+  <block id="bec075d59b91517943ea96b4d56e06de" category="list-text"><block ref="bec075d59b91517943ea96b4d56e06de" category="inline-link-macro-rx"></block></block>
+  <block id="a008e298246d26d679639f7bc96ba6ac" category="inline-link-macro">Workload Factory에서 볼륨 용량 조정</block>
+  <block id="6397bacd7d32cf08e4bf24faa5700a5a" category="list-text"><block ref="6397bacd7d32cf08e4bf24faa5700a5a" category="inline-link-macro-rx"></block></block>
+  <block id="d8774a6076f48d902ee122d2219887a0" category="inline-link-macro">Workload Factory에서 볼륨 계층화 정책 변경</block>
+  <block id="15edb6ed53ce8a32fd0631a4517d7fc7" category="list-text"><block ref="15edb6ed53ce8a32fd0631a4517d7fc7" category="inline-link-macro-rx"></block></block>
+  <block id="d628678d4875b2f8f6ea7ca8dab6ade0" category="inline-link-macro">Workload Factory에서 S3 액세스 포인트 관리</block>
+  <block id="81cca59ad3bedd27880ab1c747ae8b70" category="list-text"><block ref="81cca59ad3bedd27880ab1c747ae8b70" category="inline-link-macro-rx"></block></block>
+  <block id="e89e0732eb8fbeb9c1bb216d5b1fe2c8" category="summary">NetApp Workload Factory 에서 볼륨의 S3 액세스 포인트를 관리합니다.</block>
+  <block id="7caacaed323c9582bdf146f33b338930" category="doc">NetApp Workload Factory 에서 볼륨의 S3 액세스 포인트 관리</block>
+  <block id="c03be794767b179eaf0a48a2bc06884b" category="paragraph">NetApp Workload Factory 에서 볼륨의 S3 액세스 포인트를 관리합니다. Workload Factory 콘솔을 사용하여 기존 볼륨에 S3 액세스 포인트를 할당하거나 S3 액세스 포인트를 삭제할 수 있습니다.</block>
+  <block id="1f26d72d95cf276540f7a69b509645fe" category="paragraph">S3 액세스 포인트가 있는 기존 볼륨이 있어야 합니다.</block>
+  <block id="be929bcd251acd28106548a34c8a067b" category="list-text">*FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="7fcc02a075c6d0b859fd9a03f5250e5f" category="list-text">볼륨 탭에서 S3 액세스 포인트를 관리할 볼륨에 대한 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
+  <block id="056da7279a8392afebe1b20256f8656b" category="list-text">S3 액세스 포인트 관리 페이지에서 액세스 포인트를 생성하고 연결하거나 기존 액세스 포인트를 삭제할 수 있습니다.</block>
+  <block id="4dc9fa88ed74bd072e88bad92a1f17c6" category="open-title">기존 볼륨에 S3 액세스 포인트를 생성하고 연결합니다.</block>
+  <block id="c57302a0d02305ff8c144fb37bb2fab9" category="list-text">*S3 액세스 포인트 만들기 및 연결*을 선택합니다.</block>
+  <block id="e979f8982cafd5647560686a5ec74a2a" category="list-text">*S3 액세스 포인트 생성 및 연결* 대화 상자에서 다음 정보를 제공합니다.</block>
+  <block id="0802ef324b114effd397e5e5ac619733" category="list-text">*만들기 및 첨부*를 선택하세요.</block>
+  <block id="f4e2e090f540d174d8e07c3527c25962" category="open-title">볼륨에서 기존 S3 액세스 포인트 삭제</block>
+  <block id="a87127d2d5ce747338342d2d926d9cc4" category="list-text">삭제할 S3 액세스 포인트에 대한 작업 메뉴를 선택한 다음 *분리*를 선택합니다.</block>
+  <block id="8d755d1f354bf995e33c13051ecdaeca" category="list-text">*S3 액세스 포인트 분리 및 제거* 대화 상자에서 *분리 및 제거*를 선택하여 볼륨에서 S3 액세스 포인트를 삭제합니다.</block>
+  <block id="f994c7e71102a3d5ed7af5975abfaa09" category="sidebar">S3 액세스 포인트 관리</block>
 </blocks>

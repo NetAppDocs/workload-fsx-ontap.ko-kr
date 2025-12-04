@@ -119,6 +119,8 @@ sidebar:
         url: "/manage-nfs-export-policy.html"
       - title: SMB/CIFS 공유 관리
         url: "/manage-cifs-share.html"
+      - title: S3 액세스 포인트 관리
+        url: "/manage-s3-access-points.html"
       - title: 복제된 볼륨을 분할합니다
         url: "/split-cloned-volume.html"
       - title: 볼륨을 삭제합니다
