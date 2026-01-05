@@ -58,3 +58,9 @@ iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장�
 
 
 NOTE: 블록 장치의 크기를 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 블록 장치의 새로운 크기를 확인하고 해당 블록 장치의 파일 시스템을 확장합니다.
+
+
+
+== 관련 정보
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-block-device.html["ONTAP 파일 시스템용 FSx 블록 장치를 생성합니다."]

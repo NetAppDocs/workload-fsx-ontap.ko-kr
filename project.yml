@@ -51,6 +51,8 @@ sidebar:
         url: "/create-volume.html"
       - title: 데이터에 액세스합니다
         url: "/access-data.html"
+    - title: 블록 장치를 생성하세요
+      url: "/create-block-device.html"
     - title: 스토리지 VM을 생성합니다
       url: "/create-storage-vm.html"
     - title: 데이터 보호

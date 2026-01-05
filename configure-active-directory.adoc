@@ -21,9 +21,8 @@ NetApp Workload Factory의 FSx for ONTAP 파일 시스템에서 스토리지 VM�
 . 저장소 타일에서 *저장소로 이동*을 선택합니다.
 . 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
 . *FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. 파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.
-. 저장소 VM 탭에서 Active Directory를 구성할 저장소 VM의 작업 메뉴를 선택합니다.
-. AD 구성 관리 * 를 선택합니다.
+. 스토리지 VM 아래의 파일 시스템 개요에서 *관리*를 선택합니다.
+. 스토리지 VM 관리 화면에서 Active Directory를 구성할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* > *AD 구성 관리*를 선택합니다.
 . AD 구성 관리 페이지에서 다음을 제공합니다.
 +
 .. * 가입할 Active Directory 도메인 *: Active Directory의 FQDN(정규화된 도메인 이름)을 입력합니다.

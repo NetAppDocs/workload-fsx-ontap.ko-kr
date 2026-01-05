@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: create-block-device.html 
+keywords: create block device, create lun, iscsi protocol 
+summary: '사업 부문(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다.' 
+---
+= NetApp Workload Factory 에서 파일 시스템용 블록 장치를 생성합니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+사업 부문(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다.
+
+.이 작업에 대해
+NetApp Workload Factory 의 블록 장치에는 FlexVol 볼륨만 지원됩니다. iSCSI 프로토콜을 사용하여 블록 장치를 생성할 수 있습니다.
+
+블록 크기는 사용 가능한 FlexVol volume 크기보다 작아야 합니다.
+
+.시작하기 전에
+* 차단 장치를 생성하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크를 연결한 후 이 작업으로 돌아오세요.
+
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. *블록 장치 생성*을 선택하세요.
+. *볼륨 세부 정보*에서 다음을 수행하십시오.
++
+.. *권명*: 다음 옵션 중 하나를 선택하십시오.
++
+*** 새 볼륨을 생성하고 볼륨 이름을 입력하십시오.
+*** 기존 볼륨을 선택하세요.
+
+
+.. *저장소 VM*: 저장소 VM을 선택하세요.
+.. *볼륨 스타일*: 기본 볼륨 스타일은 * FlexVol*입니다.
+.. *용량*: 용량을 입력하고 단위를 선택하세요. FlexVol volume 당 최대 크기는 100TiB입니다.
+.. *볼륨 자동 증가*: 선택적으로 볼륨 자동 증가 기능을 활성화하면 볼륨이 용량에 도달했을 때 자동으로 크기가 증가합니다. 최대 성장 크기는 300 TiB입니다.
+.. *태그*: 선택적으로 태그를 추가하여 차단 장치를 정리하고 분류할 수 있습니다.
+
+
+. *차단 장치 세부 정보*에서 다음을 수행하십시오.
++
+.. *차단 장치 이름*: 차단 장치의 이름을 입력하십시오.
+.. *블록 장치 크기*: 블록 장치의 크기를 입력하고 단위를 선택하십시오. 블록 장치 크기는 사용 가능한 볼륨 크기보다 작아야 합니다.
+
+
+. *액세스*에서 다음을 수행하십시오.
++
+.. *iSCSI 구성*: 다음 옵션 중 하나를 선택하십시오.
++
+*** *새 이니시에이터 그룹 생성*: 호스트 운영 체제, 이니시에이터 그룹 이름을 제공하고 하나 이상의 iSCSI 정규화 이름(IQN) 호스트 이니시에이터를 추가합니다.
+*** *기존 이니시에이터 그룹 매핑*: 기존 이니시에이터 그룹을 선택하고 호스트 운영 체제를 제공한 다음 하나 이상의 iSCSI 정규화된 이름(IQN) 호스트 이니시에이터를 선택합니다.
+
+
+
+
+. *효율성 및 보호* 항목에서 다음을 수행하십시오.
++
+.. *저장소 효율성*: 기본적으로 활성화되어 있습니다. 기능을 비활성화하려면 선택하세요.
++
+ONTAP은 중복 제거 및 압축 기능을 사용하여 스토리지 효율성을 달성합니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.
+
+.. * 스냅샷 정책 *: 스냅샷 정책을 선택하여 스냅샷의 빈도와 보존을 지정합니다.
++
+다음은 AWS의 기본 정책입니다. 기존 스냅샷 정책을 표시하려면 다음을 수행해야 합니다. link:link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 연결합니다"].
+
++
+`default`:: 이 정책은 다음 스케줄에 따라 스냅샷을 자동으로 생성하고 가장 오래된 스냅샷 복사본은 새 복제본을 위한 공간을 확보하기 위해 삭제합니다.
++
+--
+*** 시간당 최대 6개의 스냅샷이 해당 시간 이후 5분 동안 촬영되었습니다.
+*** 월요일부터 토요일까지 자정 이후 10분에 최대 2개의 일일 스냅샷을 촬영합니다.
+*** 매주 일요일 자정 이후 15분에 최대 2개의 주간 스냅샷이 촬영됩니다.
++
+
+NOTE: 스냅샷 시간은 기본적으로 UTC(협정 세계시)로 설정된 파일 시스템의 시간대를 기준으로 합니다. 시간대 변경에 대한 자세한 내용은 NetApp 지원 설명서의 을 link:https://library.netapp.com/ecmdocs/ECMP1155684/html/GUID-E26E4C94-DF74-4E31-A6E8-1D2D2287A9A1.html["시스템 시간대 표시 및 설정"^] 참조하십시오.
+
+
+
+--
+`default-1weekly`:: 이 정책은 주간 스케줄에서 스냅샷을 하나만 보존한다는 점을 제외하고 정책과 동일한 방식으로 `default` 작동합니다.
+`none`:: 이 정책은 스냅샷을 촬영하지 않습니다. 이 정책을 볼륨에 할당하여 자동 스냅샷이 생성되지 않도록 할 수 있습니다.
+
+
+.. * Tiering policy *: 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.
++
+Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 티어링 정책은 _균형(자동)_입니다. 볼륨 티어링 정책에 대한 자세한 내용은 다음을 참조하십시오. link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 설명서에 나와 있습니다. 참고로 Workload Factory 콘솔에서는 계층화 정책에 대해 사용 사례 기반 이름을 사용하며, ONTAP 계층화 정책 이름은 괄호 안에 FSx로 표시됩니다.
+
+.. *ARP/AI*: AI를 탑재한 NetApp 자율형 랜섬웨어 보호(ARP/AI)는 링크가 파일 시스템에 연결된 경우 기본적으로 활성화됩니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html["ARP/AI에 대해 자세히 알아보세요"].. 계속하려면 설명을 수락하십시오.
++
+해당 기능을 사용할 수 없는 경우, 다음 중 하나의 이유가 있습니다.
+
++
+*** 링크는 파일 시스템과 연관되지 않습니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."].. 링크가 연결되면 이 작업으로 돌아갑니다.
+*** 변경 불가능한 파일이 포함된 볼륨과 NVMe 프로토콜을 사용하는 볼륨은 ARP/AI를 지원하지 않습니다.
+*** 파일 시스템에는 이미 ARP/AI 정책이 있습니다.
+
+
+
+
+. Create * 를 선택합니다.
+
+
+.관련 정보
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-devices.html["FSx for ONTAP 파일 시스템의 블록 장치 관리"]

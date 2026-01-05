@@ -71,8 +71,6 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="85a0e511a99369efd5c47890a946947b" category="doc">스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다</block>
   <block id="c19f2fad6f0110c3951bd583edb5371f" category="paragraph">스토리지 VM에 대한 Active Directory 구성 및 업데이트에도 동일한 단계가 적용됩니다.</block>
-  <block id="3a7b10a42e70c562594e7593e84cfb0d" category="list-text">파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.</block>
-  <block id="584856da16c520c5370d79f390f47426" category="list-text">AD 구성 관리 * 를 선택합니다.</block>
   <block id="dcfecf722762bfcce19242fd2e38a2c2" category="list-text">AD 구성 관리 페이지에서 다음을 제공합니다.</block>
   <block id="a531f5a3e49319a6c1b23021b5a27417" category="list-text">* 가입할 Active Directory 도메인 *: Active Directory의 FQDN(정규화된 도메인 이름)을 입력합니다.</block>
   <block id="194331d5ecf77bf506c810edab0a3cc7" category="list-text">* DNS IP 주소 *: 쉼표로 구분된 IP 주소를 최대 3개까지 입력합니다.</block>
@@ -188,7 +186,6 @@
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이언트와 워크스테이션이 SVM의 엔드포인트(IP 주소)를 사용하여 SVM에서 호스팅하는 볼륨, CIFS/SMB 공유 또는 iSCSI LUN을 마운트합니다.</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP 스토리지 가상 머신 관리</block>
   <block id="cbddd6713cb3317df938ea4a6fd2cd84" category="paragraph">파일 시스템당 지원되는 스토리지 VM 수를 확인합니다. 파일 시스템당 최대 SVM 수는 AWS 설명서의 을 참조하십시오 <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> .</block>
-  <block id="cdbc38b99c6a38c90c6623e1ac73a0fd" category="list-text">스토리지 VM 페이지의 스토리지 VM 구성에서 다음을 제공합니다.</block>
   <block id="c9f265881e56f4c52918525bdcb9205d" category="list-text">* 이름 *: 스토리지 VM의 이름을 입력합니다.</block>
   <block id="42a49281a2c075c2004f1e73852b27e3" category="list-text">* 스토리지 VM 자격 증명 *: 이 스토리지 VM 사용자의 암호를<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 제공하거나 파일 시스템의<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 사용자 자격 증명을 사용합니다.</block>
   <block id="34cc44a6e06f592c6033a57f8671a67a" category="list-text">* 루트 볼륨 보안 스타일 *: 데이터에 액세스하는 클라이언트 유형(UNIX(Linux 클라이언트), NTFS(Windows 클라이언트) 또는 혼합)에 따라 루트 볼륨 보안 스타일을 선택합니다.</block>
@@ -280,7 +277,6 @@
   <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAP 백업: FSx for ONTAP 백업 복사본은 그대로 유지되며 그래도 사용할 수 있습니다.</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 삭제 * 를 선택합니다.</block>
   <block id="321fbbd6f40d9b084f632750d5190dc8" category="summary">언제든지 스토리지 VM에 대한 스토리지 VM 태그를 추가, 업데이트 또는 제거합니다.</block>
-  <block id="856fd7298379e6a75a221ebc3af9cdec" category="list-text">Edit storage VM tags * 를 선택합니다.</block>
   <block id="14d8aa612c687d8708f6fefc5f554d22" category="list-text">스토리지 VM 태그 편집 페이지에서 태그를 추가, 편집 또는 제거합니다.</block>
   <block id="2d1066d1fee53e98224fefca16751fd3" category="paragraph">스토리지 VM에 적용할 수 있는 최대 태그 수는 50개입니다.</block>
   <block id="2332ee8494d2f8246a961c95630281a2" category="admonition">iSCSI 볼륨에는 볼륨 자동 확장이 지원되지 않습니다.</block>
@@ -492,11 +488,9 @@
   <block id="89568baf7659b31a2110d1de7f69778d" category="paragraph">스토리지 인벤토리에 파일 시스템을 사용하면 FSx for ONTAP 파일 시스템을 관리하고 리소스의 데이터 보호를 설정할 수 있습니다 <block ref="41a32458a6146c3b772c57ac70acc68e" category="inline-link-macro-rx"></block>.</block>
   <block id="a509c58d8659a3366f3053048526e6ec" category="summary">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터가 손실될 경우의 데이터 액세스 보호 계층이 제공됩니다.</block>
   <block id="ec42d150d63ba9d69905da61ff84b59b" category="doc">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제합니다</block>
-  <block id="068ecbcf009e32427973dc04a3628cb7" category="list-text">Replicate storage VM * 을 선택합니다.</block>
   <block id="0e752dc97b5515d4bd6d0ef6482c2342" category="paragraph">스토리지 VM 내의 모든 볼륨이 타겟 파일 시스템에 복제됩니다.</block>
   <block id="ff40dc19143c531bc7b8a932c148a848" category="list-text">FSxadmin 암호 재설정 * 을 선택합니다.</block>
   <block id="edacd360980e63a5f2e01df2fa59b050" category="list-text">FSxadmin 암호 재설정 대화 상자에서 새 fsxadmin 암호를 입력하고 다시 입력하여 확인합니다.</block>
-  <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">비밀번호 재설정 * 을 선택합니다.</block>
   <block id="0828ddc896996b7d41cc9ceb1e453764" category="list-text">암호 재설정 대화 상자에서 다음을 입력합니다.</block>
   <block id="8d54082fcba7dd82063ffe4497f8c70d" category="list-text">* 새 암호 *: 스토리지 VM에 대한 새 암호를 입력합니다.</block>
   <block id="ebb4bf732c3ade314c393d5284af8715" category="list-text">* 비밀번호 확인 *: 새 비밀번호를 다시 입력하여 확인합니다.</block>
@@ -699,7 +693,6 @@
   <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAP 탭: 현재 사용 중인 FSx for ONTAP 파일 시스템을 표시합니다.</block>
   <block id="1113c9108b3e58789456954d1c2ea9c2" category="list-text">Explore Savings Tab: Elastic Block Store, FSx for Windows File Server 및 Elastic File Systems 스토리지 시스템을 표시합니다. 이 페이지에서 이러한 시스템을 FSx for ONTAP와 비교하여 절감 효과를 살펴볼 수 있습니다.</block>
   <block id="fa8dc6e67f45bcde58853510e56ce6a1" category="list-text">파일 시스템의 개요 탭에서 * Volumes * 탭을 선택합니다.</block>
-  <block id="8c9880429b2df2018a366dbb14193026" category="list-text">파일 시스템의 개요 탭에서 * 스토리지 VM * 탭을 선택합니다.</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
   <block id="ddeb24aeadcd9bd34930d38c34152c03" category="paragraph">Amazon FSx for NetApp ONTAP은 현재 BlueXP  워크로드 공장에서 일반적으로 사용할 수 있습니다.</block>
   <block id="03b2cfc949418819e16b1dc5fa3660ae" category="list-text"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block></block>
@@ -1411,7 +1404,6 @@
   <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">사용자 정의 스냅샷 정책을 만들려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">볼륨의 수동 스냅샷을 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="6234e99ad9e8c051d4afaa47c5d4ff82" category="list-text">볼륨에 대한 액세스를 구성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="0152fea6b73cbe86540a93515bf61029" category="paragraph">다음은 AWS의 기본 정책입니다. 사용자 정의 스냅샷 정책의 경우 다음을 수행해야 합니다. <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block> .</block>
   <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">볼륨 자동 증가를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="f8e03e36604030c79d6107b800f61804" category="list-text">볼륨 inode가 저장 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">링크를 만들고 연결하세요</block>
@@ -1845,7 +1837,6 @@
   <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">파일 시스템 수준의 Workload Factory 콘솔에서 모든 FSx for ONTAP 파일 시스템에 대한 잘 설계된 상태가 나열됩니다.  잘 설계된 상태는 "문제", "분석되지 않음", "잘 설계된"으로 분류됩니다.  잘 설계된 상태를 선택하면 파일 시스템 내의 잘 설계된 상태 탭으로 이동하게 되며, 여기서 잘 설계된 점수, 구성 범주, 파일 시스템의 모든 구성을 찾을 수 있습니다.</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="55713424abf36138f2e5576255ae328d" category="list-text">저장소 VM 탭에서 Active Directory를 구성할 저장소 VM의 작업 메뉴를 선택합니다.</block>
   <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
   <block id="54fe537cb8aa5bbba8b6f2002f13d69c" category="doc">NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
   <block id="4f43be2165dfc12e9cac6220645b9996" category="paragraph">NetApp Workload Factory에서 정기적으로 예약된 백업 외에 볼륨의 수동 백업을 만듭니다.</block>
@@ -1880,7 +1871,6 @@
   <block id="673f61d59e74b38d8158f8338fec1e4b" category="paragraph">NetApp Workload Factory에서 워크로드에 대한 스토리지 및 데이터 서비스에 가상으로 액세스하기 위해 FSx for ONTAP 파일 시스템에 대한 스토리지 VM(SVM)을 만듭니다.</block>
   <block id="0f54202fd3d9422accef6305efaf73a6" category="paragraph">스토리지 VM은 Workload Factory Storage의 각 워크로드에서 데이터에 액세스하는 데 사용할 수 있는 격리된 파일 서버입니다.  각 SVM에는 데이터 관리 및 액세스를 위한 자체 관리 자격 증명과 엔드포인트가 있습니다.</block>
   <block id="176a501864ff4c70a2c1b132289ccad0" category="paragraph">Workload Factory 콘솔에서 스토리지 VM을 생성할 수 있습니다.  Codebox에서 제공하는 다음 도구도 사용할 수 있습니다: REST API, CloudFormation, Terraform. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block> .</block>
-  <block id="5a2fcba235cbe9725acb555b8a1ff973" category="list-text">*FSx for ONTAP*에서 스토리지 VM을 생성할 파일 시스템의 작업 메뉴를 선택하고 *스토리지 VM 생성*을 선택합니다.</block>
   <block id="2c1104e8d18fa2476c3ec5d972050908" category="summary">FSx for ONTAP 파일 시스템을 설정한 후 Workload Factory에서 FSx for ONTAP 볼륨을 생성합니다.</block>
   <block id="b576330956781fec1fe9e230ce503cdc" category="doc">Workload Factory에서 ONTAP 볼륨에 대한 FSx 생성</block>
   <block id="d2c9fde6d19778c0e3d1e865ed1f22a8" category="paragraph">FSx for ONTAP 파일 시스템을 설정한 후 Workload Factory에서 FSx for ONTAP 볼륨을 생성하여 데이터를 그룹화하기 위한 가상 리소스로 사용합니다.</block>
@@ -1911,7 +1901,6 @@
   <block id="1c9d39dfea82aa323f287c11668fb9ab" category="paragraph">NetApp Workload Factory에서 복제 관계를 삭제합니다.  복제 관계를 삭제하면 소스 볼륨과 대상 볼륨 간의 복제 관계도 제거됩니다.  복제 관계가 삭제된 후에도 두 볼륨은 현재 포함된 데이터와 함께 독립적으로 계속 존재합니다.</block>
   <block id="06a91edaa8e77e04dfd0ccc1dee5a6c7" category="list-text">복제 관계 탭에서 삭제할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="ce1de3f28d8568be87cdce779516de02" category="doc">NetApp Workload Factory에서 스토리지 VM 삭제</block>
-  <block id="17a5fbc49fda805ff4e98fd7a9af355a" category="list-text">저장소 VM 탭에서 Active Directory를 구성할 저장소 VM의 작업 메뉴를 선택합니다.</block>
   <block id="d287f4840c4e2956b3e030d276822021" category="doc">NetApp Workload Factory에서 볼륨 삭제</block>
   <block id="5d2b2d216923f677893f0a068bc1b92f" category="list-text">*FSx for ONTAP*에서 삭제할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="1235950c75ed0fc0a7588ccae6518e39" category="list-text">볼륨 탭에서 삭제할 볼륨의 작업 메뉴를 선택합니다.</block>
@@ -2074,7 +2063,6 @@
   <block id="f1275ed085039c3832dda6dfba0ad9f2" category="list-text">스냅샷 관리 페이지에서 삭제할 스냅샷의 작업 메뉴를 선택한 다음, *삭제*를 선택합니다.</block>
   <block id="b8b31b5d8488dcb7ebd8c2bb9ba38f50" category="doc">NetApp Workload Factory에서 스토리지 VM 태그 관리</block>
   <block id="0c950433d94be139f73fb59247d857a5" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서는 언제든지 스토리지 VM에 대한 태그를 추가, 편집 및 제거할 수 있습니다.</block>
-  <block id="9407fd42d3f2176c45d9212981f7f058" category="list-text">저장소 VM 탭에서 태그를 편집할 저장소 VM의 작업 메뉴를 선택합니다.</block>
   <block id="558281a06321bc8c7b90d170a463683f" category="doc">NetApp Workload Factory에서 볼륨 태그 관리</block>
   <block id="693a8f663c39ae53134101e5d974fda8" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서 FSx for ONTAP 볼륨의 볼륨 태그를 언제든지 추가, 편집 및 제거할 수 있습니다.</block>
   <block id="ff53601e946713a2f9385573998c76d7" category="list-text">볼륨 탭에서 태그를 수정할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
@@ -2114,7 +2102,6 @@
   <block id="59dfa377d2b15b40ba2bddd83dcb5c53" category="list-text">*FSx for ONTAP*에서 재조정할 볼륨이 포함된 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="fbf1bac8c72be0440c190a08fabc8dc0" category="paragraph">NetApp Workload Factory에서 스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하면 데이터 손실이 발생할 경우 데이터 액세스를 위한 보호 계층이 제공됩니다.  이 작업은 한 스토리지 VM의 모든 볼륨을 다른 FSx for ONTAP 파일 시스템으로 복제합니다.</block>
   <block id="e42fc3e4b35126c00393bef5dd43abb0" category="list-text">*FSx for ONTAP*에서 복제할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="f762650128ec007cd0d70b6659361ba3" category="list-text">저장소 VM 탭에서 SVM을 복제할 저장소 VM의 작업 메뉴를 선택합니다.</block>
   <block id="60de20bb9aba6d637fe2c39698d63a93" category="paragraph">Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _자동_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.<block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 문서.</block>
   <block id="00e61784b4c0263d643d339751f948b5" category="summary">필요한 경우 NetApp Workload Factory에서 fsxadmin 비밀번호를 재설정합니다.</block>
   <block id="49504d649db43bbd86ff76609ad14e6b" category="doc">NetApp Workload Factory에서 fsxadmin 비밀번호 재설정</block>
@@ -2125,8 +2112,6 @@
   <block id="423500f4bc14c3ceee3a5af733bedd61" category="summary">필요한 경우 NetApp Workload Factory에서 스토리지 VM의 비밀번호를 재설정합니다.</block>
   <block id="3c483a45ab5fea02162be0b6c6004287" category="doc">NetApp Workload Factory에서 스토리지 VM 암호 재설정</block>
   <block id="bff8efadf7143427c1acb1b9e3330d81" category="list-text">저장소에서 *저장소로 이동*을 선택하세요.</block>
-  <block id="b3dd19bbbe1cbd4f108d8e41f40c783e" category="list-text">*FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="b841fe8526d10304e2b38270715c1b84" category="list-text">저장소 VM 탭에서 비밀번호를 재설정할 저장소 VM의 작업 메뉴를 선택합니다.</block>
   <block id="398b64d3ae2c039c62637d684fcbe30d" category="doc">NetApp Workload Factory에서 백업으로부터 볼륨 복원</block>
   <block id="19002cddfac8e15ce79f8ccad53b74e6" category="paragraph">NetApp Workload Factory에서는 AWS 계정의 FSx for ONTAP 파일 시스템으로 백업의 볼륨을 복원할 수 있습니다.</block>
   <block id="de32db8377dafaed047e32a0f5c78af1" category="list-text">*볼륨* 탭에서 백업에서 복원할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
@@ -2491,4 +2476,68 @@
   <block id="a87127d2d5ce747338342d2d926d9cc4" category="list-text">삭제할 S3 액세스 포인트에 대한 작업 메뉴를 선택한 다음 *분리*를 선택합니다.</block>
   <block id="8d755d1f354bf995e33c13051ecdaeca" category="list-text">*S3 액세스 포인트 분리 및 제거* 대화 상자에서 *분리 및 제거*를 선택하여 볼륨에서 S3 액세스 포인트를 삭제합니다.</block>
   <block id="f994c7e71102a3d5ed7af5975abfaa09" category="sidebar">S3 액세스 포인트 관리</block>
+  <block id="bc5d3bf99236801351dc3a2d7c20aed7" category="paragraph">Workload Factory는 다음 구성에 대해 FSx for ONTAP 파일 시스템을 분석합니다.</block>
+  <block id="afc7c7589e5f20d86c03b5e089bbad6b" category="list-text">NetApp 자율형 랜섬웨어 보호(ARP/AI) 비활성화 여부(블록 장치 포함): 블록 장치 볼륨에서 ARP/AI가 비활성화되었는지 확인합니다.</block>
+  <block id="2270e6ac2c31be458c93c87db612a494" category="list-text">캐시 관계 쓰기 모드: 캐시 볼륨 워크로드에 대해 쓰기 모드가 최적인지 확인합니다.</block>
+  <block id="2125a9a589f0bc57c38acf63f5ffb150" category="list-text">불필요한 백업 삭제: 비용 절감을 위해 삭제할 수 있는 오래되었거나 불필요한 백업이 있는지 확인합니다.</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="section-title">Ask me AI 어시스턴트 홈페이지 통합</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
+  <block id="270dd22752e2f3f31c99a49ff489774e" category="section-title">Lambda 링크 리소스 기반 권한 정책에서 IAM 사용자 주체 사용</block>
+  <block id="75141a4e46e0a646f4c8379f8d5e7b52" category="paragraph">워크로드 팩토리 계정과 하나 이상의 FSx for ONTAP 파일 시스템을 연결하여 고급 ONTAP 작업을 수행하는 데 사용되는 Lambda 링크는 이제 리소스 기반 정책 권한에 IAM 사용자 주체를 사용합니다. 이번 변경 사항은 AWS 리소스 액세스에 대한 업계 모범 사례와의 더 나은 일치를 제공합니다.</block>
+  <block id="b0dd04cf44137b432a8f89cb4f3c9919" category="section-title">응급 의료 상황 분석을 위한 AI 분석기에 분석 화면이 추가되었습니다.</block>
+  <block id="5cd27690d7988b2c3f04768e500459bb" category="paragraph">저장소 메뉴에 새로운 _분석_ 화면이 추가되었습니다. 이 화면에서 ONTAP EMS 이벤트 기능에 대한 FSx용 AI 분석기를 사용할 수 있습니다.</block>
+  <block id="a9b4b239246fd03c03ac43e963075319" category="section-title">NetApp Workload Factory 의 블록 장치 개선 사항</block>
+  <block id="6ef37e3f05edf0fb9740ef851722a8f3" category="paragraph">블록 장치에 대해 다음과 같은 개선 사항이 적용되었습니다.</block>
+  <block id="0a32dfaa27bfe59db7152c5c5da72282" category="section-title">블록 장치 생성</block>
+  <block id="8e8c152eb29cb88d5d80a375d44aee87" category="paragraph">NetApp Workload Factory FSx for ONTAP 파일 시스템에서 iSCSI 프로토콜을 사용하여 블록 장치를 생성할 수 있도록 지원하므로 Workload Factory 콘솔에서 기간 업무(LOB) 애플리케이션을 더욱 효과적으로 지원할 수 있습니다.</block>
+  <block id="0b5d1c04d20d94c2a21dacfa53d7354d" category="section-title">블록 장치 관리 개선 사항</block>
+  <block id="e578bac1e9f39054ae2eb2b16d807f71" category="inline-link-macro">블록 장치 관리</block>
+  <block id="e16cdf4dbd146007b4b40124e28ca1a2" category="paragraph">NetApp Workload Factory 다음과 같은 향상된 기능이 포함되어 있습니다. <block ref="b08ca4e282a45fe2e49c9a019646bd36" category="inline-link-macro-rx"></block>. 이제 워크로드 팩토리 콘솔에서 다음 작업을 수행할 수 있습니다.</block>
+  <block id="f8b3baca819978515d628c6a5881eb4e" category="list-text">클라이언트 액세스 관리</block>
+  <block id="5338dad31c000cc89dea6cc573f1a242" category="list-text">아카이브 블록 장치 데이터</block>
+  <block id="88073627bb09173d8e0b3fa15a27725b" category="list-text">차단 장치를 삭제합니다</block>
+  <block id="3c4600754ec66ef615c303417126da12" category="section-title">블록 장치를 포함하는 FlexVol 볼륨에서 ARP/AI 지원</block>
+  <block id="3043237188bfe3f198084dbfe55d05c0" category="inline-link-macro">AI(ARP/AI)를 활용한 NetApp 자율형 랜섬웨어 보호</block>
+  <block id="34f4bbf8697d1205da43ee612001efe7" category="paragraph">활성화할 수 있습니다 <block ref="028271ae216dacdd20feb47aea2c131d" category="inline-link-macro-rx"></block> 블록 장치가 포함된 FlexVol 볼륨에서. ARP/AI를 활성화하면 AI를 사용하여 랜섬웨어 공격을 탐지하고 데이터 복구를 지원합니다.</block>
+  <block id="71a3ae3af23eb1b872f9026901ca4187" category="list-text">스토리지 VM 아래의 파일 시스템 개요에서 *관리*를 선택합니다.</block>
+  <block id="3e723486c5a3951bcc9cc4e9b31c7a1b" category="list-text">스토리지 VM 관리 화면에서 Active Directory를 구성할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* &gt; *AD 구성 관리*를 선택합니다.</block>
+  <block id="3d19aa5c03e04bba25fa64fb693e9f98" category="summary">사업 부문(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다.</block>
+  <block id="3c1e85123bd6f772d273b23b09a26e74" category="doc">NetApp Workload Factory 에서 파일 시스템용 블록 장치를 생성합니다.</block>
+  <block id="7d004b13cdadf8e9ba5aa6e7fd56c9c9" category="paragraph">NetApp Workload Factory 의 블록 장치에는 FlexVol 볼륨만 지원됩니다. iSCSI 프로토콜을 사용하여 블록 장치를 생성할 수 있습니다.</block>
+  <block id="454897ca790322f298897b4fdfc33941" category="paragraph">블록 크기는 사용 가능한 FlexVol volume 크기보다 작아야 합니다.</block>
+  <block id="fb02a89efec565f92916696e97a69514" category="list-text">차단 장치를 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오세요.</block>
+  <block id="b517955ef14866b28544f7b2807b497d" category="list-text">*블록 장치 생성*을 선택하세요.</block>
+  <block id="c494d1f97c8af593b2547e971cde7048" category="list-text">*볼륨 세부 정보*에서 다음을 수행하십시오.</block>
+  <block id="28d37ed4396c69863c777832e2dc985a" category="list-text">*권명*: 다음 옵션 중 하나를 선택하십시오.</block>
+  <block id="def02085a38e856b98b13e533d3b840f" category="list-text">새 볼륨을 생성하고 볼륨 이름을 입력하십시오.</block>
+  <block id="e5113669fd2a554528c1fff4b4a28162" category="list-text">기존 볼륨을 선택하세요.</block>
+  <block id="f879102f0ab70ffbcdaf5ea3b09693dd" category="list-text">*저장소 VM*: 저장소 VM을 선택하세요.</block>
+  <block id="0bd1c4c69e2f0fa0ace2c5a2bc4bfb4f" category="list-text">*볼륨 스타일*: 기본 볼륨 스타일은 * FlexVol*입니다.</block>
+  <block id="c68f7e5abbdc5e2d69f2654296febb52" category="list-text">*용량*: 용량을 입력하고 단위를 선택하세요. FlexVol volume 당 최대 크기는 100TiB입니다.</block>
+  <block id="f0ddb24224adb11c4c26879e00143b36" category="list-text">*볼륨 자동 증가*: 선택적으로 볼륨 자동 증가 기능을 활성화하면 볼륨이 용량에 도달했을 때 자동으로 크기가 증가합니다. 최대 성장 크기는 300 TiB입니다.</block>
+  <block id="ad2ab5f2c7e10afc96bd0e17739e1986" category="list-text">*태그*: 선택적으로 태그를 추가하여 차단 장치를 정리하고 분류할 수 있습니다.</block>
+  <block id="66849c76f9938572ebbf346d93c18eea" category="list-text">*차단 장치 세부 정보*에서 다음을 수행하십시오.</block>
+  <block id="a585842d038e5160ebfc3806b62044a6" category="list-text">*차단 장치 이름*: 차단 장치의 이름을 입력하십시오.</block>
+  <block id="6d73923747600d8280fb309f7bb705ea" category="list-text">*블록 장치 크기*: 블록 장치의 크기를 입력하고 단위를 선택하십시오. 블록 장치 크기는 사용 가능한 볼륨 크기보다 작아야 합니다.</block>
+  <block id="e9e005dffa12441a25899a863e99f0fa" category="list-text">*액세스*에서 다음을 수행하십시오.</block>
+  <block id="d4a692c93d71fdee64560b6ac04e9714" category="list-text">*iSCSI 구성*: 다음 옵션 중 하나를 선택하십시오.</block>
+  <block id="d9f80ec4d13936fdba78b793f44c184c" category="list-text">*새 이니시에이터 그룹 생성*: 호스트 운영 체제, 이니시에이터 그룹 이름을 제공하고 하나 이상의 iSCSI 정규화 이름(IQN) 호스트 이니시에이터를 추가합니다.</block>
+  <block id="104d3f014c0f2ca8498a2aa9f78b1864" category="list-text">*기존 이니시에이터 그룹 매핑*: 기존 이니시에이터 그룹을 선택하고 호스트 운영 체제를 제공한 다음 하나 이상의 iSCSI 정규화된 이름(IQN) 호스트 이니시에이터를 선택합니다.</block>
+  <block id="db784c6694930c54da9655a9d31c365a" category="list-text">*효율성 및 보호* 항목에서 다음을 수행하십시오.</block>
+  <block id="8cbc6c14a0474488d906dfdd17ce79c4" category="paragraph">다음은 AWS의 기본 정책입니다. 기존 스냅샷 정책을 표시하려면 다음을 수행해야 합니다. <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="4dd81c3ec298b3b3b12adbd43350c454" category="paragraph">Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 티어링 정책은 _균형(자동)_입니다. 볼륨 티어링 정책에 대한 자세한 내용은 다음을 참조하십시오. <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서에 나와 있습니다. 참고로 Workload Factory 콘솔에서는 계층화 정책에 대해 사용 사례 기반 이름을 사용하며, ONTAP 계층화 정책 이름은 괄호 안에 FSx로 표시됩니다.</block>
+  <block id="eafa5af121307f6008fad4d24d6d9f14" category="list-text">변경 불가능한 파일이 포함된 볼륨과 NVMe 프로토콜을 사용하는 볼륨은 ARP/AI를 지원하지 않습니다.</block>
+  <block id="78b92538a82bd788a456f9cf838a5c11" category="paragraph"><block ref="78b92538a82bd788a456f9cf838a5c11" category="inline-link-macro-rx"></block></block>
+  <block id="1e3a8de3c21016b6778340215e821fb6" category="list-text">*FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="96271eab8824304349d49f716ef08b72" category="list-text">파일 시스템 개요의 스토리지 VM에서 *스토리지 VM 생성*을 선택합니다.</block>
+  <block id="355a4219717415b19bc0cfb3a299f9a8" category="list-text">스토리지 VM 생성 페이지의 스토리지 VM 구성에서 다음 정보를 제공하십시오.</block>
+  <block id="3b097ea48314307e283cb12e56ebf242" category="list-text">스토리지 VM 관리 화면에서 삭제할 스토리지 VM의 작업 메뉴를 선택합니다.</block>
+  <block id="add6edc9de6a44472705a7a46e4fd5c2" category="inline-link-macro">ONTAP 파일 시스템용 FSx 블록 장치를 생성합니다.</block>
+  <block id="a795e8e784620e60993a8b9e17168564" category="paragraph"><block ref="a795e8e784620e60993a8b9e17168564" category="inline-link-macro-rx"></block></block>
+  <block id="6a3dc4143a7da62f8900b495e210893d" category="list-text">스토리지 VM 관리 화면에서 태그를 편집할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* &gt; *스토리지 VM 태그 편집*을 선택합니다.</block>
+  <block id="e8b970818f72fb7cf471fb0f9361d2fb" category="list-text">스토리지 VM 관리 화면에서 SVM을 복제할 스토리지 VM의 작업 메뉴를 선택한 다음 *고급 작업* &gt; *스토리지 VM 복제*를 선택합니다.</block>
+  <block id="f7c0292ee19b0ef8ab597e8587b490f2" category="list-text">*FSx for ONTAP*에서 스토리지 VM 암호를 재설정할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="d303726d253e10ceb3c3a9904bc4c18f" category="list-text">스토리지 VM 관리 화면에서 암호를 재설정할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* &gt; *암호 재설정*을 선택합니다.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
+  <block id="04c5d70ed6312687a1e39677346bbaff" category="sidebar">블록 장치를 생성하세요</block>
 </blocks>
