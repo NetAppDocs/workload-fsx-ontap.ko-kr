@@ -52,12 +52,17 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 이벤트 분석기를 사용하려면 다음 필수 조건을 충족해야 합니다.
 
 * 당신은해야합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^] FSx for ONTAP 파일 시스템에 대한 이벤트를 보려면 AWS 계정에서 확인하세요.
+* EMS 이벤트 분석을 위해 ONTAP 파일 시스템용 FSx와 연결된 보안 그룹에서 다음 포트가 열려 있어야 합니다.
++
+** 포트 22 (SSH)
+
+
 * 당신은해야합니다link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다."] EMS 이벤트 분석기를 사용합니다.
 * 또한 다음 요구 사항을 충족해야 합니다.  로그 오류를 분석할 때 시스템에서 이러한 단계를 완료하라는 메시지가 표시됩니다.
 +
 ** *아마존 베드록 모델*
 +
-이벤트 분석기는 Amazon Bedrock API를 사용하여 FSx for ONTAP 이벤트에 대한 AI 기반 통찰력을 제공합니다.
+이벤트 분석기는 Amazon Bedrock API를 사용하여 FSx for ONTAP 이벤트에 대한 AI 기반 인사이트를 제공합니다. 각 AWS 계정에 대해 Amazon Bedrock을 별도로 구성하십시오.
 
 +
 추천 모델: Amazon Bedrock Model (anthropic.claude-sonnet-4-20250514-v1:0).  선택한 지역에서 이 모델에 대한 추론 프로필 ARN을 제공해야 합니다.

@@ -56,6 +56,7 @@ link:https://aws.amazon.com/lambda/pricing/["AWS Lambda 사용과 관련된 비�
 링크가 필요한 기능은 다음과 같습니다.
 
 * 사전 예방적 유지 관리, 안정성 및 비용 성능 최적화를 위한 FSx for ONTAP 파일 시스템 구성의 잘 설계된 상태
+* ONTAP EMS 이벤트 모니터링 및 알림
 * NetApp 자율형 랜섬웨어 보호(ARP/AI)
 * FSx for ONTAP 파일 시스템 전반의 향상된 전체적인 용량 관찰 기능
 * 볼륨 및 스토리지 VM 데이터 복제, 관리 및 모니터링
