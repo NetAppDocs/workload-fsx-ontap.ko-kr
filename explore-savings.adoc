@@ -41,7 +41,8 @@ NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저축 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)*를 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
 .. * 사용 사례 *: 필수. 드롭다운 메뉴에서 사용 사례를 선택합니다. 선택한 사용 사례에 따라 비교할 FSx for ONTAP 파일 시스템의 특성이 결정됩니다.
@@ -62,7 +63,8 @@ NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저축 살펴보기*를 선택한 다음 * Amazon FSx for Windows File Server*를 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
 .. * 사용 사례 *: 필수. 드롭다운 메뉴에서 사용 사례를 선택합니다. 선택한 사용 사례에 따라 비교할 FSx for ONTAP 파일 시스템의 특성이 결정됩니다.
@@ -84,7 +86,8 @@ NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저축 살펴보기*를 선택한 다음 *Amazon Elastic File System(EFS)*를 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.
 . Storage Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
 .. * 사용 사례 *: 필수. 드롭다운 메뉴에서 사용 사례를 선택합니다. 선택한 사용 사례에 따라 비교할 FSx for ONTAP 파일 시스템의 특성이 결정됩니다.
@@ -129,8 +132,8 @@ NOTE: 이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀�
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
-. 저장 메뉴에서 *저축 살펴보기*를 선택하세요.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.
 . EBS(Elastic Block Store) * 탭에서 FSx for ONTAP와 비교할 인스턴스를 선택하고 * Explore Savings * 를 선택합니다.
 . Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스를 기반으로 미리 채워집니다.
 +
@@ -148,8 +151,8 @@ NOTE: 이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀�
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
-. 저장 메뉴에서 *저축 살펴보기*를 선택하세요.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *절약 사항 살펴보기*를 선택한 다음 * Amazon FSx for Windows File Server* 탭을 선택합니다.
 . Amazon FSx for Windows 파일 서버 * 탭에서 FSx for ONTAP와 비교할 인스턴스를 선택하고 * 절감 효과 탐색 * 을 선택합니다.
 . Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스의 배포 유형에 따라 미리 채워집니다.
 +
@@ -167,8 +170,8 @@ NOTE: 이 계산기 옵션은 EBS 스냅샷 및 FSx for Windows File Server 섀�
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
-. 저장 메뉴에서 *저축 살펴보기*를 선택하세요.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 스토리지 메뉴에서 *절약 효과 살펴보기*를 선택한 다음 *Amazon Elastic File System(EFS)* 탭을 선택합니다.
 . Elastic File System(EFS) * 탭에서 FSx for ONTAP와 비교할 인스턴스를 선택하고 * Explore Savings * 를 선택합니다.
 . Storage Savings Calculator가 나타납니다. 다음 스토리지 시스템 특성은 선택한 인스턴스를 기반으로 미리 채워집니다.
 +

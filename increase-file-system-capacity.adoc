@@ -36,12 +36,9 @@ SSD 스토리지 용량 제한에 대해서는 link:https://docs.aws.amazon.com/
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
 . 대시보드에서 *SSD 용량 조정*을 선택합니다.
 . 용량을 조정할 파일 시스템을 선택한 다음 *계속*을 선택합니다.
-+
-*잠재적 절감*은 용량을 줄이는 것에 대한 권장 사항입니다.
-
 . SSD 용량 조정 대화 상자에서 *프로비저닝된 용량*에 대한 숫자를 입력합니다.
 . 프로비저닝된 용량의 단위를 선택합니다.
 . Apply * 를 선택합니다.

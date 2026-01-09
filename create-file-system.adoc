@@ -42,8 +42,9 @@ NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 * ONTAP 용 FSx 만들기*를 선택합니다.
-. FSx for ONTAP 생성 페이지에서 * 빠른 생성 * 을 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 스토리지 대시보드에서 *파일 시스템 생성*을 선택합니다.
+. FSx for ONTAP 파일 시스템 만들기 페이지에서 *빠른 만들기*를 선택합니다.
 +
 저장된 구성을 로드할 수도 있습니다.
 
@@ -115,7 +116,7 @@ Advanced create를 사용하면 가용성, 보안, 백업 및 유지 관리를 �
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 저장소 타일에서 * ONTAP 용 FSx 만들기*를 선택합니다.
-. ONTAP용 FSx 생성 페이지에서 * 고급 생성 * 을 선택합니다.
+. ONTAP 파일 시스템용 FSx 생성 페이지에서 *고급 생성*을 선택합니다.
 +
 저장된 구성을 로드할 수도 있습니다.
 

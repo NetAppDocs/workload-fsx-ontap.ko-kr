@@ -4,14 +4,14 @@ permalink: manage-block-devices.html
 keywords: block devices, manage luns, manage iscsi 
 summary: NetApp Workload Factory 에서 FSx for ONTAP 파일 시스템의 블록 장치를 관리합니다. 
 ---
-= FSx for ONTAP 파일 시스템의 블록 장치 관리
+= NetApp Workload Factory 에서 파일 시스템의 블록 장치를 관리합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 블록 장치를 관리할 수 있습니다.  관리 작업에는 블록 장치 세부 정보 보기 및 용량 늘리기가 포함됩니다.
+NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 블록 장치를 관리할 수 있습니다. 관리 작업에는 차단 장치 세부 정보 보기, 용량 증가, 클라이언트 액세스 관리, 차단 장치 데이터 보관 및 차단 장치 삭제가 포함됩니다.
 
 .이 작업에 대해
 블록 장치 또는 LUN(논리 단위 번호)은 SAN 환경에서 파일 시스템을 포함하는 볼륨이며 네트워크를 통해 호스트에서 액세스할 수 있습니다.
@@ -31,7 +31,7 @@ iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
 . 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
 . *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
 . 블록 장치에 대한 작업 메뉴로 이동한 다음 *세부 정보 보기*를 선택합니다.
@@ -48,7 +48,7 @@ iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 저장소 타일에서 *저장소로 이동*을 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
 . 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
 . *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
 . 블록 장치의 작업 메뉴로 이동한 다음 *용량 늘리기*를 선택합니다.
@@ -58,6 +58,63 @@ iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장�
 
 
 NOTE: 블록 장치의 크기를 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 블록 장치의 새로운 크기를 확인하고 해당 블록 장치의 파일 시스템을 확장합니다.
+
+
+
+== 차단 장치에 대한 클라이언트 액세스 관리
+
+igroup을 생성하고 블록 장치 및 호스트 이니시에이터를 추가 또는 제거함으로써 기존 블록 장치에 대한 클라이언트 액세스를 언제든지 관리할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. 차단 장치의 작업 메뉴로 이동한 다음 *클라이언트 액세스 관리*를 선택합니다.
+. igroup이 존재하지 않으면 *igroup 생성*을 선택하여 새 igroup을 생성한 다음 다음 단계를 수행하십시오.
++
+.. *차단 장치 이름*: 차단 장치 이름을 입력하십시오. igroup에 연결할 여러 블록 장치를 선택할 수 있습니다.
+.. *운영체제 종류*: 운영체제 종류를 선택하세요.
+.. *igroup 이름*: igroup 이름을 입력하세요.
+.. *igroup 설명*: 선택적으로 igroup 설명을 입력할 수 있습니다.
+.. *호스트 시작자*: 하나 이상의 호스트 시작자를 입력하십시오. 이러한 이니시에이터는 iSCSI 인증(IQN) 형식을 따라야 합니다.
+.. Create * 를 선택합니다.
+
+
+. 이미 igroup이 존재하는 경우, *클라이언트 액세스 편집*을 선택하여 igroup에서 블록 장치 및 호스트 이니시에이터를 추가하거나 제거한 다음 *적용*을 선택하십시오.
+
+
+
+
+== 관리되지 않는 블록 장치의 데이터를 보관합니다.
+
+클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 사용되지 않는 블록 장치의 데이터를 용량 풀 계층에 보관하여 SSD 용량을 확보할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. 고아 장치에서 *용량 보기 및 회수*를 선택합니다.
+. 사용하지 않는 블록 장치의 공간 확보 화면에서 하나 이상의 블록 장치를 선택하여 데이터를 보관하고 용량을 확보하십시오.
+. *보관*을 선택하세요.
+
+
+
+
+== 차단 장치를 삭제합니다
+
+클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol volume 블록 장치가 하나도 없으면 Workload Factory는 해당 볼륨도 삭제합니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. 고아 장치에서 *용량 보기 및 회수*를 선택합니다.
+. 사용하지 않는 블록 장치의 공간 확보 화면에서 하나 이상의 블록 장치를 선택하여 데이터를 보관하고 용량을 확보하십시오.
+. 삭제 * 를 선택합니다.
+
 
 
 
