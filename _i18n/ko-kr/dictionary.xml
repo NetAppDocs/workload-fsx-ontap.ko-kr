@@ -1240,7 +1240,6 @@
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">제공한 사용자가 fsxadmin 사용자가 아니고 나중에 fsxadmin 암호를 재설정해야 하는 경우 AWS 콘솔에서 이 작업을 수행할 수 있습니다.</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* 스토리지 VM 자격 증명 *: 선택 사항. 사용자 이름을 입력합니다. 암호는 이 파일 시스템에 특정하거나 ONTAP 자격 증명에 대해 입력한 것과 동일한 암호를 사용할 수 있습니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
   <block id="37b002845528ac0296b86d28bb71e5a5" category="doc">Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다</block>
-  <block id="3909315ab3cc8353eec0cd02ce0845da" category="admonition">커넥터를 사용하는 경우 AWS Secrets Manager가 지원되지 않습니다.</block>
   <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">새 링크를 연결합니다</block>
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">기본 사용 권한에 맞춰 암호를 만들거나 링크 정책에 대한 사용자 지정 사용 권한을 할당할 수 있습니다.</block>
@@ -2560,4 +2559,5 @@
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*보관*을 선택하세요.</block>
   <block id="b06e53572a17ccf08cb282ac59af4b93" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol volume 블록 장치가 하나도 없으면 Workload Factory는 해당 볼륨도 삭제합니다.</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">블록 장치를 포함하는 FlexVol 볼륨은 ARP/AI를 활성 모드로 시작합니다.</block>
+  <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">해당 링크는 다음 엔드포인트에 연결할 수 있어야 합니다. https://api.workloads.netapp.com. 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 FSx for ONTAP 워크로드를 관리하고 운영합니다.</block>
 </blocks>
