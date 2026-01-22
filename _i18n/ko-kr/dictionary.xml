@@ -2328,34 +2328,14 @@
   <block id="cfd839007fdba7ba7d7a5a35de4aa55a" category="paragraph"><block ref="cfd839007fdba7ba7d7a5a35de4aa55a" category="inline-link-macro-rx"></block></block>
   <block id="07236cc47c70c5fd568c5a75720db649" category="summary">FSx for ONTAP 의 NetApp Workload Factory 내에서 EMS 이벤트를 분석합니다.</block>
   <block id="12f4e0399e2df3c2e6f5c6d078ccfcb7" category="doc">NetApp Workload Factory 에서 FSx for ONTAP EMS 이벤트 분석</block>
-  <block id="ab6bb38002e21094a77f3fc386f75b81" category="paragraph">스마트 이벤트 분석기를 사용하면 NetApp Workload Factory 의 FSx for ONTAP 파일 시스템에 대한 이벤트 관리 시스템(EMS) 이벤트를 자동으로 추출하고 분석하여 문제를 신속하게 식별하고 해결할 수 있습니다. Agentic AI 기반 분석에는 Amazon Bedrock 통합이 필요합니다.</block>
-  <block id="69b4c5d1a10df7b24661fa3357de7164" category="paragraph">스토리지 관리자는 종종 고객 불만이 접수되거나 사용자 정의 스크립트와 알람을 만든 후에야 FSx for ONTAP EMS 이벤트에 대응합니다.  이런 반응적 접근 방식은 문제 해결 속도를 늦추고, 가동 중지 시간을 늘리고, 운영 효율성을 떨어뜨립니다.</block>
   <block id="950a30dbe6160d51c93dd8570573b0b1" category="paragraph">주요 이점은 다음과 같습니다.</block>
-  <block id="ff395ce69e116ba9c811e7b5e4d30150" category="list-text">고급 문제 해결: AI를 활용하여 이벤트를 사전에 감지하고 분석하여 주의가 필요한 ONTAP EMS 이벤트에 대한 명확한 해결 단계를 제공합니다.</block>
-  <block id="e81b4c6e0ef57eb1b12f2dee109f70a5" category="list-text">모범 사례 수정: 사용자 환경을 기반으로 FSx for ONTAP 의 문제를 해결하는 명확한 단계를 제공하므로 누구나 문제를 해결할 수 있습니다.</block>
-  <block id="8b6e7c06cc47e464865ce794c06c1cdc" category="paragraph">이벤트 분석기를 사용하면 고급 AI 분석의 이점을 누리는 동시에 환경을 완벽하게 제어할 수 있습니다.</block>
-  <block id="9885b601634edd1a14ff24653669df48" category="paragraph">이벤트 분석기를 사용하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용하는 모델을 선택하고, Amazon Bedrock에 연결할 개인 엔드포인트를 만들고, 권한을 추가하고, 엔터프라이즈 라이선스를 만들어야 합니다.</block>
   <block id="888aee60b948bfcee3f85cb52d4d62f0" category="inline-link-macro">Amazon Bedrock 가격</block>
   <block id="2064dc6bc6a42df41c5d58cafe4e5108" category="paragraph"><block ref="2064dc6bc6a42df41c5d58cafe4e5108" category="inline-link-macro-rx"></block></block>
   <block id="bf71ae5aa16f5632361df660e7d643c6" category="section-title">데이터 개인정보 보호 및 보안</block>
-  <block id="4156616e317ae39855b5f4857b036da9" category="paragraph">이 기능은 다음과 같은 조치를 통해 데이터 개인 정보 보호 및 보안을 보장합니다.</block>
-  <block id="a492925ae64557e89b32f29da418b5eb" category="paragraph-title">데이터 주권</block>
-  <block id="6c9fd6facdeb8075fa50e4efcd8bf208" category="paragraph">데이터와 집계는 AWS 계정 내에 유지되며, 프라이빗 VPC 엔드포인트(Amazon Bedrock)를 통해 통신되므로 공개 인터넷 노출이 발생하지 않습니다.</block>
-  <block id="2405b8bbe1eec9accdcb22235860c3f2" category="paragraph-title">AI 훈련 없음</block>
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 데이터 보호 문서</block>
-  <block id="5ccaf9841b400d75e00f4c8e0a92737d" category="paragraph">고객 데이터는 모델을 훈련하거나 개선하는 데 사용되지 않습니다.  Amazon Bedrock은 실시간으로 이벤트를 처리하지만 데이터를 학습하지는 않습니다.  결과는 참조용으로만 사용자 환경에 저장됩니다.  자세한 내용은 다음을 참조하세요.<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block> .</block>
-  <block id="300fe33bee6926cbc2c265a3ccde1b0f" category="paragraph">이벤트 분석기를 사용하려면 다음 필수 조건을 충족해야 합니다.</block>
-  <block id="709be97721c78cba90770231b1263a14" category="inline-link-macro">링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다.</block>
-  <block id="35f42184479bd0858fd2a493aa10006d" category="list-text">당신은해야합니다<block ref="13912c59a5ea303190d1db0c6a5f11f5" category="inline-link-macro-rx"></block> EMS 이벤트 분석기를 사용합니다.</block>
-  <block id="ffbf1245cc8098f00c47babcce153016" category="list-text">또한 다음 요구 사항을 충족해야 합니다.  로그 오류를 분석할 때 시스템에서 이러한 단계를 완료하라는 메시지가 표시됩니다.</block>
-  <block id="3e7827ba3fa976aec6ad1122b7da30fe" category="paragraph">추천 모델: Amazon Bedrock Model (anthropic.claude-sonnet-4-20250514-v1:0).  선택한 지역에서 이 모델에 대한 추론 프로필 ARN을 제공해야 합니다.</block>
   <block id="b523b0335680ab84edd50860caeed123" category="list-text">*Workload Factory 링크*</block>
-  <block id="bd3978e078bba2f9f1743c27d1db8462" category="paragraph">AI 기반 이벤트 분석을 활성화하려면 FSx for ONTAP 파일 시스템과 링크를 만들고 연결해야 합니다.  이 링크는 Workload Factory와 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계를 생성하고 AWS Lambda를 활용합니다.</block>
   <block id="72fa279f5dbab8677f6a4a2b563e0629" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="7ed47c99073de0aed63f1c44842de720" category="list-text">*AWS IAM 권한*</block>
-  <block id="fb6d7ca6557e4fecfffa8ab3a6a96421" category="paragraph">Workload Factory IAM 역할 관련 정책에 다음 권한을 추가해야 합니다.</block>
-  <block id="47160e55fc85c2702f6f616e65ff73cd" category="list-text">권한:<block ref="93804e96d3f417a0088c564647dd28e9" prefix=" " category="inline-code"></block> 그리고<block ref="00fe52afa6e3b9a0d389f529a2b88242" prefix=" " category="inline-code"></block></block>
-  <block id="69e9daf6e587a39e4b6dea7dda714604" category="paragraph">이러한 권한을 통해 Workload Factory는 Bedrock 모델을 호출하여 사전 예방적 오류 조사 및 수정 지침을 제공할 수 있습니다. 이 프로필은 맞춤형 통찰력에 대한 안전한 AI 액세스를 보장합니다.</block>
   <block id="3fc6364e2f4555bc71d109a7ba02fef1" category="paragraph">이러한 권한은 모델의 가용성을 확인합니다.</block>
   <block id="3c9bac4bc86cac9a309d9792f5bb65df" category="section-title">FSx for ONTAP 에 대한 EMS 이벤트를 보고 분석합니다.</block>
   <block id="6baf937b798e7ea8fa07c50ef6c201f9" category="paragraph">Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템에 대한 EMS 이벤트를 보고 분석합니다.</block>
@@ -2415,10 +2395,7 @@
   <block id="7afacf82c5a68418fd34140a4a69b555" category="sidebar">블록 장치 관리</block>
   <block id="b312d49b502ea93d7b1d38b92313f502" category="sidebar">블록 장치 관리</block>
   <block id="9f83e27b7a1a59c38fc7d458de16054a" category="sidebar">파일 시스템 태그 관리</block>
-  <block id="de524979693d09207c5eeb62cad773dc" category="paragraph">이벤트 분석기는 FSx for ONTAP EMS 이벤트를 추출하고 이를 분석하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지하는 데 도움을 줍니다. Workload Factory는 지난 72시간 동안 발생한 이벤트만 표시합니다.</block>
-  <block id="d55be6cbc9080d8651f85cfb40118d1c" category="list-text">당신은해야합니다<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block> FSx for ONTAP 파일 시스템에 대한 이벤트를 보려면 AWS 계정에서 확인하세요.</block>
   <block id="79aceabdc6c99b8ffa443536ee6c3fac" category="list-text">*아마존 베드록 모델*</block>
-  <block id="ca29c80b4531f01e2f485c85067fd269" category="list-text">Workload Factory와 연결된 AWS 자격 증명:<block ref="fdd997ab8b4252f76acdda855bb7b890" prefix=" " category="inline-code"></block> 그리고<block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix=" " category="inline-code"></block> 권한</block>
   <block id="ec43608dd1a0c06ed66226644c486b9a" category="sidebar">FSx for ONTAP 리소스에 대한 비용 및 사용량 추적</block>
   <block id="063d22315ef43d4247b4ee3e2986ca61" category="sidebar">ONTAP EMS 이벤트에 대한 FSx 분석</block>
   <block id="01f76f754caa3b688233762c1b9391f6" category="section-title">FSx for ONTAP 에 대한 AWS S3 액세스 포인트 지원</block>
@@ -2518,9 +2495,6 @@
   <block id="d303726d253e10ceb3c3a9904bc4c18f" category="list-text">스토리지 VM 관리 화면에서 암호를 재설정할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* &gt; *암호 재설정*을 선택합니다.</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
   <block id="04c5d70ed6312687a1e39677346bbaff" category="sidebar">블록 장치를 생성하세요</block>
-  <block id="45825282cf9c53db319df9569d2ca486" category="list-text">EMS 이벤트 분석을 위해 ONTAP 파일 시스템용 FSx와 연결된 보안 그룹에서 다음 포트가 열려 있어야 합니다.</block>
-  <block id="aebaf822d95c8539079782ed80029db9" category="list-text">포트 22 (SSH)</block>
-  <block id="e0f1940fa03564fc187d37678d5739f9" category="paragraph">이벤트 분석기는 Amazon Bedrock API를 사용하여 FSx for ONTAP 이벤트에 대한 AI 기반 인사이트를 제공합니다. 각 AWS 계정에 대해 Amazon Bedrock을 별도로 구성하십시오.</block>
   <block id="64153de607e9925466a905a664c31502" category="list-text">ONTAP 긴급 관리 시스템(EMS) 이벤트 분석을 위한 CloudShell 및 FSx의 경우: 포트 22(SSH)</block>
   <block id="f1a54b856438e25c87919e1789ae841c" category="list-text">ONTAP EMS 이벤트 모니터링 및 알림</block>
   <block id="6e9c833800dbc4ebe142052809560480" category="list-text">ONTAP 파일 시스템용 FSx 생성 페이지에서 *고급 생성*을 선택합니다.</block>
@@ -2560,4 +2534,33 @@
   <block id="b06e53572a17ccf08cb282ac59af4b93" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol volume 블록 장치가 하나도 없으면 Workload Factory는 해당 볼륨도 삭제합니다.</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">블록 장치를 포함하는 FlexVol 볼륨은 ARP/AI를 활성 모드로 시작합니다.</block>
   <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">해당 링크는 다음 엔드포인트에 연결할 수 있어야 합니다. https://api.workloads.netapp.com. 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 FSx for ONTAP 워크로드를 관리하고 운영합니다.</block>
+  <block id="ae7bbdf37f2fa18593f3db57d284b5eb" category="paragraph">NetApp Workload Factory의 스마트 이벤트 분석기를 사용하여 FSx for ONTAP 파일 시스템 문제를 신속하게 식별하고 해결하세요. 이 이벤트 분석기는 Amazon Bedrock 통합을 지원하는 Agentic AI를 활용하여 FSx for ONTAP 이벤트 관리 시스템(EMS) 이벤트를 자동으로 추출하고 분석합니다.</block>
+  <block id="69fa9c087519616c715c1ff5cb8799b4" category="paragraph">스토리지 관리자는 고객 불만이 접수된 후에야 FSx for ONTAP EMS 이벤트에 대응하거나 사용자 지정 스크립트 및 알람을 유지 관리하는 경우가 많습니다. 이러한 사후 대응 방식은 효율성을 저하시키고 문제 해결을 지연시키며 가동 중지 시간을 증가시킬 수 있습니다.</block>
+  <block id="ea0503aedfe2585b2372e8f13d9a188b" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결</block>
+  <block id="9d2246fd849af6e6265f4bfd88a1fae2" category="inline-link-macro">_보기, 계획 및 분석_ 권한 부여</block>
+  <block id="2647b280de36025cc715dd5e1d5ccecf" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 오류, 경고 및 긴급 EMS 이벤트를 자동으로 추출합니다. 이러한 이벤트는 <block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block> 및 <block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block> AWS 계정에서 확인할 수 있습니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
+  <block id="0ee3fcfb10a8d4af3c7cb550b6d9bc38" category="paragraph">Amazon Bedrock 통합을 통해 Workload Factory는 AI를 사용하여 이벤트를 분석하고 실행 가능한 인사이트를 제공하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지합니다.</block>
+  <block id="721c487e9ac5dc5fc37d25389a9c0866" category="list-text">고급 문제 해결: AI가 FSx for ONTAP EMS 이벤트를 자동으로 식별, 분석하고 해결 방법에 대한 통찰력을 제공하여 수동 조사 시간을 줄여줍니다.</block>
+  <block id="90fff3808b87c7068de0570f6b4692b6" category="list-text">모범 사례 해결 방법: 이벤트 분석기는 FSx for ONTAP EMS 이벤트를 해결하기 위한 명확하고 실행 가능한 단계를 제공합니다.</block>
+  <block id="27562a45337f51e17d281897d9fddcd2" category="paragraph">이벤트 분석기를 사용하면 고급 AI 분석의 이점을 누리면서 환경을 완벽하게 제어할 수 있습니다.</block>
+  <block id="0da91429b3f9223cbaa4f8470ef89ea0" category="paragraph">Workload Factory에서 이벤트를 분석할 수 있도록 하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용할 모델을 선택하고, Amazon Bedrock에 연결하기 위한 프라이빗 엔드포인트를 생성하고, 권한을 추가하고, 엔터프라이즈 라이센스를 생성해야 합니다.</block>
+  <block id="697e3d01e31a8ce7704ee41323400066" category="paragraph">귀하의 데이터 개인정보 보호 및 보안은 다음을 통해 보호됩니다.</block>
+  <block id="84ae233a79c0ea9a3056e7680572780d" category="list-text">*데이터 주권*: 모든 데이터와 집계 결과는 사용자의 AWS 계정 내에 유지되며, 공용 인터넷에 노출되지 않고 프라이빗 VPC 엔드포인트(Amazon Bedrock)를 통해 통신됩니다.</block>
+  <block id="83ba0533f3c89bcebf3d4a8565cd0192" category="list-text">*AI 학습 없음*: 고객 데이터는 모델 학습 또는 개선에 사용되지 않습니다. Amazon Bedrock은 이벤트를 실시간으로 처리하지만 고객 데이터를 기반으로 학습하지 않습니다. 결과는 고객 환경에만 저장됩니다.</block>
+  <block id="cb955412ddfc1e82347d29c44308ede8" category="paragraph">자세한 내용은 <block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="4afc10e211f325b277b31bdf03653564" category="paragraph">이벤트 분석기를 사용하려면 다음을 확인하십시오.</block>
+  <block id="e6cefdd5e44ac5e5142c68d4b8d3451b" category="inline-link-macro">_operations and remediation_ 권한</block>
+  <block id="955afa6e7ada9aae898db4f1ec89597b" category="list-text">AWS 계정에 <block ref="3728a9886a6e8befe945facf87fd7817" category="inline-link-macro-rx"></block>이(가) 있어 FSx for ONTAP 파일 시스템에 대한 이벤트를 분석할 수 있습니다.</block>
+  <block id="622f422e31dd55d6b288a24d05bc2309" category="list-text">FSx for ONTAP 파일 시스템과 연결된 보안 그룹에서 포트 22(SSH)가 열려 있습니다.</block>
+  <block id="b6c462f58509f9b26d80dbd1d24b9aed" category="paragraph">추가 요구 사항(시스템에서 로그 오류 분석 중에 메시지가 표시됩니다):</block>
+  <block id="c8598674a87a9c799b14c6b675d2dd50" category="paragraph">각 AWS 계정에 대해 Amazon Bedrock API를 구성하십시오. Amazon BedRock API는 FSx for ONTAP 이벤트에 대한 인사이트를 제공하는 데 사용됩니다.</block>
+  <block id="10b86811a1c2efaa2595c0a2596a2bc0" category="paragraph">권장 모델:<block ref="00384dd7439f3263ff61a20c6a4db34c" prefix=" " category="inline-code"></block>. 선택한 지역의 추론 프로필 ARN을 제공하십시오.</block>
+  <block id="b119b2ead611491e4d54de03365b4de2" category="paragraph">FSx for ONTAP 파일 시스템과의 링크를 생성하고 연결하여 AI 기반 이벤트 분석을 활성화합니다. 링크는 Workload Factory와 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계를 설정하고 AWS Lambda를 활용합니다.</block>
+  <block id="bb038c2aeef4cf3da06b0b304f46890d" category="paragraph">Workload Factory IAM 역할 연결 정책에 다음 권한을 추가합니다.</block>
+  <block id="f80c2c54334d4ddca4016b89152c6684" category="list-text"><block ref="93804e96d3f417a0088c564647dd28e9" prefix="" category="inline-code"></block></block>
+  <block id="1ed1b1bc988715ea858abe38c168d87a" category="list-text"><block ref="00fe52afa6e3b9a0d389f529a2b88242" prefix="" category="inline-code"></block></block>
+  <block id="c8e7b109460fb25e6bdcb5d7e4a18364" category="paragraph">이러한 권한을 통해 Workload Factory는 오류 조사 및 해결 지침을 위해 Bedrock 모델을 호출할 수 있습니다. 또한 이 프로필은 맞춤형 인사이트를 위한 안전한 AI 액세스를 보장합니다.</block>
+  <block id="4ba4032fe66a2ab71b90bddc3cde5770" category="paragraph">Workload Factory와 연결된 AWS 자격 증명에 대해 다음 권한도 추가하십시오.</block>
+  <block id="4e736cb1760a43a4bf2b5d861b6deb96" category="list-text"><block ref="fdd997ab8b4252f76acdda855bb7b890" prefix="" category="inline-code"></block></block>
+  <block id="71d01806cd25e89067c25b4f03e9a607" category="list-text"><block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix="" category="inline-code"></block></block>
 </blocks>
