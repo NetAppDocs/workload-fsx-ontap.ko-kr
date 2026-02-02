@@ -17,7 +17,10 @@ summary: Workload Factory는 Amazon FSx for NetApp ONTAP 구성을 스캔하여 
 
 link:configuration-analysis.html["Workload Factory의 구성 분석과 잘 설계된 상태에 대해 알아보세요."]
 
-.이 작업에 대해
+
+
+== 이 작업에 대해
+
 Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항과 함께 파일 시스템이 모범 사례를 충족하도록 구성 문제를 자동으로 해결하는 옵션을 제공합니다.
 
 링크 연결을 통해 Workload Factory는 성능, 데이터 보호 및 구성과 관련된 문제를 스캔할 수 있습니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"] 파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
@@ -31,8 +34,17 @@ Workload Factory 콘솔 내의 저장소에서 파일 시스템의 구성 문제
 
 * 안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, FSx for ONTAP 백업, 원격 데이터 복제 및 장기 보존을 위한 데이터 안정성
 * 보안: NetApp AI 기반 자율형 랜섬웨어 보호(ARP/AI) 기능이 비활성화되었고 볼륨에 대한 무단 액세스가 감지되었습니다.
-* 운영 효율성: 자동 용량 관리, 볼륨 파일 용량 사용률 임계값, 볼륨 사용률 최대치 근접, 캐시 관계 쓰기 모드
-* 비용 최적화: 스토리지 효율성, 데이터 계층화, 불필요한 스냅샷 및 백업 삭제
+* 운영 효율성: 자동 용량 관리, 볼륨 파일 용량 사용률 임계값, 볼륨 사용률 최대치 근접, 캐시 관계 쓰기 모드, 캐시 볼륨 크기 최적화 및 볼륨 논리 용량 보고
+* 비용 최적화: 스토리지 효율성, 데이터 계층화, 불필요한 스냅샷 및 백업 삭제, 분리된 블록 디바이스
+
+
+
+
+== 시작하기 전에
+
+* AWS 계정에 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^]해야 합니다.
+* 수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다. 구성 문제를 해결하기로 결정하기 전에 각 권장 사항을 주의 깊게 검토하세요.
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"]파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
 
 
 
@@ -41,20 +53,11 @@ Workload Factory 콘솔 내의 저장소에서 파일 시스템의 구성 문제
 
 FSx for ONTAP 파일 시스템이나 파일 시스템의 선택된 볼륨에 대한 구성 문제를 해결할 수 있습니다.  수정할 구성을 하나 이상 선택할 수 있습니다.
 
-.시작하기 전에
-* 당신은해야합니다link:link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^] 귀하의 AWS 계정에서.
-* 수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다. 구성 문제를 해결하기로 결정하기 전에 각 권장 사항을 주의 깊게 검토하세요.
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"]파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
-
-
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
-. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
-. *FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.
-. 선택적으로, 범주, 하위 범주, 상태, 심각도 및 태그별로 구성 문제를 필터링합니다.
-. 모든 구성에 대해 *추천 보기*를 선택하세요.  권장 사항을 주의 깊게 검토하세요.
+. Storage 메뉴에서 *Well-architected*를 선택합니다.
+. 구성에 대해 *문제 보기*를 선택합니다. 권장 사항을 꼼꼼히 검토하십시오.
 +
 이 권장 사항에서는 최적화되지 않은 구성의 모범 사례와 잠재적 위험을 설명합니다.
 
@@ -79,16 +82,16 @@ FSx for ONTAP 파일 시스템 또는 파일 시스템의 선택된 볼륨에 �
 ====
 .파일 시스템에 대한 구성 분석 취소
 --
-FSx for ONTAP 파일 시스템에 대한 구성 분석을 무기한 중지합니다.  필요할 때 분석을 다시 시작할 수 있습니다.
-
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
-. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
-. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.
-. *구성*에서 해제하려는 구성을 확인하고 *해제*를 선택합니다.
-. 구성에 대한 분석을 중지하려면 *취소*를 선택하세요.
+. Storage 메뉴에서 *Well-architected*를 선택합니다.
+. 구성에 대해 *문제 보기*를 선택합니다. 권장 사항을 꼼꼼히 검토하십시오.
++
+이 권장 사항에서는 최적화되지 않은 구성의 모범 사례와 잠재적 위험을 설명합니다.
+
+. 구성에서 사용자 환경에 적용되지 않는 구성을 찾은 다음 *닫기*를 선택합니다.
+. 구성 해제 대화 상자에서 *해제*를 선택하여 구성에 대한 분석을 중지합니다.
 
 
 --
@@ -97,10 +100,8 @@ FSx for ONTAP 파일 시스템에 대한 구성 분석을 무기한 중지합니
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
-. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
-. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.
-. *구성*에서 선택한 볼륨에 대해 해제할 구성을 식별하고 *보기 및 수정*을 선택합니다.
+. Storage 메뉴에서 *Well-architected*를 선택합니다.
+. 구성에서 선택한 볼륨에 대해 해제할 구성을 확인한 다음 *보기 및 수정*을 선택합니다.
 . 구성 분석에서 제외할 볼륨을 식별합니다.
 +
 ** 한 권의 경우: 작업 메뉴를 선택한 다음 *볼륨 해제*를 선택합니다.
@@ -131,10 +132,8 @@ FSx for ONTAP 파일 시스템에 대한 구성 분석을 무기한 중지합니
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
-. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
-. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.
-. *구성* 옆에서 *닫힌 구성*을 선택합니다.
+. Storage 메뉴에서 *Well-architected*를 선택합니다.
+. *해제된 구성*을 선택합니다.
 . 다시 활성화하려는 구성을 확인하고 *다시 활성화*를 선택합니다.
 
 
@@ -144,13 +143,11 @@ FSx for ONTAP 파일 시스템에 대한 구성 분석을 무기한 중지합니
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
-. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
-. *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
-. FSx for ONTAP 파일 시스템 개요에서 *적절하게 설계된 상태* 탭으로 이동합니다.
-. *구성*에서 선택한 볼륨에 대해 다시 활성화할 구성을 식별하고 *보기 및 수정*을 선택합니다.
+. Storage 메뉴에서 *Well-architected*를 선택합니다.
+. *해제된 구성*을 선택합니다.
 . 구성 분석을 통해 다시 활성화할 볼륨을 식별합니다.
 +
-** 볼륨 1개의 경우: 작업 메뉴를 선택한 다음 *볼륨 다시 활성화*를 선택합니다.
+** 볼륨 하나의 경우: 작업 메뉴를 선택한 다음 *볼륨 재활성화*를 선택합니다.
 ** 여러 볼륨의 경우: 볼륨을 선택한 다음 대량 작업 옆에 있는 *다시 활성화*를 선택합니다.
 
 

@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: manage-igroups.html 
+keywords: igroup, manage igroups, manage client access, delete igroup 
+summary: NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 igroup을 관리합니다. 
+---
+= NetApp Workload Factory에서 파일 시스템의 igroup을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory 콘솔을 사용하여 FSx for ONTAP 블록 장치의 igroup을 관리하고 클라이언트 액세스를 제어할 수 있습니다. igroup 세부 정보를 확인하고, 클라이언트 액세스를 관리하고, igroup을 삭제할 수 있습니다.
+
+.시작하기 전에
+* igroup을 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크를 연결한 후, 이 작업으로 돌아오십시오.
+* 보고 관리하려면 기존 igroup이 있어야 합니다.
+
+
+
+
+== igroup에 대한 클라이언트 액세스 관리
+
+기존 igroup에 대한 클라이언트 액세스는 언제든지 관리할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. 기존 igroup을 보려면 리소스 유형 *Initiator groups(igroups)*을 선택하십시오.
+. 블록 디바이스의 작업 메뉴로 이동하여 *클라이언트 액세스 관리*를 선택합니다.
+. igroup에 대해 표시된 클라이언트 액세스 세부 정보를 검토하십시오.
+. 클라이언트 액세스를 변경하려면 *클라이언트 액세스 편집*을 선택합니다.
+. *클라이언트 액세스 편집* 대화 상자에서 다음을 편집할 수 있습니다.
++
+** *igroup 이름*
+** *igroup 설명*
+** *스토리지 VM 이름*
+** *블록 디바이스 이름*
+** *운영 체제 유형*
+** *호스트 이니시에이터*
+
+
+. Apply * 를 선택합니다.
+
+
+
+
+== igroup 삭제
+
+더 이상 필요하지 않은 기존 igroup은 삭제할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 *장치 차단* 탭을 선택합니다.
+. 기존 igroup을 보려면 리소스 유형 *Initiator groups(igroups)*을 선택하십시오.
+. 블록 디바이스의 작업 메뉴로 이동한 다음 *이니시에이터 그룹 삭제*를 선택합니다.
+. initiator 그룹(igroup) 삭제 대화 상자에서 "delete"를 입력하여 igroup을 삭제할 것인지 확인한 다음 *Delete*를 선택합니다.
+
+
+
+
+== 관련 정보
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-igroup.html["FSx for ONTAP 파일 시스템에 대한 igroup을 생성합니다"]
