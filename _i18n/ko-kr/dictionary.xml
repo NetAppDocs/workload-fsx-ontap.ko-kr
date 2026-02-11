@@ -2580,9 +2580,6 @@
   <block id="283119ca74749a876a6dfcb0c6968a8c" category="list-text">*호스트 이니시에이터*: 이니시에이터 그룹에 하나 이상의 iSCSI 적격(IQN) 호스트 이니시에이터를 추가합니다.</block>
   <block id="8298e20d0a9a0a5f92a40700ffa7ff7e" category="inline-link-macro">FSx for ONTAP 파일 시스템의 igroup을 관리합니다.</block>
   <block id="22774fb9e9e4a2ed10c53dba9c6a522f" category="paragraph"><block ref="22774fb9e9e4a2ed10c53dba9c6a522f" category="inline-link-macro-rx"></block></block>
-  <block id="ce4c42b6f5a833fc926c27c3d1ca424a" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하여 예기치 못한 재해 발생 시 데이터 손실을 방지하십시오. 복제는 두 FSx for ONTAP 파일 시스템 간, 그리고 Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 지원됩니다.</block>
-  <block id="e8d6717f6adc0d18b1ec64c39c57b7be" category="paragraph">복제는 데이터가 저장된 지역에서 재해가 발생할 경우 데이터 손실을 방지하는 보호 기능을 제공합니다.</block>
-  <block id="e481f3e818c1bf548144dff8b6c46360" category="paragraph">이 작업은 FSx for ONTAP 파일 시스템, 온프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 시스템의 소스 볼륨에 대한 복제 관계를 생성합니다.</block>
   <block id="578ca57adcfb8fa2a5c899374a2f5732" category="paragraph">불변 파일이 포함된 소스 볼륨을 복제하면 소스 볼륨의 불변 파일 보존 기간이 만료될 때까지 타겟 볼륨과 파일 시스템이 잠긴 상태로 유지됩니다. 불변 파일 기능은 FSx for ONTAP 파일 시스템에 대해 <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block>할 때 사용할 수 있습니다.</block>
   <block id="30965461c316b499ed01c7f92f651051" category="list-text">iSCSI 또는 NVMe 프로토콜을 사용하는 블록 볼륨의 경우 복제가 지원되지 않습니다.</block>
   <block id="36e75a4b793293fd1dde9fdc618c8431" category="list-text">복제 관계에서 타겟으로 사용할 FSx for ONTAP 파일 시스템이 하나 있어야 합니다.</block>
@@ -2660,4 +2657,8 @@
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
   <block id="df267252f2595421cf837794528f006f" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 오류, 경고 및 긴급 EMS 이벤트를 자동으로 추출합니다. 이러한 이벤트는 <block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block> 및 <block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block> AWS 계정에서 확인할 수 있습니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
+  <block id="8115d76153f9adbfd582019025403480" category="paragraph">예기치 못한 재해 발생 시 데이터 손실을 방지하기 위해 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하십시오. 복제는 두 개의 FSx for ONTAP 파일 시스템 간, 그리고 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 지원됩니다.</block>
+  <block id="d8d2b7ae69d9c4bdf4c6f9dbea6cbace" category="paragraph">복제는 재해가 해당 지역에 영향을 미칠 경우 데이터를 보호합니다.</block>
+  <block id="3894b1835f2c953d5ab4246fe8da430b" category="paragraph">이 작업은 FSx for ONTAP 파일 시스템 또는 온프레미스 ONTAP 시스템의 소스 볼륨에 대한 복제 관계를 생성합니다.</block>
+  <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">시작하기 전에 다음 요구 사항을 검토하십시오.</block>
 </blocks>
