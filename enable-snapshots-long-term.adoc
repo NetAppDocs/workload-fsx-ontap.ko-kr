@@ -19,6 +19,9 @@ NetApp Workload Factory에서는 장기 보존을 위한 스냅샷을 활성화�
 
 온-프레미스 ONTAP 클러스터가 복제 관계의 타겟인 경우에는 장기 보존을 위한 스냅샷 변경이 지원되지 않습니다.
 
+
+NOTE: 스토리지 VM 데이터 및 구성 설정을 복제할 때는 장기 보존 편집 기능을 사용할 수 없습니다.
+
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.

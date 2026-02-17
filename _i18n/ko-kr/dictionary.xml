@@ -1326,7 +1326,6 @@
   <block id="a6b1536fc245f87fb0d61891c2478a4f" category="inline-link-macro">SSD 스토리지 계층 용량을 수동으로 추가</block>
   <block id="5cf7e20f42c9c47e23bafe41d94a8551" category="paragraph">역방향 작업은 다음과 같이 지원됩니다.</block>
   <block id="05db33926117b3773064888db7681dd7" category="list-text">두 개의 FSx for ONTAP 파일 시스템</block>
-  <block id="8b7139aa6028714722a69eeb58c4681f" category="list-text">FSx for ONTAP 파일 시스템 하나와 온프레미스 ONTAP 클러스터 하나를 사용할 수 있습니다</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025년 5월 4일</block>
   <block id="c108a5680d95b024bcb3f456683c719c" category="sidebar">링크를 사용하여 파일 시스템에 접속합니다</block>
   <block id="636ce0dc4b81c78698b769c07d69f35c" category="sidebar">자율적 랜섬웨어 방어 기능으로 데이터를 보호합니다</block>
@@ -1836,7 +1835,6 @@
   <block id="939a8d22db4ccfbdde48d35119ad37a3" category="list-text">*AWS Secrets Manager*: 선택 사항.  Workload Factory가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있도록 허용합니다.</block>
   <block id="7580bfe7832e708a7a254e231956ba42" category="list-text">Workload Factory 인터페이스로 돌아가면 링크가 FSx for ONTAP 파일 시스템과 연결되어 있는 것을 볼 수 있습니다.</block>
   <block id="5886618b54dcea7acc4beb5fbd5a3159" category="list-text">*FSx for ONTAP*에서 링크를 연결할 파일 시스템의 작업 메뉴를 선택한 다음 *링크 연결*을 선택합니다.</block>
-  <block id="9a59237abad65536a078f4d904f19bd6" category="doc">NetApp Workload Factory에서 복제 관계 생성</block>
   <block id="3d607d93b8532423a7bbebf948091168" category="summary">Workload Factory에서 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만듭니다.</block>
   <block id="0e4f989c75a10776b672b4a9f108bfc9" category="doc">Workload Factory에서 스토리지 VM에 대한 스냅샷 정책을 만듭니다.</block>
   <block id="ab9a6ebd2e1e5562fa11ba5a014fc247" category="paragraph">Workload Factory의 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만들어 스냅샷 생성 및 보존을 관리합니다. 스냅샷 정책은 시스템이 스토리지 VM에 대한 스냅샷을 생성하는 방법을 정의합니다. FSx for ONTAP 파일 시스템의 스토리지 VM에 대한 스냅샷 정책을 생성할 수 있습니다. 여러 스토리지 VM에서 정책을 공유할 수도 있습니다.</block>
@@ -2580,12 +2578,10 @@
   <block id="283119ca74749a876a6dfcb0c6968a8c" category="list-text">*호스트 이니시에이터*: 이니시에이터 그룹에 하나 이상의 iSCSI 적격(IQN) 호스트 이니시에이터를 추가합니다.</block>
   <block id="8298e20d0a9a0a5f92a40700ffa7ff7e" category="inline-link-macro">FSx for ONTAP 파일 시스템의 igroup을 관리합니다.</block>
   <block id="22774fb9e9e4a2ed10c53dba9c6a522f" category="paragraph"><block ref="22774fb9e9e4a2ed10c53dba9c6a522f" category="inline-link-macro-rx"></block></block>
-  <block id="578ca57adcfb8fa2a5c899374a2f5732" category="paragraph">불변 파일이 포함된 소스 볼륨을 복제하면 소스 볼륨의 불변 파일 보존 기간이 만료될 때까지 타겟 볼륨과 파일 시스템이 잠긴 상태로 유지됩니다. 불변 파일 기능은 FSx for ONTAP 파일 시스템에 대해 <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block>할 때 사용할 수 있습니다.</block>
   <block id="30965461c316b499ed01c7f92f651051" category="list-text">iSCSI 또는 NVMe 프로토콜을 사용하는 블록 볼륨의 경우 복제가 지원되지 않습니다.</block>
   <block id="36e75a4b793293fd1dde9fdc618c8431" category="list-text">복제 관계에서 타겟으로 사용할 FSx for ONTAP 파일 시스템이 하나 있어야 합니다.</block>
   <block id="66aa1d91f89810f078327deb1e1fc2c8" category="list-text">복제 관계에 사용하는 FSx for ONTAP 파일 시스템에는 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후, 이 작업으로 돌아오십시오.</block>
   <block id="ba1072e8c0845f82f77ef660d46bde4a" category="list-text">온프레미스 ONTAP 시스템에서 FSx for ONTAP 파일 시스템으로 복제하려면 온프레미스 ONTAP 시스템을 검색했는지 확인하십시오.</block>
-  <block id="4adfd5b32c07b84363bbb8710fc5ee45" category="paragraph">파일 시스템의 특정 볼륨 또는 모든 볼륨을 복제하려면 다음 단계를 따르십시오.</block>
   <block id="45eea8cd3d88c48d8f4826a6be39d707" category="list-text">*S3 액세스 포인트 태그*: 필요에 따라 최대 50개의 태그를 추가하거나 태그를 제거할 수 있습니다.</block>
   <block id="66d540c0d4f07e9992cf6e0ac1083e36" category="list-text">운영 효율성: 자동 용량 관리, 볼륨 파일 용량 사용률 임계값, 볼륨 사용률 최대치 근접, 캐시 관계 쓰기 모드, 캐시 볼륨 크기 최적화 및 볼륨 논리 용량 보고</block>
   <block id="cf0e722b11c4855de7e43d714e007581" category="list-text">비용 최적화: 스토리지 효율성, 데이터 계층화, 불필요한 스냅샷 및 백업 삭제, 분리된 블록 디바이스</block>
@@ -2657,8 +2653,50 @@
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
   <block id="df267252f2595421cf837794528f006f" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 오류, 경고 및 긴급 EMS 이벤트를 자동으로 추출합니다. 이러한 이벤트는 <block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block> 및 <block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block> AWS 계정에서 확인할 수 있습니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
-  <block id="8115d76153f9adbfd582019025403480" category="paragraph">예기치 못한 재해 발생 시 데이터 손실을 방지하기 위해 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하십시오. 복제는 두 개의 FSx for ONTAP 파일 시스템 간, 그리고 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 지원됩니다.</block>
-  <block id="d8d2b7ae69d9c4bdf4c6f9dbea6cbace" category="paragraph">복제는 재해가 해당 지역에 영향을 미칠 경우 데이터를 보호합니다.</block>
-  <block id="3894b1835f2c953d5ab4246fe8da430b" category="paragraph">이 작업은 FSx for ONTAP 파일 시스템 또는 온프레미스 ONTAP 시스템의 소스 볼륨에 대한 복제 관계를 생성합니다.</block>
   <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">시작하기 전에 다음 요구 사항을 검토하십시오.</block>
+  <block id="876ae080bad2795906c16db5a7bfc488" category="paragraph">*스토리지 VM 구성 복제*: 선택적으로 단일 스토리지 VM의 스토리지 VM 데이터 및 구성 설정을 복제하도록 선택합니다. 데이터와 구성 설정을 동시에 마이그레이션할 경우 지난 24시간 이내에 볼륨에 대한 마지막 복제가 완료되었는지 확인하십시오. 이 기능을 사용하려면 동일한 스토리지 VM에 있는 모든 볼륨을 선택해야 합니다. 모든 볼륨의 계층화 정책은 기본적으로 소스 볼륨의 계층화 정책으로 설정되며, 이는 마이그레이션 사용 사례에 권장됩니다.</block>
+  <block id="292198e01fad7795066f40b6fec350fd" category="list-text">*FSx for ONTAP*에서 복제할 볼륨이 포함된 파일 시스템을 선택합니다.</block>
+  <block id="bc9c958c3279391522e702151359608b" category="list-text">*복제 관계* 탭을 선택합니다.</block>
+  <block id="23c1b911bea8dc9e9cdd65d07a7745ca" category="list-text">복제 관계 테이블에서 전환할 복제 관계를 선택한 다음 *복제 전환*을 선택합니다.</block>
+  <block id="e4d846e7cde6ab6686b9817d81bc55f6" category="list-text">Cut over replication 대화 상자의 정보를 검토한 다음 _cut over_를 입력하여 확인합니다.</block>
+  <block id="5d8caeaede63e2cdba6715a163d09892" category="doc">스토리지 VM 마이그레이션 지원</block>
+  <block id="353d7ff4a3d58ad1fe8ef0ad6acab574" category="paragraph">NetApp Workload Factory에서 이제 스토리지 VM 마이그레이션을 지원합니다. 이 기능을 사용하면 온프레미스 ONTAP 시스템 또는 1세대 FSx for ONTAP 파일 시스템에서 2세대 FSx for ONTAP 파일 시스템으로 ONTAP 스토리지 시스템 데이터 및 구성을 마이그레이션할 수 있습니다. 스토리지 VM 데이터와 구성 설정을 복제하여 사용자 및 애플리케이션에 대한 다운타임과 중단을 최소화하면서 새 파일 시스템으로 이동할 수 있습니다.</block>
+  <block id="fb2a77c6756f10fcc139a51a83349d7f" category="inline-link-macro">복제 관계 생성</block>
+  <block id="33039f37667143e740ae3514cd2b2eea" category="inline-link-macro">스토리지 VM과 복제된 볼륨을 컷오버합니다</block>
+  <block id="94a0fe38d823039ecf92cb309a897fe3" category="paragraph">이 기능을 사용하려면 <block ref="0ec91e6ac67cf0fd5240ce60db83aa2f" category="inline-link-macro-rx"></block> 사용 사례로 *Migration*을 선택하십시오. 마이그레이션 프로세스를 완료하려면 <block ref="6174d071c9787b2abffa64516d72a11a" category="inline-link-macro-rx"></block> 즉시 데이터와 스토리지 VM 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 영구적으로 마이그레이션해야 합니다.</block>
+  <block id="c199ce03db0c7f011f771c344a7289f8" category="doc">NetApp Workload Factory에서 FSx for ONTAP으로 데이터를 복제</block>
+  <block id="551568dcc628854d053d3d2a37a4cfbe" category="paragraph">예기치 못한 재해 발생 시 데이터 손실을 방지하려면 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하십시오. 두 FSx for ONTAP 파일 시스템 간 또는 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 데이터를 복제할 수 있습니다.</block>
+  <block id="f009487bcbb1861316ff956fce5c3ac3" category="paragraph">스토리지 VM 마이그레이션을 위해서는 복제 관계를 생성한 직후에 컷오버 작업을 완료해야 합니다.</block>
+  <block id="c328c31ba33353824ccfc6e82f5a8ca8" category="paragraph">복제는 재해가 해당 지역에 영향을 미칠 경우 데이터를 보호하며, 마이그레이션 목적으로도 사용할 수 있습니다.</block>
+  <block id="75ba895a2e374208ae80d98ebcf116ba" category="paragraph">불변 파일이 포함된 소스 볼륨을 복제하면 소스 볼륨의 보존 기간이 종료될 때까지 타겟 볼륨과 파일 시스템이 잠긴 상태로 유지됩니다. 불변 파일 기능은 FSx for ONTAP 파일 시스템에 대해 <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block>할 때 사용할 수 있습니다.</block>
+  <block id="ed5b7e4aa04c57efe98d70f7ef15379d" category="section-title">마이그레이션 사용 사례</block>
+  <block id="943bab906fe3e90d4f3eb004f330f122" category="paragraph">마이그레이션 사용 사례를 선택할 때 단일 스토리지 VM에 대해 스토리지 VM 데이터와 구성 설정을 복제하도록 선택적으로 선택할 수 있습니다. 데이터와 구성 설정을 동시에 마이그레이션할 경우 지난 24시간 이내에 볼륨에 대한 마지막 복제가 완료되었는지 확인하십시오. 이 기능을 사용하려면 동일한 스토리지 VM에 있는 모든 볼륨을 선택해야 합니다. 모든 볼륨의 계층화 정책은 기본적으로 소스 볼륨의 계층화 정책으로 설정되며, 이는 마이그레이션 사용 사례에 권장됩니다.</block>
+  <block id="1666b76635bd7b8ba7032286416076a1" category="paragraph">Workload Factory는 다음 스토리지 시스템 간의 마이그레이션 복제를 지원합니다.</block>
+  <block id="c9bc20a670a5e3835c0109ab8efaf03d" category="list-text">온프레미스 ONTAP 시스템 및 FSx for ONTAP 파일 시스템</block>
+  <block id="355385ffc49e40e0caaabbd4b1ef6737" category="list-text">Cloud Volumes ONTAP 및 FSx for ONTAP 파일 시스템</block>
+  <block id="507884c25618fc114f4becd877e50dd8" category="list-text">FSx for ONTAP 및 FSx for ONTAP 파일 시스템</block>
+  <block id="811a8960cadc3b9f9379096dc8b6b831" category="list-text">1세대에서 1세대로</block>
+  <block id="023f8d09179a05ce990eeb5697e1ecd6" category="list-text">1세대에서 2세대로</block>
+  <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">2세대에서 2세대로</block>
+  <block id="04e64253a4742b9534714d0147f467f6" category="paragraph">스토리지 VM 데이터 및 구성 설정을 마이그레이션하려면 두 가지 작업을 완료해야 합니다.</block>
+  <block id="59835e5fb082d065015e2824a515a5b7" category="list-text"><block ref="75331dd4d9fa346165fac294e4e498ee" category="inline-xref-macro-rx"></block>사용 사례로 *Migration*을 선택하고 *Replicate storage VM configuration*을 선택합니다.</block>
+  <block id="db529797694203560d43ab415a6dd52d" category="inline-xref">복제 컷오버</block>
+  <block id="4ff5e77c5ed7650b96676675b9d3eb18" category="list-text"><block ref="76a1fb9977d9fe48f9a1edf04990b3a3" category="inline-xref-macro-rx"></block> 소스 파일 시스템의 데이터 및 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 영구적으로 마이그레이션합니다.</block>
+  <block id="4031de6ffffe0beb0671ccd52a118661" category="paragraph">두 FSx for ONTAP 파일 시스템 간 또는 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 데이터를 복제합니다.</block>
+  <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">볼륨 상태가 사용 가능, 생성됨 또는 잘못 구성됨 이외의 상태이거나 ONTAP 버전이 호환되지 않는 경우 복제가 지원되지 않습니다.</block>
+  <block id="cbcff6555c8b07eb6add33653d3ab030" category="list-text">마이그레이션 사용 사례의 경우 스토리지 VM 데이터 및 구성 설정과의 복제 관계를 생성하기 전에 볼륨에 대한 마지막 복제가 지난 24시간 이내에 완료되었는지 확인하십시오.</block>
+  <block id="41ad46bbff5ae50ffe14d0bdc1b66775" category="paragraph">마이그레이션을 위해 복제 관계를 생성한 경우 스토리지 VM 데이터 및 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 마이그레이션하려면 모든 볼륨과 해당 스토리지 VM을 컷오버해야 합니다.</block>
+  <block id="f2ce5ba0f770aa8ae822f79404813d99" category="section-title">마이그레이션 사용 사례를 위한 컷오버 복제</block>
+  <block id="794cfa9c47742057e71b100968214bfd" category="paragraph">마이그레이션 사용 사례를 위한 복제 관계를 생성한 후에는 스토리지 VM 데이터 및 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 마이그레이션하려면 컷오버 복제를 수행해야 합니다. 컷오버 복제는 소스 파일 시스템에서 타겟 FSx for ONTAP 파일 시스템으로 데이터 및 스토리지 VM 구성 설정을 영구적으로 마이그레이션합니다. 컷오버 과정에서 데이터는 마지막으로 복제됩니다. 시스템은 컷오버가 완료되면 소스 볼륨을 삭제합니다. 이 작업은 되돌릴 수 없습니다.</block>
+  <block id="aed0e194718db8e0128d88b14756819e" category="list-text">복제를 전환하기 전에 스토리지 VM에 대한 모든 클라이언트 액세스를 중지하십시오.</block>
+  <block id="782b2627ed10262abe4e368b33d508dc" category="list-text">복제를 전환하기 전에 모든 소스 볼륨에서 데이터가 제공되지 않는지 확인하십시오.</block>
+  <block id="dda7c50cacac64812ef938f4d803c3a5" category="list-text">복제 전환을 수행하기 전에 소스 볼륨과 타겟 볼륨 간의 데이터 동기화가 완료되었는지 확인하십시오.</block>
+  <block id="882f34227a47a95827c88036c610642f" category="list-text">*Cut over*를 선택하세요.</block>
+  <block id="7b626244b5e77ec8426207a79760602c" category="inline-link-macro">계층화 정책을 수정합니다</block>
+  <block id="10356b2b96c443d8a19edb3095962df2" category="paragraph">전환이 완료되면 소스 볼륨이 삭제되고 타겟 볼륨은 읽기/쓰기 가능 상태가 됩니다. 전환 후 타겟 볼륨에 대해 <block ref="3a64959985d458e07b4f09b2f2e0e438" category="inline-link-macro-rx"></block>할 수 있습니다.</block>
+  <block id="51123444304b31165de4e3a52117437d" category="admonition">스토리지 VM 데이터 및 구성 설정을 복제할 때는 장기 보존 편집 기능을 사용할 수 없습니다.</block>
+  <block id="f08a7d33d3e9fe4faf87ad7235d0c02a" category="list-text">FSx for ONTAP 파일 시스템 1개와 온프레미스 ONTAP 시스템 1개</block>
+  <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">참고:</block>
+  <block id="9d7213e75b44382027a2100eae065746" category="list-text">스토리지 VM 데이터 및 구성 설정을 복제할 때는 복제 되돌리기 기능을 사용할 수 없습니다.</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026년 2월 16일</block>
 </blocks>
