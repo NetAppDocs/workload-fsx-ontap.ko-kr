@@ -2496,12 +2496,9 @@
   <block id="e220387578f5151d1653ad1ff2b5a002" category="list-text">*igroup 설명*: 선택적으로 igroup 설명을 입력할 수 있습니다.</block>
   <block id="d719073ebb477e6cf9934f806cd15577" category="list-text">*호스트 시작자*: 하나 이상의 호스트 시작자를 입력하십시오. 이러한 이니시에이터는 iSCSI 인증(IQN) 형식을 따라야 합니다.</block>
   <block id="2614a90f09c2b1321e872a7622f7f888" category="list-text">이미 igroup이 존재하는 경우, *클라이언트 액세스 편집*을 선택하여 igroup에서 블록 장치 및 호스트 이니시에이터를 추가하거나 제거한 다음 *적용*을 선택하십시오.</block>
-  <block id="b637e46326ea8277194ab0d5f5de8b3d" category="section-title">관리되지 않는 블록 장치의 데이터를 보관합니다.</block>
-  <block id="3c464f9d7ea4cd3d820898f4b25e6832" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 사용되지 않는 블록 장치의 데이터를 용량 풀 계층에 보관하여 SSD 용량을 확보할 수 있습니다.</block>
   <block id="68d85c073028f0fd978bc424d69ee8fd" category="list-text">고아 장치에서 *용량 보기 및 회수*를 선택합니다.</block>
   <block id="f6841052bd0d86548318f9b2df118ea3" category="list-text">사용하지 않는 블록 장치의 공간 확보 화면에서 하나 이상의 블록 장치를 선택하여 데이터를 보관하고 용량을 확보하십시오.</block>
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*보관*을 선택하세요.</block>
-  <block id="b06e53572a17ccf08cb282ac59af4b93" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 사용되지 않는 블록 장치로 분류됩니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol volume 블록 장치가 하나도 없으면 Workload Factory는 해당 볼륨도 삭제합니다.</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">블록 장치를 포함하는 FlexVol 볼륨은 ARP/AI를 활성 모드로 시작합니다.</block>
   <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">해당 링크는 다음 엔드포인트에 연결할 수 있어야 합니다. https://api.workloads.netapp.com. 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 FSx for ONTAP 워크로드를 관리하고 운영합니다.</block>
   <block id="ae7bbdf37f2fa18593f3db57d284b5eb" category="paragraph">NetApp Workload Factory의 스마트 이벤트 분석기를 사용하여 FSx for ONTAP 파일 시스템 문제를 신속하게 식별하고 해결하세요. 이 이벤트 분석기는 Amazon Bedrock 통합을 지원하는 Agentic AI를 활용하여 FSx for ONTAP 이벤트 관리 시스템(EMS) 이벤트를 자동으로 추출하고 분석합니다.</block>
@@ -2551,7 +2548,6 @@
   <block id="bf44c4671ee3bfbc818d505bb9a0e59a" category="paragraph">NetApp Workload Factory는 S3 액세스 포인트에 대한 추가 관리 작업을 제공합니다. NetApp Workload Factory 인터페이스에서 액세스 포인트 세부 정보를 확인하고, 기존 S3 액세스 포인트를 수정하고, S3 액세스 포인트 태그를 추가 또는 제거할 수 있어 객체 스토리지 관리 작업을 간소화할 수 있습니다.</block>
   <block id="366c32f0cbb2503b337e243eaa8c42b5" category="inline-link-macro">NetApp Workload Factory에서 S3 액세스 포인트 관리</block>
   <block id="e593953aaf04eebecfe2e26326145784" category="list-text">캐시 볼륨 크기 최적화: 캐시 볼륨에서 볼륨 autosize 및 scrubbing이 활성화되어 있는지 확인하여 최적의 크기를 유지하고 캐시가 핫 데이터에 집중하여 최고 효율성을 달성합니다.</block>
-  <block id="00e21b809963a2e31abfc13c3aea34b6" category="list-text">고아 블록 디바이스: 7일 연속으로 사용되지 않은 경우 블록 디바이스 데이터를 아카이빙하거나 블록 디바이스를 삭제하는 것이 좋습니다.</block>
   <block id="a872ae5d7fdb75042465788519d63c35" category="list-text">스토리지 VM 논리적 보고: 스토리지 VM의 기본 보고 설정이 논리적으로 설정되어 있는지 확인하여 볼륨 수준에서 스토리지 사용량을 더 잘 파악할 수 있도록 합니다.</block>
   <block id="40fbd58cc84d2567a5be7db0e1e48224" category="section-title">블록 디바이스용 추가 카드</block>
   <block id="e1d58576240df6c3acc0d5f3067d6468" category="paragraph">스토리지 워크로드의 블록 디바이스 탭에 블록 디바이스 사용량 및 보호 상태에 대한 빠른 인사이트를 제공하는 세 가지 새로운 카드가 추가되었습니다.</block>
@@ -2584,7 +2580,6 @@
   <block id="ba1072e8c0845f82f77ef660d46bde4a" category="list-text">온프레미스 ONTAP 시스템에서 FSx for ONTAP 파일 시스템으로 복제하려면 온프레미스 ONTAP 시스템을 검색했는지 확인하십시오.</block>
   <block id="45eea8cd3d88c48d8f4826a6be39d707" category="list-text">*S3 액세스 포인트 태그*: 필요에 따라 최대 50개의 태그를 추가하거나 태그를 제거할 수 있습니다.</block>
   <block id="66d540c0d4f07e9992cf6e0ac1083e36" category="list-text">운영 효율성: 자동 용량 관리, 볼륨 파일 용량 사용률 임계값, 볼륨 사용률 최대치 근접, 캐시 관계 쓰기 모드, 캐시 볼륨 크기 최적화 및 볼륨 논리 용량 보고</block>
-  <block id="cf0e722b11c4855de7e43d714e007581" category="list-text">비용 최적화: 스토리지 효율성, 데이터 계층화, 불필요한 스냅샷 및 백업 삭제, 분리된 블록 디바이스</block>
   <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">AWS 계정에 <block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>해야 합니다.</block>
   <block id="8c8656579a32ab7e80c68b10832337bb" category="list-text">Storage 메뉴에서 *Well-architected*를 선택합니다.</block>
   <block id="4f5fc99db78476b3b87fbb795ab55b26" category="list-text">구성에 대해 *문제 보기*를 선택합니다. 권장 사항을 꼼꼼히 검토하십시오.</block>
@@ -2649,7 +2644,6 @@
   <block id="e77c03d49e828607828412709552dbd6" category="sidebar">igroup 관리</block>
   <block id="fdb38c6259208c2509d21f6a3f0beb02" category="paragraph"><block ref="fdb38c6259208c2509d21f6a3f0beb02" category="inline-link-macro-rx"></block></block>
   <block id="cc97dddf7d9715fea79ba3e831f0fbca" category="paragraph"><block ref="cc97dddf7d9715fea79ba3e831f0fbca" category="inline-link-macro-rx"></block></block>
-  <block id="b55768d72b4883d58308aa15e30fc7ab" category="list-text">사용되지 않는 장치: 블록 장치 중 7일 연속 사용되지 않은 장치가 있는지 표시하여 사용되지 않는 리소스를 효과적으로 식별하고 관리할 수 있도록 도와줍니다. 여기에서 <block ref="88cbe2cfb6c92276ca9f0b27df016fa5" category="inline-link-macro-rx"></block>을(를) 수행할 수 있습니다.</block>
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
   <block id="df267252f2595421cf837794528f006f" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 오류, 경고 및 긴급 EMS 이벤트를 자동으로 추출합니다. 이러한 이벤트는 <block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block> 및 <block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block> AWS 계정에서 확인할 수 있습니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
@@ -2698,4 +2692,10 @@
   <block id="9d7213e75b44382027a2100eae065746" category="list-text">스토리지 VM 데이터 및 구성 설정을 복제할 때는 복제 되돌리기 기능을 사용할 수 없습니다.</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026년 2월 16일</block>
   <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block> 소스 파일 시스템의 데이터 및 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 영구적으로 마이그레이션합니다.</block>
+  <block id="3ecf18c09ae5a2bd1855ba6515de6cd7" category="list-text">비활성 블록 디바이스: 블록 디바이스가 7일 연속 사용되지 않은 경우 블록 디바이스 데이터를 아카이빙하거나 블록 디바이스를 삭제하는 것이 좋습니다.</block>
+  <block id="3310dcc189ef22670c22a32bdf58f0c9" category="list-text">사용되지 않는 장치: 블록 장치 중 7일 연속 사용되지 않은 장치가 있는지 표시하여 사용되지 않는 리소스를 효과적으로 식별하고 관리할 수 있도록 도와줍니다. 여기에서 <block ref="5d1d66741e880017163f47d5a2557cb1" category="inline-link-macro-rx"></block>을(를) 수행할 수 있습니다.</block>
+  <block id="628b46b908bfc92bdcca823a9f84cd05" category="list-text">비용 최적화: 스토리지 효율성, 데이터 계층화, 불필요한 스냅샷 및 백업 삭제, 비활성 블록 디바이스</block>
+  <block id="958926cf6ac067918ae80f7f610d415a" category="section-title">비활성 블록 디바이스의 데이터 보관</block>
+  <block id="d37c72ca2c27b8b48a724120cf91c835" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않는 블록 장치는 비활성 블록 장치로 분류됩니다. 비활성 블록 장치의 데이터를 용량 풀 계층으로 아카이빙하여 SSD 용량을 회수할 수 있습니다.</block>
+  <block id="01b51d5b9524250e9003d631e9e3f35b" category="paragraph">클라이언트에 더 이상 매핑되지 않거나 7일 연속 사용되지 않은 블록 장치는 비활성 블록 장치로 분류됩니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol 볼륨에 블록 장치가 없는 경우 Workload Factory는 해당 볼륨도 삭제합니다.</block>
 </blocks>
