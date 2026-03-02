@@ -107,4 +107,4 @@ Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 티어링
 
 
 .관련 정보
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-devices.html["FSx for ONTAP 파일 시스템의 블록 장치 관리"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html["FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다"]

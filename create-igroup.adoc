@@ -41,4 +41,4 @@ igroup을 생성하려면 링크를 연결해야 합니다. link:https://docs.ne
 
 
 .관련 정보
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-igroups.html["FSx for ONTAP 파일 시스템의 igroup을 관리합니다."]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html["FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다"]

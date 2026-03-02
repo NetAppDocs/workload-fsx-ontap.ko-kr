@@ -133,16 +133,14 @@ sidebar:
         url: "/delete-volume.html"
     - title: 블록 스토리지 administration
       entries:
-      - title: igroup 관리
-        url: "/manage-igroups.html"
-      - title: 블록 장치 관리
-        url: "/manage-block-devices.html"
+      - title: 블록 스토리지 관리
+        url: "/manage-block-storage.html"
     - title: 파일 시스템 관리
       entries:
-      - title: 파일 시스템 용량 조정
+      - title: 파일 시스템 용량을 수동으로 조정합니다
         url: "/increase-file-system-capacity.html"
-      - title: 자동 용량 및 inode 관리 활성화
-        url: "/enable-auto-capacity-management.html"
+      - title: 파일 시스템 용량을 자동으로 관리합니다
+        url: "/manage-capacity-automatically.html"
       - title: 파일 시스템 태그 관리
         url: "/manage-fsx-tags.html"
       - title: fsxadmin 암호를 재설정합니다

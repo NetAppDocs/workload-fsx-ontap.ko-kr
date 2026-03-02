@@ -8,7 +8,7 @@
 
 NetApp Workload Factory 에서 새롭게 도입된 블록 장치 지원을 통해 블록 장치를 보다 효과적으로 관리하세요.  이 기능을 사용하면 iSCSI LUN에 대한 세부 정보를 보고 용량을 늘릴 수 있어 스토리지 요구 사항에 대한 유연성이 향상됩니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-devices.html["Workload Factory에서 블록 장치 관리"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html["Workload Factory에서 블록 장치 관리"]
 
 
 
