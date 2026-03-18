@@ -83,11 +83,8 @@
   <block id="ef13ae21eedaa1ecccd02fb7ddd30bb1" category="list-text">* 위임된 관리자 그룹 *: 위임된 파일 시스템 관리자 그룹을 선택적으로 입력합니다.</block>
   <block id="85912990c5413ea32362225e50fc2629" category="paragraph">AWS 관리형 Microsoft AD를 사용하는 경우 AWS 위임 FSx 관리자, AWS 위임 관리자 또는 OU에 위임된 권한이 있는 사용자 지정 그룹과 같은 그룹을 지정해야 합니다.</block>
   <block id="3fd21f2222285241b7bbfebc4759ab56" category="paragraph">자체 관리되는 AD에 가입하는 경우 AD에서 그룹 이름을 사용합니다. 기본 그룹은<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>입니다.</block>
-  <block id="6705427f56dd0e2d84c82d8ce7b8e137" category="paragraph">FSx for ONTAP 백업은 볼륨별로 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.</block>
-  <block id="5d34cf2e67586f6adc1c52bd11363230" category="paragraph">FSx for ONTAP 백업은 증분 백업이므로 최신 백업 후에 변경된 볼륨의 데이터만 저장됩니다. 따라서 백업을 생성하는 데 필요한 시간과 백업에 필요한 스토리지를 최소화하여 데이터 중복을 방지함으로써 스토리지 비용을 절감할 수 있습니다.</block>
   <block id="ad999f7438a6c6743b334836cd6d2765" category="paragraph">볼륨을 백업하려면 볼륨과 파일 시스템 모두에 백업 스냅샷을 저장할 수 있는 충분한 SSD 저장 용량이 있어야 합니다. 백업 스냅샷을 생성할 때 스냅샷에 사용된 추가 스토리지 용량으로 인해 볼륨이 SSD 스토리지 사용률을 98%로 초과할 수 없습니다. 이 경우 백업이 실패합니다.</block>
   <block id="a7e91b4f0b8cb9a002ae712f6a8e8856" category="list-text">파일 시스템 개요에서 * Volumes * 탭을 선택합니다.</block>
-  <block id="c90eb480f69fa94333471c53a08ebfb9" category="list-text">데이터 보호 작업 *, * ONTAP용 FSx 백업 * 을 선택한 다음 * 수동 백업 * 을 선택합니다.</block>
   <block id="efb6cdeb8b2e5095e65f43be813e1f3d" category="list-text">수동 백업 대화 상자에서 백업 이름을 입력합니다.</block>
   <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="doc">FSx for ONTAP 파일 시스템을 생성합니다</block>
   <block id="d0e7f7527c3a0ceae557c9f12bb1d5e7" category="paragraph">FSx for ONTAP 파일 시스템을 생성하기 전에 다음이 필요합니다.</block>
@@ -124,7 +121,6 @@
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">* 암호화 * : 드롭다운에서 암호화 키 이름을 선택합니다.</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">File system details(파일 시스템 세부 정보) 에서 다음을 제공합니다.</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">백업 및 유지 관리에서 다음을 제공합니다.</block>
-  <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">* ONTAP용 FSx 백업 *: 매일 자동 백업이 기본적으로 활성화됩니다. 필요한 경우 비활성화하십시오.</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">* 자동 백업 보존 기간 *: 자동 백업을 유지할 일 수를 입력합니다.</block>
   <block id="1972e6c134f87506bf46fce45a157104" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
   <block id="86405f997495dd34a1622331050968f1" category="list-text">* 주별 유지 보수 윈도우 *: * 기본 설정 없음 * (주별 유지 보수 윈도우 시작 시간이 선택됨) 또는 * 30분 주별 유지 보수 윈도우 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
@@ -176,7 +172,6 @@
   <block id="736ef7205c037a078bc461f368c6a21f" category="doc">FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다</block>
   <block id="5b10cd7d19a8a16358cb05922f38a69e" category="paragraph">스냅샷은 볼륨의 리소스로, 수정된 데이터에 대해서만 공간을 소비하는 데이터를 즉시 캡처합니다. 데이터는 시간이 지남에 따라 변경되기 때문에 일반적으로 스냅샷은 오래될수록 더 많은 공간을 사용합니다.</block>
   <block id="bbc11127132b3f6e8be58ad79bf66689" category="paragraph">FSx for ONTAP 볼륨은 Just-in-time copy-on-write를 사용하므로 스냅샷에서 수정되지 않은 파일이 볼륨의 용량을 소비하지 않습니다.</block>
-  <block id="4eb3a89899e681d1b9380bde026db85c" category="admonition">스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본을 만들려면 FSx for ONTAP 백업 또는 볼륨 복제 기능을 사용하는 것이 좋습니다.</block>
   <block id="644e775d0497e56fe0475dde3829ce1e" category="doc">FSx for ONTAP 파일 시스템용 스토리지 VM을 생성합니다</block>
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVM을 사용하면 FSx for ONTAP에서 데이터에 액세스할 때 클라이언트와 워크스테이션이 SVM의 엔드포인트(IP 주소)를 사용하여 SVM에서 호스팅하는 볼륨, CIFS/SMB 공유 또는 iSCSI LUN을 마운트합니다.</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP 스토리지 가상 머신 관리</block>
@@ -269,7 +264,6 @@
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="doc">볼륨을 삭제합니다</block>
   <block id="c4037415f2f0cfbaf2d8633bef548eca" category="paragraph">볼륨을 삭제하기 전에 다음 사항을 고려하십시오.</block>
   <block id="7ba3b681b508a24c70a973831af6f1ad" category="list-text">로컬 스냅샷: 이 FSx for ONTAP 파일 시스템과 연결된 모든 스냅샷이 영구적으로 삭제됩니다.</block>
-  <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAP 백업: FSx for ONTAP 백업 복사본은 그대로 유지되며 그래도 사용할 수 있습니다.</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 삭제 * 를 선택합니다.</block>
   <block id="321fbbd6f40d9b084f632750d5190dc8" category="summary">언제든지 스토리지 VM에 대한 스토리지 VM 태그를 추가, 업데이트 또는 제거합니다.</block>
   <block id="14d8aa612c687d8708f6fefc5f554d22" category="list-text">스토리지 VM 태그 편집 페이지에서 태그를 추가, 편집 또는 제거합니다.</block>
@@ -488,7 +482,6 @@
   <block id="ebb4bf732c3ade314c393d5284af8715" category="list-text">* 비밀번호 확인 *: 새 비밀번호를 다시 입력하여 확인합니다.</block>
   <block id="8b0e8407f70ad599b0ea28ad2aba3c8d" category="summary">백업에서 AWS 계정의 FSx for ONTAP 파일 시스템으로 볼륨을 복원합니다.</block>
   <block id="669e24f4895025d47b6321e03f0890e4" category="doc">백업에서 볼륨을 복원합니다</block>
-  <block id="04b1c243101a3b35e04f4796a82296b7" category="list-text">데이터 보호 작업 *, * ONTAP용 FSx 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.</block>
   <block id="954f91e5419aff167b9c5ff119492972" category="list-text">백업에서 복원 대화 상자에서 다음을 제공합니다.</block>
   <block id="1db91acefbe1be544aa103101dea1eea" category="list-text">* 대상 파일 시스템 * : 드롭다운 메뉴에서 대상 파일 시스템을 선택합니다.</block>
   <block id="dce3fffc0f825635bb1abc80d4fad0d8" category="list-text">* 대상 스토리지 VM *: 드롭다운 메뉴에서 대상 스토리지 VM을 선택합니다.</block>
@@ -561,7 +554,6 @@
   <block id="fa6e79d91adacad3ba5d3684079b4ea1" category="summary">Amazon FSx for NetApp ONTAP 설명서에는 참조용으로 문제 해결 주제가 포함되어 있습니다.</block>
   <block id="025110220989dd80d639c418b593cad3" category="inline-link-macro">Amazon FSx for NetApp ONTAP 문제 해결 을 참조하십시오</block>
   <block id="aa3f4a232768328d892056c200f23b5f" category="paragraph">자세한 내용은 을 <block ref="39d4d71bb679e33c9314f282da47094c" category="inline-link-macro-rx"></block> 참조하십시오.</block>
-  <block id="c3b25a5d5a44f6b35c6e6497598499eb" category="list-text">FSx for ONTAP 백업 * 대화 상자에서 다음을 제공합니다.</block>
   <block id="fb4531252f707fbda1308840e3c7d6af" category="summary">언제든지 복제 관계에서 소스 볼륨과 타겟 볼륨 간에 전송된 스냅샷 데이터를 수동으로 업데이트합니다.</block>
   <block id="9ff8251e97123d13337c62b2b74bbe1e" category="doc">복제 관계에서 스냅샷 데이터를 업데이트합니다</block>
   <block id="fa0604fd5c522ae5ab642bebf836c3d0" category="list-text">지금 업데이트 * 를 선택합니다.</block>
@@ -722,7 +714,6 @@
   <block id="384c5c520d0877aaaaed76d75d973d99" category="list-text">* 스토리지 비용 비교 계산기 *: Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지 비용을 FSx for ONTAP와 비교합니다. 계산기에서 FSx for ONTAP 스토리지 구성이 어떻게 잠재적 비용 절감을 제공하는지 살펴보고 FSx for ONTAP 스토리지로의 마이그레이션을 계획하실 수 있습니다.</block>
   <block id="f6858e5eadd0ed940450d85121838545" category="list-text">* Workload Factory 사용자 인터페이스 *: Quick create_and_Advanced create_deployment 모드 옵션을 제공합니다. 빠른 생성에는 스토리지 구성에 대한 AWS, NetApp 및 업계 표준 모범 사례가 포함됩니다.</block>
   <block id="53fe87832fd05bf7a8e9f1e1bad4aa86" category="doc">FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다</block>
-  <block id="4a74309dc15865035b8b93cec28f2a96" category="list-text">정보 아래에서 * FSx for ONTAP backup * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * FSx for ONTAP backup * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.</block>
   <block id="9f16bb4c9cbb656a02f2d0ac20ae70a8" category="list-text">* 매일 자동 백업 * : 기능을 활성화 또는 비활성화합니다. 이 기능을 비활성화하면 * 적용 * 을 선택합니다. 이 기능을 사용하도록 설정한 경우 다음 단계를 완료합니다.</block>
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
   <block id="eeba2ebb020e2a04f72c79660c1af4c0" category="inline-link-macro">파일 시스템 용량 증가</block>
@@ -738,7 +729,6 @@
   <block id="1bab530ca9dd117d24aa1c1510692003" category="doc">NetApp ONTAP용 Amazon FSx의 새로운 기능</block>
   <block id="d151342d67a639e871ca8c57524ca7f8" category="sidebar">볼륨 태그 관리</block>
   <block id="11c0aa7596d4f4521c9a98f708c34cc4" category="sidebar">스토리지 VM 태그 관리</block>
-  <block id="e4b304b6d81189c09bd7e999a18522e8" category="sidebar">FSx for ONTAP 백업 일정을 관리합니다</block>
   <block id="c4f10a04f7aa75535a8a0475261393eb" category="doc">스케일아웃 FSx for ONTAP 파일 시스템용 블록 스토리지</block>
   <block id="152983842f852ef5bae46ac675caec95" category="paragraph">이제 최대 6개의 HA 쌍으로 구성된 스케일아웃 파일 시스템 구축을 사용할 때 FSx for ONTAP을 통해 블록 스토리지를 프로비저닝할 수 있습니다.</block>
   <block id="8cce6f6c21973d5dff1898076cddb209" category="paragraph"><block ref="8cce6f6c21973d5dff1898076cddb209" category="inline-link-macro-rx"></block></block>
@@ -1215,16 +1205,6 @@
   <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적인 관찰 가능성</block>
   <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">통찰력을 행동으로</block>
   <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS의 잘 설계된 프레임워크 조언자</block>
-  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">잘 구성된 상태</block>
-  <block id="a64cfe5c8ae4b3445ff288e9acf4b12e" category="list-text">잘 짜여진 점수</block>
-  <block id="3ae4c18410c2fa4fdf19fa3a943ef362" category="list-text">점수에는 현재 분석된 모든 구성이 포함되며 백분율로 표시됩니다. 25% 점수는 파일 시스템 구성의 25%가 잘 설계되었음을 의미합니다.</block>
-  <block id="a4394e01049a42d14bd6258585de98b7" category="list-text">구성 범주</block>
-  <block id="d24dfe9869a3af3c94d86b476bc18a3d" category="list-text">파일 시스템 구성은 잘 설계된 AWS 프레임워크의 다음 5가지 핵심 요소에 맞춰 여러 범주로 분류됩니다.</block>
-  <block id="b88f659b2eb7813471f331b19c9d7f02" category="list-text">_안정성_: 작업 부하가 중단되더라도 의도한 기능을 정확하고 일관되게 수행하도록 보장합니다. 구성의 예는 FSx for ONTAP 백업입니다.</block>
-  <block id="6a940b53f011e22baccafe058e7df66e" category="list-text">_보안_: 위험 평가 및 완화 전략을 통해 데이터, 시스템 및 자산을 보호합니다.</block>
-  <block id="d5f464c28ed994054fe98db4934a7da1" category="list-text">_운영의 탁월성_: 최적의 아키텍처와 비즈니스 가치를 제공하는 데 중점을 둡니다.</block>
-  <block id="03be89b5f488a61c9b35832aa58745c1" category="list-text">_비용 최적화_: 비용을 최소화하면서 비즈니스 가치를 제공하는 것을 목표로 합니다.</block>
-  <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_성능 효율성_: 리소스를 효율적으로 사용하여 시스템 요구 사항을 충족하고 요구 사항이 변경될 때 최적의 성능을 유지하는 데 초점을 맞춥니다.</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* ONTAP 자격 증명 *: 선택 사항. ONTAP 사용자 이름과 암호를 입력합니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">제공한 사용자가 fsxadmin 사용자가 아니고 나중에 fsxadmin 암호를 재설정해야 하는 경우 AWS 콘솔에서 이 작업을 수행할 수 있습니다.</block>
@@ -1803,15 +1783,11 @@
   <block id="21c979f4327cd67644d8ab5b64a762c7" category="doc">NetApp Workload Factory에서 볼륨 복제</block>
   <block id="6681a3fb664c63dc897bbc8182969165" category="list-text">*FSx for ONTAP*에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="6b74b1eeb944b58dcf027766f050311f" category="list-text">볼륨 탭에서 복제할 볼륨의 작업 메뉴를 선택합니다.</block>
-  <block id="43b56786015efd5716b466b10628735f" category="summary">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 문제가 있는지 확인합니다.</block>
-  <block id="25c58ec67af5ce4deef895fad9566aa0" category="paragraph">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 문제가 있는지 확인합니다.  문제가 발견되면 Workload Factory는 문제가 무엇인지 보여주고 파일 시스템 스토리지가 최고의 성능, 비용 효율성, 모범 사례 준수를 달성하기 위해 무엇을 변경해야 하는지 설명합니다.</block>
-  <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">파일 시스템 수준의 Workload Factory 콘솔에서 모든 FSx for ONTAP 파일 시스템에 대한 잘 설계된 상태가 나열됩니다.  잘 설계된 상태는 "문제", "분석되지 않음", "잘 설계된"으로 분류됩니다.  잘 설계된 상태를 선택하면 파일 시스템 내의 잘 설계된 상태 탭으로 이동하게 되며, 여기서 잘 설계된 점수, 구성 범주, 파일 시스템의 모든 구성을 찾을 수 있습니다.</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
   <block id="54fe537cb8aa5bbba8b6f2002f13d69c" category="doc">NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
   <block id="4f43be2165dfc12e9cac6220645b9996" category="paragraph">NetApp Workload Factory에서 정기적으로 예약된 백업 외에 볼륨의 수동 백업을 만듭니다.</block>
-  <block id="54c39ca8203b6aca3fa33c7e87a0ede7" category="list-text">*볼륨* 탭에서 백업할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="cc481e5a678e1d84e7207782a75f9a18" category="summary">NetApp Workload Factory를 사용하면 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
   <block id="9b19e4522ce9145cc667b5fcceaba11d" category="doc">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 만들기</block>
   <block id="ebb1274f47205fb0c6d6d8988b0944b0" category="paragraph">NetApp Workload Factory를 사용하면 1세대 및 2세대 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
@@ -2740,4 +2716,74 @@
   <block id="f9b8d8043e7f357d7b5805e6dfd01b25" category="sidebar">블록 스토리지 관리</block>
   <block id="90fbacfd00a759e142437ac247a4317c" category="sidebar">파일 시스템 용량을 수동으로 조정합니다</block>
   <block id="241296c9db6f3205e0e5738da7ec12ef" category="sidebar">파일 시스템 용량을 자동으로 관리합니다</block>
+  <block id="62790b093d67bd09f77b7088f1cf32a6" category="list-text">*볼륨 백업*: 매일 자동 백업이 기본적으로 활성화되어 있습니다. 원하는 경우 비활성화합니다.</block>
+  <block id="94a3e141996b9431c4516ae849425040" category="summary">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 구성 문제가 있는지 확인합니다.</block>
+  <block id="eb2b721313223c7264abb769bf627d20" category="paragraph">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 구성 문제가 있는지 확인합니다. 문제가 발견되면 Workload Factory는 문제의 내용과 파일 시스템 스토리지가 최상의 성능, 비용 효율성 및 모범 사례 준수를 달성하도록 변경해야 하는 사항을 설명합니다.</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">작동 방식</block>
+  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.</block>
+  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 총 최적화 점수, 범주별 구성 문제, 구성 문제 및 권장 사항 목록을 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. 일부 문제는 Workload Factory에서 자동으로 수정되지만, 다른 문제는 수동 개입이 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
+  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">사용 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다. 특정 구성 분석을 제외하면 Workload Factory는 해당 구성을 전체 최적화 점수 계산에 포함하지 않습니다.</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
+  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
+  <block id="c6ee17dfa8bb85cfb470ccbc889f031c" category="section-title">스토리지 워크로드에 대한 모범 사례 및 권장 사항</block>
+  <block id="9302fb8b1312c354620e74d118c4a66d" category="paragraph">Workload Factory는 스토리지 구성을 평가하여 ONTAP 구성 모범 사례에 대한 심층적인 분석과 AWS Well-Architected Framework 준수 여부를 제공합니다. 또한, 개선 사항 및 수정 사항에 대한 권장 사항도 제시합니다.</block>
+  <block id="ffd9fc00ab43b8283346c6266e00d684" category="paragraph">잘 설계된 분석은 프레임워크의 다음 핵심 요소인 _안정성_, _보안_, _운영 우수성_, _비용 최적화_ 및 _성능 효율성_으로 구성을 분류합니다.</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">안정성</block>
+  <block id="32293fdcb7dff0798e6d06da4b108ce6" category="paragraph">안정성은 중단이 발생하더라도 워크로드가 의도된 기능을 정확하고 일관되게 수행하도록 보장합니다.</block>
+  <block id="8994ec75ad87cef8edf4cf8eae6b4e4c" category="list-text">*볼륨 백업 예약*</block>
+  <block id="3bacc0d1986b203b432f61110667b3d7" category="paragraph">볼륨 백업은 데이터 보존 및 규정 준수 요구 사항을 충족하는 데 도움이 됩니다. 볼륨 백업을 사용하여 데이터에 대한 자동 백업 및 보존을 설정하십시오.</block>
+  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*로컬 스냅샷 예약*</block>
+  <block id="ce36269ae95cd0ab7422d78bb843b720" category="paragraph">효율적인 백업과 빠른 복원을 위해 로컬 스냅샷을 예약하세요. 스냅샷은 볼륨의 특정 시점 이미지를 즉시 생성합니다.</block>
+  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">*지역 간 복제*</block>
+  <block id="152d89843ca63a94df485f882e2be60d" category="paragraph">리전 간 복제는 데이터를 다른 AWS 리전으로 복제하여 데이터의 내구성과 가용성을 향상시킵니다. NetApp Workload Factory는 재해 복구 및 규정 준수를 위해 리전 간 복제 설정을 권장합니다.</block>
+  <block id="1efec9308ce64129e1db77dd8baa679c" category="list-text">*데이터 복제 설정*</block>
+  <block id="793435fc062d4d74518687597c405959" category="paragraph">데이터 안정성을 향상시키기 위해 데이터를 동일 지역 또는 다른 지역의 FSx for ONTAP 파일 시스템으로 복제할 수 있습니다. 마이그레이션, 재해 복구 및 파일 시스템 간 장기 데이터 보존을 지원하도록 데이터 복제를 설정하십시오.</block>
+  <block id="4776b32ae8a508cea6dc14786e7b1d3f" category="list-text">*SSD 용량 임계값 증가*</block>
+  <block id="e48d5f7bfc0f630823696ef4d2f1861d" category="paragraph">SSD 스토리지 계층 용량은 지속적으로 80% 사용률을 초과해서는 안 됩니다. 이는 용량 풀 스토리지 계층에 대한 데이터 읽기 및 쓰기에 영향을 미치고 파일 시스템의 처리량 용량에 영향을 줄 수 있습니다. 용량이 부족하면 데이터 볼륨이 읽기 전용이 되고 새 데이터를 쓰려는 서비스가 실패할 수 있습니다.</block>
+  <block id="52dcb980883fc7c1570f6f9c4c6e4f47" category="list-text">*데이터 신뢰성을 확보하기 위해 라벨을 일치시키세요*</block>
+  <block id="6b684c41f8808f2d21748ed56ee909d7" category="paragraph">데이터 안정성을 보장하려면 소스 볼륨의 스냅샷 정책 레이블과 복제 정책 레이블이 일치해야 합니다.</block>
+  <block id="ec75a1c7b766068775fc7894ddaf83e4" category="list-text">*파일 용량 임계값 증가*</block>
+  <block id="0d73092e450f3018847f6e8ff85e28c0" category="paragraph">볼륨 용량 제한에 도달하지 않도록 파일 용량 임계값을 높여야 합니다. 파일 용량(inode)이 부족하면 볼륨에 추가 데이터를 기록할 수 없습니다. Workload Factory는 사용 가능한 파일 용량의 80% 미만을 지속적으로 유지하는 것을 권장합니다. 볼륨에 새 파일을 생성하려면 사용 가능한 파일 용량이 필요합니다.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">보안</block>
+  <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">보안은 위험 평가 및 완화 전략을 통해 데이터, 시스템 및 자산을 보호하는 데 중점을 둡니다.</block>
+  <block id="6b164cf17f1cd008f12b094341cb3264" category="list-text">*ARP/AI 활성화*</block>
+  <block id="3c93b584a7552b941c7752fec865d7f1" category="paragraph">NetApp AI 기반 자율형 랜섬웨어 보호(ARP/AI)는 랜섬웨어 위협으로부터 볼륨을 보호하는 데 도움을 줍니다. Workload Factory는 모든 볼륨에 대해 ARP/AI를 활성화할 것을 권장합니다.</block>
+  <block id="1218a704bef91508c259c867ba832d76" category="list-text">*볼륨에 대한 무단 액세스*</block>
+  <block id="0f47a13bb4c0929efc89421b05c0e209" category="paragraph">iSCSI를 사용하여 애플리케이션 데이터를 제공하는 볼륨은 NAS에 대한 병렬 액세스를 허용해서는 안 됩니다. Workload Factory는 iSCSI 프로토콜을 통해 액세스하는 볼륨에 대해 다른 프로토콜 사용을 제한할 것을 권장합니다.</block>
+  <block id="17d2a91a4f3c01de4c2f05b2242e49d3" category="section-title">운영 우수성</block>
+  <block id="aae272278ce139a51849ab88adc7d597" category="paragraph">운영 우수성은 최적의 아키텍처와 비즈니스 가치 제공에 중점을 둡니다.</block>
+  <block id="2e8c868875c81824742ded82e0ff9518" category="list-text">*자동 용량 관리 활성화*</block>
+  <block id="c2af0d35add26707ebd7d7030d750beb" category="paragraph">SSD 계층이 임계값을 초과하지 않도록 정기적으로 관리하려면 자동 용량 관리를 활성화해야 합니다.</block>
+  <block id="32438b829cdc61174e9727896ad00733" category="list-text">*볼륨 용량 활용률 임계값*</block>
+  <block id="938de8c74e8e4f67c370d24df8ab0411" category="paragraph">Workload Factory는 볼륨 용량 사용률이 지속적으로 80%를 초과하지 않도록 권장합니다. 이를 초과할 경우 애플리케이션의 데이터 읽기 및 쓰기에 영향을 미칠 수 있습니다. 볼륨 용량 증가는 수동 또는 볼륨 자동 확장 기능을 사용하여 자동으로 수행할 수 있습니다.</block>
+  <block id="900f4b8178b38a2b7075005f38bd4a08" category="list-text">*볼륨 사용률이 거의 최대치에 도달했습니다*</block>
+  <block id="1771306e58ae20ceab27a04d0b17adcd" category="paragraph">볼륨이 거의 꽉 찼을 때 Workload Factory는 잠재적인 애플리케이션 중단을 방지하기 위해 볼륨 용량을 늘리는 조치를 취할 것을 권장합니다.</block>
+  <block id="dea8be5f351d7ba412ea10951c1fe16c" category="list-text">*캐시 관계 쓰기 모드*</block>
+  <block id="a58ce95d0ee8f9d592643a6f31d60878" category="paragraph">최적의 성능을 위해 Workload Factory는 워크로드에 가장 적합한 캐시 관계 쓰기 모드를 권장합니다. 쓰기 우회 모드는 작은 파일을 사용하는 읽기 중심 워크로드에서 더 나은 성능을 제공하며, 쓰기 백 모드는 큰 파일을 사용하는 쓰기 중심 워크로드에서 더 나은 성능을 제공합니다.</block>
+  <block id="3a3b30a3337caa5b953626eb873e3e6b" category="list-text">*캐시 볼륨 크기 최적화*</block>
+  <block id="3f8b3943fba700ffad94c47ef4638509" category="paragraph">Workload Factory는 최적의 크기를 유지하고 캐시가 자주 사용되는 데이터에 집중하여 효율성을 극대화할 수 있도록 캐시 볼륨에서 볼륨 자동 크기 조정 및 스크러빙을 활성화하는 것을 권장합니다.</block>
+  <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*스토리지 VM 논리적 보고*</block>
+  <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">Workload Factory에서는 볼륨 수준에서 스토리지 사용량을 더 잘 파악할 수 있도록 스토리지 VM의 기본 보고 설정을 논리적으로 설정하는 것을 권장합니다.</block>
+  <block id="a39ae09f8be4327fc176cfeb76a0e366" category="section-title">비용 최적화</block>
+  <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">비용 최적화는 비용을 낮게 유지하면서 비즈니스에 가장 큰 가치를 얻을 수 있도록 도와줍니다.</block>
+  <block id="ff879d0ae47ba423426718c1437f43bc" category="list-text">*콜드 데이터를 계층화하여 TCO 최적화*</block>
+  <block id="3fa1db8a8be8ef91cca2bf931c2698f3" category="paragraph">SSD 스토리지 티어 사용률을 줄이려면 콜드 데이터 티어링을 활성화해야 합니다. 모든 볼륨에 티어링 정책을 적용하는 것이 좋습니다. FSx for ONTAP은 데이터를 지속적으로 스캔하여 콜드 데이터를 감지하고 중단 없이 용량 스토리지 풀 티어로 이동합니다.</block>
+  <block id="7cee9f2699d966625a5743c41334d168" category="list-text">*스토리지 효율성 활성화*</block>
+  <block id="4ac28dca7ab7f0f38a67c27c947662d5" category="paragraph">스토리지 활용도를 최적화하고 SSD 계층 비용을 절감하기 위해 컴팩션, 압축, 데이터 중복 제거와 같은 스토리지 효율성 향상 기능을 활성화해야 합니다.</block>
+  <block id="fed8dca8f704b8520ccccb85704d4336" category="list-text">*불필요한 스냅샷 및 백업 삭제*</block>
+  <block id="0c3c1c3be816da545548a0d1ddb8eab2" category="paragraph">비용 절감을 위해 더 이상 필요하지 않은 스냅샷과 백업은 삭제해야 합니다.</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*비활성 블록 디바이스*</block>
+  <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">블록 디바이스를 7일 동안 사용하지 않으면 Workload Factory에서는 비용 절감을 위해 블록 디바이스 데이터를 아카이빙하거나 사용하지 않는 블록 디바이스를 삭제할 것을 권장합니다.</block>
+  <block id="f915580ac605b8302594b2e8b9e200c4" category="list-text">*활용도가 낮은 SSD 용량*</block>
+  <block id="20f19e4030e406a0bbc3f71b51e9b885" category="paragraph">SSD 용량 계층이 제대로 활용되지 않으면 불필요한 비용이 발생할 수 있습니다. NetApp Workload Factory는 현재 사용 용량보다 20%의 여유 공간을 확보하면서 SSD 계층 용량을 줄이는 것을 권장합니다. 용량 감소 작업은 몇 시간에서 며칠까지 소요될 수 있으며, 이 시간 동안 다른 파일 시스템 작업은 지원되지 않습니다.</block>
+  <block id="3224742265d3111d23b216e2a1d3036c" category="paragraph">볼륨 백업은 볼륨당 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.</block>
+  <block id="9b1c40247bbd6b430d06045ce9149bf4" category="paragraph">볼륨 백업은 증분 백업 방식입니다. 즉, 가장 최근 백업 이후 변경된 데이터만 저장됩니다. 따라서 백업 생성에 필요한 시간과 저장 공간을 최소화하여 데이터 중복을 방지하고 저장 비용을 절감할 수 있습니다.</block>
+  <block id="40e95cbe82fc979afaca404d45ab88c7" category="list-text">*볼륨* 탭에서 백업할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="0b3a2f729072cb80e423288abd69fa27" category="list-text">* 데이터 보호 작업 *, * 볼륨 백업 *, * 수동 백업 * 을 차례로 선택합니다.</block>
+  <block id="108be83f8740c01bf49fb6d51d4b134e" category="admonition">스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본을 만들려면 볼륨 백업 또는 볼륨 복제 기능을 사용하는 것을 고려해 보세요.</block>
+  <block id="d6a7c6eb08e4e62d76793fd3d8b368d4" category="list-text">볼륨 백업: 볼륨 백업 복사본은 그대로 유지되며 계속 사용할 수 있습니다.</block>
+  <block id="e18aace8bf973f70c990d2b81fcba316" category="list-text">정보에서 *볼륨 백업* 옆에 있는 연필 아이콘을 선택합니다. 마우스 커서를 *볼륨 백업* 행 위로 가져가면 드롭다운 화살표 옆에 연필 아이콘이 나타납니다.</block>
+  <block id="8650af0fa3c7b902ba6a94894d28c472" category="list-text">*볼륨 백업* 대화 상자에서 다음을 제공합니다.</block>
+  <block id="5e9b88efcc8c9692790f512327a22476" category="list-text">* 데이터 보호 작업 *, * 볼륨 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.</block>
+  <block id="6eb18ebccbf4fe18669aca55778990e0" category="sidebar">볼륨 백업 일정 관리</block>
 </blocks>

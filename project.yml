@@ -171,7 +171,7 @@ sidebar:
           url: "/manage-snapshots.html"
       - title: 백업
         entries:
-        - title: FSx for ONTAP 백업 일정을 관리합니다
+        - title: 볼륨 백업 일정 관리
           url: "/manage-backup-schedule.html"
       - title: 복제
         entries:
