@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: create-s3-access-points.html 
+keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
+summary: NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 생성합니다. 
+---
+= NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 생성하고 연결합니다.
+
+.이 작업에 대해
+Amazon FSx for NetApp ONTAP를 사용하면 NFS 및 SMB 파일 시스템이 S3 데이터에 액세스하고 Amazon Bedrock, SageMaker, Athena, AWS Glue 등과 같은 AWS 서비스에 연결할 수 있습니다. 모든 객체 스토리지 데이터에 AWS 서비스를 연결할 수 있습니다.
+
+FSx for ONTAP 파일 시스템의 NFS 및 SMB 볼륨에 S3 액세스 포인트를 연결하면 AWS 서비스에서 마치 S3 버킷에 있는 것처럼 파일에 액세스할 수 있습니다. 액세스 포인트를 연결할 때 고유 ID를 정의하고 파일 액세스 유형(UNIX 또는 Windows)을 선택한 다음 액세스 권한 부여를 위한 사용자 이름을 추가하세요.
+
+S3 액세스 포인트를 연결하면 AWS Management Console에 고유한 별칭과 함께 표시됩니다. 이 별칭을 Amazon Bedrock과 같은 AWS 서비스에서 FSx for ONTAP 볼륨의 파일에 액세스하는 데 사용할 S3 버킷 이름으로 지정하십시오.
+
+하나의 FSx for ONTAP 볼륨에 여러 개의 S3 액세스 포인트를 연결할 수 있으며, 각 액세스 포인트에는 고유한 액세스 수준이 부여되어 여러 AWS 서비스에 연결할 수 있습니다.
+
+.시작하기 전에
+시작하기 전에 다음 요구 사항을 완료하십시오.
+
+* S3 액세스 포인트가 있는 기존 볼륨이 있어야 합니다.link:create-volume.html["S3 액세스 포인트를 사용하여 볼륨 생성"]
+* 이 작업을 완료하려면 Workload Factory에서 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_ 권한 정책을 사용하여 자격 증명을 부여하십시오."^]해야 합니다.
+
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템을 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 사용하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.
+. S3 액세스 포인트 관리 페이지에서 *S3 액세스 포인트 생성 및 연결*을 선택합니다.
+. *S3 액세스 포인트 생성 및 연결* 페이지에서 다음 정보를 제공하십시오.
++
+** *S3 액세스 포인트 이름*: S3 액세스 포인트의 이름을 입력하세요.
+** *사용자*: 볼륨에 액세스할 수 있는 기존 사용자를 선택하거나 새 사용자를 만듭니다.
+** *사용자 유형*: 사용자 유형으로 *UNIX* 또는 *Windows*를 선택합니다.
+** *네트워크 구성*: *인터넷* 또는 *가상 프라이빗 클라우드(VPC)*를 선택하십시오. 선택하는 네트워크 유형에 따라 액세스 포인트가 인터넷에서 액세스 가능한지 또는 특정 VPC로 제한되는지가 결정됩니다. 저널 테이블 기능을 사용하려면 네트워크 구성으로 *인터넷*을 선택해야 합니다.
+** *인벤토리 테이블*: 선택 사항입니다.  `getObject` 권한이 필요합니다. 볼륨에서 인벤토리 테이블을 활성화하면 S3 액세스 포인트에서 접근 가능한 모든 객체에 대한 메타데이터가 생성되며 AWS S3 요청 비용이 발생합니다. 자세한 내용은 link:https://aws.amazon.com/s3/pricing/["Amazon S3 가격 책정 문서"^]를 참조하십시오. 테이블은 24시간마다 업데이트됩니다.
+** *S3 액세스 포인트 태그*: 필요에 따라 최대 50개의 태그를 추가하거나 태그를 제거할 수 있습니다.
+
+
+. Create * 를 선택합니다.
+
+
+.관련 정보
+선택적으로 Workload Factory에서 S3 액세스 포인트와 함께 저널 테이블 기능을 사용할 수 있습니다. 저널 테이블 인프라는 Amazon FSx for ONTAP 볼륨 액세스 포인트 전반에 걸쳐 사용자 액세스 이벤트 및 객체 작업에 대한 감사 로그를 캡처하고 저장합니다. 저널 테이블 기능을 사용하려면 AWS CloudTrail, AWS CloudWatch, AWS S3 버킷, AWS CloudWatch 로그 그룹, AWS Identity and Access Management(IAM) 역할 및 정책을 포함한 필요한 AWS 인프라를 설정해야 합니다. link:setup-journal-table.adoc["NetApp Workload Factory용 저널 테이블 인프라를 설정합니다"^].
+
+기타 관련 주제:
+
+* link:edit-s3-access-points.html["NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 편집합니다"]
+* link:delete-s3-access-points.html["NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 삭제합니다"]
+

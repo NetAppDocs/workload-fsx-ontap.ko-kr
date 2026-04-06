@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: view-s3-details.html 
+keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
+summary: NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트의 세부 정보를 확인하세요. 
+---
+= NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트 세부 정보를 확인하세요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+별칭, ARN, S3 URI와 같은 S3 액세스 포인트 세부 정보를 볼 수 있습니다. 인벤토리 및 저널 테이블이 활성화된 경우 S3 액세스 포인트 전반에 걸친 사용자 액세스 이벤트 및 객체 작업에 대한 메타데이터와 감사 로그를 확인할 수 있습니다.
+
+.이 작업에 대해
+볼륨에서 인벤토리 테이블이 활성화되면 해당 볼륨에 연결된 기존 S3 액세스 포인트의 액세스 포인트, 인벤토리 테이블 및 테이블 버킷 세부 정보를 볼 수 있습니다. 또한 시스템은 AWS Management Console에서 인벤토리 테이블에 대한 링크를 제공합니다.
+
+저널 테이블이 활성화되면 Workload Factory는 액세스 포인트에 대한 로그를 참조용 테이블에 생성합니다. 이 테이블에는 CloudTrail 이벤트, 트레일(AWS 활동 기록), CloudTrail 필터, CloudWatch 로그 그룹 등이 포함됩니다.
+
+액세스 포인트 세부 정보를 복사하여 다른 애플리케이션에서 사용할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 세부 정보를 볼 볼륨이 있는 파일 시스템을 선택하십시오.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 세부 정보를 볼 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *세부 정보 보기*를 선택합니다.
++
+세부 정보는 *액세스 포인트*, *인벤토리 테이블*, *저널 테이블*, *테이블 버킷*의 네 가지 탭 아래에 표시됩니다.
+
+. 인벤토리 또는 저널 테이블의 상태가 활성화되어 있지만 `get:Object` 권한이 없는 경우 대화 상자의 지침에 따라 필요한 권한을 추가하십시오.
+. 저널 테이블 상태가 '대기 중'인 경우, 저널 테이블을 생성된 인프라에 연결하려면 CloudTrail ARN을 제공해야 합니다. AWS CLI 또는 AWS Management Console을 사용하여 CloudFormation 스택을 배포하는 지침을 따른 다음, Workload Factory 콘솔로 돌아가 CloudTrail ARN을 입력하십시오.
+
+
+.관련 정보
+* link:setup-journal-table.html["NetApp Workload Factory에서 저널 테이블 인프라를 설정하고 저널 테이블 설정 관련 문제를 해결합니다."]
+
