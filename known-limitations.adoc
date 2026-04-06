@@ -4,14 +4,14 @@ permalink: known-limitations.html
 keywords: limitations, fsx, ontap 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 
 ---
-= Amazon FSx for NetApp ONTAP의 알려진 제한 사항
+= NetApp Workload Factory에서 Amazon FSx for NetApp ONTAP의 알려진 제한 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
+알려진 제한 사항은 이 제품 릴리스에서 지원되지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 다음 제한 사항은 NetApp Workload Factory의 Amazon FSx for NetApp ONTAP에만 해당됩니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
 
 
 
