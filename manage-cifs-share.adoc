@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-cifs-share.html 
 keywords: cifs, smb, SMB/CIFS, cifs share, change, update, modify, delete, create 
-summary: Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 볼륨 생성, 사용자 및 그룹 액세스 결정, 삭제가 포함됩니다. 
+summary: Workload Factory에서 볼륨의 SMB 또는 CIFS 공유를 관리하는 방법에는 공유 생성, 사용자 및 그룹 액세스 권한 설정, 그리고 삭제가 포함됩니다. 
 ---
 = Workload Factory에서 볼륨에 대한 SMB/CIFS 공유 관리
 :allow-uri-read: 

@@ -1941,7 +1941,6 @@
   <block id="df22e5c72d75cea7ae766daf660bd529" category="summary">필요한 경우 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
   <block id="be1c92aa6bef23dd57df3395c46827bb" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
   <block id="93ae473ca3e8f97f82687e6f98eab1da" category="list-text">*FSx for ONTAP*에서 백업 일정을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="da0f0bd52c148eab60b2dfefe8e25fa3" category="summary">Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 볼륨 생성, 사용자 및 그룹 액세스 결정, 삭제가 포함됩니다.</block>
   <block id="f73fd134806728f0a5ac79982e11ead7" category="doc">Workload Factory에서 볼륨에 대한 SMB/CIFS 공유 관리</block>
   <block id="c69f3e9214ff94aa0825993b6fb1b85a" category="paragraph">Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SMB/CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹과 이들에게 부여할 권한 수준 결정, SMB/CIFS 공유 삭제가 포함됩니다.</block>
   <block id="4b898528f057698b461041b6d7447cfe" category="list-text">볼륨 탭에서 SMB 공유를 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
@@ -3001,4 +3000,7 @@
   <block id="58ff05ec25b45f54f79eb1afc9e31b9c" category="list-text">S3 액세스 포인트의 네트워크 구성을 *Internet*으로 설정합니다. <block ref="f5b1c6fb53ebc8db45e1c55bd4e00f01" category="inline-link-macro-rx"></block>.</block>
   <block id="559b775ce267386e1398935c6753e6f3" category="paragraph">위의 단계 중 어느 하나라도 실패하면 <block ref="05993fa90b9226bcf7edb149f0761729" category="inline-xref-macro-rx"></block> 또는 NetApp 지원팀에 문의하여 도움을 받으십시오.</block>
   <block id="e520cc743022825140834d2b02cc8cba" category="list-text"><block ref="e520cc743022825140834d2b02cc8cba" category="inline-link-macro-rx"></block></block>
+  <block id="d08fabf4c0fdff2290096692a4ffa28a" category="section-title">블록 디바이스의 마지막 액세스 시간</block>
+  <block id="fa4bdc942217a8579f785220b2742233" category="paragraph">Workload Factory는 블록 장치의 마지막 액세스 시간을 보고합니다. 이 시간은 Workload Factory에서 igroup에 마지막으로 액세스한 시간을 기준으로 합니다. 각 블록 장치의 마지막 사용 시간을 알면 리소스를 최적화할 수 있습니다.</block>
+  <block id="9b6ea8e99ee787981ebaca2de09e7c7f" category="summary">Workload Factory에서 볼륨의 SMB 또는 CIFS 공유를 관리하는 방법에는 공유 생성, 사용자 및 그룹 액세스 권한 설정, 그리고 삭제가 포함됩니다.</block>
 </blocks>
