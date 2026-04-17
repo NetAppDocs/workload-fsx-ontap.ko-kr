@@ -119,6 +119,14 @@ Storage Savings Calculator는 다음 구성에 대한 비용 절감액을 계산
 
 스토리지 VM당 S3 액세스 포인트 수 제한은 4,000개입니다.
 
+
+
+== 스토리지 VM 마이그레이션 복제 제한 사항
+
+* Workload Factory는 1세대와 2세대 FSx for ONTAP 파일 시스템 간의 스토리지 VM 마이그레이션 복제를 지원하지 않습니다.
+* S3 액세스 포인트 또는 vserver의 object-store-server, 버킷, 사용자, 그룹 또는 정책을 포함하는 ONTAP S3 구성이 있는 볼륨의 경우 컷오버 복제가 지원되지 않습니다.
+
+
 참고:
 
 . Amazon FSx for NetApp ONTAP에 적용됩니다
