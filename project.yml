@@ -79,10 +79,8 @@ sidebar:
           url: "/restore-from-backup.html"
       - title: 복제를 사용하세요
         entries:
-        - title: 복제 관계를 생성합니다
+        - title: 데이터 복제
           url: "/create-replication.html"
-        - title: 복제 관계를 초기화합니다
-          url: "/initialize-replication.html"
       - title: 자율적 랜섬웨어 방어 기능으로 데이터를 보호합니다
         url: "/ransomware-protection.html"
       - title: 볼륨의 클론을 생성합니다
