@@ -2551,7 +2551,6 @@
   <block id="507884c25618fc114f4becd877e50dd8" category="list-text">FSx for ONTAP 및 FSx for ONTAP 파일 시스템</block>
   <block id="811a8960cadc3b9f9379096dc8b6b831" category="list-text">1세대에서 1세대로</block>
   <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">2세대에서 2세대로</block>
-  <block id="4031de6ffffe0beb0671ccd52a118661" category="paragraph">두 FSx for ONTAP 파일 시스템 간 또는 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 데이터를 복제합니다.</block>
   <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">볼륨 상태가 사용 가능, 생성됨 또는 잘못 구성됨 이외의 상태이거나 ONTAP 버전이 호환되지 않는 경우 복제가 지원되지 않습니다.</block>
   <block id="cbcff6555c8b07eb6add33653d3ab030" category="list-text">마이그레이션 사용 사례의 경우 스토리지 VM 데이터 및 구성 설정과의 복제 관계를 생성하기 전에 볼륨에 대한 마지막 복제가 지난 24시간 이내에 완료되었는지 확인하십시오.</block>
   <block id="41ad46bbff5ae50ffe14d0bdc1b66775" category="paragraph">마이그레이션을 위해 복제 관계를 생성한 경우 스토리지 VM 데이터 및 구성 설정을 타겟 FSx for ONTAP 파일 시스템으로 마이그레이션하려면 모든 볼륨과 해당 스토리지 VM을 컷오버해야 합니다.</block>
@@ -2988,7 +2987,6 @@
   <block id="d08fabf4c0fdff2290096692a4ffa28a" category="section-title">블록 디바이스의 마지막 액세스 시간</block>
   <block id="fa4bdc942217a8579f785220b2742233" category="paragraph">Workload Factory는 블록 장치의 마지막 액세스 시간을 보고합니다. 이 시간은 Workload Factory에서 igroup에 마지막으로 액세스한 시간을 기준으로 합니다. 각 블록 장치의 마지막 사용 시간을 알면 리소스를 최적화할 수 있습니다.</block>
   <block id="9b6ea8e99ee787981ebaca2de09e7c7f" category="summary">Workload Factory에서 볼륨의 SMB 또는 CIFS 공유를 관리하는 방법에는 공유 생성, 사용자 및 그룹 액세스 권한 설정, 그리고 삭제가 포함됩니다.</block>
-  <block id="8e3a7eb1ad6884834be95dd2aaf56b7b" category="paragraph">예기치 못한 재해 발생 시 데이터 손실을 방지하려면 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하십시오. 두 FSx for ONTAP 파일 시스템 간 또는 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간에 데이터를 복제할 수 있습니다.</block>
   <block id="3ff25ab258de4c80bbe3f420e00a3c7e" category="paragraph">마이그레이션을 위해 하나의 스토리지 VM에 대해 스토리지 VM 데이터와 구성 설정을 복제하도록 선택할 수 있습니다. 데이터와 구성 설정을 함께 마이그레이션하는 경우 해당 볼륨의 마지막 복제가 최근 24시간 이내에 완료되었는지 확인하십시오. 이 기능을 사용하려면 동일한 스토리지 VM에 있는 모든 볼륨을 선택해야 합니다. 모든 볼륨의 계층화 정책은 기본적으로 소스 볼륨의 계층화 정책을 따르며, 이는 마이그레이션 사용 사례에 권장됩니다.</block>
   <block id="a4b076b073df12f01e734ba016dbebd2" category="paragraph">Workload Factory는 다음 스토리지 시스템 간의 스토리지 VM 마이그레이션 복제를 지원합니다.</block>
   <block id="5d7e49f428c9183384f592ccb040ea68" category="list-text">복제 관계에서 타겟에 사용할 수 있는 FSx for ONTAP 파일 시스템이 하나 있는지 확인하십시오.</block>
@@ -3028,4 +3026,6 @@
   <block id="d0d09a499e6cdf9f1d34c4e5929c7f4d" category="section-title">3단계: 마이그레이션 사용 사례를 위한 복제 전환</block>
   <block id="09b43c18bbbe0ab926e24296d842bf9b" category="paragraph">마이그레이션 사용 사례에 대한 복제 관계를 생성한 후에는 스토리지 VM 데이터 및 구성 설정을 대상 FSx for ONTAP 파일 시스템으로 마이그레이션하려면 컷오버 복제를 수행해야 합니다. 컷오버 복제는 소스 파일 시스템에서 대상 FSx for ONTAP 파일 시스템으로 데이터와 스토리지 VM 구성 설정을 영구적으로 마이그레이션합니다. 컷오버 과정에서 데이터는 마지막으로 복제됩니다. 컷오버가 시작되면 소스 스토리지 VM은 오프라인 상태가 됩니다.</block>
   <block id="3d7746b6894a23aa721b9d2b99f0bff4" category="list-text">*복제 버전 지원*: 소스 및 대상 스토리지 시스템은 동일한 주요 ONTAP 버전을 사용해야 합니다. 예를 들어 소스 시스템이 ONTAP 버전 9.18.1을 실행 중인 경우 대상 시스템도 9.18.1 버전을 실행해야 합니다.</block>
+  <block id="28cd2b513c45599c0ed271171a723fae" category="paragraph">NetApp Workload Factory에서 데이터를 복제하여 데이터가 있는 지역에서 재해가 발생할 경우 데이터 손실을 방지하십시오. 데이터 복제는 FSx for ONTAP 파일 시스템과 온프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 간에 지원됩니다.</block>
+  <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">두 FSx for ONTAP 파일 시스템 간, 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간 또는 Cloud Volumes ONTAP과 FSx for ONTAP 파일 시스템 간에 데이터를 복제합니다.</block>
 </blocks>
