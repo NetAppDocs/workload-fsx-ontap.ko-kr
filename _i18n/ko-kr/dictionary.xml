@@ -565,7 +565,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">NetApp ONTAP용 Amazon FSx를 사용합니다</block>
   <block id="2553f0a003cdfb6c46e0fb29cca1c670" category="sidebar">링크를 사용하십시오</block>
-  <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">볼륨 관리</block>
   <block id="dc88dce8ec264777b2f90ec0af744f43" category="sidebar">볼륨을 생성합니다</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="sidebar">스토리지 VM을 생성합니다</block>
   <block id="e5787a3a7b79c3cdbeb01e163f0a84de" category="sidebar">스냅샷을 관리합니다</block>
@@ -689,7 +688,6 @@
   <block id="c853397a437814fc2251c95bdf57909f" category="list-text">관계 삭제 대화 상자에서 * 삭제 * 를 선택합니다.</block>
   <block id="ad1d6a18c0d830b44dfe2e6a96d2807d" category="list-text">선택적으로 * 볼륨 백업 * 을 선택하여 삭제하기 전에 볼륨을 백업합니다.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Continue * 를 선택합니다.</block>
-  <block id="c5c6c97593c886ac31454d1f10313b78" category="list-text">활성화 버튼을 선택하여 * 자동 용량 관리 활성화 * 를 선택합니다.</block>
   <block id="759c5ad2620497fe90dc2bc5e085c8c0" category="summary">장기 보존을 위해 스냅샷을 사용하도록 설정하여 장기적인 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다.</block>
   <block id="37873c6c78867be44aa0676105354543" category="paragraph">장기 보존을 통해 전체 사이트 장애가 발생해도 비즈니스 서비스의 지속적인 운영을 보장할 수 있으며, 2차 복사본을 사용하여 투명하게 애플리케이션을 페일오버할 수 있습니다.</block>
   <block id="8107582f3eb31967f7b5b6bdc4826ea0" category="list-text">장기 보존을 위해 스냅샷을 비활성화하도록 선택한 경우 * 적용 * 을 선택하여 이 작업을 완료합니다.</block>
@@ -1863,7 +1861,6 @@
   <block id="c39b3cbd986af96ef05b9724f0b92e6b" category="summary">볼륨 자동 증가를 활성화하면 Workload Factory에서 볼륨 용량을 관리하게 됩니다.  언제든지 비활성화할 수 있습니다.</block>
   <block id="467fbaad5c04b9212fefde208c6fce39" category="doc">Workload Factory에서 볼륨 자동 증가 활성화</block>
   <block id="c7cb41d0ae0beeca525b094df6834ee5" category="list-text">볼륨 탭에서 수정하려는 볼륨에 대한 작업 메뉴를 선택합니다.</block>
-  <block id="700ddd4e501b4b63ce13f0a4091d97c3" category="list-text">*FSx for ONTAP*에서 자동 용량 관리를 활성화할 파일 시스템의 작업 메뉴를 선택합니다.</block>
   <block id="a2f3bd55649066a9bad9a42a8df63f08" category="paragraph">NetApp Workload Factory에서는 장기 보존을 위한 스냅샷을 활성화하여 장기 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다.</block>
   <block id="116537ad3a8e9d253ab6c2cf9b1375c4" category="list-text">*FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="92f16ef088dcbde798778ff8c71b147a" category="list-text">복제 관계 탭에서 변경할 복제 관계 일정의 작업 메뉴를 선택합니다.</block>
@@ -2167,13 +2164,11 @@
   <block id="05fbfa43ca52b70a735d4a870f0f8f6d" category="inline-link-macro">볼륨 용량 조절 기능</block>
   <block id="8f764b06860786fe5978951124c18450" category="paragraph">선택적으로 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 있습니다.<block ref="e78173f6bdea353abf41de50dd00987d" category="inline-link-macro-rx"></block> .</block>
   <block id="ad5ba1f7c14b2135486dafc0e40196ac" category="summary">이 기능을 활성화하면 Workload Factory가 시간이 지남에 따라 용량 요구 사항이 변경됨에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지나 inode를 자동으로 추가할 수 있습니다.</block>
-  <block id="e1d481cddc46ccb42fc6f59c020f5ce1" category="paragraph">FSx for ONTAP 파일 시스템의 최대 크기 한도까지 증분 스토리지를 자동으로 추가하려면 자동 용량 관리를 활성화합니다.</block>
   <block id="7950e88c4d4bc489666a4af446a7d303" category="inline-link-macro">_view, planning, and analysis_ 권한 정책으로 자격 증명을 부여합니다.</block>
   <block id="37d3a1150da64094460d233181c8c83e" category="list-text">당신은해야합니다<block ref="1773ab1fe4aa6a3e5fc61d86a29970f0" category="inline-link-macro-rx"></block> 이 작업을 완료하려면 Workload Factory로 이동하세요.</block>
   <block id="650ad6fb48eb81eacfa521124d1dc357" category="list-text">*경고 임계값*: Workload Factory 알림 서비스에서 알림을 트리거하려면 경고 임계값을 임계값 증가보다 낮게 설정합니다.  기본값은 70%입니다.</block>
   <block id="8ec47943fca737be2b087573534a2057" category="inline-link-macro">Workload Factory 알림 서비스를 활성화했습니다.</block>
   <block id="60c52248134394a776265c66248137a8" category="paragraph">경고 임계값 설정은 다음 경우에만 사용할 수 있습니다.<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block> .</block>
-  <block id="4e88714beba53ff4a9a4132c11a62597" category="list-text">*임계값 증가*: FSx for ONTAP 파일 시스템의 최대 백분율 증가를 입력합니다.  기본값은 80%입니다.</block>
   <block id="e5896468cb243b3cd2e0e75b0ca7173d" category="admonition">*Terraform 사용자*: Terraform에는 모든 작업이 Terraform 내에서 완료되어야 한다는 제한이 있습니다.  Terraform에서는 inode 관리가 지원되지 않지만 Workload Factory 콘솔에서 자동 inode 관리를 활성화할 수 있습니다.</block>
   <block id="0a0054f32c5856b9e4d1227d3aff2de3" category="list-text">볼륨 inode를 자동으로 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="2dc6db0702897622d8829494f1d3b37f" category="inline-link-macro">Workload Factory 알림 서비스 활성화</block>
@@ -2606,7 +2601,6 @@
   <block id="201a18ac1c906df6358f39af33c244de" category="summary">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다.</block>
   <block id="0006ccbc0d0f541209207d590ebc1b08" category="doc">NetApp Workload Factory에서 파일 시스템의 블록 스토리지를 관리합니다</block>
   <block id="373d40a556613e20661d6c89ac8751a6" category="paragraph">NetApp Workload Factory를 사용하여 iGroup 및 블록 장치를 포함한 블록 스토리지 리소스 관리를 간소화하고 FSx for ONTAP 블록 장치에 대한 클라이언트 액세스를 제어하여 최적의 성능을 제공하고 비용을 최소화하십시오.</block>
-  <block id="60318fe3439a99a9762a5aaaa9cc7b95" category="paragraph">Workload Factory 콘솔에서 이니시에이터 그룹(igroup)을 관리하여 블록 디바이스에 대한 클라이언트 액세스를 제어할 수 있습니다. 또한 블록 디바이스 세부 정보를 보고, 용량을 늘리고, 클라이언트 액세스를 관리하고, 비활성 블록 디바이스의 데이터를 아카이빙하고, 블록 디바이스를 삭제할 수 있습니다.</block>
   <block id="e0c31cfa2277dcf409fc0398234ce79b" category="paragraph">블록 스토리지 다이어그램을 확인하여 다음 사항을 점검하십시오.</block>
   <block id="30f276b848a0c37c6c54368f5714fc72" category="list-text">클라이언트 연결</block>
   <block id="e7963aa68819cfe7f854ea292af57bb0" category="list-text">블록 디바이스 상태</block>
@@ -2625,20 +2619,8 @@
   <block id="d5d9ee8255b76e97868c3facadf58360" category="paragraph">용량 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다. 또한 이 기능을 활성화하면 용량을 수동으로 모니터링할 필요가 없어집니다.</block>
   <block id="b5750806a6c2de28360d7b511ba01b0c" category="paragraph">시스템은 30분마다 FSx for ONTAP 파일 시스템을 스캔합니다. 증분 스토리지를 추가해야 하는지 확인하고 사용 가능한 볼륨 inode를 검증합니다. 카운트는 자동 용량 관리 임계값에 따라 증가합니다.</block>
   <block id="7bdf690b1d068245416e9f5cbb766f44" category="paragraph">inode 관리를 활성화하면 NetApp Workload Factory가 용량 요구 사항 변경에 따라 FSx for ONTAP 파일 시스템에 증분 inode를 자동으로 추가할 수 있습니다. 이 기능을 통해 수동으로 inode를 모니터링할 필요가 없어집니다.</block>
-  <block id="d00e9db543e20f2a587eedfba7e3b329" category="list-text">정보에서 *용량 관리* 옆에 있는 연필 아이콘을 선택합니다. 연필 아이콘은 마우스 커서를 *용량 관리* 행 위로 가져가면 드롭다운 화살표 옆에 나타납니다.</block>
-  <block id="eafb35aad9f2005878f19fafa1be8d82" category="list-text">*용량 관리* 대화 상자에서 다음 정보를 제공하십시오.</block>
-  <block id="70c7829e6e55aa891ddd55aaf7bd1275" category="list-text">*모드*: 용량을 자동으로 관리할 모드를 선택합니다. 옵션은 증분 및 적응형 모드입니다.</block>
-  <block id="8d1178637079d74b1d4df6828507f656" category="list-text">*증분 모드*: 임계값에서 용량을 고정된 양만큼 증가시킵니다.</block>
   <block id="a850b45530431e433b34aeb17888df66" category="paragraph">이는 Workload Factory가 용량 증가 작업을 트리거하는 임계값입니다. 예를 들어 파일 시스템 용량이 80%에 도달하면 Workload Factory는 용량을 증가시킵니다.</block>
-  <block id="de019eb3e94bf6fbb51fa0fc90f5bd75" category="list-text">*적응형 모드*: 기간별 데이터를 기반으로 용량을 예측하고 변경합니다.</block>
-  <block id="11d9ed6b9e54bdea1a4ecc52907361f8" category="list-text">*분석 기간*: 용량 예측에 고려할 기간별 데이터의 양을 결정하려면 분석 기간을 시간 단위로 설정하십시오. 기본값은 120시간입니다.</block>
-  <block id="39f6b6f1dee1cd96aadfd7e0f2089c76" category="list-text">*계획된 버퍼 시간*: 실제로 필요하기 전에 용량이 증가하도록 버퍼 시간을 시간 단위로 설정하십시오. 기본값은 48시간입니다.</block>
   <block id="52f65090db0661db649aa6c7e46a8b14" category="paragraph">파일 시스템 검사는 추가 용량이 필요한지 여부를 판단하기 위해 30분마다 수행됩니다.</block>
-  <block id="5d38a14c79cf5c5f38102d6436886068" category="section-title">용량 알림을 활성화합니다</block>
-  <block id="6a93267b6668918bd024785ba7a1af41" category="paragraph">파일 시스템이 특정 용량 임계값에 도달하면 알림을 받도록 알림을 설정합니다.</block>
-  <block id="5c91dfe3f77e6a44fd914ea673600879" category="paragraph">이 기능을 사용하려면 <block ref="92ba022a113ba350cc22eb4ba703843c" category="inline-link-macro-rx"></block>해야 합니다.</block>
-  <block id="5bcc265168b27815fd10f23b771bad2a" category="list-text">*용량 관리* 대화 상자에서 *용량 알림 활성화*를 선택하면 용량이 임계값에 도달했을 때와 Workload Factory에서 자동 용량 증가를 수행할 때마다 알림이 표시됩니다.</block>
-  <block id="3f810138549fa80c7e69f8ec485c8a27" category="list-text">파일 시스템이 특정 용량 비율에 도달했을 때 알림을 받으려면 *알림 임계값*을 설정하십시오. 기본값은 70%입니다.</block>
   <block id="fcb18dec8d5281d1ce666db128df5515" category="section-title">파일 시스템에 대한 inode 관리를 활성화합니다</block>
   <block id="083afef27eb29c6a017bada830bc631c" category="paragraph">자동 inode 관리를 활성화하여 볼륨당 inode(파일) 수를 허용 한도까지 늘릴 수 있습니다.</block>
   <block id="d933b8209c8cd56ba75386ce9ae7847a" category="paragraph">FSx for ONTAP 파일 시스템에 대한 검사가 30분마다 수행됩니다. 이 검사는 사용 가능한 볼륨 inode를 확인하고 증분 inode를 추가해야 하는지 여부를 점검합니다. inode 개수는 자동 inode 관리 임계값에 따라 증가합니다.</block>
@@ -3028,4 +3010,61 @@
   <block id="3d7746b6894a23aa721b9d2b99f0bff4" category="list-text">*복제 버전 지원*: 소스 및 대상 스토리지 시스템은 동일한 주요 ONTAP 버전을 사용해야 합니다. 예를 들어 소스 시스템이 ONTAP 버전 9.18.1을 실행 중인 경우 대상 시스템도 9.18.1 버전을 실행해야 합니다.</block>
   <block id="28cd2b513c45599c0ed271171a723fae" category="paragraph">NetApp Workload Factory에서 데이터를 복제하여 데이터가 있는 지역에서 재해가 발생할 경우 데이터 손실을 방지하십시오. 데이터 복제는 FSx for ONTAP 파일 시스템과 온프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 간에 지원됩니다.</block>
   <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">두 FSx for ONTAP 파일 시스템 간, 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간 또는 Cloud Volumes ONTAP과 FSx for ONTAP 파일 시스템 간에 데이터를 복제합니다.</block>
+  <block id="5a022ce9df2c118b15eecf6d431faf14" category="doc">블록 디바이스 클론</block>
+  <block id="c74340453798a5d4d4e10a5aaef38904" category="paragraph">Workload Factory는 블록 디바이스용 클론을 제공하여 용량, 액세스 및 수명 주기를 제어하면서 쓰기 가능하고 효율적인 데이터 복사본을 신속하게 프로비저닝할 수 있도록 지원합니다.</block>
+  <block id="91cb86206fad91f1ee03be3263ce2b5e" category="section-title">블록 디바이스의 EC2 태그</block>
+  <block id="4cdbcf74dda458c541b8fb774532f64e" category="paragraph">블록 장치 테이블에 이제 각 블록 장치를 사용하는 EC2 호스트의 태그를 보여주는 열이 추가되었습니다. 이를 통해 문제 해결이나 감사 중에 어떤 호스트가 각 블록 장치를 사용하는지 쉽게 파악할 수 있습니다.</block>
+  <block id="1182d4b8399f34126ea205e47a6a77aa" category="paragraph">각 블록 디바이스에 태그를 생성하려면 제공된 사용자 스크립트를 사용하여 EC2 인스턴스를 배포하십시오.</block>
+  <block id="949772caeac38120e37726672f87e673" category="inline-link-macro">블록 디바이스에 태그를 할당하는 EC2 사용자 데이터 스크립트</block>
+  <block id="f253e6c2e63632a5f1a7ef4fe6522c2f" category="paragraph"><block ref="f253e6c2e63632a5f1a7ef4fe6522c2f" category="inline-link-macro-rx"></block></block>
+  <block id="607326d3637e008b134e64f39d8da723" category="section-title">FSx for ONTAP 파일 시스템의 용량 추세</block>
+  <block id="f9fdfcc52193908a516c0b9d7964af8e" category="paragraph">FSx for ONTAP 파일 시스템의 개요에서 SSD 용량 추세를 직접 확인하세요. 용량 관리를 위한 새로운 카드는 지난달 사용량 추세에 대한 포괄적인 정보를 제공합니다. 이 분석에는 실제 사용 용량과 할당된 용량 간의 비교가 포함되어 리소스 활용률을 명확하게 평가할 수 있습니다.</block>
+  <block id="9fe282a2158bc82a938a6290a314ca79" category="inline-link-macro">NetApp Workload Factory에서 용량을 자동으로 관리하세요</block>
+  <block id="9ab7147fcc802f47be068771ba492092" category="paragraph"><block ref="9ab7147fcc802f47be068771ba492092" category="inline-link-macro-rx"></block></block>
+  <block id="408971f10d86e5c4321ade595b2c0c02" category="summary">NetApp Workload Factory에서 리소스 관리를 위해 블록 디바이스에 ONTAP 수준 태그를 자동으로 적용합니다.</block>
+  <block id="afd74d04ea9a5b8ff37eb68cdc1ce134" category="doc">NetApp Workload Factory에서 블록 디바이스에 ONTAP 수준 태그 적용</block>
+  <block id="4e3be99b46a9e938ac0b99ef12ed4a7e" category="paragraph">NetApp Workload Factory의 기본 EC2 사용자 데이터 스크립트를 사용하여 AWS EC2 인스턴스 배포 중에 블록 디바이스를 자동으로 생성하고 태그를 지정할 수 있습니다. AWS EC2 콘솔에서 EC2 인스턴스를 배포할 때 인스턴스 시작 마법사 템플릿에 EC2 사용자 데이터 스크립트를 추가하세요. 배포 후 Workload Factory는 스크립트에서 수집한 메타데이터를 사용하여 블록 디바이스에 ONTAP 수준 태그를 적용합니다. 이러한 태그를 통해 각 블록 디바이스를 사용하는 호스트를 확인할 수 있으므로 문제 해결이나 감사 시 사용량과 해당 호스트를 신속하게 연결할 수 있습니다.</block>
+  <block id="59adf89635b6e0af666dd4f48d1e4af5" category="paragraph">EC2 사용자 데이터 스크립트는 EC2 인스턴스 배포 중에 블록 디바이스를 생성하고 ONTAP 수준의 EC2 태그를 블록 디바이스에 적용합니다.</block>
+  <block id="d27f369607ec04a5867d5cf464d0beca" category="paragraph">블록 디바이스에 적용되는 _EC2 태그_에는 EC2 이름, EC2 ID 및 EC2 인스턴스 내 블록 디바이스의 마운트 경로가 포함됩니다.</block>
+  <block id="91bf41936e8654c1243d1aafd192b3b5" category="inline-link-macro">EC2 인스턴스 시작을 위한 Amazon Elastic Compute Cloud 지침</block>
+  <block id="61745748bc899eddac2cbd3ac107b47c" category="list-text"><block ref="b2b1cddbb7ebbfd176c8e2b8f4d9478a" category="inline-link-macro-rx"></block>를 사용하여 AWS EC2 콘솔에서 인스턴스 시작 마법사를 따르십시오.</block>
+  <block id="bf51b85ce4f8fad76dfc76a9c238fdf1" category="list-text">EC2 사용자 데이터 스크립트를 인스턴스 시작 마법사 템플릿에 추가하여 블록 디바이스를 자동으로 생성하고 태그를 지정합니다.</block>
+  <block id="0a1aaabb4c9e55ee08ea763d11ed001e" category="inline-link-macro">EC2 사용자 데이터 스크립트</block>
+  <block id="5808acc578d885a031ef2c6e21db45ce" category="paragraph">GitHub 저장소 FSx-ONTAP-sample-scripts로 이동하여 <block ref="8f119e1ca236cc96e65275f65c095c65" category="inline-link-macro-rx"></block>을(를) 다운로드하세요.</block>
+  <block id="00288a5b58c73c5d8737ba4edaf020e4" category="list-text">인스턴스를 시작합니다.</block>
+  <block id="63c72d7d3fdb495f83c711241ddecf32" category="paragraph">EC2 사용자 데이터 스크립트는 EC2 인스턴스에 호스팅된 새 블록 스토리지 디바이스에 ONTAP 수준 태그를 자동으로 적용합니다.</block>
+  <block id="4cd7e529e00480d5fefb11dcd1f5488e" category="list-text">기존 EC2 인스턴스의 경우 사용자 데이터 스크립트는 재부팅 후에만 적용됩니다.</block>
+  <block id="29b6e33414e7d0e4411ace82e79b290c" category="paragraph">EC2 태그는 연결된 FSx for ONTAP 파일 시스템 내의 블록 디바이스 테이블에 나타납니다.</block>
+  <block id="30d27ffcd856ab25c82d64aa781314d3" category="inline-link-macro">NetApp Workload Factory에서 파일 시스템용 이니시에이터 그룹(igroup)을 생성합니다</block>
+  <block id="d7738a2cfc28b206bc9bb15af5cf1bf8" category="list-text"><block ref="d7738a2cfc28b206bc9bb15af5cf1bf8" category="inline-link-macro-rx"></block></block>
+  <block id="521f3c46f3c55c8cbef62abfb3a885c7" category="list-text"><block ref="521f3c46f3c55c8cbef62abfb3a885c7" category="inline-link-macro-rx"></block></block>
+  <block id="eb65a539cb451b6fbdc221ea311b28d4" category="paragraph">Workload Factory 콘솔에서 이니시에이터 그룹(igroup)을 관리하여 블록 디바이스에 대한 클라이언트 액세스를 제어할 수 있습니다. 또한 블록 디바이스 세부 정보를 보고, 용량을 늘리고, 클론을 생성하고, 클라이언트 액세스를 관리하고, 비활성 블록 디바이스의 데이터를 아카이빙하고, 블록 디바이스를 삭제할 수 있습니다.</block>
+  <block id="f12250ce1a89e4780f783e37faff61bf" category="section-title">블록 디바이스 복제</block>
+  <block id="3852c39d262a8881e2a8268be54fe6ca" category="paragraph">기존 블록 장치의 복제본은 언제든지 생성할 수 있습니다. 블록 장치 복제본은 원본 블록 장치의 쓰기 가능한 복사본으로, 원본 또는 복제본에 변경 사항이 적용되기 전까지 동일한 데이터 블록을 공유합니다. 블록 장치 복제는 추가 스토리지 용량을 소모하지 않고 데이터를 재사용할 수 있는 복사본을 빠르고 효율적으로 생성하는 방법입니다.</block>
+  <block id="4cbb5fd33ac98b9c735c391778c8d7f0" category="list-text">블록 장치의 작업 메뉴로 이동한 다음 *블록 장치 복제*를 선택합니다.</block>
+  <block id="929051af38dd6b0381c93579bedb478d" category="list-text">블록 장치 복제 대화 상자에서 복제된 블록 장치의 이름을 입력합니다.</block>
+  <block id="9fe66450d94dd471c65e7c48e7574afd" category="list-text">선택적으로 자동 삭제를 활성화하여 볼륨 공간이 부족할 때 복제된 블록 디바이스를 자동으로 삭제할 수 있습니다.</block>
+  <block id="3f6182f8b829a2b8dac8608939de86e6" category="list-text">*iSCSI 구성*: 선택 사항입니다. 블록 디바이스 클론을 호스트 이니시에이터에 연결하려면 새 이니시에이터 그룹을 생성하거나 기존 이니시에이터 그룹에 매핑하십시오.</block>
+  <block id="bf13cfa9990015b5ba0006913a4d3697" category="list-text">*새 이니시에이터 그룹 생성*: 블록 디바이스 클론에 대한 새 이니시에이터 그룹을 생성하려면 이 옵션을 선택합니다. 다음 세부 정보를 입력합니다.</block>
+  <block id="99d3866ac5c6ba618aaf3143db301a5b" category="list-text">*호스트 운영 체제*: 호스트 운영 체제 유형을 선택합니다.</block>
+  <block id="3efb2d82cf33087b8cafdf6d069fb5e4" category="list-text">*이니시에이터 그룹 이름*: igroup 이름을 입력합니다.</block>
+  <block id="a113aa07b36a47078eaad655b24f8b10" category="list-text">*기존 이니시에이터 그룹에 매핑*: 블록 디바이스 클론을 기존 이니시에이터 그룹에 매핑하려면 이 옵션을 선택합니다. 블록 디바이스를 매핑할 이니시에이터 그룹을 하나 이상 선택합니다.</block>
+  <block id="ea8da9dc858ea1d17060728f173c4d71" category="list-text">블록 디바이스 클론을 생성하려면 *Clone*을 선택합니다.</block>
+  <block id="203e616ed82fa6546f9999807f34c99e" category="section-title">자동 용량 관리 및 용량 알림을 활성화합니다.</block>
+  <block id="907ec66004c2b411a03471b9875eed7b" category="paragraph">FSx for ONTAP 파일 시스템의 최대 크기 제한까지 증분 스토리지를 자동으로 추가하려면 자동 용량 관리를 활성화하십시오. 파일 시스템이 특정 용량 임계값에 도달하면 알림을 받도록 알림을 설정하십시오.</block>
+  <block id="bc86da8bf515d19787d896a0141bf5c2" category="list-text">*FSx for ONTAP*에서 자동 용량을 활성화할 파일 시스템을 선택하십시오.</block>
+  <block id="6295149c5cb94797e55cbe5c7539fa56" category="list-text">자동 용량 관리 카드에서 *관리*를 선택합니다.</block>
+  <block id="e5711037f8e63eeedc2c04d138ff588b" category="list-text">용량 관리 방식을 선택하십시오. 옵션은 증분 모드와 적응형 모드입니다.</block>
+  <block id="e5a2f196660d32f0ab1950271fecf1f9" category="list-text">*증분*: 임계값에서 고정된 양만큼 용량을 증가시킵니다.</block>
+  <block id="bdeb0344b5a2f528dfc652c5fd8fb865" category="list-text">*임계값*: Workload Factory 알림 서비스에서 알림을 트리거하려면 임계값을 증분 증가율보다 낮게 설정하십시오. 기본값은 70%입니다.</block>
+  <block id="449a38bbcb6434ee7ed199ab25680695" category="paragraph">임계값 설정은 <block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block>인 경우에만 사용할 수 있습니다.</block>
+  <block id="ef32c449d460f74cb349c2f64a23580b" category="list-text">*증분 증가*: FSx for ONTAP 파일 시스템의 최대 증가율을 입력합니다. 기본값은 80%입니다.</block>
+  <block id="dbd2a879edd3f77d99da5f05f010db3a" category="list-text">*적응형*: 기간별 데이터를 기반으로 용량을 예측하고 변경합니다.</block>
+  <block id="f131feb55a78e1beb8b4f46023bd04a9" category="list-text">*Look-back*: 용량 예측을 위해 고려할 기간별 데이터의 양을 결정하기 위해 분석 기간을 시간 단위로 설정합니다. 기본값은 120시간입니다.</block>
+  <block id="b743c8928261822d2f08d89f862413ab" category="list-text">*미리 계획하세요*: 용량 증설이 실제로 필요하기 전에 확보될 수 있도록 여유 시간을 시간 단위로 설정하세요. 기본값은 48시간입니다.</block>
+  <block id="cc943b0b0f1ddb0c8232f2bb0ab56d0e" category="list-text">*자동 용량 관리 활성화*를 선택하고 자격 증명 _보기, 계획 및 분석_ 권한을 선택합니다.</block>
+  <block id="30dd41f65f34e35a6b1cadb93c28336a" category="list-text">설정한 임계값에 도달하거나 Workload Factory에서 자동 용량 증가를 수행할 때마다 알림을 받으려면 *용량 알림 활성화*를 선택하십시오. 기본값은 70%입니다.</block>
+  <block id="8da70820bee8cb0d257b3ee6f7436e40" category="paragraph">용량 알림 설정은 <block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block> 및 자동 용량 관리가 활성화된 경우에만 사용할 수 있습니다.</block>
+  <block id="3be044b694628f6e958377c22febfacd" category="section-title">2026년 5월 3일</block>
+  <block id="4ccd08ccc04cf1986a6dc1a2de287f72" category="sidebar">블록 디바이스에 태그 적용</block>
 </blocks>

@@ -43,14 +43,12 @@ sidebar:
         url: "/create-link.html"
       - title: 링크를 관리합니다
         url: "/manage-links.html"
+    - title: 볼륨을 생성합니다
+      url: "/create-volume.html"
     - title: 캐시 볼륨 검색 및 보기
       url: "/discover-cache-volumes.html"
-    - title: 볼륨 관리
-      entries:
-      - title: 볼륨을 생성합니다
-        url: "/create-volume.html"
-      - title: 데이터에 액세스합니다
-        url: "/access-data.html"
+    - title: 데이터에 액세스합니다
+      url: "/access-data.html"
     - title: 블록 스토리지 리소스 생성
       entries:
       - title: igroup 생성
@@ -143,6 +141,8 @@ sidebar:
       entries:
       - title: 블록 스토리지 관리
         url: "/manage-block-storage.html"
+      - title: 블록 디바이스에 태그 적용
+        url: "/apply-block-device-tags.html"
     - title: 파일 시스템 관리
       entries:
       - title: 파일 시스템 용량을 수동으로 조정합니다
