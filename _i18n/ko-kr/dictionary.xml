@@ -2975,7 +2975,6 @@
   <block id="ed57615365ad2815423480008d91d450" category="section-title">전환 작업 계획</block>
   <block id="fa425772bf4dc1e54c8368c2b99d4b1b" category="paragraph">마이그레이션 사용 사례에 대한 전환 작업을 계획할 때 다음 사항을 고려하십시오.</block>
   <block id="d77811034f737ab45ed7ddebe9c096fd" category="inline-xref">컷오버 후 구성 설정 업데이트</block>
-  <block id="6ceb7ae37e1ac2ec5ebe38f0e5082457" category="list-text">*스토리지 VM 구성 설정*: 전환 작업 시 모든 스토리지 VM 구성 설정이 대상 스토리지 VM으로 마이그레이션되는 것은 아닙니다. 예를 들어 iSCSI, 브로드캐스트 도메인 MTU 및 DNS 설정은 마이그레이션되지 않습니다. 전환 후 대상 스토리지 VM에서 이러한 설정을 수동으로 업데이트해야 합니다. 자세한 내용은 <block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="dddf91d5ccee3135470e6089b62618ba" category="list-text">*클론*: 클론은 개별 볼륨으로 마이그레이션되므로 대상 FSx for ONTAP 파일 시스템에서 더 많은 공간을 차지하게 됩니다. 대상 시스템의 용량 증가를 방지하려면 전환 전에 클론을 삭제하는 것을 고려하십시오.</block>
   <block id="233115f3ed74b7b4516b8f0a1efbaedf" category="list-text">*캐시 볼륨*: ONTAP FlexCache 9.17.x 이하 버전에 해당합니다. 캐시 볼륨이 포함된 소스 스토리지 VM은 전환이 지원되지 않습니다. 마이그레이션 실패를 방지하려면 전환 전에 ONTAP FlexCache 관계를 제거하십시오.</block>
   <block id="03c85e91696d00a533c3da3b08434532" category="list-text">*AWS S3 액세스 포인트*: S3 액세스 포인트가 있는 볼륨의 경우 마이그레이션 사용 사례에 대한 컷오버 복제가 지원되지 않습니다. 마이그레이션 실패를 방지하려면 소스 볼륨에서 S3 액세스 포인트를 삭제하십시오.</block>
@@ -3070,4 +3069,8 @@
   <block id="deede3cf7f18c08613ec53890188368e" category="section-title">FSx for ONTAP 파일 시스템의 Well-Architected 상태에 대한 PDF 보고서</block>
   <block id="09731bdb23a8e229cca44808afd3eb18" category="inline-link-macro">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 아키텍처 설계 상태를 확인하십시오.</block>
   <block id="bf36e3bb684711138abb04e7f7f95c1a" category="paragraph">분석이 완료되면 기록 보관용 또는 팀과 공유하기 위해 FSx for ONTAP 파일 시스템의 아키텍처 설계 상태에 대한 PDF 보고서를 다운로드할 수 있습니다.<block ref="8f1fbab727bbab0e7967c959283750c4" category="inline-link-macro-rx"></block></block>
+  <block id="6279c641e85ceb888c688f0c728cd930" category="list-text">스토리지 시스템 간의 안전한 데이터 전송 및 관리를 위해 TCP 포트 11105와 11106을 열어 두십시오.</block>
+  <block id="eeb77472aa3a83d51f0873ec83e22572" category="list-text">*스토리지 VM 구성 설정*:</block>
+  <block id="0abde7f01f46e5ae295493bf4b280687" category="list-text">전환 작업은 모든 스토리지 VM 구성 설정을 대상 스토리지 VM으로 마이그레이션하지 않습니다. 예를 들어 iSCSI, 브로드캐스트 도메인 MTU 및 DNS 설정은 마이그레이션되지 않습니다. 전환 후 대상 스토리지 VM에서 이러한 설정을 수동으로 업데이트해야 합니다. 자세한 내용은 <block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block> 섹션을 참조하십시오.</block>
+  <block id="893700039eb02078c7602e997d7f9922" category="list-text">스토리지 VM에서 도메인 터널 인증을 사용하는 경우 마이그레이션을 시작하기 전에 대상 파일 시스템에서 도메인 터널을 설정하고 활성화하십시오.</block>
 </blocks>
