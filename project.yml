@@ -75,10 +75,8 @@ sidebar:
           url: "/create-backup.html"
         - title: 백업에서 볼륨을 복원합니다
           url: "/restore-from-backup.html"
-      - title: 복제를 사용하세요
-        entries:
-        - title: 데이터 복제
-          url: "/create-replication.html"
+      - title: 데이터 복제
+        url: "/create-replication.html"
       - title: 자율적 랜섬웨어 방어 기능으로 데이터를 보호합니다
         url: "/ransomware-protection.html"
       - title: 볼륨의 클론을 생성합니다
@@ -105,6 +103,8 @@ sidebar:
         url: "/edit-volume-autogrow.html"
       - title: 볼륨 용량 조절
         url: "/adjust-volume-capacity.html"
+      - title: 볼륨 지연 시간 임계값 설정
+        url: "/set-volume-latency-thresholds.html"
       - title: 볼륨 용량 재조정
         url: "/rebalance-volume.html"
       - title: 변경 불가능한 파일을 관리합니다
@@ -185,20 +185,10 @@ sidebar:
         entries:
         - title: 데이터 보호 볼륨을 복제합니다
           url: "/cascade-replication.html"
-        - title: 복제 관계를 반대로 전환합니다
-          url: "/reverse-replication.html"
-        - title: 소스 볼륨의 복제 일정을 변경합니다
-          url: "/change-replication-schedule.html"
-        - title: 복제 관계의 최대 전송 속도를 제한합니다
-          url: "/limit-transfer-rate.html"
-        - title: 복제 관계에서 스냅샷 데이터를 수동으로 업데이트합니다
-          url: "/update-snapshot-replication.html"
-        - title: 복제 관계를 일시 중지했다가 다시 시작합니다
-          url: "/pause-resume-replication.html"
-        - title: 복제 관계를 중지합니다
-          url: "/stop-replication.html"
-        - title: 복제 관계를 삭제합니다
-          url: "/delete-replication.html"
+        - title: 복제 지연 추적
+          url: "/track-replication-delays.html"
+        - title: 복제 관계 관리
+          url: "/manage-replication.html"
     - title: 성능 관리
       entries:
       - title: 파일 시스템에 대한 IOPS를 프로비저닝합니다

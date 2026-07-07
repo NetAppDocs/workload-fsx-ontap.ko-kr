@@ -59,7 +59,12 @@ image:screenshot-on-prem-connectivity.png["온프레미스 ONTAP 클러스터를
 링크를 만들지 않은 경우 지침에 따라 이 작업으로 돌아가서 링크를 선택합니다.
 
 .. * 클러스터 IP 주소 *: 복제할 온-프레미스 ONTAP 클러스터의 IP 주소를 제공합니다.
-.. * ONTAP credentials *: 온-프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력합니다. 사용자에게 필요한 권한이 있는지 확인합니다.
+.. *ONTAP credentials*: 다음을 제공하십시오.
++
+*** GovCloud 계정: ONTAP 자격 증명을 사용하여 ARN을 입력하십시오.
+*** 기타 모든 계정: 온프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력하십시오. 사용자에게 필요한 권한이 있는지 확인하십시오.
+
+
 
 
 . 검색 프로세스를 시작하려면 * 검색 * 을 선택합니다.

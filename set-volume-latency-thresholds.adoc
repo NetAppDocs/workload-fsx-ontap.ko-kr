@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: set-volume-latency-thresholds.html 
+keywords: latency, latency thresholds, alerts, volume latency, read latency, write latency 
+summary: 볼륨의 읽기 또는 쓰기 지연 시간이 지정된 값을 초과할 경우 알림을 받도록 지연 시간 임계값을 설정합니다. 
+---
+= NetApp Workload Factory에서 볼륨 지연 시간 임계값 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+볼륨의 읽기 또는 쓰기 지연 시간이 지정된 값을 초과할 경우 알림을 받도록 지연 시간 임계값을 설정합니다.
+
+.이 작업에 대해
+볼륨별로 지연 시간 임계값을 구성하여 성능을 모니터링하고 지연 시간 값이 정의된 한계를 초과할 경우 알림을 받을 수 있습니다. Workload Factory는 읽기 및 쓰기 지연 시간을 모두 모니터링하고 두 임계값 중 하나라도 초과되면 알림을 생성합니다.
+
+지연 시간 임계값을 설정하면 Workload Factory는 다음 사항을 모니터링합니다.
+
+* *읽기 지연 시간*: 읽기 작업이 지정된 임계값(밀리초)을 초과하면 경고가 발생합니다.
+* *쓰기 지연 시간*: 쓰기 작업이 지정된 임계값(밀리초)을 초과하면 경고가 발생합니다.
+
+
+지연 시간 모니터링은 다음과 같은 기본 매개변수를 사용합니다.
+
+* *IOPS 임계값*: 100 IOPS (읽기 및 쓰기)
+* *시간 범위*: 10분
+
+
+지정된 시간 범위 내에서 지연 시간 임계값이 초과되고 IOPS 임계값에 도달하면 경고가 생성됩니다.
+
+
+NOTE: 링크 연결 없이도 지연 이벤트를 확인하고 알림을 받을 수 있습니다. 하지만 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 파일 시스템에 연결"].
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 구성할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
+. 볼륨 탭에서 지연 시간 임계값을 설정할 볼륨의 작업 메뉴를 선택합니다.
+. *알림 작업*을 선택한 다음 *지연 시간 임계값 설정*을 선택합니다.
+. '지연 시간 임계값 설정' 대화 상자에서 다음을 구성하십시오.
++
+.. *읽기 지연 시간*: 읽기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.
+.. *쓰기 지연 시간*: 쓰기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.
+
+
+. 지연 시간 임계값을 적용하려면 *저장*을 선택하십시오.
+
+
+.결과
+Workload Factory는 볼륨을 모니터링하고 읽기 또는 쓰기 지연 시간이 구성된 임계값을 초과하면 알림을 생성합니다. 지연 시간 이벤트는 link:analyze-events.html["분석 화면"]에서 확인할 수 있습니다.
+
+.관련 정보
+* link:analyze-events.html["NetApp Workload Factory에서 FSx for ONTAP 이벤트 분석"]
+* link:adjust-volume-capacity.html["Workload Factory에서 볼륨 용량 조정"]
+

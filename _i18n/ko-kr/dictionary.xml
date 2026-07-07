@@ -581,7 +581,6 @@
   <block id="463b6a907cababadde63e20d0a9d0a30" category="sidebar">스토리지 VM을 다른 파일 시스템으로 복제합니다</block>
   <block id="b7f48cbd151b44682a0f2a8ffa114d0f" category="sidebar">스토리지 VM 암호를 재설정합니다</block>
   <block id="7f8d84e7d0adb2682a7102214e49dee2" category="sidebar">데이터 보호 관리</block>
-  <block id="ecbd50a07d840bace484b62056499032" category="sidebar">복제 관계에서 스냅샷 데이터를 수동으로 업데이트합니다</block>
   <block id="267e5e88580f97af56a5fa2b981a6a67" category="sidebar">성능 관리</block>
   <block id="ef045d17e80274aec5be009d1f13f5a2" category="sidebar">파일 시스템에 대한 IOPS를 프로비저닝합니다</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">참조하십시오</block>
@@ -776,7 +775,6 @@
   <block id="a94ba7c755ae23b126e888fda5f83d7b" category="list-text">ONTAP 온프레미스 검색 페이지의 * 클러스터 구성 * 에 다음을 제공합니다.</block>
   <block id="db442d2f15cc5ca62b25c302ecc39e4d" category="paragraph">링크를 만들지 않은 경우 지침에 따라 이 작업으로 돌아가서 링크를 선택합니다.</block>
   <block id="d6c619de487035b86fe99726a4142c96" category="list-text">* 클러스터 IP 주소 *: 복제할 온-프레미스 ONTAP 클러스터의 IP 주소를 제공합니다.</block>
-  <block id="5284e36227d3576d0531d813669d810f" category="list-text">* ONTAP credentials *: 온-프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력합니다. 사용자에게 필요한 권한이 있는지 확인합니다.</block>
   <block id="10f4ba1588812227f6775ff4cdd8731a" category="list-text">검색 프로세스를 시작하려면 * 검색 * 을 선택합니다.</block>
   <block id="9107799f71b772409d2dda6a954c2b55" category="paragraph">온프레미스 ONTAP 클러스터가 검색되어 * 온프레미스 ONTAP * 탭에 표시됩니다.</block>
   <block id="c0bb7503a06a72052adfacae53dc8968" category="inline-xref">데이터를 FSx for ONTAP 파일 시스템에 복제합니다</block>
@@ -1202,7 +1200,6 @@
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">기본 사용 권한에 맞춰 암호를 만들거나 링크 정책에 대한 사용자 지정 사용 권한을 할당할 수 있습니다.</block>
   <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* AWS Secrets Manager로 VPC 전용 엔드포인트 구성 * 은 기본적으로 비활성화됩니다. 이 옵션을 선택하면 VPC 개인 엔드포인트를 로컬로 저장하는 대신 VPC 전용 엔드포인트를 사용하여 암호를 저장합니다.</block>
-  <block id="c3b24be1571207cf6200f2d8b54ee7c0" category="paragraph">스택을 성공적으로 만든 후 텍스트 상자에 Lambda ARN을 붙여 넣습니다.</block>
   <block id="48457d7f94975228307244f863f96fee" category="section-title">기존 링크를 FSx for ONTAP 파일 시스템에 연결합니다</block>
   <block id="531d680092609d3ec7794cd6dd8c39fe" category="paragraph">링크를 생성한 후 하나 이상의 FSx for ONTAP 파일 시스템에 연결합니다.</block>
   <block id="447f36846a239be6be0faf7dc1fa0364" category="list-text">연결 링크 페이지에서 * 기존 링크 연결 * 을 선택하고 링크를 선택한 다음 * 계속 * 을 선택합니다.</block>
@@ -1365,7 +1362,6 @@
   <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="316509fcb5a8d1b5e1280f3f64c594f2" category="list-text">사용자 이름 = FSx_user</block>
-  <block id="562c87a680d962135f8e44bc0d159259" category="list-text">* 스토리지 VM 이름 *: 드롭다운 메뉴에서 스토리지 VM을 선택합니다. 선택한 스토리지 VM은 이 복제 관계에서 선택한 모든 볼륨의 대상입니다.</block>
   <block id="11f24c2a8c13499208f4d69098436bd2" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다. . Replication settings(복제 설정) 에서 다음을 제공합니다.</block>
   <block id="fca40712560cec2d2b7a47110cfecda1" category="list-text">*새 정책 만들기*: *정책 이름*을 입력하세요.</block>
   <block id="0546ab198c101c424e412d1355272bcd" category="list-text">*변경 불가능한 스냅샷*: 선택 사항. 보존 기간 동안 이 정책에서 생성한 스냅샷이 삭제되지 않도록 하려면 * 변경 불가능한 스냅샷 활성화 * 를 선택합니다.</block>
@@ -1398,7 +1394,6 @@
   <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*프로비저닝된 IOPS*: 다음 옵션 중 하나를 선택하세요.</block>
   <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*자동*: 자동의 경우, 생성된 GiB 1개에 대해 3 IOPS가 추가됩니다.</block>
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*사용자 프로비저닝*: 사용자 프로비저닝의 경우 IOPS 값을 입력합니다.</block>
-  <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">이 워크플로에서 링크를 만드는 데는 자동 또는 수동의 두 가지 옵션이 있습니다. AWS 계정에서 AWS CloudFormation 스택을 실행하여 링크를 생성해야 합니다.</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*사용자 제공*: 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당하려면 이 옵션을 선택합니다. 권한 정책에는 다음 권한이 필요합니다. <block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager를 활성화한 경우에만 권한이 필요합니다.</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
@@ -1496,7 +1491,6 @@
   <block id="2f50ceaec248a408742379493bc7731b" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 검색합니다.</block>
   <block id="bab25954c067653929b889d687bcb718" category="paragraph">CloudFormation으로 리디렉션 대화 상자가 나타나고 AWS CloudFormation 서비스에서 링크를 만드는 방법이 설명되어 있습니다.</block>
   <block id="a37cbff3921a52bcde5c7689c912e1f4" category="paragraph">이벤트 페이지에서 링크 생성 상태를 모니터링할 수 있습니다.  이 작업에는 5분 이상 걸리지 않습니다.</block>
-  <block id="305994fbfd694e4b407718361492a83c" category="paragraph">워크로드 팩토리는 링크를 FSx for ONTAP 파일 시스템과 연결합니다.  고급 ONTAP 작업을 수행할 수 있습니다.</block>
   <block id="9a5abe8b855a4f42f1c70c4b367d9bce" category="paragraph">_filesystemID_는 선택 사항이지만, 비밀 ARN에 다음과 같은 키 유효 쌍이 포함되어 있는지 확인하세요.</block>
   <block id="1023373ba9dff02b999882804d6dc2ef" category="list-text">filesystemID = FSx_filesystem_id (선택 사항)</block>
   <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">사용자 = FSx_user</block>
@@ -1679,11 +1673,9 @@
   <block id="b271a75b2d121a8cb5f59ae458394323" category="section-title">2025년 9월 9일</block>
   <block id="62486fa65fc31c383ace8989549632ad" category="sidebar">스냅샷을 사용하세요</block>
   <block id="b8d3d1ca4d4975c76eec10109e85c77f" category="sidebar">백업을 개체 스토리지에 사용</block>
-  <block id="fe355a62d144a6a42805c3eb5698310a" category="sidebar">복제를 사용하세요</block>
   <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">지역 지원</block>
   <block id="468469fded9ecf5cf0e132a6daa62d32" category="paragraph">다음 AWS 지역은 지원되지 않습니다.</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">중국 지역</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud(미국) 지역</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">시크릿 클라우드</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">극비 클라우드</block>
   <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">지역</block>
@@ -1787,7 +1779,6 @@
   <block id="40be05127ecd2439f7ee7256f055873a" category="list-text">*FSx for ONTAP*에서 링크를 연결할 파일 시스템의 작업 메뉴를 선택한 다음 *링크 연결*을 선택합니다.</block>
   <block id="939a8d22db4ccfbdde48d35119ad37a3" category="list-text">*AWS Secrets Manager*: 선택 사항.  Workload Factory가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있도록 허용합니다.</block>
   <block id="7580bfe7832e708a7a254e231956ba42" category="list-text">Workload Factory 인터페이스로 돌아가면 링크가 FSx for ONTAP 파일 시스템과 연결되어 있는 것을 볼 수 있습니다.</block>
-  <block id="5886618b54dcea7acc4beb5fbd5a3159" category="list-text">*FSx for ONTAP*에서 링크를 연결할 파일 시스템의 작업 메뉴를 선택한 다음 *링크 연결*을 선택합니다.</block>
   <block id="3d607d93b8532423a7bbebf948091168" category="summary">Workload Factory에서 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만듭니다.</block>
   <block id="0e4f989c75a10776b672b4a9f108bfc9" category="doc">Workload Factory에서 스토리지 VM에 대한 스냅샷 정책을 만듭니다.</block>
   <block id="ab9a6ebd2e1e5562fa11ba5a014fc247" category="paragraph">Workload Factory의 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만들어 스냅샷 생성 및 보존을 관리합니다. 스냅샷 정책은 시스템이 스토리지 VM에 대한 스냅샷을 생성하는 방법을 정의합니다. FSx for ONTAP 파일 시스템의 스토리지 VM에 대한 스냅샷 정책을 생성할 수 있습니다. 여러 스토리지 VM에서 정책을 공유할 수도 있습니다.</block>
@@ -2236,8 +2227,6 @@
   <block id="aed1296ef373ba8df468af355d85d3ce" category="paragraph">Workload Factory 콘솔에서 캐시 볼륨의 용량을 늘리거나 줄일 수 있습니다.</block>
   <block id="012110073acf8459d2a77ef54f547130" category="inline-link-macro">Workload Factory에서 캐시 볼륨 관리</block>
   <block id="cfd839007fdba7ba7d7a5a35de4aa55a" category="paragraph"><block ref="cfd839007fdba7ba7d7a5a35de4aa55a" category="inline-link-macro-rx"></block></block>
-  <block id="07236cc47c70c5fd568c5a75720db649" category="summary">FSx for ONTAP 의 NetApp Workload Factory 내에서 EMS 이벤트를 분석합니다.</block>
-  <block id="12f4e0399e2df3c2e6f5c6d078ccfcb7" category="doc">NetApp Workload Factory 에서 FSx for ONTAP EMS 이벤트 분석</block>
   <block id="950a30dbe6160d51c93dd8570573b0b1" category="paragraph">주요 이점은 다음과 같습니다.</block>
   <block id="888aee60b948bfcee3f85cb52d4d62f0" category="inline-link-macro">Amazon Bedrock 가격</block>
   <block id="2064dc6bc6a42df41c5d58cafe4e5108" category="paragraph"><block ref="2064dc6bc6a42df41c5d58cafe4e5108" category="inline-link-macro-rx"></block></block>
@@ -2247,9 +2236,6 @@
   <block id="72fa279f5dbab8677f6a4a2b563e0629" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="7ed47c99073de0aed63f1c44842de720" category="list-text">*AWS IAM 권한*</block>
   <block id="3fc6364e2f4555bc71d109a7ba02fef1" category="paragraph">이러한 권한은 모델의 가용성을 확인합니다.</block>
-  <block id="3c9bac4bc86cac9a309d9792f5bb65df" category="section-title">FSx for ONTAP 에 대한 EMS 이벤트를 보고 분석합니다.</block>
-  <block id="6baf937b798e7ea8fa07c50ef6c201f9" category="paragraph">Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템에 대한 EMS 이벤트를 보고 분석합니다.</block>
-  <block id="dacb27092cd2afb431a6b906c5beb313" category="list-text">자세한 이벤트 정보를 확인하세요.</block>
   <block id="2a29012d549070ee593fcda2b2383198" category="paragraph">iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장치를 관리할 수 있습니다.</block>
   <block id="934c3d38b90775eafeecd6f5f7490e2c" category="section-title">블록 장치 세부 정보 보기</block>
   <block id="12a66c1ef123e6c23c139c511d70f3f4" category="paragraph">언제든지 기존 블록 장치에 대한 세부 정보를 볼 수 있습니다.</block>
@@ -2279,16 +2265,7 @@
   <block id="9b3a1ad5abecf153aceb732b418aab4f" category="list-text">*파일 시스템 태그 관리* 대화 상자에서 필요에 따라 태그를 추가, 편집 또는 제거합니다.</block>
   <block id="e8c1165d9931bb1b1cf9a7e8b496158d" category="paragraph">파일 시스템에 적용할 수 있는 태그의 최대 개수는 50개입니다.</block>
   <block id="4e9dffb84355d8e05d841ef09cb0b14f" category="paragraph">선택하세요<block ref="7cb8f01033b9f51b50ad23ef165f92b6" category="inline-link-macro-rx"></block> 귀하의 요구 사항을 충족하기 위해.</block>
-  <block id="01fae763ec208cbe8aba55abc3b09866" category="summary">NetApp Workload Factory 에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용을 추적합니다.</block>
-  <block id="032c10b11ebbd33bcfb1d9c697658530" category="doc">NetApp Workload Factory 에서 리소스 비용을 추적하세요</block>
-  <block id="d4c186d67cf8c08158cf00710c119d5c" category="paragraph">NetApp Workload Factory 사용하면 FSx for ONTAP 파일 시스템 비용과 사용량을 통합된 보기로 추적할 수 있습니다.  비용 데이터는 예산을 관리하고 리소스를 효과적으로 최적화하는 데 도움이 됩니다.  AWS Cost Explorer는 비용 데이터를 제공합니다.</block>
-  <block id="a9e1e30ff98d7ffed745988d1a4fc1fb" category="paragraph">FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용 데이터는 다음 권한을 사용하여 AWS Cost Explorer에서 추출됩니다.</block>
-  <block id="2340e78cb09237db2f23f58bd9bd22a3" category="list-text"><block ref="bba6542a0e46014b21a818003b1e41d2" prefix="" category="inline-code"></block></block>
-  <block id="eb31a5b8779c15ebaec006efc85981a3" category="list-text"><block ref="f74e5982a82afd7d2755b24355dd08c6" prefix="" category="inline-code"></block></block>
-  <block id="c5722965ac58717f7a4510137bda582a" category="inline-link-macro">_view, planning, and analysis_ 권한 정책으로 자격 증명 부여</block>
-  <block id="108b346d0d8c9cf596528ad0d2a7de34" category="paragraph"><block ref="5763d95ed6eefefde40388c1a7624c69" category="inline-link-macro-rx"></block>Workload Factory에서 ONTAP 비용에 대한 FSx를 추적합니다.</block>
   <block id="45eecb5efbc4c958be178611070d560c" category="list-text">저장소 메뉴에서 *비용*을 선택합니다.</block>
-  <block id="a95a893b7dafb6da5604234e0936ce1c" category="list-text">비용 페이지에서 다음을 제공하여 FSx for ONTAP 리소스에 대한 비용 및 용량 데이터를 필터링합니다.</block>
   <block id="f4654cadb5477c95a6a0e93a5be01b7b" category="list-text">*AWS 계정*: 비용 데이터를 보려는 계정을 선택하세요.</block>
   <block id="5ef42bc94075bca2b4d7247474fbb5f3" category="list-text">*자격 증명*: _보기, 계획 및 분석_ 권한이 있는 자격 증명을 선택합니다.</block>
   <block id="63d9c4239e3de8cd030beef46a2ba8c6" category="list-text">*지역*: 비용 데이터를 보려는 AWS 지역을 선택하세요.</block>
@@ -2389,10 +2366,7 @@
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다.</block>
   <block id="757a7ffb20a279d7239febb013141ad5" category="list-text">메뉴를 선택하세요 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 그런 다음 *저장소*를 선택하세요.</block>
   <block id="7f4aea97afc4fe9bca082673b0935315" category="list-text">저장소 메뉴에서 *분석*을 선택합니다.</block>
-  <block id="50d875c26d87da128f69cb933227d1a5" category="list-text">분석 화면에서 분석하려는 FSx for ONTAP 파일 시스템이 포함된 AWS 계정, 자격 증명 및 지역을 선택합니다.</block>
-  <block id="3508b6e4bf84f2b46e5223cd82593789" category="paragraph">이벤트가 있는 FSx for ONTAP 파일 시스템만 화면에 표시됩니다.</block>
   <block id="aa56579381807f7a0875c83ea40e95f6" category="list-text">필요한 경우, 화면 안내에 따라 AI 분석 설정 요구 사항을 완료하여 누락된 필수 조건을 충족하십시오.</block>
-  <block id="0b8feb0f50822d2155836ac6630dcff8" category="list-text">분석하려는 FSx for ONTAP 파일 시스템을 찾은 다음 *이벤트 보기*를 선택합니다.</block>
   <block id="2d35ddb4d21997f4aa6c33cc82b9e218" category="list-text">스토리지 대시보드에서 *파일 시스템 생성*을 선택합니다.</block>
   <block id="2500dbf9595976bd1314c2eaa3c7cdb1" category="paragraph">다음은 AWS의 기본 정책입니다. 기존 스냅샷 정책을 표시하려면 다음을 수행해야 합니다. <block ref="6e2abc793876f9e04717a19a42b0bb65" category="inline-link-macro-rx"></block>.</block>
   <block id="4df0f1805985e10746c9c4f0c93c1972" category="list-text">저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.</block>
@@ -2412,25 +2386,15 @@
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*보관*을 선택하세요.</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">블록 장치를 포함하는 FlexVol 볼륨은 ARP/AI를 활성 모드로 시작합니다.</block>
   <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">해당 링크는 다음 엔드포인트에 연결할 수 있어야 합니다. https://api.workloads.netapp.com. 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 FSx for ONTAP 워크로드를 관리하고 운영합니다.</block>
-  <block id="ae7bbdf37f2fa18593f3db57d284b5eb" category="paragraph">NetApp Workload Factory의 스마트 이벤트 분석기를 사용하여 FSx for ONTAP 파일 시스템 문제를 신속하게 식별하고 해결하세요. 이 이벤트 분석기는 Amazon Bedrock 통합을 지원하는 Agentic AI를 활용하여 FSx for ONTAP 이벤트 관리 시스템(EMS) 이벤트를 자동으로 추출하고 분석합니다.</block>
-  <block id="69fa9c087519616c715c1ff5cb8799b4" category="paragraph">스토리지 관리자는 고객 불만이 접수된 후에야 FSx for ONTAP EMS 이벤트에 대응하거나 사용자 지정 스크립트 및 알람을 유지 관리하는 경우가 많습니다. 이러한 사후 대응 방식은 효율성을 저하시키고 문제 해결을 지연시키며 가동 중지 시간을 증가시킬 수 있습니다.</block>
-  <block id="ea0503aedfe2585b2372e8f13d9a188b" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결</block>
-  <block id="9d2246fd849af6e6265f4bfd88a1fae2" category="inline-link-macro">_보기, 계획 및 분석_ 권한 부여</block>
   <block id="0ee3fcfb10a8d4af3c7cb550b6d9bc38" category="paragraph">Amazon Bedrock 통합을 통해 Workload Factory는 AI를 사용하여 이벤트를 분석하고 실행 가능한 인사이트를 제공하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지합니다.</block>
-  <block id="721c487e9ac5dc5fc37d25389a9c0866" category="list-text">고급 문제 해결: AI가 FSx for ONTAP EMS 이벤트를 자동으로 식별, 분석하고 해결 방법에 대한 통찰력을 제공하여 수동 조사 시간을 줄여줍니다.</block>
-  <block id="90fff3808b87c7068de0570f6b4692b6" category="list-text">모범 사례 해결 방법: 이벤트 분석기는 FSx for ONTAP EMS 이벤트를 해결하기 위한 명확하고 실행 가능한 단계를 제공합니다.</block>
   <block id="27562a45337f51e17d281897d9fddcd2" category="paragraph">이벤트 분석기를 사용하면 고급 AI 분석의 이점을 누리면서 환경을 완벽하게 제어할 수 있습니다.</block>
   <block id="0da91429b3f9223cbaa4f8470ef89ea0" category="paragraph">Workload Factory에서 이벤트를 분석할 수 있도록 하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용할 모델을 선택하고, Amazon Bedrock에 연결하기 위한 프라이빗 엔드포인트를 생성하고, 권한을 추가하고, 엔터프라이즈 라이센스를 생성해야 합니다.</block>
   <block id="697e3d01e31a8ce7704ee41323400066" category="paragraph">귀하의 데이터 개인정보 보호 및 보안은 다음을 통해 보호됩니다.</block>
   <block id="84ae233a79c0ea9a3056e7680572780d" category="list-text">*데이터 주권*: 모든 데이터와 집계 결과는 사용자의 AWS 계정 내에 유지되며, 공용 인터넷에 노출되지 않고 프라이빗 VPC 엔드포인트(Amazon Bedrock)를 통해 통신됩니다.</block>
   <block id="83ba0533f3c89bcebf3d4a8565cd0192" category="list-text">*AI 학습 없음*: 고객 데이터는 모델 학습 또는 개선에 사용되지 않습니다. Amazon Bedrock은 이벤트를 실시간으로 처리하지만 고객 데이터를 기반으로 학습하지 않습니다. 결과는 고객 환경에만 저장됩니다.</block>
   <block id="cb955412ddfc1e82347d29c44308ede8" category="paragraph">자세한 내용은 <block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="4afc10e211f325b277b31bdf03653564" category="paragraph">이벤트 분석기를 사용하려면 다음을 확인하십시오.</block>
   <block id="e6cefdd5e44ac5e5142c68d4b8d3451b" category="inline-link-macro">_operations and remediation_ 권한</block>
-  <block id="955afa6e7ada9aae898db4f1ec89597b" category="list-text">AWS 계정에 <block ref="3728a9886a6e8befe945facf87fd7817" category="inline-link-macro-rx"></block>이(가) 있어 FSx for ONTAP 파일 시스템에 대한 이벤트를 분석할 수 있습니다.</block>
   <block id="622f422e31dd55d6b288a24d05bc2309" category="list-text">FSx for ONTAP 파일 시스템과 연결된 보안 그룹에서 포트 22(SSH)가 열려 있습니다.</block>
-  <block id="b6c462f58509f9b26d80dbd1d24b9aed" category="paragraph">추가 요구 사항(시스템에서 로그 오류 분석 중에 메시지가 표시됩니다):</block>
-  <block id="c8598674a87a9c799b14c6b675d2dd50" category="paragraph">각 AWS 계정에 대해 Amazon Bedrock API를 구성하십시오. Amazon BedRock API는 FSx for ONTAP 이벤트에 대한 인사이트를 제공하는 데 사용됩니다.</block>
   <block id="10b86811a1c2efaa2595c0a2596a2bc0" category="paragraph">권장 모델:<block ref="00384dd7439f3263ff61a20c6a4db34c" prefix=" " category="inline-code"></block>. 선택한 지역의 추론 프로필 ARN을 제공하십시오.</block>
   <block id="b119b2ead611491e4d54de03365b4de2" category="paragraph">FSx for ONTAP 파일 시스템과의 링크를 생성하고 연결하여 AI 기반 이벤트 분석을 활성화합니다. 링크는 Workload Factory와 하나 이상의 FSx for ONTAP 파일 시스템 간의 신뢰 관계를 설정하고 AWS Lambda를 활용합니다.</block>
   <block id="bb038c2aeef4cf3da06b0b304f46890d" category="paragraph">Workload Factory IAM 역할 연결 정책에 다음 권한을 추가합니다.</block>
@@ -2521,9 +2485,7 @@
   <block id="e77c03d49e828607828412709552dbd6" category="sidebar">igroup 관리</block>
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
-  <block id="df267252f2595421cf837794528f006f" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 오류, 경고 및 긴급 EMS 이벤트를 자동으로 추출합니다. 이러한 이벤트는 <block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block> 및 <block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block> AWS 계정에서 확인할 수 있습니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
   <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">시작하기 전에 다음 요구 사항을 검토하십시오.</block>
-  <block id="876ae080bad2795906c16db5a7bfc488" category="paragraph">*스토리지 VM 구성 복제*: 선택적으로 단일 스토리지 VM의 스토리지 VM 데이터 및 구성 설정을 복제하도록 선택합니다. 데이터와 구성 설정을 동시에 마이그레이션할 경우 지난 24시간 이내에 볼륨에 대한 마지막 복제가 완료되었는지 확인하십시오. 이 기능을 사용하려면 동일한 스토리지 VM에 있는 모든 볼륨을 선택해야 합니다. 모든 볼륨의 계층화 정책은 기본적으로 소스 볼륨의 계층화 정책으로 설정되며, 이는 마이그레이션 사용 사례에 권장됩니다.</block>
   <block id="292198e01fad7795066f40b6fec350fd" category="list-text">*FSx for ONTAP*에서 복제할 볼륨이 포함된 파일 시스템을 선택합니다.</block>
   <block id="bc9c958c3279391522e702151359608b" category="list-text">*복제 관계* 탭을 선택합니다.</block>
   <block id="23c1b911bea8dc9e9cdd65d07a7745ca" category="list-text">복제 관계 테이블에서 전환할 복제 관계를 선택한 다음 *복제 전환*을 선택합니다.</block>
@@ -2587,7 +2549,6 @@
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
   <block id="3b40a61896ac7bb071b70913553072f1" category="inline-link-macro">FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다</block>
   <block id="72a58cc21323626d7784d44077612a4a" category="paragraph"><block ref="72a58cc21323626d7784d44077612a4a" category="inline-link-macro-rx"></block></block>
-  <block id="16f2ae5a8a2de6f12ddc298127a4ddb7" category="list-text">안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, 볼륨 백업 예약, 원격 데이터 복제 및 장기 보존을 위한 데이터 안정성</block>
   <block id="cfcff7e4ca0a4496f029a99d812c3cb3" category="doc">Workload Factory에서 파일 시스템 용량을 수동으로 조정합니다</block>
   <block id="59f5126fcebfa1b4b592a46994a99827" category="paragraph">사용량이 지정된 임계값을 초과하면 SSD 스토리지 용량을 늘리십시오. 작업 세트를 사용하지 않을 때는 SSD 스토리지 용량을 줄여 비용을 절감하십시오.</block>
   <block id="eb6c620cfb7e9a2b2d272cbd7de4add5" category="inline-link-macro">자동 용량 관리 활성화</block>
@@ -3063,12 +3024,197 @@
   <block id="4ccd08ccc04cf1986a6dc1a2de287f72" category="sidebar">블록 디바이스에 태그 적용</block>
   <block id="596e30b7050101709ce0d710420e77a7" category="paragraph">FSx for ONTAP 파일 시스템 개요에서 SSD 용량 추세를 직접 확인하세요. 용량 관리를 위한 새 카드는 지난달의 사용량 추세를 보여줍니다. 이 분석은 실제 용량과 할당된 용량을 비교하여 리소스 사용량을 쉽게 평가할 수 있도록 합니다.</block>
   <block id="deede3cf7f18c08613ec53890188368e" category="section-title">FSx for ONTAP 파일 시스템의 Well-Architected 상태에 대한 PDF 보고서</block>
-  <block id="09731bdb23a8e229cca44808afd3eb18" category="inline-link-macro">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 아키텍처 설계 상태를 확인하십시오.</block>
-  <block id="bf36e3bb684711138abb04e7f7f95c1a" category="paragraph">분석이 완료되면 기록 보관용 또는 팀과 공유하기 위해 FSx for ONTAP 파일 시스템의 아키텍처 설계 상태에 대한 PDF 보고서를 다운로드할 수 있습니다.<block ref="8f1fbab727bbab0e7967c959283750c4" category="inline-link-macro-rx"></block></block>
   <block id="eeb77472aa3a83d51f0873ec83e22572" category="list-text">*스토리지 VM 구성 설정*:</block>
   <block id="0abde7f01f46e5ae295493bf4b280687" category="list-text">전환 작업은 모든 스토리지 VM 구성 설정을 대상 스토리지 VM으로 마이그레이션하지 않습니다. 예를 들어 iSCSI, 브로드캐스트 도메인 MTU 및 DNS 설정은 마이그레이션되지 않습니다. 전환 후 대상 스토리지 VM에서 이러한 설정을 수동으로 업데이트해야 합니다. 자세한 내용은 <block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="893700039eb02078c7602e997d7f9922" category="list-text">스토리지 VM에서 도메인 터널 인증을 사용하는 경우 마이그레이션을 시작하기 전에 대상 파일 시스템에서 도메인 터널을 설정하고 활성화하십시오.</block>
   <block id="8ee47478c07b40fab9e5a6a34028629c" category="list-text">스토리지 시스템 간의 안전한 데이터 전송 및 관리를 위해 TCP 포트 11104 및 11105를 열어 두십시오. ICMP는 선택 사항이지만 네트워크 점검 및 문제 해결에 도움이 될 수 있습니다.</block>
   <block id="fa8b213a52b4f0e35de875db4340e809" category="paragraph"><block ref="fa8b213a52b4f0e35de875db4340e809" category="inline-link-macro-rx"></block></block>
   <block id="e9df00e078102fb55394d13dad9115a4" category="paragraph">소스(읽기/쓰기) 볼륨 하나 또는 데이터 보호(DP) 볼륨 하나를 복제할 수 있습니다. 계단식 복제는 지원되지만 세 번째 홉은 지원되지 않습니다. <block ref="a7ce0f55df6d6b86426266d8a7eeb328" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
+  <block id="6fbe09b3d9705d922f633d5654393f36" category="paragraph">*스토리지 VM 구성 복제*: 선택적으로 단일 스토리지 VM의 데이터 및 구성 설정을 복제할 수 있습니다. 데이터 및 설정을 마이그레이션할 때 모든 볼륨은 지난 24시간 이내에 복제가 완료된 후 동시에 전환되어야 합니다.</block>
+  <block id="d5b5dacfafad754125a1766d22142ae9" category="paragraph">모든 볼륨의 계층화 정책은 기본적으로 소스 볼륨의 계층화 정책을 따르며, 이는 마이그레이션 사용 사례에 권장됩니다.</block>
+  <block id="21c415465773e849068dc431e13446de" category="paragraph">마이그레이션 중에는 클라이언트가 소스 ONTAP 파일 시스템의 데이터에 액세스합니다. 전환 후에는 타겟 FSx for ONTAP 파일 시스템 IP 주소를 통해 볼륨을 사용할 수 있습니다. 이전 IP 주소를 계속 사용하는 클라이언트 또는 리소스를 업데이트하십시오.</block>
+  <block id="5d7672a9b59eb24aba87a27c8bbec3cf" category="list-text">*스토리지 VM 이름*: 스토리지 VM을 선택합니다. 선택한 스토리지 VM은 이 복제 관계에서 선택한 모든 볼륨의 타겟이 됩니다.</block>
+  <block id="6a61ae33311b14370f4dc27907232bd8" category="paragraph">소스 및 대상 스토리지 VM 이름이 동일한 경우 피어링 충돌을 방지하기 위해 대상 스토리지 VM 이름에 대한 파일 시스템 별칭을 생성합니다.</block>
+  <block id="e9712999f0fba60273338ec00996f750" category="list-text">*복제 관계 초기화*: 복제 관계 생성 직후 또는 나중에 복제 관계를 초기화할지 선택합니다.  초기화에는 시간이 걸릴 수 있으므로 사용량이 적은 시간대에 기본 전송을 실행하는 것이 좋습니다.</block>
+  <block id="c881c341babc8c1d5988377bf0380590" category="paragraph">나중에 수동으로 초기화하려면 <block ref="588943a82f15abe65d3587b81de5b7ab" category="inline-xref-macro-rx"></block>의 지침을 참조하십시오.</block>
+  <block id="fabdd77b146b0b5f04616afb10561fb8" category="admonition">장기 보존을 위해서는 소스 레이블과 대상 레이블이 일치해야 합니다. 필요한 경우 Workload Factory에서 누락된 레이블을 생성할 수 있습니다.</block>
+  <block id="015e6ecffa9ac033df81ffa6004a8511" category="list-text">*기존 정책 선택*: 기존 정책을 선택합니다.</block>
+  <block id="d78944313be822653acf15ab5398cc09" category="paragraph">분석이 완료되면 기록 보관용 또는 팀과 공유하기 위해 FSx for ONTAP 파일 시스템의 아키텍처 설계 상태에 대한 PDF 보고서를 다운로드할 수 있습니다.</block>
+  <block id="1e2f4a38d5efedb5cf0944fea2e5cddf" category="inline-link-macro">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 아키텍처 우수성 상태를 확인하세요</block>
+  <block id="74d7776910c4ca73289bbbb6c6bfddf9" category="paragraph"><block ref="74d7776910c4ca73289bbbb6c6bfddf9" category="inline-link-macro-rx"></block></block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">NetApp Workload Factory에서 AWS GovCloud (US) 지원</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory는 AWS GovCloud(미국) 계정을 지원합니다. GovCloud 계정을 사용하면 AWS GovCloud(미국) 리전에 스토리지 워크로드를 배포하고 관리할 수 있습니다.</block>
+  <block id="8e45f2905d109c7f7ad7492d2341d234" category="section-title">NetApp Workload Factory에서 볼륨 지연 시간 임계값 설정</block>
+  <block id="aef3e325f515541566b19394d335ef43" category="paragraph">볼륨별로 지연 시간 임계값을 구성하여 성능을 모니터링하고 지연 시간 값이 정의된 한계를 초과할 경우 알림을 받을 수 있습니다. Workload Factory는 읽기 및 쓰기 지연 시간을 모두 모니터링하고 두 임계값 중 하나라도 초과되면 알림을 생성합니다.</block>
+  <block id="e38f666491d8e4d592d5df89c8419266" category="paragraph"><block ref="e38f666491d8e4d592d5df89c8419266" category="inline-link-macro-rx"></block></block>
+  <block id="b9ceeddf626c03ee2118a4917ae8c38b" category="section-title">NetApp Workload Factory에서 복제 지연 추적</block>
+  <block id="a36f1662cdb9e2ceab93d3f25e0eca77" category="paragraph">NetApp Workload Factory를 사용하면 원격 복제가 구성된 FSx for ONTAP 파일 시스템의 복제 지연을 추적할 수 있습니다. 복제 지연은 데이터가 소스 파일 시스템에 기록된 시점과 대상 파일 시스템으로 복제된 시점 사이의 시간 차이를 나타냅니다. 복제 지연을 추적하면 복제 설정의 상태를 모니터링하고 데이터 일관성 및 복구 시점 목표(RPO)에 영향을 줄 수 있는 잠재적인 문제를 식별하는 데 도움이 됩니다.</block>
+  <block id="fde2f1eddf6c2d5994d4c9cacc07ff31" category="paragraph"><block ref="fde2f1eddf6c2d5994d4c9cacc07ff31" category="inline-link-macro-rx"></block></block>
+  <block id="15f374eb532ab28d06443136d99e63b5" category="section-title">NetApp Workload Factory에서 호스트 식별 및 워크로드 정의</block>
+  <block id="e4d934df8f9ddefcebbc02695e3cfbdc" category="paragraph">Workload Factory는 스토리지를 사용하는 호스트와 해당 호스트 활동과 관련된 워크로드 유형을 식별합니다. 워크로드 정의는 AWS 태그 및 메타데이터를 기반으로 AI에서 생성됩니다. Workload Factory의 파일 시스템, 볼륨 및 블록 장치 리소스 화면에서 호스트 세부 정보와 워크로드 정의를 볼 수 있습니다.</block>
+  <block id="9ef57b630c87ffd61b917510a7a26030" category="section-title">NetApp Workload Factory에서 LIF 세부 정보를 확인할 수 있습니다</block>
+  <block id="055f68ac1562a94352bd56b1842791fb" category="paragraph">파일 시스템의 개요 탭에서 모든 파일 시스템 및 스토리지 VM 엔드포인트를 직접 확인할 수 있습니다. Workload Factory 콘솔에서 엔드포인트를 직접 볼 수 있으므로 CLI 또는 CloudShell을 사용하지 않고도 네트워크 액세스, 엔드포인트 및 페일오버 상태를 쉽게 모니터링할 수 있습니다. 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 LIF 세부 정보를 표시하려면 파일 시스템에 링크를 연결해야 합니다.</block>
+  <block id="c1bff806faafabc5316c2270f113bd85" category="inline-link-macro">NetApp Workload Factory에서 파일 시스템에 링크를 연결하는 방법을 알아보세요</block>
+  <block id="0cfa9f29837495af6181228a2286658a" category="paragraph"><block ref="966e2ff22df42c69be9cce59aca228ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="3cb407325a893b82dafad46209626b50" category="section-title">비용 개선</block>
+  <block id="4ca110e0d9ae04c6ba757ec8fd3182f2" category="paragraph">모든 AWS 계정의 리소스에 대한 비용 분석 결과를 개선하기 위해 새로운 선택적 페이지 수준 필터를 사용할 수 있습니다. 여러 리전을 선택하고 파일 시스템 할당 태그 키 및 키 값을 사용하여 비용 분석 결과를 필터링하고 FSx for ONTAP 파일 시스템 및 볼륨에 대한 리소스별 비용 세부 정보를 확인할 수 있습니다.</block>
+  <block id="083b82dbc7669e65217c0c4cdd6a08f3" category="inline-link-macro">NetApp Workload Factory에서 비용 분석을 위해 필터를 사용하십시오</block>
+  <block id="cd3891050de2d442936c795f42b5be55" category="paragraph"><block ref="cd3891050de2d442936c795f42b5be55" category="inline-link-macro-rx"></block></block>
+  <block id="830f303cdae9912a4ea32f1f9cbf416e" category="section-title">NetApp Workload Factory에서 복제 초기화 예약 기능을 사용할 수 있습니다.</block>
+  <block id="15bc72c00374b1de7051b2d672060b33" category="paragraph">데이터 복제 설정 중에 이제 FSx for ONTAP 파일 시스템의 복제 초기화를 예약할 수 있습니다. 복제 관계를 즉시 초기화하거나 지정된 시간에 초기화하는 옵션이 있습니다. 복제 초기화는 소스 파일 시스템의 데이터를 대상 파일 시스템으로 복사하여 복제 기준선을 생성하는 프로세스입니다. 복제 초기화를 예약하면 이 프로세스를 자동화하고 수동 작업 없이 복제 설정을 최신 상태로 유지할 수 있습니다.</block>
+  <block id="214d407853490bc740a9484be85b4f3e" category="inline-link-macro">NetApp Workload Factory에서 데이터를 복제합니다</block>
+  <block id="f9e073199d07787a028f9eaa386764c2" category="paragraph"><block ref="f9e073199d07787a028f9eaa386764c2" category="inline-link-macro-rx"></block></block>
+  <block id="365c1d3c417c4ceff114f4189c08aded" category="section-title">FSx for ONTAP 파일 시스템의 Well-Architected 상태에 대한 Excel 보고서</block>
+  <block id="cef65a1b6b28821282b97ae2bfcccb7b" category="paragraph">분석이 완료되면 기록 보관용 또는 팀과 공유하기 위해 FSx for ONTAP 파일 시스템의 아키텍처가 잘 구축되었는지에 대한 Excel 보고서를 다운로드할 수 있습니다.</block>
+  <block id="d280f690a98c812adf5c9aff661addf4" category="section-title">지연 이벤트 보기 및 분석</block>
+  <block id="9863682c1ac348823880a0e92aae9424" category="paragraph">Workload Factory에서 이제 FSx for ONTAP 볼륨의 지연 시간 이벤트를 보고 분석할 수 있습니다. 링크 연결 없이도 지연 시간 이벤트를 확인할 수 있어 성능 문제를 더욱 쉽게 모니터링할 수 있습니다. 지연 시간 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 링크를 사용하여 파일 시스템에 연결해야 합니다. 분석 결과는 현재 지연 시간 값, 임계값, QoS 응답 분석 및 개선 지침을 제공합니다.</block>
+  <block id="48b5c4d3746aea9e001799935441305e" category="inline-link-macro">NetApp Workload Factory에서 FSx for ONTAP 이벤트 분석</block>
+  <block id="46d1548637c7b145aedaf16fc4982ded" category="paragraph"><block ref="46d1548637c7b145aedaf16fc4982ded" category="inline-link-macro-rx"></block></block>
+  <block id="6935aa37908b8d3e8e6495adec301374" category="section-title">볼륨 지연 시간 임계값 설정</block>
+  <block id="8d36c5c4d1b5b3180db932fcf4bd5e3b" category="paragraph">이제 볼륨별로 지연 시간 임계값을 구성하여 성능을 모니터링하고 읽기 또는 쓰기 지연 시간이 설정된 한도를 초과할 경우 알림을 받을 수 있습니다. 지연 시간 모니터링을 통해 워크로드에 영향을 미치기 전에 성능 문제를 사전에 파악할 수 있습니다.</block>
+  <block id="da6f5bf8aee08ef83468ad38ab52796b" category="doc">모든 FSx for ONTAP 시스템에서 사용할 수 있는 새로운 잘 설계된 대시보드</block>
+  <block id="7fca025a8bf1b5d72a149731d5c88125" category="paragraph">잘 설계된 분석 기능은 이제 NetApp Workload Factory의 새로운 잘 설계된 대시보드에서 FSx for ONTAP 파일 시스템에 대해 사용할 수 있습니다. 새로운 대시보드는 모든 계정 및 지역의 파일 시스템과 해당 구성을 한 곳에서 중앙 집중식으로 보여줍니다. 파일 시스템에서 *잘 설계된* 탭을 방문하면 팝업 알림이 표시됩니다. Workload Factory의 왼쪽 탐색 메뉴에서 *잘 설계된*을 선택하여 새 대시보드에 액세스하십시오.</block>
+  <block id="b09ad8a2ad81c470093e9c74313ea0c2" category="paragraph">특정 파일 시스템에 대한 잘 설계된 분석은 스토리지의 *Well-architected* 메뉴 옵션에서 계속 이용할 수 있습니다.</block>
+  <block id="9864fa88fc3747e67b6fc38c9b938677" category="section-title">잘 설계된 분석에 대한 새로운 권장 사항</block>
+  <block id="a38b9a0af0de5e85c5e64a158079deb5" category="paragraph">Workload Factory는 이제 FSx for ONTAP 파일 시스템에 대한 잘 설계된 아키텍처 분석에 다음과 같은 구성을 포함합니다.</block>
+  <block id="fd2d46026cdd19577962231303a46abd" category="list-text">호스트를 페일오버 노드에 연결: 액티브-패시브 FSx for ONTAP 파일 시스템에서 호스트가 페일오버 노드에 연결되어 있는지 확인하고 안정성 확보를 위해 호스트를 페일오버 노드에 연결할 것을 제안합니다.</block>
+  <block id="0e7d4cc90eb78377a1315bafe07799dd" category="list-text">호스트를 선호 노드에 연결: 호스트가 선호 노드를 사용하여 블록 장치에 연결되어 있는지 확인하고 성능 효율성을 위해 호스트를 선호 노드에 연결하도록 제안합니다.</block>
+  <block id="efbeddc0347a679a438120189b77f860" category="section-title">볼륨 탐색기</block>
+  <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">볼륨 탐색기를 사용하면 NetApp Workload Factory의 모든 볼륨을 간편하게 검색할 수 있습니다. 블록 또는 파일 워크로드를 처리하는 볼륨을 빠르게 확인할 수 있습니다. 각 볼륨의 논리적 크기, 물리적 사용 용량, 스토리지 효율성 기능(압축, 중복 제거, 압축) 사용 여부를 볼 수 있습니다. 이름, 상태(사용 가능/실패), 지연 시간, 크기, 사용 용량 및 보호 기능별로 필터링하고 정렬할 수 있습니다.</block>
+  <block id="2731bbeb58ccf58c8e631528a8e3fc94" category="section-title">복제 지연 개선 사항</block>
+  <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">복제 지연에 대한 향상된 이메일 알림 기능</block>
+  <block id="bd78ae8d1a9aed4500716acc31d179d8" category="paragraph">복제 지연에 대한 이메일 알림에 이제 영향을 받는 관계에 대한 자세한 정보가 포함됩니다. 이 알림을 통해 영향을 받는 관계를 신속하게 파악하고 Workload Factory 콘솔에서 확인할 수 있습니다.</block>
+  <block id="4dc5c4a9c4b845746295cce1108ec278" category="inline-link-macro">복제 지연에 대한 알림 활성화</block>
+  <block id="7f27417270cfb269527e679a64b5a19a" category="paragraph"><block ref="7f27417270cfb269527e679a64b5a19a" category="inline-link-macro-rx"></block></block>
+  <block id="347a810d994926c5e31d1bd690b34fcf" category="section-title">복제 지연 데이터를 CSV 파일로 내보내기</block>
+  <block id="45cbeaeb98d1d075d560a8e62269fbbb" category="paragraph">이제 복제 지연 데이터를 CSV 파일로 내보내 스프레드시트에서 데이터를 분석하고 다른 사람과 공유할 수 있습니다.</block>
+  <block id="2b3d29c88190bdb57da25e1848b65b7d" category="inline-link-macro">복제 지연 추적</block>
+  <block id="7aab1e1b0e0fcc4720b15dcc5848034e" category="paragraph"><block ref="7aab1e1b0e0fcc4720b15dcc5848034e" category="inline-link-macro-rx"></block></block>
+  <block id="5312d8ea7e9ef079aeac882dbcd64d0a" category="section-title">블록 장치 생성 개선</block>
+  <block id="85fb39d6f3bb52679cb9ce3bd27ffd1c" category="paragraph">Workload Factory는 볼륨 스냅샷에서 블록 장치 생성을 지원합니다.</block>
+  <block id="a439412a0228682fa1054f4bc1a96815" category="inline-link-macro">Workload Factory에서 볼륨 스냅샷으로 블록 장치 생성</block>
+  <block id="40a9299c5fdf8c1e8242dcb670c6b1cd" category="paragraph"><block ref="40a9299c5fdf8c1e8242dcb670c6b1cd" category="inline-link-macro-rx"></block></block>
+  <block id="1f94288dfe179e2109de9bb7a2e9b65f" category="summary">NetApp Workload Factory for FSx for ONTAP의 이벤트를 분석합니다.</block>
+  <block id="0847c46611bd7086c19dafd5d506a708" category="paragraph">NetApp Workload Factory의 스마트 이벤트 분석기를 사용하여 FSx for ONTAP 파일 시스템 문제를 신속하게 식별하고 해결하세요. 이 이벤트 분석기는 Amazon Bedrock 통합을 지원하는 Agentic AI를 활용하여 FSx for ONTAP 이벤트 관리 시스템(EMS) 및 지연 시간 이벤트를 자동으로 추출하고 분석합니다.</block>
+  <block id="b177ab05bd2fbdb0d056e9aab959cb42" category="paragraph">스토리지 관리자는 고객 불만이 접수된 후에야 FSx for ONTAP 이벤트에 대응하거나 사용자 지정 스크립트 및 알람을 유지 관리하는 경우가 많습니다. 이러한 사후 대응 방식은 효율성을 저하시키고 문제 해결을 지연시키며 가동 중지 시간을 증가시킬 수 있습니다.</block>
+  <block id="ca49138d55194f3a1b69368658fa59c0" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 다음과 같은 이벤트 유형을 자동으로 추출합니다.</block>
+  <block id="229e5c835625a6cd5a09a266df2faa8c" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결</block>
+  <block id="5189ff53307ee7b08ddaa025da603b7c" category="list-text">*EMS 이벤트*: ONTAP 이벤트 관리 시스템에서 발생하는 오류, 경고 및 긴급 상황 이벤트입니다. EMS 이벤트를 보고 분석하려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
+  <block id="35b385d2a34b34294a95472dbbafeb62" category="list-text">*지연 시간 이벤트*: 읽기 및 쓰기 지연 시간 이벤트를 표시합니다. 지연 시간 이벤트는 링크 연결 없이도 볼 수 있습니다. 지연 시간 이벤트를 분석하고 AI 기반 인사이트를 받으려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
+  <block id="1ee445f8e51142e85beb7b0f2c2e1518" category="paragraph">이벤트를 보려면 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS 계정에 로그인해야 합니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
+  <block id="59a0aad57efa98df25e199d3fa441911" category="list-text">고급 문제 해결: AI가 자동으로 FSx for ONTAP EMS 및 지연 이벤트를 식별, 분석하고 해결 방법에 대한 통찰력을 제공하여 수동 조사 시간을 줄여줍니다.</block>
+  <block id="b5bc253203e24fc8972e3fe9be53196b" category="list-text">모범 사례 해결 방법: 이벤트 분석기는 FSx for ONTAP EMS 및 지연 이벤트를 해결하기 위한 명확하고 실행 가능한 단계를 제공합니다.</block>
+  <block id="185df28397efd88f333333e1c2f1ae0d" category="section-title">이벤트 보기</block>
+  <block id="d523d9bf647cfb019b391ffebe2ea5f5" category="paragraph">지연 시간 이벤트를 보려면 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS 계정에 로그인해야 합니다.</block>
+  <block id="8528b1a4a7dc3ba0b6997424ef1d4876" category="paragraph">EMS 이벤트를 보려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>도 해야 합니다.</block>
+  <block id="6ff7afa8b9f67a5aab7d9ebedd08b828" category="section-title">이벤트 분석</block>
+  <block id="ffb5c85ee020316605143a7a4c0773b7" category="paragraph">EMS 및 지연 시간 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 다음 사항을 확인하십시오.</block>
+  <block id="17a23fbf55b4140721bd4a74dda992ee" category="list-text">AWS 계정에 <block ref="3728a9886a6e8befe945facf87fd7817" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
+  <block id="4dfaad1ff2ec349d086542d609839be5" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결됨</block>
+  <block id="118cc54d4ac9f6ec4ccf910143c8176e" category="list-text"><block ref="e70ae182cde64a3166eabfbf424a24d8" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
+  <block id="55bc5f9b6cf37ff622a10cc4fd3aaccc" category="paragraph">추가 요구 사항(이벤트 분석 중에 시스템에서 안내합니다):</block>
+  <block id="6ab6dbf6bacb521f8499b17428a8a145" category="paragraph">각 AWS 계정에 대해 Amazon Bedrock API를 구성하십시오. Amazon Bedrock API는 FSx for ONTAP 이벤트에 대한 인사이트를 제공하는 데 사용됩니다.</block>
+  <block id="9aac5daa464aa807ec502ef1061168e5" category="section-title">FSx for ONTAP의 이벤트 보기 및 분석</block>
+  <block id="47a237506ac840cddf392779b1585763" category="paragraph">Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템의 EMS 및 지연 시간 이벤트를 보고 분석할 수 있습니다.</block>
+  <block id="f6856116e4352490acbea56ef62865ec" category="list-text">분석 화면에서 보려는 FSx for ONTAP 파일 시스템이 포함된 AWS 계정, 자격 증명 및 리전을 선택합니다.</block>
+  <block id="5b33ab8ba01b4578fbe56efef338b884" category="paragraph">이벤트가 있는 FSx for ONTAP 파일 시스템만 표시됩니다.</block>
+  <block id="20fe9df117d2c4b409011f141cf44737" category="list-text">보려는 FSx for ONTAP 파일 시스템을 선택하십시오.</block>
+  <block id="565621a6f9cde613669444d22ece2bee" category="paragraph">이벤트 테이블에는 해당 파일 시스템과 관련된 모든 이벤트가 표시됩니다.</block>
+  <block id="5083e777a47a5e50fffe64035fef97e5" category="list-text">표에서 이벤트 세부 정보를 검토하십시오.</block>
+  <block id="748fc360eb3ec84dbbcd7c1aae865aac" category="list-text">이벤트를 분석하려면 다음 중 하나를 수행하십시오.</block>
+  <block id="6c0f1ccca90477332b018960fb44eb87" category="list-text">여러 이벤트를 분석하려면 이벤트 옆의 확인란을 선택한 다음 표에서 *분석*을 선택하십시오.</block>
+  <block id="3daca78e61fc196750ea9d99cf3f0786" category="list-text">특정 이벤트를 분석하고 측면 패널에서 인사이트를 확인하려면 이벤트 이름을 선택한 다음 패널에서 *분석*을 선택하세요. 인사이트와 권장 사항이 패널에 표시됩니다.</block>
+  <block id="9a1ef45ae6fd0052a26aaea575fa9054" category="list-text">표에서 특정 이벤트를 분석하려면 해당 이벤트 행에서 *분석*을 선택한 다음 이벤트 이름을 선택하여 인사이트와 권장 사항을 확인하세요.</block>
+  <block id="68178ddd88bc5af168d0f95fe76212ad" category="inline-link-macro">Workload Factory에서 볼륨 지연 시간 임계값 설정</block>
+  <block id="1045d7a603969c049cf68b4017ae537e" category="list-text"><block ref="1045d7a603969c049cf68b4017ae537e" category="inline-link-macro-rx"></block></block>
+  <block id="6347309ad07af7266241819bb2af76d1" category="list-text">*호스트를 페일오버 노드에 연결*</block>
+  <block id="e89cb70f69260bd0359dad1d58cb94de" category="paragraph">Workload Factory는 장애 조치 중 연결을 유지하고 중단을 방지하기 위해 호스트를 장애 조치 노드에 연결하는 것을 권장합니다.</block>
+  <block id="8722112d28d6eea0aff9478fb61c5de7" category="section-title">성능 효율성</block>
+  <block id="8b1271dadb19678250cdc4bb1a083452" category="paragraph">성능 효율성은 IT 및 컴퓨팅 리소스를 효율적으로 사용하는 데 중점을 둡니다.</block>
+  <block id="bb7eaffc45b0ebd2357f86e392d3d75e" category="list-text">*호스트를 원하는 노드에 연결*</block>
+  <block id="e72d694d5291c64bcb1eda2ecaff634a" category="paragraph">고가용성 FSx for ONTAP 구축 모델에서는 호스트가 블록 장치를 제공하는 노드에 직접 연결되어 직접 액세스 및 최적의 성능을 보장해야 합니다.</block>
+  <block id="6149c2ac82c846d8c0c66beff37f271d" category="paragraph">비즈니스(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다. 기존 볼륨에 블록 장치를 생성하거나, 새 블록 장치용 새 볼륨을 생성하거나, 스냅샷에서 새 블록 장치용 새 볼륨을 생성할 수 있습니다.</block>
+  <block id="7d890770a60d61d9610602416316dd0c" category="list-text">볼륨 스냅샷에서 생성합니다. 소스 볼륨 이름과 스냅샷 이름을 선택하십시오. 블록 장치가 없는 볼륨만 사용할 수 있습니다.</block>
+  <block id="0d9cf45fb23b4088730f72dd43be4a9b" category="paragraph">이 워크플로에서 링크를 생성하는 방법은 자동 또는 수동 두 가지가 있습니다. AWS GovCloud 계정이 있는 경우 새 링크는 수동으로 생성해야 합니다.</block>
+  <block id="e97bbb69ec6bcd2c1b3d761224ed4559" category="admonition">AWS GovCloud 계정의 경우 자동 링크 생성이 지원되지 않습니다.</block>
+  <block id="d37d952a78337c053485a61317b953df" category="list-text">*AWS Secrets Manager*: GovCloud 계정의 경우 항상 활성화되어 있습니다. 다른 계정의 경우 선택 사항입니다. Workload Factory가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있도록 합니다.</block>
+  <block id="f3a06ea1d47de2a4216fe3fd53364d24" category="list-text">*사용자 제공*: 이 옵션을 선택하면 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당할 수 있습니다. Lambda 권한 정책에는 다음 권한이 필요합니다. 이<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> 권한은 AWS Secrets Manager를 사용하는 경우에만 필요합니다.</block>
+  <block id="687e9c397e4fb6b561e735147b5af100" category="paragraph">참고로, CloudFormation 템플릿을 실행하면 Lambda에 세 가지 권한이 부여됩니다. NetApp Workload Factory는 링크를 사용할 때 이러한 권한을 활용합니다.</block>
+  <block id="1425c9b22ae63851bbaa938ebc0a967d" category="list-text">스택 생성이 완료되면 Workload Factory 콘솔의 텍스트 상자에 Lambda ARN을 붙여넣으십시오. Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 가져옵니다.</block>
+  <block id="47dfa5e12270c73140e2f3dc8b32a020" category="paragraph">Workload Factory는 링크를 FSx for ONTAP 파일 시스템과 연결합니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
+  <block id="eb3eec333eedf15738e12e55e183cdb7" category="paragraph"><block ref="c7c8a4154bf78f63993b7572e6143221" category="inline-link-macro-rx"></block>.</block>
+  <block id="7e1ccbf5b074e2396f26b030d7e1231f" category="list-text">안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, 예약된 볼륨 백업, 원격 데이터 복제, 장기 보존을 위한 데이터 안정성, 호스트를 장애 조치 노드에 연결</block>
+  <block id="383b20892354fe24b77f00c1d9e28776" category="list-text">성능 효율성: 호스트를 기본 노드에 연결</block>
+  <block id="81fccfd8b7cc4d87c0978527048afe60" category="paragraph">GovCloud 계정에 대한 링크 연결이 지원됩니다. Workload Factory는 GovCloud 인증 키를 사용하여 GovCloud 승인 메커니즘을 통해 FSx for ONTAP 작업에 안전하고 에이전트 없이 액세스할 수 있도록 합니다.</block>
+  <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">스토리지 VM 및 클러스터 LIF의 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 세부 정보 표시</block>
+  <block id="d72415af6292f1377ab69432624c64ea" category="summary">NetApp Workload Factory에서 복제 관계를 관리합니다.</block>
+  <block id="a26b114333821bd07a9e54008500a358" category="doc">NetApp Workload Factory에서 복제 관계를 관리합니다.</block>
+  <block id="cdb933f4a358f433a7751a2bd01fe605" category="paragraph">NetApp Workload Factory에서 복제 관계를 관리하세요. 소스 볼륨과 타겟 볼륨 간의 복제 관계를 일시 중지, 재개, 역전, 중지 및 삭제할 수 있습니다. 또한 소스 볼륨의 복제 일정을 변경하고 복제 관계의 최대 전송 속도를 제한할 수 있습니다.</block>
+  <block id="5c91a02c5ef041ec58b2bbf831d9d835" category="section-title">복제 관계에서 스냅샷 데이터를 수동으로 업데이트</block>
+  <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">*업데이트*를 선택합니다.</block>
+  <block id="138510169fb71d3c664fd8de2115e91b" category="list-text">업데이트 대화 상자에서 *업데이트*를 선택합니다.</block>
+  <block id="601705efa4e91aafd2708cc73f4f3be2" category="paragraph">복제 관계를 재개하면 복제가 중지된 동안 대상 볼륨에 발생한 모든 변경 사항이 삭제됩니다. 타겟 볼륨은 읽기/쓰기 모드에서 읽기 전용 모드로 전환되고, 예약된 복제 간격에 따라 소스 볼륨으로부터 업데이트를 다시 수신합니다.</block>
+  <block id="113dedb25595a53107bcc3df8ba96132" category="summary">볼륨의 읽기 또는 쓰기 지연 시간이 지정된 값을 초과할 경우 알림을 받도록 지연 시간 임계값을 설정합니다.</block>
+  <block id="9811ff892290a925d34cb38c5bf7c65a" category="paragraph">지연 시간 임계값을 설정하면 Workload Factory는 다음 사항을 모니터링합니다.</block>
+  <block id="f8139017cc10775c53aead48940fb841" category="list-text">*읽기 지연 시간*: 읽기 작업이 지정된 임계값(밀리초)을 초과하면 경고가 발생합니다.</block>
+  <block id="b9a70936ee46ebfe9908f4e27212b2f1" category="list-text">*쓰기 지연 시간*: 쓰기 작업이 지정된 임계값(밀리초)을 초과하면 경고가 발생합니다.</block>
+  <block id="55890744b46d30b34c119008aadad490" category="paragraph">지연 시간 모니터링은 다음과 같은 기본 매개변수를 사용합니다.</block>
+  <block id="8b2efc01d419d2e075218fa1edac875b" category="list-text">*IOPS 임계값*: 100 IOPS (읽기 및 쓰기)</block>
+  <block id="037ea7d94a5a2563d24d4aab128c2f74" category="list-text">*시간 범위*: 10분</block>
+  <block id="fc30acb77198b9a113675211028eeb7f" category="paragraph">지정된 시간 범위 내에서 지연 시간 임계값이 초과되고 IOPS 임계값에 도달하면 경고가 생성됩니다.</block>
+  <block id="d663edf15a1c9b9cce32f438ee09111b" category="admonition">링크 연결 없이도 지연 이벤트를 확인하고 알림을 받을 수 있습니다. 하지만 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
+  <block id="c860af979551dbcf8788e767b74ef2f4" category="list-text">*FSx for ONTAP*에서 구성할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
+  <block id="ecfd19bbe3c2c4e92ff25fd22f2d17fe" category="list-text">볼륨 탭에서 지연 시간 임계값을 설정할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="ee43009d0c790146325573e838a42f39" category="list-text">*알림 작업*을 선택한 다음 *지연 시간 임계값 설정*을 선택합니다.</block>
+  <block id="e7199990279785fb0027f522b7518c23" category="list-text">'지연 시간 임계값 설정' 대화 상자에서 다음을 구성하십시오.</block>
+  <block id="18a1f4ac498e878706a9bea4c3f7d8d2" category="list-text">*읽기 지연 시간*: 읽기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.</block>
+  <block id="a63caca5c71add7ea0dda24a836eecbe" category="list-text">*쓰기 지연 시간*: 쓰기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.</block>
+  <block id="f81e32f3de5732f5f66ccfa86ef953dd" category="list-text">지연 시간 임계값을 적용하려면 *저장*을 선택하십시오.</block>
+  <block id="9204792b7a380af352b0493b88d5303b" category="inline-link-macro">분석 화면</block>
+  <block id="6f5b7d64dd977f3594b9b347533d7259" category="paragraph">Workload Factory는 볼륨을 모니터링하고 읽기 또는 쓰기 지연 시간이 구성된 임계값을 초과하면 알림을 생성합니다. 지연 시간 이벤트는 <block ref="df1730d271761ecb498a3dca135d5e07" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다.</block>
+  <block id="a1edc47cfd4f855c0729219748978279" category="list-text"><block ref="a1edc47cfd4f855c0729219748978279" category="inline-link-macro-rx"></block></block>
+  <block id="56df9b1084a1d8fbfcb5630d52db4560" category="summary">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용을 추적하고 보고서를 생성합니다.</block>
+  <block id="e34daec9a99e5e16cdd75dd4637d156b" category="doc">NetApp Workload Factory에서 리소스 비용을 추적하고 보고서를 받아보세요.</block>
+  <block id="5585a04aef8ebc87e1cda202d7e2a439" category="paragraph">NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 비용 및 사용량을 통합된 보기로 추적하세요. 비용 데이터를 통해 예산을 관리하고 리소스를 효과적으로 최적화할 수 있습니다. Workload Factory는 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성하여 이해관계자와 공유할 수 있습니다.</block>
+  <block id="132c7cd068e9c3c95296d05738c81a90" category="paragraph">Workload Factory는 AWS Cost Explorer에서 비용 데이터를 가져와 FSx for ONTAP 파일 시스템의 비용 및 사용량을 추적합니다. 추적되는 비용 세부 정보는 사용 유형, 사용 SKU, 배포 유형, 사용량 및 총 비용입니다.</block>
+  <block id="759dd0f8e7a28f421f2c25ba15aca0e1" category="paragraph">고유한 리소스의 경우, Workload Factory는 실제 성능 계층 사용량, 프로비저닝되었지만 사용되지 않은 공간에 할당된 성능 계층 비용의 비례 배분, 용량별로 분배된 성능 할당량, 그리고 용량 풀 사용량을 종합하여 비용을 계산합니다. 각 구성 요소는 해당 차원의 단위당 가격으로 곱해지고, 그 결과들을 모두 더하여 각 리소스의 총비용을 산출합니다.</block>
+  <block id="0ed1a26b65398b8b99cc7180f0f958ba" category="paragraph">비용 대시보드에서 AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. 데이터는 항상 월 단위로 표시됩니다.</block>
+  <block id="0254ba3a609bc024e3f6f83721515677" category="paragraph">저희는 다음 권한을 사용하여 AWS Cost Explorer에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용량 데이터를 가져옵니다.<block ref="19d055d1af78d5bccb17b82d9e0b9d01" prefix=" " category="inline-code"></block> AWS 비용 API와 자체 추정치를 사용하여 총 비용을 계산합니다. `</block>
+  <block id="80e92f578bcc9bc76e7904c0736e30b0" category="inline-link-macro">AWS 비용 할당 태그에 대해 자세히 알아보세요.</block>
+  <block id="30aa9e3df2319b487f228fe2955abbb2" category="paragraph">AWS 할당 태그 키와 태그 키 값은 특정 비용을 정확하게 파악하기 위한 추가적인 필터링 기능을 제공합니다. 태그는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하세요. <block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
+  <block id="0b0bedbf9ddde3e3d54ab1a3b6a5f9a6" category="paragraph">비용 대시보드에 표시되는 비용 데이터 외에도 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성할 수 있습니다.  비용 보고서에는 특정 파일 시스템 및 볼륨에 대한 정보가 표시됩니다.  이 보고서는 다운로드 가능한 PDF 파일 형식으로 제공되며, 이해 관계자와 공유할 수 있습니다.</block>
+  <block id="258ef99c8c6162f96d39f58575b891c4" category="section-title">비용 추적</block>
+  <block id="4eb4c996873463b028b9c244954294a7" category="paragraph">Workload Factory 콘솔의 비용 대시보드에 표시된 비용은 24시간마다 업데이트되는 AWS Cost Explorer의 데이터를 기반으로 합니다.</block>
+  <block id="d33d3fec0d0cc42bf9722d3406ba5aa2" category="paragraph">다음 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="3f793828e6ae31b6953beef1f2c5b592" category="list-text">FSx for ONTAP 비용을 추적하려면 Workload Factory에서 <block ref="1773ab1fe4aa6a3e5fc61d86a29970f0" category="inline-link-macro-rx"></block>해야 합니다.</block>
+  <block id="cbdceaa837454b037267d62ad01fe349" category="list-text">AWS 할당 태그로 필터링하려면 FSx for ONTAP 파일 시스템에 태그가 할당되어 있는지 확인하십시오.</block>
+  <block id="0920742e44f6fc32f644b1fa4ba9f2ee" category="list-text">비용 대시보드에서 다음 정보를 입력하여 FSx for ONTAP 리소스에 대한 비용 및 용량 데이터를 필터링하세요.</block>
+  <block id="8e81a56781173760652ca9a06392849b" category="list-text">*할당 태그 키*: (선택 사항) AWS 태그와 연결된 모든 FSx for ONTAP 파일 시스템에 대한 자세한 비용 보고서를 생성하려면 할당 태그 키와 해당 값을 선택하십시오.</block>
+  <block id="4fa614317a610a608b2a1132a0db24bf" category="list-text">*할당 태그 값*: (선택 사항) AWS 태그와 연결된 모든 FSx for ONTAP 파일 시스템에 대한 자세한 비용 보고서를 생성하려면 할당 태그 키와 연결된 할당 태그 키 값을 선택하십시오.</block>
+  <block id="5e1645e99b61e0758d672e07e9562df5" category="section-title">FSx for ONTAP 리소스에 대한 비용 보고서 생성</block>
+  <block id="ecc4f580169a71e3b0eb77b0afb36377" category="paragraph">특정 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성하여 이해 관계자와 공유합니다.</block>
+  <block id="d9fa93b0259aa36ad24fcbb77d17476a" category="list-text">비용 대시보드에서 *보고서 생성*을 선택합니다.</block>
+  <block id="766eb30a1e5bad36f68174d269e44581" category="list-text">보고서 화면에서 다음 정보를 제공하십시오.</block>
+  <block id="6d28ef4b6f4c3cf90653ef05bfe35523" category="list-text">*파일 시스템*: 보고서에 포함할 FSx for ONTAP 파일 시스템을 하나 이상 선택하십시오.</block>
+  <block id="a7bd0905e600528204e4269535f4130f" category="list-text">*볼륨*: (선택 사항) 보고서에 포함할 볼륨을 하나 이상 선택하십시오.</block>
+  <block id="9eedf15c88882820c71be2457a0407b4" category="paragraph">PDF 보고서가 생성되어 다운로드할 수 있습니다.</block>
+  <block id="753f0ef1207693ec3d5a5341ae8e6a92" category="summary">계정 내 모든 복제 관계의 지연 시간을 모니터링하려면 추적 기능을 활성화하세요.</block>
+  <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.</block>
+  <block id="93dea0fbfb3d3bc0e6e540f6de60aaf4" category="list-text">*추적 사용*을 선택합니다.</block>
+  <block id="a3c265cc9e14e487d93cfcb8cd19ba63" category="list-text">복제 지연 기록 활성화 대화 상자에서 *활성화*를 선택합니다.</block>
+  <block id="785e95d007ac530ca81623e89d020254" category="list-text">복제 지연 기록 타일로 돌아가서 *임계값 사용자 지정*을 선택하여 원하는 임계값을 설정하십시오.</block>
+  <block id="6a755178543e687ff1dabcfef51a7658" category="list-text">'지연 시간 임계값 사용자 지정' 대화 상자에서 임계값을 시간과 분 단위로 입력합니다.</block>
+  <block id="748b89fa24d3c9751520ee29acfcb298" category="list-text">선택적으로 *지연 시간 알림 활성화*를 선택하면 복제 지연 시간이 임계값을 초과할 때 알림을 받게 됩니다.</block>
+  <block id="ba86cf7b33d47e93634da88ec7f05bbe" category="paragraph">알림은 이메일로 발송되며 다음 내용을 포함합니다.</block>
+  <block id="a1565efa58a4379112baa6f6c81b89b5" category="list-text">소스 볼륨</block>
+  <block id="70906679659b9e5913d66957f3f5946c" category="list-text">목표 볼륨</block>
+  <block id="71a7ff5ebf9156a251d799ca9d4801be" category="list-text">초과된 지연 시간 임계값</block>
+  <block id="7295e460f10eab584940e13ed73f1a7c" category="list-text">복제 관계에 대한 링크</block>
+  <block id="90f7372e4d5f7acc9a7ad384567a8fb1" category="inline-link-macro">복제 관계 관리</block>
+  <block id="40784ca0165ca1ea0dd19de018ca873d" category="paragraph"><block ref="40784ca0165ca1ea0dd19de018ca873d" category="inline-link-macro-rx"></block></block>
+  <block id="3a73b982b2965919c12c85d4ba9df2b4" category="list-text">*ONTAP credentials*: 다음을 제공하십시오.</block>
+  <block id="7bc557e938a1319fa6e07bd448576cd2" category="list-text">GovCloud 계정: ONTAP 자격 증명을 사용하여 ARN을 입력하십시오.</block>
+  <block id="73a2a12878b0731214258fd091d03336" category="list-text">기타 모든 계정: 온프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력하십시오. 사용자에게 필요한 권한이 있는지 확인하십시오.</block>
+  <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">2026년 7월 5일</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026년 5월 31일</block>
 </blocks>

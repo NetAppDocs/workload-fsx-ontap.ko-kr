@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: track-replication-delays.html 
+keywords: replication, track replication, replication lag, replication delay, delay, monitor replication, replication threshold, lag notification 
+summary: 계정 내 모든 복제 관계의 지연 시간을 모니터링하려면 추적 기능을 활성화하세요. 
+---
+= 복제 지연 추적
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 파일 시스템 개요에서 * 복제 관계 * 탭을 선택합니다.
+. *추적 사용*을 선택합니다.
+. 복제 지연 기록 활성화 대화 상자에서 *활성화*를 선택합니다.
+. 복제 지연 기록 타일로 돌아가서 *임계값 사용자 지정*을 선택하여 원하는 임계값을 설정하십시오.
+. '지연 시간 임계값 사용자 지정' 대화 상자에서 임계값을 시간과 분 단위로 입력합니다.
+. 선택적으로 *지연 시간 알림 활성화*를 선택하면 복제 지연 시간이 임계값을 초과할 때 알림을 받게 됩니다.
++
+알림은 이메일로 발송되며 다음 내용을 포함합니다.
+
++
+** 소스 파일 시스템
+** 소스 볼륨
+** 대상 파일 시스템
+** 목표 볼륨
+** 초과된 지연 시간 임계값
+** 복제 관계에 대한 링크
+
+
+. Apply * 를 선택합니다.
+
+
+.관련 정보
+link:manage-replication.html["복제 관계 관리"^]

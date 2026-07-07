@@ -77,7 +77,6 @@ AWS는 Workload Factory가 아닌 FSx for ONTAP 계정을 유지 관리합니다
 다음 AWS 지역은 지원되지 않습니다.
 
 * 중국 지역
-* GovCloud(미국) 지역
 * 시크릿 클라우드
 * 극비 클라우드
 
