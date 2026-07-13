@@ -3057,21 +3057,13 @@
   <block id="da6f5bf8aee08ef83468ad38ab52796b" category="doc">모든 FSx for ONTAP 시스템에서 사용할 수 있는 새로운 잘 설계된 대시보드</block>
   <block id="7fca025a8bf1b5d72a149731d5c88125" category="paragraph">잘 설계된 분석 기능은 이제 NetApp Workload Factory의 새로운 잘 설계된 대시보드에서 FSx for ONTAP 파일 시스템에 대해 사용할 수 있습니다. 새로운 대시보드는 모든 계정 및 지역의 파일 시스템과 해당 구성을 한 곳에서 중앙 집중식으로 보여줍니다. 파일 시스템에서 *잘 설계된* 탭을 방문하면 팝업 알림이 표시됩니다. Workload Factory의 왼쪽 탐색 메뉴에서 *잘 설계된*을 선택하여 새 대시보드에 액세스하십시오.</block>
   <block id="b09ad8a2ad81c470093e9c74313ea0c2" category="paragraph">특정 파일 시스템에 대한 잘 설계된 분석은 스토리지의 *Well-architected* 메뉴 옵션에서 계속 이용할 수 있습니다.</block>
-  <block id="9864fa88fc3747e67b6fc38c9b938677" category="section-title">잘 설계된 분석에 대한 새로운 권장 사항</block>
-  <block id="a38b9a0af0de5e85c5e64a158079deb5" category="paragraph">Workload Factory는 이제 FSx for ONTAP 파일 시스템에 대한 잘 설계된 아키텍처 분석에 다음과 같은 구성을 포함합니다.</block>
-  <block id="fd2d46026cdd19577962231303a46abd" category="list-text">호스트를 페일오버 노드에 연결: 액티브-패시브 FSx for ONTAP 파일 시스템에서 호스트가 페일오버 노드에 연결되어 있는지 확인하고 안정성 확보를 위해 호스트를 페일오버 노드에 연결할 것을 제안합니다.</block>
-  <block id="0e7d4cc90eb78377a1315bafe07799dd" category="list-text">호스트를 선호 노드에 연결: 호스트가 선호 노드를 사용하여 블록 장치에 연결되어 있는지 확인하고 성능 효율성을 위해 호스트를 선호 노드에 연결하도록 제안합니다.</block>
   <block id="efbeddc0347a679a438120189b77f860" category="section-title">볼륨 탐색기</block>
   <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">볼륨 탐색기를 사용하면 NetApp Workload Factory의 모든 볼륨을 간편하게 검색할 수 있습니다. 블록 또는 파일 워크로드를 처리하는 볼륨을 빠르게 확인할 수 있습니다. 각 볼륨의 논리적 크기, 물리적 사용 용량, 스토리지 효율성 기능(압축, 중복 제거, 압축) 사용 여부를 볼 수 있습니다. 이름, 상태(사용 가능/실패), 지연 시간, 크기, 사용 용량 및 보호 기능별로 필터링하고 정렬할 수 있습니다.</block>
-  <block id="2731bbeb58ccf58c8e631528a8e3fc94" category="section-title">복제 지연 개선 사항</block>
   <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">복제 지연에 대한 향상된 이메일 알림 기능</block>
   <block id="bd78ae8d1a9aed4500716acc31d179d8" category="paragraph">복제 지연에 대한 이메일 알림에 이제 영향을 받는 관계에 대한 자세한 정보가 포함됩니다. 이 알림을 통해 영향을 받는 관계를 신속하게 파악하고 Workload Factory 콘솔에서 확인할 수 있습니다.</block>
   <block id="4dc5c4a9c4b845746295cce1108ec278" category="inline-link-macro">복제 지연에 대한 알림 활성화</block>
   <block id="7f27417270cfb269527e679a64b5a19a" category="paragraph"><block ref="7f27417270cfb269527e679a64b5a19a" category="inline-link-macro-rx"></block></block>
-  <block id="347a810d994926c5e31d1bd690b34fcf" category="section-title">복제 지연 데이터를 CSV 파일로 내보내기</block>
-  <block id="45cbeaeb98d1d075d560a8e62269fbbb" category="paragraph">이제 복제 지연 데이터를 CSV 파일로 내보내 스프레드시트에서 데이터를 분석하고 다른 사람과 공유할 수 있습니다.</block>
   <block id="2b3d29c88190bdb57da25e1848b65b7d" category="inline-link-macro">복제 지연 추적</block>
-  <block id="7aab1e1b0e0fcc4720b15dcc5848034e" category="paragraph"><block ref="7aab1e1b0e0fcc4720b15dcc5848034e" category="inline-link-macro-rx"></block></block>
   <block id="5312d8ea7e9ef079aeac882dbcd64d0a" category="section-title">블록 장치 생성 개선</block>
   <block id="85fb39d6f3bb52679cb9ce3bd27ffd1c" category="paragraph">Workload Factory는 볼륨 스냅샷에서 블록 장치 생성을 지원합니다.</block>
   <block id="a439412a0228682fa1054f4bc1a96815" category="inline-link-macro">Workload Factory에서 볼륨 스냅샷으로 블록 장치 생성</block>
@@ -3109,12 +3101,6 @@
   <block id="9a1ef45ae6fd0052a26aaea575fa9054" category="list-text">표에서 특정 이벤트를 분석하려면 해당 이벤트 행에서 *분석*을 선택한 다음 이벤트 이름을 선택하여 인사이트와 권장 사항을 확인하세요.</block>
   <block id="68178ddd88bc5af168d0f95fe76212ad" category="inline-link-macro">Workload Factory에서 볼륨 지연 시간 임계값 설정</block>
   <block id="1045d7a603969c049cf68b4017ae537e" category="list-text"><block ref="1045d7a603969c049cf68b4017ae537e" category="inline-link-macro-rx"></block></block>
-  <block id="6347309ad07af7266241819bb2af76d1" category="list-text">*호스트를 페일오버 노드에 연결*</block>
-  <block id="e89cb70f69260bd0359dad1d58cb94de" category="paragraph">Workload Factory는 장애 조치 중 연결을 유지하고 중단을 방지하기 위해 호스트를 장애 조치 노드에 연결하는 것을 권장합니다.</block>
-  <block id="8722112d28d6eea0aff9478fb61c5de7" category="section-title">성능 효율성</block>
-  <block id="8b1271dadb19678250cdc4bb1a083452" category="paragraph">성능 효율성은 IT 및 컴퓨팅 리소스를 효율적으로 사용하는 데 중점을 둡니다.</block>
-  <block id="bb7eaffc45b0ebd2357f86e392d3d75e" category="list-text">*호스트를 원하는 노드에 연결*</block>
-  <block id="e72d694d5291c64bcb1eda2ecaff634a" category="paragraph">고가용성 FSx for ONTAP 구축 모델에서는 호스트가 블록 장치를 제공하는 노드에 직접 연결되어 직접 액세스 및 최적의 성능을 보장해야 합니다.</block>
   <block id="6149c2ac82c846d8c0c66beff37f271d" category="paragraph">비즈니스(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다. 기존 볼륨에 블록 장치를 생성하거나, 새 블록 장치용 새 볼륨을 생성하거나, 스냅샷에서 새 블록 장치용 새 볼륨을 생성할 수 있습니다.</block>
   <block id="7d890770a60d61d9610602416316dd0c" category="list-text">볼륨 스냅샷에서 생성합니다. 소스 볼륨 이름과 스냅샷 이름을 선택하십시오. 블록 장치가 없는 볼륨만 사용할 수 있습니다.</block>
   <block id="0d9cf45fb23b4088730f72dd43be4a9b" category="paragraph">이 워크플로에서 링크를 생성하는 방법은 자동 또는 수동 두 가지가 있습니다. AWS GovCloud 계정이 있는 경우 새 링크는 수동으로 생성해야 합니다.</block>
@@ -3125,8 +3111,6 @@
   <block id="1425c9b22ae63851bbaa938ebc0a967d" category="list-text">스택 생성이 완료되면 Workload Factory 콘솔의 텍스트 상자에 Lambda ARN을 붙여넣으십시오. Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 가져옵니다.</block>
   <block id="47dfa5e12270c73140e2f3dc8b32a020" category="paragraph">Workload Factory는 링크를 FSx for ONTAP 파일 시스템과 연결합니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
   <block id="eb3eec333eedf15738e12e55e183cdb7" category="paragraph"><block ref="c7c8a4154bf78f63993b7572e6143221" category="inline-link-macro-rx"></block>.</block>
-  <block id="7e1ccbf5b074e2396f26b030d7e1231f" category="list-text">안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, 예약된 볼륨 백업, 원격 데이터 복제, 장기 보존을 위한 데이터 안정성, 호스트를 장애 조치 노드에 연결</block>
-  <block id="383b20892354fe24b77f00c1d9e28776" category="list-text">성능 효율성: 호스트를 기본 노드에 연결</block>
   <block id="81fccfd8b7cc4d87c0978527048afe60" category="paragraph">GovCloud 계정에 대한 링크 연결이 지원됩니다. Workload Factory는 GovCloud 인증 키를 사용하여 GovCloud 승인 메커니즘을 통해 FSx for ONTAP 작업에 안전하고 에이전트 없이 액세스할 수 있도록 합니다.</block>
   <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">스토리지 VM 및 클러스터 LIF의 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 세부 정보 표시</block>
   <block id="d72415af6292f1377ab69432624c64ea" category="summary">NetApp Workload Factory에서 복제 관계를 관리합니다.</block>
@@ -3181,7 +3165,6 @@
   <block id="a7bd0905e600528204e4269535f4130f" category="list-text">*볼륨*: (선택 사항) 보고서에 포함할 볼륨을 하나 이상 선택하십시오.</block>
   <block id="9eedf15c88882820c71be2457a0407b4" category="paragraph">PDF 보고서가 생성되어 다운로드할 수 있습니다.</block>
   <block id="753f0ef1207693ec3d5a5341ae8e6a92" category="summary">계정 내 모든 복제 관계의 지연 시간을 모니터링하려면 추적 기능을 활성화하세요.</block>
-  <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.</block>
   <block id="93dea0fbfb3d3bc0e6e540f6de60aaf4" category="list-text">*추적 사용*을 선택합니다.</block>
   <block id="a3c265cc9e14e487d93cfcb8cd19ba63" category="list-text">복제 지연 기록 활성화 대화 상자에서 *활성화*를 선택합니다.</block>
   <block id="785e95d007ac530ca81623e89d020254" category="list-text">복제 지연 기록 타일로 돌아가서 *임계값 사용자 지정*을 선택하여 원하는 임계값을 설정하십시오.</block>
@@ -3220,4 +3203,6 @@
   <block id="6ec74364a6da4d201b148eef6afaaeb1" category="paragraph">추후 공격이 확인되면 스냅샷에서 영향을 받은 파일 또는 전체 볼륨을 복원할 수 있습니다.</block>
   <block id="f4cb46b03000a83dfbabafe89cb0af31" category="paragraph">잠긴 스냅샷은 보존 기간이 만료될 때까지 삭제할 수 없습니다. 공격이 나중에 오탐으로 판명되면 잠긴 스냅샷이 삭제됩니다.</block>
   <block id="64e991d759281e91a768b558639fb387" category="paragraph">시스템이 영향을 받은 파일과 공격 시간을 식별하기 때문에 전체 볼륨을 복원하는 대신 사용 가능한 스냅샷에서 영향을 받은 파일만 복구할 수 있습니다.</block>
+  <block id="16f2ae5a8a2de6f12ddc298127a4ddb7" category="list-text">안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, 볼륨 백업 예약, 원격 데이터 복제 및 장기 보존을 위한 데이터 안정성</block>
+  <block id="d2eebd4f9400b9bd2c04860c048de241" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다.</block>
 </blocks>

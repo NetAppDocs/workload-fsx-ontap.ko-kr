@@ -23,6 +23,7 @@ summary: 타겟 볼륨이 소스 볼륨이 되도록 복제 관계를 일시 중
 
 
 
+[[pause-a-replication-relationship]]
 == 복제 관계를 일시 중지합니다
 
 .단계
@@ -41,6 +42,7 @@ summary: 타겟 볼륨이 소스 볼륨이 되도록 복제 관계를 일시 중
 
 
 
+[[resume-a-paused-replication-relationship]]
 == 일시 중지된 복제 관계를 다시 시작합니다
 
 복제 관계를 재개하면 복제가 중지된 동안 대상 볼륨에 대한 모든 변경 사항이 삭제됩니다.

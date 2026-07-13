@@ -4,6 +4,7 @@
 
 
 
+[[volume-autogrow-enhancement]]
 === 볼륨 자동 증가 향상
 
 이제 볼륨의 자동 증가 크기를 설정하여 볼륨 크기가 비즈니스 요구 사항과 애플리케이션 요구 사항에 맞게 프로비저닝된 크기를 넘어 증가할 수 있습니다.
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/edit-volume-autogrow.html[
 
 
 
+[[well-architected-analysis-update]]
 === 잘 설계된 분석 업데이트
 
 이제 Workload Factory가 FSx for ONTAP 파일 시스템을 분석하여 데이터 압축, 중복 제거를 포함한 스토리지 효율성이 활용되고 있는지 확인합니다. 스토리지 효율성은 파일 시스템이 사용 가능한 공간을 얼마나 효율적으로 사용하는지 측정합니다.
@@ -20,12 +22,14 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[storage-dashboard-enhancements]]
 === 스토리지 대시보드 개선
 
 오늘부터 Workload Factory 콘솔에서 Storage 워크로드를 열면 *대시보드*가 표시됩니다.  새롭게 디자인된 대시보드는 파일 시스템 수, 총 SSD 용량, 잘 설계된 상태 개요, 데이터 보호 개요, 복제 관계 상태를 포함하여 FSx for ONTAP 시스템에 대한 전체적인 보기를 제공합니다.
 
 
 
+[[volumes-tab-enhancements]]
 === 볼륨 탭 개선
 
 스토리지 워크로드는 Workload Factory 콘솔의 FSx for ONTAP 파일 시스템 내 볼륨 탭을 개선했습니다.  향상된 기능은 다음과 같습니다.
@@ -36,6 +40,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[storage-efficiencies-update-for-volume-creation]]
 === 볼륨 생성을 위한 스토리지 효율성 업데이트
 
 새 볼륨을 생성할 때 데이터 압축, 압축, 중복 제거를 포함한 스토리지 효율성이 기본적으로 활성화됩니다.

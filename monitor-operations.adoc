@@ -40,6 +40,7 @@ Tracker에서 몇 가지 작업을 사용할 수 있습니다. 시간 프레임(
 
 
 
+[[track-and-monitor-operations]]
 == 작업을 추적하고 모니터링합니다
 
 Tracker를 사용하여 NetApp 콘솔에서 작업을 추적하고 모니터링하세요.
@@ -56,6 +57,7 @@ image:screenshot-menu-tracker-option.png["Tracker 옵션이 강조 표시된 계
 
 
 
+[[view-api-request]]
 == API 요청을 봅니다
 
 Tracker의 작업에 대한 코드상자에서 API 요청을 봅니다.
@@ -67,6 +69,7 @@ Tracker의 작업에 대한 코드상자에서 API 요청을 봅니다.
 
 
 
+[[retry-a-failed-operation]]
 == 실패한 작업을 다시 시도하십시오
 
 Tracker에서 실패한 작업을 재시도하십시오. 실패한 작업의 오류 메시지를 복사할 수도 있습니다.
@@ -84,6 +87,7 @@ NOTE: 실패한 작업에 대해 x개의 재시도 횟수만 허용됩니다.
 
 
 
+[[edit-and-retry-a-failed-operation]]
 == 실패한 작업을 편집한 후 다시 시도하십시오
 
 실패한 작업의 매개 변수를 편집하고 Tracker 외부에서 작업을 재시도하십시오.

@@ -17,6 +17,7 @@ link:links-overview.html["링크에 대해 자세히 알아보세요"]link:creat
 
 
 
+[[view-the-links-associated-with-your-account]]
 == 계정과 연결된 링크를 봅니다
 
 현재 계정과 연결된 링크를 볼 수 있습니다.
@@ -36,6 +37,7 @@ image:screenshot-view-link-details.png["특정 링크를 사용하는 FSx for ON
 
 
 
+[[edit-a-link]]
 == 링크를 편집합니다
 
 Workload Factory 인터페이스에서는 링크를 편집할 수 없습니다.  링크를 변경해야 하는 경우 새 링크를 만든 다음 해당 링크를 파일 시스템에 연결해야 합니다.
@@ -45,6 +47,7 @@ NOTE: AWS 콘솔을 사용하여 Lambda 네트워크 구성(예: VPC, 서브넷 
 
 
 
+[[authenticate-a-link]]
 == 링크를 인증합니다
 
 FSx for ONTAP 파일 시스템에 링크를 연결하려면 Workload Factory 자격 증명에 대한 관리자 사용자 암호나 AWS Secrets Manager 암호 ARN을 제공합니다.
@@ -74,6 +77,7 @@ NOTE: 링크당 하나의 인증 방법만 지원됩니다. 예를 들어, AWS S
 
 
 
+[[update-the-password-for-link-authentication]]
 == 링크 인증을 위한 암호를 업데이트합니다
 
 관리자 암호가 유효하지 않으면 암호를 업데이트하여 ONTAP용 FSx 파일 시스템에 연결합니다.
@@ -93,6 +97,7 @@ NOTE: 링크당 하나의 인증 방법만 지원됩니다. 예를 들어, AWS S
 
 
 
+[[remove-a-link]]
 == 링크를 제거합니다
 
 사용자 환경에서 더 이상 사용하지 않는 링크를 제거할 수 있습니다. FSx for ONTAP 파일 시스템 또는 링크를 사용하는 기타 리소스는 링크가 제거된 후 특정 기능을 사용할 수 없습니다.

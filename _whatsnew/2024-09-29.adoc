@@ -4,6 +4,7 @@
 
 
 
+[[link-creation-updates]]
 === 링크 생성 업데이트
 
 * Codebox 뷰어: 이제 Codebox가 링크 생성 프로세스에 통합되었습니다.  AWS로 리디렉션하여 작업을 실행하기 전에 Workload Factory의 Codebox에서 CloudFormation 템플릿을 보고 복사할 수 있습니다.

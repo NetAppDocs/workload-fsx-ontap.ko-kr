@@ -4,6 +4,7 @@
 
 
 
+[[new-well-architected-analysis-and-support-for-fixing-issues]]
 === 문제 해결을 위한 새로운 잘 설계된 분석 및 지원
 
 FSx for ONTAP 파일 시스템에 대한 자동 용량 관리가 이제 잘 설계된 상태 대시보드의 구성 분석으로 포함되었습니다.

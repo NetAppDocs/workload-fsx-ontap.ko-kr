@@ -19,6 +19,7 @@ FSx for ONTAP Workload Factory의 _Storage_ 구성요소입니다.
 
 
 
+[[features]]
 == 피처
 
 FSx for ONTAP은 다음과 같은 기능을 제공합니다.
@@ -40,6 +41,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
+[[additional-features-in-workload-factory]]
 == Workload Factory의 추가 기능
 
 * * 스토리지 비용 비교 계산기 *: Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지 비용을 FSx for ONTAP와 비교합니다. 계산기에서 FSx for ONTAP 스토리지 구성이 어떻게 잠재적 비용 절감을 제공하는지 살펴보고 FSx for ONTAP 스토리지로의 마이그레이션을 계획하실 수 있습니다.
@@ -49,6 +51,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == NetApp Workload Factory를 사용하는 도구
 
 다음 도구와 함께 NetApp Workload Factory를 사용할 수 있습니다.
@@ -64,12 +67,14 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 
 
+[[cost]]
 == 비용
 
 AWS는 Workload Factory가 아닌 FSx for ONTAP 계정을 유지 관리합니다. link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAP 가격"^] .
 
 
 
+[[regions]]
 == 지역
 
 워크로드 팩토리는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다.link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
@@ -83,6 +88,7 @@ AWS는 Workload Factory가 아닌 FSx for ONTAP 계정을 유지 관리합니다
 
 
 
+[[getting-help]]
 == 도움말 보기
 
 NetApp ONTAP용 Amazon FSx는 AWS 퍼스트 파티 솔루션입니다. 이 서비스를 사용하는 FSx for ONTAP 파일 시스템, 인프라 또는 솔루션과 관련하여 궁금한 사항이나 기술 지원 문제가 있는 경우 AWS 관리 콘솔의 지원 센터를 사용하여 AWS에 지원 케이스를 여십시오. “FSx for ONTAP” 서비스와 적절한 범주를 선택합니다. AWS 지원 케이스를 생성하는 데 필요한 나머지 정보를 제공합니다.

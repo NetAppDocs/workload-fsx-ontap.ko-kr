@@ -57,6 +57,7 @@ ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에
 
 
 
+[[enable-arpai-for-a-file-system-or-a-volume]]
 == 파일 시스템 또는 볼륨에 대해 ARP/AI 활성화
 
 파일 시스템에 대해 ARP/AI를 활성화하면 현재 및 새로 생성되는 모든 NAS 볼륨(NFS/SMB)이 자동으로 보호됩니다. ONTAP 9.17.1 버전부터는 SAN 볼륨(iSCSI)도 지원합니다. 특정 볼륨에 대해서만 ARP/AI를 활성화할 수도 있습니다.
@@ -111,6 +112,7 @@ ARP/AI 기능이 활성화된 후 실제 공격이 감지되면 Workload Factory
 ====
 
 
+[[validate-ransomware-attacks]]
 == 랜섬웨어 공격을 검증합니다
 
 공격이 거짓 경보 또는 진정한 랜섬웨어 사고인지 확인합니다.
@@ -129,6 +131,7 @@ ARP/AI 기능이 활성화된 후 실제 공격이 감지되면 Workload Factory
 
 
 
+[[recover-data-after-a-ransomware-attack]]
 == 랜섬웨어 공격 후 데이터 복구
 
 시스템이 공격 가능성을 감지하면 해당 시점의 볼륨 스냅샷을 생성하고 잠급니다.
