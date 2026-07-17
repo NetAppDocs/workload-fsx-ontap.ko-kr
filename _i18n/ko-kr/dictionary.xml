@@ -3054,9 +3054,6 @@
   <block id="46d1548637c7b145aedaf16fc4982ded" category="paragraph"><block ref="46d1548637c7b145aedaf16fc4982ded" category="inline-link-macro-rx"></block></block>
   <block id="6935aa37908b8d3e8e6495adec301374" category="section-title">볼륨 지연 시간 임계값 설정</block>
   <block id="8d36c5c4d1b5b3180db932fcf4bd5e3b" category="paragraph">이제 볼륨별로 지연 시간 임계값을 구성하여 성능을 모니터링하고 읽기 또는 쓰기 지연 시간이 설정된 한도를 초과할 경우 알림을 받을 수 있습니다. 지연 시간 모니터링을 통해 워크로드에 영향을 미치기 전에 성능 문제를 사전에 파악할 수 있습니다.</block>
-  <block id="da6f5bf8aee08ef83468ad38ab52796b" category="doc">모든 FSx for ONTAP 시스템에서 사용할 수 있는 새로운 잘 설계된 대시보드</block>
-  <block id="7fca025a8bf1b5d72a149731d5c88125" category="paragraph">잘 설계된 분석 기능은 이제 NetApp Workload Factory의 새로운 잘 설계된 대시보드에서 FSx for ONTAP 파일 시스템에 대해 사용할 수 있습니다. 새로운 대시보드는 모든 계정 및 지역의 파일 시스템과 해당 구성을 한 곳에서 중앙 집중식으로 보여줍니다. 파일 시스템에서 *잘 설계된* 탭을 방문하면 팝업 알림이 표시됩니다. Workload Factory의 왼쪽 탐색 메뉴에서 *잘 설계된*을 선택하여 새 대시보드에 액세스하십시오.</block>
-  <block id="b09ad8a2ad81c470093e9c74313ea0c2" category="paragraph">특정 파일 시스템에 대한 잘 설계된 분석은 스토리지의 *Well-architected* 메뉴 옵션에서 계속 이용할 수 있습니다.</block>
   <block id="efbeddc0347a679a438120189b77f860" category="section-title">볼륨 탐색기</block>
   <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">볼륨 탐색기를 사용하면 NetApp Workload Factory의 모든 볼륨을 간편하게 검색할 수 있습니다. 블록 또는 파일 워크로드를 처리하는 볼륨을 빠르게 확인할 수 있습니다. 각 볼륨의 논리적 크기, 물리적 사용 용량, 스토리지 효율성 기능(압축, 중복 제거, 압축) 사용 여부를 볼 수 있습니다. 이름, 상태(사용 가능/실패), 지연 시간, 크기, 사용 용량 및 보호 기능별로 필터링하고 정렬할 수 있습니다.</block>
   <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">복제 지연에 대한 향상된 이메일 알림 기능</block>
@@ -3205,4 +3202,6 @@
   <block id="64e991d759281e91a768b558639fb387" category="paragraph">시스템이 영향을 받은 파일과 공격 시간을 식별하기 때문에 전체 볼륨을 복원하는 대신 사용 가능한 스냅샷에서 영향을 받은 파일만 복구할 수 있습니다.</block>
   <block id="16f2ae5a8a2de6f12ddc298127a4ddb7" category="list-text">안정성: SSD 용량 임계값, 예약된 로컬 스냅샷, 볼륨 백업 예약, 원격 데이터 복제 및 장기 보존을 위한 데이터 안정성</block>
   <block id="d2eebd4f9400b9bd2c04860c048de241" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다.</block>
+  <block id="842065a36dace972d6dab0c170421bd1" category="section-title">볼륨 및 블록 장치에 대한 워크로드 태깅</block>
+  <block id="47c38c6a3d7e96ce1b3b2519a980f283" category="paragraph">Workload Factory는 이제 볼륨 및 블록 장치를 기본 워크로드 또는 애플리케이션별로 식별하고 태그를 지정합니다. Microsoft SQL Server 또는 Oracle Database와 같은 사전 정의된 워크로드 태그를 할당하거나 애플리케이션에 대한 사용자 지정 태그를 생성할 수 있습니다. 태그는 개별 리소스에 적용하거나 연결된 스토리지 리소스에 상속할 수 있습니다. 이를 통해 스토리지 구성을 워크로드 요구 사항에 맞추고, 장애 발생 시 영향을 파악하며, 보다 효과적으로 문제를 해결할 수 있습니다.</block>
 </blocks>
