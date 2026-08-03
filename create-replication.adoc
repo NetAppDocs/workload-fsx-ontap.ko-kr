@@ -135,7 +135,7 @@ Volumes 테이블에서 하나 이상의 볼륨을 선택한 다음 * Replicate 
 .. * 볼륨 이름 * : 대상 볼륨 이름은 다음 형식으로 자동으로 `{OriginalVolumeName}_copy`생성됩니다. 자동 생성된 볼륨 이름을 사용하거나 다른 볼륨 이름을 입력할 수 있습니다.
 .. * Tiering policy *: 타겟 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다. 계층화 정책은 기본적으로 선택한 활용 사례에 대해 권장되는 계층화 정책으로 설정됩니다.
 +
-Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _균형(자동)_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 문서.  Workload Factory는 계층화 정책에 대해 Workload Factory 콘솔에서 사용 사례 기반 이름을 사용하고 FSx for ONTAP 계층화 정책 이름을 괄호 안에 포함합니다.
+Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 티어링 정책은 _균형(자동)_입니다. 볼륨 티어링 정책에 대한 자세한 내용은 다음을 참조하십시오. link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 설명서에 나와 있습니다. 참고로 Workload Factory 콘솔에서는 계층화 정책에 대해 사용 사례 기반 이름을 사용하며, ONTAP 계층화 정책 이름은 괄호 안에 FSx로 표시됩니다.
 
 +
 마이그레이션 사용 사례를 선택한 경우 Workload Factory는 소스 볼륨의 계층화 정책을 대상 볼륨으로 자동으로 복사합니다.  계층화 정책을 복사하려면 선택을 취소하고 복제를 위해 선택한 볼륨에 적용되는 계층화 정책을 선택합니다.

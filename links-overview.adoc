@@ -57,7 +57,7 @@ link:https://aws.amazon.com/lambda/pricing/["AWS Lambda 사용과 관련된 비�
 [[when-a-link-is-required]]
 == 링크가 필요한 경우
 
-워크로드 팩토리에는 일부 정보를 표시하고 일부 작업을 수행하기 위한 링크가 필요합니다.  링크가 필요한 작업을 수행하려고 하지만 FSx for ONTAP 파일 시스템과 링크를 연결하지 않은 경우 Workload Factory는 해당 작업에 링크가 필요하다는 알림을 보냅니다.
+Workload Factory는 일부 정보를 표시하고 일부 작업을 수행하기 위해 링크가 필요합니다. 링크가 필요한 작업을 수행하려고 하는데 FSx for ONTAP 파일 시스템과 링크를 연결하지 않은 경우 Workload Factory는 해당 작업에 링크가 필요하다는 알림을 표시합니다.
 
 링크가 필요한 기능은 다음과 같습니다.
 

@@ -43,6 +43,9 @@ Workload Factory에서 이벤트를 분석할 수 있도록 하려면 Amazon Bed
 link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 
 
+NOTE: 계정 관리자가 AI 기능을 비활성화한 경우 메시지가 표시되며 AI 분석을 사용할 수 없습니다. 관리자에게 문의하거나 https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["AI 관리에 대해 알아보기"^].
+
+
 
 [[data-privacy-and-security]]
 === 데이터 개인정보 보호 및 보안
@@ -60,19 +63,11 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 [[before-you-begin]]
 == 시작하기 전에
 
+지연 시간 이벤트를 보려면 다음 단계를 수행해야 합니다.
 
+* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning 및 analysis_ 권한 부여"^] AWS 계정에서.
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 파일 시스템에 연결"].
 
-[[view-events]]
-=== 이벤트 보기
-
-지연 시간 이벤트를 보려면 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning 및 analysis_ 권한 부여"^] AWS 계정에 로그인해야 합니다.
-
-EMS 이벤트를 보려면 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 파일 시스템에 연결"]도 해야 합니다.
-
-
-
-[[analyze-events]]
-=== 이벤트 분석
 
 EMS 및 지연 시간 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 다음 사항을 확인하십시오.
 
