@@ -3133,7 +3133,6 @@
   <block id="b26629c4d0db7a100913103c2501115d" category="section-title">워크로드 태깅 및 AI 기능</block>
   <block id="c6e3575ea0e96a40eeea1698ed97e99f" category="paragraph">관리자가 AI 기능을 비활성화하면 워크로드에 태그가 지정되지 않습니다. Workload Factory 계정 설정에서 AI 기능이 꺼져 있으면 태깅 서비스에서 스토리지 리소스의 워크로드를 식별하거나 분류하지 않습니다.</block>
   <block id="9801425a2145ab6ed5aa12b9446c905c" category="inline-link-macro">AI 관리에 대해 알아보기</block>
-  <block id="cbbc45b1bedc18c950d2da6ef1fe1f43" category="paragraph"><block ref="40737cbe54dcebc9ef5c68ebf72b8d96" category="inline-link-macro-rx"></block>.</block>
   <block id="39cf1aaf3e84c5c49c930c5bfe27e098" category="section-title">절감 현황 스냅샷 계산 개선 사항 살펴보기</block>
   <block id="a4f25c93cc96e84a15a9a235f569bbe2" category="paragraph">이제 Explore 절감 기능은 일관된 스냅샷 용량 계산 방식을 사용하므로 FSx for ONTAP 절감액 추정치는 추가 스냅샷 용량 풀 요구 사항을 정확하게 반영합니다.</block>
   <block id="e14c4b029cabd340fe3b6c67835e9927" category="inline-link-macro">Amazon Elastic Block Store, FSx for Windows File Server 및 Elastic File System에서 스토리지 환경에 대한 비용 절감 효과를 살펴보십시오.</block>
@@ -3249,4 +3248,5 @@
   <block id="2f8586eac80bb95b25809876eb97f99a" category="paragraph">Workload Factory는 복원에 필요한 용량이 충분한지 판단하고, 부족한 경우 SSD 스토리지 계층 용량을 자동으로 추가할 수 있습니다.</block>
   <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.</block>
   <block id="adf6bc23c10d536eed25c42f34ba48e8" category="section-title">2026년 8월 2일</block>
+  <block id="bb971caaebe9e5940267caf457500810" category="paragraph"><block ref="247b746a5e5f871115d636673a8fd3a7" category="inline-link-macro-rx"></block>.</block>
 </blocks>
