@@ -755,8 +755,6 @@
   <block id="b755b7c9e5db773b9578d24d7b40b61d" category="list-text">적용 * 을 선택하여 변경 사항을 저장합니다.</block>
   <block id="124cb3fd3d0a35a1abf1c0f90f37e8a9" category="paragraph">온프레미스 ONTAP 클러스터의 데이터를 사용하려면 먼저 온프레미스 ONTAP 클러스터를 검색해야 합니다. 온프레미스 ONTAP 클러스터를 검색한 후에는 다음 사용 사례에 해당 데이터를 사용할 수 있습니다.</block>
   <block id="2a3b399798aa16ecfbc1425cc560bfad" category="list-text">사용 사례</block>
-  <block id="ef63a3d009f11deff50f4dc327b32173" category="list-text">GenAI 워크로드의 주요 사용 사례는 이 일련의 작업에 중점을 두고 있습니다.</block>
-  <block id="809c357d304bbfa1cd4446574b270af8" category="inline-link-macro">AI 지식 기반을 보강합니다</block>
   <block id="f15192f8afdcf438f7b1ccf0cda2b436" category="list-text">* 클라우드로 백업 및 마이그레이션 *: 온프레미스 ONTAP 볼륨 데이터를 FSx for ONTAP 파일 시스템으로 복제하는 경우 클라우드에서 백업으로 사용할 수 있습니다.</block>
   <block id="5b5a84720ff8905504e8a45fbc52fb73" category="list-text">* 데이터 계층화 *: 복제 후 드물게 액세스되는 온프레미스 ONTAP 볼륨 데이터를 SSD 스토리지 계층에서 용량 풀 스토리지 계층으로 계층화할 수 있습니다.</block>
   <block id="4185f116d64b1130e6f9ba4250b147fa" category="paragraph">시작하기 전에 다음 사항이 있는지 확인하십시오.</block>
@@ -1289,7 +1287,6 @@
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">필요에 따라 재조정 전에 볼륨 이동 목록을 다운로드합니다.</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">Rebalance * 를 선택합니다.</block>
   <block id="eaaaf380859de755a58a543fbffc3d8a" category="paragraph"><block ref="eaaaf380859de755a58a543fbffc3d8a" category="inline-link-macro-rx"></block></block>
-  <block id="1418bddde60a7d4a1fbd71041ef29d36" category="list-text">* GenAI 워크로드 *: 온프레미스-ONTAP 볼륨 데이터를 FSx for ONTAP 파일 시스템에 복제하여 데이터를 사용할 수 <block ref="8b94b70e10f0f6c7944c9419ec9922bc" category="inline-link-macro-rx"></block>있습니다.</block>
   <block id="7583f12b4559f6687c67d8588da1e2f7" category="doc">볼륨 자동 증가 향상</block>
   <block id="b57fe4f5ee65a0e01f61993297811ebf" category="paragraph">이제 볼륨의 자동 증가 크기를 설정하여 볼륨 크기가 비즈니스 요구 사항과 애플리케이션 요구 사항에 맞게 프로비저닝된 크기를 넘어 증가할 수 있습니다.</block>
   <block id="9f1effd9ace68ca00fe9e9e3c024b362" category="inline-link-macro">볼륨 자동 확장 활성화</block>
@@ -1997,7 +1994,6 @@
   <block id="0b81b68aa4b4da3fc81b7541c9557525" category="summary">NetApp Workload Factory에서는 볼륨을 생성한 후 스토리지 효율성 설정을 업데이트할 수 있습니다.</block>
   <block id="0254d70b292c2efb3924bc70f603207a" category="summary">필요에 따라 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다.</block>
   <block id="5b7dc0f0cef1ddf767dff9731a57d8a4" category="list-text">*FSx for ONTAP*에서 처리량 용량을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="be31b62eb26bc544ed1c2919a1a354d8" category="summary">NetApp Workload Factory에서 온프레미스 ONTAP 데이터를 검색하고 복제하여 AI 지식 기반을 강화하는 데 사용할 수 있습니다.</block>
   <block id="5811115476eeb3b923e56f3b218e8861" category="doc">NetApp Workload Factory에서 온프레미스 ONTAP 클러스터 데이터 사용</block>
   <block id="5433703774e7ff1a361e7a705d25ba42" category="paragraph">NetApp Workload Factory에서 온프레미스 ONTAP 클러스터를 검색하여 Amazon FSx for NetApp ONTAP 파일 시스템에 데이터를 복제할 수 있습니다.</block>
   <block id="cab5c35909125289d94f24cfb933bb6d" category="list-text">*링크*: 링크를 선택하세요.  이 링크는 온프레미스 클러스터와 연결되어 클러스터와 Workload Factory 간의 연결을 생성합니다.</block>
@@ -3152,8 +3148,6 @@
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">사용자 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 알림과 부정확한 최적화 결과를 방지할 수 있습니다.</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">사용자 지정 규칙에 대해 자세히 알아보기</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">또한 일반 언어로 사용자 지정 규칙을 만들어 조직 표준 및 NetApp 모범 사례에 따라 환경의 유효성을 검사할 수 있습니다. 모의 실행을 통해 규칙을 테스트한 다음, 모든 환경에서 실행되도록 예약할 수 있습니다. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">또한 일반 언어로 사용자 지정 규칙을 만들어 조직 표준 및 NetApp 모범 사례에 따라 환경의 유효성을 검사할 수 있습니다. 모의 실행을 통해 규칙을 테스트한 다음, 모든 환경에서 실행되도록 예약할 수 있습니다.</block>
-  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
   <block id="782a430d789ff1db80e40fbe9c0be819" category="paragraph">잘 설계된 대시보드는 스토리지 구성을 ONTAP 모범 사례 및 AWS Well-Architected Framework에 따라 평가합니다. 또한 평가 결과는 개선 사항 및 수정 사항을 권장합니다.</block>
   <block id="790f31a1565b039a710f1ff6cd60e24a" category="list-text">*볼륨 백업*</block>
   <block id="ca512a483bb26b1b253abc6b2cc463bd" category="list-text">*스냅샷 정책*</block>
@@ -3249,4 +3243,7 @@
   <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.</block>
   <block id="adf6bc23c10d536eed25c42f34ba48e8" category="section-title">2026년 8월 2일</block>
   <block id="bb971caaebe9e5940267caf457500810" category="paragraph"><block ref="247b746a5e5f871115d636673a8fd3a7" category="inline-link-macro-rx"></block>.</block>
+  <block id="935b1e26eff078e94b224d92e0db898a" category="section-title">볼륨 탐색기에 표시되는 ONTAP 기능</block>
+  <block id="2d4406cf931edb2fbd5ab72e7eb07c66" category="paragraph">볼륨 탐색기의 볼륨 테이블에 이제 ONTAP 기능이 포함됩니다. 이러한 기능을 통해 보호 범위, 자율 랜섬웨어 보호(ARP/AI) 상태, 스토리지 효율성, 계층화 정책 및 볼륨 자동 확장 등 볼륨의 구성 및 상태에 대한 보다 자세한 인사이트를 얻을 수 있습니다.</block>
+  <block id="5800d9f6c1560d9eaf8bc5fbacb4698b" category="summary">온프레미스 ONTAP 데이터를 NetApp Workload Factory에서 검색하고 복제하여 클라우드에서 백업으로 사용할 수 있습니다.</block>
 </blocks>
