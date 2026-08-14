@@ -665,7 +665,6 @@
   <block id="d4aa654cea4681dd5ca03650594006c6" category="paragraph">스토리지 인벤토리가 두 개의 탭 보기로 업데이트되었습니다.</block>
   <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAP 탭: 현재 사용 중인 FSx for ONTAP 파일 시스템을 표시합니다.</block>
   <block id="1113c9108b3e58789456954d1c2ea9c2" category="list-text">Explore Savings Tab: Elastic Block Store, FSx for Windows File Server 및 Elastic File Systems 스토리지 시스템을 표시합니다. 이 페이지에서 이러한 시스템을 FSx for ONTAP와 비교하여 절감 효과를 살펴볼 수 있습니다.</block>
-  <block id="fa8dc6e67f45bcde58853510e56ce6a1" category="list-text">파일 시스템의 개요 탭에서 * Volumes * 탭을 선택합니다.</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
   <block id="ddeb24aeadcd9bd34930d38c34152c03" category="paragraph">Amazon FSx for NetApp ONTAP은 현재 BlueXP  워크로드 공장에서 일반적으로 사용할 수 있습니다.</block>
   <block id="03b2cfc949418819e16b1dc5fa3660ae" category="list-text"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block></block>
@@ -1687,7 +1686,6 @@
   <block id="996e4fdffc6efd7771fa6411f0940007" category="list-text">저장소 타일에서 *저장소로 이동*을 선택합니다.</block>
   <block id="c9183e42d9edf5bc557a95d0fcd830f8" category="list-text">저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.</block>
   <block id="cc36383b6d55299948c19a38634c0ed7" category="list-text">*FSx for ONTAP*에서 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="1aaa150ea3c3e20cd941880ef4ca9ee7" category="list-text">볼륨 탭에서 볼륨에 대한 작업 메뉴를 선택한 다음, *기본 작업*을 선택하고, *마운트 명령 보기*를 선택합니다.</block>
   <block id="0c3eb461868f40b32a844e766aa447f2" category="summary">NetApp Workload Factory에서 파일 시스템에 고가용성 쌍을 추가하여 파일 시스템을 확장합니다.</block>
   <block id="bf79d5699d9edd84404a4a8329ed718d" category="doc">NetApp Workload Factory에서 파일 시스템에 HA 쌍 추가</block>
   <block id="24d80cd4a2c4c1ee117632b920ca71fb" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 2세대 Single-AZ 파일 시스템을 확장하여 성능과 용량을 늘리기 위해 고가용성(HA) 쌍을 추가합니다.  이 확장을 통해 1세대 파일 시스템에 비해 더 높은 성능 확장성과 유연성을 얻을 수 있습니다.</block>
@@ -1701,12 +1699,8 @@
   <block id="2ff7a46726c966e01bbcc4052737dbbe" category="summary">NetApp Workload Factory에서 계층화 정책을 변경하여 고성능 기본 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 다시 할당합니다.</block>
   <block id="3d5c60784595da751938bc111888efbd" category="doc">NetApp Workload Factory에서 볼륨의 계층화 정책 변경</block>
   <block id="610d9c48d80785e2e96de1cf9e9d1b50" category="paragraph">NetApp Workload Factory에서는 계층화 정책을 변경하여 고성능 기본 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 데이터를 자동으로 재할당할 수 있습니다.</block>
-  <block id="f6f4b65cef81ea21c7e8a40a545e0c13" category="list-text">*FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="1b26a7c821c2d1ec34316ae8d20caf22" category="list-text">볼륨 탭에서 계층화 정책을 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="e17c10e87203de595282b8a183261cb8" category="summary">테스트를 위해 NetApp Workload Factory에서 볼륨을 복제하여 원래 볼륨의 읽기/쓰기 볼륨을 만듭니다.</block>
   <block id="21c979f4327cd67644d8ab5b64a762c7" category="doc">NetApp Workload Factory에서 볼륨 복제</block>
-  <block id="6681a3fb664c63dc897bbc8182969165" category="list-text">*FSx for ONTAP*에서 복제할 볼륨이 포함된 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="6b74b1eeb944b58dcf027766f050311f" category="list-text">볼륨 탭에서 복제할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
@@ -1768,8 +1762,6 @@
   <block id="06a91edaa8e77e04dfd0ccc1dee5a6c7" category="list-text">복제 관계 탭에서 삭제할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="ce1de3f28d8568be87cdce779516de02" category="doc">NetApp Workload Factory에서 스토리지 VM 삭제</block>
   <block id="d287f4840c4e2956b3e030d276822021" category="doc">NetApp Workload Factory에서 볼륨 삭제</block>
-  <block id="5d2b2d216923f677893f0a068bc1b92f" category="list-text">*FSx for ONTAP*에서 삭제할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="1235950c75ed0fc0a7588ccae6518e39" category="list-text">볼륨 탭에서 삭제할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="d3642378f76a85654ded51afcb1ef1e1" category="summary">NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관된 캐시 볼륨을 검색하고 볼 수 있습니다.</block>
   <block id="6941de74744e8105d82d9020761bcfab" category="doc">Workload Factory에서 캐시 볼륨을 검색합니다.</block>
   <block id="48a0f6fd350fab8343613dcbe8a68778" category="paragraph">NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관된 _캐시_ 볼륨을 검색하고 볼 수 있습니다.  캐시 관계는 ONTAP FlexCache 관계라고도 합니다.  Workload Factory는 NetApp ONTAP의 원격 캐싱 기능인 FlexCache 기술을 사용하여 기존 캐시 관계를 검색합니다. FlexCache는 데이터 액세스를 가속화하고, WAN 지연 시간과 대역폭을 줄이고, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 읽기 중심 워크로드의 비용을 줄여줍니다.</block>
@@ -1795,7 +1787,6 @@
   <block id="3b231d6cca54e9d09e25b1461d3caafb" category="list-text">*내보내기 정책*: 캐시 볼륨의 내보내기 정책입니다.</block>
   <block id="c39b3cbd986af96ef05b9724f0b92e6b" category="summary">볼륨 자동 증가를 활성화하면 Workload Factory에서 볼륨 용량을 관리하게 됩니다.  언제든지 비활성화할 수 있습니다.</block>
   <block id="467fbaad5c04b9212fefde208c6fce39" category="doc">Workload Factory에서 볼륨 자동 증가 활성화</block>
-  <block id="c7cb41d0ae0beeca525b094df6834ee5" category="list-text">볼륨 탭에서 수정하려는 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="a2f3bd55649066a9bad9a42a8df63f08" category="paragraph">NetApp Workload Factory에서는 장기 보존을 위한 스냅샷을 활성화하여 장기 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다.</block>
   <block id="116537ad3a8e9d253ab6c2cf9b1375c4" category="list-text">*FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="92f16ef088dcbde798778ff8c71b147a" category="list-text">복제 관계 탭에서 변경할 복제 관계 일정의 작업 메뉴를 선택합니다.</block>
@@ -1884,7 +1875,6 @@
   <block id="8d0a9b10b0feb1fbeb54874e4db30c45" category="paragraph"><block ref="8d0a9b10b0feb1fbeb54874e4db30c45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f84e7918b5436d562b6058d69a5e22b" category="summary">NetApp Workload Factory에서 NFSv3 또는 NFSv4.1 프로토콜 유형을 사용하는 볼륨에 대한 NFS 내보내기 정책을 관리합니다.</block>
   <block id="be75a4ee41ef1c041e10be17f5ab5d8f" category="doc">NetApp Workload Factory에서 볼륨에 대한 NFS 내보내기 정책 관리</block>
-  <block id="993ea00ff886b5116c867dbdd8d75b42" category="list-text">볼륨 탭에서 NFS 내보내기 정책을 변경할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="45bad92c0320862bb24bd94703db0a08" category="summary">Workload Factory에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 관리합니다.  스냅샷 정책은 시스템이 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
   <block id="e792f4d27d1dc64295baf4344c9aca49" category="inline-link-macro">Workload Factory 링크에 대해 알아보세요</block>
   <block id="144a013b1a947d3417ed511a6b60a2e1" category="paragraph">일부 관리 작업에서는 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. <block ref="0a8e0c490635c3084d9a0f334be1cdcd" category="inline-link-macro-rx"></block> .</block>
@@ -1898,17 +1888,13 @@
   <block id="47fec2ccab1a87c8590bba0a1eac637f" category="list-text">*저장소 VM* 탭에서 삭제할 스냅샷 정책이 있는 저장소 VM의 작업 메뉴를 선택한 다음, *고급 작업*을 선택하고, *스냅샷 정책 관리*를 선택합니다.</block>
   <block id="5ce0c735c2fdff568cde0fe04cd352dd" category="list-text">스냅샷 정책 관리 페이지에서 삭제할 스냅샷 정책에 대한 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
   <block id="91a579a09ed9e4ecf83528c827e70a4c" category="summary">Workload Factory에서 스냅샷 설정을 편집하고, 디렉토리 액세스를 활성화하고, 스냅샷을 삭제하여 스냅샷과 데이터 보호를 관리합니다.</block>
-  <block id="1e5f7a56c856392667c0c36867dc8619" category="list-text">*볼륨* 탭에서 스냅샷을 편집할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="f94d144be400675ae807174184acbf5f" category="list-text">스냅샷 관리 페이지에서 편집할 스냅샷의 작업 메뉴를 선택한 다음, *편집*을 선택합니다.</block>
-  <block id="e40ca92ee889685f3160fdbac6cfd9da" category="list-text">*볼륨* 탭에서 스냅샷에 액세스할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="59bcba28fd08adb2991cdf5d82670fe0" category="list-text">스냅샷 관리 페이지에서 액세스할 스냅샷에 대한 작업 메뉴를 선택한 다음, *액세스*를 선택합니다.</block>
-  <block id="1853be3bc9ba64143d905bf1b187d07e" category="list-text">*볼륨* 탭에서 스냅샷을 삭제할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="f1275ed085039c3832dda6dfba0ad9f2" category="list-text">스냅샷 관리 페이지에서 삭제할 스냅샷의 작업 메뉴를 선택한 다음, *삭제*를 선택합니다.</block>
   <block id="b8b31b5d8488dcb7ebd8c2bb9ba38f50" category="doc">NetApp Workload Factory에서 스토리지 VM 태그 관리</block>
   <block id="0c950433d94be139f73fb59247d857a5" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서는 언제든지 스토리지 VM에 대한 태그를 추가, 편집 및 제거할 수 있습니다.</block>
   <block id="558281a06321bc8c7b90d170a463683f" category="doc">NetApp Workload Factory에서 볼륨 태그 관리</block>
   <block id="693a8f663c39ae53134101e5d974fda8" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서 FSx for ONTAP 볼륨의 볼륨 태그를 언제든지 추가, 편집 및 제거할 수 있습니다.</block>
-  <block id="ff53601e946713a2f9385573998c76d7" category="list-text">볼륨 탭에서 태그를 수정할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="674b84367e7a585d7eb4cb69538ab5be" category="paragraph">NetApp Workload Factory의 Tracker를 사용하여 FSx for ONTAP , 자격 증명 및 링크 작업의 실행을 모니터링하고 추적하며 작업 진행 상황을 모니터링합니다.</block>
   <block id="e80eb219e8472681a001172074028f46" category="paragraph">Tracker를 사용하여 NetApp 콘솔에서 작업을 추적하고 모니터링하세요.</block>
   <block id="bd56fc255ce900fc195c9bc0d7ed20c0" category="list-text">작업 메뉴를 선택한 다음 *API 요청 보기*를 선택합니다.</block>
@@ -1932,7 +1918,6 @@
   <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link-macro">워크로드 팩토리 콘솔</block>
   <block id="42417c07633018b12e0946c06afcf181" category="paragraph">Workload Factory에서 스토리지와 FSx for ONTAP 리소스를 관리하기 위해 FSx 파일 시스템을 생성합니다.  에서<block ref="ed002915dbbbf90a20b3d8fdf4cc2390" category="inline-link-macro-rx"></block> 저장소에서 *파일 시스템 만들기*를 선택합니다. <block ref="1f3b8beb11bf530a33922b2af302faf4" category="inline-link-macro-rx"></block> .</block>
   <block id="dfb50a8875f6e98586f1d46423ec7e59" category="list-text">*FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택하여 ARP/AI를 활성화한 다음 *관리*를 선택합니다.</block>
-  <block id="ac3784491c023b93e68ef3c4bd387b65" category="list-text">볼륨 탭에서 볼륨의 작업 메뉴를 선택하여 ARP/AI를 활성화한 다음, *데이터 보호 작업*을 선택하고, *ARP/AI 관리*를 선택합니다.</block>
   <block id="6ff824e5b33a50750960455d60fe1f8b" category="list-text">*FSx for ONTAP*에서 랜섬웨어 공격을 검증할 파일 시스템을 선택합니다.</block>
   <block id="11e2850db68a18789eeda1447d049dcb" category="list-text">*FSx for ONTAP*에서 데이터를 복구할 파일 시스템을 선택합니다.</block>
   <block id="9a16d80af35e46e7a29a2afaa0ce9a2f" category="paragraph">FlexGroup 볼륨 용량의 균형을 확인하는 작업에는 구성 요소의 현재 레이아웃을 평가하는 작업이 포함됩니다.  볼륨의 용량을 재조정할 때 NetApp Workload Factory는 모든 HA 쌍에 데이터를 균등하게 분산하기 위해 짝수 개의 구성 요소를 포함하는 새로운 구성 요소 레이아웃을 설계합니다.  이 서비스는 재조정 계획을 실행하여 읽기 및 쓰기 작업을 개선합니다.</block>
@@ -1952,7 +1937,6 @@
   <block id="3c483a45ab5fea02162be0b6c6004287" category="doc">NetApp Workload Factory에서 스토리지 VM 암호 재설정</block>
   <block id="398b64d3ae2c039c62637d684fcbe30d" category="doc">NetApp Workload Factory에서 백업으로부터 볼륨 복원</block>
   <block id="19002cddfac8e15ce79f8ccad53b74e6" category="paragraph">NetApp Workload Factory에서는 AWS 계정의 FSx for ONTAP 파일 시스템으로 백업의 볼륨을 복원할 수 있습니다.</block>
-  <block id="de32db8377dafaed047e32a0f5c78af1" category="list-text">*볼륨* 탭에서 백업에서 복원할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="e8c0bed13dff2e82ae3fd20a79157041" category="list-text">복원을 통해 사용된 용량이 지정한 임계값을 초과할 수 있습니다.  복구 작업을 완료할 수 있습니다.  고려하다<block ref="e41647392a26a0e6b166f921fc9cbdef" category="inline-link-macro-rx"></block> 또는 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택합니다.</block>
   <block id="2235d115064fc8246f43d55ab62b045c" category="list-text">복원에는 추가 SSD 용량이 필요합니다.  계속하려면 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택해야 합니다.</block>
   <block id="fa6f999947ca23d9e3e71b237b583528" category="doc">Workload Factory의 스냅샷에서 볼륨 복원</block>
@@ -1965,8 +1949,6 @@
   <block id="117ff5e4baddbf50b3b38a288594d39b" category="doc">NetApp Workload Factory의 FSx for ONTAP 보안</block>
   <block id="258917ec2ee16288f0cdb1fe8af0633f" category="doc">NetApp Workload Factory에서 복제된 볼륨 분할</block>
   <block id="0ce9d462b15862a3d7f4258b37af2df3" category="paragraph">복제된 FlexVol volume 부모 볼륨에서 분할하여 복제본을 NetApp Workload Factory의 일반 읽기/쓰기 FlexVol volume 만듭니다.</block>
-  <block id="e1fc729a6319223f80f6d7f88934e179" category="list-text">*FSx for ONTAP*에서 분할할 볼륨 복제본이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="906eee5e28e72698e56c531975e986b8" category="list-text">볼륨 탭에서 분할할 복제된 볼륨이 있는 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="0afeadc4bedc444ef9fe962788f3cabc" category="summary">NetApp Workload Factory에서 소스 볼륨과 대상 볼륨 간의 복제 관계를 중지합니다.</block>
   <block id="695c1eee16df28fb12cc40895f214b89" category="doc">NetApp Workload Factory에서 복제 관계 중지</block>
   <block id="6ac52b356e1de0ea8172c07c761b9a77" category="paragraph">NetApp Workload Factory에서 복제 관계를 중지합니다.  복제 관계를 중지하면 소스 볼륨에서 대상 볼륨으로의 예약된 복제 업데이트가 일시 중지됩니다.  대상 볼륨이 읽기 전용에서 읽기/쓰기로 전환됩니다.</block>
@@ -2057,7 +2039,6 @@
   <block id="08842901b516656f4ce72eb7f4f5c0d1" category="paragraph">iSCSI LUN의 경우 볼륨 크기를 늘리면 호스트 LUN의 크기도 늘어납니다.  볼륨 용량을 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 LUN의 새로운 크기를 확인하고 LUN의 파일 시스템을 확장합니다.</block>
   <block id="f4d84340dd6fee1664a29cabc2ba8c39" category="paragraph">볼륨 크기 감소는 NFS 및 SMB/CIFS 볼륨에만 지원됩니다.</block>
   <block id="2880a60b72532c629f0cc885860ca8e5" category="paragraph">볼륨 용량을 조정하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="57730f251586648892ae3bf2485f043e" category="list-text">볼륨 탭에서 용량을 조정할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="4e54161de298fea40a1792b1351b1789" category="list-text">*기본 동작*을 선택한 다음 *볼륨 용량 조정*을 선택합니다.</block>
   <block id="4fbd17d05637f9e5fed62de5f827a895" category="list-text">볼륨 용량 조정 대화 상자에서 *프로비저닝된 용량*과 단위를 설정합니다.</block>
   <block id="6a6abbaa1bbd0c301b070b7a1615b31d" category="list-text">변경 사항을 적용하려면 *조정*을 선택하세요.</block>
@@ -2401,7 +2382,6 @@
   <block id="34fc9e9b0a58447e45d29d99c376a3ec" category="paragraph"><block ref="34fc9e9b0a58447e45d29d99c376a3ec" category="inline-link-macro-rx"></block></block>
   <block id="69b8b9524d643674b889fa70c17e1cc8" category="inline-link-macro">_operations and remediation_ 권한 정책을 사용하여 자격 증명을 부여하십시오.</block>
   <block id="8c378042ad1ba655fb1f5cd941dc98b6" category="list-text">이 작업을 완료하려면 Workload Factory에서 <block ref="c6ffb720e530188ab1b1bff284837062" category="inline-link-macro-rx"></block>해야 합니다.</block>
-  <block id="0a76b0d6a11006d8a1c5f62db933ddb6" category="list-text">*FSx for ONTAP*에서 업데이트할 볼륨이 있는 파일 시스템을 선택합니다.</block>
   <block id="37068c532170e23c2a91d4d23699dd31" category="list-text">*S3 액세스 포인트 관리* 화면에서 작업 메뉴를 선택한 다음 *액세스 포인트 편집*을 선택합니다.</block>
   <block id="076804dea9fcf3467cf7c699f9811498" category="list-text">업데이트한 후 *적용*을 선택합니다.</block>
   <block id="f6e1df464413e09857979a0ca8b75a4b" category="paragraph">NetApp Workload Factory의 볼륨에서 기존 S3 액세스 포인트를 삭제합니다.</block>
@@ -2549,7 +2529,6 @@
   <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">블록 디바이스를 7일 동안 사용하지 않으면 Workload Factory에서는 비용 절감을 위해 블록 디바이스 데이터를 아카이빙하거나 사용하지 않는 블록 디바이스를 삭제할 것을 권장합니다.</block>
   <block id="3224742265d3111d23b216e2a1d3036c" category="paragraph">볼륨 백업은 볼륨당 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.</block>
   <block id="9b1c40247bbd6b430d06045ce9149bf4" category="paragraph">볼륨 백업은 증분 백업 방식입니다. 즉, 가장 최근 백업 이후 변경된 데이터만 저장됩니다. 따라서 백업 생성에 필요한 시간과 저장 공간을 최소화하여 데이터 중복을 방지하고 저장 비용을 절감할 수 있습니다.</block>
-  <block id="40e95cbe82fc979afaca404d45ab88c7" category="list-text">*볼륨* 탭에서 백업할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="0b3a2f729072cb80e423288abd69fa27" category="list-text">* 데이터 보호 작업 *, * 볼륨 백업 *, * 수동 백업 * 을 차례로 선택합니다.</block>
   <block id="108be83f8740c01bf49fb6d51d4b134e" category="admonition">스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본을 만들려면 볼륨 백업 또는 볼륨 복제 기능을 사용하는 것을 고려해 보세요.</block>
   <block id="d6a7c6eb08e4e62d76793fd3d8b368d4" category="list-text">볼륨 백업: 볼륨 백업 복사본은 그대로 유지되며 계속 사용할 수 있습니다.</block>
@@ -2587,7 +2566,6 @@
   <block id="9dcfa34c623752899d0cd665d6921df4" category="paragraph">시작하기 전에 다음 요구 사항을 완료하십시오.</block>
   <block id="a3e0a4d34abe4cb6242fd1657cb155d4" category="inline-link-macro">S3 액세스 포인트를 사용하여 볼륨 생성</block>
   <block id="6f6ccfdfe231ae2138827786254112c2" category="list-text">S3 액세스 포인트가 있는 기존 볼륨이 있어야 합니다.<block ref="c7b581e6d0e133046496fe0baeb0e257" category="inline-link-macro-rx"></block></block>
-  <block id="450d84b08c6958224dd89ed70bc5e196" category="list-text">볼륨 탭에서 사용하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
   <block id="1ab0f92903be1ffc4bfffd2b16c9822b" category="list-text">S3 액세스 포인트 관리 페이지에서 *S3 액세스 포인트 생성 및 연결*을 선택합니다.</block>
   <block id="d4e1585a083abcd993be7dae0c424273" category="list-text">*S3 액세스 포인트 생성 및 연결* 페이지에서 다음 정보를 제공하십시오.</block>
   <block id="8f3e222b23e17bc1bb1082500f8b04e5" category="list-text">*네트워크 구성*: *인터넷* 또는 *가상 프라이빗 클라우드(VPC)*를 선택하십시오. 선택하는 네트워크 유형에 따라 액세스 포인트가 인터넷에서 액세스 가능한지 또는 특정 VPC로 제한되는지가 결정됩니다. 저널 테이블 기능을 사용하려면 네트워크 구성으로 *인터넷*을 선택해야 합니다.</block>
@@ -2609,7 +2587,6 @@
   <block id="d2352112ab40045cec0375e016ea4229" category="doc">NetApp Workload Factory에서 볼륨의 S3 액세스 포인트를 편집합니다</block>
   <block id="4f2481bead84c7e45263bffec42a080f" category="paragraph">NetApp Workload Factory에서 S3 액세스 포인트 세부 정보를 업데이트하고 볼륨의 태그를 관리합니다.</block>
   <block id="a2872fa19a103aff070420e355911099" category="paragraph">액세스 포인트에 대한 *인벤토리 테이블*을 활성화 또는 비활성화할 수도 있습니다. 인벤토리 테이블은 S3 액세스 포인트에서 접근 가능한 모든 객체에 대한 메타데이터를 생성하며, 이 과정에서 AWS S3 요청 비용이 발생합니다. 자세한 내용은 <block ref="af9c8757ba81fcc825b028513d05dce7" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="fdc1e49b1bc817c660403950b89e1054" category="list-text">볼륨 탭에서 S3 액세스 포인트를 편집하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
   <block id="c0945892db5abb8e13b1125b34afb488" category="inline-link-macro">NetApp Workload Factory용 저널 테이블 인프라를 설정하는 방법을 알아보십시오</block>
   <block id="e5eaf9094fc3ae9a063c974472917f15" category="list-text">igroup이 존재하지 않으면 *Map igroup &gt; Create igroup*을 선택하여 새 igroup을 생성한 다음 다음을 수행하십시오.</block>
   <block id="cd7bfadfb1480ea2e4e23f8c5b8ec668" category="list-text">igroup이 이미 있는 경우 *igroup 매핑 &gt; 기존 igroup 매핑*을 선택하여 igroup에서 블록 디바이스 및 호스트 이니시에이터를 추가 또는 제거한 다음 *매핑*을 선택합니다.</block>
@@ -2966,7 +2943,6 @@
   <block id="6935aa37908b8d3e8e6495adec301374" category="section-title">볼륨 지연 시간 임계값 설정</block>
   <block id="8d36c5c4d1b5b3180db932fcf4bd5e3b" category="paragraph">이제 볼륨별로 지연 시간 임계값을 구성하여 성능을 모니터링하고 읽기 또는 쓰기 지연 시간이 설정된 한도를 초과할 경우 알림을 받을 수 있습니다. 지연 시간 모니터링을 통해 워크로드에 영향을 미치기 전에 성능 문제를 사전에 파악할 수 있습니다.</block>
   <block id="efbeddc0347a679a438120189b77f860" category="section-title">볼륨 탐색기</block>
-  <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">볼륨 탐색기를 사용하면 NetApp Workload Factory의 모든 볼륨을 간편하게 검색할 수 있습니다. 블록 또는 파일 워크로드를 처리하는 볼륨을 빠르게 확인할 수 있습니다. 각 볼륨의 논리적 크기, 물리적 사용 용량, 스토리지 효율성 기능(압축, 중복 제거, 압축) 사용 여부를 볼 수 있습니다. 이름, 상태(사용 가능/실패), 지연 시간, 크기, 사용 용량 및 보호 기능별로 필터링하고 정렬할 수 있습니다.</block>
   <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">복제 지연에 대한 향상된 이메일 알림 기능</block>
   <block id="bd78ae8d1a9aed4500716acc31d179d8" category="paragraph">복제 지연에 대한 이메일 알림에 이제 영향을 받는 관계에 대한 자세한 정보가 포함됩니다. 이 알림을 통해 영향을 받는 관계를 신속하게 파악하고 Workload Factory 콘솔에서 확인할 수 있습니다.</block>
   <block id="4dc5c4a9c4b845746295cce1108ec278" category="inline-link-macro">복제 지연에 대한 알림 활성화</block>
@@ -3033,8 +3009,6 @@
   <block id="037ea7d94a5a2563d24d4aab128c2f74" category="list-text">*시간 범위*: 10분</block>
   <block id="fc30acb77198b9a113675211028eeb7f" category="paragraph">지정된 시간 범위 내에서 지연 시간 임계값이 초과되고 IOPS 임계값에 도달하면 경고가 생성됩니다.</block>
   <block id="d663edf15a1c9b9cce32f438ee09111b" category="admonition">링크 연결 없이도 지연 이벤트를 확인하고 알림을 받을 수 있습니다. 하지만 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
-  <block id="c860af979551dbcf8788e767b74ef2f4" category="list-text">*FSx for ONTAP*에서 구성할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="ecfd19bbe3c2c4e92ff25fd22f2d17fe" category="list-text">볼륨 탭에서 지연 시간 임계값을 설정할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="ee43009d0c790146325573e838a42f39" category="list-text">*알림 작업*을 선택한 다음 *지연 시간 임계값 설정*을 선택합니다.</block>
   <block id="e7199990279785fb0027f522b7518c23" category="list-text">'지연 시간 임계값 설정' 대화 상자에서 다음을 구성하십시오.</block>
   <block id="18a1f4ac498e878706a9bea4c3f7d8d2" category="list-text">*읽기 지연 시간*: 읽기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.</block>
@@ -3086,8 +3060,6 @@
   <block id="73a2a12878b0731214258fd091d03336" category="list-text">기타 모든 계정: 온프레미스 ONTAP 클러스터의 ONTAP 자격 증명을 입력하십시오. 사용자에게 필요한 권한이 있는지 확인하십시오.</block>
   <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">2026년 7월 5일</block>
   <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026년 5월 31일</block>
-  <block id="c78fe199ccaa5a2c357a3d2c45be14ef" category="list-text">저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.</block>
-  <block id="6ff324bc406694300a857d2e2fe3a576" category="list-text">*Volume explorer* 에서 *Create volume* 을 선택합니다.</block>
   <block id="f4258ab9dce223a884192f1b0d9eadb2" category="list-text">변경 불가능한 파일이 포함된 볼륨과 NVMe 프로토콜을 사용하는 볼륨은 ARP/AI에서 지원되지 않습니다. iSCSI 볼륨은 ONTAP 9.17.1부터 지원됩니다.</block>
   <block id="36aa278c460567c053811bf14b7377ad" category="summary">NetApp AI 기반 자율형 랜섬웨어 보호(ARP/AI)는 NAS 및 SAN 환경에서 워크로드 분석을 통해 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다.</block>
   <block id="7cfa8a15930cf4747377549a5e84a0d1" category="paragraph">NetApp AI 기반 자율형 랜섬웨어 보호(ARP/AI)로 데이터를 보호하세요. NAS(NFS/SMB) 및 SAN 환경에서 활동을 모니터링하여 랜섬웨어 공격으로 의심되는 비정상적인 동작을 감지합니다. 위협이 감지되면 ARP/AI는 자동으로 새로운 변경 불가능한 스냅샷을 생성하여 데이터를 복원할 수 있도록 지원합니다.</block>
@@ -3250,4 +3222,28 @@
   <block id="8d4d423646d154ba5a24cc06f37ea486" category="doc">Tracker를 사용하여 FSx for ONTAP 작업 모니터링</block>
   <block id="90f9c44ed80c8f4c833d62a795593434" category="list-text">메뉴 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *관리*를 선택하십시오.</block>
   <block id="31793001124176cff5a1e8aea00621a1" category="list-text">관리 메뉴에서 *Tracker*를 선택합니다.</block>
+  <block id="2b2db21e376d227839b25c1e6fcb7638" category="paragraph">볼륨 탐색기를 사용하면 NetApp Workload Factory의 모든 볼륨을 간편하게 검색할 수 있습니다. 블록 또는 파일 워크로드를 처리하는 볼륨을 빠르게 확인할 수 있습니다. 각 볼륨의 논리적 크기, 물리적 사용 용량, 그리고 스토리지 효율성 기능(압축, 중복 제거, 컴팩션) 사용 여부를 볼 수 있습니다. 이름, 상태(사용 가능/실패), 지연 시간, 크기, 사용 용량 및 보호 기능별로 필터링하고 정렬할 수 있습니다.</block>
+  <block id="48392de7f44d75a05d38a8c1a399d8ac" category="list-text">저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.</block>
+  <block id="0f45cf7b6cca473d9d7e8de2825980ea" category="list-text">해당 볼륨의 작업 메뉴를 선택한 다음 *기본 작업*을 선택하고 *마운트 명령 보기*를 선택합니다.</block>
+  <block id="734e7d02ba8f04ee206b66664464af76" category="list-text">수정하려는 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="b758bc36dbea04469939f374e5c90d45" category="list-text">티어링 정책을 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="104cd121230c4d839097d0ce6dfcf7e9" category="list-text">복제할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="fa635f0dee1aabee3d594cd262946445" category="list-text">백업할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="ff500adfe9db74a3a57f9dfa8f256e44" category="list-text">사용하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
+  <block id="e911c00e07738289481f8c4e644342da" category="list-text">*볼륨 생성*을 선택합니다.</block>
+  <block id="5a5c6a5d9f3043f2bbe386d59bc1f1c9" category="list-text">S3 액세스 포인트를 관리하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
+  <block id="0cbc3801897f687d38c6030184ae285b" category="list-text">삭제할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="c1500b3abf886fa0128152eeb4411eb5" category="list-text">S3 액세스 포인트를 편집하려는 볼륨의 작업 메뉴를 선택한 다음 *고급 작업*을 선택하고 *S3 액세스 포인트 관리*를 선택합니다.</block>
+  <block id="4d161e90828a4e8cc4c156f673784c44" category="list-text">SMB 공유를 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="0178234ce599b2e6182625dc7a986f96" category="list-text">업데이트할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="0d10acf0182a3826080273730ac7748c" category="list-text">NFS 내보내기 정책을 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="f61349941fe80b5d2b82070f03d835d5" category="list-text">스냅샷을 편집할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="ba48ebebc07247b7c74acb00034bc5fc" category="list-text">스냅샷이 있는 볼륨에 액세스하려면 해당 볼륨의 작업 메뉴를 선택하십시오.</block>
+  <block id="0b2788e26ea861364476d32ffb3b8c19" category="list-text">스냅샷을 삭제할 볼륨의 작업 메뉴를 선택하십시오.</block>
+  <block id="1111cc43d23839eef53ada84488c133d" category="list-text">태그를 수정할 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="f70b2d7118eadcfe14856f585bfd1225" category="list-text">ARP/AI를 활성화할 볼륨의 작업 메뉴를 선택하고 *데이터 보호 작업*, *ARP/AI 관리*를 차례로 선택합니다.</block>
+  <block id="58c200f393f91f86cb4951a046175681" category="list-text">백업에서 복원할 볼륨의 작업 메뉴를 선택하십시오.</block>
+  <block id="12a6e2d4c91a43e9ac81b18d2fd28a4a" category="list-text">볼륨의 작업 메뉴를 선택하여 지연 시간 임계값을 설정하십시오.</block>
+  <block id="388a60e15f099855100226e2026dc1cd" category="list-text">분할할 복제된 볼륨이 있는 볼륨의 작업 메뉴를 선택합니다.</block>
+  <block id="3b4ba83afa209df4541afdb1c96a15f9" category="list-text">스토리지 효율성 설정을 업데이트할 볼륨의 작업 메뉴를 선택합니다.</block>
 </blocks>
