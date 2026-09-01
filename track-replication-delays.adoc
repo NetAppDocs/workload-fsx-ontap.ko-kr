@@ -4,7 +4,7 @@ permalink: track-replication-delays.html
 keywords: replication, track replication, replication lag, replication delay, delay, monitor replication, replication threshold, lag notification 
 summary: 계정 내 모든 복제 관계의 지연 시간을 모니터링하려면 추적 기능을 활성화하세요. 
 ---
-= 복제 지연 추적
+= NetApp Workload Factory에서 복제 지연 추적
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

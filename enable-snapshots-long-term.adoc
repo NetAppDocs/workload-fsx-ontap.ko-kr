@@ -4,7 +4,7 @@ permalink: enable-snapshots-long-term.html
 keywords: snapshot long-term retention, enable long-term retention 
 summary: 장기 보존을 위해 스냅샷을 사용하도록 설정하여 장기적인 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다. 
 ---
-= 장기 보존을 위해 스냅샷을 설정 및 편집합니다
+= NetApp Workload Factory에서 장기 스냅샷 보존 활성화
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

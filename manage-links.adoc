@@ -4,7 +4,7 @@ permalink: manage-links.html
 keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
 summary: NetApp Workload Factory에서 계정과 연결된 링크를 보고, 링크 인증을 위한 비밀번호를 업데이트하고, 링크를 제거할 수 있습니다. 
 ---
-= 워크로드 팩토리 링크 관리
+= NetApp Workload Factory 링크 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

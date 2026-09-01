@@ -4,7 +4,7 @@ permalink: create-backup.html
 keywords: create backup, volume backup, back up a volume, FSx for ONTAP backup, manual backup 
 summary: 정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다. 
 ---
-= NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.
+= NetApp Workload Factory에서 볼륨의 온디맨드 백업 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

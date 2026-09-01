@@ -4,7 +4,7 @@ permalink: create-snapshot-policy.html
 keywords: create 
 summary: Workload Factory에서 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만듭니다. 
 ---
-= Workload Factory에서 스토리지 VM에 대한 스냅샷 정책을 만듭니다.
+= NetApp Workload Factory에서 스토리지 VM에 대한 스냅샷 정책 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

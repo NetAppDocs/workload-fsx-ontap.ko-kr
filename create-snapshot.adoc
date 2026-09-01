@@ -4,7 +4,7 @@ permalink: create-snapshot.html
 keywords: create snapshot, snapshot 
 summary: NetApp Workload Factory에서 FSx for ONTAP 볼륨의 수동 스냅샷을 만듭니다.  스냅샷은 볼륨 콘텐츠의 특정 시점 버전입니다. 
 ---
-= FSx for ONTAP 볼륨의 수동 스냅샷을 생성합니다
+= NetApp Workload Factory에서 볼륨의 온디맨드 스냅샷 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

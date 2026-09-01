@@ -4,7 +4,7 @@ permalink: update-snapshot-replication.html
 keywords: update snapshot data, replication 
 summary: 언제든지 복제 관계에서 소스 볼륨과 타겟 볼륨 간에 전송된 스냅샷 데이터를 수동으로 업데이트합니다. 
 ---
-= 복제 관계에서 스냅샷 데이터를 업데이트합니다
+= NetApp Workload Factory에서 복제 스냅샷 데이터 업데이트
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

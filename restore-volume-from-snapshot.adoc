@@ -4,7 +4,7 @@ permalink: restore-volume-from-snapshot.html
 keywords: restore volume, snapshot 
 summary: 볼륨에 삭제되거나 손상된 파일이 있을 때 스냅샷에서 FSx for ONTAP 볼륨을 복원합니다. 
 ---
-= Workload Factory의 스냅샷에서 볼륨 복원
+= NetApp Workload Factory에서 스냅샷으로 볼륨 복원
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: view-s3-details.html
 keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
 summary: NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트의 세부 정보를 확인하세요. 
 ---
-= NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트 세부 정보를 확인하세요
+= NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트 세부 정보 보기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
