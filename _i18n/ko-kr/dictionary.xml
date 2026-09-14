@@ -3103,6 +3103,8 @@
   <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">즉각적인 인플레이스 데이터 클로닝을 위한 클론 생성 및 관리</block>
   <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">ONTAP 버전 등 ONTAP에서 직접 추가 메트릭 표시</block>
   <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">스토리지 VM 및 클러스터 LIF의 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 세부 정보 표시</block>
-  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">FSx for ONTAP 파일 시스템에 링크 연결</block>
-  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph"><block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="bf7102668593cd82fd27a66594640387" category="inline-link-macro">FSx for ONTAP 파일 시스템에 링크 연결</block>
+  <block id="f54caf9bcfff2cb7aa30ba073518e7db" category="list-text"><block ref="f54caf9bcfff2cb7aa30ba073518e7db" category="inline-link-macro-rx"></block></block>
+  <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="inline-link-macro">링크 관리</block>
+  <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
 </blocks>
