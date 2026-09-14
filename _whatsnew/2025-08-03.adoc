@@ -62,7 +62,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 이제 Codebox에서 Terraform을 사용하여 FSx for ONTAP 파일 시스템과의 연결을 위한 링크를 생성할 수 있습니다.  이 기능은 수동으로 링크를 만드는 사용자를 위한 것입니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다"^]
 
 
 

@@ -77,4 +77,4 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 이제 Workload Factory 콘솔에서 링크를 만들 때 IAM 실행 역할과 연결된 권한 정책을 관리할 수 있습니다.  링크는 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다.  IAM 실행 역할과 링크 권한을 할당하는 데는 자동 또는 사용자 지정의 두 가지 옵션이 있습니다.  Workload Factory에서 실행 역할과 이에 연결된 권한 정책을 관리한다는 것은 더 이상 타사 코드를 사용할 필요가 없다는 것을 의미합니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다"^]

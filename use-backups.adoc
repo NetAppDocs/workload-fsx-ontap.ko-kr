@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: use-backups.html 
+keywords: create backup, volume backup, back up a volume, FSx for ONTAP backup, manual backup, restore from a backup, restore volume 
+summary: NetApp Workload Factory에서 백업을 생성하고 복원하여 실수로 인한 삭제, 손상 및 기타 데이터 손실로부터 볼륨 데이터를 보호하십시오. 
+---
+= NetApp Workload Factory에서 데이터를 보호하려면 백업을 사용하십시오.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory에서 백업을 생성하고 복원하여 실수로 인한 삭제, 손상 및 기타 데이터 손실로부터 볼륨 데이터를 보호하세요. 백업 일정을 설정하고, 정기 백업 일정 외에 필요에 따라 볼륨 백업을 생성할 수 있으며, 기존 백업에서 AWS 계정의 모든 FSx for ONTAP 파일 시스템으로 볼륨을 복원할 수 있습니다.
+
+
+
+[[create-an-on-demand-backup-of-a-volume]]
+== 볼륨의 온디맨드 백업 생성
+
+NetApp Workload Factory에서 정기적으로 예약된 백업 외에 볼륨의 수동 백업을 만듭니다.
+
+.이 작업에 대해
+볼륨 백업은 볼륨당 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.
+
+볼륨 백업은 증분 백업 방식입니다. 즉, 가장 최근 백업 이후 변경된 데이터만 저장됩니다. 따라서 백업 생성에 필요한 시간과 저장 공간을 최소화하여 데이터 중복을 방지하고 저장 비용을 절감할 수 있습니다.
+
+.시작하기 전에
+볼륨을 백업하려면 볼륨과 파일 시스템 모두에 백업 스냅샷을 저장할 수 있는 충분한 SSD 저장 용량이 있어야 합니다. 백업 스냅샷을 생성할 때 스냅샷에 사용된 추가 스토리지 용량으로 인해 볼륨이 SSD 스토리지 사용률을 98%로 초과할 수 없습니다. 이 경우 백업이 실패합니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.
+. 백업할 볼륨의 작업 메뉴를 선택합니다.
+. * 데이터 보호 작업 *, * 볼륨 백업 *, * 수동 백업 * 을 차례로 선택합니다.
+. 수동 백업 대화 상자에서 백업 이름을 입력합니다.
+. 백업 * 을 선택합니다.
+
+
+
+
+[[restore-a-volume-from-a-backup-in-netapp-workload-factory]]
+== NetApp Workload Factory에서 백업으로부터 볼륨 복원
+
+NetApp Workload Factory에서는 AWS 계정의 FSx for ONTAP 파일 시스템으로 백업의 볼륨을 복원할 수 있습니다.
+
+Workload Factory는 복원에 필요한 용량이 충분한지 판단하고, 부족한 경우 SSD 스토리지 계층 용량을 자동으로 추가할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.
+. 백업에서 복원할 볼륨의 작업 메뉴를 선택하십시오.
+. * 데이터 보호 작업 *, * 볼륨 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.
+. 백업에서 복원 대화 상자에서 다음을 제공합니다.
++
+.. * 대상 파일 시스템 * : 드롭다운 메뉴에서 대상 파일 시스템을 선택합니다.
+.. * 대상 스토리지 VM *: 드롭다운 메뉴에서 대상 스토리지 VM을 선택합니다.
+.. * 백업 이름 * : 드롭다운 메뉴에서 백업 이름을 선택합니다.
+.. * 복원된 볼륨 이름 *: 복원된 볼륨 이름을 입력합니다.
+
+
+. 복구 작업에 사용할 파일 시스템 용량을 확인합니다.
++
+파일 시스템 용량이 제한된 경우 다음과 같은 문제가 발생할 수 있습니다.
+
++
+** 복원 작업으로 인해 사용 용량이 지정한 임계값을 초과할 수 있습니다. 복원 작업을 완료할 수 있습니다. link:adjust-file-system-capacity.html["SSD 스토리지 계층 용량을 수동으로 추가"]를 고려하거나 Workload Factory가 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택하는 것을 고려하십시오.
+** 복원에는 추가 SSD 용량이 필요합니다.  계속하려면 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택해야 합니다.
+
+
+. Restore * 를 선택합니다.
+

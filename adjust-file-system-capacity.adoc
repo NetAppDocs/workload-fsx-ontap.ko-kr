@@ -1,43 +1,76 @@
 ---
 sidebar: sidebar 
-permalink: manage-capacity-automatically.html 
-keywords: auto capacity, automatic capacity management, inodes management, file system capacity 
-summary: 이 기능을 활성화하면 Workload Factory가 시간이 지남에 따라 용량 요구 사항이 변경됨에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지나 inode를 자동으로 추가할 수 있습니다. 
+permalink: adjust-file-system-capacity.html 
+keywords: adjust capacity, elastic file system capacity, increase file system capacity, increase FSx capacity, decrease file system capacity, decrease FSx capacity 
+summary: 다양한 활성 작업 세트가 포함된 프로젝트 기반 워크로드의 요구 사항을 충족하기 위해 FSx for ONTAP 파일 시스템의 SSD 스토리지 용량을 수동으로 조정합니다. 
 ---
-= NetApp Workload Factory에서 용량 및 inode를 자동으로 관리합니다.
+= NetApp Workload Factory에서 파일 시스템 용량 조정
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-용량 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다. 또한 이 기능을 활성화하면 용량을 수동으로 모니터링할 필요가 없어집니다.
+NetApp Workload Factory에서 활성 작업 세트가 다양하게 변하는 워크로드 요구 사항에 맞춰 FSx for ONTAP 파일 시스템의 솔리드 스테이트 드라이브(SSD) 스토리지 용량을 조정할 수 있습니다. 사용량이 임계값을 초과하면 수동으로 용량을 늘리고, 작업 세트를 사용하지 않을 때는 용량을 줄여 비용을 절감할 수 있습니다. 또는 자동 용량 관리를 활성화하면 Workload Factory가 시간이 지남에 따라 요구 사항이 변경될 때 증분 스토리지를 추가하므로 수동 모니터링 부담을 줄일 수 있습니다.
+
+
+NOTE: SSD 저장 용량 감소는 2세대 파일 시스템에서만 지원됩니다.
 
 
 
-[[about-this-task]]
-== 이 작업에 대해
+[[adjust-file-system-capacity-manually]]
+== 파일 시스템 용량을 수동으로 조정합니다
 
-시스템은 30분마다 FSx for ONTAP 파일 시스템을 스캔합니다. 증분 스토리지를 추가해야 하는지 확인하고 사용 가능한 볼륨 inode를 검증합니다. 카운트는 자동 용량 관리 임계값에 따라 증가합니다.
+탄력적인 파일 시스템 용량을 사용하면 작업 부하 요구 사항에 맞게 파일 시스템 용량을 동적으로 조정할 수 있습니다.
 
-inode 관리를 활성화하면 NetApp Workload Factory가 용량 요구 사항 변경에 따라 FSx for ONTAP 파일 시스템에 증분 inode를 자동으로 추가할 수 있습니다. 이 기능을 통해 수동으로 inode를 모니터링할 필요가 없어집니다.
+.이 작업에 대해
+파일 시스템 용량을 변경하면 FSx for ONTAP 파일 시스템의 IOPS에 영향을 미칩니다.
 
-한 계정에서만 이 기능을 관리할 수 있습니다.
+자동으로link:provision-iops.html["IOPS 프로비저닝"] 파일 시스템의 경우 SSD 용량이 1GiB 증가하거나 감소할 때마다 IOPS는 3 IOPS씩 증가하거나 감소합니다.
 
-모든 FSx for ONTAP 파일 시스템의 최대 SSD 스토리지 용량은 524,288GiB입니다. 할당량 증가를 요청하려면 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["할당량"^] AWS FSx for NetApp ONTAP 설명서 를 참조하십시오.
+link:provision-iops.html["IOPS 프로비저닝"]수동으로 증가하는 파일 시스템 용량을 지원하기 위해 IOPS 할당을 늘려야 할 수 있습니다.
+
+SSD 스토리지 용량 제한에 대해서는 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["할당량"^] AWS FSx for NetApp ONTAP 설명서를 참조하십시오.
+
+.시작하기 전에
+파일 시스템의 용량을 조정하려면 먼저 link:manage-capacity-automatically.html["자동 용량 관리를 비활성화합니다"].
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 대시보드에서 *SSD 용량 조정*을 선택합니다.
+. 용량을 조정할 파일 시스템을 선택한 다음 *계속*을 선택합니다.
+. SSD 용량 조정 대화 상자에서 *프로비저닝된 용량*에 대한 숫자를 입력합니다.
+. 프로비저닝된 용량의 단위를 선택합니다.
+. Apply * 를 선택합니다.
+
+
+
+
+[[enable-automatic-capacity-and-inode-management]]
+== 자동 용량 및 inode 관리 활성화
+
+용량 및 inode 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지 및 inode(파일)를 볼륨에 자동으로 추가할 수 있습니다. 이러한 기능을 통해 용량 및 inode를 수동으로 모니터링할 필요가 없어집니다.
+
+하나의 계정으로만 이러한 기능을 관리할 수 있습니다.
 
 
 
 [[enable-automatic-capacity-management-and-capacity-notifications]]
-== 자동 용량 관리 및 용량 알림을 활성화합니다.
+=== 자동 용량 관리 및 용량 알림을 활성화합니다.
 
 FSx for ONTAP 파일 시스템의 최대 크기 제한까지 증분 스토리지를 자동으로 추가하려면 자동 용량 관리를 활성화하십시오. 파일 시스템이 특정 용량 임계값에 도달하면 알림을 받도록 알림을 설정하십시오.
+
+.이 작업에 대해
+Workload Factory는 FSx for ONTAP 파일 시스템을 30분마다 스캔하여 증분 스토리지를 추가해야 하는지 확인합니다.
+
+모든 FSx for ONTAP 파일 시스템의 최대 SSD 스토리지 용량은 524,288GiB입니다. 할당량 증가를 요청하려면 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["할당량"^] AWS FSx for NetApp ONTAP 설명서 를 참조하십시오.
 
 .시작하기 전에
 시작하기 전에 다음 사항을 고려하십시오.
 
 * 당신은해야합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning, and analysis_ 권한 정책으로 자격 증명을 부여합니다."^] 이 작업을 완료하려면 Workload Factory로 이동하세요.
-* 볼륨 inode가 저장 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."].. 링크가 연결되면 이 작업으로 돌아갑니다.
+* 볼륨 inode가 스토리지 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크가 연결되면 이 작업으로 돌아오십시오.
 * AWS는 SSD 용량 증가 시 최소 6시간의 쿨다운 기간을 적용하므로 데이터 마이그레이션 중에는 이 기능을 활성화하지 마십시오. 이 제한으로 인해 조정이 지연될 수 있으므로, 이에 따라 계획을 세우십시오.
 
 
@@ -86,11 +119,12 @@ FSx for ONTAP 파일 시스템의 최대 크기 제한까지 증분 스토리지
 
 
 [[enable-inode-management-for-a-file-system]]
-== 파일 시스템에 대한 inode 관리를 활성화합니다
+=== 파일 시스템에 대한 inode 관리를 활성화합니다
 
 자동 inode 관리를 활성화하여 볼륨당 inode(파일) 수를 허용 한도까지 늘릴 수 있습니다.
 
-FSx for ONTAP 파일 시스템에 대한 검사가 30분마다 수행됩니다. 이 검사는 사용 가능한 볼륨 inode를 확인하고 증분 inode를 추가해야 하는지 여부를 점검합니다. inode 개수는 자동 inode 관리 임계값에 따라 증가합니다.
+.이 작업에 대해
+Workload Factory는 FSx for ONTAP 파일 시스템을 30분마다 스캔하여 사용 가능한 볼륨 inode를 확인하고 증분 inode를 추가해야 하는지 여부를 확인합니다. 이 카운트는 자동 inode 관리 임계값에 따라 증가합니다.
 
 
 NOTE: *Terraform 사용자*: Terraform에는 모든 작업이 Terraform 내에서 완료되어야 한다는 제한이 있습니다.  Terraform에서는 inode 관리가 지원되지 않지만 Workload Factory 콘솔에서 자동 inode 관리를 활성화할 수 있습니다.
@@ -98,7 +132,7 @@ NOTE: *Terraform 사용자*: Terraform에는 모든 작업이 Terraform 내에�
 .시작하기 전에
 시작하기 전에 다음 사항을 고려하십시오.
 
-* 볼륨 inode를 자동으로 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크가 연결되면 이 작업으로 돌아갑니다.
+* 볼륨 inode를 자동으로 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크가 연결되면 이 작업으로 돌아오십시오.
 * 자동 inode 관리에는 Workload Factory 알림 서비스에서 알림을 트리거하는 _경고 임계값_을 설정할 수 있습니다.  이 기능을 사용하려면 다음이 필요합니다.link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Workload Factory 알림 서비스 활성화"^] 첫 번째.
 * 당신은해야합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning, and analysis_ 권한 정책으로 자격 증명을 부여합니다."^] 이 작업을 완료하려면 Workload Factory로 이동하세요.
 

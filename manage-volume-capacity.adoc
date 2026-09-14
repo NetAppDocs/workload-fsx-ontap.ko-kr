@@ -1,22 +1,82 @@
 ---
 sidebar: sidebar 
-permalink: rebalance-volume.html 
-keywords: rebalance capacity, volume capacity, redistribute capacity 
-summary: 시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다. 
+permalink: manage-volume-capacity.html 
+keywords: volume size, rebalance volume capacity, adjust volume capacity, volume autogrow, manage volume capacity, FlexVol volume, FlexGroup volume 
+summary: Workload Factory에서 볼륨 크기를 수동으로 조정하고 볼륨 자동 확장을 사용하는 등 볼륨 용량을 관리하는 방법을 알아보십시오. 
 ---
-= NetApp Workload Factory에서 볼륨 용량 확인 및 재조정
+= NetApp Workload Factory에서 볼륨 용량을 관리합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 노드 내의 모든 FlexVol 볼륨이나 모든 구성 요소에 파일을 균등하게 분산하여 모든 노드가 단일 FlexGroup 볼륨의 작업 부하에 참여하도록 합니다.
+볼륨 용량은 필요에 따라 조정해야 합니다. 볼륨 크기를 수동으로 조정하거나 볼륨 자동 확장을 켜서 Workload Factory가 볼륨 용량을 관리하도록 할 수 있습니다. FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고, 노드 내의 모든 FlexVol 볼륨 또는 모든 구성 요소에 파일이 고르게 분산되도록 볼륨 용량을 재조정하여 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 하십시오.
 
 
 
-[[about-this-task]]
-== 이 작업에 대해
+[[edit-volume-autogrow]]
+== 볼륨 자동 확장을 편집합니다
+
+Workload Factory가 볼륨 용량을 자동으로 관리하도록 하려면 볼륨 자동 확장 기능을 켜십시오. 이 기능은 언제든지 끌 수 있습니다.
+
+
+NOTE: iSCSI 볼륨에는 볼륨 자동 확장이 지원되지 않습니다.
+
+.시작하기 전에
+볼륨 자동 확장을 활성화하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크가 연결되면 이 작업으로 돌아오십시오.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.
+. 수정하려는 볼륨의 작업 메뉴를 선택합니다.
+. *기본 동작*을 선택한 다음 *볼륨 자동 증가 설정*을 선택합니다.
+. 자동 증가 설정 대화 상자에서 볼륨 자동 증가를 활성화하면 볼륨 용량이 최대 크기에 도달할 때까지 자동으로 확장됩니다. 이 기능은 데이터 사용량 증가에도 대응하여 중단 없는 운영을 보장합니다.
++
+최대 볼륨 증가 크기와 단위를 지정하세요. 최대 증가 크기는 현재 볼륨 크기보다 작을 수 없습니다.
+
+. Apply * 를 선택합니다.
+
+
+
+
+[[adjust-volume-capacity-manually]]
+== 볼륨 용량을 수동으로 조정합니다
+
+볼륨의 프로비저닝된 크기를 늘리거나 줄여 볼륨 용량을 조정할 수 있습니다.  다음 표는 볼륨 유형별 최소 및 최대 볼륨 크기를 보여줍니다.
+
+[cols="1,1,1"]
+|===
+| 볼륨 유형 | 최소 크기 | 최대 크기 
+
+
+| FlexVol 볼륨 | 20미비 | 300티비 
+
+
+| FlexGroup 볼륨 | 800기가바이트 | 2파이비 
+|===
+iSCSI LUN의 경우 볼륨 크기를 늘리면 호스트 LUN의 크기도 늘어납니다.  볼륨 용량을 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 LUN의 새로운 크기를 확인하고 LUN의 파일 시스템을 확장합니다.
+
+볼륨 크기 감소는 NFS 및 SMB/CIFS 볼륨에만 지원됩니다.
+
+.시작하기 전에
+볼륨 용량을 조정하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크가 연결되면 이 작업으로 돌아오십시오.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *볼륨 탐색기*를 선택합니다.
+. 수정하려는 볼륨의 작업 메뉴를 선택합니다.
+. *기본 동작*을 선택한 다음 *볼륨 용량 조정*을 선택합니다.
+. 볼륨 용량 조정 대화 상자에서 *프로비저닝된 용량*과 단위를 설정합니다.
+. 변경 사항을 적용하려면 *조정*을 선택하세요.
+
+
+
+
+[[rebalance-volume-capacity-for-flexvol-and-flexgroup-volumes]]
+== FlexVol 및 FlexGroup 볼륨에 대한 볼륨 용량 재조정
 
 FlexVol 볼륨과 FlexGroup 볼륨에 대해 볼륨 용량 재조정이 지원됩니다. 새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.
 
@@ -42,13 +102,13 @@ NOTE: iSCSI 및 NVMe와 같은 SAN 볼륨에서는 재조정이 지원되지 않
 
 
 [[check-the-balance-of-your-volumes]]
-== 볼륨의 균형을 확인하세요
+=== 볼륨의 균형을 확인하세요
 
 FSx for ONTAP 파일 시스템에서 FlexVol 또는 FlexGroup 볼륨의 균형을 확인합니다.
 
 .시작하기 전에
 * FlexGroup 볼륨 균형은 최소 2개의 HA 쌍이 포함된 스케일아웃 구축을 사용하는 FSx for ONTAP 파일 시스템에서만 사용할 수 있습니다.
-* 볼륨의 균형을 확인하려면 다음을 수행해야 합니다. link:manage-links.html["링크를 연결합니다"] . 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+* 볼륨의 균형을 확인하려면 link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["파일 시스템에 대한 링크를 생성하고 연결하거나 기존 링크를 연결합니다."^]해야 합니다. 링크가 연결되면 이 작업으로 돌아오십시오.
 
 
 .단계
@@ -72,7 +132,7 @@ FSx for ONTAP 파일 시스템에서 FlexVol 또는 FlexGroup 볼륨의 균형�
 
 
 [[rebalance-volume-capacity]]
-== 볼륨 용량 재조정
+=== 볼륨 용량 재조정
 
 하나 이상의 불균형 볼륨을 재조정합니다.
 
@@ -81,7 +141,7 @@ NOTE: Workload Factory 관리자는 다음을 수행할 수 있습니다.<<볼�
 
 .시작하기 전에
 * <<볼륨의 균형을 확인하세요,볼륨의 균형을 확인하세요>> 볼륨을 재조정하기 전에,
-* 볼륨을 재조정하려면 다음을 수행해야 link:manage-links.html["링크를 연결합니다"]합니다. 기존 링크가 없는 경우 link:create-link.html["링크를 만듭니다"] 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.
+* 볼륨 균형을 재조정하려면 link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["파일 시스템에 대한 링크를 생성하고 연결하거나 기존 링크를 연결합니다."^]해야 합니다. 링크가 연결되면 이 작업으로 돌아가십시오.
 * 재조정한 볼륨의 기존 스냅샷은 부분적으로 변경되며 볼륨 데이터를 복원하는 데 사용할 수 없지만 재조정 후 생성된 새 스냅샷은 볼륨 데이터를 복원하는 데 사용할 수 있습니다.
 * FlexVol 볼륨은 모든 볼륨 리소스의 균형을 균등하게 맞추기 위해 전체적으로 재조정하는 것이 가장 좋습니다. 선택 해제된 볼륨은 균형 조정 절차에 적극적으로 참여하지 않습니다.
 
@@ -162,7 +222,7 @@ FlexGroup 멤버 볼륨은 재조정 중에 한 번에 하나씩 이동됩니다
 
 
 [[stop-a-volume-rebalance-operation]]
-== 볼륨 재조정 작업 중지
+=== 볼륨 재조정 작업 중지
 
 리밸런싱 작업은 언제든지 중지할 수 있습니다. 중단되지 않습니다. 작업을 중지하면 활성 볼륨 이동이 중단됩니다.
 

@@ -17,7 +17,7 @@ NetApp Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템의
 NetApp Workload Factory 콘솔에서 캐시 관계와 연관된 캐시 볼륨을 관리할 수 있습니다.
 
 .시작하기 전에
-* 캐시 볼륨과 관계를 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."]. 링크를 연결한 후 이 작업으로 돌아오세요.
+* 캐시 볼륨 및 관계를 관리하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크를 연결한 후 이 작업으로 돌아오십시오.
 * 편집하려면 기존 캐시 볼륨이 있어야 합니다.
 
 

@@ -41,7 +41,7 @@ Workload Factory는 스토리지를 사용하는 호스트와 해당 호스트 �
 
 파일 시스템의 개요 탭에서 모든 파일 시스템 및 스토리지 VM 엔드포인트를 직접 확인할 수 있습니다. Workload Factory 콘솔에서 엔드포인트를 직접 볼 수 있으므로 CLI 또는 CloudShell을 사용하지 않고도 네트워크 액세스, 엔드포인트 및 페일오버 상태를 쉽게 모니터링할 수 있습니다. 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 LIF 세부 정보를 표시하려면 파일 시스템에 링크를 연결해야 합니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["NetApp Workload Factory에서 파일 시스템에 링크를 연결하는 방법을 알아보세요"].
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["NetApp Workload Factory에서 파일 시스템에 링크를 연결하는 방법을 알아보세요"^].
 
 
 

@@ -69,7 +69,6 @@
   <block id="c0aee0db2523a540ba66181f63809c8b" category="list-text">Data protection actions * 를 선택한 다음 * Clone volume * 을 선택합니다.</block>
   <block id="a9056a8f8a35fa168136ae9ea8b7866d" category="list-text">클론 볼륨 대화 상자에서 볼륨 클론의 이름을 입력합니다.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
-  <block id="85a0e511a99369efd5c47890a946947b" category="doc">스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다</block>
   <block id="c19f2fad6f0110c3951bd583edb5371f" category="paragraph">스토리지 VM에 대한 Active Directory 구성 및 업데이트에도 동일한 단계가 적용됩니다.</block>
   <block id="dcfecf722762bfcce19242fd2e38a2c2" category="list-text">AD 구성 관리 페이지에서 다음을 제공합니다.</block>
   <block id="a531f5a3e49319a6c1b23021b5a27417" category="list-text">* 가입할 Active Directory 도메인 *: Active Directory의 FQDN(정규화된 도메인 이름)을 입력합니다.</block>
@@ -129,15 +128,7 @@
   <block id="073395e7b5fc53b602884ac0aaf757fb" category="inline-link-macro">데이터 보호</block>
   <block id="1354abc5a9e8cbf1dfec985c57fdde11" category="paragraph">스토리지 인벤토리에 파일 시스템을 사용하면 FSx for ONTAP 파일 시스템을 관리하고 리소스를 설정할 수 있습니다 <block ref="41a32458a6146c3b772c57ac70acc68e" category="inline-link-macro-rx"></block> <block ref="7fb4f81945268c9207e001bdf264dfef" category="inline-link-macro-rx"></block> .</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="doc">링크를 만듭니다</block>
-  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link-macro">링크에 대해 자세히 알아보세요</block>
-  <block id="95254aef509d2d84e8ee7dd3052d1b61" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block>..</block>
-  <block id="22cc060f8b88cfca4c298ec0a9aae3fa" category="list-text">CloudFormation 스택을 사용하여 링크를 추가할 때 AWS 계정에 다음 권한이 있어야 합니다.</block>
-  <block id="89a62ddcc9759060d903ef8b7aee42c3" category="list-text">* 링크 이름 *: 이 링크에 사용할 이름을 입력하십시오. 이름은 계정 내에서 고유해야 합니다.</block>
-  <block id="68d5729d2a63e62a04de68bac212b9ab" category="list-text">* 태그 *: 필요에 따라 이 링크에 연결할 태그를 추가하여 리소스를 보다 쉽게 분류할 수 있습니다. 예를 들어, FSx for ONTAP 파일 시스템에서 이 링크를 사용 중인 것으로 식별하는 태그를 추가할 수 있습니다.</block>
-  <block id="c602cdf8533ce956e9f326890f6d8723" category="list-text">AWS 관리 콘솔을 열고 이 FSx for ONTAP 파일 시스템에 대한 AWS 계정에 로그인하려면 * 계속 * 을 선택하십시오.</block>
-  <block id="ab44f988398acb833af7b9b2bc6c26b9" category="list-text">빠른 스택 만들기 페이지의 기능 에서 * AWS CloudFormation이 IAM 리소스를 생성할 수 있음을 확인합니다 * 를 선택합니다.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
-  <block id="19b12f8ea4cd395e2a8c4f8e4dbac642" category="summary">FSx for ONTAP 파일 시스템에 대한 복제 관계를 생성하여 예기치 않은 재해가 발생할 경우 데이터 손실을 방지합니다.</block>
   <block id="ca0c3dd7dca9f636af3209d526098e1e" category="doc">복제 관계를 생성합니다</block>
   <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">링크를 연결합니다</block>
   <block id="b9a2f47b5bc4bd7fcc8d23d6721ec4c2" category="list-text">복제 생성 페이지의 복제 타겟에서 다음을 제공합니다.</block>
@@ -267,12 +258,10 @@
   <block id="c966edae1d484c4f3e557d47709e08a1" category="list-text">기본 조치 * 를 선택한 다음 * 볼륨 태그 편집 * 을 선택합니다.</block>
   <block id="9724e2d67a8b8dacb5f774fbf0309b44" category="list-text">볼륨 태그 편집 페이지에서 태그를 추가, 편집 또는 제거합니다.</block>
   <block id="88ba83269635947653a5d84b3d1da8be" category="paragraph">볼륨에 적용할 수 있는 최대 태그 수는 50개입니다.</block>
-  <block id="3189fa0a6c27988e9ac820b8115f1001" category="paragraph">한 계정에서만 이 기능을 관리할 수 있습니다.</block>
   <block id="fb0d8a1c841cd92afd4cb16ddedaeed5" category="inline-link-macro">할당량</block>
   <block id="81b511c5e6d03d742f3a61abc3c4019a" category="paragraph">모든 FSx for ONTAP 파일 시스템의 최대 SSD 스토리지 용량은 524,288GiB입니다. 할당량 증가를 요청하려면 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서 를 참조하십시오.</block>
   <block id="811c0aa0f47faeb6a24c4abfb98d7a22" category="list-text">* 자격 증명 *: 드롭다운 메뉴에서 _AUTOMATE_PERTIONS를 사용하여 자격 증명을 선택합니다.</block>
   <block id="3e0bdb480d66a7375d532c6c4aff035d" category="paragraph">또는 이 기능을 비활성화합니다. 파일 시스템 용량을 늘려야 하는 경우 먼저 자동 용량 관리를 해제해야 합니다.</block>
-  <block id="c2a6ed685a94077454f8bad592ecfa44" category="doc">장기 보존을 위해 스냅샷을 설정 및 편집합니다</block>
   <block id="84926cfe10c3390bcbf0d7f22bc20ed1" category="paragraph">장기 보존을 위해 스냅샷을 설정 및 편집하는 경우에도 동일한 단계가 적용됩니다.</block>
   <block id="9c3e61915a26d815f332c75fcafffe40" category="list-text">Edit long-term retention * 을 선택합니다.</block>
   <block id="3a83d555d51f666c990377ce4a7e8300" category="list-text">Edit long-term retention(장기 보존 편집) 대화 상자에서 장기 보존을 위해 스냅샷을 설정하거나 해제합니다.</block>
@@ -358,7 +347,6 @@
   <block id="ffc888e5ff626bf410d67b62a9e8a9a8" category="paragraph">SSD 스토리지 용량 제한에 대해서는 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서를 참조하십시오.</block>
   <block id="3fa4dafc00a14f08641efa3389891289" category="inline-link-macro">자동 용량 관리를 비활성화합니다</block>
   <block id="bb38e8f0462bc33d127ff7d217a31149" category="list-text">프로비저닝된 용량의 단위를 선택합니다.</block>
-  <block id="eacbf9150c5d9c7a7032185805a236b8" category="inline-link-macro">자동 확장 기능을 활성화합니다</block>
   <block id="42812c21ac1eee37a9ac12cf59634ce6" category="paragraph">초기화는 소스 볼륨의 스냅샷을 만든 다음 해당 스냅샷과 해당 스냅샷이 참조하는 모든 데이터 블록을 타겟 볼륨으로 전송합니다.</block>
   <block id="8ab8abb2ddeeba17b40c9c83b7345674" category="paragraph">이 작업을 완료하도록 선택할 때를 고려하십시오. 초기화에는 시간이 오래 걸릴 수 있습니다. 사용량이 적은 시간에 기준 전송을 실행할 수 있습니다.</block>
   <block id="18e73e557ecb75c57d1d16ca781cbfbe" category="list-text">Initialize * 를 선택합니다.</block>
@@ -425,25 +413,6 @@
   <block id="76d46f140889dce175ee00325fc5a79f" category="list-text">최대 전송 속도 편집 * 을 선택합니다.</block>
   <block id="9666adae2ca3bb8c64ee74e40c23c7b3" category="list-text">최대 전송 속도 편집 대화 상자에서 * 제한 * 을 선택하고 최대 전송 제한(MB/s)을 입력합니다</block>
   <block id="0c2c6a9c149348bd95ea113c9e333baa" category="paragraph">또는 * 무제한 * 을 선택합니다.</block>
-  <block id="87684df341e5a7d9f280a7bdf2048a6e" category="section-title">링크 작동 방법</block>
-  <block id="5abd3a6ae198e27e4c8402463411560f" category="paragraph">링크 활용 AWS Lambda. Lambda는 이벤트에 대한 응답으로 코드를 실행하고 해당 코드에 필요한 컴퓨팅 리소스를 자동으로 관리합니다. 생성하는 링크는 NetApp 계정의 일부이며 AWS 계정과 연결됩니다.</block>
-  <block id="66096c22a6220952b7aef731ef78c167" category="section-title">비용</block>
-  <block id="0ab8cd7f04804af6d53be93ef7bd5345" category="inline-link-macro">AWS Lambda 사용과 관련된 비용에 대해 자세히 알아보십시오</block>
-  <block id="70f0040e444997fbb4beeeae8bd03d34" category="paragraph"><block ref="70f0040e444997fbb4beeeae8bd03d34" category="inline-link-macro-rx"></block></block>
-  <block id="8cd69d367e2dbdfca9ec0b55ba13baec" category="section-title">링크가 필요한 경우</block>
-  <block id="c0653b3ad30a51a0fe3228ad2877ac9d" category="paragraph">링크가 필요한 기능은 다음과 같습니다.</block>
-  <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="doc">링크를 관리합니다</block>
-  <block id="e32918056c538c64f6e229f2ca257e25" category="section-title">계정과 연결된 링크를 봅니다</block>
-  <block id="a8fa4cf9dc4a62f0a1665e1500bbff0a" category="paragraph">현재 계정과 연결된 링크를 볼 수 있습니다.</block>
-  <block id="c1197fb19ed4c969880f963d9b6df11f" category="list-text">링크와 연결된 FSx for ONTAP 파일 시스템을 보려면 관련 리소스 섹션에서 * 보기 * 버튼을 선택합니다.</block>
-  <block id="65ded7963c0209145c9b1f65dff784c8" category="list-text">링크에 대한 ARN(아마존 리소스 이름)이 필요한 경우 ARN 필드 옆에 있는 _copy_icon을 선택할 수 있습니다.</block>
-  <block id="93ebb8d72a0e7c1dd1418d053f7a19cd" category="section-title">링크를 편집합니다</block>
-  <block id="191297866068665b2c5ad24b9642279b" category="admonition">AWS 콘솔을 사용하여 Lambda 네트워크 구성(예: VPC, 서브넷 및 보안 그룹)을 편집할 수 있으며 변경 사항은 링크 관리 UI에 반영됩니다. 그러나 이러한 변경으로 인해 Lambda와 ONTAP 간 연결 문제가 발생할 수 있으며 권장되지 않습니다.</block>
-  <block id="d1a880704664676bffdaf8c74ccfdbbc" category="section-title">링크를 제거합니다</block>
-  <block id="e39c068b963de97aa76b144b426e273e" category="paragraph">사용자 환경에서 더 이상 사용하지 않는 링크를 제거할 수 있습니다. FSx for ONTAP 파일 시스템 또는 링크를 사용하는 기타 리소스는 링크가 제거된 후 특정 기능을 사용할 수 없습니다.</block>
-  <block id="39d7d9e85c32f2e7a66207533ef4a3a9" category="list-text">확실하면 * 제거 * 를 다시 선택하십시오.</block>
-  <block id="0978bfc9ea0b38f88360973d41319547" category="inline-link-macro">Lambda 함수를 삭제합니다</block>
-  <block id="0cfc72f205d571b960431be39a5d413e" category="paragraph">AWS 설명서를 참조하십시오 <block ref="00813965c876b66bf6a0f1cc3b46a3b0" category="inline-link-macro-rx"></block>.</block>
   <block id="aa7aca7c91fd6a0597d1d445950a06f4" category="doc">FSx for ONTAP의 성능</block>
   <block id="bc4bb24d5e702fb79be623b84e7cf47e" category="inline-link-macro">NetApp ONTAP 성능을 위한 Amazon FSx</block>
   <block id="635d4737dc14d283881c28be63b10bc5" category="paragraph">성능에 대한 개요는 <block ref="a572b0e55a3a15b7b3460602e8714ba1" category="inline-link-macro-rx"></block> 설명서를 참조하십시오.</block>
@@ -471,14 +440,12 @@
   <block id="0828ddc896996b7d41cc9ceb1e453764" category="list-text">암호 재설정 대화 상자에서 다음을 입력합니다.</block>
   <block id="8d54082fcba7dd82063ffe4497f8c70d" category="list-text">* 새 암호 *: 스토리지 VM에 대한 새 암호를 입력합니다.</block>
   <block id="ebb4bf732c3ade314c393d5284af8715" category="list-text">* 비밀번호 확인 *: 새 비밀번호를 다시 입력하여 확인합니다.</block>
-  <block id="8b0e8407f70ad599b0ea28ad2aba3c8d" category="summary">백업에서 AWS 계정의 FSx for ONTAP 파일 시스템으로 볼륨을 복원합니다.</block>
   <block id="669e24f4895025d47b6321e03f0890e4" category="doc">백업에서 볼륨을 복원합니다</block>
   <block id="954f91e5419aff167b9c5ff119492972" category="list-text">백업에서 복원 대화 상자에서 다음을 제공합니다.</block>
   <block id="1db91acefbe1be544aa103101dea1eea" category="list-text">* 대상 파일 시스템 * : 드롭다운 메뉴에서 대상 파일 시스템을 선택합니다.</block>
   <block id="dce3fffc0f825635bb1abc80d4fad0d8" category="list-text">* 대상 스토리지 VM *: 드롭다운 메뉴에서 대상 스토리지 VM을 선택합니다.</block>
   <block id="729115b7e52442b1c882ac7f46519925" category="list-text">* 백업 이름 * : 드롭다운 메뉴에서 백업 이름을 선택합니다.</block>
   <block id="c5cce99928ce0d8af5b82b7d22ea310e" category="list-text">* 복원된 볼륨 이름 *: 복원된 볼륨 이름을 입력합니다.</block>
-  <block id="67b0d8b6788b457b2c8385033f28756f" category="summary">볼륨에 삭제되거나 손상된 파일이 있을 때 스냅샷에서 FSx for ONTAP 볼륨을 복원합니다.</block>
   <block id="c90683522eadafc05ec442d8c440363f" category="doc">스냅숏에서 볼륨을 복원합니다</block>
   <block id="71fa8628af6f2038af0eab0c8ca9c4cf" category="paragraph">볼륨의 기존 스냅샷 복사본이 있는 경우에만 스냅샷에서 볼륨을 복원할 수 있습니다.</block>
   <block id="dfb1565e1ec2734dcbcb24e6b43c9919" category="list-text">복원된 볼륨 이름 * 필드에 복원할 볼륨의 고유한 이름을 입력합니다.</block>
@@ -544,7 +511,6 @@
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
   <block id="fb4531252f707fbda1308840e3c7d6af" category="summary">언제든지 복제 관계에서 소스 볼륨과 타겟 볼륨 간에 전송된 스냅샷 데이터를 수동으로 업데이트합니다.</block>
   <block id="fa0604fd5c522ae5ab642bebf836c3d0" category="list-text">지금 업데이트 * 를 선택합니다.</block>
-  <block id="241ea6618170a92484ea213e4cade854" category="doc">파일 시스템의 처리량 용량을 업데이트합니다</block>
   <block id="6cc2a35072ede8f6e3bef70bce54ed8c" category="paragraph">처리량 용량 제한에 대해서는 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서를 참조하십시오.</block>
   <block id="77fe58178c324bbc70fcb16af3bf2b46" category="list-text">처리량 용량 대화 상자에서 필요한 처리량 용량을 선택합니다.</block>
   <block id="69a94f722f40461d326d0d87f7643499" category="summary">Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.</block>
@@ -559,24 +525,14 @@
   <block id="c82c15e6d66564201da1f424b2fb9bf4" category="sidebar">NetApp ONTAP용 Amazon FSx 문서</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">NetApp ONTAP용 Amazon FSx를 사용합니다</block>
-  <block id="2553f0a003cdfb6c46e0fb29cca1c670" category="sidebar">링크를 사용하십시오</block>
   <block id="dc88dce8ec264777b2f90ec0af744f43" category="sidebar">볼륨을 생성합니다</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="sidebar">스토리지 VM을 생성합니다</block>
   <block id="e5787a3a7b79c3cdbeb01e163f0a84de" category="sidebar">스냅샷을 관리합니다</block>
   <block id="af9c364e0933200b7b8c1e7e13947ccf" category="sidebar">스냅샷을 생성합니다</block>
   <block id="e807ebdf213353b8a415f991a2cade81" category="sidebar">스냅샷 정책을 생성합니다</block>
-  <block id="c650dc131eb6eb56a3ed637559a17a3f" category="sidebar">수동 백업을 생성합니다</block>
-  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
-  <block id="8cf9dbe17cb44a10f0622b63961c131d" category="sidebar">볼륨 관리</block>
   <block id="56994f1db86bfe709cbe47f96bde566f" category="sidebar">볼륨 자동 확장을 편집합니다</block>
-  <block id="28b0bfb965f113c41530116951bfce50" category="sidebar">파일 시스템 관리</block>
   <block id="ff117b5e42f4a60dd5b7859999c4f2bd" category="sidebar">자동 용량 관리 활성화</block>
-  <block id="c7ad4dd9b2ecb508f1366110b020e001" category="sidebar">fsxadmin 암호를 재설정합니다</block>
-  <block id="bf36a77b5166293d07ef75b2861c69ad" category="sidebar">스토리지 VM 관리</block>
   <block id="463b6a907cababadde63e20d0a9d0a30" category="sidebar">스토리지 VM을 다른 파일 시스템으로 복제합니다</block>
-  <block id="b7f48cbd151b44682a0f2a8ffa114d0f" category="sidebar">스토리지 VM 암호를 재설정합니다</block>
-  <block id="7f8d84e7d0adb2682a7102214e49dee2" category="sidebar">데이터 보호 관리</block>
-  <block id="267e5e88580f97af56a5fa2b981a6a67" category="sidebar">성능 관리</block>
   <block id="ef045d17e80274aec5be009d1f13f5a2" category="sidebar">파일 시스템에 대한 IOPS를 프로비저닝합니다</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">참조하십시오</block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
@@ -585,8 +541,6 @@
   <block id="21e6ab9737790ab1abc18e49091d3c18" category="paragraph">다음 다이어그램은 스냅샷, 영역 간 복제, 오브젝트 스토리지에 백업을 사용하는 FSx for ONTAP 스토리지의 데이터 보호를 시각적으로 보여줍니다.</block>
   <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">스크린샷은 스냅샷을 사용하는 FSx for ONTAP 스토리지의 데이터 보호, 여러 지역에 걸친 복제, 오브젝트 스토리지로 백업을 보여줍니다.</block>
   <block id="29bed1477f8a04f4f702564c7e6bb224" category="paragraph"><block ref="29bed1477f8a04f4f702564c7e6bb224" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d527a24e3cd3e2df59c9ec57fb8383de" category="inline-image-macro">특정 링크를 사용하는 FSx for ONTAP 파일 시스템을 보여 주는 스크린샷</block>
-  <block id="8153258b50418b6ebcd06d64da06a5bc" category="paragraph"><block ref="8153258b50418b6ebcd06d64da06a5bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 지원</block>
   <block id="75086276ae6b7e370f36c7fc49383216" category="inline-link-macro">파일 시스템을 생성합니다</block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
@@ -649,9 +603,6 @@
   <block id="3721bd571f4111dad2c363436de34c51" category="list-text">수동 링크 생성 지원: 이 기능을 사용하면 링크 ARN을 수동으로 등록하여 AWS CloudFormation에서 독립 실행형 생성을 수행할 수 있습니다. 보안 또는 DevOps 팀이 링크 생성 프로세스를 지원할 때 유용합니다.</block>
   <block id="37bb8b5cad0754acdd2d9ed1e9d36928" category="paragraph">위임된 관리자 그룹은 파일 시스템을 관리할 수 있는 Active Directory의 그룹 이름입니다.</block>
   <block id="1ffab80b063e5f05f25ab6681156237d" category="paragraph">자체 관리되는 AD에 연결하는 경우 AD에서 그룹 이름을 사용합니다. 기본 그룹은<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>입니다.</block>
-  <block id="758ce486f132a2978be7ecfbcd518afa" category="list-text">사용할 링크 만들기 옵션을 고려해야 합니다.</block>
-  <block id="6903e2b3a86228f4d258e423fb6b913a" category="open-title">자동으로 만듭니다</block>
-  <block id="a85b3f8e5456d47e8056e0372aeccb2a" category="open-title">수동으로 만듭니다</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024년 9월 29일</block>
   <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSI 프로토콜은 FlexVol 볼륨에만 사용할 수 있습니다. ^1^</block>
   <block id="e6816f159adf84ca7c085ce0702311af" category="inline-link-macro">기존 복제 관계를 모두 삭제합니다</block>
@@ -666,7 +617,6 @@
   <block id="3b915cd68add8a6cdac4cd1adeb5f100" category="list-text"><block ref="3b915cd68add8a6cdac4cd1adeb5f100" category="inline-link-macro-rx"></block></block>
   <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
   <block id="a0fbee91270a9c1ec1d2bc9b56f87ff3" category="paragraph"><block ref="a0fbee91270a9c1ec1d2bc9b56f87ff3" category="inline-link-macro-rx"></block></block>
-  <block id="3874612023324fe909b90a886072b352" category="paragraph"><block ref="3874612023324fe909b90a886072b352" category="inline-link-macro-rx"></block></block>
   <block id="0d2c81cd9ea6f82a77b580a488c5e8aa" category="doc">FSx for ONTAP 파일 시스템 데이터에 액세스합니다</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">콘솔 환경</block>
   <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">중 하나를 사용하여 <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>로그인합니다.</block>
@@ -676,11 +626,9 @@
   <block id="ff4d762e1ab6dd75731a4f97e66ec902" category="list-text">백업 * 을 선택합니다.</block>
   <block id="88ece72bda0e38c0bdca32d19f42a979" category="doc">BlueXP  워크로드 팩토리에서 FSx for ONTAP 파일 시스템을 생성합니다</block>
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">Create * 를 선택합니다.</block>
-  <block id="4d4e41a17abafe417449016add2ee0bd" category="list-text">Create stack * 을 선택한 다음 * Continue * 를 선택합니다.</block>
   <block id="c853397a437814fc2251c95bdf57909f" category="list-text">관계 삭제 대화 상자에서 * 삭제 * 를 선택합니다.</block>
   <block id="ad1d6a18c0d830b44dfe2e6a96d2807d" category="list-text">선택적으로 * 볼륨 백업 * 을 선택하여 삭제하기 전에 볼륨을 백업합니다.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Continue * 를 선택합니다.</block>
-  <block id="759c5ad2620497fe90dc2bc5e085c8c0" category="summary">장기 보존을 위해 스냅샷을 사용하도록 설정하여 장기적인 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다.</block>
   <block id="37873c6c78867be44aa0676105354543" category="paragraph">장기 보존을 통해 전체 사이트 장애가 발생해도 비즈니스 서비스의 지속적인 운영을 보장할 수 있으며, 2차 복사본을 사용하여 투명하게 애플리케이션을 페일오버할 수 있습니다.</block>
   <block id="8107582f3eb31967f7b5b6bdc4826ea0" category="list-text">장기 보존을 위해 스냅샷을 비활성화하도록 선택한 경우 * 적용 * 을 선택하여 이 작업을 완료합니다.</block>
   <block id="66ca66124b69024cef94c671dc4b97bf" category="list-text">기존 정책을 사용하려면 드롭다운 메뉴에서 선택합니다.</block>
@@ -693,9 +641,6 @@
   <block id="478b776fc28a60e8545a858eb7ca9a3e" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다.</block>
   <block id="384c5c520d0877aaaaed76d75d973d99" category="list-text">* 스토리지 비용 비교 계산기 *: Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지 비용을 FSx for ONTAP와 비교합니다. 계산기에서 FSx for ONTAP 스토리지 구성이 어떻게 잠재적 비용 절감을 제공하는지 살펴보고 FSx for ONTAP 스토리지로의 마이그레이션을 계획하실 수 있습니다.</block>
   <block id="f6858e5eadd0ed940450d85121838545" category="list-text">* Workload Factory 사용자 인터페이스 *: Quick create_and_Advanced create_deployment 모드 옵션을 제공합니다. 빠른 생성에는 스토리지 구성에 대한 AWS, NetApp 및 업계 표준 모범 사례가 포함됩니다.</block>
-  <block id="53fe87832fd05bf7a8e9f1e1bad4aa86" category="doc">FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다</block>
-  <block id="9f16bb4c9cbb656a02f2d0ac20ae70a8" category="list-text">* 매일 자동 백업 * : 기능을 활성화 또는 비활성화합니다. 이 기능을 비활성화하면 * 적용 * 을 선택합니다. 이 기능을 사용하도록 설정한 경우 다음 단계를 완료합니다.</block>
-  <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">* 일일 자동 백업 윈도우 *: * 기본 설정 없음 * (일일 백업 시작 시간이 선택됨) 또는 * 일일 백업 시작 시간 선택 * 을 선택하고 시작 시간을 지정합니다.</block>
   <block id="eeba2ebb020e2a04f72c79660c1af4c0" category="inline-link-macro">파일 시스템 용량 증가</block>
   <block id="c0e7e25823412689ce1766213ff693a9" category="paragraph">IOPS 제한에 대한 자세한 내용은 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block>AWS FSx for NetApp ONTAP 설명서 를 참조하십시오.</block>
   <block id="b110ae22e3b6b4051be0372bbeb02ea7" category="list-text">정보 에서 마우스 커서를 * IOPS 할당 * 행 위로 가져가면 드롭다운 화살표 옆에 나타나는 연필 아이콘을 선택합니다.</block>
@@ -753,7 +698,6 @@
   <block id="4185f116d64b1130e6f9ba4250b147fa" category="paragraph">시작하기 전에 다음 사항이 있는지 확인하십시오.</block>
   <block id="7e496dd07644d2f06f315e4fa164cc69" category="list-text">복제용 FSx for ONTAP 파일 시스템</block>
   <block id="165a2e236f1aabd383e31c0b94f74338" category="inline-link-macro">새로 만듭니다</block>
-  <block id="96c11fa75af4ee186742d94b8c4312d1" category="list-text">검색된 온-프레미스 클러스터와 연결할 연결된 링크 링크가 없는 경우 이 작업을 수행해야 <block ref="fde76afbe668994cedb59a1786140b8f" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="d9475c746638e60d2b7ab26ca255f52c" category="list-text">필요한 권한이 있는 ONTAP 사용자 자격 증명입니다.</block>
   <block id="08964fe3be5deba1b9687a253e630608" category="list-text">온프레미스 ONTAP 버전 9.8 이상</block>
   <block id="23850e6cb293edf3ae576c2cd44e4966" category="list-text">다음 다이어그램에 표시된 연결.</block>
@@ -780,8 +724,6 @@
   <block id="a4f4dcbfc1fe91a36caaac04506e0179" category="list-text">새 정책의 경우 * 새 정책 생성 * 을 선택하고 다음을 제공합니다.</block>
   <block id="3b1c3bad959c6c151d464eb6b626f56f" category="paragraph">온-프레미스 ONTAP 클러스터의 모든 볼륨을 선택한 후 클러스터를 제거해야 <block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>분리된 관계가 남아 있지 않습니다.</block>
   <block id="78ce280a4b77e37298d71642a4457c0a" category="list-text">제거할 온프레미스 ONTAP 클러스터를 선택합니다.</block>
-  <block id="aab28bb522b1a572add493963001b88d" category="sidebar">온프레미스 ONTAP 데이터 사용</block>
-  <block id="5d831b6559b5decf8f758715856498b9" category="sidebar">스토리지 효율성 업데이트</block>
   <block id="442b133d7d895a50d67d2f8514b6fc0a" category="doc">볼륨 CIFS 공유의 개선 사항</block>
   <block id="c67048e1717263df3fc8ffc894f40785" category="paragraph">BlueXP  워크로드 공장 에 있는 Amazon FSx for ONTAP 파일 시스템에서 볼륨의 CIFS 공유를 관리할 때 다음과 같은 향상된 기능을 사용할 수 있습니다.</block>
   <block id="28ee2134fc1275e4f2052b7bd91a9f8d" category="list-text">볼륨에서 여러 CIFS 공유를 지원합니다</block>
@@ -793,7 +735,6 @@
   <block id="2898ec90c27f1541e38a1849b4b9923a" category="list-text">Mount 명령 대화 상자에서 * Copy * 를 선택하여 NFS 마운트 지점 또는 CIFS 공유에 대한 명령을 복사합니다. 복사한 명령을 터미널에 입력합니다.</block>
   <block id="42236277fa3913ec4d1fd1e17b26874c" category="paragraph">스케일 업 구성은 모든 지역에서 최대 2GB/s까지 지원됩니다. 다음 지역에서는 스케일업 배포를 위해 최대 4GB/s의 처리 용량을 지원합니다. US East(Ohio) Region, US East(N. Virginia) Region, US West(Oregon) Region, Europe(Ireland).</block>
   <block id="f23f9e699754fa9634675e68ddb2477a" category="list-text">장기 보존 복제 관계의 경우 마지막 스냅샷만 복구에 사용할 수 있습니다.</block>
-  <block id="70b71b7616d1607e66f58defc9384bf3" category="list-text">FSx for ONTAP 파일 시스템에서 iSCSI 볼륨 관리</block>
   <block id="ed2b1c265309f7d9a2006128f317479e" category="paragraph">시작하기 전에 다음을 수행합니다.</block>
   <block id="0162ca60ba3c63c1058d5815f318b75b" category="section-title">볼륨에 대한 CIFS 공유를 생성합니다</block>
   <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025년 1월 5일</block>
@@ -909,10 +850,6 @@
   <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">단일 가용 영역(단일 AZ) 배포: 하드웨어 장애를 모니터링하고 장애 발생 시 인프라 구성요소를 자동으로 교체하여 가용성을 제공합니다. 가용성 영역 내에서 데이터를 자동으로 복제하여 구성요소 장애로부터 데이터를 보호함으로써 높은 내구성을 제공합니다.</block>
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">타겟 파일 시스템의 복제된 볼륨은 데이터 보호(DP) 볼륨이며 다음과 같은 명명 형식을<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block> 따릅니다.</block>
   <block id="df4c98f43132ebd68d92a0c9822984df" category="list-text">데이터 복제 페이지의 복제 타겟에서 다음을 제공합니다.</block>
-  <block id="0cbe076a4ce5208b10cdb81c9e175006" category="list-text">* 기존 정책 선택 *: 드롭다운 메뉴에서 기존 정책을 선택합니다.</block>
-  <block id="b9a658e63ae9e8d9a604efb8acd930e6" category="list-text">* 새 정책 만들기 *: 다음을 제공합니다.</block>
-  <block id="78c187892204fa9a888a00a5635447c9" category="list-text">선택 사항: 변경 불가능한 스냅샷을 활성화합니다.</block>
-  <block id="bac08643512e190f9a6a6c2a8e9b983b" category="list-text">보존 기간 동안 이 정책에서 생성한 스냅샷이 삭제되지 않도록 하려면 * 변경 불가능한 스냅샷 활성화 * 를 선택합니다.</block>
   <block id="4e41f89501d754d5c6885a51e74ac5f0" category="list-text">보존 기간 * 을 시간, 일, 월 또는 년 수로 설정합니다.</block>
   <block id="cf6066b0e9e3a71171e38923cf6da6f9" category="list-text">파일 시스템 개요에서 * Storage VMS * 탭을 선택합니다.</block>
   <block id="c92307c84c3661374297e6b2cb6a8af4" category="list-text">스냅샷 정책 관리 페이지에서 * 스냅샷 정책 생성 * 을 선택합니다.</block>
@@ -934,7 +871,6 @@
   <block id="40042d0ee93698f3f63a7f8a3f2c9c1f" category="paragraph"><block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block>수동으로 증가하는 파일 시스템 용량을 지원하기 위해 IOPS 할당을 늘려야 할 수 있습니다.</block>
   <block id="d2a2f0e04d26b7123eb9c705ec13e758" category="list-text">이 작업을 완료하는 데 약 30분 정도 걸릴 수 있습니다.</block>
   <block id="1e0df4591e77aee403bcdd8f97b71ee5" category="paragraph">최대 전송 속도를 제한하는 것은 선택 사항이지만 권장됩니다. 제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다.</block>
-  <block id="8deecf84343cc455d4c3c3eea19e99e4" category="summary">이 기능이 활성화되면 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.</block>
   <block id="64a89a3651290ba9a03fd440b6a0ebf1" category="paragraph">보존 정책 및 기간, 자동 커밋 기간, 볼륨 추가 모드 등 기능이 설정된 경우 볼륨에 대해 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.</block>
   <block id="b492e06a3b3ad8340a18b513da6d700b" category="inline-link-macro">볼륨 생성</block>
   <block id="dcfa45791ee058474d9440831351e387" category="paragraph">변경 불가능한 파일은 에서만 사용할 수 <block ref="c2ed7675c4babbb461c62976097c066d" category="inline-link-macro-rx"></block>있습니다.</block>
@@ -948,7 +884,6 @@
   <block id="25c4d2e22e431bb231ebfacb000ad26c" category="list-text">* autocommit *: 자동 커밋 기간 동안 수정되지 않은 파일을 WORM에 자동으로 커밋하는 기능을 활성화 또는 비활성화합니다.</block>
   <block id="a673f232c0f3e69598b33b45ea372eb0" category="list-text">* 볼륨 추가 모드 *: 기능을 활성화 또는 비활성화합니다. 볼륨 추가 모드를 활성화하면 WORM 파일에 새 콘텐츠를 추가할 수 있습니다.</block>
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">적용 * 을 클릭합니다.</block>
-  <block id="0040dd329c12b8e069f111ec942d89fd" category="paragraph">이제 업데이트가 볼륨에 적용됩니다.</block>
   <block id="750bccba0d1370cdcf80e381531ccf20" category="paragraph">볼륨의 엑스포트 정책을 관리하려면 클라이언트 사양, 액세스 제어, 고급 사용자 액세스 및 NFS 버전을 설명하는 엑스포트 정책 규칙을 추가해야 합니다. 둘 이상의 엑스포트 정책을 추가하고 우선 순위를 지정할 수 있습니다.</block>
   <block id="4867c217eac62c97b182966f57c83e8f" category="doc">스냅샷 정책을 관리합니다</block>
   <block id="491d37c735073b9ba15b69c580439021" category="paragraph">FSx for ONTAP 파일 시스템에서 볼륨에 대한 스냅샷 정책을 할당, 변경 및 삭제하는 것과 같은 스냅샷 관리 작업은 스토리지 VM 수준에서 관리됩니다. 스냅샷 정책을 단일 스토리지 VM 또는 모든 스토리지 VM과 공유할 수 있습니다.</block>
@@ -972,15 +907,12 @@
   <block id="07d4b0619f50f6f95ed7b83a046239a5" category="section-title">스냅샷 정책을 삭제합니다</block>
   <block id="696434880f5851290eaa4b1ba9f80d85" category="paragraph">스냅샷 정책이 더 이상 필요하지 않을 경우 삭제합니다.</block>
   <block id="6a89139e7be9bba144081cf61352e3c2" category="list-text">삭제 대화 상자에서 * 삭제 * 를 선택하여 정책을 삭제합니다.</block>
-  <block id="7aea6efc0dbafc8802c9399b1e3f6754" category="summary">타겟 볼륨이 소스 볼륨이 되도록 복제 관계를 일시 중지했다가 다시 시작합니다.</block>
-  <block id="76540d9eea5e27790a75dc0204324995" category="paragraph">일시 중지되면 소스 볼륨과 타겟 볼륨 간의 복제 관계가 계속 유지됩니다. 데이터 전송이 일시 중지되고 볼륨이 독립적입니다. 소스 볼륨에서 대상 볼륨으로의 변경 내용 전송을 다시 활성화하려면 복제를 다시 시작하십시오.</block>
   <block id="9eef2cd11da6de70c97fb30475ecd676" category="paragraph">전송이 진행 중일 때 일시 중지하면 전송이 영향을 받지 않고 전송이 완료될 때까지 관계가 "중지 중"으로 바뀝니다. 현재 전송이 중단되면 이후 전송이므로 다시 시작되지 않습니다.</block>
   <block id="a252d0c2ed77d353301a08614eb0500e" category="section-title">복제 관계를 일시 중지합니다</block>
   <block id="a967615115cf9697b2655e3b54f1a0f4" category="list-text">Pause (Quiesce) * 를 선택합니다.</block>
   <block id="dbd53807f2ebdf4974197a2ab5736a1a" category="list-text">관계 종료 * 대화 상자에서 * 종료 * 를 선택합니다.</block>
   <block id="bac97be0c65530902c34b510dbb654b6" category="paragraph">관계가 일시 중지되고 상태가 "일시 중지됨"으로 표시됩니다.</block>
   <block id="eb59ce075de56e53756cdc61346d3683" category="section-title">일시 중지된 복제 관계를 다시 시작합니다</block>
-  <block id="510f0c7862ed4f4c13983246f994308e" category="paragraph">복제 관계를 재개하면 복제가 중지된 동안 대상 볼륨에 대한 모든 변경 사항이 삭제됩니다.</block>
   <block id="f9d637e15d973238afdaad997d440a45" category="list-text">Resume * 을 선택합니다.</block>
   <block id="e7dcd5c9be11d7b7d17ab22e0486a710" category="list-text">관계 다시 시작 대화 상자에서 * 재시작 * 을 선택합니다.</block>
   <block id="a79cee1f678331ce4a5e786550999b02" category="paragraph">관계가 재개되고 상태가 "복제됨"으로 표시됩니다.</block>
@@ -1156,7 +1088,6 @@
   <block id="2bbce7d3d059871083eb12013b7bc70d" category="section-title">대체 ONTAP 사용자 자격 증명 지원</block>
   <block id="21fe54f48c52f1924f6b2b74751f1611" category="paragraph">이제 워크로드 팩토리에서 파일 시스템을 생성하여 보안 위험을 최소화할 수 있도록 대체 ONTAP 자격 증명 세트를 지원합니다. fsxadmin 사용자만 사용하는 대신 다른 ONTAP 자격 증명 세트를 선택하거나 fsxadmin 및 vsaadmin 사용자의 암호를 제공하지 않도록 선택할 수 있습니다.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
-  <block id="17f03194826a802587b82edd13d7ac95" category="summary">데이터 보호 볼륨을 복제하거나 볼륨 데이터의 복제를 단계적으로 수행하여 데이터 보호를 3차 시스템으로 확장하거나 데이터를 마이그레이션합니다.</block>
   <block id="7652817ee4e140c39bef87f9905461f3" category="inline-link-macro">호환되는 ONTAP 버전에 대한 ONTAP 설명서</block>
   <block id="96931212d5287ed1b328f78b0384b98d" category="paragraph">이 기능은 ONTAP 버전 9.6 이상이 설치된 FSx for ONTAP 파일 시스템에서 지원됩니다. 을 <block ref="645fdc124f317ebe54966e1f8afbb990" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="1d11e66dcfc6dd530af10db4a5a40087" category="inline-link-macro">다중 구간 배포의 작동 방식</block>
@@ -1181,28 +1112,6 @@
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">제공한 사용자가 fsxadmin 사용자가 아니고 나중에 fsxadmin 암호를 재설정해야 하는 경우 AWS 콘솔에서 이 작업을 수행할 수 있습니다.</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* 스토리지 VM 자격 증명 *: 선택 사항. 사용자 이름을 입력합니다. 암호는 이 파일 시스템에 특정하거나 ONTAP 자격 증명에 대해 입력한 것과 동일한 암호를 사용할 수 있습니다. 암호는 지금 또는 나중에 설정할 수 있습니다.</block>
   <block id="37b002845528ac0296b86d28bb71e5a5" category="doc">Lambda 링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다</block>
-  <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">새 링크를 연결합니다</block>
-  <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">새 링크를 연결하면 링크 생성 및 연결이 포함됩니다.</block>
-  <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">기본 사용 권한에 맞춰 암호를 만들거나 링크 정책에 대한 사용자 지정 사용 권한을 할당할 수 있습니다.</block>
-  <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* AWS Secrets Manager로 VPC 전용 엔드포인트 구성 * 은 기본적으로 비활성화됩니다. 이 옵션을 선택하면 VPC 개인 엔드포인트를 로컬로 저장하는 대신 VPC 전용 엔드포인트를 사용하여 암호를 저장합니다.</block>
-  <block id="48457d7f94975228307244f863f96fee" category="section-title">기존 링크를 FSx for ONTAP 파일 시스템에 연결합니다</block>
-  <block id="447f36846a239be6be0faf7dc1fa0364" category="list-text">연결 링크 페이지에서 * 기존 링크 연결 * 을 선택하고 링크를 선택한 다음 * 계속 * 을 선택합니다.</block>
-  <block id="5b5b11575f2a0c06c832b5cbd1c6dcfe" category="list-text">인증 모드를 선택합니다.</block>
-  <block id="219e99148dae7112d47eedc1f49517ae" category="list-text">워크로드 팩토리: 암호를 두 번 입력합니다.</block>
-  <block id="b9000423f3d632810a4d8c3550eb4119" category="list-text">AWS Secrets Manager: 비밀 ARN을 입력합니다.</block>
-  <block id="91a73bc4f293d9fc4712c2770316ae08" category="list-text">filesystemID = FSx_filesystem_id입니다</block>
-  <block id="db1e2f706f83d7a3a9a03793db05422a" category="list-text">password=user_password입니다</block>
-  <block id="3179fc8078925ef0503270fd907af44c" category="paragraph">이 링크는 FSx for ONTAP 파일 시스템에 연결됩니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
-  <block id="db9a0ca8d6bb6376ddaad7f254b049aa" category="section-title">AWS Secrets Manager 링크 인증 관련 문제 해결</block>
-  <block id="642facf67e0ad311eee88b3ab8381590" category="list-text">문제</block>
-  <block id="c8a40767f19af94e9fbb95ab3a4c55c3" category="list-text">링크에 암호를 검색할 권한이 없습니다.</block>
-  <block id="4d918e036d58715d6e2919d728c5bea9" category="paragraph">* 해결 *: 링크가 활성화된 후 권한을 추가합니다. AWS 콘솔에 로그인하고 Lambda 링크를 찾은 다음 첨부된 권한 정책을 편집합니다.</block>
-  <block id="61eb4620c8bf60aa233a601b6f63ae77" category="list-text">암호를 찾을 수 없습니다.</block>
-  <block id="ee67bf640d0b52ba5e821e265b1eacf5" category="paragraph">* 해상도 * : 올바른 비밀 ARN을 제공합니다.</block>
-  <block id="0733070c151f197e780e335f701571f1" category="list-text">암호가 올바른 형식이 아닙니다.</block>
-  <block id="6ef3be28f69c1735acc5b68f50b352ab" category="paragraph">* 해상도 * : AWS 비밀 관리자로 이동하여 형식을 편집합니다.</block>
-  <block id="ecc4c534126952c05eb3829106343643" category="list-text">암호에 파일 시스템 인증을 위한 유효한 ONTAP 자격 증명이 포함되어 있지 않습니다.</block>
-  <block id="b94462bb135856834e40d9c982dbbc8b" category="paragraph">* 해결 방법 *: AWS 비밀 관리자에서 FSx for ONTAP 파일 시스템을 인증할 수 있는 자격 증명을 제공합니다.</block>
   <block id="db02b80a9dd5a7c959ec87fdf41baa91" category="inline-link-macro">계단식 복제</block>
   <block id="a9349d3c10a82990ac0a1fc539e5f621" category="list-text">파일 시스템의 모든 볼륨을 복제하거나 선택한 볼륨을 복제합니다.</block>
   <block id="ccbd024216a98284de9e40d4f35c7a8e" category="list-text">파일 시스템의 모든 볼륨을 복제하려면 파일 시스템 개요에서 * Replicate data * 를 선택합니다.</block>
@@ -1219,16 +1128,6 @@
   <block id="887673b402c7bbc141e56321e277605f" category="list-text">원격 데이터 복제</block>
   <block id="c9e425055996f71ecfc858708d926276" category="paragraph">이 권장 사항에서는 최적화되지 않은 구성의 모범 사례와 잠재적 위험을 설명합니다.</block>
   <block id="20086b220eeb33caf74bd6e628cfcd8c" category="section-title">AWS Secrets Manager 지원</block>
-  <block id="eee5751928fa32e80cacc3177eabff02" category="section-title">링크를 인증합니다</block>
-  <block id="696ea928d9d3c6e9a7783d23ab82a78a" category="admonition">링크당 하나의 인증 방법만 지원됩니다. 예를 들어, AWS Secrets Manager로 링크 인증을 선택한 경우 나중에 인증 방법을 변경할 수 없습니다.</block>
-  <block id="baab97c3c06c21b10c5fbf084fed88fe" category="list-text">파일 시스템 개요에서 * 링크 인증 * 을 선택합니다.</block>
-  <block id="6a77bcb0db7f616ab9e6d4b9682fd2e8" category="list-text">인증 링크 페이지에서 인증 모드를 선택합니다.</block>
-  <block id="9bb198b717235f0a6c47edbb623da61b" category="paragraph">링크가 인증되고 고급 ONTAP 작업을 수행할 수 있습니다</block>
-  <block id="5939baecae7dc8288ebfc473986ecb42" category="section-title">링크 인증을 위한 암호를 업데이트합니다</block>
-  <block id="3dbdaf9d78c6e1835c0a6d5d7aaaf3f4" category="paragraph">관리자 암호가 유효하지 않으면 암호를 업데이트하여 ONTAP용 FSx 파일 시스템에 연결합니다.</block>
-  <block id="99210d4bfc7a4ca55c8efe57bb8b88d1" category="list-text">파일 시스템 개요에서 * Update password * 를 선택합니다.</block>
-  <block id="f98b1cc9dd042df9aefdcb9f72b86aeb" category="list-text">인증 링크 페이지에서 새 암호를 두 번 입력합니다.</block>
-  <block id="3b9daf2248cf3d9617b236df5c887b99" category="paragraph">암호가 업데이트되고 링크가 이제 FSx for ONTAP 파일 시스템에 연결됩니다.</block>
   <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">Tracker에서 몇 가지 작업을 사용할 수 있습니다. 시간 프레임(최근 24시간, 7일, 14일 또는 30일), 작업 부하, 상태 및 사용자별로 작업을 필터링하고 검색 기능을 사용하여 작업을 찾고 작업 테이블을 CSV 파일로 다운로드할 수 있습니다. 언제든지 Tracker를 새로 고칠 수 있습니다. 그리고 실패한 작업을 빠르게 다시 시도하거나 실패한 작업에 대한 매개 변수를 편집하고 작업을 다시 시도할 수 있습니다.</block>
   <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">추적기는 작업에 따라 두 가지 수준의 모니터링을 지원합니다. 파일 시스템 배포와 같은 각 작업은 작업 설명, 상태, 시작 시간, 작업 기간, 사용자, 영역, 프록시 리소스, 작업 ID 및 모든 관련 하위 작업을 표시합니다. API 응답을 보고 작업 중에 발생한 상황을 파악할 수 있습니다.</block>
   <block id="0438bb5671845786f65a3d1eaf90ee88" category="list-text">들어오는 데이터를 암호화된 데이터 또는 일반 텍스트로 식별합니다.</block>
@@ -1278,7 +1177,6 @@
   <block id="7583f12b4559f6687c67d8588da1e2f7" category="doc">볼륨 자동 증가 향상</block>
   <block id="b57fe4f5ee65a0e01f61993297811ebf" category="paragraph">이제 볼륨의 자동 증가 크기를 설정하여 볼륨 크기가 비즈니스 요구 사항과 애플리케이션 요구 사항에 맞게 프로비저닝된 크기를 넘어 증가할 수 있습니다.</block>
   <block id="9f1effd9ace68ca00fe9e9e3c024b362" category="inline-link-macro">볼륨 자동 확장 활성화</block>
-  <block id="0177289fb77b50bdfc34ab44aa432a21" category="paragraph"><block ref="0177289fb77b50bdfc34ab44aa432a21" category="inline-link-macro-rx"></block></block>
   <block id="159687e1c95e32f1dcb6c9c1624ba327" category="section-title">잘 설계된 분석 업데이트</block>
   <block id="8500b95246538dfef049532751c1e9f5" category="paragraph">이제 Workload Factory가 FSx for ONTAP 파일 시스템을 분석하여 데이터 압축, 중복 제거를 포함한 스토리지 효율성이 활용되고 있는지 확인합니다. 스토리지 효율성은 파일 시스템이 사용 가능한 공간을 얼마나 효율적으로 사용하는지 측정합니다.</block>
   <block id="26e5625f54c5c47a57293d23260101c7" category="inline-link-macro">잘 설계된 저장 효율성 상태를 확인하세요</block>
@@ -1312,24 +1210,6 @@
   <block id="5a7cf4155ebaa9aec1f33318c7c4cf82" category="section-title">2025년 6월 8일</block>
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025년 3월 2일</block>
   <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요.</block>
-  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>..</block>
-  <block id="d7a33a9350fbc2bb6f775eabf85866de" category="list-text">FSx for ONTAP 파일 시스템에 연결된 보안 그룹에서 링크 연결을 위해 다음 포트가 열려 있어야 합니다.</block>
-  <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">사용자 정의 스냅샷 정책을 만들려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">볼륨의 수동 스냅샷을 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="6234e99ad9e8c051d4afaa47c5d4ff82" category="list-text">볼륨에 대한 액세스를 구성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">볼륨 자동 증가를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="f8e03e36604030c79d6107b800f61804" category="list-text">볼륨 inode가 저장 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">링크를 만들고 연결하세요</block>
-  <block id="d2daf1f2c560c48cb1e86e38214b4f9f" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block><block ref="cd9ae14bef62d063a73930ad8837c0cf" category="inline-link-macro-rx"></block> 또는.</block>
-  <block id="facdbacecd0a382dee80b9b865bb8503" category="paragraph">기존 스냅샷 정책을 표시하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="934b00a26e238802a369f0478947166f" category="paragraph">변경 불가능한 스냅샷을 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">스냅샷 정책을 할당하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">스냅샷 정책을 제거하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
-  <block id="316509fcb5a8d1b5e1280f3f64c594f2" category="list-text">사용자 이름 = FSx_user</block>
-  <block id="11f24c2a8c13499208f4d69098436bd2" category="paragraph">제한이 없으면 네트워크 및 애플리케이션 성능이 저하될 수 있습니다. 또는 중요한 워크로드(예: 재해 복구에 주로 사용되는 워크로드)에 FSx for ONTAP 파일 시스템에 대해 무제한 전송 속도를 사용하는 것이 좋습니다. . Replication settings(복제 설정) 에서 다음을 제공합니다.</block>
   <block id="fca40712560cec2d2b7a47110cfecda1" category="list-text">*새 정책 만들기*: *정책 이름*을 입력하세요.</block>
   <block id="0546ab198c101c424e412d1355272bcd" category="list-text">*변경 불가능한 스냅샷*: 선택 사항. 보존 기간 동안 이 정책에서 생성한 스냅샷이 삭제되지 않도록 하려면 * 변경 불가능한 스냅샷 활성화 * 를 선택합니다.</block>
   <block id="64c17706e0528a5c44c7beee628cc101" category="doc">BlueXP 워크로드 팩토리 알림 서비스 지원</block>
@@ -1347,7 +1227,6 @@
   <block id="6250cd311debe5758acc69f81921ab78" category="paragraph">Workload Factory는 중요한 데이터를 실수로 삭제하거나 랜섬웨어와 같은 악의적인 공격으로부터 보호하기 위해 한 FSx for ONTAP 시스템에서 다른 FSx for ONTAP 파일 시스템으로 변경 불가능한 볼륨을 복제하는 기능을 지원합니다. 대상 볼륨과 호스트 파일 시스템은 변경 불가능하거나 잠기게 되며, 대상 파일 시스템의 모든 데이터는 보존 기간이 끝날 때까지 수정하거나 삭제할 수 없습니다.</block>
   <block id="b6fc33d7434bb860ad528753113881b1" category="inline-link-macro">복제 관계를 만드는 방법을 알아보세요</block>
   <block id="d3dbddfb353eaaa957947efb04ca7013" category="paragraph"><block ref="d3dbddfb353eaaa957947efb04ca7013" category="inline-link-macro-rx"></block></block>
-  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">링크 생성 중 IAM 실행 역할 및 권한 관리</block>
   <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
   <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">다중 가용 영역(Multi-AZ) 배포: 가용 영역을 사용할 수 없는 경우에도 데이터에 지속적인 가용성을 제공합니다. 다중 AZ 파일 시스템은 공유 ONTAP 파일 데이터에 대한 고가용성이 필요하고 가용 영역 전체에서 기본 복제 기능이 있는 스토리지가 필요한 비즈니스 크리티컬 운영 워크로드를 위해 설계되었습니다.</block>
@@ -1361,17 +1240,13 @@
   <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*프로비저닝된 IOPS*: 다음 옵션 중 하나를 선택하세요.</block>
   <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*자동*: 자동의 경우, 생성된 GiB 1개에 대해 3 IOPS가 추가됩니다.</block>
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*사용자 프로비저닝*: 사용자 프로비저닝의 경우 IOPS 값을 입력합니다.</block>
-  <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*링크 권한*: 링크 권한에 대해 다음 옵션 중 하나를 선택하세요.</block>
-  <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">텍스트 상자에 Lambda 실행 역할 ARN을 입력합니다.</block>
   <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">볼륨을 생성하다</block>
   <block id="f80d67f0a6951b3f6c1185e7c7f39c30" category="paragraph">최대 볼륨 증가 크기와 단위를 지정하세요. 현재 볼륨 크기보다 작은 최대 증가 크기를 설정할 수 없습니다.</block>
   <block id="d932719afe063ca8fcfe0eb63f1b6ec9" category="paragraph">ONTAP은 중복 제거 및 압축 기능을 사용하여 스토리지 효율성을 달성합니다. 중복 제거는 중복되는 데이터 블록을 제거합니다. 데이터 압축: 데이터 블록을 압축하여 필요한 물리적 스토리지의 양을 줄입니다.</block>
   <block id="9d083d8cac2f7524236aec0400de23bf" category="inline-link-macro">ARP/AI에 대해 자세히 알아보세요</block>
   <block id="cb0b32de8b019bb1df747d59de75707b" category="list-text">*ARP/AI*: AI를 탑재한 NetApp 자율형 랜섬웨어 보호(ARP/AI)는 링크가 파일 시스템에 연결된 경우 기본적으로 활성화됩니다. <block ref="c4c4beca7d4846b88f49bf491b5261f6" category="inline-link-macro-rx"></block>.. 계속하려면 설명을 수락하십시오.</block>
   <block id="f6f1c3f8f0f62507f18da1fcf460ade4" category="paragraph">해당 기능을 사용할 수 없는 경우, 다음 중 하나의 이유가 있습니다.</block>
-  <block id="9e46846308a6940deed12bb97a4f8290" category="list-text">링크는 파일 시스템과 연관되지 않습니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="df1195db43983cb33962d0fe23f28da4" category="list-text">파일 시스템에는 이미 ARP/AI 정책이 있습니다.</block>
-  <block id="817a91472106a30911a7a081b0284ff7" category="paragraph">FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고 볼륨 용량을 재조정하여 노드 내의 모든 FlexVol 볼륨이나 모든 구성 요소에 파일을 균등하게 분산하여 모든 노드가 단일 FlexGroup 볼륨의 작업 부하에 참여하도록 합니다.</block>
   <block id="46119f30376fd007e4806359f116810d" category="paragraph">FlexVol 볼륨과 FlexGroup 볼륨에 대해 볼륨 용량 재조정이 지원됩니다. 새로운 파일의 추가 및 파일 증가로 인해 시간이 지남에 따라 불균형이 발생할 경우 볼륨 재분산을 통해 용량을 재분배합니다. 재조정 작업을 수동으로 시작한 후 파일을 선택하고 운영 중단 없이 자동으로 이동합니다. 볼륨 전송 작업에는 파일 시스템 리소스가 사용됩니다.</block>
   <block id="bbf6fdac51a56da72339e09ef6a7537c" category="paragraph">각 볼륨 유형과 재조정 작업은 다음과 같이 다릅니다.</block>
   <block id="7d98517078b732298ebd050c16b0fdc2" category="list-text">FlexVol 볼륨</block>
@@ -1383,8 +1258,6 @@
   <block id="d3ba2e7d0644f59c9834f36ad9a37bd9" category="admonition">iSCSI 및 NVMe와 같은 SAN 볼륨에서는 재조정이 지원되지 않습니다.</block>
   <block id="287fd51e17b8ed83911f0acd39496c50" category="section-title">볼륨의 균형을 확인하세요</block>
   <block id="7e42e168316583c933d50f5311ce6477" category="paragraph">FSx for ONTAP 파일 시스템에서 FlexVol 또는 FlexGroup 볼륨의 균형을 확인합니다.</block>
-  <block id="0691d778f09d713a755463d05ab1033d" category="inline-link-macro">링크를 만듭니다</block>
-  <block id="53e6259fd019f47a663995e674152f8b" category="list-text">볼륨의 균형을 확인하려면 다음을 수행해야 합니다. <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> . 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="267c95738d47a09a9b509ffdd48c24b0" category="list-text">볼륨 탭에서 표 상단에 있는 *볼륨 잔액 확인*을 선택하세요.</block>
   <block id="c9784b38284a9b2506bc92daf5caada4" category="list-text">볼륨 잔액 창에서 다음의 잔액 상태를 검토하세요.</block>
   <block id="ba51913935bc9e57b04a0e373c7e87f1" category="section-title">볼륨 용량 재조정</block>
@@ -1392,7 +1265,6 @@
   <block id="3df496910d7ade34c46b7c3c46f516a9" category="inline-xref">리밸런싱을 중지하다</block>
   <block id="6884c9c0713962c7d0a4fabd1cf49a6d" category="inline-xref">볼륨의 균형을 확인하세요</block>
   <block id="63acfaf1d07db652bff37bddaa4ba8bc" category="list-text"><block ref="65ac8887e886c8e0446817b3710e8cbe" category="inline-xref-macro-rx"></block> 볼륨을 재조정하기 전에,</block>
-  <block id="af7202b99122b0c2ef1b703335afeef9" category="list-text">볼륨을 재조정하려면 다음을 수행해야 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>합니다. 기존 링크가 없는 경우 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block> 파일 시스템의 링크를 연결하려면 * 계정 이름 * 아래에서 * 링크 * 를 선택합니다. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="dfaf4c319f7d24ec55b76a7ae4393e62" category="list-text">FlexVol 볼륨은 모든 볼륨 리소스의 균형을 균등하게 맞추기 위해 전체적으로 재조정하는 것이 가장 좋습니다. 선택 해제된 볼륨은 균형 조정 절차에 적극적으로 참여하지 않습니다.</block>
   <block id="934baa9ec98e8fc4a616d393737537e5" category="open-title">FlexVol 볼륨</block>
   <block id="8b101e32193fcbdd503f49081b4a7e4b" category="paragraph">FSx for ONTAP 파일 시스템의 한 노드 내에서 FlexVol 볼륨은 다른 FlexVol 볼륨과 비교하여 균형을 이룰 수 있습니다. 파일 시스템에 노드당 두 개 이상의 FlexVol 볼륨이 있고 단일 FlexVol 볼륨이 선택된 경우, FlexVol 볼륨은 모든 FlexVol과 관련하여 균형을 이루지만, 선택된 볼륨만 이동할 수 있습니다.</block>
@@ -1414,30 +1286,12 @@
   <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">재조정 중지 대화 상자에서 *중지*를 선택합니다.</block>
   <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">볼륨 재조정 작업이 중지되고 활성 볼륨 이동이 중단됩니다.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025년 6월 29일</block>
-  <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*자동*: AWS CloudFormation 코드가 Lambda 권한 정책과 실행 역할을 자동으로 생성하도록 이 옵션을 선택합니다.</block>
   <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">볼륨이 불균형한 경우 다음을 고려하세요. <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> .</block>
   <block id="89733971c4e3e5f45999d2907d6d1c43" category="paragraph">빠른 생성을 위한 기본 배포 유형은 ONTAP 파일 시스템용 2세대 FSx입니다. 단, 선택한 지역에서 ONTAP 파일 시스템용 2세대 FSx를 지원하지 않는 경우는 예외입니다.</block>
   <block id="9f9382d36e2904b74545777af65bb3d2" category="list-text">*배포 유형*: 배포 유형과 파일 시스템 생성을 선택하세요. 2세대 파일 시스템의 사용 가능 여부는 선택한 지역에 따라 달라집니다. 선택한 리전에서 2세대 FSx for ONTAP 파일 시스템을 지원하지 않으면 배포 유형이 1세대로 전환됩니다.</block>
   <block id="ad25ffa35c681232ceeec02144315aa5" category="paragraph">*파일 시스템 생성*: 다음 중 하나를 선택하세요.</block>
   <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*2세대*: 이 구성은 고성능 작업 부하나 작업 부하가 작은 규모로 시작해서 점진적으로 처리량을 72GB/s, IOPS 240만까지 확장할 때 권장됩니다.</block>
-  <block id="2af62906cede15164d81a343aa2da6a4" category="summary">시간이 지남에 따라 불균형이 발생하는 것을 방지하기 위해 볼륨 용량을 확인하고 재조정합니다.</block>
   <block id="bfebf248126ee0c8c192d7442b03e1a1" category="sidebar">ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요.</block>
-  <block id="65050310e57f3790fef3c72eb48d33fe" category="section-title">링크가 유익한 이유</block>
-  <block id="abca8c391b472ef4e80c6577b5d5eb2a" category="paragraph">링크를 사용하면 다음과 같은 이점이 있습니다.</block>
-  <block id="92d3d2d26bd62a6b2959d23585ef12a2" category="list-text">링크는 AWS Lambda를 활용하여 이벤트에 응답하여 코드를 실행합니다. 이러한 서버리스 접근 방식은 VPC에서 실행 중인 인스턴스의 종속성을 제거합니다.</block>
-  <block id="e721a1904dd1a2a54d259deb8d176230" category="paragraph">링크를 만든 후에는 하나 이상의 FSx for ONTAP 파일 시스템과 연결할 수 있습니다. 각 파일 시스템은 동일한 NetApp 계정에 있는 하나의 링크에만 연결할 수 있습니다. NetApp 계정이 여러 개인 경우 단일 파일 시스템을 다른 NetApp 계정 아래의 추가 링크에 연결할 수 있습니다.</block>
-  <block id="d078fe237d087bff0fe3c19efd14fa54" category="list-text">사전 예방적 유지 관리, 안정성 및 비용 성능 최적화를 위한 FSx for ONTAP 파일 시스템 구성의 잘 설계된 상태</block>
-  <block id="c6501747b7c38b1e25460b13a727ec7c" category="list-text">NetApp 자율형 랜섬웨어 보호(ARP/AI)</block>
-  <block id="489e0dc0c162e1aff5f0f664bf2ea756" category="list-text">FSx for ONTAP 파일 시스템 전반의 향상된 전체적인 용량 관찰 기능</block>
-  <block id="b97b322b8cb0f9b187eb7b966c9ff886" category="list-text">볼륨 및 스토리지 VM 데이터 복제, 관리 및 모니터링</block>
-  <block id="147d85abf5db68a53249c95e1a68cedb" category="list-text">SMB/CIFS 공유 및 NFS 내보내기 정책 프로비저닝 및 관리</block>
-  <block id="0ff428418a3d64cc69a6ee68906a8959" category="list-text">사용자 정의 보호 SLA에 대한 스냅샷 정책 생성 및 관리</block>
-  <block id="c92f4938531f7fd55dc831a93892d29a" category="list-text">자동 용량 관리를 위한 Inode 관리 향상</block>
-  <block id="3b5c7e283e0b752d51311178d3fa06f1" category="list-text">탄력적 확장을 위한 볼륨 자동 증가</block>
-  <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">즉각적이고 즉각적인 데이터 복제를 위한 복제본 생성 및 관리</block>
-  <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">ONTAP 버전과 같은 ONTAP 에서 직접 추가 메트릭 표시</block>
-  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">FSx for ONTAP 파일 시스템에 링크 연결</block>
-  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph">의 방법을 <block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="78f8c00f462b0fbe742eab283e3fdf7a" category="sidebar">링크에 대해 알아보기</block>
   <block id="46d508a0ef715ddbdea8774565e48b6b" category="list-text">*경로*: 기본 볼륨 이름을 사용하여 경로를 정의하거나 내부 디렉토리에 대한 공유를 제공합니다.</block>
   <block id="8e2b88358241ef7747b6792d7462b691" category="paragraph">볼륨 이름에 대한 유효한 경로 입력(예: "avocado")은 다음과 같습니다.</block>
@@ -1449,11 +1303,6 @@
   <block id="5b4d700431157f8e7dcc17b14d365c7f" category="list-text">\\섬기는 사람</block>
   <block id="6b8258a2b9dce9918a5b42eb1c2de4c6" category="list-text">\\서버\프로젝트</block>
   <block id="710ecb74356fd86fc995d76f7fcb7c5c" category="list-text">\\서버\프로젝트\공유 리소스</block>
-  <block id="049f730a98eb69627912748561a543b8" category="paragraph">링크 배포 스택은 Lambda 권한 정책에 다음 기본 비밀 관리자 ARN 정규식을 자동으로 추가합니다.<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block> .</block>
-  <block id="bab25954c067653929b889d687bcb718" category="paragraph">CloudFormation으로 리디렉션 대화 상자가 나타나고 AWS CloudFormation 서비스에서 링크를 만드는 방법이 설명되어 있습니다.</block>
-  <block id="1023373ba9dff02b999882804d6dc2ef" category="list-text">filesystemID = FSx_filesystem_id (선택 사항)</block>
-  <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">사용자 = FSx_user</block>
-  <block id="0dcf8b4e3476c0545950d4d61acb625c" category="admonition">AWS Secrets Manager를 인증하려면 사용자가 필요합니다. 이 사용자는 귀하가 제공한 _FSx_user_이거나 FSx for ONTAP 파일 시스템에서 생성된 다른 사용자입니다.  기본 사용자는<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 사용자를 제공하지 않는 경우.</block>
   <block id="6a6ae8005c209a1567f9003ea9e5cebe" category="doc">복제 관계 탭 개선</block>
   <block id="c6a6fda1561189188099a8444886e4b7" category="paragraph">*복제 관계* 탭에서 복제 관계에 대한 자세한 정보를 제공하기 위해 복제 관계 표에 여러 개의 새 열을 추가했습니다.  이제 표에는 다음 열이 포함됩니다.</block>
   <block id="932acf34d9bec3ecdd131ec5df85300a" category="list-text">SnapMirror 정책</block>
@@ -1487,8 +1336,6 @@
   <block id="743828d5c9c11b38d3dbbf76d787f497" category="section-title">SMB/CIFS 주식 생성 및 관리 기능 향상</block>
   <block id="421075462886e558113f14b52fe22487" category="paragraph">이제 볼륨 내의 디렉토리를 가리키는 SMB/CIFS 공유를 만들 수 있습니다.  볼륨 내에서 어떤 공유가 있는지, 공유가 가리키는 곳은 어디인지, 특정 사용자와 그룹에 부여된 권한은 무엇인지 확인할 수 있습니다.</block>
   <block id="4662a232249c09ca958781da08211b0c" category="paragraph">데이터 보호 볼륨의 경우, SMB/CIFS 공유를 생성하는 흐름에 이제 마운트 목적으로 볼륨에 대한 연결 경로를 생성하는 작업이 포함됩니다.</block>
-  <block id="952da3361b1e3ca5daa8c23a39780e18" category="list-text">수동: Codebox에서 CloudFormation이나 Terraform을 사용하여 수동 등록 링크를 만듭니다.  코드가 지속되면 작업을 완료할 수 있는 시간이 더 늘어납니다.  이 기능은 보안 및 DevOps와 같이 링크 생성을 완료하는 데 필요한 권한을 먼저 부여해야 하는 여러 팀과 작업할 때 유용합니다.</block>
-  <block id="1ca9512c09f6b26312a475fda293b54a" category="list-text">*링크 등록*: 링크 등록 방법에 대한 지침을 보려면 CloudFormation 또는 Terraform을 선택하고 지침을 따르세요.</block>
   <block id="aeb7b1f8e40a81f588a0d8770c9826d3" category="list-text">SMB/CIFS: Windows 운영 체제용 파일 저장 프로토콜</block>
   <block id="77e7ba17717c79352c95d49bede81697" category="list-text">SMB/CIFS, NFS 또는 iSCSI 중 선택한 프로토콜에 대한 액세스를 구성해야 합니다.</block>
   <block id="aa10f9c969547bf6e65a90292b199a04" category="list-text">*SMB/CIFS 공유*: 다음을 제공하세요.</block>
@@ -1499,12 +1346,10 @@
   <block id="b5dc11131d07e6b80a82ac57f0094e82" category="section-title">AI를 활용한 NetApp Autonomous Ransomware Protection으로 워크로드 데이터를 보호하세요</block>
   <block id="cf543fd6dd3f50a958aecb8ddcc73e35" category="paragraph">AI(ARP/AI)를 탑재한 NetApp 자율형 랜섬웨어 보호 기능은 바이러스 백신 소프트웨어가 침입을 감지하지 못한 경우 중요한 추가 방어 계층 역할을 합니다.  ARP/AI 정책을 설정하면 모든 스토리지 VM과 모든 기존 볼륨, 새로 생성된 볼륨에 대해 해당 정책이 활성화됩니다.  ARP/AI를 활성화하면 모든 볼륨과 스토리지 VM을 감지하고 보호합니다.  파일 확장자가 비정상으로 표시되는 경우 알림을 평가해야 합니다.</block>
   <block id="10cddc5c7e6cd81d7056d1293652526e" category="list-text">랜섬웨어 공격으로부터 데이터를 보호하기 위해 파일 시스템이나 개별 볼륨에 ARP/AI 정책을 활성화하여 보호 계층을 추가하세요.</block>
-  <block id="b2a386f5924b478e19e471dfee7196f1" category="paragraph">불필요한 알림과 부정확한 최적화 결과를 방지하기 위해 스토리지 환경에 적용되지 않는 특정 스토리지 구성에 대한 분석을 취소할 수도 있습니다.</block>
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">구성 문제 해결</block>
   <block id="4d39d4688820662a72b89ef0ab12f050" category="paragraph">FSx for ONTAP 파일 시스템이나 파일 시스템의 선택된 볼륨에 대한 구성 문제를 해결할 수 있습니다.  수정할 구성을 하나 이상 선택할 수 있습니다.</block>
   <block id="a46fab6bb1626887eac54858dc05cb71" category="section-title">구성 분석 취소</block>
   <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">기각된 구성 분석 다시 활성화</block>
-  <block id="94ece9ea1a77966f2acd9441eeb32f2f" category="list-text">SMB/CIFS 공유를 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block> .  링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="8862b4eacf59c99ed5fc21bc27f472cc" category="section-title">볼륨에 대한 SMB/CIFS 공유 만들기</block>
   <block id="39a213f7d31d9201e8ff881a73e3819c" category="paragraph">볼륨에 대한 SMB/CIFS 공유를 생성하는 단계를 따르세요.</block>
   <block id="3eb0695d4750920a7dd8ea4164e63096" category="list-text">*고급 작업*을 선택한 다음 *SMB/CIFS 공유 관리*를 선택합니다.</block>
@@ -1525,7 +1370,6 @@
   <block id="3d892826b81878b82d3bd5353e94ce1a" category="paragraph">ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에 따라 자동으로 업데이트되므로 수동으로 업데이트할 필요가 없습니다.</block>
   <block id="fa4c28f427b28e224da4284dcc124897" category="list-text">다음 구성은 ARP/AI 사용을 지원하지 않습니다.</block>
   <block id="18c9bfe30b0887116855a65d0152a33b" category="section-title">파일 시스템 또는 볼륨에 대해 ARP/AI 활성화</block>
-  <block id="f03bda164bfeeaa7c09f85689862bd05" category="paragraph">파일 시스템이나 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block> .  링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="9af6115dc697f592721e21923c19d17f" category="open-title">파일 시스템에 ARP/AI 활성화</block>
   <block id="f371cba680893ef0527a9cf573867c3b" category="list-text">정보에서 *자율 랜섬웨어 보호* 옆에 있는 연필 아이콘을 선택하세요.  마우스를 *자율 랜섬웨어 보호* 행 위에 올려놓으면 화살표 옆에 연필 아이콘이 나타납니다.</block>
   <block id="6d9dcefd190935b4cd500a98bedd247f" category="list-text">AI(ARP/AI)를 통한 NetApp 자율형 랜섬웨어 보호 페이지에서 다음을 수행합니다.</block>
@@ -1567,7 +1411,6 @@
   <block id="4c01998cfbe91538bc592922c3e8734f" category="list-text">선택적으로, 라벨을 선택하거나 새 라벨을 만들 수 있습니다.</block>
   <block id="923a0a2b244437dc531c8a64263b0020" category="list-text">선택 사항: 스냅샷이 보존 기간 동안 삭제되는 것을 방지하려면 스냅샷을 변경 불가능하게 설정합니다.</block>
   <block id="f7485ffd44c64cac23a73493d66e3cf4" category="summary">다양한 활성 작업 세트가 포함된 프로젝트 기반 워크로드의 요구 사항을 충족하기 위해 FSx for ONTAP 파일 시스템의 SSD 스토리지 용량을 수동으로 조정합니다.</block>
-  <block id="36ce9e23b4485aac42f272cf012cfd85" category="paragraph">다양한 활성 작업 세트가 포함된 프로젝트 기반 워크로드의 요구 사항을 충족하도록 FSx for ONTAP 파일 시스템의 SSD(솔리드 스테이트 드라이브) 저장 용량을 수동으로 조정합니다.</block>
   <block id="3c600356591a28f18cc21513190e4cb5" category="paragraph">탄력적인 파일 시스템 용량을 사용하면 작업 부하 요구 사항에 맞게 파일 시스템 용량을 동적으로 조정할 수 있습니다.</block>
   <block id="fa86270fd952d04b42ae4b5586eabdef" category="paragraph">자동으로<block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> 파일 시스템의 경우 SSD 용량이 1GiB 증가하거나 감소할 때마다 IOPS는 3 IOPS씩 증가하거나 감소합니다.</block>
   <block id="c58a7814e09e2136ba19c01a85ca87cb" category="list-text">대시보드에서 *SSD 용량 조정*을 선택합니다.</block>
@@ -1603,7 +1446,6 @@
   <block id="63421d2e7769a33701821702ab1b0be8" category="list-text">*새 볼륨으로 복원*을 선택합니다.</block>
   <block id="2321232f7bb400db057064cec47f4904" category="list-text">스냅샷의 데이터를 기존 볼륨으로 복원합니다.  이 작업은 스냅샷 생성 시간 이후에 수정된 모든 데이터를 영구적으로 삭제합니다.</block>
   <block id="b271a75b2d121a8cb5f59ae458394323" category="section-title">2025년 9월 9일</block>
-  <block id="62486fa65fc31c383ace8989549632ad" category="sidebar">스냅샷을 사용하세요</block>
   <block id="b8d3d1ca4d4975c76eec10109e85c77f" category="sidebar">백업을 개체 스토리지에 사용</block>
   <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">지역 지원</block>
   <block id="468469fded9ecf5cf0e132a6daa62d32" category="paragraph">다음 AWS 지역은 지원되지 않습니다.</block>
@@ -1616,7 +1458,6 @@
   <block id="edfbca9622799a953a48987a288fe283" category="paragraph">Workload Factory는 2세대 파일 시스템의 SSD(솔리드 스테이트 드라이브) 용량을 줄이는 것을 지원합니다. 탄력적인 파일 시스템 용량을 사용하면 작업 부하 요구 사항에 맞게 파일 시스템 용량을 동적으로 조정할 수 있습니다.</block>
   <block id="381c6da705f822c3139853781716a57a" category="admonition">SSD 저장 용량 감소는 2세대 파일 시스템에서만 지원됩니다.</block>
   <block id="d3de0d39919d3426b0b013a4457e21ff" category="list-text">*사용 사례*: 복제에 대한 다음 사용 사례 중 하나를 선택하세요.  선택한 사용 사례에 따라 Workload Factory는 모범 사례에 따라 권장 값으로 양식을 채웁니다.  권장되는 값을 수락하거나 양식을 작성하면서 변경할 수 있습니다.</block>
-  <block id="78e26b4f42ff9572ff33a0dbb9094105" category="paragraph">Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _균형(자동)_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.<block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 문서.  Workload Factory는 계층화 정책에 대해 Workload Factory 콘솔에서 사용 사례 기반 이름을 사용하고 FSx for ONTAP 계층화 정책 이름을 괄호 안에 포함합니다.</block>
   <block id="538da000f69d1359c086e0483675390f" category="paragraph">마이그레이션 사용 사례를 선택한 경우 Workload Factory는 소스 볼륨의 계층화 정책을 대상 볼륨으로 자동으로 복사합니다.  계층화 정책을 복사하려면 선택을 취소하고 복제를 위해 선택한 볼륨에 적용되는 계층화 정책을 선택합니다.</block>
   <block id="b18d7ec0ad964d10af97254ea8b0612d" category="doc">Amazon FSx for NetApp ONTAP Workload Factory의 초기 릴리스</block>
   <block id="8db376980442524a58ebd917532846d7" category="paragraph">Workload Factory에서는 스토리지 관리를 위해 읽기 모드를 사용할 수 있습니다.  읽기 모드는 Infrastructure-as-Code 템플릿에 특정 변수가 채워지도록 읽기 전용 권한을 추가하여 기본 모드의 경험을 향상시킵니다.  Infrastructure-as-Code 템플릿은 Workload Factory에 수정 권한을 제공하지 않고도 AWS 계정에서 직접 실행할 수 있습니다.</block>
@@ -1675,7 +1516,6 @@
   <block id="bf79d5699d9edd84404a4a8329ed718d" category="doc">NetApp Workload Factory에서 파일 시스템에 HA 쌍 추가</block>
   <block id="24d80cd4a2c4c1ee117632b920ca71fb" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 2세대 Single-AZ 파일 시스템을 확장하여 성능과 용량을 늘리기 위해 고가용성(HA) 쌍을 추가합니다.  이 확장을 통해 1세대 파일 시스템에 비해 더 높은 성능 확장성과 유연성을 얻을 수 있습니다.</block>
   <block id="022864559429d1768096c31dc8128576" category="list-text">*FSx for ONTAP*의 *정보*에서 *HA 쌍* 옆에 있는 연필 아이콘을 선택합니다.</block>
-  <block id="0f35e66a97fba2e64d9a3365a471a843" category="doc">NetApp Workload Factory에서 데이터 보호 볼륨 복제</block>
   <block id="fdfa6f46ac2846b7f738582d57fb90b2" category="paragraph">NetApp Workload Factory는 데이터 보호 볼륨 복제를 지원하며, 이를 _캐스케이드 배포_라고도 합니다.  _캐스케이드 배포_는 소스 볼륨이 보조 볼륨(첫 번째 홉)에 미러링되고 보조 볼륨이 3차 볼륨(두 번째 홉)에 미러링되는 관계 체인으로 구성됩니다.  보조 볼륨을 사용할 수 없게 되면 새로운 기준 전송을 수행하지 않고도 기본 볼륨과 3차 볼륨 간의 관계를 동기화할 수 있습니다.</block>
   <block id="c6c3ec500fcd9ad7eaa60d47e2c0b703" category="list-text">*FSx for ONTAP*에서 복제할 볼륨이 포함된 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="07dba4b1db394152600a3f2fa2598bc1" category="summary">NetApp Workload Factory의 복제 관계에서 소스 볼륨의 복제 일정을 변경합니다.</block>
@@ -1688,24 +1528,12 @@
   <block id="21c979f4327cd67644d8ab5b64a762c7" category="doc">NetApp Workload Factory에서 볼륨 복제</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory의 FSx for ONTAP 파일 시스템에서 스토리지 VM에 대한 Active Directory를 구성하고 업데이트합니다.</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*에서 업데이트할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">정기적으로 예약된 백업 외에 NetApp Workload Factory에서 볼륨의 수동 백업을 만듭니다.</block>
   <block id="4f43be2165dfc12e9cac6220645b9996" category="paragraph">NetApp Workload Factory에서 정기적으로 예약된 백업 외에 볼륨의 수동 백업을 만듭니다.</block>
   <block id="cc481e5a678e1d84e7207782a75f9a18" category="summary">NetApp Workload Factory를 사용하면 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
   <block id="9b19e4522ce9145cc667b5fcceaba11d" category="doc">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 만들기</block>
   <block id="ebb1274f47205fb0c6d6d8988b0944b0" category="paragraph">NetApp Workload Factory를 사용하면 1세대 및 2세대 FSx for ONTAP 파일 시스템을 만들어 볼륨과 추가 데이터 서비스를 추가하고 관리할 수 있습니다.</block>
   <block id="ddf59bcbb71271f59e400a7e3d03e5e5" category="list-text">저장소 타일에서 * ONTAP 용 FSx 만들기*를 선택합니다.</block>
   <block id="cf8254c1af160e61f04022f6a69ab935" category="list-text">*AWS 자격 증명*: Workload Factory에 AWS 자격 증명을 추가하거나 자격 증명 없이 계속할지 선택합니다.</block>
-  <block id="d1b55cbdf6e8ca176a53229f6dc39afc" category="summary">NetApp Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계와 연결을 제공하기 위해 링크를 만들고 관리할 수 있습니다.</block>
-  <block id="5ba5b0aebf03129e0be728e866a2b27b" category="paragraph">고급 ONTAP 관리 작업을 수행하려면 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간의 연결을 설정합니다. 여기에는 새 람다 링크와 기존 람다 링크를 연결하고, 링크를 인증하는 작업이 포함됩니다. 링크 연결을 사용하면 Amazon FSx for ONTAP API를 통해서는 사용할 수 없는 특정 기능을 FSx for ONTAP 파일 시스템에서 직접 모니터링하고 관리할 수 있습니다.</block>
-  <block id="8525c310ff1b921b05db83eb21ea6be7" category="paragraph">링크에는 인증이 필요합니다. Workload Factory 자격 증명 서비스에 저장된 자격 증명이나 AWS Secrets Manager에 저장된 자격 증명을 사용하여 링크를 인증할 수 있습니다. 링크당 하나의 인증 방법만 지원됩니다. 예를 들어 AWS Secrets Manager를 사용하여 링크 인증을 선택한 경우 나중에 인증 방법을 변경할 수 없습니다.</block>
-  <block id="fa1694d04e308a581d5d23c44b278491" category="list-text">자동: Workload Factory를 통해 자동 등록 링크를 생성합니다.  자동으로 생성된 링크에는 Workload Factory 자동화를 위한 토큰이 필요하며 CloudFormation 코드는 수명이 짧습니다.  최대 6시간 동안만 사용할 수 있습니다.</block>
-  <block id="d6305b17d1542122d978c37db15fd5d3" category="inline-link-macro">Workload Factory에 자격 증명 추가</block>
-  <block id="3b6158401b21fd0fabd6f75b8d9c8c23" category="list-text">Workload Factory 콘솔의 경우: 포트 443(HTTPS)</block>
-  <block id="e07190df7367fb116bdd913bfce43fbe" category="paragraph">CloudFormation을 사용하여 Workload Factory 내에서 링크를 자동으로 생성하고 등록합니다.</block>
-  <block id="40be05127ecd2439f7ee7256f055873a" category="list-text">*FSx for ONTAP*에서 링크를 연결할 파일 시스템의 작업 메뉴를 선택한 다음 *링크 연결*을 선택합니다.</block>
-  <block id="939a8d22db4ccfbdde48d35119ad37a3" category="list-text">*AWS Secrets Manager*: 선택 사항.  Workload Factory가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있도록 허용합니다.</block>
-  <block id="7580bfe7832e708a7a254e231956ba42" category="list-text">Workload Factory 인터페이스로 돌아가면 링크가 FSx for ONTAP 파일 시스템과 연결되어 있는 것을 볼 수 있습니다.</block>
-  <block id="3d607d93b8532423a7bbebf948091168" category="summary">Workload Factory에서 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만듭니다.</block>
   <block id="ab9a6ebd2e1e5562fa11ba5a014fc247" category="paragraph">Workload Factory의 스토리지 VM에 대한 사용자 지정 스냅샷 정책을 만들어 스냅샷 생성 및 보존을 관리합니다. 스냅샷 정책은 시스템이 스토리지 VM에 대한 스냅샷을 생성하는 방법을 정의합니다. FSx for ONTAP 파일 시스템의 스토리지 VM에 대한 스냅샷 정책을 생성할 수 있습니다. 여러 스토리지 VM에서 정책을 공유할 수도 있습니다.</block>
   <block id="ab208b31e3a136f0c6135fb0336e666b" category="list-text">*저장소 VM* 탭에서 예약된 스냅샷으로 보호할 볼륨에 대한 작업 메뉴를 선택한 다음, *고급 작업*을 선택하고, *스냅샷 정책 관리*를 선택합니다.</block>
   <block id="639d2937555bcb4f73e857db43a5af09" category="summary">NetApp Workload Factory에서 FSx for ONTAP 볼륨의 수동 스냅샷을 만듭니다.  스냅샷은 볼륨 콘텐츠의 특정 시점 버전입니다.</block>
@@ -1739,8 +1567,6 @@
   <block id="5be4935f65cd6a9a3014866320800b46" category="list-text">*FSx for ONTAP*에서 삭제하려는 FSx for ONTAP 파일 시스템의 작업 메뉴를 선택합니다.</block>
   <block id="ab65d6511db640831c292d22f7b54e88" category="list-text">*개요* 탭에서 작업 메뉴를 선택합니다.</block>
   <block id="93ab98e83f767e271a56c06a99e0061f" category="list-text">삭제를 선택하여 확인하세요.</block>
-  <block id="40fb34faa64f3a5cda4ec5a57722d430" category="summary">필요에 따라 NetApp Workload Factory에서 복제 관계를 삭제합니다.</block>
-  <block id="a800ef7378078fd0321398e86e83be4f" category="doc">NetApp Workload Factory에서 복제 관계 삭제</block>
   <block id="1c9d39dfea82aa323f287c11668fb9ab" category="paragraph">NetApp Workload Factory에서 복제 관계를 삭제합니다.  복제 관계를 삭제하면 소스 볼륨과 대상 볼륨 간의 복제 관계도 제거됩니다.  복제 관계가 삭제된 후에도 두 볼륨은 현재 포함된 데이터와 함께 독립적으로 계속 존재합니다.</block>
   <block id="06a91edaa8e77e04dfd0ccc1dee5a6c7" category="list-text">복제 관계 탭에서 삭제할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="ce1de3f28d8568be87cdce779516de02" category="doc">NetApp Workload Factory에서 스토리지 VM 삭제</block>
@@ -1752,7 +1578,6 @@
   <block id="feea797d265a4cb4c208df493f0593ca" category="paragraph">캐시 관계를 발견하려면 링크 연결이 필요합니다.</block>
   <block id="b7c0c52b20093f1b3f6d1f6f7598754b" category="paragraph">두 ONTAP 시스템(예: FSx for ONTAP 파일 시스템 하나와 Cloud Volumes ONTAP 시스템 하나)의 볼륨 간에 캐시 관계가 존재할 수 있습니다.  캐시 관계는 볼륨 간에 단일 FSx for ONTAP 파일 시스템 내에서도 존재할 수 있습니다.</block>
   <block id="513c180c5d2a9ee1b68bcde16bb98445" category="paragraph">시작하기 전에 다음 사항을 고려하세요.</block>
-  <block id="703777497377f6718c53959ea880fb02" category="list-text">파일 시스템의 캐시 관계를 알아보려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block> . 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="21c99410190350a1d55b69d712e211cf" category="list-text">기존 캐시 관계가 있어야 합니다.</block>
   <block id="af7b04bb0021ca11c72e835013e8fda6" category="list-text">*FSx for ONTAP*에서 *캐시 관계* 탭을 선택합니다.</block>
   <block id="495559c1531d4c91961b3e2dda29c4ec" category="list-text">캐시 볼륨이 표에 표시됩니다.  표에는 각 캐시 볼륨에 대한 다음 정보가 포함되어 있습니다.</block>
@@ -1767,10 +1592,7 @@
   <block id="4c6b37276dac45fc989fb46b7f298e93" category="list-text">*쓰기 모드*: FlexCache 관계의 쓰기 모드입니다.</block>
   <block id="825763cb1d4ac91cb8dbbcc8c11440b8" category="list-text">*DR 캐시*: FlexCache 관계가 재해 복구(DR) 캐시인지 여부를 나타냅니다.</block>
   <block id="3b231d6cca54e9d09e25b1461d3caafb" category="list-text">*내보내기 정책*: 캐시 볼륨의 내보내기 정책입니다.</block>
-  <block id="c39b3cbd986af96ef05b9724f0b92e6b" category="summary">볼륨 자동 증가를 활성화하면 Workload Factory에서 볼륨 용량을 관리하게 됩니다.  언제든지 비활성화할 수 있습니다.</block>
-  <block id="467fbaad5c04b9212fefde208c6fce39" category="doc">Workload Factory에서 볼륨 자동 증가 활성화</block>
   <block id="a2f3bd55649066a9bad9a42a8df63f08" category="paragraph">NetApp Workload Factory에서는 장기 보존을 위한 스냅샷을 활성화하여 장기 재해 복구를 위해 특정 스냅샷을 복제할 수 있습니다.</block>
-  <block id="116537ad3a8e9d253ab6c2cf9b1375c4" category="list-text">*FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="92f16ef088dcbde798778ff8c71b147a" category="list-text">복제 관계 탭에서 변경할 복제 관계 일정의 작업 메뉴를 선택합니다.</block>
   <block id="402fb8f9686d3c174902b3a2cbd928af" category="doc">NetApp Workload Factory에서 FSx for ONTAP 으로 비용 절감을 살펴보세요</block>
   <block id="12ccd6f3103f84cc6566cf7fb5cb57d0" category="paragraph">NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교하는 스토리지 절감 계산기가 포함되어 있습니다.  AWS 자격 증명을 제공하거나 제공하지 않고도 절감 효과를 알아볼 수 있으며, 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다.  AWS 자격 증명을 제공하면 예를 들어 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택하고 Workload Factory에서 자동으로 비교를 수행할 수 있습니다.  계산기는 수동이든 자동이든 귀하의 보관 요구 사항에 가장 낮은 비용을 제공하는 보관 서비스를 찾아줍니다.</block>
@@ -1794,9 +1616,6 @@
   <block id="785b440c0be1d853c5e2f4fb1f1ee2ab" category="list-text">*사례 관리*를 선택하고 메시지가 표시되면 NetApp 콘솔에 NSS 계정을 추가합니다.</block>
   <block id="c80d8addb8aa8e8872bbc44894b077f3" category="paragraph">*사례 관리* 페이지는 NetApp 콘솔 사용자 계정과 연결된 NSS 계정과 관련된 미해결 사례를 표시합니다. 이는 *NSS 관리* 페이지 상단에 표시되는 NSS 계정과 동일합니다.</block>
   <block id="a9d8fc136a7c1528e9a5743b9de2661a" category="inline-link-macro">링크를 사용하여 FSx for ONTAP 파일 시스템에 연결</block>
-  <block id="f899a571558dc3581836d9ffe17218ed" category="paragraph">링크 연결을 통해 Workload Factory는 성능, 데이터 보호 및 구성과 관련된 문제를 스캔할 수 있습니다. <block ref="f06ee96e93460df1397f1b3b70044a3e" category="inline-link-macro-rx"></block> 파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.</block>
-  <block id="bdcff0916b9de421b3f836810688eb67" category="list-text"><block ref="f06ee96e93460df1397f1b3b70044a3e" category="inline-link-macro-rx"></block>파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.</block>
-  <block id="39b152c5585fc0bf22a04de0cc07dff1" category="paragraph">선택적으로 다음을 수행할 수 있습니다.<block ref="e5ea0961d6c7f5be0b804e74d995de2b" category="inline-link-macro-rx"></block> Workload Factory가 볼륨 용량을 관리하도록 하세요.</block>
   <block id="ddc0042b887590b7a2423362f6c3455b" category="paragraph">NetApp Workload Factory의 스냅샷과 모든 데이터 블록을 전송하기 위해 소스 볼륨과 대상 볼륨 간의 복제 관계를 초기화합니다.</block>
   <block id="e7fac383dedc147790819a6b6ec1ca87" category="list-text">복제 관계 탭에서 초기화할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="788b79b544c9d26ebf09e0fd37232958" category="paragraph">SKU당 저장 VM의 수는 제한되어 있습니다.  Workload Factory에서는 제한을 넘어서는 스토리지 VM 생성이 지원되지 않습니다.^1^</block>
@@ -1821,43 +1640,19 @@
   <block id="3a84cef0233ac32a841f51da8d052f65" category="doc">NetApp Workload Factory에 대한 법적 고지 사항</block>
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp 워크로드 팩토리</block>
   <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
-  <block id="53893a46b1562475458c94d68f256609" category="summary">NetApp Workload Factory에서 복제 관계의 최대 전송 속도를 제한합니다.</block>
-  <block id="36e477de86b66c38e8877517294f32bc" category="paragraph">NetApp Workload Factory에서 복제 관계의 최대 전송 속도를 제한합니다.  무제한 전송 속도는 다른 애플리케이션과 네트워크의 성능에 부정적인 영향을 미칠 수 있습니다.</block>
   <block id="bfc4532e9898b7bb838f8a637df2b104" category="list-text">복제 관계 탭에서 최대 전송 속도를 제한할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="4d29eb8c304c032e0b8ec00fb7e0ae46" category="summary">Workload Factory 링크는 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계와 연결을 생성합니다.</block>
   <block id="19ecacf22bc9ac252b9476a0a17ca657" category="doc">NetApp Workload Factory 링크에 대해 알아보세요</block>
-  <block id="87251eaee5bfd306ceab7bcacfbf47f6" category="paragraph">NetApp Workload Factory 링크는 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계와 연결을 생성합니다.  이를 통해 Amazon FSx for ONTAP API를 통해서는 사용할 수 없는 특정 파일 시스템 기능을 ONTAP REST API 호출에서 직접 모니터링하고 관리할 수 있습니다.</block>
-  <block id="1e2cf39904eebcbddae0fe72e0186b8b" category="paragraph">Workload Factory를 시작하는 데는 링크가 필요하지 않지만, 어떤 경우에는 모든 Workload Factory 기능과 워크로드 기능을 잠금 해제하려면 링크를 만들어야 합니다.</block>
-  <block id="8db5475a47ce008ca4a3d502a243007d" category="paragraph">링크는 Workload Factory가 Amazon FSx for ONTAP API를 통해 기본적으로 사용할 수 없는 작업을 수행할 수 있게 해주기 때문에 유용합니다.  링크를 통해 고급 ONTAP 기능과 자동화가 가능해져 FSx for ONTAP 파일 시스템 관리가 향상됩니다.</block>
-  <block id="bf5b08a19bccddd5697b54218eb442dd" category="list-text">이 링크를 통해 NetApp 콘솔은 ONTAP 명령을 FSx for ONTAP 파일 시스템으로 직접 전송할 수 있으며, 이를 통해 AWS에서 기본적으로 제공하는 것보다 더 고급 ONTAP 기능을 사용할 수 있습니다.</block>
-  <block id="0d369015d5a60606bb8b6330f6c1030f" category="paragraph">Workload Factory에서 Storage 워크로드의 링크를 만들고 연결합니다.</block>
-  <block id="7869cf138befae7f7af03581af782724" category="paragraph">Workload Factory 자격 증명 서비스에 저장된 자격 증명이나 AWS Secrets Manager에 저장된 자격 증명을 사용하여 링크를 인증할 수 있습니다.  워크로드 팩토리는 인증 모드 변경을 지원하지 않습니다.</block>
-  <block id="2ec62661c871c6dda5bcd49be8cea521" category="paragraph">Lambda가 수행하는 각 거래에는 요금이 부과됩니다.  Lambda는 두 시스템 간의 프록시 역할을 하므로 Lambda가 파일 시스템의 ONTAP REST API에 요청을 보낼 때와 Workload Factory에 응답을 다시 보낼 때 요금이 발생합니다.</block>
-  <block id="df22e5c72d75cea7ae766daf660bd529" category="summary">필요한 경우 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
-  <block id="be1c92aa6bef23dd57df3395c46827bb" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 백업 일정을 관리합니다.</block>
-  <block id="93ae473ca3e8f97f82687e6f98eab1da" category="list-text">*FSx for ONTAP*에서 백업 일정을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="c69f3e9214ff94aa0825993b6fb1b85a" category="paragraph">Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SMB/CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹과 이들에게 부여할 권한 수준 결정, SMB/CIFS 공유 삭제가 포함됩니다.</block>
   <block id="4b898528f057698b461041b6d7447cfe" category="list-text">볼륨 탭에서 SMB 공유를 변경할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="52b572ba9057fb19fd2333ef3f707bd0" category="list-text">*FSx for ONTAP* 탭에서 업데이트할 볼륨이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="dd3ba3038bdde3ca3d4a9a2397052b60" category="list-text">SMB/CIFS 공유 관리 페이지에서 SMB/CIFS 공유의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
   <block id="0b83e178116e79ce2a76377c2fe4e4ed" category="doc">NetApp Workload Factory에서 볼륨의 변경 불가능한 파일 관리</block>
   <block id="6dc7abcdf6f4b84a36a87f40f2787a33" category="list-text">*특권 삭제*: 기능을 활성화하거나 비활성화합니다.  이 기능을 활성화하면 SnapLock 관리자가 만료되지 않은 WORM 볼륨을 삭제할 수 있습니다.  이 기능은 Enterprise 보존 모드에서만 지원됩니다.</block>
-  <block id="a1212a4e5f083322acc45c56b9938112" category="summary">NetApp Workload Factory에서 계정과 연결된 링크를 보고, 링크 인증을 위한 비밀번호를 업데이트하고, 링크를 제거할 수 있습니다.</block>
-  <block id="83dfd07dca3a04ca19cdc3262cb17df4" category="paragraph">Workload Factory 계정과 연결된 링크를 관리하세요.  FSx for ONTAP 파일 시스템과 연결된 링크를 보고, 링크 인증에 사용되는 비밀번호를 제공하고, Workload Factory 콘솔에서 링크를 제거할 수 있습니다.</block>
-  <block id="2042c96024e7e8a46d1497c843c76da6" category="list-text">저장소 메뉴에서 *관리*를 선택한 다음 *링크*를 선택합니다.</block>
-  <block id="50e87fbed332b782c23eefcd063c29f3" category="paragraph">기존 링크는 링크 페이지에 나타납니다.</block>
-  <block id="c4aa49062b446a9d4f1b821ea4acbe46" category="paragraph">Workload Factory 인터페이스에서는 링크를 편집할 수 없습니다.  링크를 변경해야 하는 경우 새 링크를 만든 다음 해당 링크를 파일 시스템에 연결해야 합니다.</block>
-  <block id="6ac964feef269db1d25abb9f4ecad2aa" category="paragraph">FSx for ONTAP 파일 시스템에 링크를 연결하려면 Workload Factory 자격 증명에 대한 관리자 사용자 암호나 AWS Secrets Manager 암호 ARN을 제공합니다.</block>
-  <block id="034e373fa9e2dc0b4cbe364fc260fa60" category="list-text">*FSx for ONTAP*에서 링크를 연결할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
-  <block id="03fc743c74b7e7511aa1eeb9bf490f14" category="paragraph">링크는 Workload Factory에서만 삭제되고 AWS 환경에서는 삭제되지 않습니다.  Workload Factory에서 링크를 제거한 후 AWS 계정에서 Lambda 함수를 삭제해야 합니다.</block>
-  <block id="758ba3729afd23bc4e9b98c419e8ea87" category="list-text">링크 페이지에서 제거할 링크의 작업 메뉴를 선택한 다음 *제거*를 선택합니다.</block>
-  <block id="f1ce091ae1a5a535ceceb1b8895c7620" category="inline-image-macro">Workload Factory에서 링크를 제거하는 방법을 보여주는 스크린샷입니다.</block>
-  <block id="8d0a9b10b0feb1fbeb54874e4db30c45" category="paragraph"><block ref="8d0a9b10b0feb1fbeb54874e4db30c45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f84e7918b5436d562b6058d69a5e22b" category="summary">NetApp Workload Factory에서 NFSv3 또는 NFSv4.1 프로토콜 유형을 사용하는 볼륨에 대한 NFS 내보내기 정책을 관리합니다.</block>
   <block id="be75a4ee41ef1c041e10be17f5ab5d8f" category="doc">NetApp Workload Factory에서 볼륨에 대한 NFS 내보내기 정책 관리</block>
   <block id="45bad92c0320862bb24bd94703db0a08" category="summary">Workload Factory에서 FSx for ONTAP 볼륨에 대한 스냅샷 정책을 관리합니다.  스냅샷 정책은 시스템이 볼륨에 대한 스냅샷을 생성하는 방법을 정의합니다.</block>
   <block id="e792f4d27d1dc64295baf4344c9aca49" category="inline-link-macro">Workload Factory 링크에 대해 알아보세요</block>
-  <block id="144a013b1a947d3417ed511a6b60a2e1" category="paragraph">일부 관리 작업에서는 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. <block ref="0a8e0c490635c3084d9a0f334be1cdcd" category="inline-link-macro-rx"></block> .</block>
   <block id="64889ee720a08ea5f08d321e6bb2d6e5" category="list-text">*FSx for ONTAP* 탭에서 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="5f082ca638d644d115e72e5bf00e16ba" category="list-text">*저장소 VM* 탭에서 예약된 스냅샷으로 보호할 볼륨이 포함된 저장소 VM에 대한 작업 메뉴를 선택한 다음, *고급 작업*을 선택하고, *스냅샷 정책 관리*를 선택합니다.</block>
   <block id="632897d682f5f5f86ed88f142c34dd61" category="list-text">스냅샷 정책 관리 페이지에서 변경할 스냅샷 정책에 대한 작업 메뉴를 선택한 다음 *편집*을 선택합니다.</block>
@@ -1871,17 +1666,13 @@
   <block id="f94d144be400675ae807174184acbf5f" category="list-text">스냅샷 관리 페이지에서 편집할 스냅샷의 작업 메뉴를 선택한 다음, *편집*을 선택합니다.</block>
   <block id="59bcba28fd08adb2991cdf5d82670fe0" category="list-text">스냅샷 관리 페이지에서 액세스할 스냅샷에 대한 작업 메뉴를 선택한 다음, *액세스*를 선택합니다.</block>
   <block id="f1275ed085039c3832dda6dfba0ad9f2" category="list-text">스냅샷 관리 페이지에서 삭제할 스냅샷의 작업 메뉴를 선택한 다음, *삭제*를 선택합니다.</block>
-  <block id="b8b31b5d8488dcb7ebd8c2bb9ba38f50" category="doc">NetApp Workload Factory에서 스토리지 VM 태그 관리</block>
   <block id="0c950433d94be139f73fb59247d857a5" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서는 언제든지 스토리지 VM에 대한 태그를 추가, 편집 및 제거할 수 있습니다.</block>
-  <block id="558281a06321bc8c7b90d170a463683f" category="doc">NetApp Workload Factory에서 볼륨 태그 관리</block>
   <block id="693a8f663c39ae53134101e5d974fda8" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory에서 FSx for ONTAP 볼륨의 볼륨 태그를 언제든지 추가, 편집 및 제거할 수 있습니다.</block>
   <block id="674b84367e7a585d7eb4cb69538ab5be" category="paragraph">NetApp Workload Factory의 Tracker를 사용하여 FSx for ONTAP , 자격 증명 및 링크 작업의 실행을 모니터링하고 추적하며 작업 진행 상황을 모니터링합니다.</block>
   <block id="e80eb219e8472681a001172074028f46" category="paragraph">Tracker를 사용하여 NetApp 콘솔에서 작업을 추적하고 모니터링하세요.</block>
   <block id="bd56fc255ce900fc195c9bc0d7ed20c0" category="list-text">작업 메뉴를 선택한 다음 *API 요청 보기*를 선택합니다.</block>
   <block id="9d506eb8fb5e05c2467a690e5e727cd8" category="list-text">작업 메뉴를 선택한 다음 *다시 시도*를 선택하세요.</block>
   <block id="0270fd4391a6b334aa157faf0a6b7304" category="list-text">작업 메뉴를 선택한 다음 *편집 및 다시 시도*를 선택하세요.</block>
-  <block id="7abadec4f28b789dea00025f14d2db02" category="doc">NetApp Workload Factory에서 복제 관계 일시 중지 및 재개</block>
-  <block id="716ed38e70ed21728964089db60817b6" category="paragraph">복제를 재개하면 대상 볼륨에 대한 모든 변경 사항이 취소되고 NetApp Workload Factory가 복제를 다시 활성화합니다.  대상 볼륨은 읽기/쓰기에서 읽기 전용으로 전환되고, 예약된 복제 간격에 따라 소스 볼륨에서 업데이트를 다시 받습니다.  복제 관계를 재개하면 대상 볼륨은 최신 초기 복제 스냅샷으로 되돌아가고, 이때 볼륨 복제 프로세스가 다시 시작됩니다.</block>
   <block id="1171afac244482535208c805bfb5473b" category="list-text">복제 관계 탭에서 일시 중지할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="466d89359904d783b70a130aa0d6d963" category="list-text">복제 관계 탭에서 재개할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="f1cafa83a1b545ce630d3a9cc126037f" category="summary">NetApp Workload Factory의 FSx for ONTAP 에 대한 성능 참조가 제공됩니다.</block>
@@ -1908,7 +1699,6 @@
   <block id="e42fc3e4b35126c00393bef5dd43abb0" category="list-text">*FSx for ONTAP*에서 복제할 스토리지 VM이 있는 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="60de20bb9aba6d637fe2c39698d63a93" category="paragraph">Workload Factory FSx for ONTAP 사용자 인터페이스를 사용하여 볼륨을 생성할 때 기본 계층화 정책은 _자동_입니다.  볼륨 계층화 정책에 대한 자세한 내용은 다음을 참조하세요.<block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 문서.</block>
   <block id="00e61784b4c0263d643d339751f948b5" category="summary">필요한 경우 NetApp Workload Factory에서 fsxadmin 비밀번호를 재설정합니다.</block>
-  <block id="49504d649db43bbd86ff76609ad14e6b" category="doc">NetApp Workload Factory에서 fsxadmin 비밀번호 재설정</block>
   <block id="ccae0c552968683479a634d1b8d1fd70" category="list-text">*FSx for ONTAP*에서 fsxadmin 비밀번호를 재설정할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="56390cfc4f2fcc3e51d66c87b7f65149" category="list-text">파일 시스템 개요에서 작업 메뉴를 선택합니다.</block>
   <block id="68b2104217a7333b3eebfd93dd666045" category="inline-image-macro">파일 시스템의 개요 탭에 있는 작업 메뉴의 스크린샷입니다.</block>
@@ -1917,19 +1707,13 @@
   <block id="3c483a45ab5fea02162be0b6c6004287" category="doc">NetApp Workload Factory에서 스토리지 VM 암호 재설정</block>
   <block id="398b64d3ae2c039c62637d684fcbe30d" category="doc">NetApp Workload Factory에서 백업으로부터 볼륨 복원</block>
   <block id="19002cddfac8e15ce79f8ccad53b74e6" category="paragraph">NetApp Workload Factory에서는 AWS 계정의 FSx for ONTAP 파일 시스템으로 백업의 볼륨을 복원할 수 있습니다.</block>
-  <block id="e8c0bed13dff2e82ae3fd20a79157041" category="list-text">복원을 통해 사용된 용량이 지정한 임계값을 초과할 수 있습니다.  복구 작업을 완료할 수 있습니다.  고려하다<block ref="e41647392a26a0e6b166f921fc9cbdef" category="inline-link-macro-rx"></block> 또는 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택합니다.</block>
   <block id="2235d115064fc8246f43d55ab62b045c" category="list-text">복원에는 추가 SSD 용량이 필요합니다.  계속하려면 Workload Factory에서 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택해야 합니다.</block>
-  <block id="d3a96b67aa0602273a39c3df984573da" category="paragraph">Workload Factory에서는 스냅샷의 데이터를 기존 볼륨이나 새 볼륨으로 복원할 수 있습니다. 복원 작업을 통해 볼륨에 삭제되거나 손상된 파일이 있는 경우 특정 시점으로 복구할 수 있습니다.</block>
   <block id="eae1ab715619b3c7c75c3c94c00fe8a7" category="list-text">*볼륨* 탭에서 스냅샷에서 복원할 볼륨에 대한 작업 메뉴를 선택합니다.</block>
   <block id="fd2a512a440fa903a2db9a227f9c67d9" category="list-text">스냅샷 관리 페이지에서 복원할 스냅샷의 작업 메뉴를 선택한 다음, *복원*을 선택합니다.</block>
-  <block id="b1d0c9f9cff6b5e0262fc4d1f2fb2d44" category="doc">NetApp Workload Factory에서 복제 관계 역전</block>
-  <block id="69e2363771dbe6068df4a3b3208900bd" category="paragraph">NetApp Workload Factory에서 복제 관계를 반대로 변경하여 대상 볼륨이 소스 볼륨이 되도록 합니다.</block>
   <block id="f1961f17b051327f4863cb47a5b08d44" category="list-text">복제 관계 탭에서 되돌릴 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="117ff5e4baddbf50b3b38a288594d39b" category="doc">NetApp Workload Factory의 FSx for ONTAP 보안</block>
   <block id="258917ec2ee16288f0cdb1fe8af0633f" category="doc">NetApp Workload Factory에서 복제된 볼륨 분할</block>
   <block id="0ce9d462b15862a3d7f4258b37af2df3" category="paragraph">복제된 FlexVol volume 부모 볼륨에서 분할하여 복제본을 NetApp Workload Factory의 일반 읽기/쓰기 FlexVol volume 만듭니다.</block>
-  <block id="0afeadc4bedc444ef9fe962788f3cabc" category="summary">NetApp Workload Factory에서 소스 볼륨과 대상 볼륨 간의 복제 관계를 중지합니다.</block>
-  <block id="695c1eee16df28fb12cc40895f214b89" category="doc">NetApp Workload Factory에서 복제 관계 중지</block>
   <block id="6ac52b356e1de0ea8172c07c761b9a77" category="paragraph">NetApp Workload Factory에서 복제 관계를 중지합니다.  복제 관계를 중지하면 소스 볼륨에서 대상 볼륨으로의 예약된 복제 업데이트가 일시 중지됩니다.  대상 볼륨이 읽기 전용에서 읽기/쓰기로 전환됩니다.</block>
   <block id="8a55043269d6bf1d4683463d1775163b" category="list-text">복제 관계 탭에서 중지할 복제 관계의 작업 메뉴를 선택합니다.</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">NetApp 기술 지원에 지원 사례를 개설하려면 먼저 Workload Factory에 NetApp 지원 사이트 계정을 추가한 다음 지원을 위해 등록해야 합니다.</block>
@@ -1947,7 +1731,6 @@
   <block id="f335678326583cea28377216c5515221" category="paragraph">NetApp 지원 사이트 계정이 있으면 아래 단계를 완료하여 계정을 NetApp 콘솔 로그인과 연결하세요.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="fbd561748c9b594e4d65b8ccf21f5769" category="paragraph">복제 관계에는 설정된 복제 일정이 있지만 NetApp Workload Factory에서 소스 볼륨과 대상 볼륨 간에 전송되는 스냅샷 데이터를 언제든지 수동으로 업데이트할 수 있습니다.</block>
   <block id="1d27ede7e22b617fbd392a02ca413a78" category="list-text">복제 관계 탭에서 업데이트할 복제 관계의 작업 메뉴를 선택합니다.</block>
-  <block id="0b81b68aa4b4da3fc81b7541c9557525" category="summary">NetApp Workload Factory에서는 볼륨을 생성한 후 스토리지 효율성 설정을 업데이트할 수 있습니다.</block>
   <block id="0254d70b292c2efb3924bc70f603207a" category="summary">필요에 따라 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다.</block>
   <block id="5b7dc0f0cef1ddf767dff9731a57d8a4" category="list-text">*FSx for ONTAP*에서 처리량 용량을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.</block>
   <block id="5811115476eeb3b923e56f3b218e8861" category="doc">NetApp Workload Factory에서 온프레미스 ONTAP 클러스터 데이터 사용</block>
@@ -2004,9 +1787,6 @@
   <block id="c4a6983274098ca737ffda27862010ea" category="section-title">ONTAP 사이버 볼트 지원을 위한 FSx</block>
   <block id="4a3b498d2b39740971d75ebbab434a8f" category="paragraph">FSx for ONTAP 을 사이버 볼트 아키텍처의 소스 또는 대상으로 사용하여 사이버 볼트를 생성할 수 있습니다.  사이버 금고는 중요한 데이터를 저장하기 위한 안전하고 격리된 환경을 제공하여 랜섬웨어 및 기타 사이버 위협으로부터 데이터를 보호합니다.</block>
   <block id="4bc6d1e741e4c817c4985300ec66b77f" category="inline-link-macro">FSx for ONTAP 사용하여 사이버 볼트 설정</block>
-  <block id="443d77d8a4d29940f1da82d57cf91d7b" category="summary">NetApp Workload Factory 에서 볼륨의 볼륨 용량을 언제든지 수동으로 조정할 수 있습니다.</block>
-  <block id="9506827488d3f10bebcc3d5a3e5f83f8" category="doc">NetApp Workload Factory 에서 볼륨 용량 조정</block>
-  <block id="2d6396444f6d2c33e9a33bc98d74a44b" category="paragraph">NetApp Workload Factory 콘솔에서 언제든지 볼륨의 볼륨 용량을 수동으로 조정할 수 있습니다.</block>
   <block id="fa091ab3e96a1d7a44f1f7c711636fb7" category="paragraph">볼륨의 프로비저닝된 크기를 늘리거나 줄여 볼륨 용량을 조정할 수 있습니다.  다음 표는 볼륨 유형별 최소 및 최대 볼륨 크기를 보여줍니다.</block>
   <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="cell">볼륨 유형</block>
   <block id="9dba50d3a2c2f26daddbf9d144c49772" category="cell">최소 크기</block>
@@ -2017,17 +1797,12 @@
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2파이비</block>
   <block id="08842901b516656f4ce72eb7f4f5c0d1" category="paragraph">iSCSI LUN의 경우 볼륨 크기를 늘리면 호스트 LUN의 크기도 늘어납니다.  볼륨 용량을 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 LUN의 새로운 크기를 확인하고 LUN의 파일 시스템을 확장합니다.</block>
   <block id="f4d84340dd6fee1664a29cabc2ba8c39" category="paragraph">볼륨 크기 감소는 NFS 및 SMB/CIFS 볼륨에만 지원됩니다.</block>
-  <block id="2880a60b72532c629f0cc885860ca8e5" category="paragraph">볼륨 용량을 조정하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="4e54161de298fea40a1792b1351b1789" category="list-text">*기본 동작*을 선택한 다음 *볼륨 용량 조정*을 선택합니다.</block>
   <block id="4fbd17d05637f9e5fed62de5f827a895" category="list-text">볼륨 용량 조정 대화 상자에서 *프로비저닝된 용량*과 단위를 설정합니다.</block>
   <block id="6a6abbaa1bbd0c301b070b7a1615b31d" category="list-text">변경 사항을 적용하려면 *조정*을 선택하세요.</block>
-  <block id="25e79c779a2e15c96afc5b7555e58a60" category="list-text"><block ref="25e79c779a2e15c96afc5b7555e58a60" category="inline-link-macro-rx"></block></block>
-  <block id="018b5169ae450db66c30a726fbd7e178" category="inline-link-macro">Workload Factory에서 볼륨 재조정</block>
-  <block id="6ab1a086826b377aebef1904415ab23c" category="list-text"><block ref="6ab1a086826b377aebef1904415ab23c" category="inline-link-macro-rx"></block></block>
   <block id="ccfc2060f8f316d0ccd33b0289111a38" category="paragraph">파일 시스템을 완벽하게 분석하려면 다음을 수행해야 합니다.</block>
   <block id="f95f58d64ce974b5c7aac839966c9c9b" category="list-text">링크를 연결합니다.  링크 연결을 통해 Workload Factory는 데이터 보호 및 성능과 같은 모든 파일 시스템 구성을 분석할 수 있습니다.</block>
   <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">AWS 계정에서 _보기, 계획 및 분석_ 권한을 부여합니다.</block>
-  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
   <block id="7335bfe9e44aaa30f676443b169c4028" category="summary">NetApp 사이버 볼트에 대해 알아보고, 랜섬웨어와 사이버 위협으로부터 데이터를 보호하기 위해 사이버 볼트 아키텍처를 구현하는 방법을 알아보세요.</block>
   <block id="c20c451e413ebde26a765cbbc0c15afc" category="paragraph">사이버 볼트 볼륨은 데이터의 백업 사본을 저장하는 데 사용되는 격리된 안전한 저장 위치로, 랜섬웨어 공격 및 기타 사이버 위협으로부터 데이터를 보호합니다.  볼트 생성의 일부로 사이버 볼트 볼륨을 생성하고, 모든 클라이언트 프로토콜을 비활성화하고, 소스 볼륨과 사이버 볼트 볼륨 간의 복제 관계를 설정하고, 사이버 볼트 볼륨에 변경 불가능한 스냅샷을 생성합니다.</block>
   <block id="d825eb03b1924c3d41f95d2810515203" category="paragraph-title">사이버 볼트란 무엇인가요?</block>
@@ -2041,18 +1816,13 @@
   <block id="9577a31ea32e2c5b58950150698f2a07" category="paragraph">시작하려면 ng-FSx-CyberVault@netapp.com으로 이메일을 보내세요.</block>
   <block id="a9541230016fd9f6de7895f1a32b75fb" category="inline-link-macro">ONTAP 사이버 볼트 문서</block>
   <block id="18e03b41df425134308f1975a1972f8e" category="list-text">FSx for ONTAP 파일 시스템을 생성하기 위한 _파일 시스템 생성 및 삭제_ 권한이 있는 자격 증명입니다. <block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>.</block>
-  <block id="4c4658c6e6bcc607d3d1e8c00d38f9b6" category="list-text">Workload Factory에는 최소한 하나의 FSx for ONTAP 파일 시스템이 있어야 합니다.  ONTAP 파일 시스템용 FSx를 검색하려면 ONTAP 인스턴스용 FSx에 대한 권한이 있는 AWS 계정이 있어야 합니다.<block ref="a253a365fdf90416889360c06d5b56a2" category="inline-link-macro-rx"></block> 저장소 관리에 대한 _보기, 계획 및 분석_ 권한이 있습니다.</block>
   <block id="8763b09bbcb06ec11c1d0d3331ba74f4" category="paragraph"><block ref="8763b09bbcb06ec11c1d0d3331ba74f4" category="inline-link-macro-rx"></block></block>
-  <block id="05fbfa43ca52b70a735d4a870f0f8f6d" category="inline-link-macro">볼륨 용량 조절 기능</block>
-  <block id="8f764b06860786fe5978951124c18450" category="paragraph">선택적으로 언제든지 볼륨의 볼륨 용량을 수동으로 늘릴 수 있습니다.<block ref="e78173f6bdea353abf41de50dd00987d" category="inline-link-macro-rx"></block> .</block>
-  <block id="ad5ba1f7c14b2135486dafc0e40196ac" category="summary">이 기능을 활성화하면 Workload Factory가 시간이 지남에 따라 용량 요구 사항이 변경됨에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지나 inode를 자동으로 추가할 수 있습니다.</block>
   <block id="7950e88c4d4bc489666a4af446a7d303" category="inline-link-macro">_view, planning, and analysis_ 권한 정책으로 자격 증명을 부여합니다.</block>
   <block id="37d3a1150da64094460d233181c8c83e" category="list-text">당신은해야합니다<block ref="1773ab1fe4aa6a3e5fc61d86a29970f0" category="inline-link-macro-rx"></block> 이 작업을 완료하려면 Workload Factory로 이동하세요.</block>
   <block id="650ad6fb48eb81eacfa521124d1dc357" category="list-text">*경고 임계값*: Workload Factory 알림 서비스에서 알림을 트리거하려면 경고 임계값을 임계값 증가보다 낮게 설정합니다.  기본값은 70%입니다.</block>
   <block id="8ec47943fca737be2b087573534a2057" category="inline-link-macro">Workload Factory 알림 서비스를 활성화했습니다.</block>
   <block id="60c52248134394a776265c66248137a8" category="paragraph">경고 임계값 설정은 다음 경우에만 사용할 수 있습니다.<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block> .</block>
   <block id="e5896468cb243b3cd2e0e75b0ca7173d" category="admonition">*Terraform 사용자*: Terraform에는 모든 작업이 Terraform 내에서 완료되어야 한다는 제한이 있습니다.  Terraform에서는 inode 관리가 지원되지 않지만 Workload Factory 콘솔에서 자동 inode 관리를 활성화할 수 있습니다.</block>
-  <block id="0a0054f32c5856b9e4d1227d3aff2de3" category="list-text">볼륨 inode를 자동으로 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="2dc6db0702897622d8829494f1d3b37f" category="inline-link-macro">Workload Factory 알림 서비스 활성화</block>
   <block id="8166fa3c69aeeb513514d7132a126f1d" category="list-text">자동 inode 관리에는 Workload Factory 알림 서비스에서 알림을 트리거하는 _경고 임계값_을 설정할 수 있습니다.  이 기능을 사용하려면 다음이 필요합니다.<block ref="92ba022a113ba350cc22eb4ba703843c" category="inline-link-macro-rx"></block> 첫 번째.</block>
   <block id="6e5f35050440735f1d3c74313b13121b" category="list-text">*FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택하여 자동 inode 관리를 활성화합니다.</block>
@@ -2094,7 +1864,6 @@
   <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">권한을 부여하기로 선택한 경우 다음이 필요합니다.<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, 필요한 권한에 대한 IAM 정책을 만드는 것이 포함됩니다.</block>
   <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025년 11월 2일</block>
   <block id="2d7b297cbb6cd40fb509f94fc82809d8" category="sidebar">데이터를 보호하기 위한 사이버 볼트 생성</block>
-  <block id="77323f759a4ed2ac40e1bf8211da2f5f" category="sidebar">볼륨 용량 조절</block>
   <block id="8cc5e5335040870d41183130dad2a0a6" category="paragraph"><block ref="8cc5e5335040870d41183130dad2a0a6" category="inline-link-macro-rx"></block></block>
   <block id="6b49a1e6e88960820791afdda16a063c" category="paragraph"><block ref="6b49a1e6e88960820791afdda16a063c" category="inline-link-macro-rx"></block></block>
   <block id="7999c939951d1cfce0556df15a76a345" category="paragraph"><block ref="7999c939951d1cfce0556df15a76a345" category="inline-link-macro-rx"></block></block>
@@ -2127,7 +1896,6 @@
   <block id="bf71ae5aa16f5632361df660e7d643c6" category="section-title">데이터 개인정보 보호 및 보안</block>
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 데이터 보호 문서</block>
   <block id="b523b0335680ab84edd50860caeed123" category="list-text">*Workload Factory 링크*</block>
-  <block id="72fa279f5dbab8677f6a4a2b563e0629" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아갑니다.</block>
   <block id="7ed47c99073de0aed63f1c44842de720" category="list-text">*AWS IAM 권한*</block>
   <block id="3fc6364e2f4555bc71d109a7ba02fef1" category="paragraph">이러한 권한은 모델의 가용성을 확인합니다.</block>
   <block id="2a29012d549070ee593fcda2b2383198" category="paragraph">iSCSI 프로토콜을 사용하는 FSx for ONTAP 파일 시스템의 블록 장치를 관리할 수 있습니다.</block>
@@ -2144,7 +1912,6 @@
   <block id="5731c6f2c2af81018b15a6dc509612e7" category="doc">NetApp Workload Factory 사용하여 FSx for ONTAP 캐시 볼륨 관리</block>
   <block id="434453d056f84022d78f78e508e2c9e4" category="paragraph">NetApp Workload Factory 콘솔을 사용하여 FSx for ONTAP 파일 시스템의 캐시 볼륨을 관리합니다.  캐싱은 데이터를 일시적으로 저장하는 방법으로, 검색 시간을 줄여 데이터 접근 성능을 향상시킵니다.  캐시 이름을 편집하고, 용량을 조정하고, 내보내기 정책을 변경하고, 캐싱 방법을 선택하고, 캐시를 미리 채우거나 캐시 볼륨을 삭제할 수 있습니다.</block>
   <block id="511fe435e8165aed773eaad3ed9390d2" category="paragraph">NetApp Workload Factory 콘솔에서 캐시 관계와 연관된 캐시 볼륨을 관리할 수 있습니다.</block>
-  <block id="427f7328ade7fa24ab13c85e87e8bbfd" category="list-text">캐시 볼륨과 관계를 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오세요.</block>
   <block id="70c7c51ab85c821261f3ba2480abf1db" category="section-title">캐시 볼륨의 용량을 조정합니다.</block>
   <block id="5ed1aecee1798642ab9b691b328aa8ab" category="paragraph">언제든지 기존 캐시 볼륨의 용량을 조정할 수 있습니다.</block>
   <block id="fe3be7f306e31f68a5be5e69e70a8b52" category="list-text">수정하려는 캐시 볼륨에 대한 작업 메뉴를 선택한 다음 *캐시 용량 조정*을 선택합니다.</block>
@@ -2153,7 +1920,6 @@
   <block id="9b56249d55afe0d9c4ba3cc38ab4b64a" category="paragraph">캐시된 데이터를 더 빨리 사용할 수 있도록 하려면 캐시 볼륨을 사용하기 전에 원본 볼륨의 데이터로 채우세요.</block>
   <block id="0e4f2d0a44a5351cf8fa58d69ca7867e" category="paragraph">캐시 볼륨을 삭제하면 캐시 관계도 제거됩니다.  캐시된 데이터를 더 이상 사용할 수 없습니다.</block>
   <block id="c5ef40517475cde4aa83a5451658e49f" category="summary">언제든지 파일 시스템에 대한 FSx for ONTAP 파일 시스템 태그를 추가, 업데이트 또는 제거할 수 있습니다.</block>
-  <block id="eb4fc4352d1165f11c777d937df4f824" category="doc">NetApp Workload Factory 에서 FSx for ONTAP 파일 시스템 태그 관리</block>
   <block id="46512aa67048f4a43e843b7f1767367e" category="paragraph">태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory 에서는 언제든지 파일 시스템의 태그를 추가, 편집, 제거할 수 있습니다.</block>
   <block id="0212093392893715fbbcaff6318bf12c" category="list-text">*FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *파일 시스템 태그 관리*를 선택합니다.</block>
   <block id="9b3a1ad5abecf153aceb732b418aab4f" category="list-text">*파일 시스템 태그 관리* 대화 상자에서 필요에 따라 태그를 추가, 편집 또는 제거합니다.</block>
@@ -2167,9 +1933,7 @@
   <block id="db2c0720daa95b2841a73d2a13c0e539" category="list-text">FSx for ONTAP 리소스에 대한 *비용 세부정보*를 확인하세요.</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025년 11월 27일</block>
   <block id="7ba9e316fdb6ba8e077283db064835f0" category="sidebar">ONTAP 비용에 대한 FSx 추적 및 분석</block>
-  <block id="9f83e27b7a1a59c38fc7d458de16054a" category="sidebar">파일 시스템 태그 관리</block>
   <block id="79aceabdc6c99b8ffa443536ee6c3fac" category="list-text">*아마존 베드록 모델*</block>
-  <block id="ec43608dd1a0c06ed66226644c486b9a" category="sidebar">FSx for ONTAP 리소스에 대한 비용 및 사용량 추적</block>
   <block id="063d22315ef43d4247b4ee3e2986ca61" category="sidebar">ONTAP EMS 이벤트에 대한 FSx 분석</block>
   <block id="01f76f754caa3b688233762c1b9391f6" category="section-title">FSx for ONTAP 에 대한 AWS S3 액세스 포인트 지원</block>
   <block id="d30cb805d7270ac0b7cc06375888e47f" category="paragraph">NetApp Workload Factory FSx for ONTAP 파일 시스템에 대한 AWS S3 액세스 포인트를 지원합니다. S3 액세스 포인트를 사용하여 볼륨을 생성하고, 기존 볼륨에 S3 액세스 포인트를 할당하고, Workload Factory 콘솔에서 S3 액세스 포인트를 관리할 수 있습니다. S3 액세스 포인트를 사용하면 AWS S3 API를 통해 SMB/CIFS 또는 NFS 볼륨에 있는 파일 데이터에 액세스할 수 있습니다. 이를 통해 S3 액세스 포인트를 지원하는 AWS 서비스의 GenAI, ML 및 분석과 기존 데이터를 통합할 수 있습니다.</block>
@@ -2184,7 +1948,6 @@
   <block id="3e2c74c8c2d6921bd86b94a0e3ce7846" category="inline-link-macro">볼륨에 대한 S3 액세스 포인트 관리</block>
   <block id="bec075d59b91517943ea96b4d56e06de" category="list-text"><block ref="bec075d59b91517943ea96b4d56e06de" category="inline-link-macro-rx"></block></block>
   <block id="a008e298246d26d679639f7bc96ba6ac" category="inline-link-macro">Workload Factory에서 볼륨 용량 조정</block>
-  <block id="6397bacd7d32cf08e4bf24faa5700a5a" category="list-text"><block ref="6397bacd7d32cf08e4bf24faa5700a5a" category="inline-link-macro-rx"></block></block>
   <block id="d8774a6076f48d902ee122d2219887a0" category="inline-link-macro">Workload Factory에서 볼륨 계층화 정책 변경</block>
   <block id="15edb6ed53ce8a32fd0631a4517d7fc7" category="list-text"><block ref="15edb6ed53ce8a32fd0631a4517d7fc7" category="inline-link-macro-rx"></block></block>
   <block id="d628678d4875b2f8f6ea7ca8dab6ade0" category="inline-link-macro">Workload Factory에서 S3 액세스 포인트 관리</block>
@@ -2220,7 +1983,6 @@
   <block id="3c1e85123bd6f772d273b23b09a26e74" category="doc">NetApp Workload Factory 에서 파일 시스템용 블록 장치를 생성합니다.</block>
   <block id="7d004b13cdadf8e9ba5aa6e7fd56c9c9" category="paragraph">NetApp Workload Factory 의 블록 장치에는 FlexVol 볼륨만 지원됩니다. iSCSI 프로토콜을 사용하여 블록 장치를 생성할 수 있습니다.</block>
   <block id="454897ca790322f298897b4fdfc33941" category="paragraph">블록 크기는 사용 가능한 FlexVol volume 크기보다 작아야 합니다.</block>
-  <block id="fb02a89efec565f92916696e97a69514" category="list-text">차단 장치를 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오세요.</block>
   <block id="b517955ef14866b28544f7b2807b497d" category="list-text">*블록 장치 생성*을 선택하세요.</block>
   <block id="c494d1f97c8af593b2547e971cde7048" category="list-text">*볼륨 세부 정보*에서 다음을 수행하십시오.</block>
   <block id="28d37ed4396c69863c777832e2dc985a" category="list-text">*권명*: 다음 옵션 중 하나를 선택하십시오.</block>
@@ -2253,8 +2015,6 @@
   <block id="d303726d253e10ceb3c3a9904bc4c18f" category="list-text">스토리지 VM 관리 화면에서 암호를 재설정할 스토리지 VM의 작업 메뉴를 선택한 다음 *기본 작업* &gt; *암호 재설정*을 선택합니다.</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
   <block id="04c5d70ed6312687a1e39677346bbaff" category="sidebar">블록 장치를 생성하세요</block>
-  <block id="64153de607e9925466a905a664c31502" category="list-text">ONTAP 긴급 관리 시스템(EMS) 이벤트 분석을 위한 CloudShell 및 FSx의 경우: 포트 22(SSH)</block>
-  <block id="f1a54b856438e25c87919e1789ae841c" category="list-text">ONTAP EMS 이벤트 모니터링 및 알림</block>
   <block id="6e9c833800dbc4ebe142052809560480" category="list-text">ONTAP 파일 시스템용 FSx 생성 페이지에서 *고급 생성*을 선택합니다.</block>
   <block id="3a75f5b58f8a8c79c73ac8b3f0785afe" category="list-text">FSx for ONTAP 파일 시스템 만들기 페이지에서 *빠른 만들기*를 선택합니다.</block>
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다.</block>
@@ -2262,7 +2022,6 @@
   <block id="7f4aea97afc4fe9bca082673b0935315" category="list-text">저장소 메뉴에서 *분석*을 선택합니다.</block>
   <block id="aa56579381807f7a0875c83ea40e95f6" category="list-text">필요한 경우, 화면 안내에 따라 AI 분석 설정 요구 사항을 완료하여 누락된 필수 조건을 충족하십시오.</block>
   <block id="2d35ddb4d21997f4aa6c33cc82b9e218" category="list-text">스토리지 대시보드에서 *파일 시스템 생성*을 선택합니다.</block>
-  <block id="2500dbf9595976bd1314c2eaa3c7cdb1" category="paragraph">다음은 AWS의 기본 정책입니다. 기존 스냅샷 정책을 표시하려면 다음을 수행해야 합니다. <block ref="6e2abc793876f9e04717a19a42b0bb65" category="inline-link-macro-rx"></block>.</block>
   <block id="4df0f1805985e10746c9c4f0c93c1972" category="list-text">저장소 메뉴에서 *절약 내용 살펴보기*를 선택한 다음 *Amazon Elastic Block Store(EBS)* 탭을 선택합니다.</block>
   <block id="ac451744a266e36dbad7a3a3b3ade56c" category="list-text">저장소 메뉴에서 *절약 사항 살펴보기*를 선택한 다음 * Amazon FSx for Windows File Server* 탭을 선택합니다.</block>
   <block id="17213dc8118fcfe940b37a95d4307e39" category="list-text">스토리지 메뉴에서 *절약 효과 살펴보기*를 선택한 다음 *Amazon Elastic File System(EFS)* 탭을 선택합니다.</block>
@@ -2277,7 +2036,6 @@
   <block id="68d85c073028f0fd978bc424d69ee8fd" category="list-text">고아 장치에서 *용량 보기 및 회수*를 선택합니다.</block>
   <block id="f6841052bd0d86548318f9b2df118ea3" category="list-text">사용하지 않는 블록 장치의 공간 확보 화면에서 하나 이상의 블록 장치를 선택하여 데이터를 보관하고 용량을 확보하십시오.</block>
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*보관*을 선택하세요.</block>
-  <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">해당 링크는 다음 엔드포인트에 연결할 수 있어야 합니다. https://api.workloads.netapp.com. 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 FSx for ONTAP 워크로드를 관리하고 운영합니다.</block>
   <block id="0ee3fcfb10a8d4af3c7cb550b6d9bc38" category="paragraph">Amazon Bedrock 통합을 통해 Workload Factory는 AI를 사용하여 이벤트를 분석하고 실행 가능한 인사이트를 제공하여 FSx for ONTAP 파일 시스템의 상태와 성능을 유지합니다.</block>
   <block id="27562a45337f51e17d281897d9fddcd2" category="paragraph">이벤트 분석기를 사용하면 고급 AI 분석의 이점을 누리면서 환경을 완벽하게 제어할 수 있습니다.</block>
   <block id="0da91429b3f9223cbaa4f8470ef89ea0" category="paragraph">Workload Factory에서 이벤트를 분석할 수 있도록 하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용할 모델을 선택하고, Amazon Bedrock에 연결하기 위한 프라이빗 엔드포인트를 생성하고, 권한을 추가하고, 엔터프라이즈 라이센스를 생성해야 합니다.</block>
@@ -2326,7 +2084,6 @@
   <block id="7fa60554ae8bd6b13d23cabdd189c7c5" category="paragraph">NetApp Workload Factory를 사용하여 이니시에이터 그룹을 생성하고 SAN 블록 장치에 대한 호스트 액세스를 관리하세요.</block>
   <block id="30ddb2a8f4393c24e7c572caffb658c3" category="paragraph">이니시에이터 그룹(igroup)은 블록 장치(LUN)를 해당 장치에 접근할 수 있는 컴퓨팅 리소스에 연결합니다. 볼륨에 대한 접근이 광범위하게 허용되고 사용자 권한으로 접근을 제어하는 NFS 또는 CIFS와 달리, 블록 스토리지 권한은 시스템 수준에서 작동합니다. 일반적으로 한 번에 하나의 시스템만 블록 장치에 접근할 수 있습니다.</block>
   <block id="e001414c2f2f18ec7a5b8edeac34513d" category="paragraph">igroup은 블록 스토리지에 대한 권한 계층 역할을 합니다. 서버가 스토리지 시스템에 연결되면 iSCSI 인증 호스트 이니시에이터(IQN)를 사용하여 자신을 식별합니다. 해당 IQN이 하나 이상의 igroup에 속하면 서버는 해당 igroup과 연결된 모든 LUN에 액세스할 수 있게 됩니다. iSCSI가 제대로 작동하려면 igroup과 iSCSI 호스트 연결이 모두 필요합니다.</block>
-  <block id="ede6bdf1757b96e1b5471e16e68335ad" category="paragraph">igroup을 생성하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후, 이 작업으로 돌아오십시오.</block>
   <block id="73f3ace4e6e8534569db86fc6aec4c49" category="list-text">리소스 유형 *Create initiator group*을 선택한 다음 *Create igroup*을 선택합니다.</block>
   <block id="8f70a2f50bfb27046fd5a4178b7197cf" category="list-text">*이니시에이터 그룹 생성* 대화 상자에서 다음을 수행합니다.</block>
   <block id="64247bba5c3763028e72b0194b474327" category="list-text">*igroup name*: 이니시에이터 그룹의 이름을 입력합니다.</block>
@@ -2335,13 +2092,11 @@
   <block id="cab281453766ba01226c32a419bd00b4" category="list-text">*블록 디바이스 이름*: 이니시에이터 그룹과 연결할 블록 디바이스를 하나 이상 선택합니다. 나열된 블록 디바이스는 아직 호스트 이니시에이터에 매핑되지 않은 디바이스입니다.</block>
   <block id="54d026e00002c68ee50033dbd7e53e6f" category="list-text">*운영 체제 유형*: 운영 체제 유형으로 Linux, VMware 또는 Windows를 선택합니다.</block>
   <block id="283119ca74749a876a6dfcb0c6968a8c" category="list-text">*호스트 이니시에이터*: 이니시에이터 그룹에 하나 이상의 iSCSI 적격(IQN) 호스트 이니시에이터를 추가합니다.</block>
-  <block id="66aa1d91f89810f078327deb1e1fc2c8" category="list-text">복제 관계에 사용하는 FSx for ONTAP 파일 시스템에는 연결된 링크가 있어야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후, 이 작업으로 돌아오십시오.</block>
   <block id="ba1072e8c0845f82f77ef660d46bde4a" category="list-text">온프레미스 ONTAP 시스템에서 FSx for ONTAP 파일 시스템으로 복제하려면 온프레미스 ONTAP 시스템을 검색했는지 확인하십시오.</block>
   <block id="45eea8cd3d88c48d8f4826a6be39d707" category="list-text">*S3 액세스 포인트 태그*: 필요에 따라 최대 50개의 태그를 추가하거나 태그를 제거할 수 있습니다.</block>
   <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">AWS 계정에 <block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>해야 합니다.</block>
   <block id="448fd8fde4bcc32e3db009c4a666bbfd" category="list-text">구성 해제 대화 상자에서 *해제*를 선택하여 구성에 대한 분석을 중지합니다.</block>
   <block id="e1b530152da44e105ca4a8d377616f64" category="list-text">*해제된 구성*을 선택합니다.</block>
-  <block id="bc1c3c9e36135f9757b3dc3c3e193f02" category="list-text">igroup을 관리하려면 링크를 연결해야 합니다. <block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>. 링크를 연결한 후, 이 작업으로 돌아오십시오.</block>
   <block id="08cd6b7c5ed112ac93d8c42844793856" category="section-title">igroup에 대한 클라이언트 액세스 관리</block>
   <block id="7da430a2703aa373f838f3ca96dbd76a" category="list-text">기존 igroup을 보려면 리소스 유형 *Initiator groups(igroups)*을 선택하십시오.</block>
   <block id="ff1a20fd70e3a7ecfb8b967bada7a3e0" category="list-text">블록 디바이스의 작업 메뉴로 이동하여 *클라이언트 액세스 관리*를 선택합니다.</block>
@@ -2364,9 +2119,7 @@
   <block id="076804dea9fcf3467cf7c699f9811498" category="list-text">업데이트한 후 *적용*을 선택합니다.</block>
   <block id="f6e1df464413e09857979a0ca8b75a4b" category="paragraph">NetApp Workload Factory의 볼륨에서 기존 S3 액세스 포인트를 삭제합니다.</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026년 2월 1일</block>
-  <block id="2855f13e1a4620842b40a36c5090209b" category="sidebar">블록 스토리지 리소스 생성</block>
   <block id="d8ad6fc6096c88d41f98b91f0043eebe" category="sidebar">igroup 생성</block>
-  <block id="9a6576dfb2c795711c67df7e1a5b076a" category="sidebar">블록 스토리지 administration</block>
   <block id="e77c03d49e828607828412709552dbd6" category="sidebar">igroup 관리</block>
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
@@ -2434,9 +2187,6 @@
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
   <block id="3b40a61896ac7bb071b70913553072f1" category="inline-link-macro">FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다</block>
   <block id="72a58cc21323626d7784d44077612a4a" category="paragraph"><block ref="72a58cc21323626d7784d44077612a4a" category="inline-link-macro-rx"></block></block>
-  <block id="59f5126fcebfa1b4b592a46994a99827" category="paragraph">사용량이 지정된 임계값을 초과하면 SSD 스토리지 용량을 늘리십시오. 작업 세트를 사용하지 않을 때는 SSD 스토리지 용량을 줄여 비용을 절감하십시오.</block>
-  <block id="eb6c620cfb7e9a2b2d272cbd7de4add5" category="inline-link-macro">자동 용량 관리 활성화</block>
-  <block id="ecc53408400ad50b32a298b084aaab6c" category="paragraph">또는 <block ref="3b9a1990588be58052dffdfdaa494467" category="inline-link-macro-rx"></block> Workload Factory가 파일 시스템 용량을 관리하도록 설정할 수도 있습니다.</block>
   <block id="50b304c0a704b9a80773e4a50f6e7d06" category="paragraph">파일 시스템 용량을 변경하면 FSx for ONTAP 파일 시스템의 IOPS에 영향을 미칩니다.</block>
   <block id="897441537fb13b6e015f73a76a79d07f" category="paragraph">파일 시스템의 용량을 조정하려면 먼저 <block ref="ca55c81878fab545ebb59a964af2e0f9" category="inline-link-macro-rx"></block>.</block>
   <block id="201a18ac1c906df6358f39af33c244de" category="summary">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 블록 스토리지를 관리합니다.</block>
@@ -2456,14 +2206,10 @@
   <block id="6a7ad49263c3fc8c151eb65f1806da11" category="paragraph">블록 디바이스 또는 LUN(논리 유닛 번호)은 SAN 환경에서 파일 시스템이 있는 볼륨으로, 네트워크를 통해 호스트에서 액세스할 수 있습니다.</block>
   <block id="b8566093dc7e8e13804760276e46227b" category="admonition">블록 디바이스의 크기를 늘린 후 호스트 운영 체제에서 제공하는 절차에 따라 새 크기를 검색하고 파일 시스템을 확장합니다.</block>
   <block id="5604a07573c6d426e93e84ff1a6bd366" category="paragraph">클라이언트에 매핑되지 않았거나 7일 동안 사용되지 않은 블록 장치는 비활성 블록 장치입니다. 이 작업은 선택한 블록 장치의 매핑을 해제하고 삭제합니다. 호스트 FlexVol 볼륨에 블록 장치가 없는 경우 Workload Factory는 해당 볼륨을 삭제합니다.</block>
-  <block id="d5d9ee8255b76e97868c3facadf58360" category="paragraph">용량 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가할 수 있습니다. 또한 이 기능을 활성화하면 용량을 수동으로 모니터링할 필요가 없어집니다.</block>
-  <block id="b5750806a6c2de28360d7b511ba01b0c" category="paragraph">시스템은 30분마다 FSx for ONTAP 파일 시스템을 스캔합니다. 증분 스토리지를 추가해야 하는지 확인하고 사용 가능한 볼륨 inode를 검증합니다. 카운트는 자동 용량 관리 임계값에 따라 증가합니다.</block>
-  <block id="7bdf690b1d068245416e9f5cbb766f44" category="paragraph">inode 관리를 활성화하면 NetApp Workload Factory가 용량 요구 사항 변경에 따라 FSx for ONTAP 파일 시스템에 증분 inode를 자동으로 추가할 수 있습니다. 이 기능을 통해 수동으로 inode를 모니터링할 필요가 없어집니다.</block>
   <block id="a850b45530431e433b34aeb17888df66" category="paragraph">이는 Workload Factory가 용량 증가 작업을 트리거하는 임계값입니다. 예를 들어 파일 시스템 용량이 80%에 도달하면 Workload Factory는 용량을 증가시킵니다.</block>
   <block id="52f65090db0661db649aa6c7e46a8b14" category="paragraph">파일 시스템 검사는 추가 용량이 필요한지 여부를 판단하기 위해 30분마다 수행됩니다.</block>
   <block id="fcb18dec8d5281d1ce666db128df5515" category="section-title">파일 시스템에 대한 inode 관리를 활성화합니다</block>
   <block id="083afef27eb29c6a017bada830bc631c" category="paragraph">자동 inode 관리를 활성화하여 볼륨당 inode(파일) 수를 허용 한도까지 늘릴 수 있습니다.</block>
-  <block id="d933b8209c8cd56ba75386ce9ae7847a" category="paragraph">FSx for ONTAP 파일 시스템에 대한 검사가 30분마다 수행됩니다. 이 검사는 사용 가능한 볼륨 inode를 확인하고 증분 inode를 추가해야 하는지 여부를 점검합니다. inode 개수는 자동 inode 관리 임계값에 따라 증가합니다.</block>
   <block id="7e360279029f6830f2d762fa5ccf524e" category="paragraph">Amazon FSx for NetApp ONTAP를 사용하면 NFS 및 SMB 파일 시스템이 S3 데이터에 액세스하고 Amazon Bedrock, SageMaker, Athena, AWS Glue 등과 같은 AWS 서비스에 연결할 수 있습니다. 모든 객체 스토리지 데이터에 AWS 서비스를 연결할 수 있습니다.</block>
   <block id="d38a17b6c80e0c89c1d9fcf60a993290" category="paragraph">FSx for ONTAP 파일 시스템의 NFS 및 SMB 볼륨에 S3 액세스 포인트를 연결하면 AWS 서비스에서 마치 S3 버킷에 있는 것처럼 파일에 액세스할 수 있습니다. 액세스 포인트를 연결할 때 고유 ID를 정의하고 파일 액세스 유형(UNIX 또는 Windows)을 선택한 다음 액세스 권한 부여를 위한 사용자 이름을 추가하세요.</block>
   <block id="050fbf0b45be1573711ea227653f0c71" category="paragraph">S3 액세스 포인트를 연결하면 AWS Management Console에 고유한 별칭과 함께 표시됩니다. 이 별칭을 Amazon Bedrock과 같은 AWS 서비스에서 FSx for ONTAP 볼륨의 파일에 액세스하는 데 사용할 S3 버킷 이름으로 지정하십시오.</block>
@@ -2475,15 +2221,11 @@
   <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026년 3월 1일</block>
   <block id="f9b8d8043e7f357d7b5805e6dfd01b25" category="sidebar">블록 스토리지 관리</block>
   <block id="90fbacfd00a759e142437ac247a4317c" category="sidebar">파일 시스템 용량을 수동으로 조정합니다</block>
-  <block id="241296c9db6f3205e0e5738da7ec12ef" category="sidebar">파일 시스템 용량을 자동으로 관리합니다</block>
   <block id="62790b093d67bd09f77b7088f1cf32a6" category="list-text">*볼륨 백업*: 매일 자동 백업이 기본적으로 활성화되어 있습니다. 원하는 경우 비활성화합니다.</block>
   <block id="94a3e141996b9431c4516ae849425040" category="summary">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 구성 문제가 있는지 확인합니다.</block>
   <block id="eb2b721313223c7264abb769bf627d20" category="paragraph">NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 구성 문제가 있는지 확인합니다. 문제가 발견되면 Workload Factory는 문제의 내용과 파일 시스템 스토리지가 최상의 성능, 비용 효율성 및 모범 사례 준수를 달성하도록 변경해야 하는 사항을 설명합니다.</block>
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">작동 방식</block>
-  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.</block>
-  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 총 최적화 점수, 범주별 구성 문제, 구성 문제 및 권장 사항 목록을 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. 일부 문제는 Workload Factory에서 자동으로 수정되지만, 다른 문제는 수동 개입이 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
-  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
   <block id="c6ee17dfa8bb85cfb470ccbc889f031c" category="section-title">스토리지 워크로드에 대한 모범 사례 및 권장 사항</block>
   <block id="ffd9fc00ab43b8283346c6266e00d684" category="paragraph">잘 설계된 분석은 프레임워크의 다음 핵심 요소인 _안정성_, _보안_, _운영 우수성_, _비용 최적화_ 및 _성능 효율성_으로 구성을 분류합니다.</block>
   <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">안정성</block>
@@ -2497,21 +2239,15 @@
   <block id="17d2a91a4f3c01de4c2f05b2242e49d3" category="section-title">운영 우수성</block>
   <block id="aae272278ce139a51849ab88adc7d597" category="paragraph">운영 우수성은 최적의 아키텍처와 비즈니스 가치 제공에 중점을 둡니다.</block>
   <block id="c2af0d35add26707ebd7d7030d750beb" category="paragraph">SSD 계층이 임계값을 초과하지 않도록 정기적으로 관리하려면 자동 용량 관리를 활성화해야 합니다.</block>
-  <block id="a58ce95d0ee8f9d592643a6f31d60878" category="paragraph">최적의 성능을 위해 Workload Factory는 워크로드에 가장 적합한 캐시 관계 쓰기 모드를 권장합니다. 쓰기 우회 모드는 작은 파일을 사용하는 읽기 중심 워크로드에서 더 나은 성능을 제공하며, 쓰기 백 모드는 큰 파일을 사용하는 쓰기 중심 워크로드에서 더 나은 성능을 제공합니다.</block>
-  <block id="3f8b3943fba700ffad94c47ef4638509" category="paragraph">Workload Factory는 최적의 크기를 유지하고 캐시가 자주 사용되는 데이터에 집중하여 효율성을 극대화할 수 있도록 캐시 볼륨에서 볼륨 자동 크기 조정 및 스크러빙을 활성화하는 것을 권장합니다.</block>
   <block id="a39ae09f8be4327fc176cfeb76a0e366" category="section-title">비용 최적화</block>
   <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">비용 최적화는 비용을 낮게 유지하면서 비즈니스에 가장 큰 가치를 얻을 수 있도록 도와줍니다.</block>
   <block id="c359614024935abd3712075452782fa3" category="list-text">*비활성 블록 디바이스*</block>
-  <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">블록 디바이스를 7일 동안 사용하지 않으면 Workload Factory에서는 비용 절감을 위해 블록 디바이스 데이터를 아카이빙하거나 사용하지 않는 블록 디바이스를 삭제할 것을 권장합니다.</block>
   <block id="3224742265d3111d23b216e2a1d3036c" category="paragraph">볼륨 백업은 볼륨당 수행되므로 각 백업에는 특정 볼륨의 데이터만 포함됩니다.</block>
   <block id="9b1c40247bbd6b430d06045ce9149bf4" category="paragraph">볼륨 백업은 증분 백업 방식입니다. 즉, 가장 최근 백업 이후 변경된 데이터만 저장됩니다. 따라서 백업 생성에 필요한 시간과 저장 공간을 최소화하여 데이터 중복을 방지하고 저장 비용을 절감할 수 있습니다.</block>
   <block id="0b3a2f729072cb80e423288abd69fa27" category="list-text">* 데이터 보호 작업 *, * 볼륨 백업 *, * 수동 백업 * 을 차례로 선택합니다.</block>
   <block id="108be83f8740c01bf49fb6d51d4b134e" category="admonition">스냅샷은 데이터의 복사본이 아닙니다. 데이터 복사본을 만들려면 볼륨 백업 또는 볼륨 복제 기능을 사용하는 것을 고려해 보세요.</block>
   <block id="d6a7c6eb08e4e62d76793fd3d8b368d4" category="list-text">볼륨 백업: 볼륨 백업 복사본은 그대로 유지되며 계속 사용할 수 있습니다.</block>
-  <block id="e18aace8bf973f70c990d2b81fcba316" category="list-text">정보에서 *볼륨 백업* 옆에 있는 연필 아이콘을 선택합니다. 마우스 커서를 *볼륨 백업* 행 위로 가져가면 드롭다운 화살표 옆에 연필 아이콘이 나타납니다.</block>
-  <block id="8650af0fa3c7b902ba6a94894d28c472" category="list-text">*볼륨 백업* 대화 상자에서 다음을 제공합니다.</block>
   <block id="5e9b88efcc8c9692790f512327a22476" category="list-text">* 데이터 보호 작업 *, * 볼륨 백업 * 을 선택한 다음 * 백업에서 복원 * 을 선택합니다.</block>
-  <block id="6eb18ebccbf4fe18669aca55778990e0" category="sidebar">볼륨 백업 일정 관리</block>
   <block id="b6a0b5ebabfe42c8ed27e9b4c0efda76" category="paragraph">알려진 제한 사항은 이 제품 릴리스에서 지원되지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 다음 제한 사항은 NetApp Workload Factory의 Amazon FSx for NetApp ONTAP에만 해당됩니다. 이러한 제한 사항을 주의 깊게 검토하십시오.</block>
   <block id="373a2f1d901c2d939efc602830f01830" category="paragraph">새로운 인벤토리 테이블은 AWS S3 버킷을 자동으로 스캔하여 S3 테이블을 채워 모든 객체, 메타데이터, 속성 및 태그에 대한 명확한 스냅샷을 제공합니다. 이러한 세부 정보에 액세스하면 관리 중인 데이터에 대한 제어, 가시성 및 신뢰성을 유지하는 동시에 운영 오버헤드를 줄일 수 있습니다. 이 기능은 S3 액세스 포인트를 생성 및 연결할 때 또는 기존 액세스 포인트를 편집할 때 활성화할 수 있습니다.</block>
   <block id="89431b722804b6b5729917d710d8bca9" category="inline-link-macro">NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트를 생성하고 연결합니다</block>
@@ -2531,7 +2267,6 @@
   <block id="dfe0bf59b17a7c242e3e57ed9983cadf" category="inline-link-macro">NetApp Workload Factory에서 FlexVol 볼륨 생성</block>
   <block id="438b9ce1f05f60505d31940eb7d80713" category="paragraph"><block ref="438b9ce1f05f60505d31940eb7d80713" category="inline-link-macro-rx"></block></block>
   <block id="934fd3399568391e103ee0d773bf954d" category="list-text">*비활성 NAS 볼륨*</block>
-  <block id="ad888b2fc1946f3bc7c47013f4399476" category="paragraph">구성 분석을 통해 활발하게 사용되지 않는 NAS 볼륨을 식별하고 비용 절감을 위해 해당 볼륨을 삭제하거나 아카이빙할 것을 권장합니다.</block>
   <block id="27bbb381f95a5892aac5e6fa577ad167" category="list-text">*애그리게이트 이름*: 새 볼륨을 호스팅할 애그리게이트를 선택합니다.</block>
   <block id="aadb221d48ad5912d16ae10d1a2f7515" category="inline-link-macro">계층화 정책 수정</block>
   <block id="de12e179e610f435272079f58d2c6bf8" category="paragraph"><block ref="7a3d97c05742e0c35a808e39b9ae9bf1" category="inline-link-macro-rx"></block> 전환 후 타겟 볼륨에 대해.</block>
@@ -2808,7 +2543,6 @@
   <block id="d0d09a499e6cdf9f1d34c4e5929c7f4d" category="section-title">3단계: 마이그레이션 사용 사례를 위한 복제 전환</block>
   <block id="09b43c18bbbe0ab926e24296d842bf9b" category="paragraph">마이그레이션 사용 사례에 대한 복제 관계를 생성한 후에는 스토리지 VM 데이터 및 구성 설정을 대상 FSx for ONTAP 파일 시스템으로 마이그레이션하려면 컷오버 복제를 수행해야 합니다. 컷오버 복제는 소스 파일 시스템에서 대상 FSx for ONTAP 파일 시스템으로 데이터와 스토리지 VM 구성 설정을 영구적으로 마이그레이션합니다. 컷오버 과정에서 데이터는 마지막으로 복제됩니다. 컷오버가 시작되면 소스 스토리지 VM은 오프라인 상태가 됩니다.</block>
   <block id="3d7746b6894a23aa721b9d2b99f0bff4" category="list-text">*복제 버전 지원*: 소스 및 대상 스토리지 시스템은 동일한 주요 ONTAP 버전을 사용해야 합니다. 예를 들어 소스 시스템이 ONTAP 버전 9.18.1을 실행 중인 경우 대상 시스템도 9.18.1 버전을 실행해야 합니다.</block>
-  <block id="28cd2b513c45599c0ed271171a723fae" category="paragraph">NetApp Workload Factory에서 데이터를 복제하여 데이터가 있는 지역에서 재해가 발생할 경우 데이터 손실을 방지하십시오. 데이터 복제는 FSx for ONTAP 파일 시스템과 온프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 간에 지원됩니다.</block>
   <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">두 FSx for ONTAP 파일 시스템 간, 온프레미스 ONTAP 시스템과 FSx for ONTAP 파일 시스템 간 또는 Cloud Volumes ONTAP과 FSx for ONTAP 파일 시스템 간에 데이터를 복제합니다.</block>
   <block id="5a022ce9df2c118b15eecf6d431faf14" category="doc">블록 디바이스 클론</block>
   <block id="c74340453798a5d4d4e10a5aaef38904" category="paragraph">Workload Factory는 블록 디바이스용 클론을 제공하여 용량, 액세스 및 수명 주기를 제어하면서 쓰기 가능하고 효율적인 데이터 복사본을 신속하게 프로비저닝할 수 있도록 지원합니다.</block>
@@ -2899,7 +2633,6 @@
   <block id="9ef57b630c87ffd61b917510a7a26030" category="section-title">NetApp Workload Factory에서 LIF 세부 정보를 확인할 수 있습니다</block>
   <block id="055f68ac1562a94352bd56b1842791fb" category="paragraph">파일 시스템의 개요 탭에서 모든 파일 시스템 및 스토리지 VM 엔드포인트를 직접 확인할 수 있습니다. Workload Factory 콘솔에서 엔드포인트를 직접 볼 수 있으므로 CLI 또는 CloudShell을 사용하지 않고도 네트워크 액세스, 엔드포인트 및 페일오버 상태를 쉽게 모니터링할 수 있습니다. 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 LIF 세부 정보를 표시하려면 파일 시스템에 링크를 연결해야 합니다.</block>
   <block id="c1bff806faafabc5316c2270f113bd85" category="inline-link-macro">NetApp Workload Factory에서 파일 시스템에 링크를 연결하는 방법을 알아보세요</block>
-  <block id="0cfa9f29837495af6181228a2286658a" category="paragraph"><block ref="966e2ff22df42c69be9cce59aca228ff" category="inline-link-macro-rx"></block>.</block>
   <block id="3cb407325a893b82dafad46209626b50" category="section-title">비용 개선</block>
   <block id="4ca110e0d9ae04c6ba757ec8fd3182f2" category="paragraph">모든 AWS 계정의 리소스에 대한 비용 분석 결과를 개선하기 위해 새로운 선택적 페이지 수준 필터를 사용할 수 있습니다. 여러 리전을 선택하고 파일 시스템 할당 태그 키 및 키 값을 사용하여 비용 분석 결과를 필터링하고 FSx for ONTAP 파일 시스템 및 볼륨에 대한 리소스별 비용 세부 정보를 확인할 수 있습니다.</block>
   <block id="083b82dbc7669e65217c0c4cdd6a08f3" category="inline-link-macro">NetApp Workload Factory에서 비용 분석을 위해 필터를 사용하십시오</block>
@@ -2931,15 +2664,12 @@
   <block id="b177ab05bd2fbdb0d056e9aab959cb42" category="paragraph">스토리지 관리자는 고객 불만이 접수된 후에야 FSx for ONTAP 이벤트에 대응하거나 사용자 지정 스크립트 및 알람을 유지 관리하는 경우가 많습니다. 이러한 사후 대응 방식은 효율성을 저하시키고 문제 해결을 지연시키며 가동 중지 시간을 증가시킬 수 있습니다.</block>
   <block id="ca49138d55194f3a1b69368658fa59c0" category="paragraph">이벤트 분석기는 FSx for ONTAP 파일 시스템에서 다음과 같은 이벤트 유형을 자동으로 추출합니다.</block>
   <block id="229e5c835625a6cd5a09a266df2faa8c" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결</block>
-  <block id="5189ff53307ee7b08ddaa025da603b7c" category="list-text">*EMS 이벤트*: ONTAP 이벤트 관리 시스템에서 발생하는 오류, 경고 및 긴급 상황 이벤트입니다. EMS 이벤트를 보고 분석하려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
-  <block id="35b385d2a34b34294a95472dbbafeb62" category="list-text">*지연 시간 이벤트*: 읽기 및 쓰기 지연 시간 이벤트를 표시합니다. 지연 시간 이벤트는 링크 연결 없이도 볼 수 있습니다. 지연 시간 이벤트를 분석하고 AI 기반 인사이트를 받으려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
   <block id="1ee445f8e51142e85beb7b0f2c2e1518" category="paragraph">이벤트를 보려면 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS 계정에 로그인해야 합니다. 이벤트는 72시간 동안 표시된 후 삭제됩니다.</block>
   <block id="59a0aad57efa98df25e199d3fa441911" category="list-text">고급 문제 해결: AI가 자동으로 FSx for ONTAP EMS 및 지연 이벤트를 식별, 분석하고 해결 방법에 대한 통찰력을 제공하여 수동 조사 시간을 줄여줍니다.</block>
   <block id="b5bc253203e24fc8972e3fe9be53196b" category="list-text">모범 사례 해결 방법: 이벤트 분석기는 FSx for ONTAP EMS 및 지연 이벤트를 해결하기 위한 명확하고 실행 가능한 단계를 제공합니다.</block>
   <block id="ffb5c85ee020316605143a7a4c0773b7" category="paragraph">EMS 및 지연 시간 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 다음 사항을 확인하십시오.</block>
   <block id="17a23fbf55b4140721bd4a74dda992ee" category="list-text">AWS 계정에 <block ref="3728a9886a6e8befe945facf87fd7817" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
   <block id="4dfaad1ff2ec349d086542d609839be5" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결됨</block>
-  <block id="118cc54d4ac9f6ec4ccf910143c8176e" category="list-text"><block ref="e70ae182cde64a3166eabfbf424a24d8" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
   <block id="55bc5f9b6cf37ff622a10cc4fd3aaccc" category="paragraph">추가 요구 사항(이벤트 분석 중에 시스템에서 안내합니다):</block>
   <block id="6ab6dbf6bacb521f8499b17428a8a145" category="paragraph">각 AWS 계정에 대해 Amazon Bedrock API를 구성하십시오. Amazon Bedrock API는 FSx for ONTAP 이벤트에 대한 인사이트를 제공하는 데 사용됩니다.</block>
   <block id="9aac5daa464aa807ec502ef1061168e5" category="section-title">FSx for ONTAP의 이벤트 보기 및 분석</block>
@@ -2957,15 +2687,6 @@
   <block id="1045d7a603969c049cf68b4017ae537e" category="list-text"><block ref="1045d7a603969c049cf68b4017ae537e" category="inline-link-macro-rx"></block></block>
   <block id="6149c2ac82c846d8c0c66beff37f271d" category="paragraph">비즈니스(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다. 기존 볼륨에 블록 장치를 생성하거나, 새 블록 장치용 새 볼륨을 생성하거나, 스냅샷에서 새 블록 장치용 새 볼륨을 생성할 수 있습니다.</block>
   <block id="7d890770a60d61d9610602416316dd0c" category="list-text">볼륨 스냅샷에서 생성합니다. 소스 볼륨 이름과 스냅샷 이름을 선택하십시오. 블록 장치가 없는 볼륨만 사용할 수 있습니다.</block>
-  <block id="0d9cf45fb23b4088730f72dd43be4a9b" category="paragraph">이 워크플로에서 링크를 생성하는 방법은 자동 또는 수동 두 가지가 있습니다. AWS GovCloud 계정이 있는 경우 새 링크는 수동으로 생성해야 합니다.</block>
-  <block id="e97bbb69ec6bcd2c1b3d761224ed4559" category="admonition">AWS GovCloud 계정의 경우 자동 링크 생성이 지원되지 않습니다.</block>
-  <block id="d37d952a78337c053485a61317b953df" category="list-text">*AWS Secrets Manager*: GovCloud 계정의 경우 항상 활성화되어 있습니다. 다른 계정의 경우 선택 사항입니다. Workload Factory가 AWS Secrets Manager에서 FSx for ONTAP 액세스 자격 증명을 가져올 수 있도록 합니다.</block>
-  <block id="f3a06ea1d47de2a4216fe3fd53364d24" category="list-text">*사용자 제공*: 이 옵션을 선택하면 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당할 수 있습니다. Lambda 권한 정책에는 다음 권한이 필요합니다. 이<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> 권한은 AWS Secrets Manager를 사용하는 경우에만 필요합니다.</block>
-  <block id="1425c9b22ae63851bbaa938ebc0a967d" category="list-text">스택 생성이 완료되면 Workload Factory 콘솔의 텍스트 상자에 Lambda ARN을 붙여넣으십시오. Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 가져옵니다.</block>
-  <block id="47dfa5e12270c73140e2f3dc8b32a020" category="paragraph">Workload Factory는 링크를 FSx for ONTAP 파일 시스템과 연결합니다. 고급 ONTAP 작업을 수행할 수 있습니다.</block>
-  <block id="eb3eec333eedf15738e12e55e183cdb7" category="paragraph"><block ref="c7c8a4154bf78f63993b7572e6143221" category="inline-link-macro-rx"></block>.</block>
-  <block id="81fccfd8b7cc4d87c0978527048afe60" category="paragraph">GovCloud 계정에 대한 링크 연결이 지원됩니다. Workload Factory는 GovCloud 인증 키를 사용하여 GovCloud 승인 메커니즘을 통해 FSx for ONTAP 작업에 안전하고 에이전트 없이 액세스할 수 있도록 합니다.</block>
-  <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">스토리지 VM 및 클러스터 LIF의 역할, 엔드포인트, 노드, IP 주소 및 상태를 포함한 세부 정보 표시</block>
   <block id="d72415af6292f1377ab69432624c64ea" category="summary">NetApp Workload Factory에서 복제 관계를 관리합니다.</block>
   <block id="a26b114333821bd07a9e54008500a358" category="doc">NetApp Workload Factory에서 복제 관계를 관리합니다.</block>
   <block id="cdb933f4a358f433a7751a2bd01fe605" category="paragraph">NetApp Workload Factory에서 복제 관계를 관리하세요. 소스 볼륨과 타겟 볼륨 간의 복제 관계를 일시 중지, 재개, 역전, 중지 및 삭제할 수 있습니다. 또한 소스 볼륨의 복제 일정을 변경하고 복제 관계의 최대 전송 속도를 제한할 수 있습니다.</block>
@@ -2981,7 +2702,6 @@
   <block id="8b2efc01d419d2e075218fa1edac875b" category="list-text">*IOPS 임계값*: 100 IOPS (읽기 및 쓰기)</block>
   <block id="037ea7d94a5a2563d24d4aab128c2f74" category="list-text">*시간 범위*: 10분</block>
   <block id="fc30acb77198b9a113675211028eeb7f" category="paragraph">지정된 시간 범위 내에서 지연 시간 임계값이 초과되고 IOPS 임계값에 도달하면 경고가 생성됩니다.</block>
-  <block id="d663edf15a1c9b9cce32f438ee09111b" category="admonition">링크 연결 없이도 지연 이벤트를 확인하고 알림을 받을 수 있습니다. 하지만 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 <block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
   <block id="ee43009d0c790146325573e838a42f39" category="list-text">*알림 작업*을 선택한 다음 *지연 시간 임계값 설정*을 선택합니다.</block>
   <block id="e7199990279785fb0027f522b7518c23" category="list-text">'지연 시간 임계값 설정' 대화 상자에서 다음을 구성하십시오.</block>
   <block id="18a1f4ac498e878706a9bea4c3f7d8d2" category="list-text">*읽기 지연 시간*: 읽기 작업에 대한 임계값(밀리초, ms)을 입력하십시오.</block>
@@ -3084,7 +2804,6 @@
   <block id="95586dc24a07faa8b220610ee081b258" category="admonition">계정 관리자가 AI 기능을 비활성화한 경우 메시지가 표시되며 AI 분석을 사용할 수 없습니다. 관리자에게 문의하거나<block ref="8a07854225cea4e549749d8d6bd03ae4" category="inline-link-rx"></block>.</block>
   <block id="7dda3a5d32a0f95d72a80e605571fac2" category="paragraph">지연 시간 이벤트를 보려면 다음 단계를 수행해야 합니다.</block>
   <block id="dcad9d7b64bcc7778ad8c3ce28000b5a" category="list-text"><block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS 계정에서.</block>
-  <block id="b5fa996e2b1ac4a33ba73889e4fd082c" category="list-text"><block ref="e3e5092d2d9ecf941f8ffdff56f5837a" category="inline-link-macro-rx"></block>.</block>
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">사용자 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 알림과 부정확한 최적화 결과를 방지할 수 있습니다.</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">사용자 지정 규칙에 대해 자세히 알아보기</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">또한 일반 언어로 사용자 지정 규칙을 만들어 조직 표준 및 NetApp 모범 사례에 따라 환경의 유효성을 검사할 수 있습니다. 모의 실행을 통해 규칙을 테스트한 다음, 모든 환경에서 실행되도록 예약할 수 있습니다. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
@@ -3105,42 +2824,25 @@
   <block id="5f11ab37407484ede3169d7e37c9e28b" category="paragraph">iSCSI를 사용하여 애플리케이션 데이터를 제공하는 볼륨은 동시에 NAS에 액세스해서는 안 됩니다. Workload Factory는 iSCSI 볼륨이 다른 프로토콜을 사용하지 않도록 제한할 것을 권장합니다.</block>
   <block id="ac6bba07ba0bbbb40281e6088f214af7" category="list-text">*자동 용량 관리*</block>
   <block id="bca05dfe73df2536775bb543bb367fb6" category="list-text">*볼륨 용량 여유 공간*</block>
-  <block id="358a04c23a2e8b7a739dbfc478ae8427" category="paragraph">Workload Factory는 볼륨 용량 사용률이 80%를 초과하지 않도록 권장합니다. 이는 애플리케이션의 데이터 읽기 및 쓰기에 영향을 미칠 수 있습니다. 볼륨 용량 증가는 수동 또는 볼륨 자동 확장 기능을 사용하여 자동으로 수행할 수 있습니다.</block>
   <block id="cb24245fc7fbb951739f0e037e8ed58f" category="list-text">*FlexCache 쓰기 모드*</block>
   <block id="199b5a17e840b5e8165065942a5aba7f" category="list-text">*FlexCache 복제본 크기*</block>
   <block id="9df3c9bccd6a766926fdecf9723bee25" category="list-text">*호스트에서 볼 수 있는 용량 보고*</block>
-  <block id="ac6d1e17d25eaeb65d82b152dfdb57bf" category="paragraph">Workload Factory는 볼륨 수준에서 스토리지 사용량을 더 잘 파악할 수 있도록 호스트에서 볼 수 있는 용량 보고 기능을 활성화하는 것을 권장합니다.</block>
   <block id="47d22e8e629e843266ec7435ff742bbb" category="list-text">*운영체제(OS) 종류*</block>
-  <block id="5247b145ee65edc273dfc76802aa954d" category="paragraph">Workload Factory는 I/O 정렬을 위해 ONTAP LUN 운영 체제(OS) 유형 값이 운영 체제 파티셔닝 체계와 일치하는지 확인하는 것을 권장합니다. 잘못된 구성은 성능을 저하시킬 수 있습니다.</block>
   <block id="6297d4b1adbdb3df46577f46811017d6" category="list-text">*블록 장치 공간 관리*</block>
-  <block id="0b3d1dbc35ccab38207b2110ee154a08" category="paragraph">Workload Factory는 쓰기 오류를 방지하고 FSx for ONTAP의 공간 효율성을 개선하기 위해 데이터베이스 호스트 인스턴스에서 사용하는 LUN에 대한 블록 디바이스 공간 설정을 구성할 것을 권장합니다. 이 구성은 씬 프로비저닝 볼륨에 권장되는 설정 조합(공간 예약, 공간 할당 및 부분 예약)에 적용됩니다.</block>
   <block id="03d17de0352cae761e78b42715347870" category="list-text">*씬 프로비저닝*</block>
-  <block id="a276a4d3d1bb6ff49ba0c75013f6c037" category="paragraph">Workload Factory는 데이터베이스 인스턴스를 호스팅하는 FSx for ONTAP 볼륨에 대해 씬 프로비저닝을 구성하는 것을 권장합니다. 이 방식을 사용하면 물리적으로 사용 가능한 용량보다 더 많은 논리적 데이터를 저장할 수 있습니다.</block>
   <block id="01fd10a8e7ac161e328da4eaf6292046" category="list-text">*콜드 데이터 티어링*</block>
-  <block id="a5005a71aac05b88dbddcbb021b30d0a" category="paragraph">콜드 데이터 티어링을 활성화하여 SSD 스토리지 티어 사용률을 줄이십시오. Workload Factory는 일반 데이터 스토리지를 중심으로 모든 볼륨에 티어링 정책을 적용하는 것을 권장합니다. 데이터베이스 볼륨의 경우, 적절한 경우 콜드 데이터 티어링을 활성화하는 것이 좋습니다. FSx for ONTAP는 콜드 데이터를 지속적으로 스캔하여 중단 없이 용량 풀 티어로 이동합니다.</block>
   <block id="1642a3ac22d754ea2e3215648c2ca8a7" category="list-text">*스토리지 효율성*</block>
   <block id="a97dffed0cf7eab28dd24e64546425b8" category="paragraph">스토리지 효율성(컴팩션, 압축, 중복 제거)을 활성화하여 스토리지 활용도를 최적화하고 SSD 계층 비용을 절감하십시오.</block>
   <block id="4839729f2857a14e606b9472d85de0c1" category="list-text">*백업 만료*</block>
-  <block id="2d6228f6728e6cfbec7d7d819f3dc6bd" category="paragraph">Workload Factory는 삭제된 볼륨에 대해 수동으로 생성된 백업과 2주 이상 된 백업을 모두 삭제할 것을 권장합니다. 이러한 백업은 자동으로 만료되지 않으며, SLA 또는 복구에 더 이상 필요하지 않은 경우 비용이 증가하고 관리가 복잡해질 수 있습니다.</block>
   <block id="1404f94ec501f39118a91965272f695e" category="list-text">*스냅샷 만료*</block>
-  <block id="78820863b97d15c8f341065e658e9150" category="paragraph">Workload Factory는 더 이상 필요하지 않은 오래된 스냅샷이나 수동으로 생성된 스냅샷을 삭제하는 것을 권장합니다. 이러한 스냅샷을 삭제하면 비용을 절감하고 시스템 정리를 할 수 있으며, 특히 SLA 또는 복구 요구 사항에 필요하지 않은 경우 더욱 효과적입니다.</block>
   <block id="8611faa768b220ecb3795c6fda54fdaa" category="list-text">*SSD 용량 과잉 프로비저닝*</block>
-  <block id="5d6d944edf403daafeea5a5aeb5e3f87" category="paragraph">SSD 용량 계층을 과도하게 할당하면 불필요한 비용이 발생합니다. Workload Factory는 20%의 여유 공간을 유지하면서 SSD 계층 용량을 줄일 것을 권장합니다. 용량 축소 작업은 몇 시간에서 며칠까지 소요될 수 있으며, 이 시간 동안 다른 파일 시스템 작업은 지원되지 않습니다.</block>
   <block id="8722112d28d6eea0aff9478fb61c5de7" category="section-title">성능 효율성</block>
   <block id="62d0d3849cddbcf3cccae74f05719854" category="paragraph">성능 효율성은 스토리지 리소스를 효과적으로 사용하고 워크로드가 최적의 성능을 발휘하도록 보장하는 데 도움이 됩니다.</block>
   <block id="fbb48f4d1a3f9488b40b10d1cb8a50bd" category="list-text">*FlexGroup 볼륨 재조정*</block>
-  <block id="a1ff290ebc3ad774d64f34c9530729c0" category="paragraph">Workload Factory는 효율성 향상을 위해 FlexGroup 볼륨의 균형을 재조정할 것을 권장합니다. 확장 후에는 볼륨 전체에 걸쳐 용량 및 워크로드 활동이 고르지 않게 될 수 있습니다.</block>
   <block id="ed1fc69039bbd36676c2e04fb15f5d02" category="list-text">*FlexVol 볼륨 재조정*</block>
-  <block id="d594538bbec3297430ed8c995b262222" category="paragraph">Workload Factory는 효율성 향상을 위해 FlexVol 볼륨의 균형을 재조정할 것을 권장합니다. 확장 후에는 볼륨 전체에 걸쳐 용량 및 워크로드 활동이 고르지 않게 될 수 있습니다.</block>
-  <block id="dc0b44a6b07f576dd5f2f755574335ed" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템을 기반으로 AWS 계정, 위치 및 보안 그룹을 자동으로 가져옵니다.</block>
-  <block id="325013ba9d083d4d579a01c87b58a749" category="paragraph">Codebox에서 제공하는 두 가지 IaC(Infrastructure-as-Code) 툴인 CloudFormation 또는 Terraform을 사용하여 링크를 생성할 수 있습니다. 이 옵션을 사용하면 AWS CloudFormation에서 링크의 ARN을 추출하여 여기에 보고합니다. Workload Factory가 수동으로 링크를 등록합니다.</block>
   <block id="e3a12eeb93ddbad9936f64a12bb2990b" category="summary">Workload Factory는 Amazon FSx for NetApp ONTAP 구성을 스캔하여 운영 효율성을 달성하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
-  <block id="456dfd59254470bd0cb6fe309f187558" category="paragraph">구성 분석 인사이트와 권장 사항을 활용하여 Workload Factory를 통해 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하십시오. 시스템 아키텍처의 우수성 현황을 쉽게 검토하고, 구성 관련 문제를 파악하며, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 취할 수 있습니다.</block>
   <block id="2481fd47e889a8c5be960ceeee3fc039" category="inline-link-macro">구성 분석 및 아키텍처 설계 상태에 대해 알아보세요.</block>
   <block id="050f39c43a1faec7835a460a601cfaa4" category="paragraph"><block ref="050f39c43a1faec7835a460a601cfaa4" category="inline-link-macro-rx"></block></block>
-  <block id="7666c58e0bddac1cbe28645920551133" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석을 통해 아키텍처가 잘 설계되었는지 여부와 함께 통찰력 및 권장 사항을 제공하며, 구성 문제를 자동으로 수정하여 파일 시스템이 모범 사례를 충족하도록 지원하는 옵션도 제공합니다.</block>
-  <block id="82879b45fce9fcdeb4f25012fa8fef7d" category="paragraph">파일 시스템의 구성 문제에 대한 권장 사항을 검토하고 문제를 해결할 수 있는 옵션이 있습니다.</block>
-  <block id="df5c0246a90a5d139d7fb07cf388884f" category="paragraph">스토리지 구성 요구 사항은 다양하므로 스토리지 환경에 적용되지 않는 특정 구성의 분석을 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다.</block>
   <block id="3e21dedc161156a65d4b153c5653ab3d" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템에 대해 다음과 같은 구성의 아키텍처 설계 상태를 분석합니다.</block>
   <block id="a019551fbe33f5f8032e6ad7ea45cc46" category="list-text">안정성: 볼륨 백업, 스냅샷 정책, 지역 간 복제, SSD 용량 여유, 복제 정책 레이블 및 파일 오브젝트 용량</block>
   <block id="8201d40059d24557a9ae6b54f5db8a8c" category="list-text">보안: 랜섬웨어 방지(ARP/AI) 및 무단 iSCSI 볼륨 접근 방지</block>
@@ -3152,7 +2854,6 @@
   <block id="3efa1f5617c52b1aa6c34c67d5726abd" category="list-text">구성에 대해 *View and fix* 를 선택합니다. 권장 사항을 꼼꼼히 검토하시기 바랍니다.</block>
   <block id="a4ae5a230015c0a679cee86f84a28962" category="list-text">리소스를 선택한 다음 *Fix*를 클릭합니다.</block>
   <block id="06e1b6c2480d62026b18d2c923a28506" category="paragraph">일부 수정 작업은 특정 작업에만 사용할 수 있으며, 여러 리소스에 대해 동시에 사용할 수 없는 경우도 있습니다. 예를 들어, 단일 볼륨의 구성은 수정할 수 있지만 여러 볼륨의 구성은 수정할 수 없을 수도 있습니다.</block>
-  <block id="d13a349bc65ac4879614661d04a45015" category="list-text">구성 대화 상자에서 구성에 대한 수정 작업 정보를 검토하십시오. 일부 작업은 인스턴스 다운타임이나 서비스 중단을 초래할 수 있습니다.</block>
   <block id="53274680f8c8a77a8f6eea3b3540d8e8" category="list-text">Workload Factory에서 권장 변경 사항을 적용하려면 *Fix*를 선택하십시오.</block>
   <block id="0978922f14eb07f7fed49aad717e25a8" category="paragraph">복구 프로세스가 시작됩니다. 계정 설정 메뉴를 선택한 다음 *Tracker*를 선택하여 작업 상태를 확인합니다.</block>
   <block id="87fbaf4af36088cb5c229c5d63fc7d88" category="paragraph">하나 이상의 리소스에 대한 구성 분석을 무기한 중지합니다. 필요할 때 분석을 다시 시작할 수 있습니다.</block>
@@ -3177,7 +2878,6 @@
   <block id="fe23abc487c1652819d9b5e7f369c584" category="list-text">리소스 하나의 경우: <block ref="0b1a4328cf8d4a19e527f04594e503ab" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *다시 활성화*를 선택합니다.</block>
   <block id="a38e01e3ec63bd595f916620c9db95f2" category="list-text">여러 리소스를 처리하려면 리소스를 선택한 다음 일괄 작업 옆에 있는 *재활성화*를 선택하십시오.</block>
   <block id="90bf65e5861f1213fc5134e7f7138cc3" category="paragraph">Workload Factory는 구성 분석을 다시 활성화하고 매일 새로운 분석을 실행합니다.</block>
-  <block id="875551355a7b095c8343c772ab9a39cd" category="paragraph">Workload Factory는 일부 정보를 표시하고 일부 작업을 수행하기 위해 링크가 필요합니다. 링크가 필요한 작업을 수행하려고 하는데 FSx for ONTAP 파일 시스템과 링크를 연결하지 않은 경우 Workload Factory는 해당 작업에 링크가 필요하다는 알림을 표시합니다.</block>
   <block id="8dbebb7d8525e0c16443f866feb41a02" category="paragraph">Workload Factory는 모니터링 기능인 Tracker를 제공하여 FSx for ONTAP, 자격 증명 및 링크 작업의 진행 상황과 상태를 모니터링하고 추적하고, 작업 및 하위 작업에 대한 세부 정보를 검토하고, 문제 또는 오류를 진단할 수 있도록 지원합니다.</block>
   <block id="2f8586eac80bb95b25809876eb97f99a" category="paragraph">Workload Factory는 복원에 필요한 용량이 충분한지 판단하고, 부족한 경우 SSD 스토리지 계층 용량을 자동으로 추가할 수 있습니다.</block>
   <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">계정 전체의 복제 지연을 모니터링하려면 추적 기능을 활성화하세요. Workload Factory는 지연 시간이 설정된 임계값을 초과하면 알림을 보냅니다. 기본 임계값은 정상적인 전송 시간을 고려하고 오탐을 줄이기 위해 복제 간격의 150%로 설정되어 있습니다. RPO에 맞춰 임계값을 조정하고 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다. 또한 데이터를 CSV 파일로 내보내 추가 분석을 수행할 수 있습니다.</block>
@@ -3222,50 +2922,153 @@
   <block id="c329a6ebc8c0891e88889203e3e31c39" category="doc">링크 생성은 링크 페이지에서 가능합니다.</block>
   <block id="ef8e743556b96fe2947729361cb5835f" category="paragraph">이제 FSx for ONTAP 인벤토리 페이지 및 파일 시스템 개요 페이지 외에도 관리 메뉴의 링크 페이지에서 직접 링크를 생성할 수 있습니다.</block>
   <block id="b65fab1584e1a15fb6cd01b1fb573a1f" category="inline-link-macro">링크 생성에 대해 자세히 알아보세요</block>
-  <block id="2fb8fbf9eac6cb7cdbca3e8cae581dd0" category="paragraph"><block ref="ac8902bc899b18c41d3bea9bfd9e1e86" category="inline-link-macro-rx"></block>.</block>
-  <block id="eb72702456cb13d975ccfacb15b610d0" category="paragraph">링크는 AWS Lambda를 사용하여 이벤트에 대한 응답으로 코드를 실행하고 해당 코드에 필요한 컴퓨팅 리소스를 자동으로 관리합니다. 사용자가 생성하는 링크는 NetApp 계정의 일부이며 AWS 계정과 연결됩니다.</block>
-  <block id="de753f9064c7210624293a7c1d1e13f9" category="paragraph">FSx for ONTAP 파일 시스템을 정의할 때 계정에 링크를 생성할 수 있습니다. 이 링크는 해당 파일 시스템에 사용되며, 다른 FSx for ONTAP 파일 시스템에서도 사용할 수 있습니다. 또한 나중에 파일 시스템에 링크를 연결할 수도 있습니다.</block>
-  <block id="36c518eb88267ad8a7105893fd209a46" category="list-text">관리 메뉴에서 *링크*를 선택합니다.</block>
-  <block id="892be23a9211e0d2e6a0d60b06507944" category="list-text">링크 페이지에서 *생성 및 연결*을 선택합니다.</block>
-  <block id="cb045f0740ec2fb29d2864d6c52abff5" category="list-text">연결 링크 대화 상자에서 링크와 연결할 파일 시스템을 선택하고 *계속*을 선택합니다.</block>
-  <block id="a9dc1217e276dbbc98e08e5bf8b4e0bd" category="list-text">*새 링크 만들기*를 선택한 다음 *계속*을 선택합니다.</block>
-  <block id="eaa9de7b48a473b999b69f05d59df6c2" category="list-text">링크 생성 페이지에서 *자동으로 생성*을 선택한 다음 다음 정보를 입력합니다.</block>
-  <block id="0a447482fbe2f57253df6484a37127e2" category="list-text">*사용자 제공 실행 역할*: 이 옵션을 선택하면 지정된 Lambda 실행 역할과 연결된 정책을 Lambda 링크에 할당할 수 있습니다. Lambda 권한 정책에는 다음 권한이 필요합니다. 이<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> 권한은 AWS Secrets Manager를 활성화한 경우에만 필요합니다.</block>
-  <block id="4e4d4587b3d4f525dd0bfabd81edb7d7" category="paragraph">CloudFormation 템플릿은 Lambda를 시작할 때 세 가지 권한을 부여합니다. Workload Factory는 링크를 사용할 때 이러한 권한을 활용합니다.</block>
-  <block id="6f0344b8291b1471c971ba88374dce8a" category="paragraph">이벤트 페이지에서 링크 생성 상태를 확인할 수 있습니다. 이 과정은 5분 이내로 완료됩니다.</block>
-  <block id="7b8171c19525234afed5066a22d0bdbe" category="list-text">링크 생성 페이지에서 *수동으로 생성*을 선택한 다음 Codebox에서 CloudFormation 또는 Terraform을 선택합니다.</block>
-  <block id="bf419e3bcb855d67fd85a99f9a55eb97" category="list-text">세부 정보 및 자격 증명란에 다음 정보를 입력하십시오.</block>
-  <block id="0b1685216b81bbd8b7a0d6bb09435f98" category="paragraph">링크를 생성한 후에는 하나 이상의 FSx for ONTAP 파일 시스템과 연결하십시오.</block>
-  <block id="64c7a4783273d9e14ea971d0631f7ac8" category="paragraph">비밀 ARN에 다음 키-값 쌍이 포함되어 있는지 확인하십시오. 단, _filesystemID_는 선택 사항입니다.</block>
-  <block id="669b6152234fe8c12012646b005a7d2f" category="paragraph">비밀 키는 다음과 같은 키-값 쌍을 포함해야 합니다.</block>
   <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026년 8월 30일</block>
   <block id="c82db17d9640cb358a39977100613e95" category="section-title">워크로드 식별</block>
   <block id="9c2440b961ba52df8467b29a146f98ba" category="list-text">Workload Factory는 이제 다른 지역에 배포된 FSx for ONTAP 스토리지에 연결된 호스트의 워크로드를 식별합니다.</block>
   <block id="c48db719590b6821db48e6238f4be1c4" category="list-text">개선된 워크로드 감지 로직을 통해 더 많은 워크로드 유형을 발견하고 감지 정확도를 향상시켰습니다.</block>
-  <block id="a5eed3b96d2185e0764ada195a486690" category="doc">NetApp Workload Factory에서 볼륨의 복제 일정 변경</block>
   <block id="c092c4e03c30c753ec060fe6b2255de4" category="doc">NetApp Workload Factory에서 스토리지 VM에 대한 AD 구성 및 업데이트</block>
-  <block id="03fff97f7787377e3e4417517cf7b21e" category="doc">NetApp Workload Factory에서 볼륨의 온디맨드 백업 생성</block>
   <block id="08d70d11ddeec80d88a5f51591578656" category="doc">사이버 금고로 FSx for ONTAP 데이터를 보호하세요.</block>
-  <block id="6721f36d179d854ccc58b2ad42c7362f" category="doc">NetApp Workload Factory에서 스토리지 VM에 대한 스냅샷 정책 생성</block>
-  <block id="dbf1c63cddd6309b0bc8cc75976dec7b" category="doc">NetApp Workload Factory에서 볼륨의 온디맨드 스냅샷 생성</block>
   <block id="23d39bde9b08b2c6e975096219600185" category="doc">NetApp Workload Factory에서 캐시 볼륨 검색</block>
-  <block id="5c1f913dca6b99f9befa10b536db4492" category="doc">NetApp Workload Factory에서 볼륨 자동 확장 활성화</block>
   <block id="d4a67598375b312f4832cf6bab5157bb" category="doc">NetApp Workload Factory에서 장기 스냅샷 보존 활성화</block>
   <block id="b93731800482f89e9948a463e728ef9d" category="doc">NetApp Workload Factory에서 FSx for ONTAP에 대한 도움말 보기</block>
   <block id="e8355e7c1132891c80c2af3110068130" category="doc">ONTAP 파일 시스템 구성을 위한 잘 설계된 FSx 구현</block>
-  <block id="098db803ee017e3ecc391b755fd4943a" category="doc">NetApp Workload Factory에서 파일 시스템 용량을 수동으로 조정합니다.</block>
   <block id="d57644972c07db4650e08c2e26761651" category="doc">NetApp Workload Factory에서 FSx for ONTAP의 알려진 제한 사항</block>
-  <block id="ff71316397e1ef17bc15e9784bcb30bd" category="doc">NetApp Workload Factory에서 복제 전송 속도 제한</block>
-  <block id="96bbcf50926e08954b634fd05cb51ba4" category="doc">NetApp Workload Factory에서 용량 및 inode를 자동으로 관리합니다.</block>
   <block id="9e0ecd128d681936cd0b802126c384d4" category="doc">NetApp Workload Factory에서 볼륨의 SMB/CIFS 공유 관리</block>
-  <block id="a4d45bf93deed5e773f1c470ea181049" category="doc">NetApp Workload Factory 링크 관리</block>
   <block id="c63ba25cc70bb1bddad69971b2178a35" category="doc">NetApp Workload Factory에서 볼륨에 대한 스냅샷 정책을 관리합니다.</block>
   <block id="76bef3b45ffa41a70902eee6a180240d" category="doc">AI 기반 NetApp 자율형 랜섬웨어 보호 기능으로 FSx for ONTAP 데이터를 보호하십시오.</block>
-  <block id="111827ab44a64fef8ee33a4c31d9e746" category="doc">NetApp Workload Factory에서 볼륨 용량 확인 및 재조정</block>
-  <block id="13eb38af096a3b48602b4708c1b1b87c" category="doc">NetApp Workload Factory에서 스냅샷으로 볼륨 복원</block>
   <block id="b9be88fc11ad6670dab2c9b28bfeed84" category="doc">NetApp 지원을 위해 Workload Factory 계정을 등록하십시오</block>
   <block id="1154a7e4b2160ee9927e71e327ffc1fc" category="doc">NetApp Workload Factory에서 복제 스냅샷 데이터 업데이트</block>
-  <block id="dcd3b5b0b5be83a6428cf8e204033841" category="doc">NetApp Workload Factory에서 볼륨 스토리지 효율성 업데이트</block>
-  <block id="9f6474fce0b75bbb20e073788d0f7d91" category="doc">NetApp Workload Factory에서 파일 시스템의 처리량 용량 업데이트</block>
   <block id="fa9e4ccc5a64e6bc26f23e2983b2ae89" category="doc">NetApp Workload Factory에서 볼륨에 대한 S3 액세스 포인트 세부 정보 보기</block>
+  <block id="84e723a77e5da7869a8731958afee785" category="paragraph"><block ref="84e723a77e5da7869a8731958afee785" category="inline-link-macro-rx"></block></block>
+  <block id="b57b118fc7eb05573ef3df2543b46119" category="paragraph"><block ref="b57b118fc7eb05573ef3df2543b46119" category="inline-link-macro-rx"></block></block>
+  <block id="33bf72dfc827cb301549543efe9d06b6" category="paragraph"><block ref="33bf72dfc827cb301549543efe9d06b6" category="inline-link-macro-rx"></block></block>
+  <block id="2bc7b08e0a89609168d2bc46fd508e3a" category="paragraph"><block ref="f843de33104c0af1d198195d3c1e3651" category="inline-link-macro-rx"></block>.</block>
+  <block id="5755a9e38430cc58eec03f6a091d949b" category="paragraph"><block ref="3b334f327ff595e44f743e1d47e519c8" category="inline-link-macro-rx"></block>.</block>
+  <block id="abe89f144f71f63531169dbe67ea9daf" category="doc">NetApp Workload Factory에서 파일 시스템 용량 조정</block>
+  <block id="07eb6926e05993980c93aea6c29ac170" category="paragraph">NetApp Workload Factory에서 활성 작업 세트가 다양하게 변하는 워크로드 요구 사항에 맞춰 FSx for ONTAP 파일 시스템의 솔리드 스테이트 드라이브(SSD) 스토리지 용량을 조정할 수 있습니다. 사용량이 임계값을 초과하면 수동으로 용량을 늘리고, 작업 세트를 사용하지 않을 때는 용량을 줄여 비용을 절감할 수 있습니다. 또는 자동 용량 관리를 활성화하면 Workload Factory가 시간이 지남에 따라 요구 사항이 변경될 때 증분 스토리지를 추가하므로 수동 모니터링 부담을 줄일 수 있습니다.</block>
+  <block id="7f3f636f8acee1979f07ce3c7c8b2560" category="section-title">자동 용량 및 inode 관리 활성화</block>
+  <block id="e043e0158108e546fad120bd022abbf7" category="paragraph">용량 및 inode 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지 및 inode(파일)를 볼륨에 자동으로 추가할 수 있습니다. 이러한 기능을 통해 용량 및 inode를 수동으로 모니터링할 필요가 없어집니다.</block>
+  <block id="70d4c35820163e0b856c045342d606a9" category="paragraph">하나의 계정으로만 이러한 기능을 관리할 수 있습니다.</block>
+  <block id="8bc021972e5d74ca036119e7a5332088" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템을 30분마다 스캔하여 증분 스토리지를 추가해야 하는지 확인합니다.</block>
+  <block id="fe7092f0e0109e4bea77833888ffbb44" category="list-text">볼륨 inode가 스토리지 용량과 함께 증가하도록 하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="15f65ce72d7f7cca8bbf9a71c251f762" category="paragraph">Workload Factory는 FSx for ONTAP 파일 시스템을 30분마다 스캔하여 사용 가능한 볼륨 inode를 확인하고 증분 inode를 추가해야 하는지 여부를 확인합니다. 이 카운트는 자동 inode 관리 임계값에 따라 증가합니다.</block>
+  <block id="7162d658cf12ef3b0ecaa70960545951" category="list-text">볼륨 inode를 자동으로 관리하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="ba294ef3e2afdb1cf035d970e10e3d1d" category="list-text">*EMS 이벤트*: ONTAP 이벤트 관리 시스템에서 발생하는 오류, 경고 및 긴급 상황 이벤트입니다. EMS 이벤트를 보고 분석하려면 <block ref="7745b5ac48fce1a270f0f48c25ec8bcd" category="inline-link-macro-rx"></block>.</block>
+  <block id="b1ce41eb28657974af6204ee827ac110" category="list-text">*지연 시간 이벤트*: 읽기 및 쓰기 지연 시간 이벤트를 표시합니다. 지연 시간 이벤트는 링크 연결 없이도 볼 수 있습니다. 지연 시간 이벤트를 분석하고 AI 기반 인사이트를 받으려면 <block ref="7745b5ac48fce1a270f0f48c25ec8bcd" category="inline-link-macro-rx"></block>.</block>
+  <block id="ea05a1e5432074a56846a3cb823f80f2" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결합니다.</block>
+  <block id="4cef7c6d6a0dbf34de8eba95d0e16b67" category="list-text"><block ref="7e93da5b3f54c52f1a6c0b519dbe8002" category="inline-link-macro-rx"></block>.</block>
+  <block id="83726c1191ab868f046fb1270a7954b5" category="list-text"><block ref="4c631e4853ec617b9b81a0579deada8a" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
+  <block id="8261903e070030df643604429f468749" category="paragraph"><block ref="b7a77703e091475e5a757f20e1f86c42" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="874fbc8635967fd5300d05269c50cea0" category="paragraph">Workload Factory는 지원되는 클라우드 스토리지 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 분석 결과는 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다.</block>
+  <block id="081bb4ab1716ea656b2b52715598f415" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 구성 문제는 범주별로 분류되어 있으며, 구성 문제 목록과 권장 사항도 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. Workload Factory는 일부 문제를 자동으로 해결하지만, 다른 문제는 수동 조치가 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
+  <block id="8feb6c8d13e912657481adbe0cafebb3" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 최적의 솔루션을 적용합니다. 자동화된 수정 기능은 인적 오류를 줄이고, 일관된 관리를 보장하며, 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
+  <block id="fb7e951a08ddce4b83498e18f05a36da" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>.</block>
+  <block id="72a389467e8e4db775c5a741c5559e79" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>.</block>
+  <block id="790f3394151f1512273bc61b08727dec" category="paragraph">잠재적인 애플리케이션 읽기/쓰기 성능 저하를 방지하려면 볼륨 사용률을 80% 미만으로 유지하십시오. 용량은 수동으로 또는 볼륨 자동 확장을 통해 늘릴 수 있습니다.</block>
+  <block id="8c4934da22211f5267b48cfff0082296" category="paragraph">최적의 성능을 위해서는 워크로드에 가장 적합한 캐시 관계 쓰기 모드를 설정하십시오. 쓰기 우회 모드는 작은 파일에 대한 읽기 작업이 많은 워크로드에서 더 나은 성능을 제공하며, 쓰기 백 모드는 큰 파일에 대한 쓰기 작업이 많은 워크로드에서 더 나은 성능을 제공합니다.</block>
+  <block id="2755592dcb98e0fc2a75e14798e12e68" category="paragraph">캐시 볼륨의 자동 크기 조정 및 데이터 정리 기능을 활성화하여 최적의 크기를 유지하고 캐시가 자주 사용되는 데이터에 집중하도록 하여 효율성을 극대화하십시오.</block>
+  <block id="f40bf749154ab4415270dadb6eb98096" category="paragraph">호스트에서 볼 수 있는 용량 보고 기능을 활성화하여 볼륨 수준에서 스토리지 사용량을 더 잘 파악할 수 있도록 하십시오.</block>
+  <block id="fb60661b6b5261bf2a78af461148b330" category="paragraph">ONTAP LUN 운영 체제(OS) 유형 값이 운영 체제 파티셔닝 체계와 일치하는지 확인하여 I/O 정렬을 달성하십시오. 잘못된 구성은 성능을 저하시킬 수 있습니다.</block>
+  <block id="6f7eb4df2a69f930a31e0b1e6d41aa1d" category="paragraph">데이터베이스 호스트 인스턴스에서 사용하는 LUN의 블록 디바이스 공간 설정을 구성하여 FSx for ONTAP에서 쓰기 실패를 방지하고 공간 효율성을 개선합니다. 이 구성은 씬 프로비저닝 볼륨에 권장되는 설정 조합인 공간 예약, 공간 할당 및 부분 예약에 적용됩니다.</block>
+  <block id="b971cc6cd2b11daebaf9842a9d1e65dd" category="paragraph">데이터베이스 인스턴스를 호스팅하는 FSx for ONTAP 볼륨에 대해 씬 프로비저닝을 구성하십시오. 이 방식을 사용하면 물리적으로 사용 가능한 용량보다 더 많은 논리적 데이터를 저장할 수 있습니다.</block>
+  <block id="fdc181efad43392a7f4edba311fccf94" category="paragraph">콜드 데이터 티어링을 활성화하여 SSD 스토리지 티어 사용률을 줄이십시오. 일반 데이터 스토리지를 중심으로 모든 볼륨에 티어링 정책을 적용하십시오. 데이터베이스 볼륨의 경우, 필요에 따라 콜드 데이터 티어링을 활성화하십시오. FSx for ONTAP는 콜드 데이터를 지속적으로 스캔하여 중단 없이 용량 풀 티어로 이동합니다.</block>
+  <block id="6dbb8a49c1538ebdedcc12468334fb46" category="paragraph">삭제된 볼륨에 대해 수동으로 생성된 백업과 2주 이상 된 백업은 모두 삭제하십시오. 이러한 백업은 자동으로 만료되지 않으며, SLA 또는 복구에 더 이상 필요하지 않은 경우 비용이 증가하고 관리가 복잡해질 수 있습니다.</block>
+  <block id="b5ad1c06d1e3c827001a5d86081f1bdb" category="paragraph">더 이상 필요하지 않은 오래된 스냅샷이나 수동으로 생성한 스냅샷을 삭제하십시오. 특히 SLA 또는 복구 요구 사항에 필요하지 않은 스냅샷은 삭제하면 비용을 절감하고 불필요한 항목을 줄일 수 있습니다.</block>
+  <block id="0be251ac51e901583999154779926c3b" category="paragraph">블록 장치가 7일 동안 사용되지 않으면 블록 장치 데이터를 보관하거나 사용하지 않는 블록 장치를 삭제하여 비용을 절감하십시오.</block>
+  <block id="baae99faf5c3e54a1e7e85346ab5de9b" category="paragraph">SSD 용량이 과도하면 불필요한 비용이 발생합니다. 20%의 여유 공간 버퍼를 유지하면서 SSD 계층을 줄이십시오. 이 작업은 몇 시간에서 며칠까지 소요될 수 있으며, 작업 중에는 다른 파일 시스템 작업이 지원되지 않습니다.</block>
+  <block id="72d8d7f27cf31b02bb7df1a01b23ab49" category="paragraph">구성 분석을 통해 활발하게 사용되지 않는 NAS 볼륨을 식별하고 비용 절감을 위해 해당 볼륨을 삭제하거나 보관 처리할 것을 제안합니다.</block>
+  <block id="058f4c97fb457003efd47bf8dac18f8b" category="paragraph">FlexGroup 볼륨의 균형을 재조정하여 효율성을 개선하십시오. 확장 후에는 용량과 워크로드 활동이 볼륨 전체에 걸쳐 불균등해질 수 있습니다.</block>
+  <block id="98ee4192cbfc73d968e2c1f61cbdb3dc" category="paragraph">FlexVol 볼륨의 균형을 재조정하여 효율성을 개선합니다. 스케일 아웃 후 볼륨 전체에 걸쳐 용량 및 워크로드 활동이 고르지 않게 될 수 있습니다.</block>
+  <block id="c2a622b55f06f11550a3499362e678c9" category="list-text">블록 장치를 생성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
+  <block id="552ac450c85c4d6c0b84e271307b9973" category="paragraph">다음은 AWS의 기본 정책입니다. 기존 스냅샷 정책을 표시하려면 <block ref="1c85a9585130a3e66370d665193250bb" category="inline-link-macro-rx"></block>해야 합니다.</block>
+  <block id="177fa04e8cef57813d85fd4018cc8352" category="list-text">링크가 파일 시스템과 연결되지 않았습니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="8aee15a772726da23efedaa9e4544f7f" category="paragraph">igroup을 생성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
+  <block id="ca96d74d3692df000dc2771e8945b8f2" category="summary">예기치 못한 재해 발생 시 데이터 손실을 방지하거나, 데이터를 마이그레이션하거나, Amazon FSx for NetApp ONTAP 파일 시스템에서 데이터 보호 볼륨에 대한 복제를 계층적으로 구성하려면 복제 기능을 사용하십시오.</block>
+  <block id="0f9c5601f0e05e5fb42348146ed5e572" category="paragraph">NetApp Workload Factory에서 데이터를 복제하여 데이터가 있는 지역에서 재해가 발생할 경우 데이터 손실을 방지하세요. 데이터 복제는 FSx for ONTAP 파일 시스템과 온프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 간에 지원됩니다. Workload Factory는 또한 계단식 복제를 지원하여 3차 시스템으로 데이터 보호를 확장하거나 데이터를 마이그레이션할 수 있습니다.</block>
+  <block id="0b774d7f8bd8be5c36f058c964826c46" category="section-title">표준 복제</block>
+  <block id="f81e6d20a11a569d21ca81f72afc3189" category="list-text">복제 관계에 사용하는 FSx for ONTAP 파일 시스템에는 연결된 링크가 있어야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
+  <block id="7b626244b5e77ec8426207a79760602c" category="inline-link-macro">계층화 정책을 수정합니다</block>
+  <block id="67cc9410d25e801e252f5deb80054129" category="paragraph">필요한 경우, <block ref="3a64959985d458e07b4f09b2f2e0e438" category="inline-link-macro-rx"></block> 전환 후 타겟 볼륨에 대해.</block>
+  <block id="baa96deae022aad76ed59c8c451563d1" category="section-title">데이터 보호 볼륨용 캐스케이드 복제</block>
+  <block id="809f8e4060925e15a29859502e4e77bb" category="list-text">볼륨에 대한 액세스를 구성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="0d1854336982d0ce7a4ccf1801395e09" category="list-text"><block ref="0d1854336982d0ce7a4ccf1801395e09" category="inline-link-macro-rx"></block></block>
+  <block id="0e3bc6610e075f32baf20b515cbde2e2" category="list-text">파일 시스템에서 캐시 관계를 검색하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="3d8d0d139cbabc5d5b68f0cbce47a35e" category="paragraph">Workload Factory를 사용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하십시오. 아키텍처 설계 상태를 쉽게 검토하고, 구성 문제를 파악하고, 문제를 해결하여 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선할 수 있습니다.</block>
+  <block id="99007d80378159684e13cc3fbd01851d" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다.</block>
+  <block id="432cde80af7aede16dd04f981eecdffc" category="paragraph">스토리지 구성 요구 사항은 다양하므로 스토리지 환경에 적용되지 않는 특정 구성의 분석을 제외할 수 있습니다.</block>
+  <block id="cd5018d2830f482994e77102c7380ec5" category="paragraph">링크 연결을 통해 Workload Factory는 성능, 데이터 보호 및 구성 문제를 스캔할 수 있습니다. <block ref="bd244e13e9233be6d4441bce58acbc1c" category="inline-link-macro-rx"></block> 파일 시스템 리소스에 대한 가장 포괄적인 분석을 수행하십시오.</block>
+  <block id="ab656c8a69b575add6ee0729f5bc54c7" category="list-text"><block ref="bd244e13e9233be6d4441bce58acbc1c" category="inline-link-macro-rx"></block> 파일 시스템 리소스에 대한 가장 포괄적인 분석을 제공합니다.</block>
+  <block id="5d1f387838383b2d368f6e7f1c840316" category="list-text">인스턴스 다운타임이나 서비스 중단 등 이 수정 사항의 결과에 대해 알아보려면 조치 항목을 검토하십시오.</block>
+  <block id="6ad3b6fcf10a846b365b85062abd036b" category="paragraph">&lt;stdin&gt;에서 해결되지 않은 지시문 - include::https://raw.githubusercontent.com/NetAppDocs/workload-setup-admin/main/_include/links-overview.adoc[]</block>
+  <block id="1bd303a4a4865b24239ad78c657bf53e" category="list-text">igroup을 관리하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
+  <block id="a5546560157685322114f05def377bc2" category="list-text">캐시 볼륨 및 관계를 관리하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
+  <block id="873090954c0fe574d1c9f3181d89742b" category="list-text">SMB/CIFS 공유를 관리하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="3dd4ca2c61c588825f3e69d7851510b5" category="doc">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 설정 관리</block>
+  <block id="b24c16fd1abe8154a92346f6dd1baf6b" category="paragraph">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 설정을 관리할 수 있습니다. 파일 시스템의 태그를 관리하고, 필요한 경우 fsxadmin 암호를 재설정하고, 처리량 용량을 필요에 따라 업데이트할 수 있습니다.</block>
+  <block id="f120bfb32fdc034593c753c46a030312" category="section-title">FSx for ONTAP 파일 시스템 태그 관리</block>
+  <block id="29cb5b84055613450fa3b7f8bd673507" category="section-title">FSx for ONTAP 파일 시스템의 fsxadmin 암호를 재설정합니다.</block>
+  <block id="1f0c3f24c67a1d779b9c755cffe696cb" category="section-title">FSx for ONTAP 파일 시스템의 처리량 용량 업데이트</block>
+  <block id="6fdc32a452fdf57560d6580dc47def65" category="list-text">변경 사항을 저장하려면 *적용*을 선택합니다.</block>
+  <block id="99b37ae0bba3904ea2b9dcb1882bedc4" category="paragraph">일부 관리 작업에는 FSx for ONTAP 파일 시스템과의 링크 연결이 필요합니다. <block ref="04934ce78294f2ffdb9c8a1ca9aae200" category="inline-link-macro-rx"></block>.</block>
+  <block id="0550a020b20180517840f8bb9d6a1b20" category="paragraph">스냅샷 정책을 할당하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="350644392b5901520f6c734be7d9f0c2" category="paragraph">기존 스냅샷 정책을 표시하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="44a000ee3d4e210c575e2246c98f573b" category="paragraph">변경 불가능한 스냅샷을 활성화하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="10095aa38d9bac305192b3103bccf6be" category="paragraph">스냅샷 정책을 제거하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="1e17e1ef6f3580b494a3d1d62b93c1de" category="doc">NetApp Workload Factory에서 스토리지 VM 설정을 관리합니다.</block>
+  <block id="10931162a585a9dc879d16df11ca24ef" category="paragraph">NetApp Workload Factory에서 스토리지 VM의 설정을 관리합니다. 스토리지 VM에 대한 Active Directory를 구성 및 업데이트하고, 스토리지 VM 암호를 업데이트하고, 스토리지 VM에 대한 태그를 관리할 수 있습니다.</block>
+  <block id="9eef8a6b35d2a8083c7ae5fffd991a79" category="summary">Workload Factory에서 볼륨 크기를 수동으로 조정하고 볼륨 자동 확장을 사용하는 등 볼륨 용량을 관리하는 방법을 알아보십시오.</block>
+  <block id="d82b523196e27a5ad5c1e885c21d9163" category="doc">NetApp Workload Factory에서 볼륨 용량을 관리합니다.</block>
+  <block id="06147d3cc0b6a96280063a5b02a8a8e1" category="paragraph">볼륨 용량은 필요에 따라 조정해야 합니다. 볼륨 크기를 수동으로 조정하거나 볼륨 자동 확장을 켜서 Workload Factory가 볼륨 용량을 관리하도록 할 수 있습니다. FlexVol 또는 FlexGroup 볼륨 용량의 균형을 확인하고, 노드 내의 모든 FlexVol 볼륨 또는 모든 구성 요소에 파일이 고르게 분산되도록 볼륨 용량을 재조정하여 모든 노드가 단일 FlexGroup 볼륨의 워크로드에 참여하도록 하십시오.</block>
+  <block id="0aad51e6adc57cb3bfbfea6baae812d7" category="paragraph">Workload Factory가 볼륨 용량을 자동으로 관리하도록 하려면 볼륨 자동 확장 기능을 켜십시오. 이 기능은 언제든지 끌 수 있습니다.</block>
+  <block id="06de84f4889afe0bfdc4371fcbe42def" category="paragraph">볼륨 자동 확장을 활성화하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="6e8c422ac34d739f4c1c2f0ece93e40d" category="section-title">볼륨 용량을 수동으로 조정합니다</block>
+  <block id="c4402b30e16f59a5800bff7276631db5" category="paragraph">볼륨 용량을 조정하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="8f689dc63c26aae9a149b22b3a8da88f" category="section-title">FlexVol 및 FlexGroup 볼륨에 대한 볼륨 용량 재조정</block>
+  <block id="425d54aecc34adc9d67b19e13a75c382" category="inline-link-macro">파일 시스템에 대한 링크를 생성하고 연결하거나 기존 링크를 연결합니다.</block>
+  <block id="547681f58321cc4c4e00242e76349ef0" category="list-text">볼륨의 균형을 확인하려면 <block ref="f960ac2e0181c6eb35c54dd47690135b" category="inline-link-macro-rx"></block>해야 합니다. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="09e86e8ae984e03c55fcfede6e04d924" category="list-text">볼륨 균형을 재조정하려면 <block ref="f960ac2e0181c6eb35c54dd47690135b" category="inline-link-macro-rx"></block>해야 합니다. 링크가 연결되면 이 작업으로 돌아가십시오.</block>
+  <block id="2e4be9b0e28ca3065b74b93bd25ca696" category="doc">NetApp Workload Factory에서 볼륨 설정을 관리합니다.</block>
+  <block id="e541b8bee1897be0fb1272397166c050" category="paragraph">조직의 요구 사항에 맞게 NetApp Workload Factory에서 FSx for ONTAP 볼륨 설정을 사용자 지정합니다. 볼륨 태그를 관리하여 리소스를 분류하고, 스토리지 효율성 설정을 업데이트하여 공간 및 비용 절감을 최적화하고, 변경 불가능 파일 설정을 관리하여 데이터 보존을 제어하고 무단 변경으로부터 보호할 수 있습니다.</block>
+  <block id="70db812201935aaccc5a6c48663fbbd9" category="section-title">볼륨 스토리지 효율성 업데이트</block>
+  <block id="5315e58af0e826259e6ff3250a45d68c" category="paragraph">볼륨 생성 후 스토리지 효율성 설정을 업데이트하십시오.</block>
+  <block id="f2b9c933540bfeebed06160c6e39c4ba" category="list-text"><block ref="f2b9c933540bfeebed06160c6e39c4ba" category="inline-link-macro-rx"></block></block>
+  <block id="db99231f6dff7de5950fdeb11214939f" category="inline-link-macro">Workload Factory에서 볼륨 용량 관리</block>
+  <block id="61997900d4fc9768044346fe0401366d" category="list-text"><block ref="61997900d4fc9768044346fe0401366d" category="inline-link-macro-rx"></block></block>
+  <block id="56471eeffebd467d23fa40067ebf7d30" category="paragraph">파일 시스템 또는 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="9761cca72ea2ee7f3440ac289814e03a" category="paragraph">스토리지 VM을 다른 FSx for ONTAP 파일 시스템으로 복제하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="891ab01f31d124a7e86e477aa2bcd6b5" category="admonition">링크 연결 없이도 지연 이벤트를 확인하고 알림을 받을 수 있습니다. 하지만 이벤트를 분석하고 AI 기반 인사이트 및 권장 사항을 받으려면 <block ref="7745b5ac48fce1a270f0f48c25ec8bcd" category="inline-link-macro-rx"></block>.</block>
+  <block id="e134e2363380e0464a1cd491a3d60670" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="e864a0b806602087df30288a86a4e36e" category="summary">NetApp Workload Factory에서 백업을 생성하고 복원하여 실수로 인한 삭제, 손상 및 기타 데이터 손실로부터 볼륨 데이터를 보호하십시오.</block>
+  <block id="027eb1482d15eb3aebd19f3995f7bb67" category="doc">NetApp Workload Factory에서 데이터를 보호하려면 백업을 사용하십시오.</block>
+  <block id="f5203e225aafb11111668807c9a3c5b0" category="paragraph">NetApp Workload Factory에서 백업을 생성하고 복원하여 실수로 인한 삭제, 손상 및 기타 데이터 손실로부터 볼륨 데이터를 보호하세요. 백업 일정을 설정하고, 정기 백업 일정 외에 필요에 따라 볼륨 백업을 생성할 수 있으며, 기존 백업에서 AWS 계정의 모든 FSx for ONTAP 파일 시스템으로 볼륨을 복원할 수 있습니다.</block>
+  <block id="bdd6becf2bf5a6597da003f450cd97cb" category="section-title">볼륨의 온디맨드 백업 생성</block>
+  <block id="bd12d5cc5e1bf80d25cfed29623128ff" category="list-text">복원 작업으로 인해 사용 용량이 지정한 임계값을 초과할 수 있습니다. 복원 작업을 완료할 수 있습니다. <block ref="aecf95e5256921808b6cdd52dd08f389" category="inline-link-macro-rx"></block>를 고려하거나 Workload Factory가 SSD 스토리지 계층 용량을 자동으로 추가하도록 선택하는 것을 고려하십시오.</block>
+  <block id="2016ffd60b3542efa92347ddf90a5965" category="list-text">검색된 온프레미스 클러스터와 연결할 링크입니다. 링크가 없으면 <block ref="154710284124a95fd7cb3e07a7a0827c" category="inline-link-macro-rx"></block>해야 합니다.</block>
+  <block id="4c6bfb06e11d247af528d8025885ba15" category="list-text">온프레미스 ONTAP 클러스터와 복제 관계에 사용하는 FSx for ONTAP 파일 시스템 모두에 연결된 링크가 있어야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="0704ec8db6fe4e43ac6ebb00949d63b9" category="summary">NetApp Workload Factory에서 스냅샷을 생성하고 관리하여 볼륨 데이터가 실수로 삭제되거나 손상되는 것을 방지하십시오.</block>
+  <block id="3b1c9d8b80a0a74d39ef5e3f08ac168f" category="doc">NetApp Workload Factory에서 스냅샷을 사용하여 데이터를 보호합니다.</block>
+  <block id="df7ca0e3efe45b9088e37cac9b6ccf2c" category="paragraph">NetApp Workload Factory에서 스냅샷을 생성하고 관리하여 볼륨 데이터가 실수로 삭제되거나 손상되는 것을 방지하세요. 필요에 따라 볼륨 스냅샷을 생성하고, 스토리지 VM에 대한 스냅샷 생성 및 보존을 자동화하는 스냅샷 정책을 정의하고, 기존 스냅샷에서 볼륨을 복원하여 특정 시점의 데이터를 복구할 수 있습니다.</block>
+  <block id="77b8308f4862dd4c02d3f049b5b145d0" category="section-title">볼륨의 온디맨드 스냅샷 생성</block>
+  <block id="409fef009f255ca7e93979516f887531" category="paragraph">볼륨의 수동 스냅샷을 생성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크 연결이 완료되면 이 작업으로 돌아오십시오.</block>
+  <block id="34f1332a8638e14cfef16253590606ff" category="section-title">스토리지 VM에 대한 스냅샷 정책 생성</block>
+  <block id="62395f97212e497f05ff596087d40f5f" category="list-text">사용자 지정 스냅샷 정책을 생성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="496f3e6a8fe06f04dca3557829a0f4e7" category="paragraph">스냅샷에서 기존 볼륨 또는 새 볼륨으로 데이터를 복원할 수 있습니다. 복원 작업을 통해 볼륨에 삭제되거나 손상된 파일이 있는 경우 특정 시점으로 복구할 수 있습니다.</block>
+  <block id="5754a200fd7e07c7e8ff9205df7a260a" category="sidebar">Workload Factory의 데이터 보호에 대해 알아보세요.</block>
+  <block id="602b42ac9c94036154b64a05c5ce2bfe" category="sidebar">스냅샷을 사용하여 데이터를 보호합니다</block>
+  <block id="04f951b8dfac73983bcd1c9f9d4c595f" category="sidebar">백업을 사용하여 데이터 보호</block>
+  <block id="d0420fc01e7b557e5fb8adfdbc33fc88" category="sidebar">복제를 사용하여 데이터 보호</block>
+  <block id="97a47bbfee9b367a5d2f77e182c21e72" category="sidebar">FSx for ONTAP 관리</block>
+  <block id="246fd4480ce3e8ad5f3657af6202d2de" category="sidebar">볼륨의 계층화 정책 변경</block>
+  <block id="f454a3afe610506ee737280bedb4db50" category="sidebar">FSx for ONTAP 파일 시스템 구성 개선</block>
+  <block id="45fb2d91114f23a7fa34169cced985d1" category="sidebar">볼륨의 스냅샷 정책 관리</block>
+  <block id="acfd761f055d6e902d690e174c035517" category="sidebar">볼륨 용량 관리</block>
+  <block id="7d22fda4fe7064e9f6927cf43573ddc9" category="sidebar">스토리지 리소스 생성</block>
+  <block id="5c146202949da4cea2277a15ad62dea0" category="sidebar">온프레미스 ONTAP 데이터를 FSx for ONTAP에 복제</block>
+  <block id="c75135aa5d8aec63048c10d0b5eafd32" category="sidebar">Workload Factory에서 FSx for ONTAP 관리</block>
+  <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">볼륨 관리</block>
+  <block id="8ef44904f2697ecb1dce6a715c97b679" category="sidebar">볼륨 설정 관리</block>
+  <block id="3c31606adc4b20f1bd2855e3f6c8f75c" category="sidebar">파일 시스템 관리</block>
+  <block id="55ce7397d464ef8e34bfaee401cec48d" category="sidebar">파일 시스템 설정 관리</block>
+  <block id="2ee20619a771993544eaaa7e388816d1" category="sidebar">스토리지 VM 관리</block>
+  <block id="1c388674e0a6805e31fb6d7602029a59" category="sidebar">스토리지 VM 설정 관리</block>
 </blocks>

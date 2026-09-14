@@ -19,20 +19,32 @@ indexpage:
     links:
     - title: 비용 절감 효과를
       url: "/explore-savings.html"
-    - title: FSx for ONTAP 리소스에 대한 비용 및 사용량 추적
-      url: "/track-costs.html"
     - title: 링크를 사용하여 파일 시스템에 접속합니다
-      url: "/create-link.html"
-    - title: 데이터 보호
-      url: "/data-protection-overview.html"
-  - title: 관리 및 모니터링
+      url: https://docs.netapp.com/us-en/workload-setup-admin/create-link.html
+    - title: 스토리지 VM을 생성합니다
+      url: "/create-storage-vm.html"
+    - title: 볼륨을 생성합니다
+      url: "/create-volume.html"
+  - title: 데이터 보호
     links:
-    - title: Tracker를 사용하여 작업을 모니터링합니다
-      url: "/monitor-operations.html"
-    - title: ONTAP 파일 시스템용 FSx의 잘 설계된 상태를 확인하세요.
+    - title: Workload Factory의 데이터 보호에 대해 알아보세요.
+      url: "/data-protection-overview.html"
+    - title: 스냅샷을 사용하여 데이터를 보호합니다
+      url: "/use-snapshots.html"
+    - title: 백업을 사용하여 데이터 보호
+      url: "/use-backups.html"
+    - title: 복제를 사용하여 데이터 보호
+      url: "/create-replication.html"
+  - title: FSx for ONTAP 관리
+    links:
+    - title: 볼륨의 계층화 정책 변경
+      url: "/change-tiering-policy.html"
+    - title: FSx for ONTAP 파일 시스템 구성 개선
       url: "/improve-configurations.html"
-    - title: ONTAP EMS 이벤트에 대한 FSx 분석
-      url: "/analyze-events.html"
+    - title: 볼륨의 스냅샷 정책 관리
+      url: "/manage-snapshot-policy.html"
+    - title: 볼륨 용량 관리
+      url: "/manage-volume-capacity.html"
   - title: 지식 및 지원
     links:
     - title: 지원을 위해 등록하십시오

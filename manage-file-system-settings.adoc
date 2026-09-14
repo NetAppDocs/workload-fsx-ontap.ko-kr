@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: manage-file-system-settings.html 
+keywords: create fsx tags, create tags, edit fsx tags, fsx tags, reset fsx admin password 
+summary: 언제든지 파일 시스템에 대한 FSx for ONTAP 파일 시스템 태그를 추가, 업데이트 또는 제거할 수 있습니다. 
+---
+= NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 설정 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 설정을 관리할 수 있습니다. 파일 시스템의 태그를 관리하고, 필요한 경우 fsxadmin 암호를 재설정하고, 처리량 용량을 필요에 따라 업데이트할 수 있습니다.
+
+
+
+[[manage-fsx-for-ontap-file-system-tags]]
+== FSx for ONTAP 파일 시스템 태그 관리
+
+태그를 사용하면 리소스를 분류하는 데 도움이 됩니다.  NetApp Workload Factory 에서는 언제든지 파일 시스템의 태그를 추가, 편집, 제거할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *파일 시스템 태그 관리*를 선택합니다.
+. *파일 시스템 태그 관리* 대화 상자에서 필요에 따라 태그를 추가, 편집 또는 제거합니다.
++
+파일 시스템에 적용할 수 있는 태그의 최대 개수는 50개입니다.
+
+. Apply * 를 선택합니다.
+
+
+
+
+[[reset-the-fsxadmin-password-of-an-fsx-for-ontap-file-system]]
+== FSx for ONTAP 파일 시스템의 fsxadmin 암호를 재설정합니다.
+
+필요한 경우 NetApp Workload Factory에서 fsxadmin 비밀번호를 재설정합니다.
+
+파일 시스템을 생성하는 동안 대체 사용자를 제공한 경우 AWS 콘솔에서 fsxadmin 암호만 재설정할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 fsxadmin 비밀번호를 재설정할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 파일 시스템 개요에서 작업 메뉴를 선택합니다.
++
+image:screenshot-reset-fsxadmin-password.png["파일 시스템의 개요 탭에 있는 작업 메뉴의 스크린샷입니다."]
+
+. FSxadmin 암호 재설정 * 을 선택합니다.
+. FSxadmin 암호 재설정 대화 상자에서 새 fsxadmin 암호를 입력하고 다시 입력하여 확인합니다.
+. Apply * 를 선택합니다.
+
+
+
+
+[[update-throughput-capacity-for-an-fsx-for-ontap-file-system]]
+== FSx for ONTAP 파일 시스템의 처리량 용량 업데이트
+
+필요에 따라 NetApp Workload Factory에서 FSx for ONTAP 파일 시스템의 처리량 용량을 업데이트합니다.
+
+처리량 용량 제한에 대해서는 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["할당량"^] AWS FSx for NetApp ONTAP 설명서를 참조하십시오.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *저장소*를 선택하세요.
+. 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
+. *FSx for ONTAP*에서 처리량 용량을 업데이트할 파일 시스템의 작업 메뉴를 선택한 다음 *관리*를 선택합니다.
+. 정보 아래에서 * 처리량 용량 * 옆에 있는 연필 아이콘을 선택합니다. 마우스를 * Throughput capacity * 행 위로 이동하면 연필 아이콘이 드롭다운 화살표 옆에 나타납니다.
+. 처리량 용량 대화 상자에서 필요한 처리량 용량을 선택합니다.
+. 변경 사항을 저장하려면 *적용*을 선택합니다.
+

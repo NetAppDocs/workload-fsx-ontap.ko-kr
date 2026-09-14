@@ -11,9 +11,7 @@ summary: Workload Factory는 Amazon FSx for NetApp ONTAP 구성을 스캔하여 
 
 
 [role="lead"]
-구성 분석 인사이트와 권장 사항을 활용하여 Workload Factory를 통해 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하십시오. 시스템 아키텍처의 우수성 현황을 쉽게 검토하고, 구성 관련 문제를 파악하며, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선하기 위한 조치를 취할 수 있습니다.
-
-불필요한 알림과 부정확한 최적화 결과를 방지하기 위해 스토리지 환경에 적용되지 않는 특정 스토리지 구성에 대한 분석을 취소할 수도 있습니다.
+Workload Factory를 사용하여 FSx for ONTAP 파일 시스템에 대한 모범 사례를 구현하십시오. 아키텍처 설계 상태를 쉽게 검토하고, 구성 문제를 파악하고, 문제를 해결하여 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 시스템의 아키텍처를 개선할 수 있습니다.
 
 link:configuration-analysis.html["구성 분석 및 아키텍처 설계 상태에 대해 알아보세요."]
 
@@ -22,13 +20,11 @@ link:configuration-analysis.html["구성 분석 및 아키텍처 설계 상태�
 [[about-this-task]]
 == 이 작업에 대해
 
-Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다. 일일 분석을 통해 아키텍처가 잘 설계되었는지 여부와 함께 통찰력 및 권장 사항을 제공하며, 구성 문제를 자동으로 수정하여 파일 시스템이 모범 사례를 충족하도록 지원하는 옵션도 제공합니다.
+Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 구성을 매일 분석합니다.
 
-링크 연결을 통해 Workload Factory는 성능, 데이터 보호 및 구성과 관련된 문제를 스캔할 수 있습니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"] 파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
+스토리지 구성 요구 사항은 다양하므로 스토리지 환경에 적용되지 않는 특정 구성의 분석을 제외할 수 있습니다.
 
-파일 시스템의 구성 문제에 대한 권장 사항을 검토하고 문제를 해결할 수 있는 옵션이 있습니다.
-
-스토리지 구성 요구 사항은 다양하므로 스토리지 환경에 적용되지 않는 특정 구성의 분석을 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다.
+링크 연결을 통해 Workload Factory는 성능, 데이터 보호 및 구성 문제를 스캔할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"^] 파일 시스템 리소스에 대한 가장 포괄적인 분석을 수행하십시오.
 
 .분석 대상
 Workload Factory는 FSx for ONTAP 파일 시스템에 대해 다음과 같은 구성의 아키텍처 설계 상태를 분석합니다.
@@ -46,7 +42,7 @@ Workload Factory는 FSx for ONTAP 파일 시스템에 대해 다음과 같은 �
 == 시작하기 전에
 
 * AWS 계정에 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^]해야 합니다.
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"]파일 시스템 리소스에 대한 가장 포괄적인 분석을 위해.
+* link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["링크를 사용하여 FSx for ONTAP 파일 시스템에 연결"^] 파일 시스템 리소스에 대한 가장 포괄적인 분석을 제공합니다.
 
 
 
@@ -69,7 +65,7 @@ FSx for ONTAP 파일 시스템이나 파일 시스템의 선택된 볼륨에 대
 +
 일부 수정 작업은 특정 작업에만 사용할 수 있으며, 여러 리소스에 대해 동시에 사용할 수 없는 경우도 있습니다. 예를 들어, 단일 볼륨의 구성은 수정할 수 있지만 여러 볼륨의 구성은 수정할 수 없을 수도 있습니다.
 
-. 구성 대화 상자에서 구성에 대한 수정 작업 정보를 검토하십시오. 일부 작업은 인스턴스 다운타임이나 서비스 중단을 초래할 수 있습니다.
+. 인스턴스 다운타임이나 서비스 중단 등 이 수정 사항의 결과에 대해 알아보려면 조치 항목을 검토하십시오.
 . Workload Factory에서 권장 변경 사항을 적용하려면 *Fix*를 선택하십시오.
 
 
