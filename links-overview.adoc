@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: learn-about-links.html 
+permalink: links-overview.html 
 keywords: links, accounts, lambda 
 summary: Workload Factory 링크는 Workload Factory 계정과 하나 이상의 FSx for ONTAP 파일 시스템 간에 신뢰 관계와 연결을 생성합니다. 
 ---

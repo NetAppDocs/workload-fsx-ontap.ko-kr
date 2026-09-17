@@ -19,6 +19,8 @@ indexpage:
     links:
     - title: 비용 절감 효과를
       url: "/explore-savings.html"
+    - title: 링크에 대해 알아보기
+      url: "/links-overview.html"
     - title: 링크를 사용하여 파일 시스템에 접속합니다
       url: https://docs.netapp.com/us-en/workload-setup-admin/create-link.html
     - title: 스토리지 VM을 생성합니다
