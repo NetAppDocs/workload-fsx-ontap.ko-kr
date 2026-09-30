@@ -11,7 +11,7 @@ summary: NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 리소스�
 
 
 [role="lead"]
-NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 비용 및 사용량을 통합된 보기로 추적하세요. 비용 데이터를 통해 예산을 관리하고 리소스를 효과적으로 최적화할 수 있습니다. Workload Factory는 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성하여 이해관계자와 공유할 수 있습니다.
+NetApp Workload Factory는 FSx for ONTAP 파일 시스템의 비용 및 사용량에 대한 통합된 보기를 제공하여 예산을 관리하고 리소스를 효과적으로 최적화할 수 있도록 지원합니다. 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성하여 이해 관계자와 공유할 수 있습니다.
 
 
 
@@ -20,15 +20,13 @@ NetApp Workload Factory 콘솔에서 FSx for ONTAP 파일 시스템의 비용 �
 
 Workload Factory는 AWS Cost Explorer에서 비용 데이터를 가져와 FSx for ONTAP 파일 시스템의 비용 및 사용량을 추적합니다. 추적되는 비용 세부 정보는 사용 유형, 사용 SKU, 배포 유형, 사용량 및 총 비용입니다.
 
-고유한 리소스의 경우, Workload Factory는 실제 성능 계층 사용량, 프로비저닝되었지만 사용되지 않은 공간에 할당된 성능 계층 비용의 비례 배분, 용량별로 분배된 성능 할당량, 그리고 용량 풀 사용량을 종합하여 비용을 계산합니다. 각 구성 요소는 해당 차원의 단위당 가격으로 곱해지고, 그 결과들을 모두 더하여 각 리소스의 총비용을 산출합니다.
+고유한 리소스의 경우, NetApp Workload Factory는 실제 성능 계층 사용량, 프로비저닝되었지만 사용되지 않은 공간에 할당된 성능 계층 비용의 비례 배분, 용량별로 분배된 성능 할당량, 그리고 용량 풀 사용량을 종합하여 비용을 계산합니다. NetApp Workload Factory는 각 구성 요소에 해당 차원의 단위당 가격을 곱하고 결과를 합산하여 각 리소스의 총비용을 결정합니다.
 
-비용 대시보드에서 AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. 데이터는 항상 월 단위로 표시됩니다.
+비용 대시보드에서 AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. Workload Factory는 항상 월별 기준으로 데이터를 표시합니다. 또한 하나 이상의 파일 시스템과 파일 시스템 내의 하나 이상의 볼륨으로 필터링할 수 있습니다. AWS 비용 할당 태그 키와 태그 키 값을 사용하면 특정 비용을 정확하게 파악하기 위한 추가 필터링 기능을 활용할 수 있습니다. _태그_는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하십시오. link:https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html["AWS 비용 할당 태그에 대해 자세히 알아보세요."^]
 
-저희는 다음 권한을 사용하여 AWS Cost Explorer에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용량 데이터를 가져옵니다. `ce:GetCostAndUsage`and `ce:GetTags` AWS 비용 API와 자체 추정치를 사용하여 총 비용을 계산합니다. `
+Workload Factory는 다음 권한을 사용하여 AWS Cost Explorer에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용량 데이터를 가져옵니다. `ce:GetCostAndUsage` 및 `ce:GetTags`. AWS 비용 API와 자체 추정치를 사용하여 총 비용을 계산합니다.
 
-AWS 할당 태그 키와 태그 키 값은 특정 비용을 정확하게 파악하기 위한 추가적인 필터링 기능을 제공합니다. 태그는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하세요. link:https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html["AWS 비용 할당 태그에 대해 자세히 알아보세요."^]
-
-비용 대시보드에 표시되는 비용 데이터 외에도 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성할 수 있습니다.  비용 보고서에는 특정 파일 시스템 및 볼륨에 대한 정보가 표시됩니다.  이 보고서는 다운로드 가능한 PDF 파일 형식으로 제공되며, 이해 관계자와 공유할 수 있습니다.
+비용 대시보드의 비용 데이터 외에도, 비용 임원 요약 보고서에서 FSx for ONTAP 파일 시스템 비용과 조직의 지출 패턴을 확인할 수 있습니다. 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성할 수 있습니다. 이 보고서는 다운로드 가능한 CSV 파일로, 이해관계자와 공유할 수 있습니다.
 
 
 
@@ -38,7 +36,7 @@ AWS 할당 태그 키와 태그 키 값은 특정 비용을 정확하게 파악�
 Workload Factory 콘솔의 비용 대시보드에 표시된 비용은 24시간마다 업데이트되는 AWS Cost Explorer의 데이터를 기반으로 합니다.
 
 .시작하기 전에
-다음 요구 사항을 충족하는지 확인하십시오.
+다음 요건을 충족하는지 확인하십시오.
 
 * FSx for ONTAP 비용을 추적하려면 Workload Factory에서 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning, and analysis_ 권한 정책으로 자격 증명을 부여합니다."^]해야 합니다.
 * AWS 할당 태그로 필터링하려면 FSx for ONTAP 파일 시스템에 태그가 할당되어 있는지 확인하십시오.
@@ -79,4 +77,4 @@ Workload Factory 콘솔의 비용 대시보드에 표시된 비용은 24시간�
 
 
 .결과
-PDF 보고서가 생성되어 다운로드할 수 있습니다.
+CSV 보고서가 생성되어 다운로드할 수 있습니다.
