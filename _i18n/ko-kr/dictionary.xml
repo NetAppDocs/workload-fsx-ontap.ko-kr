@@ -1884,7 +1884,6 @@
   <block id="5b58af6390ae44b5a39c726b4820fffb" category="section-title">NetApp Workload Factory 에서 파일 시스템의 FSx 태그 관리</block>
   <block id="543e684a4a914d6bef4f91873d32e315" category="paragraph">NetApp Workload Factory 콘솔에서 직접 파일 시스템의 FSx 태그를 쉽게 관리할 수 있습니다.  이 기능을 사용하면 태그를 추가, 편집 또는 제거할 수 있어 FSx for ONTAP 파일 시스템을 보다 효과적으로 구성하고 분류할 수 있습니다.</block>
   <block id="8945587d036e5b09c39322767239857a" category="inline-link-macro">Workload Factory에서 FSx 태그 관리</block>
-  <block id="3c57420160e53dc4967d9ca75a5d5d06" category="paragraph"><block ref="3c57420160e53dc4967d9ca75a5d5d06" category="inline-link-macro-rx"></block></block>
   <block id="1b931c0909a42d2dd6b1b28eeb36252c" category="section-title">ONTAP 파일 시스템용 FSx의 캐시 용량 조정</block>
   <block id="aed1296ef373ba8df468af355d85d3ce" category="paragraph">Workload Factory 콘솔에서 캐시 볼륨의 용량을 늘리거나 줄일 수 있습니다.</block>
   <block id="012110073acf8459d2a77ef54f547130" category="inline-link-macro">Workload Factory에서 캐시 볼륨 관리</block>
@@ -2945,7 +2944,6 @@
   <block id="ea05a1e5432074a56846a3cb823f80f2" category="inline-link-macro">링크를 사용하여 파일 시스템에 연결합니다.</block>
   <block id="4cef7c6d6a0dbf34de8eba95d0e16b67" category="list-text"><block ref="7e93da5b3f54c52f1a6c0b519dbe8002" category="inline-link-macro-rx"></block>.</block>
   <block id="83726c1191ab868f046fb1270a7954b5" category="list-text"><block ref="4c631e4853ec617b9b81a0579deada8a" category="inline-link-macro-rx"></block>이(가) 있습니다.</block>
-  <block id="8261903e070030df643604429f468749" category="paragraph"><block ref="b7a77703e091475e5a757f20e1f86c42" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
   <block id="8feb6c8d13e912657481adbe0cafebb3" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 최적의 솔루션을 적용합니다. 자동화된 수정 기능은 인적 오류를 줄이고, 일관된 관리를 보장하며, 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
   <block id="fb7e951a08ddce4b83498e18f05a36da" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>.</block>
   <block id="72a389467e8e4db775c5a741c5559e79" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>.</block>
@@ -3134,7 +3132,6 @@
   <block id="b5033aab245daac51a144f2bf76d1491" category="section-title">FlexCache 쓰기 모드 개선</block>
   <block id="988626e00644e40216e6917f272294d3" category="paragraph">Workload Factory는 이제 볼륨에 대한 기본 설정 FlexCache 쓰기 모드를 인식하고 성능 최적화를 위해 필요한 경우 변경을 권장합니다.</block>
   <block id="7add6c128bfc87116bba8dfec617987f" category="section-title">링크 문서 지원</block>
-  <block id="41d8c250ba5deffd33a0d05e7f94eaf4" category="paragraph">모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 <block ref="25b81a757714a127c9c382013e960ce5" category="inline-link-macro-rx"></block>을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.</block>
   <block id="ab868acd52ff4eb0e8c4b7bedf975941" category="inline-link-macro">Workload Factory 콘솔에서 링크를 구성하는 방법에 대해 자세히 알아보십시오.</block>
   <block id="3d5d598217b93a807560cdae92940fdc" category="paragraph"><block ref="3d5d598217b93a807560cdae92940fdc" category="inline-link-macro-rx"></block></block>
   <block id="433dd4f7423c50024b8b40531d2cdae6" category="section-title">지역 간 호스트-스토리지 관계 검색</block>
@@ -3186,4 +3183,7 @@
   <block id="53c306e93da69caff455d3eaa34a6b5c" category="list-text">AWS 할당 태그로 필터링하려면 FSx for ONTAP 파일 시스템에 태그가 할당되어 있는지 확인하십시오.</block>
   <block id="22818134e299296b864b78dc4cca4c88" category="paragraph">CSV 보고서가 생성되어 다운로드할 수 있습니다.</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026년 9월 30일</block>
+  <block id="cdda19a64421ad2d94977547c50a1983" category="paragraph"><block ref="cdda19a64421ad2d94977547c50a1983" category="inline-link-macro-rx"></block></block>
+  <block id="56643767ee547abedda1d643567a4c85" category="paragraph">모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 <block ref="08c564abbdedd12846cfb2f0de43f628" category="inline-link-macro-rx"></block>을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.</block>
+  <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
 </blocks>

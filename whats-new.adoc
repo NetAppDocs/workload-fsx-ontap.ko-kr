@@ -129,7 +129,7 @@ Workload Factory는 이제 볼륨에 대한 기본 설정 FlexCache 쓰기 모�
 [[link-documentation-support]]
 === 링크 문서 지원
 
-모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 link:links-overview.html["NetApp Workload Factory 링크에 대해 알아보세요"]을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.
+모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["NetApp Workload Factory 링크에 대해 알아보세요"]을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Workload Factory 콘솔에서 링크를 구성하는 방법에 대해 자세히 알아보십시오."^]
 
@@ -784,7 +784,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/track-costs.html["Workload
 
 NetApp Workload Factory 콘솔에서 직접 파일 시스템의 FSx 태그를 쉽게 관리할 수 있습니다.  이 기능을 사용하면 태그를 추가, 편집 또는 제거할 수 있어 FSx for ONTAP 파일 시스템을 보다 효과적으로 구성하고 분류할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-fsx-tags.html["Workload Factory에서 FSx 태그 관리"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-file-system-settings.html["Workload Factory에서 FSx 태그 관리"]
 
 
 
