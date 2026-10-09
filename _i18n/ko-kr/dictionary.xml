@@ -2508,7 +2508,6 @@
   <block id="fa425772bf4dc1e54c8368c2b99d4b1b" category="paragraph">마이그레이션 사용 사례에 대한 전환 작업을 계획할 때 다음 사항을 고려하십시오.</block>
   <block id="d77811034f737ab45ed7ddebe9c096fd" category="inline-xref">컷오버 후 구성 설정 업데이트</block>
   <block id="dddf91d5ccee3135470e6089b62618ba" category="list-text">*클론*: 클론은 개별 볼륨으로 마이그레이션되므로 대상 FSx for ONTAP 파일 시스템에서 더 많은 공간을 차지하게 됩니다. 대상 시스템의 용량 증가를 방지하려면 전환 전에 클론을 삭제하는 것을 고려하십시오.</block>
-  <block id="233115f3ed74b7b4516b8f0a1efbaedf" category="list-text">*캐시 볼륨*: ONTAP FlexCache 9.17.x 이하 버전에 해당합니다. 캐시 볼륨이 포함된 소스 스토리지 VM은 전환이 지원되지 않습니다. 마이그레이션 실패를 방지하려면 전환 전에 ONTAP FlexCache 관계를 제거하십시오.</block>
   <block id="03c85e91696d00a533c3da3b08434532" category="list-text">*AWS S3 액세스 포인트*: S3 액세스 포인트가 있는 볼륨의 경우 마이그레이션 사용 사례에 대한 컷오버 복제가 지원되지 않습니다. 마이그레이션 실패를 방지하려면 소스 볼륨에서 S3 액세스 포인트를 삭제하십시오.</block>
   <block id="849ee629a3b8f33b04a9b242a47e3d59" category="list-text">*ONTAP S3 구성*: ONTAP S3 구성이 있는 vserver에서는 마이그레이션 사용 사례를 위한 컷오버 복제가 지원되지 않습니다. 마이그레이션 실패를 방지하려면 vserver에서 object-store-server, bucket, 사용자, 그룹 또는 정책을 포함한 ONTAP S3 구성을 제거하십시오.</block>
   <block id="ab3171de62100468c23112d3fda9227b" category="list-text">*LUN 일련 번호 및 iSCSI 타겟 IQN*: LUN 일련 번호와 iSCSI 타겟 IQN은 컷오버 중에 변경됩니다.</block>
@@ -3187,4 +3186,5 @@
   <block id="56643767ee547abedda1d643567a4c85" category="paragraph">모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 <block ref="08c564abbdedd12846cfb2f0de43f628" category="inline-link-macro-rx"></block>을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.</block>
   <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">지연 이벤트에 대한 구성 요소 분석</block>
+  <block id="6d4d9f3d79904b627f6aca8246717bca" category="list-text">*캐시 볼륨*: 캐시 볼륨이 포함된 소스 스토리지 VM은 전환이 지원되지 않습니다. 마이그레이션 실패를 방지하려면 전환 전에 ONTAP FlexCache 관계를 제거하십시오.</block>
 </blocks>
