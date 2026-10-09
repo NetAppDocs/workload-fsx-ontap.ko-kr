@@ -2957,7 +2957,6 @@
   <block id="6dbb8a49c1538ebdedcc12468334fb46" category="paragraph">삭제된 볼륨에 대해 수동으로 생성된 백업과 2주 이상 된 백업은 모두 삭제하십시오. 이러한 백업은 자동으로 만료되지 않으며, SLA 또는 복구에 더 이상 필요하지 않은 경우 비용이 증가하고 관리가 복잡해질 수 있습니다.</block>
   <block id="b5ad1c06d1e3c827001a5d86081f1bdb" category="paragraph">더 이상 필요하지 않은 오래된 스냅샷이나 수동으로 생성한 스냅샷을 삭제하십시오. 특히 SLA 또는 복구 요구 사항에 필요하지 않은 스냅샷은 삭제하면 비용을 절감하고 불필요한 항목을 줄일 수 있습니다.</block>
   <block id="0be251ac51e901583999154779926c3b" category="paragraph">블록 장치가 7일 동안 사용되지 않으면 블록 장치 데이터를 보관하거나 사용하지 않는 블록 장치를 삭제하여 비용을 절감하십시오.</block>
-  <block id="72d8d7f27cf31b02bb7df1a01b23ab49" category="paragraph">구성 분석을 통해 활발하게 사용되지 않는 NAS 볼륨을 식별하고 비용 절감을 위해 해당 볼륨을 삭제하거나 보관 처리할 것을 제안합니다.</block>
   <block id="058f4c97fb457003efd47bf8dac18f8b" category="paragraph">FlexGroup 볼륨의 균형을 재조정하여 효율성을 개선하십시오. 확장 후에는 용량과 워크로드 활동이 볼륨 전체에 걸쳐 불균등해질 수 있습니다.</block>
   <block id="98ee4192cbfc73d968e2c1f61cbdb3dc" category="paragraph">FlexVol 볼륨의 균형을 재조정하여 효율성을 개선합니다. 스케일 아웃 후 볼륨 전체에 걸쳐 용량 및 워크로드 활동이 고르지 않게 될 수 있습니다.</block>
   <block id="c2a622b55f06f11550a3499362e678c9" category="list-text">블록 장치를 생성하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
@@ -3187,4 +3186,5 @@
   <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크가 연결되면 이 작업으로 돌아오십시오.</block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">지연 이벤트에 대한 구성 요소 분석</block>
   <block id="6d4d9f3d79904b627f6aca8246717bca" category="list-text">*캐시 볼륨*: 캐시 볼륨이 포함된 소스 스토리지 VM은 전환이 지원되지 않습니다. 마이그레이션 실패를 방지하려면 전환 전에 ONTAP FlexCache 관계를 제거하십시오.</block>
+  <block id="084b022f1511ba8dda542f70832d22e4" category="paragraph">NAS 볼륨을 31일 동안 사용하지 않으면 비용 절감을 위해 해당 볼륨을 보관하거나 삭제하십시오.</block>
 </blocks>
