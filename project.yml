@@ -155,6 +155,8 @@ sidebar:
       url: "/performance-reference.html"
     - title: FSx for ONTAP의 보안
       url: "/security-reference.html"
+  - title: FAQ
+    url: "/faq-fsx-ontap.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
