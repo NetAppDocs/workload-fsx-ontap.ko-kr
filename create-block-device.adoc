@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-block-device.html 
 keywords: create block device, create lun, iscsi protocol 
-summary: '사업 부문(LOB) 애플리케이션 요구 사항을 지원하는 블록 장치를 생성합니다.' 
+summary: 기존 또는 새 볼륨에 iSCSI 블록 장치를 생성하고, 이니시에이터 그룹 액세스를 구성하며, FSx for ONTAP에 대한 스토리지 효율성 및 보호 옵션을 설정합니다. 
 ---
 = NetApp Workload Factory 에서 파일 시스템용 블록 장치를 생성합니다.
 :allow-uri-read: 
@@ -91,7 +91,7 @@ NOTE: 스냅샷 시간은 기본적으로 UTC(협정 세계시)로 설정된 파
 
 .. * Tiering policy *: 볼륨에 저장된 데이터에 대한 계층화 정책을 선택합니다.
 +
-Workload Factory 콘솔을 사용하여 볼륨을 생성할 때 기본 티어링 정책은 _균형(자동)_입니다. 볼륨 티어링 정책에 대한 자세한 내용은 다음을 참조하십시오. link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^] AWS FSx for NetApp ONTAP 설명서에 나와 있습니다. 참고로 Workload Factory 콘솔에서는 계층화 정책에 대해 사용 사례 기반 이름을 사용하며, ONTAP 계층화 정책 이름은 괄호 안에 FSx로 표시됩니다.
+_Balanced (Auto)_는 Workload Factory 콘솔을 사용하여 볼륨을 생성할 때의 기본 티어링 정책입니다. 볼륨 티어링 정책에 대한 자세한 내용은 AWS FSx for NetApp ONTAP 설명서에서 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["볼륨 스토리지 용량"^]를 참조하십시오. Workload Factory는 Workload Factory 콘솔에서 티어링 정책에 사용 사례 기반 이름을 사용하며, 괄호 안에 FSx for ONTAP 티어링 정책 이름을 포함합니다.
 
 .. *ARP/AI*: AI를 탑재한 NetApp 자율형 랜섬웨어 보호(ARP/AI)는 링크가 파일 시스템에 연결된 경우 기본적으로 활성화됩니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html["ARP/AI에 대해 자세히 알아보세요"].. 계속하려면 설명을 수락하십시오.
 +

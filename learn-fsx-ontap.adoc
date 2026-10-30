@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: learn-fsx-ontap.html 
 keywords: Amazon FSx for NetApp ONTAP, FSx, storage, aws 
-summary: Amazon FSx for NetApp ONTAP 은 고객이 Workload Factory 내에서 워크로드에 대한 스토리지 백엔드로 파일 시스템을 실행하고 실행할 수 있도록 하는 완전 관리형 서비스입니다. 
+summary: Workload Factory에서 워크로드의 스토리지 백엔드로 파일 시스템을 시작하고 실행할 수 있는 완전 관리형 서비스인 Amazon FSx for NetApp ONTAP에 대해 알아보십시오. 
 ---
 = NetApp Workload Factory에서 Amazon FSx for NetApp ONTAP 에 대해 알아보세요
 :allow-uri-read: 
@@ -26,7 +26,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 * *완전 관리형 서비스*: Workload Factory 콘솔과 통합된 완전 관리형 서비스를 제공합니다.
 * * 고가용성 *: 각 FSx for ONTAP 파일 시스템에 고가용성을 제공하여 단일 및 다중 가용성 영역 배포를 지원합니다.
-* * 자동 스냅샷 *: 파일 시스템 또는 볼륨의 거의 즉각적이고 공간 효율적인 시점 읽기 전용 복사본인 자동화된 효율적인 스냅샷으로 데이터를 보호합니다.
+* *자동 스냅샷*: 파일 시스템 또는 볼륨의 거의 즉각적이고 공간 효율적인 특정 시점 읽기 전용 복사본인 자동화되고 효율적인 스냅샷으로 데이터를 보호합니다.
 * * 볼륨 복제 *: Amazon Web Services의 교차 지역 복제를 통해 재해 복구를 제공합니다.
 * * 효율적인 백업 *: 비상 시 다른 지역에 있는 데이터의 복사본을 사용하여 보호 계층을 추가합니다.
 * * 빠른 복제 *: 빠른 복제를 통해 애플리케이션 개발 가속화
@@ -35,7 +35,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 * * 인메모리 캐시 및 NVMe 캐시 *: 고유한 인메모리 캐시와 NVMe 캐시를 포함하고 있어 자주 액세스되는 데이터의 성능을 향상시킵니다.
 * * 수십만 IOPS *: SSD 디스크와 함께 수십만 IOPS를 제공하여 스토리지와 워크로드가 적시에 결과를 얻을 수 있도록 보장합니다.
 * * Thin Provisioning *: 용량을 미리 프로비저닝할 수 있으므로 용량이 더 필요할 때까지 비용을 절감할 수 있습니다.
-* * 데이터 중복제거 및 압축 *: 중복 데이터를 제거하고 데이터를 압축하여 FSx for ONTAP 파일 시스템에 필요한 물리적 스토리지의 양을 줄임으로써 비용을 절감합니다.
+* *데이터 중복 제거 및 압축*: 중복 데이터를 제거하고 데이터를 압축하여 FSx for ONTAP 파일 시스템에 필요한 물리적 스토리지의 양을 줄여 비용을 절감합니다.
 * * 데이터 계층화 *: 액세스 빈도가 낮은 데이터를 운영 고성능 SSD 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 이동하여 스토리지 비용을 절감할 수 있습니다.
 
 
@@ -46,7 +46,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 
 * * 스토리지 비용 비교 계산기 *: Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버 스토리지 비용을 FSx for ONTAP와 비교합니다. 계산기에서 FSx for ONTAP 스토리지 구성이 어떻게 잠재적 비용 절감을 제공하는지 살펴보고 FSx for ONTAP 스토리지로의 마이그레이션을 계획하실 수 있습니다.
 * *Workload Factory 사용자 인터페이스*: _빠른 생성_ 및 _고급 생성_ 배포 모드 옵션을 제공합니다. 빠른 생성에는 AWS, NetApp 및 업계 표준 모범 사례를 기반으로 한 스토리지 구성이 포함됩니다. 또한 이 인터페이스는 SSD 스토리지 용량 및 처리량 사용 추세, 워크로드 요약, 그리고 확장 가능한 상세 구성 설정을 보여줍니다.
-* * Codebox *: 개발자에게 FSx for ONTAP 작업을 위한 코드 뷰어, 복사 및 다운로드용 코드 템플릿, 코드 재사용을 위한 자동화 카탈로그를 제공합니다.
+* *Codebox*: 개발자에게 FSx for ONTAP 운영용 코드 뷰어, 복사 및 다운로드용 코드 템플릿, 코드 재사용을 위한 자동화 카탈로그를 제공합니다.
 
 
 
@@ -77,7 +77,7 @@ AWS는 Workload Factory가 아닌 FSx for ONTAP 계정을 유지 관리합니다
 [[regions]]
 == 지역
 
-워크로드 팩토리는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다.link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
+Workload Factory는 FSx for ONTAP이 지원되는 모든 상용 지역에서 지원됩니다. link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
 
 다음 AWS 지역은 지원되지 않습니다.
 

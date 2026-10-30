@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: access-data.html 
 keywords: access data, mount point, mount volumes, mount clients, on-premises 
-summary: 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 SAN 클라이언트용 iSCSI LUN을 마운트하여 FSx for ONTAP 파일 시스템에 액세스할 수 있습니다. 
+summary: Workload Factory에서 FSx for ONTAP 볼륨의 마운트 지점을 확인하고 NAS 및 SAN 클라이언트에 볼륨 및 iSCSI LUN을 마운트하기 위한 링크를 찾으십시오. 
 ---
 = FSx for ONTAP 파일 시스템 데이터에 액세스합니다
 :allow-uri-read: 
@@ -13,7 +13,7 @@ summary: 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 
 [role="lead"]
 온프레미스에서 NAS 클라이언트의 볼륨을 마운트하고 SAN 클라이언트용 iSCSI LUN을 마운트하여 FSx for ONTAP 파일 시스템에 액세스할 수 있습니다.
 
-link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html["데이터 액세스"^] Amazon FSx for NetApp ONTAP 설명서에서 참조용 데이터에 액세스하는 방법에 대한 항목을 제공합니다.
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html["데이터 액세스"^] Amazon FSx for NetApp ONTAP 설명서에는 데이터 액세스 방법에 대한 정보가 나와 있습니다.
 
 NetApp Workload Factory에서 볼륨의 마운트 지점을 가져올 수도 있습니다.
 
@@ -22,7 +22,7 @@ NetApp Workload Factory에서 볼륨의 마운트 지점을 가져올 수도 있
 [[get-mount-point-for-volumes-in-netapp-workload-factory]]
 == NetApp Workload Factory에서 볼륨의 마운트 지점 가져오기
 
-CIFS 공유 또는 NFS 클라이언트에서 공유를 마운트하기 위한 볼륨의 마운트 지점을 가져옵니다.
+볼륨을 CIFS 공유 또는 NFS 클라이언트에 마운트하기 위해 볼륨의 마운트 지점을 가져옵니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.

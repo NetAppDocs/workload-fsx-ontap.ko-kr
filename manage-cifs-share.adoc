@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-cifs-share.html 
 keywords: cifs, smb, SMB, CIFS, cifs share, change, update, modify, delete, create 
-summary: Workload Factory에서 볼륨의 SMB 또는 CIFS 공유를 관리하는 방법에는 공유 생성, 사용자 및 그룹 액세스 권한 설정, 그리고 삭제가 포함됩니다. 
+summary: Workload Factory에서 볼륨에 대한 SMB/CIFS 공유를 생성, 변경 또는 삭제하고, 해당 공유에 액세스할 수 있는 사용자 및 그룹을 제어할 수 있습니다. 
 ---
 = NetApp Workload Factory에서 볼륨의 SMB/CIFS 공유 관리
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Workload Factory에서 볼륨의 SMB 또는 CIFS 공유를 관리하는
 
 
 [role="lead"]
-Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SMB/CIFS 공유 생성, 액세스 권한을 부여할 사용자 및 그룹과 이들에게 부여할 권한 수준 결정, SMB/CIFS 공유 삭제가 포함됩니다.
+Workload Factory에서 볼륨에 대한 SMB/CIFS 공유를 생성, 변경 또는 삭제할 수 있습니다. 공유에 액세스할 수 있는 사용자 및 그룹과 권한 수준을 제어할 수 있습니다.
 
 .시작하기 전에
 시작하기 전에 다음을 수행합니다.
@@ -25,7 +25,7 @@ Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SM
 [[create-an-smbcifs-share-for-a-volume]]
 == 볼륨에 대한 SMB/CIFS 공유 만들기
 
-볼륨에 대한 SMB/CIFS 공유를 생성하는 단계를 따르세요.
+볼륨에 대한 SMB/CIFS 공유를 생성합니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
@@ -37,7 +37,7 @@ Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SM
 . SMB/CIFS 공유 만들기 대화 상자에서 다음을 제공합니다.
 +
 .. *이름*: SMB/CIFS 공유의 이름을 입력하세요.
-.. *경로*: 기본 볼륨 이름을 사용하여 경로를 정의하거나 내부 디렉토리에 대한 공유를 제공합니다.
+.. *경로*: 기본 볼륨 이름을 사용하여 경로를 정의하거나 내부 디렉터리에 대한 공유를 제공하십시오.
 +
 볼륨 이름에 대한 유효한 경로 입력(예: "avocado")은 다음과 같습니다.
 
@@ -65,7 +65,7 @@ Workload Factory에서 볼륨의 SMB/CIFS 공유를 관리하는 작업에는 SM
 [[change-an-smbcifs-share-for-a-volume]]
 == 볼륨에 대한 SMB/CIFS 공유 변경
 
-볼륨의 SMB/CIFS 공유 설정을 변경하려면 다음 단계를 따르세요.
+볼륨의 SMB/CIFS 공유 설정을 변경합니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.

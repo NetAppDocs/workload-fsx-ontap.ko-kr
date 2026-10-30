@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-file-system-settings.html 
 keywords: create fsx tags, create tags, edit fsx tags, fsx tags, reset fsx admin password 
-summary: 언제든지 파일 시스템에 대한 FSx for ONTAP 파일 시스템 태그를 추가, 업데이트 또는 제거할 수 있습니다. 
+summary: NetApp Workload Factory에서 태그, ONTAP 자격 증명, fsxadmin 암호 및 처리량 용량을 포함한 FSx for ONTAP 파일 시스템 설정을 관리합니다. 
 ---
 = NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 설정 관리
 :allow-uri-read: 
@@ -51,7 +51,7 @@ Workload Factory는 Workload Factory 자격 증명 서비스(사용자 이름 �
 
 Workload Factory는 제한된 자격 증명을 다음과 같이 처리합니다.
 
-* 파일 시스템에 대한 제한된 자격 증명을 제공하지 않은 상태에서 사용자 지정 규칙이나 대시보드를 생성하거나 Ask Me 질문을 하는 경우, Workload Factory는 제한된 자격 증명 세트로 사용할 읽기 전용 ONTAP 자격 증명을 생성합니다.
+* 파일 시스템에 대한 제한된 자격 증명을 제공하지 않은 상태에서 사용자 지정 규칙이나 대시보드를 생성하거나 Ask Me에 질문을 제출하면 Workload Factory는 제한된 자격 증명 세트로 사용할 읽기 전용 ONTAP 자격 증명을 생성합니다.
 * 파일 시스템에 대해 제한된 자격 증명을 이미 제공한 경우 해당 자격 증명이 AIOps에 사용됩니다.
 
 

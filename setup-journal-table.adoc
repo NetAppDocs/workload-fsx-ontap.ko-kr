@@ -232,7 +232,7 @@ AWS Management Console 또는 AWS CLI를 사용하여 CloudFormation 스택 배�
 
 ==== CloudTrail 제한
 
-AWS는 리전당 5개의 트레일로 기본 제한을 적용합니다. 계정에 이미 5개의 트레일이 있는 경우 `the FsxDataEventTrail` 리소스가 다음과 같이 실패합니다: Maximum number of trails (5) exceeded. 다음 명령을 사용하여 리전 수준에서 트레일 수를 확인할 수 있습니다:
+AWS는 기본적으로 리전당 트레일 수를 5개로 제한합니다. 계정에 이미 5개의 트레일이 있는 경우  `FsxDataEventTrail` 리소스가 다음 오류와 함께 실패합니다: Maximum number of trails (5) exceeded. 다음 명령을 사용하여 리전 수준에서 트레일 수를 확인할 수 있습니다:
 
 [source, cli]
 ----
@@ -342,7 +342,7 @@ S3TableIntegration은 자동으로 aws-cloudwatch라는 테이블 버킷을 생�
 +
 .. AWS Management Console에서 S3 Tables를 엽니다.
 .. aws-cloudwatch 테이블 버킷 → aws_cloudtrail__data 테이블로 이동한 다음 *Preview* 버튼을 사용하여 브라우저에서 직접 빠른 쿼리를 실행하세요.
-.. 테이블에는 이벤트가 있지만 저널에 여전히  `FAILED`가 표시되는 경우, 이벤트가 도착하기 전에 폴링 기간이 만료되었을 수 있습니다.
+.. 테이블에 이벤트가 있지만 저널에 여전히  `FAILED`이(가) 표시되는 경우, 이벤트가 도착하기 전에 폴링 기간이 만료되었을 수 있습니다.
 
 
 

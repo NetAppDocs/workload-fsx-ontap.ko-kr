@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-volume-settings.html 
 keywords: volume tags, edit volume tags, edit tags, enable immutable files, disable immutable files, lock files, unlock files, storage efficiency change, update storage efficiency 
-summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니다. FSx for ONTAP 볼륨에 대해 언제든지 볼륨 태그를 추가, 편집, 제거할 수 있습니다. 
+summary: NetApp Workload Factory에서 FSx for ONTAP 볼륨의 볼륨 워크로드를 변경하고, 볼륨 태그를 편집하고, 스토리지 효율성을 업데이트하고, 변경 불가능한 파일 설정을 관리할 수 있습니다. 
 ---
 = NetApp Workload Factory에서 볼륨 설정을 관리합니다.
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니�
 
 
 [role="lead"]
-조직의 요구 사항에 맞게 NetApp Workload Factory에서 FSx for ONTAP 볼륨 설정을 사용자 지정합니다. 볼륨 태그를 관리하여 볼륨 워크로드 설정과 같은 리소스를 분류하고, 스토리지 효율성 설정을 업데이트하여 공간 및 비용 절감을 최적화하고, 변경 불가능한 파일 설정을 관리하여 데이터 보존을 제어하고 무단 변경으로부터 보호할 수 있습니다.
+NetApp Workload Factory에서 조직의 요구 사항에 맞게 FSx for ONTAP 볼륨 설정을 사용자 지정합니다. 볼륨 워크로드 및 태그를 설정하여 리소스를 분류하고, 스토리지 효율성 설정을 업데이트하여 공간 및 비용 절감을 최적화하며, 변경 불가능한 파일 설정을 관리하여 데이터 보존을 제어하고 무단 변경으로부터 보호할 수 있습니다.
 
 
 
@@ -80,7 +80,7 @@ summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니�
 
 보존 정책 및 기간, 자동 커밋 기간, 볼륨 추가 모드 등 기능이 설정된 경우 볼륨에 대해 변경 불가능한 특정 파일 설정을 업데이트할 수 있습니다.
 
-변경 불가능한 파일은 에서만 사용할 수 link:create-volume.html["볼륨 생성"]있습니다.
+link:create-volume.html["볼륨 생성"] 중에만 변경 불가능한 파일을 활성화할 수 있습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
@@ -92,7 +92,7 @@ summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니�
 +
 ** * 보존 기간 *: * 지정 안 함 * 또는 * 기간 지정 * 을 선택합니다.
 +
-*** *지정 안 함 *: 기본 최소 기간은 "0"년이고 기본 최대 기간은 "30년"입니다.
+*** *미지정*: 기본 최소 기간은 0년이고 기본 최대 기간은 30년입니다.
 *** *기간 지정 *: 보존 정책, 최소 및 최대 기간, 자동 커밋 기능 및 볼륨 추가 모드 기능을 정의하는 옵션입니다. 다음 세부 정보를 제공합니다.
 +
 **** * 보존 정책 *: 이 기간은 최소 보존 기간보다 크거나 같고 최대 보존 기간보다 작거나 같아야 합니다.
@@ -103,10 +103,10 @@ summary: 태그를 사용하면 리소스를 분류하는 데 도움이 됩니�
 
 ** * autocommit *: 자동 커밋 기간 동안 수정되지 않은 파일을 WORM에 자동으로 커밋하는 기능을 활성화 또는 비활성화합니다.
 ** *특권 삭제*: 기능을 활성화하거나 비활성화합니다.  이 기능을 활성화하면 SnapLock 관리자가 만료되지 않은 WORM 볼륨을 삭제할 수 있습니다.  이 기능은 Enterprise 보존 모드에서만 지원됩니다.
-** * 볼륨 추가 모드 *: 기능을 활성화 또는 비활성화합니다. 볼륨 추가 모드를 활성화하면 WORM 파일에 새 콘텐츠를 추가할 수 있습니다.
+** *볼륨 추가 모드*: 이 기능을 활성화 또는 비활성화합니다. 볼륨 추가 모드를 활성화하면 WORM 파일에 새 콘텐츠를 추가할 수 있습니다.
 
 
-. 적용 * 을 클릭합니다.
+. Apply * 를 선택합니다.
 
 
 

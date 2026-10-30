@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: explore-savings.html 
 keywords: cost, savings, compare costs, EBS, EFS, FSx for Windows file servers FSx for ONTAP 
-summary: 'AWS FSx for NetApp ONTAP과 비교하여 Amazon EBS(Elastic Block Store) 스토리지, EFS(Elastic File System) 및 FSx for Windows 파일 서버에서 스토리지 워크로드의 절약을 살펴보십시오.' 
+summary: 'Amazon FSx for NetApp ONTAP과 비교하여 Amazon Elastic Block Store(EBS), Elastic File System(EFS) 및 FSx for Windows File Server의 스토리지 워크로드에 대한 절감 효과를 살펴보십시오.' 
 ---
 = NetApp Workload Factory에서 FSx for ONTAP 으로 비용 절감을 살펴보세요
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'AWS FSx for NetApp ONTAP과 비교하여 Amazon EBS(Elastic Block Stor
 
 
 [role="lead"]
-Amazon EBS(Elastic Block Store), EFS(Elastic File System) 및 FSx for Windows 파일 서버를 FSx for NetApp ONTAP과 비교하여 사용하는 스토리지 워크로드의 절감 효과에 대해 알아보십시오.
+Amazon Elastic Block Store(EBS), Elastic File System(EFS) 및 FSx for Windows File Server를 사용하는 스토리지 워크로드를 FSx for ONTAP과 비교하여 비용 절감 효과를 살펴보십시오.
 
 NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교하는 스토리지 절감 계산기가 포함되어 있습니다.  AWS 자격 증명을 제공하거나 제공하지 않고도 절감 효과를 알아볼 수 있으며, 스토리지 환경에 맞게 구성 설정을 사용자 지정할 수 있습니다.  AWS 자격 증명을 제공하면 예를 들어 Amazon Elastic Block Store의 인스턴스를 하나 이상 선택하고 Workload Factory에서 자동으로 비교를 수행할 수 있습니다.  계산기는 수동이든 자동이든 귀하의 보관 요구 사항에 가장 낮은 비용을 제공하는 보관 서비스를 찾아줍니다.
 
@@ -22,7 +22,7 @@ NetApp Workload Factory에는 Amazon 스토리지 환경과 FSx for ONTAP 비교
 [[calculator-options]]
 == 계산기 옵션
 
-시스템과 FSx for ONTAP 간의 비용 비교를 위해 Amazon 스토리지 환경을 위한 커스터마이징 및 자동 감지 기능을 제공하는 두 가지 계산기 옵션을 사용할 수 있습니다.
+Amazon 스토리지 환경에 대한 사용자 지정 또는 자동 감지라는 두 가지 계산기 옵션 중 하나를 사용하여 시스템 비용을 FSx for ONTAP과 비교하십시오.
 
 사용자 정의를 통한 절감 탐색: 활용 사례, 지역, 볼륨 또는 파일 시스템 수, 스토리지 양, 스냅샷 빈도, 스냅샷당 변경된 양, 프로비저닝된 IOPS, 처리량 등을 포함한 스토리지 환경에 대한 구성 설정을 제공합니다.
 

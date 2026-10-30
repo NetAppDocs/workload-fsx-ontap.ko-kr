@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, Workload Factory, amazon fsx for netapp ontap, fsx for ontap' 
-summary: Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오. 
+summary: NetApp Workload Factory의 Amazon FSx for NetApp ONTAP에 대한 새로운 기능, 개선 사항 및 수정 사항을 출시일 순으로 검토하십시오. 
 ---
-= NetApp ONTAP용 Amazon FSx의 새로운 기능
+= NetApp Workload Factory의 Amazon FSx for NetApp ONTAP의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAP의 새로운 기능에 대해 알아보십시오.
+Amazon FSx for NetApp ONTAP의 새로운 기능 및 개선 사항을 NetApp Workload Factory에서 출시일 순으로 검토하십시오.
 
 
 

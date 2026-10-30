@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ransomware-protection.html 
 keywords: ransomware, arp, autonomous protection, protect, security, detect, detection, restore, recover, threat, attack, suspect, anti-ransomware, entropy, abnormal volume activity, anti-ransomware, extension conformity, ransomware protection strategy 
-summary: 'NetApp AI 기반 자율형 랜섬웨어 보호(ARP/AI)는 NAS 및 SAN 환경에서 워크로드 분석을 통해 랜섬웨어 공격일 수 있는 비정상적인 활동을 감지하고 경고합니다.' 
+summary: NetApp AI 기반 자율형 랜섬웨어 보호 기능을 활성화하여 비정상적인 볼륨 활동을 감지하고, 의심스러운 공격을 검증하며, 스냅샷에서 데이터를 복구하십시오. 
 ---
-= AI 기반 NetApp 자율형 랜섬웨어 보호 기능으로 FSx for ONTAP 데이터를 보호하십시오.
+= NetApp AI 기반 자율형 랜섬웨어 보호 기능으로 FSx for ONTAP 데이터를 보호하십시오.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -45,7 +45,7 @@ ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에
 
 경고를 오탐으로 표시하면 시스템에서 경고 설정을 업데이트합니다. 예를 들어, 새로운 파일 확장자가 경고를 발생시키는데 이를 오탐으로 표시하면 다음에 시스템에서 해당 파일 확장자를 감지할 때 경고가 표시되지 않습니다.
 
-지원되지 않는 구성입니다:: 다음 구성은 ARP/AI 사용을 지원하지 않습니다.
+지원되지 않는 구성입니다:: ARP/AI는 이러한 구성을 지원하지 않습니다.
 +
 --
 * NVMe 볼륨
@@ -65,7 +65,7 @@ ARP/AI 기능은 Amazon FSx for NetApp ONTAP 에서 실행되는 ONTAP 버전에
 ARP/AI 기능이 활성화된 후 실제 공격이 감지되면 Workload Factory는 자동으로 스냅샷 정책을 생성합니다. 이 정책은 4시간마다 최대 6개의 스냅샷을 생성할 수 있습니다. 각 스냅샷은 2~5일 동안 잠금 상태로 유지됩니다.
 
 .시작하기 전에
-파일 시스템 또는 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크가 연결되면 이 작업으로 돌아오십시오.
+파일 시스템 또는 볼륨에 대해 ARP/AI를 활성화하려면 링크를 연결해야 합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["기존 링크를 연결하는 방법이나 새 링크를 만들고 연결하는 방법을 알아보세요."^]. 링크를 연결한 후 이 작업으로 돌아오십시오.
 
 [role="tabbed-block"]
 ====
@@ -124,7 +124,7 @@ ARP/AI 기능이 활성화된 후 실제 공격이 감지되면 Workload Factory
 . 파일 시스템 개요에서 * Volumes * 탭을 선택합니다.
 . Autonomous Ransomware Protection 타일에서 * Analyze Attacks * 를 선택합니다.
 . 공격 이벤트 보고서를 다운로드하여 손상된 파일이나 폴더가 있는지 검토한 다음 공격이 발생했는지 여부를 결정합니다.
-. 공격이 발생하지 않은 경우 표의 볼륨에 대해 * False alarm * 을 선택한 다음 * Close * 를 선택합니다
+. 공격이 발생하지 않은 경우 표에서 해당 볼륨에 대해 *오경보*를 선택한 다음 *닫기*를 선택하십시오.
 . 공격이 발생한 경우 표의 볼륨에 대해 * Real attack * 을 선택합니다. 손상된 볼륨 데이터 복원 대화 상자가 열립니다. 즉시 로 진행하거나 * Close * 를 선택하고 나중에 복구 프로세스를 완료할 수 <<랜섬웨어 공격 후 데이터 복구,데이터를 복구합니다>>있습니다.
 
 

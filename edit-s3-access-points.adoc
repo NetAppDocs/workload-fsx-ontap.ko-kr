@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: edit-s3-access-points.html 
 keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
-summary: NetApp Workload Factory에서 볼륨의 S3 액세스 포인트를 편집합니다. 
+summary: FSx for ONTAP의 볼륨에 대한 S3 액세스 포인트 세부 정보를 업데이트하고, 태그를 관리하며, 인벤토리 테이블을 활성화 또는 비활성화합니다. 
 ---
 = NetApp Workload Factory에서 볼륨의 S3 액세스 포인트를 편집합니다
 :allow-uri-read: 

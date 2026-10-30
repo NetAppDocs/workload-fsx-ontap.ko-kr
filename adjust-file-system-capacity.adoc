@@ -50,7 +50,7 @@ SSD 스토리지 용량 제한에 대해서는 link:https://docs.aws.amazon.com/
 [[enable-automatic-capacity-and-inode-management]]
 == 자동 용량 및 inode 관리 활성화
 
-용량 및 inode 관리를 활성화하면 NetApp Workload Factory가 시간 경과에 따른 용량 요구 사항 변화에 따라 FSx for ONTAP 파일 시스템에 증분 스토리지 및 inode(파일)를 볼륨에 자동으로 추가할 수 있습니다. 이러한 기능을 통해 용량 및 inode를 수동으로 모니터링할 필요가 없어집니다.
+용량 및 inode 관리를 활성화하면 시간 경과에 따른 용량 요구 사항 변화에 따라 NetApp Workload Factory가 FSx for ONTAP 파일 시스템에 증분 스토리지를 자동으로 추가하고 볼륨에 inode(파일)를 추가할 수 있습니다. 이러한 기능을 통해 용량 및 inode를 수동으로 모니터링할 필요가 없어집니다.
 
 하나의 계정으로만 이러한 기능을 관리할 수 있습니다.
 
@@ -143,7 +143,7 @@ NOTE: *Terraform 사용자*: Terraform에는 모든 작업이 Terraform 내에�
 . 저장소 메뉴에서 *FSx for ONTAP*를 선택합니다.
 . *FSx for ONTAP*에서 파일 시스템의 작업 메뉴를 선택하여 자동 inode 관리를 활성화합니다.
 . 관리 * 를 선택합니다.
-. 정보에서 *자동 inode 관리* 옆에 있는 연필 아이콘을 선택합니다.  마우스를 *자동 inode 관리* 행 위에 올려 놓으면 드롭다운 화살표 옆에 연필 아이콘이 나타납니다.
+. 정보에서 *자동 inode 관리* 옆에 있는 연필 아이콘을 선택합니다. 마우스 커서를 *자동 inode 관리* 행 위로 가져가면 드롭다운 화살표 옆에 연필 아이콘이 나타납니다.
 . *자동 inode 관리* 대화 상자에서 다음을 제공합니다.
 +
 .. * 자격 증명 *: 드롭다운 메뉴에서 _AUTOMATE_PERTIONS를 사용하여 자격 증명을 선택합니다.

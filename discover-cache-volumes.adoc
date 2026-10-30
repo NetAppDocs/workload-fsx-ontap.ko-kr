@@ -11,7 +11,7 @@ summary: NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계�
 
 
 [role="lead"]
-NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연관된 _캐시_ 볼륨을 검색하고 볼 수 있습니다.  캐시 관계는 ONTAP FlexCache 관계라고도 합니다.  Workload Factory는 NetApp ONTAP의 원격 캐싱 기능인 FlexCache 기술을 사용하여 기존 캐시 관계를 검색합니다. FlexCache는 데이터 액세스를 가속화하고, WAN 지연 시간과 대역폭을 줄이고, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 읽기 중심 워크로드의 비용을 줄여줍니다.
+NetApp Workload Factory 콘솔을 벗어나지 않고도 캐시 관계와 연결된 _캐시_ 볼륨을 검색하고 볼 수 있습니다. 캐시 관계는 ONTAP FlexCache 관계라고도 합니다. Workload Factory는 FlexCache 기술을 사용하여 기존 캐시 관계를 검색합니다. 이 기술은 데이터 액세스를 가속화하고, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 읽기 집약적인 워크로드에 대해 WAN 지연 시간, 대역폭 및 비용을 줄여주는 NetApp ONTAP의 원격 캐싱 기능입니다.
 
 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-flexcache.html["FlexCache 사용하여 데이터를 복제하는 방법에 대해 자세히 알아보세요."^]
 

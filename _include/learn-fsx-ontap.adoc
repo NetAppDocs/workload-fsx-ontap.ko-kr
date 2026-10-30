@@ -26,7 +26,7 @@ FSx for ONTAP은 다음과 같은 기능을 제공합니다.
 * * 인메모리 캐시 및 NVMe 캐시 *: 고유한 인메모리 캐시와 NVMe 캐시를 포함하고 있어 자주 액세스되는 데이터의 성능을 향상시킵니다.
 * * 수십만 IOPS *: SSD 디스크와 함께 수십만 IOPS를 제공하여 스토리지와 워크로드가 적시에 결과를 얻을 수 있도록 보장합니다.
 * * Thin Provisioning *: 용량을 미리 프로비저닝할 수 있으므로 용량이 더 필요할 때까지 비용을 절감할 수 있습니다.
-* * 데이터 중복제거 및 압축 *: 중복 데이터를 제거하고 데이터를 압축하여 FSx for ONTAP 파일 시스템에 필요한 물리적 스토리지의 양을 줄임으로써 비용을 절감합니다.
+* *데이터 중복 제거 및 압축*: 중복 데이터를 제거하고 데이터를 압축하여 FSx for ONTAP 파일 시스템에 필요한 물리적 스토리지의 양을 줄여 비용을 절감합니다.
 * * 데이터 계층화 *: 액세스 빈도가 낮은 데이터를 운영 고성능 SSD 스토리지 계층에서 보조 용량 풀 스토리지 계층으로 이동하여 스토리지 비용을 절감할 수 있습니다.
 
 
@@ -68,7 +68,7 @@ AWS는 Workload Factory가 아닌 FSx for ONTAP 계정을 유지 관리합니다
 [[regions]]
 == 지역
 
-워크로드 팩토리는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다.link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
+Workload Factory는 FSx for ONTAP이 지원되는 모든 상용 지역에서 지원됩니다. link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
 
 다음 AWS 지역은 지원되지 않습니다.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: configuration-analysis.html 
 keywords: configuration issues, issues, improve, analyze, storage configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations 
-summary: NetApp Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 구성을 정기적으로 분석하여 구성 문제가 있는지 확인합니다. 
+summary: NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 구성을 분석하여 문제를 찾고 성능, 비용 효율성 및 규정 준수를 개선하는 권장 사항을 확인하십시오. 
 ---
 = FSx for ONTAP 파일 시스템에 대한 구성 분석
 :allow-uri-read: 
@@ -104,7 +104,7 @@ SSD 스토리지 계층의 사용률은 80%를 초과해서는 안 됩니다. �
 
 * *파일 오브젝트 용량*
 +
-볼륨 용량 제한에 도달하지 않도록 파일 용량 임계값을 높여야 합니다. 파일 용량(inode)이 부족하면 볼륨에 추가 데이터를 기록할 수 없습니다. Workload Factory는 새 파일 생성을 위해 파일 용량 사용률을 80% 미만으로 유지할 것을 권장합니다.
+파일 용량 임계값을 높여 볼륨 용량 제한에 도달하지 않도록 하십시오. 파일 용량(inode)이 부족하면 볼륨에 추가 데이터를 기록할 수 없습니다. Workload Factory는 새 파일 생성을 위해 파일 용량 사용률을 80% 미만으로 유지하는 것을 권장합니다.
 
 
 
@@ -134,7 +134,7 @@ iSCSI를 사용하여 애플리케이션 데이터를 제공하는 볼륨은 동
 
 * *자동 용량 관리*
 +
-SSD 계층이 임계값을 초과하지 않도록 정기적으로 관리하려면 자동 용량 관리를 활성화해야 합니다.
+SSD 계층이 임계값을 초과하지 않도록 정기적으로 자동 용량 관리를 활성화하십시오.
 
 * *볼륨 용량 여유 공간*
 +

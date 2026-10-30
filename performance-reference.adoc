@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: performance-reference.html 
 keywords: performance, FSx for ONTAP performance 
-summary: NetApp Workload Factory의 FSx for ONTAP 에 대한 성능 참조가 제공됩니다. 
+summary: AWS 성능 설명서 링크를 포함하여 NetApp Workload Factory의 FSx for ONTAP 파일 시스템에 대한 성능 참조 정보를 검토하십시오. 
 ---
 = NetApp Workload Factory에서 FSx for ONTAP 의 성능
 :allow-uri-read: 
@@ -11,4 +11,4 @@ summary: NetApp Workload Factory의 FSx for ONTAP 에 대한 성능 참조가 �
 
 
 [role="lead"]
-성능에 대한 개요는 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html["NetApp ONTAP 성능을 위한 Amazon FSx"^] 설명서를 참조하십시오.
+FSx for ONTAP 파일 시스템의 성능을 이해하려면 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html["NetApp ONTAP 성능을 위한 Amazon FSx"^] 설명서를 검토하십시오.
