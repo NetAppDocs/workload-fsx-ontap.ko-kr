@@ -2539,8 +2539,6 @@
   <block id="9204792b7a380af352b0493b88d5303b" category="inline-link-macro">분석 화면</block>
   <block id="6f5b7d64dd977f3594b9b347533d7259" category="paragraph">Workload Factory는 볼륨을 모니터링하고 읽기 또는 쓰기 지연 시간이 구성된 임계값을 초과하면 알림을 생성합니다. 지연 시간 이벤트는 <block ref="df1730d271761ecb498a3dca135d5e07" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다.</block>
   <block id="a1edc47cfd4f855c0729219748978279" category="list-text"><block ref="a1edc47cfd4f855c0729219748978279" category="inline-link-macro-rx"></block></block>
-  <block id="56df9b1084a1d8fbfcb5630d52db4560" category="summary">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용을 추적하고 보고서를 생성합니다.</block>
-  <block id="132c7cd068e9c3c95296d05738c81a90" category="paragraph">Workload Factory는 AWS Cost Explorer에서 비용 데이터를 가져와 FSx for ONTAP 파일 시스템의 비용 및 사용량을 추적합니다. 추적되는 비용 세부 정보는 사용 유형, 사용 SKU, 배포 유형, 사용량 및 총 비용입니다.</block>
   <block id="80e92f578bcc9bc76e7904c0736e30b0" category="inline-link-macro">AWS 비용 할당 태그에 대해 자세히 알아보세요.</block>
   <block id="258ef99c8c6162f96d39f58575b891c4" category="section-title">비용 추적</block>
   <block id="4eb4c996873463b028b9c244954294a7" category="paragraph">Workload Factory 콘솔의 비용 대시보드에 표시된 비용은 24시간마다 업데이트되는 AWS Cost Explorer의 데이터를 기반으로 합니다.</block>
@@ -2981,10 +2979,7 @@
   <block id="17ec06b9eaa321300fab59fd56971e66" category="list-text">워크로드를 업데이트할 볼륨의 작업 메뉴를 선택합니다.</block>
   <block id="ed2541738b61ca0c7584cd62bf74b27d" category="list-text">*고급 작업*을 선택한 다음 *작업 부하 변경*을 선택합니다.</block>
   <block id="cd9e2d546766552cd75de00b7717f0cf" category="list-text">워크로드 변경 대화 상자에서 볼륨에 맞는 올바른 워크로드를 선택합니다.</block>
-  <block id="8137b647e9c277bf5504be0415118937" category="paragraph">NetApp Workload Factory는 FSx for ONTAP 파일 시스템의 비용 및 사용량에 대한 통합된 보기를 제공하여 예산을 관리하고 리소스를 효과적으로 최적화할 수 있도록 지원합니다. 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성하여 이해 관계자와 공유할 수 있습니다.</block>
   <block id="0ecf72bcc13fb55d0aa28c82a90ab6f4" category="paragraph">고유한 리소스의 경우, NetApp Workload Factory는 실제 성능 계층 사용량, 프로비저닝되었지만 사용되지 않은 공간에 할당된 성능 계층 비용의 비례 배분, 용량별로 분배된 성능 할당량, 그리고 용량 풀 사용량을 종합하여 비용을 계산합니다. NetApp Workload Factory는 각 구성 요소에 해당 차원의 단위당 가격을 곱하고 결과를 합산하여 각 리소스의 총비용을 결정합니다.</block>
-  <block id="ecec373dbe2f05b3a3b863fd07d13592" category="paragraph">Workload Factory는 다음 권한을 사용하여 AWS Cost Explorer에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용량 데이터를 가져옵니다.<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> 및<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>. AWS 비용 API와 자체 추정치를 사용하여 총 비용을 계산합니다.</block>
-  <block id="552ae61b34399969ed0ea2c7955fd9ef" category="paragraph">비용 대시보드의 비용 데이터 외에도, 비용 임원 요약 보고서에서 FSx for ONTAP 파일 시스템 비용과 조직의 지출 패턴을 확인할 수 있습니다. 또한 FSx for ONTAP 파일 시스템 리소스에 대한 비용 보고서를 생성할 수 있습니다. 이 보고서는 다운로드 가능한 CSV 파일로, 이해관계자와 공유할 수 있습니다.</block>
   <block id="e291c5603b49506d01779471f77ce7c8" category="paragraph">다음 요건을 충족하는지 확인하십시오.</block>
   <block id="53c306e93da69caff455d3eaa34a6b5c" category="list-text">AWS 할당 태그로 필터링하려면 FSx for ONTAP 파일 시스템에 태그가 할당되어 있는지 확인하십시오.</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026년 9월 30일</block>
@@ -3334,8 +3329,6 @@
   <block id="a27e74c36d4d969817e56da6fc886e29" category="list-text">FlexClone 볼륨을 상위 볼륨에서 분리한 후에는 다시 결합할 수 없습니다.</block>
   <block id="02ed8ce03f0b69a9238ad5fe674db730" category="list-text">복제된 볼륨을 분할하려면 링크를 연결해야 합니다. <block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>. 링크를 연결한 후 이 작업으로 돌아오십시오.</block>
   <block id="c880e220ac8aee50a0a860cfa3d40661" category="summary">Workload Factory에 NetApp 지원 사이트 계정을 추가하고 지원을 위해 계정을 등록하여 NetApp 기술 지원에 지원 케이스를 오픈하십시오.</block>
-  <block id="79ccfc8de982194cab3acf19277d4a57" category="doc">FSx for ONTAP 비용을 추적하고 NetApp Workload Factory에서 보고서를 받아보세요.</block>
-  <block id="9fa871dac57d54d520eddd6e7c2bc7e4" category="paragraph">비용 대시보드에서 AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. Workload Factory는 항상 월 단위로 데이터를 표시합니다. 또한 하나 이상의 파일 시스템과 파일 시스템 내의 하나 이상의 볼륨으로 필터링할 수 있습니다. AWS 비용 할당 태그 키와 태그 키 값을 사용하면 특정 비용을 정확하게 파악하기 위한 추가 필터링 기능을 활용할 수 있습니다. _태그_는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하십시오. <block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
   <block id="904e5c7e4bec4fed64fcbb6a83a967f6" category="paragraph">Workload Factory는 다운로드할 수 있는 CSV 보고서를 생성합니다.</block>
   <block id="d50ebccae5983a46539e57c6cafdeafa" category="list-text">선택적으로 *지연 시간 알림 활성화*를 선택하여 복제 지연 시간이 임계값을 초과할 때 알림을 받을 수 있습니다.</block>
   <block id="57aa08723363676e08889a7debcc7fae" category="paragraph">볼륨 백업은 증분 백업 방식입니다. 즉, 가장 최근 백업 이후 변경된 데이터만 저장됩니다. 따라서 백업 생성에 필요한 시간과 저장 공간을 최소화하여 데이터 중복을 방지하고 저장 비용을 절감할 수 있습니다.</block>
@@ -3421,4 +3414,35 @@
   <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026년 11월 1일</block>
   <block id="7cc20c44b067a9d650d7a25d5be9d67d" category="section-title">분류를 위한 고객 관리형 Bedrock 지원</block>
   <block id="8a8cb6e7e1b94c2efc52b7f5d677eb4d" category="paragraph">Workload Factory에서 이제 자체 Amazon Bedrock 설정을 사용하여 워크로드 태깅 분류를 수행할 수 있습니다. 자체 Bedrock 엔드포인트와 자격 증명을 제공하여 분류 요청이 자체 Bedrock 구성을 통해 실행되도록 할 수 있습니다.</block>
+  <block id="6347309ad07af7266241819bb2af76d1" category="list-text">*호스트를 페일오버 노드에 연결*</block>
+  <block id="e89cb70f69260bd0359dad1d58cb94de" category="paragraph">Workload Factory는 장애 조치 중 연결을 유지하고 중단을 방지하기 위해 호스트를 장애 조치 노드에 연결하는 것을 권장합니다.</block>
+  <block id="d8f7d6931c10571f6b09ab824fb1eb68" category="list-text">*SAP HANA 스냅샷 정책*</block>
+  <block id="5430bb473a033ac7ca3cf168ada8eef0" category="paragraph">활성 데이터베이스 데이터의 스토리지 비용을 절감하고 성능을 향상시키려면 SAP HANA 볼륨의 스냅샷 정책을 "없음"으로 설정하십시오.</block>
+  <block id="bed53786c7f97a0d4610c92e2155c179" category="list-text">*MySQL 스냅샷 정책*</block>
+  <block id="2cfa406a51ef73bbf2e8700e3f414fba" category="paragraph">활성 데이터베이스 데이터의 스토리지 비용을 절감하고 성능을 향상시키려면 MySQL 볼륨의 스냅샷 정책을 "None"으로 설정하십시오.</block>
+  <block id="277b9300260dd55ca64290333450ba59" category="list-text">*PostgreSQL 스냅샷 정책*</block>
+  <block id="2a902e0c93222642481e7829b61f6885" category="paragraph">스토리지 비용을 절감하고 활성 데이터베이스 데이터의 성능을 향상시키려면 PostgreSQL 볼륨의 스냅샷 정책을 "없음"으로 설정하십시오.</block>
+  <block id="f6713ad974e1c45e6ae6f336e05e1acb" category="list-text">*ARP/AI 다중 기기 감지 격차*</block>
+  <block id="99585e92af9e1ad2380aa522d6753d7a" category="paragraph">ARP/AI는 볼륨에 블록 장치가 하나만 연결되어 있을 때 완벽한 보호 기능을 제공합니다. 볼륨에 블록 장치가 여러 개 연결되어 있는 경우, Workload Factory는 각 볼륨에 블록 장치가 하나만 연결되도록 블록 장치를 새 볼륨으로 이동합니다.</block>
+  <block id="94252ec3a780f58314c91e97ef4e34dd" category="list-text">*Kubernetes iSCSI 백엔드를 위한 양방향 CHAP*</block>
+  <block id="33abb23bb89c7fd6e6403f57410fd19d" category="paragraph">Trident iSCSI 백엔드에 양방향 CHAP 인증을 사용하여 iSCSI 이니시에이터와 타겟 간의 상호 인증을 보장하십시오. 이를 통해 권한이 없는 호스트가 스토리지 VM에 대한 iSCSI 세션을 설정하는 것을 방지할 수 있습니다.</block>
+  <block id="6afaedca049edca8b26b3afcc63112c5" category="list-text">*애플리케이션 스토리지 VM에서 비활성화<block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>*</block>
+  <block id="bfd8d5ee3b60e71cb8f894bb8d7d7f01" category="paragraph">클라이언트가 액세스할 수 없는 내보내기 목록을 볼 수 없도록 애플리케이션 스토리지 VM에서 <block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>을(를) 비활성화하십시오.</block>
+  <block id="17a183ee5c2a455937989091c69ca48d" category="list-text">*전용 쿠버네티스 스토리지 VM*</block>
+  <block id="aeb9ac6a931deb0972004e13a0b50cbd" category="paragraph">Kubernetes 워크로드에는 전용 스토리지 VM을 사용하십시오. Kubernetes 스토리지를 분리하면 관리가 쉬워지고 정책 설정이 간소화되며 스토리지 설정의 일관성을 유지하는 데 도움이 됩니다.</block>
+  <block id="dd54a6cc471e0bb15a8807c9b04d608a" category="list-text">*igroup OS를 호스트에 맞게 설정하십시오*</block>
+  <block id="9b4b32350b17fe80d09c863ee9493bc1" category="paragraph">I/O 또는 성능 문제를 방지하려면 이니시에이터 그룹(igroup)의 운영 체제를 호스트의 운영 체제와 일치시켜야 합니다.</block>
+  <block id="e2521a2a2f696d450620b08167cf1c24" category="list-text">*클론 정리*</block>
+  <block id="25c12f9fc894aee637d81a1bb835e475" category="paragraph">스토리지 사용량을 최적화하고 비용을 절감하려면 30일 이상 된 볼륨 복제본을 모두 삭제하십시오.</block>
+  <block id="01fae763ec208cbe8aba55abc3b09866" category="summary">NetApp Workload Factory에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용을 추적하십시오.</block>
+  <block id="3f9d767840a18ac75b11c7dd9ba87a88" category="doc">NetApp Workload Factory에서 리소스 비용을 추적합니다.</block>
+  <block id="bfb6f1b412cd95d58b271e3d69547dda" category="paragraph">NetApp Workload Factory를 사용하여 FSx for ONTAP 파일 시스템 비용 및 사용량을 추적하여 예산을 관리하고 리소스를 효과적으로 최적화하십시오. AWS Cost Explorer를 사용하여 최소한의 권한이 필요한 데이터로 전체 비용을 제공합니다. 리소스(파일 시스템 또는 볼륨)별 비용은 Workload Factory 계산을 기반으로 하며, AWS Cost Explorer에서는 제공되지 않는 고유한 인사이트를 제공합니다.</block>
+  <block id="c3f094be203d9270a67844e5fa353013" category="paragraph">Workload Factory는 다음 권한을 사용하여 AWS Cost Explorer에서 FSx for ONTAP 파일 시스템 리소스에 대한 비용 및 사용량 데이터를 가져옵니다.<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> 및<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>. 추적되는 비용 세부 정보는 사용 유형, 사용 SKU, 배포 유형, 사용량 및 총 비용입니다.</block>
+  <block id="0044e1f3a22c6d9ef97c0d6e8c1fdb03" category="paragraph">비용 대시보드에는 전체 비용과 리소스별 비용을 제공하는 두 개의 탭이 있습니다.</block>
+  <block id="65ab1b7df4df327df8504998be956f5b" category="list-text">총 비용은 AWS Cost Explorer API에서 직접 가져온 데이터를 기반으로 합니다.</block>
+  <block id="19750d3971220ee9a9363828b643acdf" category="list-text">리소스별 비용은 파일 시스템 또는 볼륨별 비용 추정치를 보여줍니다.</block>
+  <block id="512a8b4930f422b87988b36e61c761d2" category="paragraph">Workload Factory는 항상 월 단위로 데이터를 표시합니다.</block>
+  <block id="03bb428183665b2d297f7a2b126ada64" category="paragraph">AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. 또한 하나 이상의 파일 시스템과 파일 시스템 내의 하나 이상의 볼륨으로 필터링할 수도 있습니다.</block>
+  <block id="6d24db4e0644546ba5972d86f0474123" category="paragraph">AWS 비용 할당 태그 키와 태그 키 값을 사용하면 특정 비용을 정확하게 파악하기 위한 추가 필터링 기능을 활용할 수 있습니다. _태그_는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하십시오. <block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
+  <block id="00785d0f1296ca2a8d0846890b38a469" category="paragraph">비용 대시보드의 비용 데이터 외에도, AI가 생성한 비용 요약 보고서에는 FSx for ONTAP 파일 시스템 비용과 조직의 지출 패턴이 표시됩니다. FSx for ONTAP 파일 시스템 리소스에 대한 CSV 파일을 생성하여 팀 및 이해 관계자와 공유할 수 있습니다.</block>
 </blocks>
