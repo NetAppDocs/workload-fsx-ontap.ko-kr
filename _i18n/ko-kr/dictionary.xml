@@ -1698,7 +1698,6 @@
   <block id="75ef547803457d883c1ab7eec9dd8c12" category="paragraph">Amazon FSx for NetApp ONTAP 사이버 볼트 소스 및 대상으로 지원됩니다.</block>
   <block id="b672f52ade975e864ae6b58722c03689" category="paragraph-title">구현</block>
   <block id="e8e8dcbe97676a6fe5760aae822c6e61" category="paragraph">Workload Factory는 사이버 볼트 아키텍처를 만드는 데 도움을 제공합니다.  NetApp 에 ​​연락하여 사이버 볼트 구현에 대한 관심을 표명하면 NetApp 전문가가 연락하여 요구 사항에 대해 논의합니다.</block>
-  <block id="9577a31ea32e2c5b58950150698f2a07" category="paragraph">시작하려면 ng-FSx-CyberVault@netapp.com으로 이메일을 보내세요.</block>
   <block id="a9541230016fd9f6de7895f1a32b75fb" category="inline-link-macro">ONTAP 사이버 볼트 문서</block>
   <block id="18e03b41df425134308f1975a1972f8e" category="list-text">FSx for ONTAP 파일 시스템을 생성하기 위한 _파일 시스템 생성 및 삭제_ 권한이 있는 자격 증명입니다. <block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>.</block>
   <block id="8763b09bbcb06ec11c1d0d3331ba74f4" category="paragraph"><block ref="8763b09bbcb06ec11c1d0d3331ba74f4" category="inline-link-macro-rx"></block></block>
@@ -3351,7 +3350,6 @@
   <block id="19206cde68f30f89cddf386749d22382" category="paragraph">Workload Factory는 이제 자격 증명을 성공적으로 추가한 후 링크 연결을 완료하도록 알림을 보냅니다. 자격 증명을 통해 리소스를 검색할 수 있지만, 고급 ONTAP 기능을 사용하려면 검색된 파일 시스템과의 링크 연결이 필요합니다. 이메일 알림은 매주 월요일에 발송됩니다. 링크 연결이 완료되면 알림은 더 이상 발송되지 않습니다.</block>
   <block id="6ea6cb3b2f3b5abc021a1f0e4229c7fc" category="inline-link-macro">Workload Factory 콘솔에서 알림 구성</block>
   <block id="a518b4e2bba0d0ce3d0ecdc772d503ed" category="paragraph"><block ref="a518b4e2bba0d0ce3d0ecdc772d503ed" category="inline-link-macro-rx"></block></block>
-  <block id="41d8c250ba5deffd33a0d05e7f94eaf4" category="paragraph">모든 링크 관련 문서는 이제 Workload Factory 설정 및 관리 문서에 포함되어 있습니다. Workload Factory FSx for ONTAP 문서에서 <block ref="25b81a757714a127c9c382013e960ce5" category="inline-link-macro-rx"></block>을 참조하여 설정 및 관리 문서의 관련 페이지 링크를 찾아보실 수 있습니다.</block>
   <block id="40a8a1ceba59de4101cf77a14d6fb2d5" category="section-title">잘 설계된 이슈에 대한 이메일 개선</block>
   <block id="954ae82c2d96e9bd8c7d4e143bf3c187" category="paragraph">새로운 이메일 디자인은 Workload Factory에서 감지한 구성 문제에 대한 자세한 정보와 맥락을 제공합니다. 이메일에는 분석된 리소스 수, 경고 또는 심각한 문제가 있는 리소스 수, 그리고 해당 문제의 내용이 포함됩니다. 또한 이메일은 문제를 즉시 해결할 수 있도록 FSx for ONTAP Well-Architected 대시보드에 대한 링크를 제공합니다.</block>
   <block id="1854fdec65dd4a2dd839c666aba07186" category="section-title">잘 설계된 대시보드 개선 사항</block>
@@ -3445,4 +3443,5 @@
   <block id="03bb428183665b2d297f7a2b126ada64" category="paragraph">AWS 계정, 자격 증명, 하나 이상의 리전 및 기간별로 비용 및 사용량 데이터를 필터링하여 FSx for ONTAP 파일 시스템 사용량을 파악할 수 있습니다. 또한 하나 이상의 파일 시스템과 파일 시스템 내의 하나 이상의 볼륨으로 필터링할 수도 있습니다.</block>
   <block id="6d24db4e0644546ba5972d86f0474123" category="paragraph">AWS 비용 할당 태그 키와 태그 키 값을 사용하면 특정 비용을 정확하게 파악하기 위한 추가 필터링 기능을 활용할 수 있습니다. _태그_는 키와 값으로 구성됩니다. 태그 키와 태그 키 값으로 필터링하려면 FSx for ONTAP 파일 시스템에 태그를 할당하십시오. <block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
   <block id="00785d0f1296ca2a8d0846890b38a469" category="paragraph">비용 대시보드의 비용 데이터 외에도, AI가 생성한 비용 요약 보고서에는 FSx for ONTAP 파일 시스템 비용과 조직의 지출 패턴이 표시됩니다. FSx for ONTAP 파일 시스템 리소스에 대한 CSV 파일을 생성하여 팀 및 이해 관계자와 공유할 수 있습니다.</block>
+  <block id="1e1ba6e3e89c5c46a8b08f6bb7ca5b1e" category="paragraph">시작하려면 ng-CyberVault@netapp.com으로 이메일을 보내십시오.</block>
 </blocks>
