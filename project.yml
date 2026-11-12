@@ -91,6 +91,14 @@ sidebar:
         url: "/configuration-analysis.html"
       - title: 잘 설계된 파일 시스템 구성 구현
         url: "/improve-configurations.html"
+      - title: 사용자 지정 규칙
+        entries:
+        - title: 사용자 지정 규칙에 대해 알아보기
+          url: "/learn-custom-rules.html"
+        - title: 사용자 지정 규칙 만들기
+          url: "/create-custom-rule.html"
+        - title: 사용자 지정 규칙 관리
+          url: "/manage-custom-rules.html"
     - title: ONTAP 비용에 대한 FSx 추적 및 분석
       url: "/track-costs.html"
     - title: 볼륨 관리
