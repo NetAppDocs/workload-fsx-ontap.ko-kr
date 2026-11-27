@@ -286,7 +286,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷</block>
-  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.</block>
   <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">지원 케이스 기록을 보려면 * 설정 &gt; 일정 * 을 선택하고 "지원 케이스 생성"이라는 작업을 찾을 수 있습니다. 맨 오른쪽에 있는 버튼을 사용하면 작업을 확장하여 세부 정보를 볼 수 있습니다.</block>
@@ -308,21 +307,15 @@
   <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">조직의 케이스 * 에서 * 보기 * 를 선택하여 회사와 관련된 모든 케이스를 봅니다.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
-  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷</block>
-  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">테이블에 나타나는 더하기 아이콘입니다</block>
-  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">표시할 열을 선택한 다음 선택하여 테이블에 표시되는 열을 변경합니다 <block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> .</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여 주는 스크린샷</block>
-  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
-  <block id="000a1376035909240f559b8ab724030c" category="list-text">사용 가능한 옵션 중 하나를 선택하고 선택하여 기존 케이스를 <block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> 관리합니다.</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 케이스 종료 *: 케이스를 종료하는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 선택합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
-  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11df76043d9d8bb3a76f1f7e71096a92" category="inline-link-macro">IOPS 프로비저닝</block>
   <block id="ffc888e5ff626bf410d67b62a9e8a9a8" category="paragraph">SSD 스토리지 용량 제한에 대해서는 <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAP 설명서를 참조하십시오.</block>
   <block id="3fa4dafc00a14f08641efa3389891289" category="inline-link-macro">자동 용량 관리를 비활성화합니다</block>
@@ -458,7 +451,6 @@
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
-  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정은 없습니다</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">를 완료하여 NetApp 지원 사이트 계정을 만듭니다<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
@@ -467,7 +459,6 @@
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.</block>
   <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">지원 리소스 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
-  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp의 지원 등록 사이트</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 이동하여 * 등록된 NetApp 고객이 아님 * 을 선택합니다.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 필드(빨간색 별표가 있는 필드)를 입력합니다.</block>
@@ -3650,4 +3641,13 @@
   <block id="b96145a118f5f22d5671016368e91049" category="list-text">*관리자 권한 삭제*: 이 기능을 활성화 또는 비활성화합니다. 이 기능을 활성화하면 SnapLock 관리자가 만료되지 않은 WORM 볼륨을 삭제할 수 있습니다. 이 기능은 엔터프라이즈 보존 모드에서만 지원됩니다.</block>
   <block id="984d3b6784a4e9d6d1595f3476df9311" category="list-text">*볼륨 추가 모드*: 이 기능을 활성화 또는 비활성화합니다. 볼륨 추가 모드를 활성화하면 WORM 파일에 새 콘텐츠를 추가할 수 있습니다.</block>
   <block id="5fd02484bbe1124b48ec6e3c36e522cb" category="section-title">2026년 11월 26일</block>
+  <block id="6a01d74a3f012349cadafc7f0c97c86d" category="paragraph"><block ref="6a01d74a3f012349cadafc7f0c97c86d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ad4ae3a62c11eaba515c9696b34ded0" category="paragraph"><block ref="6ad4ae3a62c11eaba515c9696b34ded0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ac657f93a04d54466e8963848cea900" category="paragraph"><block ref="2ac657f93a04d54466e8963848cea900" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e461a14ef18284f75a2b6063d614da64" category="list-text"><block ref="561341289de713dd5ea2cd49d1743cab" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 표시할 열을 선택하여 표에 표시되는 열을 변경합니다.</block>
+  <block id="120d129dd0543570cd3b7bea4c5da65b" category="paragraph"><block ref="120d129dd0543570cd3b7bea4c5da65b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb70a108f4a6413201209cb4b6024938" category="list-text"><block ref="babe7781192bcd33c63a8532a0937e8b" category="inline-image-macro-rx" type="image"></block>를 선택하고 사용 가능한 옵션 중 하나를 선택하여 기존 케이스를 관리합니다.</block>
+  <block id="6278374dd69ba277d86d94a2ccc3a54a" category="paragraph"><block ref="6278374dd69ba277d86d94a2ccc3a54a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c460367238bec35c329060785031e2f" category="paragraph"><block ref="3c460367238bec35c329060785031e2f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c0825883c050c64e9b59af470120939" category="paragraph"><block ref="9c0825883c050c64e9b59af470120939" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
