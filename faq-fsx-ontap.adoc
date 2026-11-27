@@ -61,7 +61,7 @@ HA 쌍 추가는 2세대 단일 가용 영역(Single-AZ) 파일 시스템에만 
 link:add-ha-pairs.html["HA 쌍을 추가합니다"].
 
 .기본 ONTAP 자격 증명과 제한된 ONTAP 자격 증명의 차이점은 무엇입니까?
-파일 시스템은 기본적으로 파일 시스템 관리에 사용하는 기본 자격 증명인 기본 ONTAP 자격 증명을 사용합니다. 제한된 자격 증명은 Ask Me, Rule builder, Custom dashboards 등 AI 작업에만 사용됩니다. 제한된 자격 증명을 제공하지 않은 경우 Workload Factory에서 해당 작업에 대한 읽기 전용 ONTAP 자격 증명을 생성합니다. 자격 증명 관리에는 링크가 필요합니다.
+파일 시스템은 기본적으로 파일 시스템 관리를 위한 기본 자격 증명인 기본 ONTAP 자격 증명을 사용합니다. 제한된 자격 증명은 Ask Me, 사용자 지정 규칙, 사용자 지정 대시보드 등 AI 작업에만 사용됩니다. 제한된 자격 증명을 제공하지 않은 경우 Workload Factory에서 해당 작업에 대한 읽기 전용 ONTAP 자격 증명을 생성합니다. 자격 증명 관리에는 링크가 필요합니다.
 
 link:manage-file-system-settings.html["ONTAP 자격 증명 관리"]
 
